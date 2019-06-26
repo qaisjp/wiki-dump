@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>RU/Server mtaserver.conf - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"RU/Server_mtaserver.conf","wgTitle":"RU/Server mtaserver.conf","wgCurRevisionId":49879,"wgRevisionId":49879,"wgArticleId":6554,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Changes in 1.3.4","Поддержка"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"RU/Server_mtaserver.conf","wgRelevantArticleId":6554,"wgRequestId":"2e4a6944311e4ed23434a732","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-RU_Server_mtaserver_conf rootpage-RU_Server_mtaserver_conf skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">RU/Server mtaserver.conf</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>На этой странице описаны все настройки в алфавитном порядке, которые можно установить в файле конфигурации. <i>Курсивом выделены настройки из файла конфигурации <b>mtaserver.conf</b> по умолчанию</i>
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#acl"><span class="tocnumber">1</span> <span class="toctext">acl</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#allow_gta3_img_mods"><span class="tocnumber">2</span> <span class="toctext">allow_gta3_img_mods</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#alt_veh_parts_state_sync"><span class="tocnumber">3</span> <span class="toctext">alt_veh_parts_state_sync</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#ase"><span class="tocnumber">4</span> <span class="toctext">ase</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#authfile"><span class="tocnumber">5</span> <span class="toctext">authfile</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#backup_copies"><span class="tocnumber">6</span> <span class="toctext">backup_copies</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#backup_interval"><span class="tocnumber">7</span> <span class="toctext">backup_interval</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#backup_path"><span class="tocnumber">8</span> <span class="toctext">backup_path</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#bandwidth_reduction"><span class="tocnumber">9</span> <span class="toctext">bandwidth_reduction</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#bullet_sync"><span class="tocnumber">10</span> <span class="toctext">bullet_sync</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#camera_sync_interval"><span class="tocnumber">11</span> <span class="toctext">camera_sync_interval</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#client_file"><span class="tocnumber">12</span> <span class="toctext">client_file</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#compact_internal_databases"><span class="tocnumber">13</span> <span class="toctext">compact_internal_databases</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#dbfile"><span class="tocnumber">14</span> <span class="toctext">dbfile</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#disableac"><span class="tocnumber">15</span> <span class="toctext">disableac</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#donkey_work_interval"><span class="tocnumber">16</span> <span class="toctext">donkey_work_interval</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#donotbroadcastlan"><span class="tocnumber">17</span> <span class="toctext">donotbroadcastlan</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="#enablesd"><span class="tocnumber">18</span> <span class="toctext">enablesd</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="#fpslimit"><span class="tocnumber">19</span> <span class="toctext">fpslimit</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="#http_dos_exclude"><span class="tocnumber">20</span> <span class="toctext">http_dos_exclude</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="#httpautoclientfiles"><span class="tocnumber">21</span> <span class="toctext">httpautoclientfiles</span></a></li>
+<li class="toclevel-1 tocsection-22"><a href="#httpdosthreshold"><span class="tocnumber">22</span> <span class="toctext">httpdosthreshold</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="#httpdownloadurl"><span class="tocnumber">23</span> <span class="toctext">httpdownloadurl</span></a></li>
+<li class="toclevel-1 tocsection-24"><a href="#httpmaxconnectionsperclient"><span class="tocnumber">24</span> <span class="toctext">httpmaxconnectionsperclient</span></a></li>
+<li class="toclevel-1 tocsection-25"><a href="#httpport"><span class="tocnumber">25</span> <span class="toctext">httpport</span></a></li>
+<li class="toclevel-1 tocsection-26"><a href="#httpserver"><span class="tocnumber">26</span> <span class="toctext">httpserver</span></a></li>
+<li class="toclevel-1 tocsection-27"><a href="#idfile"><span class="tocnumber">27</span> <span class="toctext">idfile</span></a></li>
+<li class="toclevel-1 tocsection-28"><a href="#keysync_analog_sync_interval"><span class="tocnumber">28</span> <span class="toctext">keysync_analog_sync_interval</span></a></li>
+<li class="toclevel-1 tocsection-29"><a href="#keysync_mouse_sync_interval"><span class="tocnumber">29</span> <span class="toctext">keysync_mouse_sync_interval</span></a></li>
+<li class="toclevel-1 tocsection-30"><a href="#latency_reduction"><span class="tocnumber">30</span> <span class="toctext">latency_reduction</span></a></li>
+<li class="toclevel-1 tocsection-31"><a href="#lightweight_sync_interval"><span class="tocnumber">31</span> <span class="toctext">lightweight_sync_interval</span></a></li>
+<li class="toclevel-1 tocsection-32"><a href="#loadstringfile"><span class="tocnumber">32</span> <span class="toctext">loadstringfile</span></a></li>
+<li class="toclevel-1 tocsection-33"><a href="#logfile"><span class="tocnumber">33</span> <span class="toctext">logfile</span></a></li>
+<li class="toclevel-1 tocsection-34"><a href="#maxplayers"><span class="tocnumber">34</span> <span class="toctext">maxplayers</span></a></li>
+<li class="toclevel-1 tocsection-35"><a href="#minclientversion"><span class="tocnumber">35</span> <span class="toctext">minclientversion</span></a></li>
+<li class="toclevel-1"><a href="#minclientversion_auto_update"><span class="tocnumber">36</span> <span class="toctext">minclientversion_auto_update</span></a></li>
+<li class="toclevel-1 tocsection-37"><a href="#module"><span class="tocnumber">37</span> <span class="toctext">module</span></a></li>
+<li class="toclevel-1 tocsection-38"><a href="#networkencryption"><span class="tocnumber">38</span> <span class="toctext">networkencryption</span></a></li>
+<li class="toclevel-1 tocsection-39"><a href="#password"><span class="tocnumber">39</span> <span class="toctext">password</span></a></li>
+<li class="toclevel-1 tocsection-40"><a href="#ped_sync_interval"><span class="tocnumber">40</span> <span class="toctext">ped_sync_interval</span></a></li>
+<li class="toclevel-1 tocsection-41"><a href="#ped_syncer_distance"><span class="tocnumber">41</span> <span class="toctext">ped_syncer_distance</span></a></li>
+<li class="toclevel-1 tocsection-42"><a href="#player_sync_interval"><span class="tocnumber">42</span> <span class="toctext">player_sync_interval</span></a></li>
+<li class="toclevel-1 tocsection-43"><a href="#recommendedclientversion"><span class="tocnumber">43</span> <span class="toctext">recommendedclientversion</span></a></li>
+<li class="toclevel-1 tocsection-44"><a href="#resource"><span class="tocnumber">44</span> <span class="toctext">resource</span></a></li>
+<li class="toclevel-1 tocsection-45"><a href="#scriptdebuglogfile"><span class="tocnumber">45</span> <span class="toctext">scriptdebuglogfile</span></a></li>
+<li class="toclevel-1 tocsection-46"><a href="#scriptdebugloglevel"><span class="tocnumber">46</span> <span class="toctext">scriptdebugloglevel</span></a></li>
+<li class="toclevel-1 tocsection-47"><a href="#serverip"><span class="tocnumber">47</span> <span class="toctext">serverip</span></a></li>
+<li class="toclevel-1 tocsection-48"><a href="#servername"><span class="tocnumber">48</span> <span class="toctext">servername</span></a></li>
+<li class="toclevel-1 tocsection-49"><a href="#serverport"><span class="tocnumber">49</span> <span class="toctext">serverport</span></a></li>
+<li class="toclevel-1 tocsection-50"><a href="#threadnet"><span class="tocnumber">50</span> <span class="toctext">threadnet</span></a></li>
+<li class="toclevel-1 tocsection-51"><a href="#unoccupied_vehicle_sync_interval"><span class="tocnumber">51</span> <span class="toctext">unoccupied_vehicle_sync_interval</span></a></li>
+<li class="toclevel-1 tocsection-52"><a href="#unoccupied_vehicle_syncer_distance"><span class="tocnumber">52</span> <span class="toctext">unoccupied_vehicle_syncer_distance</span></a></li>
+<li class="toclevel-1 tocsection-53"><a href="#vehext_percent"><span class="tocnumber">53</span> <span class="toctext">vehext_percent</span></a></li>
+<li class="toclevel-1 tocsection-54"><a href="#vehext_ping_limit"><span class="tocnumber">54</span> <span class="toctext">vehext_ping_limit</span></a></li>
+<li class="toclevel-1 tocsection-55"><a href="#voice"><span class="tocnumber">55</span> <span class="toctext">voice</span></a></li>
+<li class="toclevel-1 tocsection-56"><a href="#voice_bitrate"><span class="tocnumber">56</span> <span class="toctext">voice_bitrate</span></a></li>
+<li class="toclevel-1 tocsection-57"><a href="#voice_quality"><span class="tocnumber">57</span> <span class="toctext">voice_quality</span></a></li>
+<li class="toclevel-1 tocsection-58"><a href="#voice_samplerate"><span class="tocnumber">58</span> <span class="toctext">voice_samplerate</span></a></li>
+</ul>
+</div>
+
+<h4><span class="mw-headline" id="acl">acl</span></h4>
+<dl><dd><i>&lt;acl&gt;acl.xml&lt;/acl&gt; </i></dd>
+<dd>Этот параметр указывает местоположение и название файла настроек Access Control List (Списка Контроля Доступа). Если оставить</dd>
+<dd>пустым, сервер будет использовать файл acl.xml, расположенный в той же папке, что и этот конфигурационный файл (mtaserver.conf).</dd></dl>
+<h4><span class="mw-headline" id="allow_gta3_img_mods">allow_gta3_img_mods</span></h4>
+<dl><dd><i>&lt;allow_gta3_img_mods&gt;none&lt;/allow_gta3_img_mods&gt;</i></dd>
+<dd>Значения: none или peds; значение по умолчанию: none.</dd>
+<dd>По умолчанию, сервер будет блокировать использование локально заменённых скинов в gta3.img. Эта установка может быть использована для разрешения таких модов. Не рекомендуется для соревновательных серверов.</dd></dl>
+<h4><span class="mw-headline" id="alt_veh_parts_state_sync">alt_veh_parts_state_sync</span></h4>
+<dl><dd><i>&lt;alt_veh_parts_state_sync&gt;0&lt;/alt_veh_parts_state_sync&gt;</i></dd>
+<dd>Значения: 0 - отключено, 1 - включено; значение по умолчанию: 0.</dd>
+<dd>Этот параметр может быть изменен и сохранен во время работы сервера через <a href="../SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd></dl>
+<h4><span class="mw-headline" id="ase">ase</span></h4>
+<dl><dd><i>&lt;ase&gt;1&lt;/ase&gt;</i></dd>
+<dd>Этот параметр может использоваться для разрешения серверу сообщаться с главными серверами Game-Monitor, позволяя ему быть видимым во внутриигровом браузере серверов. Для функционирования потребуется дополнительный доступный UDP порт (он получается как &lt;serverport&gt; + 123 , так что при значении &lt;serverport&gt; по умолчанию (22003) правильным портом будет 22126 ).</dd>
+<dd>Доступные значения: 0 - отключено, 1 - включено. Опциональный параметр, по умолчанию 0.</dd></dl>
+<h4><span class="mw-headline" id="authfile">authfile</span></h4>
+<dl><dd><i>&lt;authfile&gt;logs/server_auth.log&lt;/authfile&gt;</i></dd>
+<dd>Так же как и в основной лог, успешные и провальные попытки залогиниться записываются и сюда для легкости рассмотрения вопросов, связанных с безопасностью. Если оставить пустым, файл не будет использоваться</dd></dl>
+<h4><span class="mw-headline" id="backup_copies">backup_copies</span></h4>
+<dl><dd><i>&lt;backup_copies&gt;5&lt;/backup_copies&gt;</i></dd>
+<dd>Этот параметр указывает максимальное количество хранимых резервных копий. Установка backup_copies на 0 отключит резервные копии</dd>
+<dd>Диапазон доступных значений: 0 на 100.  По умолчанию - 5</dd></dl>
+<h4><span class="mw-headline" id="backup_interval">backup_interval</span></h4>
+<dl><dd><i>&lt;backup_interval&gt;3&lt;/backup_interval&gt;</i></dd>
+<dd>Этот параметр указывает количество дней между каждой из базовых резервных копий. Резервные копии делаются только во время запуска сервера, так что фактический интервал может быть намного больше. Установка backup_interval на 0 отключит резервные копии</dd>
+<dd>Диапазон доступных значений: 0 - 30.  По умолчанию - 3</dd></dl>
+<h4><span class="mw-headline" id="backup_path">backup_path</span></h4>
+<dl><dd><i>&lt;backup_path&gt;backups&lt;/backup_path&gt;</i></dd>
+<dd>Этот параметр указывает путь, используемый для хранения базовых резервных копий некоторых файлов сервера. Заметьте, что базовые резервные копии делаются только во время запуска сервера. Значение по умолчанию: backups</dd></dl>
+<h4><span class="mw-headline" id="bandwidth_reduction">bandwidth_reduction</span></h4>
+<dl><dd><i>&lt;bandwidth_reduction&gt;medium&lt;/bandwidth_reduction&gt; </i></dd>
+<dd>Этот параметр снижает использование сервером канала благодаря использованию различных оптимизаций.</dd>
+<dd>Значения: none, medium или maximum&#160;; значение по умолчанию: medium</dd>
+<dd>Этот параметр может быть изменен и сохранен во время работы сервера через <a href="../SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd></dl>
+<h4><span class="mw-headline" id="bullet_sync">bullet_sync</span></h4>
+<dl><dd><i>&lt;bullet_sync&gt;0&lt;/bullet_sync&gt;</i></dd>
+<dd>Этот параметр может улучшить достоверность выстрелов при использования определенных видов оружия. Как бы то ни было, "синхронизация пуль" повлечет больший расход канала.</dd>
+<dd><b>Для работы параметра обязательно требуется билд сервера 4247 и выше, подключающиеся клиенты будут также при необходимости автообновлены, если параметр включен.</b></dd>
+<dd>Заметьте, что синхронизация пуль будет включена независимо от этой настройки, если включены определенные <a href="../SetGlitchEnabled.html" title="SetGlitchEnabled">баги</a>.</dd>
+<dd>Значения: 0 - отключено , 1 - включено&#160;; значение по умолчанию: 0.</dd>
+<dd>Этот параметр может быть изменен и сохранен во время работы сервера через <a href="../SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd></dl>
+<h4><span class="mw-headline" id="camera_sync_interval">camera_sync_interval</span></h4>
+<dl><dd><i>&lt;camera_sync_interval&gt;500&lt;/camera_sync_interval&gt; </i></dd>
+<dd>Этот параметр определяет время между пакетами синхронизации камеры в миллисекундах.</dd>
+<dd>Диапазон доступных значений: 50 - 4000; значение по умолчанию: 500</dd>
+<dd>Этот параметр может быть изменен и сохранен во время работы сервера через <a href="../SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd>
+<dd>Предлагаемые для этого значения и другие настройки sync_interval можно найти здесь: <a href="../Sync_interval_settings.html" title="Sync interval settings">Sync interval settings</a></dd></dl>
+<h4><span class="mw-headline" id="client_file">client_file</span></h4>
+<dl><dd><i>&lt;!-- &lt;client_file name="data/carmods.dat" verify="0" /&gt; --&gt;</i></dd>
+<dd>По умолчанию, сервер будет блокировать использование измененных data-файлов GTA:SA.</dd>
+<dd>Для разрешения определенных клиентских файлов, добавьте одну или более строк по типу выше.</dd>
+<dd>Больше информации: <a href="Anti-cheat_guide.html" title="RU/Anti-cheat guide">Руководство по античиту</a></dd></dl>
+<h4><span class="mw-headline" id="compact_internal_databases">compact_internal_databases</span></h4>
+<dl><dd><i>&lt;compact_internal_databases&gt;1&lt;/compact_internal_databases&gt;</i></dd>
+<dd>Значения: 0 - Никогда, 1 - При запуске сервера и только после создания резервной копии, 2 - Всегда при запуске сервера; значение по умолчанию - 1.</dd>
+<dd>Этот параметр определяет, когда внутренняя SQLite база данных должна дефрагментироваться. Больше информации: [<a rel="nofollow" class="external autonumber" href="http://www.sqlite.org/lang_vacuum.html">[1]</a>]</dd></dl>
+<h4><span class="mw-headline" id="dbfile">dbfile</span></h4>
+<dl><dd><i>&lt;dbfile&gt;logs/db.log&lt;/dbfile&gt;</i></dd>
+<dd>Указывает местонахождение и название файла, используемого для ведения записей запросов баз данных. Серверная команда <a href="Server_Commands.html#debugdb" title="RU/Server Commands">debugdb</a> устанаваливает размах ведения записей.</dd></dl>
+<h4><span class="mw-headline" id="disableac">disableac</span></h4>
+<dl><dd><i>&lt;disableac&gt;&lt;/disableac&gt;</i></dd>
+<dd>Список отключенных античитов, разделенный запятыми.</dd>
+<dd>напр. Чтобы отключить античиты #2 и #3, используйте: 2,3</dd>
+<dd>Больше информации: <a href="Anti-cheat_guide.html" title="RU/Anti-cheat guide">Руководство по античиту</a></dd></dl>
+<h4><span class="mw-headline" id="donkey_work_interval">donkey_work_interval</span></h4>
+<dl><dd><i>&lt;donkey_work_interval&gt;100&lt;/donkey_work_interval&gt;</i></dd>
+<dd>Диапазон доступных значений: 50 - 4000; значение по умолчанию: 100</dd>
+<dd>Этот параметр может быть изменен и сохранен во время работы сервера через <a href="../SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd></dl>
+<h4><span class="mw-headline" id="donotbroadcastlan">donotbroadcastlan</span></h4>
+<dl><dd><i>&lt;donotbroadcastlan&gt;0&lt;/donotbroadcastlan&gt;</i></dd>
+<dd>Этот параметр позволяет вам отключить вещание по LAN (локальной сети).	</dd></dl>
+<h4><span class="mw-headline" id="enablesd">enablesd</span></h4>
+<dl><dd><i>&lt;enablesd&gt;&lt;/enablesd&gt;</i></dd>
+<dd>Список включенных спецпроверок, разделенный запятыми. Специальная проверка - тип проверки античита на наличие (как правило) безвредных модификаций игры. Возможно, соревновательные сервера будут заинтересованы в использовании спецпроверок, но большинству серверов все же следует оставить это поле настроек пустым.</dd>
+<dd>напр. Для включения спецпроверки #12 (запрет на собственный D3D9.DLL) используйте: 12</dd></dl>
+<h4><span class="mw-headline" id="fpslimit">fpslimit</span></h4>
+<dl><dd><i>&lt;fpslimit&gt;36&lt;/fpslimit&gt;</i></dd>
+<dd>Указывает ограничение частоты кадров, которое будет применено к подсоединяющимся клиентам.</dd>
+<dd>Диапазон доступных значений: 25 - 100. По умолчанию: 36.</dd>
+<dd>Этот параметр может быть изменен и сохранен во время работы сервера через <a href="../SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd></dl>
+<h4><span class="mw-headline" id="http_dos_exclude">http_dos_exclude</span></h4>
+<dl><dd><i>&lt;http_dos_exclude&gt;&lt;/http_dos_exclude&gt;</i></dd>
+<dd>Этот параметр содержит список IP-адресов, которые должны быть исключены при пороговых значениях HTTP DoS-атаки. Например: 88.11.22.33,101.2.3.4</dd></dl>
+<h4><span class="mw-headline" id="httpautoclientfiles">httpautoclientfiles</span></h4>
+<dl><dd><i>&lt;httpautoclientfiles&gt;1&lt;/httpautoclientfiles&gt;</i></dd>
+<dd>Этот параметр указывает, следует ли клиентским файлам для хостинга на внешнем веб-сервере быть автоматически скопированными в mods/deathmatch/resource-cache/http-client-files/ Уместно только при установленном &lt;httpdownloadurl&gt;.</dd>
+<dd>Значения: 0 - отключено , 1 - включено&#160;; значение по умолчанию: 1. Опциональный параметр.</dd>
+<dd>Больше информации: <a href="Server_Manual.html#Configuring_an_external_web_server" title="RU/Server Manual">Настройка внешнего веб-сервера</a></dd></dl>
+<h4><span class="mw-headline" id="httpdosthreshold">httpdosthreshold</span></h4>
+<dl><dd><i>&lt;httpdosthreshold&gt;20&lt;/httpdosthreshold&gt;</i></dd>
+<dd>Этот параметр ограничивает количество http-соединений, которое IP может инициировать за короткий промежуток времени.</dd>
+<dd>Диапазон доступных значений: 1 - 100. значение по умолчанию: 20</dd></dl>
+<h4><span class="mw-headline" id="httpdownloadurl">httpdownloadurl</span></h4>
+<dl><dd><i>&lt;httpdownloadurl&gt;&lt;/httpdownloadurl&gt;</i></dd>
+<dd>Если установлен, то этот параметр указывает внешний URL, с которого клиенты смогут скачивать нужные ресурсы, находясь в игре. Иначе они будут их скачивать напрямую с сервера.</dd>
+<dd>Больше информации: <a href="Server_Manual.html#Configuring_an_external_web_server" title="RU/Server Manual">Настройка внешнего веб-сервера</a></dd></dl>
+<h4><span class="mw-headline" id="httpmaxconnectionsperclient">httpmaxconnectionsperclient</span></h4>
+<dl><dd><i>&lt;httpmaxconnectionsperclient&gt;5&lt;/httpmaxconnectionsperclient&gt;</i></dd>
+<dd>Этот параметр ограничивает количество http-соединений, доступных каждому из клиентов. В зависимости от типа используемого http-сервера, меньшее число может снизить ожидание при закачке.</dd>
+<dd>Диапазон доступных значений: 1 - 8.</dd></dl>
+<h4><span class="mw-headline" id="httpport">httpport</span></h4>
+<dl><dd><i>&lt;httpport&gt;22005&lt;/httpport&gt;</i></dd>
+<dd>Этот параметр указывает TCP порт сервера, на который будут поступать http-соединения. Он может быть установлен на то же значение, что и &lt;serverport&gt;. Этот параметр является обязательным, если &lt;httpserver&gt; установлен на 1.</dd>
+<dd>Больше информации: <a href="Server_Manual.html#.D0.98.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.D0.B2.D0.B5.D0.B1-.D0.B8.D0.BD.D1.82.D0.B5.D1.80.D1.84.D0.B5.D0.B9.D1.81.D0.B0" title="RU/Server Manual">Использование веб-интерфейса</a></dd></dl>
+<h4><span class="mw-headline" id="httpserver">httpserver</span></h4>
+<dl><dd><i>&lt;httpserver&gt;1&lt;/httpserver&gt;</i></dd>
+<dd>Этот параметр указывает, будет ли использоваться встроенный http-сервер.</dd>
+<dd>Значения: 0 - отключено , 1 - включено&#160;; значение по умолчанию: 1. Опциональный параметр.</dd>
+<dd>Больше информации: <a href="Server_Manual.html#.D0.98.D1.81.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.D0.B2.D0.B5.D0.B1-.D0.B8.D0.BD.D1.82.D0.B5.D1.80.D1.84.D0.B5.D0.B9.D1.81.D0.B0" title="RU/Server Manual">Использование веб-интерфейса</a></dd></dl>
+<h4><span class="mw-headline" id="idfile">idfile</span></h4>
+<dl><dd><i>&lt;idfile&gt;server-id.keys&lt;/idfile&gt; </i></dd>
+<dd>Указывает местонахождение и название файла, являющегося уникальным личным ключом данного сервера. Это используется для предотвращения чтения личных файлов, сохраненных на клиенте, другими серверами. </dd>
+<dd>Храните резервную копию этого файла в безопасном месте. Значение по умолчанию: server-id.keys</dd>
+<dd>Больше информации о личных файлах клиентов: <a href="../Filepath.html" title="Filepath">Filepath</a></dd></dl>
+<h4><span class="mw-headline" id="keysync_analog_sync_interval">keysync_analog_sync_interval</span></h4>
+<dl><dd><i>&lt;keysync_analog_sync_interval&gt;100&lt;/keysync_analog_sync_interval&gt;</i></dd>
+<dd>Этот параметр определяет минимальное время между пакетами синхронизации клавиш из-за движения джойстиком в миллисекундах.</dd>
+<dd>Диапазон доступных значений: 50 - 4000; значение по умолчанию: 100</dd>
+<dd>Этот параметр может быть изменен и сохранен во время работы сервера через <a href="../SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd>
+<dd>Предлагаемые для этого значения и другие настройки sync_interval можно найти здесь: <a href="../Sync_interval_settings.html" title="Sync interval settings">Sync interval settings</a></dd></dl>
+<h4><span class="mw-headline" id="keysync_mouse_sync_interval">keysync_mouse_sync_interval</span></h4>
+<dl><dd><i>&lt;keysync_mouse_sync_interval&gt;100&lt;/keysync_mouse_sync_interval&gt; </i></dd>
+<dd>Этот параметр определяет минимальное время между пакетами синхронизации клавиш из-за движения мышью в миллисекундах.</dd>
+<dd>Диапазон доступных значений: 50 - 4000; значение по умолчанию: 100</dd>
+<dd>Этот параметр может быть изменен и сохранен во время работы сервера через <a href="../SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd>
+<dd>Предлагаемые для этого значения и другие настройки sync_interval можно найти здесь: <a href="../Sync_interval_settings.html" title="Sync interval settings">Sync interval settings</a></dd></dl>
+<h4><span class="mw-headline" id="latency_reduction">latency_reduction</span></h4>
+<dl><dd><i>&lt;latency_reduction&gt;0&lt;/latency_reduction&gt;</i></dd>
+<dd>Значения: 0 - отключено , 1 - включено&#160;; значение по умолчанию: 0.</dd>
+<dd>Этот параметр может быть изменен и сохранен во время работы сервера через <a href="../SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd></dl>
+<h4><span class="mw-headline" id="lightweight_sync_interval">lightweight_sync_interval</span></h4>
+<dl><dd><i>&lt;lightweight_sync_interval&gt;1500&lt;/lightweight_sync_interval&gt; </i></dd>
+<dd>Этот параметр определяет время между легкими пакетами синхронизации (игрока) в миллисекундах.</dd>
+<dd>Диапазон доступных значений: 50 - 4000; значение по умолчанию: 1500</dd>
+<dd>Этот параметр может быть изменен и сохранен во время работы сервера через <a href="../SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd>
+<dd>Предлагаемые для этого значения и другие настройки sync_interval можно найти здесь: <a href="../Sync_interval_settings.html" title="Sync interval settings">Sync interval settings</a></dd></dl>
+<h4><span class="mw-headline" id="loadstringfile">loadstringfile</span></h4>
+<dl><dd>Задает местоположение и имя файла, используемого для регистрации вызовов функций loadstring. Если оставить пустым или вовсе не указывать, никакая регистрация не производится.</dd></dl>
+<h4><span class="mw-headline" id="logfile">logfile</span></h4>
+<dl><dd><i>&lt;logfile&gt;logs/server.log&lt;/logfile&gt;</i></dd>
+<dd>Указывает местонахождение и название файла, являющегося основным логом сервера. Если оставить пустым, сервер не будет вести этот лог.</dd></dl>
+<h4><span class="mw-headline" id="maxplayers">maxplayers</span></h4>
+<dl><dd><i>&lt;maxplayers&gt;32&lt;/maxplayers&gt;</i></dd>
+<dd>Этот параметр указывает максимальное количество игровых слотов, доступных на сервере;</dd>
+<dd>значение по умолчанию: 32. Этот параметр является обязательным.</dd></dl>
+<h4><span class="mw-headline" id="minclientversion">minclientversion</span></h4>
+<dl><dd><i>&lt;minclientversion&gt;&lt;/minclientversion&gt;</i></dd>
+<dd>Минимальная версия клиента. Клиентам ниже этой версии будет отказано в соединении. После отсоединения клиентам будет дана возможность закачать обновление. Если оставить пустым, эта настройка отключена и ограничения на возможность подключаться нет. Номера версий описаны на <a href="../GetPlayerVersion.html" title="GetPlayerVersion">getPlayerVersion</a> и выглядят примерно так: 1.1.0-9.03100.0</dd>
+<dd>Этот параметр может быть изменен и сохранен во время работы сервера через <a href="../SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd>
+<dd><b>Заметьте, что эта настройка отвечает только за то, следует ли предложить клиенту обновиться. Фактический номер билда, который он получит, будет [<a rel="nofollow" class="external text" href="http://nightly.mtasa.com/ver">наибольшим среди доступных</a>].</b></dd></dl>
+<h4><span class="mw-headline" id="minclientversion_auto_update">minclientversion_auto_update</span></h4>
+<dl><dd><i>&lt;minclientversion_auto_update&gt;&lt;/minclientversion_auto_update&gt;</i></dd>
+<dd>Значения: 0 - отключено, 1 - включено (с задержкой на несколько дней), 2 - включено (без задержек); значение по умолчанию: 1.</dd>
+<dd>Этот параметр определяет, обновлять ли параметр &lt;minclientversion&gt; автоматически и когда.</dd>
+<dd>Поддержка обновления &lt;minclientversion&gt; может помочь улучшить безопасность.</dd>
+<dd>Примечание: Установка без задержек (2) рекомендуется только для соревновательных серверов.</dd></dl>
+<h4><span class="mw-headline" id="module">module</span></h4>
+<dl><dd><i>&lt;!-- &lt;module src="sample_win32.dll"/&gt; --&gt;</i></dd>
+<dd><i>&lt;!-- &lt;module src="sample_linux.so"/&gt; --&gt;</i></dd>
+<dd>Указывает модули, которые загружаются с сервером. Чтобы загрузить несколько модулей, добавьте больше строк (параметров) &lt;module&gt;. Опциональный параметр.</dd></dl>
+<h4><span class="mw-headline" id="networkencryption">networkencryption</span></h4>
+<dl><dd><i>&lt;networkencryption&gt;1&lt;/networkencryption&gt;</i></dd>
+<dd>Этот параметр указывает, будет ли обмен информацией между сервером и клиентом шифроваться. Шифрование может помочь в предотвращении просмотра и изменения сетевых данных.</dd>
+<dd>Значения: 0 - отключено , 1 - включено&#160;; значение по умолчанию: 1. Опциональный параметр.</dd>
+<dd>Этот параметр может быть изменен и сохранен во время работы сервера через <a href="../SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd></dl>
+<h4><span class="mw-headline" id="password">password</span></h4>
+<dl><dd><i>&lt;password&gt;&lt;/password&gt; </i></dd>
+<dd>Если установлен, игрокам перед подключением к серверу понадобится вводить пароль, указанный выше. Если оставить пустым, пароль им не потребуется.
+<dl><dd>Этот параметр может быть изменен и сохранен во время работы сервера через <a href="../SetServerPassword.html" title="SetServerPassword">setServerPassword</a> или <a href="../SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd></dl></dd></dl>
+<h4><span class="mw-headline" id="ped_sync_interval">ped_sync_interval</span></h4>
+<dl><dd><i>&lt;ped_sync_interval&gt;400&lt;/ped_sync_interval&gt; </i></dd>
+<dd>Этот параметр определяет время между пакетами синхронизации пешеходов в миллисекундах.</dd>
+<dd>Диапазон доступных значений: 50 - 4000; значение по умолчанию: 400</dd>
+<dd>Этот параметр может быть изменен и сохранен во время работы сервера через <a href="../SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd>
+<dd>Предлагаемые для этого значения и другие настройки sync_interval можно найти здесь: <a href="../Sync_interval_settings.html" title="Sync interval settings">Sync interval settings</a></dd></dl>
+<h4><span class="mw-headline" id="ped_syncer_distance">ped_syncer_distance</span></h4>
+<dl><dd><i>&lt;ped_syncer_distance&gt;100&lt;/ped_syncer_distance&gt;</i></dd>
+<dd>Этот параметр определяет расстояние, на котором игрок сможет синхронизировать пешехода.</dd>
+<dd>Диапазон доступных значений: 50 - 400; значение по умолчанию: 100</dd>
+<dd>Этот параметр может быть изменен и сохранен во время работы сервера через <a href="../SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd></dl>
+<h4><span class="mw-headline" id="player_sync_interval">player_sync_interval</span></h4>
+<dl><dd><i>&lt;player_sync_interval&gt;100&lt;/player_sync_interval&gt; </i></dd>
+<dd>Этот параметр определяет время между пакетами синхронизации игрока в миллисекундах.</dd>
+<dd>Диапазон доступных значений: 50 - 4000; значение по умолчанию: 100</dd>
+<dd>Этот параметр может быть изменен и сохранен во время работы сервера через <a href="../SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd>
+<dd>Предлагаемые для этого значения и другие настройки sync_interval можно найти здесь: <a href="../Sync_interval_settings.html" title="Sync interval settings">Sync interval settings</a></dd></dl>
+<h4><span class="mw-headline" id="recommendedclientversion">recommendedclientversion</span></h4>
+<dl><dd><i>&lt;recommendedclientversion&gt;&lt;/recommendedclientversion&gt;</i></dd>
+<dd>Рекомендуемая версия клиента. Если у клиента версия ниже, то при подсоединении ему будет предложено закачать обновление. Если оставить пустым, эта настройка отключена.</dd>
+<dd>Этот параметр может быть изменен и сохранен во время работы сервера через <a href="../SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd>
+<dd><b>Заметьте, что эта настройка отвечает только за то, следует ли предложить клиенту обновиться. Фактический номер билда, который он получит, будет [<a rel="nofollow" class="external text" href="http://nightly.mtasa.com/ver">наибольшим среди доступных</a>].</b></dd></dl>
+<h4><span class="mw-headline" id="resource">resource</span></h4>
+<dl><dd><i>&lt;resource src="admin" startup="1" protected="0"/&gt;</i></dd>
+<dd><i>&lt;resource src="defaultstats" startup="1" protected="0"/&gt;</i></dd>
+<dd><i>&lt;resource src="helpmanager" startup="1" protected="0"/&gt;</i></dd>
+<dd><i>&lt;resource src="joinquit" startup="1" protected="0"/&gt;</i></dd>
+<dd><i>&lt;resource src="mapcycler" startup="1" protected="0"/&gt;</i></dd>
+<dd><i>&lt;resource src="mapmanager" startup="1" protected="0"/&gt;</i></dd>
+<dd><i>&lt;resource src="parachute" startup="1" protected="0"/&gt;</i></dd>
+<dd><i>&lt;resource src="resourcebrowser" startup="1" protected="1" default="true"/&gt;</i></dd>
+<dd><i>&lt;resource src="resourcemanager" startup="1" protected="1"/&gt;</i></dd>
+<dd><i>&lt;resource src="scoreboard" startup="1" protected="0"/&gt;</i></dd>
+<dd><i>&lt;resource src="spawnmanager" startup="1" protected="0"/&gt;</i></dd>
+<dd><i>&lt;resource src="voice" startup="1" protected="0" /&gt;</i></dd>
+<dd><i>&lt;resource src="votemanager" startup="1" protected="0"/&gt;</i></dd>
+<dd><i>&lt;resource src="webadmin" startup="1" protected="0"/&gt;</i></dd>
+<dd>Указывает ресурсы, которые загружаются при запуске сервера и/или являются защищенными от возможности быть остановленными, при этом единственный способ остановить их будет только с помощью команды сервера <i>stop</i> или функции <a href="../StopResource.html" title="StopResource">stopResource</a>. Чтобы указать несколько ресурсов, добавьте больше строк (параметров) &lt;resource&gt;.</dd></dl>
+<dl><dd>Кроме того, есть несколько атрибутов, которые контролируют как сервер поступает с каждым ресурсом:
+<ul><li> <b>src</b>: имя ресурса. Единственный обязательный атрибут.</li>
+<li> <b>startup</b>: контролирует, будет ли запущен ресурс при старте сервера или нет. Если "1", "true" или "yes", то ресурс будет запущен. Если не указано, то по умолчанию ресурс не запускается.</li>
+<li> <b>protected</b>: если "1", "true" или "yes", ресурс не сможет быть остановлен после запуска.</li>
+<li> <b>default</b>: если установлено значение "1", "true" или "yes", этот ресурс будет показан на главной странице встроенного HTTP-сервера, когда ни один другой ресурс не приводится в веб-адресе. Не возможно иметь более одного ресурса по умолчанию.</li></ul></dd></dl>
+<h4><span class="mw-headline" id="scriptdebuglogfile">scriptdebuglogfile</span></h4>
+<dl><dd><i>&lt;scriptdebuglogfile&gt;logs/scripts.log&lt;/scriptdebuglogfile&gt; </i></dd>
+<dd>Указывает местоположение и название лог-файла debugscript. Если оставить пустым, сервер не будет вести этот лог.</dd></dl>
+<h4><span class="mw-headline" id="scriptdebugloglevel">scriptdebugloglevel</span></h4>
+<dl><dd><i>&lt;scriptdebugloglevel&gt;0&lt;/scriptdebugloglevel&gt;</i></dd>
+<dd>Указывает уровень лог-файла debugscript. Доступные значения: 0, 1, 2, 3. Если не установлен, то по умолчанию 0.</dd></dl>
+<h4><span class="mw-headline" id="serverip">serverip</span></h4>
+<dl><dd><i>&lt;serverip&gt;&lt;/serverip&gt;</i></dd>
+<dd><b>ИСПОЛЬЗУЙТЕ ЭТОТ ПАРАМЕТР ТОЛЬКО ЕСЛИ ВЫ УВЕРЕНЫ В ТОМ, ЧТО ДЕЛАЕТЕ</b></dd>
+<dd>В основном он требуется только профессиональным серверам и в других случаях его следует оставлять пустым. Этот параметр указывает используемый IP для серверов, у которых имеется множество IP-адресов. Если оставить пустым, по умолчанию будет использоваться стандартный локальный IP-адрес сервера.</dd>
+<dd>SERVERIP СЛЕДУЕТ ОСТАВИТЬ ПУСТЫМ ЗА ИСКЛЮЧЕНИЕМ СЛУЧАЕВ, КОГДА ВЫ УВЕРЕНЫ В ТОМ, ЧТО ДЕЛАЕТЕ</dd>
+<dd>Люди, которые все же решатся, а потом будут просить о помощи, будут первыми поставлены к стенке после революции</dd></dl>
+<h4><span class="mw-headline" id="servername">servername</span></h4>
+<dl><dd><i>&lt;servername&gt;Default MTA Server&lt;/servername&gt;</i></dd>
+<dd>Этот параметр указывает название, под которым сервер будет видимым во внутриигровом браузере серверов и Game-Monitor'е. Этот параметр является обязательным.</dd></dl>
+<h4><span class="mw-headline" id="serverport">serverport</span></h4>
+<dl><dd><i>&lt;serverport&gt;22003&lt;/serverport&gt; </i></dd>
+<dd>Этот параметр указывает UDP порт сервера, на который будут поступать соединения игроков;</dd>
+<dd>значение по умолчанию: 22003. Этот параметр является обязательным.</dd></dl>
+<h4><span class="mw-headline" id="threadnet">threadnet</span></h4>
+<dl><dd><i>&lt;threadnet&gt;1&lt;/threadnet&gt; </i></dd>
+<dd>Этот параметр указывает, запускать ли сетевую синхронизацию отдельным потоком или нет.</dd>
+<dd>Включение сделает синхронизацию глаже, но может также слегка увеличить использование ЦП.</dd>
+<dd>Значения: 0 - отключено , 1 - включено&#160;; значение по умолчанию: 1.</dd>
+<dd>Этот параметр может быть изменен и сохранен во время работы сервера через <a href="../SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd></dl>
+<h4><span class="mw-headline" id="unoccupied_vehicle_sync_interval">unoccupied_vehicle_sync_interval</span></h4>
+<dl><dd><i>&lt;unoccupied_vehicle_sync_interval&gt;400&lt;/unoccupied_vehicle_sync_interval&gt; </i></dd>
+<dd>Этот параметр определяет время между пакетами синхронизации пустого транспортного средства в миллисекундах.</dd>
+<dd>Диапазон доступных значений: 50 - 4000; значение по умолчанию: 400</dd>
+<dd>Этот параметр может быть изменен и сохранен во время работы сервера через <a href="../SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd>
+<dd>Предлагаемые для этого значения и другие настройки sync_interval можно найти здесь: <a href="../Sync_interval_settings.html" title="Sync interval settings">Sync interval settings</a></dd></dl>
+<h4><span class="mw-headline" id="unoccupied_vehicle_syncer_distance">unoccupied_vehicle_syncer_distance</span></h4>
+<dl><dd><i>&lt;unoccupied_vehicle_syncer_distance&gt;130&lt;/unoccupied_vehicle_syncer_distance&gt;</i></dd>
+<dd>Этот параметр определяет расстояние, на котором игрок сможет синхронизировать никем не занятый транспорт.</dd>
+<dd>Диапазон доступных значений: 50 - 400; значение по умолчанию: 130</dd>
+<dd>Этот параметр может быть изменен и сохранен во время работы сервера через <a href="../SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd></dl>
+<h4><span class="mw-headline" id="vehext_percent">vehext_percent</span></h4>
+<dl><dd><i>&lt;vehext_percent&gt;0&lt;/vehext_percent&gt;</i></dd>
+<dd>Этот параметр позволит добиться лучшей синхронизации транспорта, движущегося с большой скоростью, за счёт компенсации задержки перемещения транспорта, сдвигая его дальше в зависимости от пинга игрока в процентах.</dd>
+<dd>Диапазон доступных значений: 0 - 120; значение по умолчанию: 0</dd>
+<dd>Этот параметр может быть изменен и сохранен во время работы сервера через <a href="../SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd></dl>
+<h4><span class="mw-headline" id="vehext_ping_limit">vehext_ping_limit</span></h4>
+<dl><dd><i>&lt;vehext_ping_limit&gt;150&lt;/vehext_ping_limit&gt;</i></dd>
+<dd>Этот параметр отвечает за максимальный предел пинга игрока, по которому рассчитывается упреждение перемещения транспорта, в миллисекундах.</dd>
+<dd>Диапазон доступных значений: 0 - 500; значение по умолчанию: 150</dd>
+<dd>Этот параметр может быть изменен и сохранен во время работы сервера через <a href="../SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd></dl>
+<h4><span class="mw-headline" id="voice">voice</span></h4>
+<dl><dd><i>&lt;voice&gt;0&lt;/voice&gt;</i></dd>
+<dd>Этот параметр указывает, включать ли для игроков внутриигровой голосовой чат или нет</dd>
+<dd>Значения: 0 - отключено , 1 - включено</dd></dl>
+<h4><span class="mw-headline" id="voice_bitrate">voice_bitrate</span></h4>
+<dl><dd><i>&lt;!-- &lt;voice_bitrate&gt;24600&lt;/voice_bitrate&gt; --&gt;</i></dd>
+<dd>Указывает битрейт голоса в bps. Этот опциональный параметр перекрывает две последующие настройки. Если не установлен, MTA сама контролирует это. Будьте осторожны в использовании.</dd></dl>
+<h4><span class="mw-headline" id="voice_quality">voice_quality</span></h4>
+<dl><dd><i>&lt;voice_quality&gt;4&lt;/voice_quality&gt;</i></dd>
+<dd>Этот параметр указывает качество голоса для голосового чата. Чтобы это действовало, параметр 'voice' должен быть установлен на 1. Большие значения используют больше пропускной способности канала и поднимают качество голосового чата в целом</dd>
+<dd>Диапазон доступных значений: 0 - 10.  По умолчанию - 4</dd></dl>
+<h4><span class="mw-headline" id="voice_samplerate">voice_samplerate</span></h4>
+<dl><dd><i>&lt;voice_samplerate&gt;1&lt;/voice_samplerate&gt;</i></dd>
+<dd>Этот параметр указывает частоту дискретизации голосового чата. Чтобы это действовало, параметр 'voice' должен быть установлен на 1. Большие значения используют больше пропускной способности канала и поднимают дискретизационное качество голосового чата</dd>
+<dd>Значения: 0 - Узкополосный (8kHz), 1 - Широкополосный (16kHz), 2 - Ультраширокополосный (32kHz).  По умолчанию - 1</dd></dl>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625165300
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.014 seconds
+Real time usage: 0.016 seconds
+Preprocessor visited node count: 295/1000000
+Preprocessor generated node count: 571/1000000
+Post‐expand include size: 1583/2097152 bytes
+Template argument size: 775/2097152 bytes
+Highest expansion depth: 8/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    2.172      1 - -total
+100.00%    2.172      1 - Template:New_feature/item
+ 51.30%    1.114      1 - Template:Current_Version
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:6554-0!*!0!!en!*!* and timestamp 20190625165300 and revision id 49879
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=RU/Server_mtaserver.conf&amp;oldid=49879">https://wiki.multitheftauto.com/index.php?title=RU/Server_mtaserver.conf&amp;oldid=49879</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="../Special_Categories.html" title="Special:Categories">Categories</a>: <ul><li><a href="http://wiki.localhost/index.php?title=Category:Changes_in_1.3.4&amp;action=edit&amp;redlink=1" class="new" title="Category:Changes in 1.3.4 (page does not exist)">Changes in 1.3.4</a></li><li><a href="../Category_%d0%9f%d0%be%d0%b4%d0%b4%d0%b5%d1%80%d0%b6%d0%ba%d0%b0.html" title="Category:Поддержка">Поддержка</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Server_mtaserver.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:RU/Server_mtaserver.conf&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=RU/Server_mtaserver.conf&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=RU/Server_mtaserver.conf&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=RU%2FServer+mtaserver.conf" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=RU%2FServer+mtaserver.conf" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/RU/Server_mtaserver.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/RU/Server_mtaserver.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=RU/Server_mtaserver.conf&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=RU/Server_mtaserver.conf&amp;oldid=49879" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=RU/Server_mtaserver.conf&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=Server_mtaserver.conf" title="Server mtaserver.conf – English" lang="en" hreflang="en">English</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 27 November 2016, at 06:19.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":44});});</script></body></html>

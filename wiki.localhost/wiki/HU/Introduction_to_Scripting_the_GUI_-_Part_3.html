@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>HU/Introduction to Scripting the GUI - Part 3 - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"HU/Introduction_to_Scripting_the_GUI_-_Part_3","wgTitle":"HU/Introduction to Scripting the GUI - Part 3","wgCurRevisionId":60752,"wgRevisionId":60752,"wgArticleId":10978,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["GUI Tutorials"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"HU/Introduction_to_Scripting_the_GUI_-_Part_3","wgRelevantArticleId":10978,"wgRequestId":"6805c133838f402741423600","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-HU_Introduction_to_Scripting_the_GUI_-_Part_3 rootpage-HU_Introduction_to_Scripting_the_GUI_-_Part_3 skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">HU/Introduction to Scripting the GUI - Part 3</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>Ebben a tutoriálban készíteni fogunk egy egyszerű város teleport ablakot három gombbal (mindegyik városra egy), mely abba a városba teleportál minket, amelyre kattintottunk.
+</p><p><br />
+</p>
+<table cellspacing="0" style="padding: 5px; width: 80%; margin: 2px auto 2px auto; border: 1px solid #BFBFFF; background: #E0E0FF; border-left: 10px solid #BFBFFF;">
+<tr>
+<td style="width: 32px; vertical-align:top; display: none;" rowspan="2"> [[{{{image}}}|link=]]
+</td>
+<td style=""> <b>Megjegyzés:</b> Vegye figyelembe, hogy ez a tutoriál a <a href="../Introduction_to_Scripting_the_GUI.html" title="Introduction to Scripting the GUI">Bevezetés a GUI készítésébe</a> tartalmára épül.
+</td></tr>
+<tr>
+<td rowspan="1" style="padding-left: 10px;">
+</td></tr></table>
+<p><br />
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:242px;"><a href="../File_Gui_teleport_tutorial.html" class="image"><img alt="" src="http://wiki.localhost/images/b/b0/Gui_teleport_tutorial.PNG" width="240" height="197" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="../File_Gui_teleport_tutorial.html" class="internal" title="Enlarge"></a></div>GUI Teleport Window</div></div></div>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#A_GUI_k.C3.A9sz.C3.ADt.C3.A9se"><span class="tocnumber">1</span> <span class="toctext">A GUI készítése</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Alapbe.C3.A1ll.C3.ADt.C3.A1sok"><span class="tocnumber">1.1</span> <span class="toctext">Alapbeállítások</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Ablak_l.C3.A9trehoz.C3.A1sa"><span class="tocnumber">1.2</span> <span class="toctext">Ablak létrehozása</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#C.C3.ADmke_l.C3.A9trehoz.C3.A1sa"><span class="tocnumber">1.3</span> <span class="toctext">Címke létrehozása</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#A_gomb_l.C3.A9trehoz.C3.A1sa"><span class="tocnumber">1.4</span> <span class="toctext">A gomb létrehozása</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#A_function_haszn.C3.A1lata"><span class="tocnumber">1.5</span> <span class="toctext">A function használata</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#A_GUI_megnyit.C3.A1sa"><span class="tocnumber">1.6</span> <span class="toctext">A GUI megnyitása</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#A_gomb_meg.C3.ADr.C3.A1sa"><span class="tocnumber">2</span> <span class="toctext">A gomb megírása</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#A_klikk_.C3.A9szlel.C3.A9se"><span class="tocnumber">2.1</span> <span class="toctext">A klikk észlelése</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#A_klikk_kezel.C3.A9se"><span class="tocnumber">2.2</span> <span class="toctext">A klikk kezelése</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Szerver_oldali_event_l.C3.A9trehoz.C3.A1sa"><span class="tocnumber">2.3</span> <span class="toctext">Szerver oldali event létrehozása</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#A_j.C3.A1t.C3.A9kos_elhelyez.C3.A9se"><span class="tocnumber">2.4</span> <span class="toctext">A játékos elhelyezése</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Ford.C3.ADtotta"><span class="tocnumber">3</span> <span class="toctext">Fordította</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="A_GUI_k.C3.A9sz.C3.ADt.C3.A9se">A GUI készítése</span></h2>
+<h3><span class="mw-headline" id="Alapbe.C3.A1ll.C3.ADt.C3.A1sok">Alapbeállítások</span></h3>
+<p>Az első dolog, amit létre kell hoznunk, az a  GUI elem.
+Ehhez a tutoriálhoz egy <a href="../Element/GUI/Window.html" title="Element/GUI/Window">ablakot</a>, három <a href="../Element/GUI/Button.html" title="Element/GUI/Button">gombot</a> és egy <a href="../Element/GUI/Text_label.html" title="Element/GUI/Text label">címkét</a> használunk.
+<b>Abszolút</b> pozícióértékeket fogunk használni.
+</p><p>Ahogy az <a href="Introduction_to_Scripting_the_GUI.html" title="HU/Introduction to Scripting the GUI">előző tutoriálban</a> is említettük, minden GUI-t client oldalon kell létrehozni.  
+</p><p>Ha követte az utasításokat az előző tutoriálból, akkor nyissa meg a gui.lua fájlt, amivel majd dolgozni fog.
+</p><p>Ha nem, lépjen a /Your MTA Server/mods/deathmatch/resources/myserver/ könyvtárba, és hozzon létre egy mappát "client" néven. 
+A /client/ könyvtárban hozzon létre egy szöveges fájlt "gui.lua" néven.
+</p><p>Ha még nem tette meg, ne felejtse el hozzáadni az új gui.lua fájlt a meta.xml-hez a fő resource-ba, és adja meg client script-ként:
+</p>
+<pre class="prettyprint lang-xml">
+&lt;script src="client/gui.lua" type="client" /&gt;
+</pre>
+<h3><span class="mw-headline" id="Ablak_l.C3.A9trehoz.C3.A1sa">Ablak létrehozása</span></h3>
+<p>Ebben a fájlban írni fogunk egy function-t, ami kirajzolja az ablakot:
+Az ablak létrehozásához a <a href="../GuiCreateWindow.html" title="GuiCreateWindow">guiCreateWindow</a>-ot fogjuk használni:
+</p>
+<pre class="prettyprint lang-lua">
+-- create the function that will hold our gui creation code
+function createTeleportWindow()
+	-- get the screen width and height
+	local sWidth, sHeight = guiGetScreenSize()
+ 
+	-- create the window, using some maths to find the centre of the screen
+	local Width,Height = 231,188
+	local X = (sWidth/2) - (Width/2)
+	local Y = (sHeight/2) - (Height/2)
+ 
+	-- create the window
+	teleportWindow = guiCreateWindow(X,Y,Width,Height,"City Teleporter",false)
+ 
+	-- stop players from being able to resize the window
+	guiWindowSetSizable(teleportWindow,false)
+end
+</pre>
+<p>Ez létre fog hozni egy alap ablakot a képernyő közepére "City Teleporter" címmel, az ablak nem méretezhető.
+</p>
+<h3><span class="mw-headline" id="C.C3.ADmke_l.C3.A9trehoz.C3.A1sa">Címke létrehozása</span></h3>
+<p>Ezután hozzáadjuk a címkét, amely leírja a gombok működését.
+A címke létrehozásához a <a href="../GuiCreateLabel.html" title="GuiCreateLabel">guiCreateLabel</a>-t fogjuk használni:
+</p><p><b>Mostpedig több kódot adunk hozzá a már meglévő 'createTeleportWindow' function-ünkhöz. Ez nem egy új function, hanem a már meglévőt helyettesíti.</b>
+</p>
+<pre class="prettyprint lang-lua">
+function createTeleportWindow()
+	local sWidth, sHeight = guiGetScreenSize()
+ 
+	local Width,Height = 231,188
+	local X = (sWidth/2) - (Width/2)
+	local Y = (sHeight/2) - (Height/2)
+ 
+	teleportWindow = guiCreateWindow(X,Y,Width,Height,"City Teleporter",false)
+ 
+	guiWindowSetSizable(teleportWindow,false)
+	
+	-- create a label with our instructions on
+	teleportLabel = guiCreateLabel(18,23,191,33,"Click a button to teleport to that location",false,teleportWindow)
+	
+	-- set the horizontal alignment of the label to center (ie: in the middle of the window)
+	-- also note the final argument "true" 
+	-- this turns on wordwrap so if your text goes over the edge of the label, it will wrap around and start a new line automatically
+	guiLabelSetHorizontalAlign(teleportLabel,"center",true)	
+end
+</pre>
+<p>Mostanra már van egy egyszerű ablakunk néhány középre igazított utasítással a tetején.
+</p>
+<h3><span class="mw-headline" id="A_gomb_l.C3.A9trehoz.C3.A1sa">A gomb létrehozása</span></h3>
+<p>Most hozzáadjuk a a város teleport gombokat.
+A gomb létrehozásához a <a href="../GuiCreateButton.html" title="GuiCreateButton">guiCreateButton</a>-t fogjuk használni:
+</p><p><b>Mostpedig több kódot adunk hozzá a már meglévő 'createTeleportWindow' function-ünkhöz. Ez nem egy új function, hanem a már meglévőt helyettesíti.</b>
+</p>
+<pre class="prettyprint lang-lua">
+function createTeleportWindow()
+	local sWidth, sHeight = guiGetScreenSize()
+ 
+	local Width,Height = 231,188
+	local X = (sWidth/2) - (Width/2)
+	local Y = (sHeight/2) - (Height/2)
+ 
+	teleportWindow = guiCreateWindow(X,Y,Width,Height,"City Teleporter",false)
+ 
+	guiWindowSetSizable(teleportWindow,false)
+	
+	teleportLabel = guiCreateLabel(18,23,191,33,"Click a button to teleport to that location",false,teleportWindow)
+	
+	guiLabelSetHorizontalAlign(teleportLabel,"center",true)	
+	
+	-- create the button for teleporting to Los Santos
+	teleportButtonLS = guiCreateButton(18,63,195,35,"Los Santos",false,teleportWindow)
+	
+	-- slightly below that, create another button for teleporting to San Fierro
+	teleportButtonSF = guiCreateButton(18,103,195,35,"San Fierro",false,teleportWindow)
+	
+	-- slightly below that again, create another button for teleport to Las Venturas
+	teleportButtonLV = guiCreateButton(18,143,195,35,"Las Venturas",false,teleportWindow)	
+	
+	-- hide the gui
+	guiSetVisible(teleportWindow,false)
+end
+</pre>
+<h3><span class="mw-headline" id="A_function_haszn.C3.A1lata">A function használata</span></h3>
+<p>A 'createTeleportWindow' function most már kész, de nem fog csinálni semmit, míg meg nem hívjuk.
+Ajánlott az összes GUI létrehozás, amikor a client resource elindul. Rejtse el őket, majd amikor szükség van rá, jelenítse meg a játékosnak. 
+</p><p>Ezért írni fogunk egy eseménykezelőt az <a href="../OnClientResourceStart.html" title="OnClientResourceStart">onClientResourceStart</a>-ra, hogy hozza létre az ablakot:
+</p>
+<pre class="prettyprint lang-lua">
+-- add our event handler, using the root element of the resource
+-- this means it will only trigger when its own resource is started
+addEventHandler("onClientResourceStart", getResourceRootElement(getThisResource()), 
+	function ()
+		-- call the createTeleportWindow function to create our gui
+		createTeleportWindow()
+	end
+)
+</pre>
+<p>Most, hogy létrehoztuk a GUI-t, kell egy módszer arra, hogy a játékos megtudja ezt nyitni.
+</p>
+<h3><span class="mw-headline" id="A_GUI_megnyit.C3.A1sa">A GUI megnyitása</span></h3>
+<p>Számos módon lehet ezt kivitelezni, ez függ attól, hogy Ön mit preferál, és függ a helyzet részleteitől.
+Ehhez a tutoriálhoz egy egyszerű <a href="../AddCommandHandler.html" title="AddCommandHandler">parancsot</a> fogunk használni.
+</p><p>A GUI megnyitásához a /teleportme parancsot fogjunk használni:
+</p>
+<pre class="prettyprint lang-lua">
+-- create our function
+function openTeleportWindow()
+	-- show the window
+	guiSetVisible(teleportWindow,true)
+		
+	-- show the mouse cursor
+	showCursor(true,true)
+end
+
+-- define the command /teleportme to call the openTeleportWindow function
+addCommandHandler("teleportme",openTeleportWindow)
+</pre>
+<p>Ezután megkell írnunk a gomb működését, hogy teleportálja a játékost.
+</p>
+<h2><span class="mw-headline" id="A_gomb_meg.C3.ADr.C3.A1sa">A gomb megírása</span></h2>
+<p>Most, hogy létrehoztuk a GUI-t, és a játékos is képes megnyitni azt, működővé is kell hogy tegyük. 
+</p>
+<h3><span class="mw-headline" id="A_klikk_.C3.A9szlel.C3.A9se">A klikk észlelése</span></h3>
+<p>Ahogy azt előző tutoriálban is leírtuk, ha egy játékos rákattint a GUI bármely részére, akkor az "<a href="../OnClientGUIClick.html" title="OnClientGUIClick">onClientGUIClick</a>" event meg fog hívodni arra a GUI részre, amelyre kattintott. 
+Ezt fejben tartva, mindhárom teleport gombunkhoz egy eseménykezelőt fogunk csatolni: 
+</p>
+<pre class="prettyprint lang-lua">
+-- attach the event onClientGUIClick to teleportButtonLS and set it to trigger the 'teleportPlayer' function
+addEventHandler("onClientGUIClick", teleportButtonLS, teleportPlayer, false)
+
+-- attach the event onClientGUIClick to teleportButtonSF and set it to trigger the 'teleportPlayer' function
+addEventHandler("onClientGUIClick", teleportButtonSF, teleportPlayer, false)
+
+-- attach the event onClientGUIClick to teleportButtonLV and set it to trigger the 'teleportPlayer' function
+addEventHandler("onClientGUIClick", teleportButtonLV, teleportPlayer, false)
+</pre>
+<p>Helyezze ezt a sort a 'createTeleportWindow' function-be, a létrehozott gomb <b>után</b>.
+</p><p>Figyelje meg, hogy hogyan állítottuk be mind három gombot, hogy meghívja a 'teleportPlayer' functiont.
+</p><p>Ez lehetővé teszi számunkra, hogy később egyszerűen bővítsük kódunkat (például, több teleport location hozzáadása) egy egyszerű if utasítással a function-ben.
+</p>
+<h3><span class="mw-headline" id="A_klikk_kezel.C3.A9se">A klikk kezelése</span></h3>
+<p>Most, hogy az összes gombon észlelni tudjuk a kattintást, kezelnünk is kell azt, amikor rákattintunk.
+</p><p>Ahogy azt már megjegyeztük, ezt a 'teleportPlayer' function-el fogjuk megcsinálni.
+Ehhez if utasításokat fogunk használni, hogy ellenőrizzük melyik gombra lett kattintva, majd meghívjuk a server event-et a megadott teleport koordinátákkal, hogy elhelyezze a játékost:
+</p>
+<pre class="prettyprint lang-lua">
+-- create our function, and add button and state parameters (these are passed automatically with onClickGUIClick)
+function teleportPlayer(button,state)
+	-- if our button was clicked with the left mouse button, and the state of the mouse button is up
+	if button == "left" and state == "up" then
+		-- if the player clicked on the LS teleport button
+		if source == teleportButtonLS then
+		
+			-- trigger the server with our Los Santos coordinates
+			triggerServerEvent("movePlayerToPosition",getLocalPlayer(),1479.6,-1612.8,14.0,0)
+			
+			-- output a message to the player
+			outputChatBox("Welcome to Los Santos!")
+			
+		-- otherwise, if the player clicked on the SF teleport button
+		elseif source == teleportButtonSF then
+		
+			-- trigger the server with our San Fierro coordinates
+			triggerServerEvent("movePlayerToPosition",getLocalPlayer(),-2265.5,534.0,35.0,270)
+
+			-- output a message to the player
+			outputChatBox("Welcome to San Fierro!")
+			
+		-- otherwise, if the player clicked on the LV teleport button
+		elseif source == teleportButtonLV then
+		
+			-- trigger the server with our Las Venturas coordinates
+			triggerServerEvent("movePlayerToPosition",getLocalPlayer(),2036.9,1545.2,10.8,270)
+
+			-- output a message to the player
+			outputChatBox("Welcome to Las Venturas!")
+			
+		end
+		
+		-- hide the window and all the components
+		guiSetVisible(teleportWindow, false)
+		
+		-- hide the mouse cursor
+		showCursor(false)		
+	end	
+end
+</pre>
+<p><br />
+Ha több helyet szeretne hozzáadni, egyszerűen hozzáadhat egy új gombot a GUI-hoz, és ellenőrizze egy másik if utasítás használatával.
+Például:
+</p>
+<pre class="prettyprint lang-lua">
+function teleportPlayer(button,state)
+	if button == "left" and state == "up" then
+		...
+		
+		elseif source == yourNewButton then
+			triggerServerEvent("movePlayerToPosition",getLocalPlayer(),xCoord,yCoord,zCoord,rotation)
+		end
+		...
+	end
+end
+</pre>
+<h3><span class="mw-headline" id="Szerver_oldali_event_l.C3.A9trehoz.C3.A1sa">Szerver oldali event létrehozása</span></h3>
+<p>Ezen a ponton már megvan az összes szükséges kód a kliens oldalon, 
+szóval nyissa meg a szerveroldali 'script.lua' fájlt (<a href="../Scripting_Introduction.html" title="Scripting Introduction">Bevezetés a scriptelésbe</a>-ből) vagy egy másik szerveroldali fájlt, amivel dolgozhat.
+</p><p><br />
+Client oldalon meghívjuk a "movePlayerToPosition" server oldali eventet. Tehát először meghatározzuk ezt az eventet.
+Ehhez <a href="../AddEvent.html" title="AddEvent">addEvent</a>-et fogunk használni, majd <a href="../AddEventHandler.html" title="AddEventHandler">addEventHandler</a>-t:
+</p>
+<pre class="prettyprint lang-lua">
+-- create our function, with the x,y and z values we passed from the client
+function moveThePlayer(x,y,z)
+
+end
+
+-- define our custom event, and allow it to be triggered from the client ('true')
+addEvent("movePlayerToPosition",true)
+-- add an event handler so that when movePlayerToPosition is triggered, the function moveThePlayer is called
+addEventHandler("movePlayerToPosition",root,moveThePlayer)
+</pre>
+<h3><span class="mw-headline" id="A_j.C3.A1t.C3.A9kos_elhelyez.C3.A9se">A játékos elhelyezése</span></h3>
+<p>Most már csak annyi maradt hátra, hogy a játékost az új pozíciójába helyezzük.
+</p><p><b>Mostpedig több kódot adunk hozzá a már meglévő 'moveThePlayer' function-ünkhöz. Ez nem egy új function, hanem a már meglévőt helyettesíti.</b>
+</p>
+<pre class="prettyprint lang-lua">
+-- create our function, with the x,y and z values we passed from the client
+function moveThePlayer(x,y,z,rotation)
+	-- check we have a position and rotation
+	if x and y and z and rotation then
+		-- get the players current skin, so we can spawn them again without losing it
+		local skin = getElementModel(client)
+		
+		-- spawn the player
+		spawnPlayer(client,x,y,z,rotation,skin)
+		
+		-- make sure the players camera is on his character
+		setCameraTarget(client,client)
+	end
+end
+</pre>
+<p>Vegye figyelembe a <a href="../SpawnPlayer.html" title="SpawnPlayer">spawnPlayer</a> használatát a <a href="../SetElementPosition.html" title="SetElementPosition">setElementPosition</a> helyett.
+A <a href="../SpawnPlayer.html" title="SpawnPlayer">spawnPlayer</a> használata számos előnnyel jár, például a pozíció beállítása, mikor 'de-spawned', vagy halott, és automatikusan újratölti az életerőt.
+Természetesen a <a href="../SetElementPosition.html" title="SetElementPosition">setElementPosition</a> is ugyanúgy működne, ha egyszerűen csak áthelyezi őket, így a választás az Öné.
+</p><p>Valamint vegye figyelembe a 'client' változó használatát is, it's an internal variable used by MTA to identify the player who triggered the event.
+</p><p><br />
+Ezen a ponton van egy alap teleport ablakunk, amely lehetővé teszi a játékos számára, hogy teleportáljon a San Andreas három nagyvárosának bármelyikébe.
+</p><p>A GUI-val való további segítségért látogassa meg a <a href="../Category_GUI_Tutorials_hu.html" title="Category:GUI Tutorials hu">GUI tutorials</a> oldalt.
+</p>
+<h2><span class="mw-headline" id="Ford.C3.ADtotta">Fordította</span></h2>
+<pre><b>2018.11.08.</b> <font size="3"><b><a rel="nofollow" class="external text" href="https://wiki.multitheftauto.com/wiki/User:Surge">Surge</a></b></font>
+</pre>
+<!-- 
+NewPP limit report
+Cached time: 20190625164819
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.012 seconds
+Real time usage: 0.013 seconds
+Preprocessor visited node count: 194/1000000
+Preprocessor generated node count: 560/1000000
+Post‐expand include size: 1144/2097152 bytes
+Template argument size: 464/2097152 bytes
+Highest expansion depth: 5/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    2.526      1 - -total
+100.00%    2.526      1 - Template:Note_hu
+ 65.05%    1.643      1 - Template:MessageBox
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:10978-0!*!0!!en!5!* and timestamp 20190625164819 and revision id 60752
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=HU/Introduction_to_Scripting_the_GUI_-_Part_3&amp;oldid=60752">https://wiki.multitheftauto.com/index.php?title=HU/Introduction_to_Scripting_the_GUI_-_Part_3&amp;oldid=60752</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="../Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="../Category_GUI_Tutorials.html" title="Category:GUI Tutorials">GUI Tutorials</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Introduction_to_Scripting_the_GUI_-_Part_3.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:HU/Introduction_to_Scripting_the_GUI_-_Part_3&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=HU/Introduction_to_Scripting_the_GUI_-_Part_3&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=HU/Introduction_to_Scripting_the_GUI_-_Part_3&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=HU%2FIntroduction+to+Scripting+the+GUI+-+Part+3" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=HU%2FIntroduction+to+Scripting+the+GUI+-+Part+3" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/HU/Introduction_to_Scripting_the_GUI_-_Part_3.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/HU/Introduction_to_Scripting_the_GUI_-_Part_3.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=HU/Introduction_to_Scripting_the_GUI_-_Part_3&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=HU/Introduction_to_Scripting_the_GUI_-_Part_3&amp;oldid=60752" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=HU/Introduction_to_Scripting_the_GUI_-_Part_3&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=Introduction_to_Scripting_the_GUI_-_Part_3" title="Introduction to Scripting the GUI - Part 3 – English" lang="en" hreflang="en">English</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 12 November 2018, at 08:28.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":58});});</script></body></html>

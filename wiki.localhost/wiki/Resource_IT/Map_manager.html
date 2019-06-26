@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Resource:IT/Map manager - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"Resource","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":100,"wgPageName":"Resource:IT/Map_manager","wgTitle":"IT/Map manager","wgCurRevisionId":17375,"wgRevisionId":17375,"wgArticleId":4043,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["IT/Pagine italiane","100%","IT/Risorse"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Resource:IT/Map_manager","wgRelevantArticleId":4043,"wgRequestId":"05e4040d169f29272c43340a","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta name='headingclass' content='' data-class='resource' data-subcaption='Risorsa'>
+<meta name='removenamespace' content=''>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-100 ns-subject page-Resource_IT_Map_manager rootpage-Resource_IT_Map_manager skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Resource:IT/Map manager</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div style="border:1px dashed blue;background-color:#E2E2E2;font-family:courier new, courier;padding-left:10px;margin-bottom:20px;"><strong style="color:blue;">«</strong> Torna alla <a href="../IT/Pagina_principale.html" title="IT/Pagina principale">Pagina principale italiana <span style="color:green;">▇</span><span style="color:white;">▇</span><span style="color:red;">▇</span></a>.</div>
+<p><!--HC-->
+<!--NS-->
+Il <b>map manager</b> è una risorsa inclusa nel pacchetto server di MTA:SA DM e comprende comandi, funzioni ed eventi per le gamemodes per gestire dinamicamente le loro mappe. Ad esempio, quando un server ha bisogno di caricare diverse mappe per una race mode, invece di essere messe tutte nella risorsa della gamemode, possono essere inserite in una risorsa separata ed essere successivamente richiamate con la funzione "changeGamemodeMap" quando una nuova gara inizia. 
+</p><p>Più specificamente, il map manager memorizza la lista di tutte le gamemodes/mappe e ne gestisce il caricamento; applica alcune impostazioni della mappa che hanno effetto sul mondo del gioco e setta le regole della mappa e il tipo di gioco su ASE. Comprende inoltre una funzione che visualizza ed aggiorna automaticamente nel browser la mode/mappa.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Un_semplice_tutorial"><span class="tocnumber">1</span> <span class="toctext">Un semplice tutorial</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Un_tutorial_pi.C3.B9_avanzato"><span class="tocnumber">2</span> <span class="toctext">Un tutorial più avanzato</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Utilizzo"><span class="tocnumber">3</span> <span class="toctext">Utilizzo</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Attributi_opzionali_delle_resources"><span class="tocnumber">4</span> <span class="toctext">Attributi opzionali delle resources</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Comandi"><span class="tocnumber">5</span> <span class="toctext">Comandi</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Impostazioni"><span class="tocnumber">6</span> <span class="toctext">Impostazioni</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Funzioni_esportate"><span class="tocnumber">7</span> <span class="toctext">Funzioni esportate</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Eventi"><span class="tocnumber">8</span> <span class="toctext">Eventi</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Impostazioni_supportate_dalle_mappe"><span class="tocnumber">9</span> <span class="toctext">Impostazioni supportate dalle mappe</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Un_semplice_tutorial">Un semplice tutorial</span></h2>
+<p>In questa sezione continueremo a lavorare sulla gamemode che abbiamo creato nella pagina <a href="../IT/Introduzione_allo_scripting.html" title="IT/Introduzione allo scripting">introduzione allo Scripting</a>. Aggiungeremo una semplice risorsa mappa che conterrà gli spawn dei giocatori e caricherà i dati nello script principale quando un giocatore dovrà spawnare.
+</p>
+Innanzitutto crea una cartella sotto <pre class="prettyprint lang-lua">&lt;SERVER&gt;/mods/deathmatch/resources/</pre>, che chiamerai <b>mymap</b>. Dentro <pre class="prettyprint lang-lua">/mymap/</pre> crea un file di testo chiamato <b>meta.xml</b>, che è necessario a tutte le risorse.
+<p>Inserisci questo codice all'interno di <i>meta.xml</i>:
+</p>
+<pre class="prettyprint lang-xml">
+&lt;meta&gt;
+   &lt;info type="map" gamemodes="myserver"/&gt;
+   &lt;map src="mymap.map"/&gt;
+&lt;/meta&gt;
+</pre>
+Notare che questa risorsa è collegata allo script principale tramite l'attributo <pre class="prettyprint lang-lua">gamemodes=""</pre>, che contiene il nome della risorsa principale. Nel tag <pre class="prettyprint lang-lua">map</pre> è indicato il nome del file .map che contiene le informazioni sulla mappa.
+Ora crea un altro file di testo sotto <pre class="prettyprint lang-lua">/mymap/</pre> e chiamalo <b>mymap.map</b>, inserendovi questo codice:
+<pre class="prettyprint lang-xml">
+&lt;map&gt;
+   &lt;spawnpoint id="spawnpoint1" posX="1959.5487060547" posY="-1714.4613037109" posZ="18" rot="63.350006103516" model="0"/&gt;
+&lt;/map&gt;
+</pre>
+Notare che <pre class="prettyprint lang-lua">spawnpoint</pre> è il tipo di elemento usato nella funzione <a href="http://wiki.localhost/index.php?title=IT/getElementsByType&amp;action=edit&amp;redlink=1" class="new" title="IT/getElementsByType (page does not exist)">getElementsByType</a>; così come <pre class="prettyprint lang-lua">id</pre> è usato nella funzione <a href="http://wiki.localhost/index.php?title=IT/getElementByID&amp;action=edit&amp;redlink=1" class="new" title="IT/getElementByID (page does not exist)">getElementByID</a>. 
+Per caricare i dati della mappa lo script principale ha bisogno di un collegamento con la risorsa della mappa. Modifichiamo il file <b>script.lua</b> nella risorsa <pre class="prettyprint lang-lua">myserver</pre>. Inserisci il seguente codice:
+<pre class="prettyprint lang-lua">
+function loadMap(startedMap)
+	mapRoot = getResourceRootElement(startedMap)
+end
+
+addEventHandler("onGamemodeMapStart", g_root, loadMap)
+</pre>
+In pratica, l'evento <pre class="prettyprint lang-lua">onGamemodeMapStart</pre> ci da l'handle della mappa ("startedMap"), che abbiamo usato per estrarre l'handle della risorsa contenente la mappa ("mapRoot").
+Con l'handle della risorsa possiamo estrarne le informazioni sugli spawnpoint. Creando la funzione <pre class="prettyprint lang-lua">joinHandler()</pre> dentro <b>script.lua</b>, invece di specificare le coordinate <b>x</b>, <b>y</b> e <b>z</b>, possiamo usare i dati della mappa come segue:
+<pre class="prettyprint lang-lua">
+function joinHandler()
+	local spawn = getElementsByType("spawnpoint", mapRoot) --Creiamo una table (array) locale contenente gli elementi &lt;spawnpoint&gt;
+	local x,y,z,r --Creaiamo delle variabili locali per tutte le coordinate
+	for key, value in pairs(spawn) do --Inseriamo nelle variabili delle coordinate le coordinate prese dall'elemento &lt;spawnpoint&gt;
+		x = getElementData(value, "posX")
+		y = getElementData(value, "posY")
+		z = getElementData(value, "posZ")
+		r = getElementData(value, "rot")
+	end
+	spawnPlayer(source, x, y, z) --Spawniamo il giocatore alle coordinate appena prese
+	fadeCamera(source, true) --E impostiamo la sua telecamera su di lui
+end
+</pre>
+<p>Ora puoi far partire la gamemode sul tuo server avviando in console il seguente comando:
+</p>
+<pre class="prettyprint lang-lua">gamemode myserver mymap</pre>
+<h2><span class="mw-headline" id="Un_tutorial_pi.C3.B9_avanzato">Un tutorial più avanzato</span></h2>
+<p>In questo tutorial, invece di avviare la mappa con il comando sopra descritto quando avviamo il server, avvieremo la risorsa con qualche linea di script. Questo può tornare utile se hai molte mappe e vuoi che il server le avvii automaticamente.
+</p>
+Prima di tutto dobbiamo creare un handler per l'evento <a href="http://wiki.localhost/index.php?title=IT/onResourceStart&amp;action=edit&amp;redlink=1" class="new" title="IT/onResourceStart (page does not exist)">onResourceStart</a>, che si attiva quando la risorsa principale viene avviata con il comando <pre class="prettyprint lang-lua">gamemode</pre>. Poi, con la funzione assegnata all'evento, carichiamo la risorsa mappa e inizializziamo la mappa:
+<pre class="prettyprint lang-lua">
+function Initialize(startedResource)
+	mapRes = getResourceFromName("mymap") --Otteniamo l'handle della risorsa "mymap"
+	manager = getResourceFromName("mapmanager") --E quello di "mapmanager"
+	startResource(mapRes) --Inizializziamo la risorsa "mymap"
+	
+	call(manager, "changeGamemodeMap", mapRes, getThisResource()) --E chiamiamo la funzione "changeGamemodeMap" dentro mapmanager
+end
+
+addEventHandler("onResourceStart", getResourceRootElement(getThisResource()), Initialize) --Impostiamo Inizialize() come handler per onResourceStart
+</pre>
+La funzione <a href="http://wiki.localhost/index.php?title=IT/call&amp;action=edit&amp;redlink=1" class="new" title="IT/call (page does not exist)">call</a> permette, come visto, di chiamare una funzione presente in un'altra risorsa, in questo caso la funzione <pre class="prettyprint lang-lua">changeGamemodeMap</pre> dentro la riosrsa <b>mapmanager</b>. 
+<p>Se provassi ad avviare il server adesso, riceveresti molti errori "access denied" (accesso negato). QUesto perché la risorsa principale, <b>myserver</b>, non ha ancora accesso di default alla funzione <a href="http://wiki.localhost/index.php?title=IT/startResource&amp;action=edit&amp;redlink=1" class="new" title="IT/startResource (page does not exist)">startResource</a>. Dobbiamo aggiungere la funzione nell'Access Control List con i diritti necessari.
+</p>
+Vai nella cartella <pre class="prettyprint lang-lua">&lt;SERVER&gt;/mods/deathmatch/</pre>. Vedrai un file chiamato <b>acl.xml</b>, aprilo con un qualsiasi editor di testo ed inserisci il seguente codice:
+<pre class="prettyprint lang-xml">
+&lt;group name="myserver"&gt;
+   &lt;acl name="acl_myserver"/&gt;
+   &lt;object name="resource.myserver"/&gt;
+&lt;/group&gt;
+&lt;acl name="acl_myserver"&gt;
+   &lt;right name="function.startResource" access="true"/&gt;
+   &lt;right name="function.stopResource" access="true"/&gt;
+   &lt;right name="function.restartResource" access="true"/&gt;
+&lt;/acl&gt;
+</pre>
+<p>Assicurati che <b>acl.xml</b> sia chiuso, quindi riavvia il server; esso ricaricherà il file ACL, dando i diritti di accesso della risorsa alla funzione. Ora puoi avviare la funzione con:
+</p>
+<pre class="prettyprint lang-lua">gamemode myserver</pre>
+<p>E lo script avvierà la mappa per voi.
+</p>
+<h2><span class="mw-headline" id="Utilizzo">Utilizzo</span></h2>
+<p>Per usare il map manager, le tue risorse devono essere prima marcate come <i>gamemodes</i> o <i>mappe</i>.
+</p>
+Devi contrassegnare le <b>risorse gamemode</b> con il tipo corretto nel tag <pre class="prettyprint lang-lua">info</pre>:
+<pre class="prettyprint lang-xml">&lt;info description="Una gamemode" type="gamemode" /&gt;</pre>
+Anche le <b>risorse mappa</b> hanno bisogno dell'attributo <pre class="prettyprint lang-lua">type="map"</pre>, più un attributo <pre class="prettyprint lang-lua">gamemodes</pre> con una lista di gamemodes con cui sono compatibili, <i>separate da virgole e senza spazi</i>.
+<pre class="prettyprint lang-xml">&lt;info description="Una mappa" type="map" gamemodes="ctv,koth" /&gt;</pre>
+<p>Il server può caricare al massimo una gamemode e una mappa alla volta.
+</p>
+<h2><span class="mw-headline" id="Attributi_opzionali_delle_resources">Attributi opzionali delle resources</span></h2>
+Questi attributi vanno nel tag <pre class="prettyprint lang-lua">info</pre> della risorsa.
+<ul><li><pre class="prettyprint lang-lua">name</pre>: Il nome pubblico della risorsa, che verrà visualizzato nella lista di gamemodes e nei messaggi del server al posto del nome del file.</li></ul>
+<h2><span class="mw-headline" id="Comandi">Comandi</span></h2>
+<p>Questi comandi sono eseguibili sulla risorsa map manager:
+</p>
+<ul><li><pre class="prettyprint lang-lua">changemap nuovamappa [nuovagamemode]</pre> Cambia la mappa attuale, e opzionalmente anche la gamemode.</li>
+<li><pre class="prettyprint lang-lua">changemode nuovagamemode [nuovamappa]</pre> Cambia la gamemode attuale, e opzionalmente anche la mappa.</li>
+<li><pre class="prettyprint lang-lua">gamemode nuovagamemode [nuovamappa]</pre> Come sopra.</li>
+<li><pre class="prettyprint lang-lua">stopmode</pre> Stoppa la gamemode e la mappa corrente.</li>
+<li><pre class="prettyprint lang-lua">stopmap</pre> Stoppa la mappa corrente.</li>
+<li><pre class="prettyprint lang-lua">maps [gamemode]</pre> Mostra tutte le mappe del server, opzionalmente solo quelle collegate alla gamemode specificata.</li>
+<li><pre class="prettyprint lang-lua">gamemodes</pre> Mostra tutte le gamemodes.</li></ul>
+<h2><span class="mw-headline" id="Impostazioni">Impostazioni</span></h2>
+<ul><li><pre class="prettyprint lang-lua">mapmanager.color [colore in codice hex]</pre> Cambia il colore dei messaggi di output del mapmanager con quello in codice esadecimale(<b>#RRGGBB</b>) (default: <b>#E1AA5A</b>).</li></ul>
+<ul><li><pre class="prettyprint lang-lua">mapmanager.messages [booleano]</pre> <b>true</b> se i cambiamenti di gamemode/mappa sono abilitati, <b>false</b> se no (default: <b>true</b>).</li></ul>
+<ul><li><pre class="prettyprint lang-lua">mapmanager.ASE [booleano]</pre> <b>true</b> se il mapmanager può mostrare gamemode e mappa su ASE, <b>false</b> se no (default: <b>true</b>).</li></ul>
+<h2><span class="mw-headline" id="Funzioni_esportate">Funzioni esportate</span></h2>
+<p>Queste sono le funzioni del mapmanager utilizzabili tramite la funzione <a href="http://wiki.localhost/index.php?title=IT/call&amp;action=edit&amp;redlink=1" class="new" title="IT/call (page does not exist)">call()</a>:
+</p>
+<ul><li><pre class="prettyprint lang-lua">bool changeGamemode ( resource nuovaGamemode, [ resource mappaDaCaricare ] )</pre></li></ul>
+<p>Cambia la gamemode in <b>nuovaGamemode</b>, impostando opzionalmente una mappa iniziale(<b>mappaDaCaricare</b>); di default carica con la mappa.
+</p>
+<ul><li><pre class="prettyprint lang-lua">bool changeGamemodeMap ( resource nuovaMappa, [ resource gamemodeDaCambiare ] )</pre></li></ul>
+<p>Cambia la mappa in <b>nuovaMappa</b>, impostando opzionalmente una gamemode da avviare prima di cambiare(<b>gamemodeDaCambiare</b>); di default carica con la gamemode corrente.
+</p>
+<ul><li><pre class="prettyprint lang-lua">table getGamemodes ( )</pre></li></ul>
+<p>Ritorna una table con i puntatori di tutte le gamemodes.
+</p>
+<ul><li><pre class="prettyprint lang-lua">table getGamemodesCompatibleWithMap ( resource laMappa )</pre></li></ul>
+<p>Ritorna una table con i puntatori di tutte le gamemode compatibili con <b>laMappa</b>.
+</p>
+<ul><li><pre class="prettyprint lang-lua">table getMaps ( )</pre></li></ul>
+<p>Ritorna una table con i puntatori di tutte le mappe.
+</p>
+<ul><li><pre class="prettyprint lang-lua">table getMapsCompatibleWithGamemode ( [ resource laGamemode ] )</pre></li></ul>
+<p>Ritorna una table con i puntatori di tutte le mappe compatibili con <b>laGamemode</b>. Se il parametro non viene specificato, ritorna tutte le mappe che non sono compatibili con nessuna gamemode.
+</p>
+<ul><li><pre class="prettyprint lang-lua">resource getRunningGamemode ( )</pre></li></ul>
+<p>Ritorna il puntatore della gamemode attualmente in esecuzione.
+</p>
+<ul><li><pre class="prettyprint lang-lua">resource getRunningGamemodeMap ( )</pre></li></ul>
+<p>Ritorna il puntatore della mappa attualmente in esecuzione.
+</p>
+<ul><li><pre class="prettyprint lang-lua">bool isGamemode ( resource laGamemode )</pre></li></ul>
+<p>Ritorna se <b>laGamemode</b> è o no una gamemode.
+</p>
+<ul><li><pre class="prettyprint lang-lua">bool isGamemodeCompatibleWithMap ( resource laGamemode, resource laMappa )</pre></li></ul>
+<p>Ritorna se la gamemode è compatibile con la mappa o no.
+</p>
+<ul><li><pre class="prettyprint lang-lua">bool isMap ( resource laMappa )</pre></li></ul>
+<p>Determina se <b>laMappa</b> è una mappa o no.
+</p>
+<ul><li><pre class="prettyprint lang-lua">bool isMapCompatibleWithGamemode ( resource laMappa, resource laGamemode )</pre></li></ul>
+<p>Ritorna se la mappa è compatibile con la gamemode o no.
+</p>
+<ul><li><pre class="prettyprint lang-lua">bool stopGamemode ( )</pre></li></ul>
+<p>Stoppa la gamemode e la mappa correnti.
+</p>
+<ul><li><pre class="prettyprint lang-lua">bool stopGamemodeMap ( )</pre></li></ul>
+<p>Stoppa la mappa corrente.
+</p>
+<h2><span class="mw-headline" id="Eventi">Eventi</span></h2>
+<p>Per tutti questi eventi, <b>source</b> è l'elemento root della risorsa.
+</p>
+<ul><li><pre class="prettyprint lang-lua">onGamemodeStart ( resource gamemodeIniziata )</pre></li></ul>
+<p>Si attiva prima che venga iniziata una gamemode.
+</p>
+<ul><li><pre class="prettyprint lang-lua">onGamemodeStop ( resource gamemodeFermata )</pre></li></ul>
+<p>Si attiva prima che venga fermata una gamemode
+</p>
+<ul><li><pre class="prettyprint lang-lua">onGamemodeMapStart ( resource mappaIniziata )</pre></li></ul>
+<p>Si attiva prima che venga iniziata una mappa.
+</p>
+<ul><li><pre class="prettyprint lang-lua">onGamemodeMapStop ( resource mappaFermata )</pre></li></ul>
+<p>Si attiva prima che venga fermata una mappa.
+</p>
+<h2><span class="mw-headline" id="Impostazioni_supportate_dalle_mappe">Impostazioni supportate dalle mappe</span></h2>
+<p>Le seguenti impostazioni tratte dal <a href="http://wiki.localhost/index.php?title=IT/Settings_system&amp;action=edit&amp;redlink=1" class="new" title="IT/Settings system (page does not exist)">registro</a> vengono applicate dal map manager quando una mappa inizia:
+</p>
+<ul><li><pre class="prettyprint lang-lua">gamespeed [numero]</pre>: La velocità di gioco della mappa.</li>
+<li><pre class="prettyprint lang-lua">gravity [numero]</pre>: La gravità della mappa.</li>
+<li><pre class="prettyprint lang-lua">time [stringa tipo 'hh:mm']</pre>: L'ora della mappa.</li>
+<li><pre class="prettyprint lang-lua">weather [numero]</pre>: L'ID del meteo della mappa.</li>
+<li><pre class="prettyprint lang-lua">waveheight [numero]</pre>: L'altezza delle onde della mappa.</li>
+<li><pre class="prettyprint lang-lua">locked_time [booleano]</pre>: Se l'ora sarà bloccata o meno.</li>
+<li><pre class="prettyprint lang-lua">minplayers [numero]</pre>: Il numero minimo di giocatori per iniziare la mappa.</li>
+<li><pre class="prettyprint lang-lua">maxplayers [numero]</pre>: Il massimo numero di giocatori per iniziare la mappa.</li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625165358
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.013 seconds
+Real time usage: 0.014 seconds
+Preprocessor visited node count: 581/1000000
+Preprocessor generated node count: 1372/1000000
+Post‐expand include size: 493/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    1.735      1 - -total
+ 61.89%    1.074      1 - Template:IT/Risorsa
+ 32.80%    0.569      1 - Template:IT/MainP
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:4043-0!*!0!!en!*!* and timestamp 20190625165358 and revision id 17375
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=Resource:IT/Map_manager&amp;oldid=17375">https://wiki.multitheftauto.com/index.php?title=Resource:IT/Map_manager&amp;oldid=17375</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="../Special_Categories.html" title="Special:Categories">Categories</a>: <ul><li><a href="../Category_IT/Pagine_italiane.html" title="Category:IT/Pagine italiane">IT/Pagine italiane</a></li><li><a href="../Category_100%25.html" title="Category:100%">100%</a></li><li><a href="../Category_IT/Risorse.html" title="Category:IT/Risorse">IT/Risorse</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-resource" class="selected"><a href="Map_manager.html">Resource</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=:IT/Map_manager&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=Resource:IT/Map_manager&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=Resource:IT/Map_manager&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=Resource%3AIT%2FMap+manager" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=Resource%3AIT%2FMap+manager" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/Resource_IT/Map_manager.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/Resource_IT/Map_manager.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=Resource:IT/Map_manager&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=Resource:IT/Map_manager&amp;oldid=17375" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=Resource:IT/Map_manager&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=Resource:mapmanager" title="Resource:mapmanager – English" lang="en" hreflang="en">English</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 13 June 2008, at 14:12.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":42});});</script></body></html>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Resource:Dynamic lighting - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"Resource","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":100,"wgPageName":"Resource:Dynamic_lighting","wgTitle":"Dynamic lighting","wgCurRevisionId":45582,"wgRevisionId":45582,"wgArticleId":7695,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Resource"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Resource:Dynamic_lighting","wgRelevantArticleId":7695,"wgRequestId":"dcf334d8cbe6de9d3f705fa7","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta name='headingclass' content='' data-class='resource' data-subcaption='Resource'>
+<meta name='removenamespace' content=''>
+<meta name='lowercasetitle' content=''>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-100 ns-subject page-Resource_Dynamic_lighting rootpage-Resource_Dynamic_lighting skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Resource:Dynamic lighting</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
+<!--NS-->
+<!--LC-->
+This resource lets You create dynamic lights in MTA. It gives you a list of exported functions that You can use to create per pixel pointlights and spotlights. It should be considered a preview of what <a rel="nofollow" class="external text" href="https://wiki.multitheftauto.com/wiki/MTA:Eir">MTA:Eir</a> will offer. The future solution should be more FPS friendly. Yet i see that resource as an example of what the future holds.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Exported_functions"><span class="tocnumber">2</span> <span class="toctext">Exported functions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#createPointLight"><span class="tocnumber">2.1</span> <span class="toctext">createPointLight</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#createSpotLight"><span class="tocnumber">2.2</span> <span class="toctext">createSpotLight</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#destroyLight"><span class="tocnumber">2.3</span> <span class="toctext">destroyLight</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#setLightDirection"><span class="tocnumber">2.4</span> <span class="toctext">setLightDirection</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#setLightPosition"><span class="tocnumber">2.5</span> <span class="toctext">setLightPosition</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#setLightColor"><span class="tocnumber">2.6</span> <span class="toctext">setLightColor</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#setLightAttenuation"><span class="tocnumber">2.7</span> <span class="toctext">setLightAttenuation</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#setLightFalloff"><span class="tocnumber">2.8</span> <span class="toctext">setLightFalloff</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#setLightTheta"><span class="tocnumber">2.9</span> <span class="toctext">setLightTheta</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#setLightPhi"><span class="tocnumber">2.10</span> <span class="toctext">setLightPhi</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#setLightNormalShadowing"><span class="tocnumber">2.11</span> <span class="toctext">setLightNormalShadowing</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#setShadersLayered"><span class="tocnumber">2.12</span> <span class="toctext">setShadersLayered</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#setGenerateBumpNormals"><span class="tocnumber">2.13</span> <span class="toctext">setGenerateBumpNormals</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#setLightsDistFade"><span class="tocnumber">2.14</span> <span class="toctext">setLightsDistFade</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#setLightsEffectRange"><span class="tocnumber">2.15</span> <span class="toctext">setLightsEffectRange</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#setShaderForcedOn"><span class="tocnumber">2.16</span> <span class="toctext">setShaderForcedOn</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#setShaderTimeOut"><span class="tocnumber">2.17</span> <span class="toctext">setShaderTimeOut</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#setShaderNightMod"><span class="tocnumber">2.18</span> <span class="toctext">setShaderNightMod</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#setShaderDayTime"><span class="tocnumber">2.19</span> <span class="toctext">setShaderDayTime</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#setShaderPedDiffuse"><span class="tocnumber">2.20</span> <span class="toctext">setShaderPedDiffuse</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#setDirLightEnable"><span class="tocnumber">2.21</span> <span class="toctext">setDirLightEnable</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#setDirLightDirection"><span class="tocnumber">2.22</span> <span class="toctext">setDirLightDirection</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="#setDirLightColor"><span class="tocnumber">2.23</span> <span class="toctext">setDirLightColor</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-26"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a></li>
+<li class="toclevel-1 tocsection-27"><a href="#See_Also"><span class="tocnumber">4</span> <span class="toctext">See Also</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<p>It is easy to use, gives a few options to create per pixel lights in gtasa. 
+</p><p>The resource itself adds exported clientside functions:
+</p>
+<h2><span class="mw-headline" id="Exported_functions">Exported functions</span></h2>
+<h4><span class="mw-headline" id="createPointLight">createPointLight</span></h4>
+<!-- BEGIN SECTION |1|client|Client|--><div class='clientHeader' onclick='expandSection(1);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander1'>Click to collapse [-]</div>Client</div><div style='display:;' class='clientContent' id='section1'>
+<p>This function creates a pixel shader pointlight.
+</p>
+<pre class="prettyprint lang-lua">lightElement exports.dynamic_lighting:createPointLight(float posX,posY,posZ,colorR,colorG,colorB,colorA,attenuation,[bool normalShadow = true])</pre> 
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>float posX, posY, posZ:</b> Light position in world.</li>
+<li><b>float colorR,colorG,colorB,colorA:</b> RGBA color emitted by the light (0 - 1 instead of 0-255).</li>
+<li><b>float attenuation:</b> Value specifying how the light intensity changes over distance.</li></ul>
+<h3><span class="mw-headline" id="Optional_Arguments">Optional Arguments</span></h3>
+<ul><li><b>bool normalShadow:</b> Determine if the light source should be obscured when lighting a surface on opposite angles.</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>The function returns lightElement if set successfully, false otherwise.
+</p>
+</div><!-- END SECTION |1|-->
+<h4><span class="mw-headline" id="createSpotLight">createSpotLight</span></h4>
+<!-- BEGIN SECTION |2|client|Client|--><div class='clientHeader' onclick='expandSection(2);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander2'>Click to collapse [-]</div>Client</div><div style='display:;' class='clientContent' id='section2'>
+<p>This function creates a pixel shader spotlight.
+</p>
+<pre class="prettyprint lang-lua">lightElement exports.dynamic_lighting:createSpotLight(float posX,posY,posZ,colorR,colorG,colorB,colorA,dirX,dirY,dirZ, bool isEuler,float falloff,theta,phi,attenuation,[bool normalShadowing = true])</pre> 
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>float posX, posY, posZ:</b> Light position in world space.</li>
+<li><b>float colorR,colorG,colorB,colorA:</b> RGBA color emitted by the light (0 - 1 instead of 0-255).</li>
+<li><b>float dirX,dirY,dirZ:</b> Direction that the light is pointing in world space. It's a vector as default.</li>
+<li><b>bool isEuler:</b> Is the angle set as an "ZXY" euler andgle or a vector.</li>
+<li><b>float falloff:</b> Decrease in illumination between a spotlight's inner cone (the angle specified by Theta) and the outer edge of the outer cone (the angle specified by Phi). </li>
+<li><b>float theta: (radians)</b> Angle, in radians, of a spotlight's inner cone - that is, the fully illuminated spotlight cone. This value must be in the range from 0 through the value specified by Phi.</li>
+<li><b>float phi: (radians)</b> Angle, in radians, defining the outer edge of the spotlight's outer cone. Points outside this cone are not lit by the spotlight. This value must be between 0 and pi.</li>
+<li><b>float attenuation:</b> Value specifying how the light intensity changes over distance.</li></ul>
+<h3><span class="mw-headline" id="Optional_Arguments">Optional Arguments</span></h3>
+<ul><li><b>bool normalShadow:</b> Determine if the light source should be obscured when lighting a surface on opposite angles.</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>The function returns lightElement if set successfully, false otherwise.
+</p>
+</div><!-- END SECTION |2|-->
+<h4><span class="mw-headline" id="destroyLight">destroyLight</span></h4>
+<!-- BEGIN SECTION |3|client|Client|--><div class='clientHeader' onclick='expandSection(3);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander3'>Click to collapse [-]</div>Client</div><div style='display:;' class='clientContent' id='section3'>
+<p>This function destroys a light element.
+</p>
+<pre class="prettyprint lang-lua">bool exports.dynamic_lighting:destroyLight(element lightElement)</pre> 
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>element lightElement:</b> A previously declared light element.</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>The function returns true if set successfully, false otherwise.
+</p>
+</div><!-- END SECTION |3|-->
+<h4><span class="mw-headline" id="setLightDirection">setLightDirection</span></h4>
+<!-- BEGIN SECTION |4|client|Client|--><div class='clientHeader' onclick='expandSection(4);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander4'>Click to collapse [-]</div>Client</div><div style='display:;' class='clientContent' id='section4'>
+<p>This function setd light direction values for both a pointlight and a spotlight.
+</p>
+<pre class="prettyprint lang-lua">bool exports.dynamic_lighting:setLightDirection(element lightElement,float dirX,dirY,dirZ,[bool isEuler = false])</pre> 
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>element lightElement:</b> A previously declared light element.</li>
+<li><b>float dirX,dirY,dirZ:</b> Direction that the light is pointing in world space. It's a vector as default.</li></ul>
+<h3><span class="mw-headline" id="Optional_Arguments">Optional Arguments</span></h3>
+<ul><li><b>bool isEuler:</b>Is the angle set as an "ZXY" euler andgle or a vector.</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>The function returns true if set successfully, false otherwise.
+</p>
+</div><!-- END SECTION |4|-->
+<h4><span class="mw-headline" id="setLightPosition">setLightPosition</span></h4>
+<!-- BEGIN SECTION |5|client|Client|--><div class='clientHeader' onclick='expandSection(5);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander5'>Click to collapse [-]</div>Client</div><div style='display:;' class='clientContent' id='section5'>
+<p>This function sets light position values for both a pointlight and a spotlight.
+</p>
+<pre class="prettyprint lang-lua">bool exports.dynamic_lighting:setLightPosition(element lightElement,float posX,posY,posZ)</pre> 
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>element lightElement:</b> A previously declared light element.</li>
+<li><b>float posX, posY, posZ:</b> Light position in world space.</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>The function returns true if set successfully, false otherwise.
+</p>
+</div><!-- END SECTION |5|-->
+<h4><span class="mw-headline" id="setLightColor">setLightColor</span></h4>
+<!-- BEGIN SECTION |6|client|Client|--><div class='clientHeader' onclick='expandSection(6);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander6'>Click to collapse [-]</div>Client</div><div style='display:;' class='clientContent' id='section6'>
+<p>This function sets light color values for both a pointlight and a spotlight.
+</p>
+<pre class="prettyprint lang-lua">bool exports.dynamic_lighting:setLightColor(element lightElement,float colorR,colorG,colorB,colorA)</pre> 
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>element lightElement:</b> A previously declared light element.</li>
+<li><b>float colorR,colorG,colorB,colorA:</b> RGBA color emitted by the light (0 - 1 instead of 0-255).</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>The function returns true if set successfully, false otherwise.
+</p>
+</div><!-- END SECTION |6|-->
+<h4><span class="mw-headline" id="setLightAttenuation">setLightAttenuation</span></h4>
+<!-- BEGIN SECTION |7|client|Client|--><div class='clientHeader' onclick='expandSection(7);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander7'>Click to collapse [-]</div>Client</div><div style='display:;' class='clientContent' id='section7'>
+<p>This function sets setLightAttenuation value for both a pointlight and a spotlight.
+</p>
+<pre class="prettyprint lang-lua">bool exports.dynamic_lighting:setLightAttenuation(element lightElement,float attenuation)</pre> 
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>element lightElement:</b> A previously declared light element.</li>
+<li><b>float attenuation:</b> Value specifying how the light intensity changes over distance.</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>The function returns true if set successfully, false otherwise.
+</p>
+</div><!-- END SECTION |7|-->
+<h4><span class="mw-headline" id="setLightFalloff">setLightFalloff</span></h4>
+<!-- BEGIN SECTION |8|client|Client|--><div class='clientHeader' onclick='expandSection(8);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander8'>Click to collapse [-]</div>Client</div><div style='display:;' class='clientContent' id='section8'>
+<p>This function sets falloff value for a spotlight.
+</p>
+<pre class="prettyprint lang-lua">bool exports.dynamic_lighting:setLightFalloff(element lightElement,float falloff)</pre> 
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>element lightElement:</b> A previously declared light element.</li>
+<li><b>float falloff (radians):</b> Decrease in illumination between a spotlight's inner cone (the angle specified by Theta) and the outer edge of the outer cone (the angle specified by Phi). </li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>The function returns true if set successfully, false otherwise.
+</p>
+</div><!-- END SECTION |8|-->
+<h4><span class="mw-headline" id="setLightTheta">setLightTheta</span></h4>
+<!-- BEGIN SECTION |9|client|Client|--><div class='clientHeader' onclick='expandSection(9);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander9'>Click to collapse [-]</div>Client</div><div style='display:;' class='clientContent' id='section9'>
+<p>This function sets theta value for a spotlight.
+</p>
+<pre class="prettyprint lang-lua">bool exports.dynamic_lighting:setLightTheta(element lightElement,float theta)</pre> 
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>element lightElement:</b> A previously declared light element.</li>
+<li><b>float theta (radians):</b> Angle, in radians, of a spotlight's inner cone - that is, the fully illuminated spotlight cone. This value must be in the range from 0 through the value specified by Phi.</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>The function returns true if set successfully, false otherwise.
+</p>
+</div><!-- END SECTION |9|-->
+<h4><span class="mw-headline" id="setLightPhi">setLightPhi</span></h4>
+<!-- BEGIN SECTION |10|client|Client|--><div class='clientHeader' onclick='expandSection(10);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander10'>Click to collapse [-]</div>Client</div><div style='display:;' class='clientContent' id='section10'>
+<p>This function sets phi value for a spotlight.
+</p>
+<pre class="prettyprint lang-lua">bool exports.dynamic_lighting:setLightPhi(element lightElement,float phi)</pre> 
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>element lightElement:</b> A previously declared light element.</li>
+<li><b>float phi (radians):</b> Angle, in radians, defining the outer edge of the spotlight's outer cone. Points outside this cone are not lit by the spotlight. This value must be between 0 and pi.</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>The function returns true if set successfully, false otherwise.
+</p>
+</div><!-- END SECTION |10|-->
+<h4><span class="mw-headline" id="setLightNormalShadowing">setLightNormalShadowing</span></h4>
+<!-- BEGIN SECTION |11|client|Client|--><div class='clientHeader' onclick='expandSection(11);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander11'>Click to collapse [-]</div>Client</div><div style='display:;' class='clientContent' id='section11'>
+<p>Determine if the light source should be obscured when lighting a surface on opposite angles.
+</p>
+<pre class="prettyprint lang-lua">bool exports.dynamic_lighting:setLightNormalShadowing(element lightElement,bool normalShadow)</pre> 
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>element lightElement:</b> A previously declared light element.</li>
+<li><b>bool normalShadow:</b> Determine if the light source should be obscured when lighting a surface on opposite angles.</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>The function returns true if set successfully, false otherwise.
+</p>
+</div><!-- END SECTION |11|-->
+<h4><span class="mw-headline" id="setShadersLayered">setShadersLayered</span></h4>
+<!-- BEGIN SECTION |12|client|Client|--><div class='clientHeader' onclick='expandSection(12);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander12'>Click to collapse [-]</div>Client</div><div style='display:;' class='clientContent' id='section12'>
+<p>Should the main shader effects be created in a separate render pass&#160;? As default only the vehicle effect is layered.
+</p>
+<pre class="prettyprint lang-lua">bool exports.dynamic_lighting:setShadersLayered(bool isWorld, isVeh, isPed)</pre> 
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>bool isWorld, isVeh, isPed:</b> Should the shader effects be created in a separate render pass.</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>The function returns true if set successfully, false otherwise.
+</p>
+</div><!-- END SECTION |12|-->
+<h4><span class="mw-headline" id="setGenerateBumpNormals">setGenerateBumpNormals</span></h4>
+<!-- BEGIN SECTION |13|client|Client|--><div class='clientHeader' onclick='expandSection(13);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander13'>Click to collapse [-]</div>Client</div><div style='display:;' class='clientContent' id='section13'>
+<p>Should the shader effect generate bump normals from texture0. Doesn't work when normal shadowing is set to false.
+</p>
+<pre class="prettyprint lang-lua">bool exports.dynamic_lighting:setGenerateBumpNormals(bool isTrue,[int textureSize = 512, float normalStrength.x = 1, float normalStrength.y = 1, float normalStrength.z = 1])</pre> 
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>bool isTrue:</b> Turn on or off bump mapping.</li></ul>
+<h3><span class="mw-headline" id="Optional_Arguments">Optional Arguments</span></h3>
+<ul><li><b>int textureSize:</b> The size of the input texture.</li>
+<li><b>float normalStrength.xyz:</b> How bumpy should the surface be&#160;?</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>The function returns true if set successfully, false otherwise.
+</p>
+</div><!-- END SECTION |13|-->
+<h4><span class="mw-headline" id="setLightsDistFade">setLightsDistFade</span></h4>
+<!-- BEGIN SECTION |14|client|Client|--><div class='clientHeader' onclick='expandSection(14);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander14'>Click to collapse [-]</div>Client</div><div style='display:;' class='clientContent' id='section14'>
+<p>Set the Max distance of the light to sync and the distance on which the light starts to fade out.
+</p>
+<pre class="prettyprint lang-lua">bool exports.dynamic_lighting:setLightsDistFade(int MaxEffectFade,int MinEffectFade)</pre> 
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>int MaxEffectFade:</b> Set the Max distance of the light to sync.(Must be greater than MinEffectFade and lower than maxEffectRange).</li>
+<li><b>int MinEffectFade:</b> Set the distance on which the light starts to fade out.</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>The function returns true if set successfully, false otherwise.
+</p>
+</div><!-- END SECTION |14|-->
+<h4><span class="mw-headline" id="setLightsEffectRange">setLightsEffectRange</span></h4>
+<!-- BEGIN SECTION |15|client|Client|--><div class='clientHeader' onclick='expandSection(15);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander15'>Click to collapse [-]</div>Client</div><div style='display:;' class='clientContent' id='section15'>
+<p>Set the Max distance from the camera the shader effects are applied to.
+</p>
+<pre class="prettyprint lang-lua">bool exports.dynamic_lighting:setLightsEffectRange(int maxEffectRange)</pre> 
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>int maxEffectRange:</b> If non-zero, the shaders will be applied to textures nearer than maxDistance only.</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>The function returns true if set successfully, false otherwise.
+</p>
+</div><!-- END SECTION |15|-->
+<h4><span class="mw-headline" id="setShaderForcedOn">setShaderForcedOn</span></h4>
+<!-- BEGIN SECTION |16|client|Client|--><div class='clientHeader' onclick='expandSection(16);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander16'>Click to collapse [-]</div>Client</div><div style='display:;' class='clientContent' id='section16'>
+<p>Should the shader effect turn off when no lightsources.
+</p>
+<pre class="prettyprint lang-lua">bool exports.dynamic_lighting:setShaderForcedOn(bool isShaderForcedOn)</pre> 
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>bool isShaderForcedOn:</b> Should the shader effect turn off when no lightsources.</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>The function returns true if set successfully, false otherwise.
+</p>
+</div><!-- END SECTION |16|-->
+<h4><span class="mw-headline" id="setShaderTimeOut">setShaderTimeOut</span></h4>
+<!-- BEGIN SECTION |17|client|Client|--><div class='clientHeader' onclick='expandSection(17);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander17'>Click to collapse [-]</div>Client</div><div style='display:;' class='clientContent' id='section17'>
+<p>Should the shader effect turn off after number of seconds (when no lightsources)
+</p>
+<pre class="prettyprint lang-lua">bool exports.dynamic_lighting:setShaderTimeOut(int timeOut)</pre> 
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>int timeOut:</b> Should the shader effect turn off after number of seconds (when no lightsources)</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>The function returns true if set successfully, false otherwise.
+</p>
+</div><!-- END SECTION |17|-->
+<h4><span class="mw-headline" id="setShaderNightMod">setShaderNightMod</span></h4>
+<!-- BEGIN SECTION |18|client|Client|--><div class='clientHeader' onclick='expandSection(18);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander18'>Click to collapse [-]</div>Client</div><div style='display:;' class='clientContent' id='section18'>
+<p>Enable nightMod effect - requires proper manipulation of setTextureBrightness and SetShaderDayTime, also some additional shaders.
+</p>
+<pre class="prettyprint lang-lua">bool exports.dynamic_lighting:setShaderNightMod(bool enable)</pre> 
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>bool enable:</b> Enable or disable nightMod effect</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>The function returns true if set successfully, false otherwise.
+</p>
+</div><!-- END SECTION |18|-->
+<h4><span class="mw-headline" id="setShaderDayTime">setShaderDayTime</span></h4>
+<!-- BEGIN SECTION |19|client|Client|--><div class='clientHeader' onclick='expandSection(19);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander19'>Click to collapse [-]</div>Client</div><div style='display:;' class='clientContent' id='section19'>
+<p>Another additional variable to control texture colors - requires setShaderNightMod(true)
+</p>
+<pre class="prettyprint lang-lua">bool exports.dynamic_lighting:setShaderDayTime(float dayTime)</pre> 
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>float dayTime:</b> Another additional variable to control texture colors - requires setShaderNightMod(true) set 1 as default</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>The function returns true if set successfully, false otherwise.
+</p>
+</div><!-- END SECTION |19|-->
+<h4><span class="mw-headline" id="setShaderPedDiffuse">setShaderPedDiffuse</span></h4>
+<!-- BEGIN SECTION |20|client|Client|--><div class='clientHeader' onclick='expandSection(20);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander20'>Click to collapse [-]</div>Client</div><div style='display:;' class='clientContent' id='section20'>
+<p>Enable or disable gta directional lights for ped.
+</p>
+<pre class="prettyprint lang-lua">bool exports.dynamic_lighting:setShaderPedDiffuse(bool enable)</pre> 
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>bool enable:</b> Enable or disable gta directional lights for ped (enabled as default)</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>The function returns true if set successfully, false otherwise.
+</p>
+</div><!-- END SECTION |20|-->
+<h4><span class="mw-headline" id="setDirLightEnable">setDirLightEnable</span></h4>
+<!-- BEGIN SECTION |21|client|Client|--><div class='clientHeader' onclick='expandSection(21);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander21'>Click to collapse [-]</div>Client</div><div style='display:;' class='clientContent' id='section21'>
+<p>This function creates a vertex shader directional light. NOTE: Forcing the effects on or using any other lights is required for directional light to work.
+</p>
+<pre class="prettyprint lang-lua">bool exports.dynamic_lighting:setDirLightEnable(bool enable = false)</pre> 
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>bool enable:</b> Enable or disable the directional light.</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>The function returns true if set successfully, false otherwise.
+</p>
+</div><!-- END SECTION |21|-->
+<h4><span class="mw-headline" id="setDirLightDirection">setDirLightDirection</span></h4>
+<!-- BEGIN SECTION |22|client|Client|--><div class='clientHeader' onclick='expandSection(22);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander22'>Click to collapse [-]</div>Client</div><div style='display:;' class='clientContent' id='section22'>
+<p>This function sets the directional light direction.
+</p>
+<pre class="prettyprint lang-lua">bool exports.dynamic_lighting:setDirLightDirection(float dirX,dirY,dirZ,[bool isEuler = false])</pre> 
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>float dirX,dirY,dirZ:</b> Direction that the light is pointing in world space. It's a vector as default.</li></ul>
+<h3><span class="mw-headline" id="Optional_Arguments">Optional Arguments</span></h3>
+<ul><li><b>bool isEuler:</b>Is the angle set as an "ZXY" euler andgle or a vector.</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>The function returns true if set successfully, false otherwise.
+</p>
+</div><!-- END SECTION |22|-->
+<h4><span class="mw-headline" id="setDirLightColor">setDirLightColor</span></h4>
+<!-- BEGIN SECTION |23|client|Client|--><div class='clientHeader' onclick='expandSection(23);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander23'>Click to collapse [-]</div>Client</div><div style='display:;' class='clientContent' id='section23'>
+<p>This function sets the directional light color value.
+</p>
+<pre class="prettyprint lang-lua">bool exports.dynamic_lighting:setDirLightColor(float colorR,colorG,colorB,colorA)</pre> 
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>float colorR,colorG,colorB,colorA:</b> RGBA color emitted by the light (0 - 1 instead of 0-255).</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>The function returns true if set successfully, false otherwise.
+</p>
+</div><!-- END SECTION |23|-->
+<h2><span class="mw-headline" id="Examples">Examples</span></h2>
+<pre class="prettyprint lang-lua">exports.dynamic_lighting:createPointLight(0,0,5,1,0,0,1,15)</pre>
+<p>This creates a red pointlight in world position (0,0,5)
+</p><p>Of course when you want to use these functions in your resources you have to include
+the dynamic_lighting resource in meta.
+</p>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<p><a rel="nofollow" class="external text" href="http://community.multitheftauto.com/index.php?p=resources&amp;s=details&amp;id=9398">Dynamic Lighting resource on MTA Community</a>
+</p><p><a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/windows/desktop/bb174697(v=vs.85).aspx">Light Types (Direct3D 9)</a>
+</p><p><a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=2t_bje_XjUY">Vehicle lights video</a>
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190625164256
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.023 seconds
+Real time usage: 0.024 seconds
+Preprocessor visited node count: 724/1000000
+Preprocessor generated node count: 1396/1000000
+Post‐expand include size: 183/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.775      1 - Template:Resource_page
+100.00%    0.775      1 - -total
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:7695-0!*!*!!en!*!* and timestamp 20190625164256 and revision id 45582
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=Resource:Dynamic_lighting&amp;oldid=45582">https://wiki.multitheftauto.com/index.php?title=Resource:Dynamic_lighting&amp;oldid=45582</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_Resource.html" title="Category:Resource">Resource</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-resource" class="selected"><a href="Resource_Dynamic_lighting.html">Resource</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=:Dynamic_lighting&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=Resource:Dynamic_lighting&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=Resource:Dynamic_lighting&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=Resource%3ADynamic+lighting" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=Resource%3ADynamic+lighting" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/Resource_Dynamic_lighting.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/Resource_Dynamic_lighting.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=Resource:Dynamic_lighting&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=Resource:Dynamic_lighting&amp;oldid=45582" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=Resource:Dynamic_lighting&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+			</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 29 July 2015, at 21:19.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":49});});</script></body></html>

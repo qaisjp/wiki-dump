@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Installing and Running MTASA Server on GNU Linux - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Installing_and_Running_MTASA_Server_on_GNU_Linux","wgTitle":"Installing and Running MTASA Server on GNU Linux","wgCurRevisionId":55078,"wgRevisionId":55078,"wgArticleId":7285,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Installing_and_Running_MTASA_Server_on_GNU_Linux","wgRelevantArticleId":7285,"wgRequestId":"9febb3a02bcd55df52d374fc","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Installing_and_Running_MTASA_Server_on_GNU_Linux rootpage-Installing_and_Running_MTASA_Server_on_GNU_Linux skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Installing and Running MTASA Server on GNU Linux</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Installation_64_bit"><span class="tocnumber">1</span> <span class="toctext">Installation 64 bit</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Main_binary"><span class="tocnumber">1.1</span> <span class="toctext">Main binary</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Default_config"><span class="tocnumber">1.2</span> <span class="toctext">Default config</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Test"><span class="tocnumber">1.3</span> <span class="toctext">Test</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Default_resources"><span class="tocnumber">1.4</span> <span class="toctext">Default resources</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Installation_32_bit"><span class="tocnumber">2</span> <span class="toctext">Installation 32 bit</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Main_binary_2"><span class="tocnumber">2.1</span> <span class="toctext">Main binary</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Default_config_2"><span class="tocnumber">2.2</span> <span class="toctext">Default config</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Test_2"><span class="tocnumber">2.3</span> <span class="toctext">Test</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Default_resources_2"><span class="tocnumber">2.4</span> <span class="toctext">Default resources</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#Running_with_32_or_64_bit_Linux"><span class="tocnumber">3</span> <span class="toctext">Running with 32 or 64 bit Linux</span></a>
+<ul>
+<li class="toclevel-2 tocsection-12"><a href="#Make_sure_your_server_libraries_and_stuff_are_up_to_date"><span class="tocnumber">3.1</span> <span class="toctext">Make sure your server libraries and stuff are up to date</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Troubleshooting"><span class="tocnumber">3.2</span> <span class="toctext">Troubleshooting</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="#MySQL_Troubleshooting"><span class="tocnumber">4</span> <span class="toctext">MySQL Troubleshooting</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#.5BOptional.5D_Installing_and_Configuring_an_External_Web_Server"><span class="tocnumber">5</span> <span class="toctext">[Optional] Installing and Configuring an External Web Server</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#Server_crashes"><span class="tocnumber">6</span> <span class="toctext">Server crashes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-17"><a href="#To_obtain_a_backtrace:"><span class="tocnumber">6.1</span> <span class="toctext">To obtain a backtrace:</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Do_you_have_a_core_dump_file_in_the_the_MTA_server_directory.3F"><span class="tocnumber">6.2</span> <span class="toctext">Do you have a core dump file in the the MTA server directory?</span></a>
+<ul>
+<li class="toclevel-3 tocsection-19"><a href="#If_you_have_a_core_dump_file_in_the_the_MTA_server_directory:"><span class="tocnumber">6.2.1</span> <span class="toctext">If you have a core dump file in the the MTA server directory:</span></a></li>
+<li class="toclevel-3 tocsection-20"><a href="#If_you_do_not_have_a_core_dump_file_in_the_the_MTA_server_directory:"><span class="tocnumber">6.2.2</span> <span class="toctext">If you do not have a core dump file in the the MTA server directory:</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-21"><a href="#Server_freezes"><span class="tocnumber">7</span> <span class="toctext"><b>Server freezes</b></span></a>
+<ul>
+<li class="toclevel-2 tocsection-22"><a href="#To_obtain_a_backtrace_with_thread_information:"><span class="tocnumber">7.1</span> <span class="toctext">To obtain a backtrace with thread information:</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-23"><a href="#Automatic_installer"><span class="tocnumber">8</span> <span class="toctext">Automatic installer</span></a>
+<ul>
+<li class="toclevel-2 tocsection-24"><a href="#Prerequisites"><span class="tocnumber">8.1</span> <span class="toctext">Prerequisites</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="#Source_code"><span class="tocnumber">8.2</span> <span class="toctext">Source code</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="#Procedure"><span class="tocnumber">8.3</span> <span class="toctext">Procedure</span></a></li>
+<li class="toclevel-2 tocsection-27"><a href="#Alternative_way_to_install_server"><span class="tocnumber">8.4</span> <span class="toctext">Alternative way to install server</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Installation_64_bit">Installation 64 bit</span></h2>
+<h3><span class="mw-headline" id="Main_binary">Main binary</span></h3>
+<p>Download the latest stable 64 bit Linux binaries:
+</p>
+<pre>rm -f multitheftauto_linux_x64.tar.gz
+wget http://linux.mtasa.com/dl/multitheftauto_linux_x64.tar.gz
+</pre>
+<p>Unpack into a directory:
+</p>
+<pre>tar -xf multitheftauto_linux_x64.tar.gz
+</pre>
+<h3><span class="mw-headline" id="Default_config">Default config</span></h3>
+<p>Download the default config files:
+</p>
+<pre>rm -f baseconfig.tar.gz
+wget http://linux.mtasa.com/dl/baseconfig.tar.gz
+</pre>
+<p>Unpack and move into the deathmatch directory:<br />
+(<i><b>Note:</b> Only do this for new installations as it will overwrite any existing config files.)</i>
+</p>
+<pre>tar -xf baseconfig.tar.gz
+mv baseconfig/* multitheftauto_linux_x64/mods/deathmatch
+</pre>
+<p>Change to the MTA server install directory:
+</p>
+<pre>cd multitheftauto_linux_x64
+</pre>
+<h3><span class="mw-headline" id="Test">Test</span></h3>
+<p>You can now test if the server will start correctly:
+</p>
+<pre>./mta-server64
+</pre>
+<h3><span class="mw-headline" id="Default_resources">Default resources</span></h3>
+<p>If you need the default resources:
+Download the latest default resources zip from <a rel="nofollow" class="external free" href="http://mirror.mtasa.com/mtasa/resources/">http://mirror.mtasa.com/mtasa/resources/</a>
+and unzip into <b>mods/deathmatch/resources</b>
+<br />
+<b>Make sure you are in the MTA server install directory when following this example:</b>
+</p>
+<pre>apt-get install unzip
+mkdir mods/deathmatch/resources
+cd mods/deathmatch/resources
+rm -f mtasa-resources-latest.zip
+wget http://mirror.mtasa.com/mtasa/resources/mtasa-resources-latest.zip
+unzip mtasa-resources-latest.zip
+rm -f mtasa-resources-latest.zip
+cd ../../..
+</pre>
+<h2><span class="mw-headline" id="Installation_32_bit">Installation 32 bit</span></h2>
+<h3><span class="mw-headline" id="Main_binary_2">Main binary</span></h3>
+<p>Download the latest stable 32 bit Linux binaries:
+</p>
+<pre>rm -f multitheftauto_linux.tar.gz
+wget http://linux.mtasa.com/dl/multitheftauto_linux.tar.gz
+</pre>
+<p>Unpack into a directory:
+</p>
+<pre>tar -xf multitheftauto_linux.tar.gz
+</pre>
+<h3><span class="mw-headline" id="Default_config_2">Default config</span></h3>
+<p>Download the default config files:
+</p>
+<pre>rm -f baseconfig.tar.gz
+wget http://linux.mtasa.com/dl/baseconfig.tar.gz
+</pre>
+<p>Unpack and move into the deathmatch directory:<br />
+(<i><b>Note:</b> Only do this for new installations as it will overwrite any existing config files.)</i>
+</p>
+<pre>tar -xf baseconfig.tar.gz
+mv baseconfig/* multitheftauto_linux/mods/deathmatch
+</pre>
+<p>Change to the MTA server install directory:
+</p>
+<pre>cd multitheftauto_linux
+</pre>
+<h3><span class="mw-headline" id="Test_2">Test</span></h3>
+<p>You can now test if the server will start correctly:
+</p>
+<pre>./mta-server
+</pre>
+<h3><span class="mw-headline" id="Default_resources_2">Default resources</span></h3>
+<p>If you need the default resources:
+Download the latest default resources zip from <a rel="nofollow" class="external free" href="http://mirror.mtasa.com/mtasa/resources/">http://mirror.mtasa.com/mtasa/resources/</a>
+and unzip into <b>mods/deathmatch/resources</b>
+<br />
+<b>Make sure you are in the MTA server install directory when following this example:</b>
+</p>
+<pre>apt-get install unzip
+mkdir mods/deathmatch/resources
+cd mods/deathmatch/resources
+rm -f mtasa-resources-latest.zip
+wget http://mirror.mtasa.com/mtasa/resources/mtasa-resources-latest.zip
+unzip mtasa-resources-latest.zip
+rm -f mtasa-resources-latest.zip
+cd ../../..
+</pre>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Running_with_32_or_64_bit_Linux">Running with 32 or 64 bit Linux</span></h2>
+<h3><span class="mw-headline" id="Make_sure_your_server_libraries_and_stuff_are_up_to_date">Make sure your server libraries and stuff are up to date</span></h3>
+<p>On Debian/Ubuntu this is done with:
+</p>
+<pre>apt-get update
+apt-get upgrade
+</pre>
+<h3><span class="mw-headline" id="Troubleshooting">Troubleshooting</span></h3>
+<ul><li> If you get a problem with such as "libreadline.so.5: cannot open shared object file: No such file or directory.", it can be solved on 32 bit Debian/Ubuntu by doing this:</li></ul>
+<pre>apt-get install libreadline5
+</pre>
+<ul><li> If you get a problem with such as "libncursesw.so.5 cannot open shared object file: No such file or directory", it can be solved on 32 bit Debian/Ubuntu by doing this:</li></ul>
+<pre>apt-get install libncursesw5
+</pre>
+<p><b>Note:</b> If you experience this issue on a 64-bit machine while trying to run the 32-bit MTA server, then you should install the following package on a 64-bit Debian/Ubuntu machine (as root):
+</p>
+<pre>apt-get install lib32ncursesw5
+</pre>
+<p>You can find more 32-bit library alternatives on this page: <a rel="nofollow" class="external text" href="http://www.debian.org/distrib/packages#search_contents">www.debian.org/distrib/packages#search_contents</a>.
+</p>
+<h2><span class="mw-headline" id="MySQL_Troubleshooting">MySQL Troubleshooting</span></h2>
+<ul><li> If you are using the inbuilt MySQL functions such as <a href="DbConnect.html" title="DbConnect">dbConnect</a> and <a href="DbQuery.html" title="DbQuery">dbQuery</a>, you will need to have <b>libmysqlclient.so.16</b> installed.</li>
+<li> If you get a problem with such as "libmysqlclient.so.16: cannot open shared object file: No such file or directory", it can be solved on Debian/Ubuntu by doing this:</li></ul>
+<pre>apt-get install libmysqlclient16
+</pre>
+<p>If that fails:
+</p>
+<ul><li> For 32 bit Linux, download <a rel="nofollow" class="external text" href="http://nightly.mtasa.com/files/modules/32/libmysqlclient.so.16">32 bit libmysqlclient.so.16</a> and put it in <b>/usr/lib/</b></li>
+<li> For 64 bit Linux, download <a rel="nofollow" class="external text" href="http://nightly.mtasa.com/files/modules/64/libmysqlclient.so.16">64 bit libmysqlclient.so.16</a> and put it in <b>/usr/lib/</b></li></ul>
+<h2><span class="mw-headline" id=".5BOptional.5D_Installing_and_Configuring_an_External_Web_Server">[Optional] Installing and Configuring an External Web Server</span></h2>
+<p>Instructions on how to install and configure Nginx as an external web server for MTA is here: <a href="Installing_and_Configuring_Nginx_as_an_External_Web_Server.html" title="Installing and Configuring Nginx as an External Web Server">Installing and Configuring Nginx as an External Web Server</a>
+</p>
+<h2><span class="mw-headline" id="Server_crashes">Server crashes</span></h2>
+<p>If your Linux server crashes, please obtain a backtrace and post a report on our <a rel="nofollow" class="external text" href="http://bugs.mtasa.com/">Bug tracker</a>
+</p>
+<h4><span class="mw-headline" id="To_obtain_a_backtrace:">To obtain a backtrace:</span></h4>
+<h3><span class="mw-headline" id="Do_you_have_a_core_dump_file_in_the_the_MTA_server_directory.3F">Do you have a core dump file in the the MTA server directory?</span></h3>
+<p>It's usually called 'core', and usually over 100MB, and looks something like this:
+</p>
+<pre><a href="File_Core.html" class="image"><img alt="Core.png" src="http://wiki.localhost/images/2/2b/Core.png" width="497" height="178" /></a>
+</pre>
+<h4><span class="mw-headline" id="If_you_have_a_core_dump_file_in_the_the_MTA_server_directory:">If you have a core dump file in the the MTA server directory:</span></h4>
+<ul><li>Install gdb. To install gdb on Debian, use this command:</li></ul>
+<pre>apt-get install gdb
+</pre>
+<ul><li>And from the MTA install directory do this command</li></ul>
+<pre>gdb mta-server -c core
+</pre>
+<ul><li>When gdb launches, do this command to get a  module list:</li></ul>
+<pre>i sh
+</pre>
+<ul><li>And then this command to get a backtrace:</li></ul>
+<pre>bt
+</pre>
+<ul><li>Save the output</li>
+<li>(To exit gdb, use the quit command)</li></ul>
+<h4><span class="mw-headline" id="If_you_do_not_have_a_core_dump_file_in_the_the_MTA_server_directory:">If you do not have a core dump file in the the MTA server directory:</span></h4>
+<ul><li>Install gdb. To install gdb on Debian, use this command:</li></ul>
+<pre>apt-get install gdb
+</pre>
+<ul><li>And from the MTA server directory start the mta-server like this:</li></ul>
+<pre>gdb -ex "set print thread-events off" --eval-command run --args mta-server -q
+</pre>
+<ul><li>Now wait for a crash. (Ignore any weird screen output in the meantime)</li>
+<li>When a crash occurs, do this command to get a module list:</li></ul>
+<pre>i sh
+</pre>
+<ul><li>And then this command to get a backtrace:</li></ul>
+<pre>bt
+</pre>
+<ul><li>Save the output</li>
+<li>(To exit gdb, use the quit command)</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Server_freezes"><b>Server freezes</b></span></h2>
+<p>If your Linux server freezes, please obtain a backtrace with thread information and post a report on our <a rel="nofollow" class="external text" href="http://bugs.mtasa.com/">Bug tracker</a>
+</p>
+<h4><span class="mw-headline" id="To_obtain_a_backtrace_with_thread_information:">To obtain a backtrace with thread information:</span></h4>
+<ul><li>Install gdb. To install gdb on Debian, use this command:</li></ul>
+<pre>apt-get install gdb
+</pre>
+<ul><li>And from the MTA server directory start the mta-server like this:</li></ul>
+<pre>gdb -ex "set print thread-events off" --eval-command run --args mta-server -q
+</pre>
+<ul><li>Now wait for a freeze. (Ignore any weird screen output in the meantime)</li>
+<li>When a freeze occurs, press ctrl-c to start gdb</li>
+<li>Then do this command to get a module list:</li></ul>
+<pre>i sh
+</pre>
+<ul><li>And then this command to get a backtrace:</li></ul>
+<pre>bt
+</pre>
+<ul><li>And then this command to get thread information:</li></ul>
+<pre>info threads
+</pre>
+<ul><li>Save the output</li>
+<li>(To exit gdb, use the quit command)</li></ul>
+<h2><span class="mw-headline" id="Automatic_installer">Automatic installer</span></h2>
+<h3><span class="mw-headline" id="Prerequisites">Prerequisites</span></h3>
+<p>Make sure you have bash, unzip, tar and wget available on your server.
+Also notice that for 64-bit servers the 64-bit binary will be installed, otherwise 32-bit binary will be.
+</p>
+<h3><span class="mw-headline" id="Source_code">Source code</span></h3>
+<pre> #!/bin/bash -x
+ #==============================================================================#
+ #                                mtasa-install                                 #
+ #------------------------------------------------------------------------------#
+ #  This shellscript installs MTA:SA on your server. You can configure it and   #
+ #  modify it as desired, you can even improve it if you want.                  #
+ #==============================================================================#
+  
+ ARCH_TYPE=""
+  
+ getArchitecture()
+ {
+     if ((1&lt;&lt;32)); then
+         ARCH_TYPE="_x64"
+     fi
+ }
+  
+ downloadFiles()
+ {
+     wget <a rel="nofollow" class="external free" href="http://linux.mtasa.com/dl/multitheftauto_linux${ARCH_TYPE}.tar.gz">http://linux.mtasa.com/dl/multitheftauto_linux${ARCH_TYPE}.tar.gz</a>
+     wget <a rel="nofollow" class="external free" href="http://linux.mtasa.com/dl/baseconfig.tar.gz">http://linux.mtasa.com/dl/baseconfig.tar.gz</a>
+ }
+  
+ unpack()
+ {
+     tar -xf multitheftauto_linux${ARCH_TYPE}.tar.gz
+     tar -xf baseconfig.tar.gz
+ }
+  
+ moveConfig()
+ {
+     mv baseconfig/* multitheftauto_linux${ARCH_TYPE}/mods/deathmatch
+     rm -rf baseconfig
+     cd multitheftauto_linux${ARCH_TYPE}
+ }
+  
+ installResources()
+ {
+     mkdir mods/deathmatch/resources
+     cd mods/deathmatch/resources
+     wget <a rel="nofollow" class="external free" href="http://mirror.mtasa.com/mtasa/resources/mtasa-resources-latest.zip">http://mirror.mtasa.com/mtasa/resources/mtasa-resources-latest.zip</a>
+     unzip mtasa-resources-latest.zip
+     cd ../../..
+ }
+  
+ clean()
+ {
+     rm -f ../multitheftauto_linux${ARCH_TYPE}.tar.gz
+     rm -f ../baseconfig.tar.gz
+     rm -f mods/deathmatch/resources/mtasa-resources-latest.zip
+ }
+  
+ main()
+ {
+     getArchitecture
+     clean
+     downloadFiles
+     unpack
+     moveConfig
+     installResources
+     clean
+  
+     if ((1&lt;&lt;32)); then # 64 bits
+         echo "Installation ready! Use ./mta-server64 to initialize server"
+     else
+         echo "Installation ready! Use ./mta-server to initialize server"
+     fi
+ }
+  
+ main # calling program entry point
+</pre>
+<h3><span class="mw-headline" id="Procedure">Procedure</span></h3>
+<p>To proceed with installation, save somewhere with read-write-execute access (777) the mtasa-install shell. Finally, proceed to execute it (./mtasa-install for example).
+</p>
+<h3><span class="mw-headline" id="Alternative_way_to_install_server">Alternative way to install server</span></h3>
+<p><a rel="nofollow" class="external free" href="https://linuxgsm.com/lgsm/mtaserver/">https://linuxgsm.com/lgsm/mtaserver/</a>
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190625164251
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.008 seconds
+Real time usage: 0.009 seconds
+Preprocessor visited node count: 160/1000000
+Preprocessor generated node count: 232/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 - -total
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:7285-0!*!0!!en!5!* and timestamp 20190625164251 and revision id 55078
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=Installing_and_Running_MTASA_Server_on_GNU_Linux&amp;oldid=55078">https://wiki.multitheftauto.com/index.php?title=Installing_and_Running_MTASA_Server_on_GNU_Linux&amp;oldid=55078</a>"</div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Installing_and_Running_MTASA_Server_on_GNU_Linux.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:Installing_and_Running_MTASA_Server_on_GNU_Linux&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=Installing_and_Running_MTASA_Server_on_GNU_Linux&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=Installing_and_Running_MTASA_Server_on_GNU_Linux&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=Installing+and+Running+MTASA+Server+on+GNU+Linux" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=Installing+and+Running+MTASA+Server+on+GNU+Linux" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/Installing_and_Running_MTASA_Server_on_GNU_Linux.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/Installing_and_Running_MTASA_Server_on_GNU_Linux.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=Installing_and_Running_MTASA_Server_on_GNU_Linux&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=Installing_and_Running_MTASA_Server_on_GNU_Linux&amp;oldid=55078" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=Installing_and_Running_MTASA_Server_on_GNU_Linux&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+			</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 20 May 2018, at 14:43.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":34});});</script></body></html>

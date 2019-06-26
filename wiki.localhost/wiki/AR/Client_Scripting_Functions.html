@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>AR/Client Scripting Functions - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"AR/Client_Scripting_Functions","wgTitle":"AR/Client Scripting Functions","wgCurRevisionId":63050,"wgRevisionId":63050,"wgArticleId":7428,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Changes in 1.3.2","Changes in 1.3.5"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"AR/Client_Scripting_Functions","wgRelevantArticleId":7428,"wgRequestId":"52749393a38abf3a22a79438","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta name='headingclass' content='' data-class='client' data-subcaption=''>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-AR_Client_Scripting_Functions rootpage-AR_Client_Scripting_Functions skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">AR/Client Scripting Functions</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
+</p>
+<div style="background: #CEDFF2; border: 3px solid #CEDFF2;">
+<b>Contributors:</b> Did you create a page but it's not on this list? Confused? <b>Read: <a href="../Adding_Pages_to_Categories_and_Templates.html" title="Adding Pages to Categories and Templates" class="mw-redirect">Adding Pages to Categories and Templates</a></b></div>
+<p>تسرد هذه الصفحة كافة وظائف البرمجة النصية <i> 'العميل' 'التي تم تنفيذها وتكون متوفرة كدالات أصلية من وزارة الدفاع ديثماتش. لطلب وظيفة أو حدث، استخدم <a href="http://wiki.localhost/index.php?title=%D8%A7%D9%84%D9%88%D8%B8%D8%A7%D8%A6%D9%81_%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%D8%A9_%D9%88%D8%A7%D9%84%D8%A3%D8%AD%D8%AF%D8%A7%D8%AB&amp;action=edit&amp;redlink=1" class="new" title="الوظائف المطلوبة والأحداث (page does not exist)">الوظائف المطلوبة والأحداث</a></i>
+</p><p><a href="../Useful_Functions.html" title="Useful Functions">useful functions page</a> للمزيد من الوظائف، انظر
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D8.A3.D8.B5.D9.88.D8.A7.D8.AA"><span class="tocnumber">1</span> <span class="toctext">وظائف الأصوات</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A3.D9.8A.D9.82.D9.88.D9.86.D8.A7.D8.AA_.D8.A7.D9.84.D8.AE.D8.B1.D9.8A.D8.B7.D8.A9"><span class="tocnumber">2</span> <span class="toctext">وظائف أيقونات الخريطة</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D9.83.D8.A7.D9.85.D9.8A.D8.B1.D8.A7"><span class="tocnumber">3</span> <span class="toctext">وظائف الكاميرا</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D9.85.D9.84.D8.A7.D8.A8.D8.B3"><span class="tocnumber">4</span> <span class="toctext">وظائف الملابس</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D9.85.D9.86.D8.A7.D8.B7.D9.82_.D8.A7.D9.84.D9.85.D8.B4.D9.83.D9.84.D8.A9_.D8.A7.D9.84.D9.88.D9.87.D9.85.D9.8A.D8.A9"><span class="tocnumber">5</span> <span class="toctext">وظائف المناطق المشكلة الوهمية</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D9.85.D8.A7.D9.88.D8.B3"><span class="tocnumber">6</span> <span class="toctext">وظائف الماوس</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D8.B1.D8.B3.D9.85"><span class="tocnumber">7</span> <span class="toctext">وظائف الرسم</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.AA.D8.A3.D8.AB.D9.8A.D8.B1.D8.A7.D8.AA_.D8.A7.D9.84.D8.B9.D8.A7.D9.84.D9.85"><span class="tocnumber">8</span> <span class="toctext">وظائف تأثيرات العالم</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D8.B9.D9.86.D8.A7.D8.B5.D8.B1"><span class="tocnumber">9</span> <span class="toctext">وظائف العناصر</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D9.85.D8.AD.D8.B1.D9.83_.D8.A7.D9.84.D9.84.D8.B9.D8.A8.D8.A9"><span class="tocnumber">10</span> <span class="toctext">وظائف محرك اللعبة</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D8.A3.D8.AD.D8.AF.D8.A7.D8.AB"><span class="tocnumber">11</span> <span class="toctext">وظائف الأحداث</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D8.A7.D9.86.D9.81.D8.AC.D8.A7.D8.B1.D8.A7.D8.AA"><span class="tocnumber">12</span> <span class="toctext">وظائف الانفجارات</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D9.85.D9.84.D9.81.D8.A7.D8.AA"><span class="tocnumber">13</span> <span class="toctext">وظائف الملفات</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D8.AD.D8.B1.D8.A7.D8.A6.D9.82"><span class="tocnumber">14</span> <span class="toctext">وظائف الحرائق</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D9.88.D8.A7.D8.AC.D9.87.D8.A9_.D8.A7.D9.84.D9.85.D8.B3.D8.AA.D8.AE.D8.AF.D9.85_.D8.A7.D9.84.D8.B1.D8.B3.D9.88.D9.85.D9.8A.D8.A9"><span class="tocnumber">15</span> <span class="toctext">وظائف واجهة المستخدم الرسومية</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D9.85.D8.AF.D8.AE.D9.84.D8.A7.D8.AA"><span class="tocnumber">16</span> <span class="toctext">وظائف المدخلات</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D8.B9.D9.84.D8.A7.D9.85.D8.A7.D8.AA"><span class="tocnumber">17</span> <span class="toctext">وظائف العلامات</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D9.85.D8.AC.D8.B3.D9.85.D8.A7.D8.AA_.D8.A7.D9.84.D9.84.D8.B9.D8.A8.D8.A9"><span class="tocnumber">18</span> <span class="toctext">وظائف مجسمات اللعبة</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D9.85.D8.AE.D8.B1.D8.AC.D8.A7.D8.AA"><span class="tocnumber">19</span> <span class="toctext">وظائف المخرجات</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D9.85.D8.AC.D8.B3.D9.85.D8.A7.D8.AA_.D8.A7.D9.84.D9.82.D8.A7.D8.A8.D9.84.D8.A9_.D9.84.D9.84.D8.A7.D9.84.D8.AA.D9.82.D8.A7.D8.B7"><span class="tocnumber">20</span> <span class="toctext">وظائف المجسمات القابلة للالتقاط</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D8.A7.D8.B9.D8.A8.D9.8A.D9.86"><span class="tocnumber">21</span> <span class="toctext">وظائف الاعبين</span></a></li>
+<li class="toclevel-1 tocsection-22"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D8.B5.D9.88.D8.A7.D8.B1.D9.8A.D8.AE_.D9.88.D8.A7.D9.84.D9.85.D9.82.D8.B0.D9.88.D9.81.D8.A7.D8.AA"><span class="tocnumber">22</span> <span class="toctext">وظائف الصواريخ والمقذوفات</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D9.85.D9.86.D9.82.D8.B7.D8.A9_.D8.A8.D8.A7.D9.84.D8.B1.D8.A7.D8.AF.D8.A7.D8.B1"><span class="tocnumber">23</span> <span class="toctext">وظائف منقطة بالرادار</span></a></li>
+<li class="toclevel-1 tocsection-24"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D8.B3.D9.83.D8.B1.D8.AA.D8.A8.D8.A7.D8.AA_.D9.88.D8.A7.D9.84.D9.85.D9.88.D8.AF.D8.A7.D8.AA_.D8.A7.D9.84.D8.A8.D8.B1.D9.85.D8.AC.D9.8A.D8.A9"><span class="tocnumber">24</span> <span class="toctext">وظائف السكرتبات والمودات البرمجية</span></a></li>
+<li class="toclevel-1 tocsection-25"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D9.81.D8.B1.D9.82_.D9.88.D8.A7.D9.84.D9.85.D8.AC.D9.85.D9.88.D8.B9.D8.A7.D8.AA"><span class="tocnumber">25</span> <span class="toctext">وظائف الفرق والمجموعات</span></a></li>
+<li class="toclevel-1 tocsection-26"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A3.D8.AE.D8.B1.D9.89_.D9.85.D9.81.D9.8A.D8.AF.D8.A9"><span class="tocnumber">26</span> <span class="toctext">وظائف أخرى مفيدة</span></a></li>
+<li class="toclevel-1 tocsection-27"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D9.85.D8.B1.D9.83.D8.A8.D8.A7.D8.AA_.D9.88.D8.A7.D9.84.D8.B3.D9.8A.D8.A7.D8.B1.D8.A7.D8.AA"><span class="tocnumber">27</span> <span class="toctext">وظائف المركبات والسيارات</span></a></li>
+<li class="toclevel-1 tocsection-28"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D9.85.D8.A7.D8.A1"><span class="tocnumber">28</span> <span class="toctext">وظائف الماء</span></a></li>
+<li class="toclevel-1 tocsection-29"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D8.A3.D8.B3.D9.84.D8.AD.D8.A9"><span class="tocnumber">29</span> <span class="toctext">وظائف الأسلحة</span></a></li>
+<li class="toclevel-1 tocsection-30"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.B5.D9.86.D8.B9_.D8.A7.D9.84.D8.A3.D8.B3.D9.84.D8.AD.D8.A9"><span class="tocnumber">30</span> <span class="toctext">وظائف صنع الأسلحة</span></a></li>
+<li class="toclevel-1 tocsection-31"><a href="#.D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.B9.D8.A7.D9.84.D9.85_.D8.A7.D9.84.D9.84.D8.B9.D8.A8.D8.A9"><span class="tocnumber">31</span> <span class="toctext">وظائف عالم اللعبة</span></a></li>
+<li class="toclevel-1 tocsection-32"><a href="#XML_.D9.88.D8.B8.D8.A7.D8.A6.D9.81"><span class="tocnumber">32</span> <span class="toctext">XML وظائف</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D8.A3.D8.B5.D9.88.D8.A7.D8.AA">وظائف الأصوات</span></h2>
+<ul><li><a href="getRadioChannel.html" title="AR/getRadioChannel">getRadioChannel</a></li>
+<li><a href="getRadioChannelName.html" title="AR/getRadioChannelName">getRadioChannelName</a></li>
+<li><a href="getSFXStatus.html" title="AR/getSFXStatus">getSFXStatus</a></li>
+<li><a href="getSoundBPM.html" title="AR/getSoundBPM">getSoundBPM</a></li></ul>
+<ul><li><a href="getSoundEffects.html" title="AR/getSoundEffects">getSoundEffects</a></li>
+<li><a href="getSoundFFTData.html" title="AR/getSoundFFTData">getSoundFFTData</a></li>
+<li><a href="getSoundLength.html" title="AR/getSoundLength">getSoundLength</a></li>
+<li><a href="getSoundLevelData.html" title="AR/getSoundLevelData">getSoundLevelData</a></li>
+<li><a href="getSoundMaxDistance.html" title="AR/getSoundMaxDistance">getSoundMaxDistance</a></li></ul>
+<ul><li><a href="getSoundMetaTags.html" title="AR/getSoundMetaTags">getSoundMetaTags</a></li>
+<li><a href="getSoundMinDistance.html" title="AR/getSoundMinDistance">getSoundMinDistance</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getSoundPan&amp;action=edit&amp;redlink=1" class="new" title="AR/getSoundPan (page does not exist)">getSoundPan</a></li>
+<li><a href="getSoundPosition.html" title="AR/getSoundPosition">getSoundPosition</a></li>
+<li><a href="getSoundProperties.html" title="AR/getSoundProperties">getSoundProperties</a></li>
+<li><a href="getSoundSpeed.html" title="AR/getSoundSpeed">getSoundSpeed</a></li>
+<li><a href="getSoundVolume.html" title="AR/getSoundVolume">getSoundVolume</a></li>
+<li><a href="getSoundWaveData.html" title="AR/getSoundWaveData">getSoundWaveData</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/isSoundPanningEnabled&amp;action=edit&amp;redlink=1" class="new" title="AR/isSoundPanningEnabled (page does not exist)">isSoundPanningEnabled</a></li>
+<li><a href="isSoundPaused.html" title="AR/isSoundPaused">isSoundPaused</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/playSFX&amp;action=edit&amp;redlink=1" class="new" title="AR/playSFX (page does not exist)">playSFX</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/playSFX3D&amp;action=edit&amp;redlink=1" class="new" title="AR/playSFX3D (page does not exist)">playSFX3D</a></li>
+<li><a href="playSound.html" title="AR/playSound">playSound</a></li>
+<li><a href="playSound3D.html" title="AR/playSound3D">playSound3D</a></li>
+<li><a href="playSoundFrontEnd.html" title="AR/playSoundFrontEnd">playSoundFrontEnd</a></li>
+<li><a href="setRadioChannel.html" title="AR/setRadioChannel">setRadioChannel</a></li></ul>
+<ul><li><a href="setSoundEffectEnabled.html" title="AR/setSoundEffectEnabled">setSoundEffectEnabled</a></li>
+<li><a href="setSoundMaxDistance.html" title="AR/setSoundMaxDistance">setSoundMaxDistance</a></li>
+<li><a href="setSoundMinDistance.html" title="AR/setSoundMinDistance">setSoundMinDistance</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setSoundPan&amp;action=edit&amp;redlink=1" class="new" title="AR/setSoundPan (page does not exist)">setSoundPan</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setSoundPanningEnabled&amp;action=edit&amp;redlink=1" class="new" title="AR/setSoundPanningEnabled (page does not exist)">setSoundPanningEnabled</a></li>
+<li><a href="setSoundPaused.html" title="AR/setSoundPaused">setSoundPaused</a></li>
+<li><a href="setSoundPosition.html" title="AR/setSoundPosition">setSoundPosition</a></li>
+<li><a href="setSoundProperties.html" title="AR/setSoundProperties">setSoundProperties</a></li>
+<li><a href="setSoundSpeed.html" title="AR/setSoundSpeed">setSoundSpeed</a></li>
+<li><a href="setSoundVolume.html" title="AR/setSoundVolume">setSoundVolume</a></li>
+<li><a href="stopSound.html" title="AR/stopSound">stopSound</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A3.D9.8A.D9.82.D9.88.D9.86.D8.A7.D8.AA_.D8.A7.D9.84.D8.AE.D8.B1.D9.8A.D8.B7.D8.A9">وظائف أيقونات الخريطة</span></h2>
+<ul><li><a href="createBlip.html" title="AR/createBlip">createBlip</a></li>
+<li><a href="createBlipAttachedTo.html" title="AR/createBlipAttachedTo">createBlipAttachedTo</a></li>
+<li><a href="getBlipColor.html" title="AR/getBlipColor">getBlipColor</a></li>
+<li><a href="getBlipIcon.html" title="AR/getBlipIcon">getBlipIcon</a></li>
+<li><a href="getBlipSize.html" title="AR/getBlipSize">getBlipSize</a></li>
+<li><a href="setBlipColor.html" title="AR/setBlipColor">setBlipColor</a></li>
+<li><a href="setBlipIcon.html" title="AR/setBlipIcon">setBlipIcon</a></li>
+<li><a href="setBlipSize.html" title="AR/setBlipSize">setBlipSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getBlipOrdering&amp;action=edit&amp;redlink=1" class="new" title="AR/getBlipOrdering (page does not exist)">getBlipOrdering</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setBlipOrdering&amp;action=edit&amp;redlink=1" class="new" title="AR/setBlipOrdering (page does not exist)">setBlipOrdering</a></li></ul>
+<ul><li><a href="getBlipVisibleDistance.html" title="AR/getBlipVisibleDistance">getBlipVisibleDistance</a></li>
+<li><a href="setBlipVisibleDistance.html" title="AR/setBlipVisibleDistance">setBlipVisibleDistance</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D9.83.D8.A7.D9.85.D9.8A.D8.B1.D8.A7">وظائف الكاميرا</span></h2>
+<ul><li><a href="fadeCamera.html" title="AR/fadeCamera">fadeCamera</a></li>
+<li><a href="getCamera.html" title="AR/getCamera">getCamera</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getCameraGoggleEffect&amp;action=edit&amp;redlink=1" class="new" title="AR/getCameraGoggleEffect (page does not exist)">getCameraGoggleEffect</a></li>
+<li><a href="getCameraInterior.html" title="AR/getCameraInterior">getCameraInterior</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getCameraMatrix&amp;action=edit&amp;redlink=1" class="new" title="AR/getCameraMatrix (page does not exist)">getCameraMatrix</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getCameraTarget&amp;action=edit&amp;redlink=1" class="new" title="AR/getCameraTarget (page does not exist)">getCameraTarget</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getCameraViewMode&amp;action=edit&amp;redlink=1" class="new" title="AR/getCameraViewMode (page does not exist)">getCameraViewMode</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setCameraClip&amp;action=edit&amp;redlink=1" class="new" title="AR/setCameraClip (page does not exist)">setCameraClip</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setCameraGoggleEffect&amp;action=edit&amp;redlink=1" class="new" title="AR/setCameraGoggleEffect (page does not exist)">setCameraGoggleEffect</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setCameraInterior&amp;action=edit&amp;redlink=1" class="new" title="AR/setCameraInterior (page does not exist)">setCameraInterior</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setCameraMatrix&amp;action=edit&amp;redlink=1" class="new" title="AR/setCameraMatrix (page does not exist)">setCameraMatrix</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setCameraTarget&amp;action=edit&amp;redlink=1" class="new" title="AR/setCameraTarget (page does not exist)">setCameraTarget</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setCameraViewMode&amp;action=edit&amp;redlink=1" class="new" title="AR/setCameraViewMode (page does not exist)">setCameraViewMode</a></li></ul>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D9.85.D9.84.D8.A7.D8.A8.D8.B3">وظائف الملابس</span></h2>
+<ul><li><a href="addPedClothes.html" title="AR/addPedClothes">addPedClothes</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getBodyPartName&amp;action=edit&amp;redlink=1" class="new" title="AR/getBodyPartName (page does not exist)">getBodyPartName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getClothesByTypeIndex&amp;action=edit&amp;redlink=1" class="new" title="AR/getClothesByTypeIndex (page does not exist)">getClothesByTypeIndex</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getClothesTypeName&amp;action=edit&amp;redlink=1" class="new" title="AR/getClothesTypeName (page does not exist)">getClothesTypeName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getPedClothes&amp;action=edit&amp;redlink=1" class="new" title="AR/getPedClothes (page does not exist)">getPedClothes</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getTypeIndexFromClothes&amp;action=edit&amp;redlink=1" class="new" title="AR/getTypeIndexFromClothes (page does not exist)">getTypeIndexFromClothes</a></li>
+<li><a href="removePedClothes.html" title="AR/removePedClothes">removePedClothes</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D9.85.D9.86.D8.A7.D8.B7.D9.82_.D8.A7.D9.84.D9.85.D8.B4.D9.83.D9.84.D8.A9_.D8.A7.D9.84.D9.88.D9.87.D9.85.D9.8A.D8.A9">وظائف المناطق المشكلة الوهمية</span></h2>
+<ul><li><a href="createColCircle.html" title="AR/createColCircle">createColCircle</a></li>
+<li><a href="createColCuboid.html" title="AR/createColCuboid">createColCuboid</a></li>
+<li><a href="createColRectangle.html" title="AR/createColRectangle">createColRectangle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/createColSphere&amp;action=edit&amp;redlink=1" class="new" title="AR/createColSphere (page does not exist)">createColSphere</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/createColTube&amp;action=edit&amp;redlink=1" class="new" title="AR/createColTube (page does not exist)">createColTube</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=AR/createColPolygon&amp;action=edit&amp;redlink=1" class="new" title="AR/createColPolygon (page does not exist)">createColPolygon</a></li>
+<li><a href="isElementWithinColShape.html" title="AR/isElementWithinColShape">isElementWithinColShape</a></li>
+<li><a href="getElementsWithinColShape.html" title="AR/getElementsWithinColShape">getElementsWithinColShape</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getElementColShape&amp;action=edit&amp;redlink=1" class="new" title="AR/getElementColShape (page does not exist)">getElementColShape</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D9.85.D8.A7.D9.88.D8.B3">وظائف الماوس</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=AR/getCursorPosition&amp;action=edit&amp;redlink=1" class="new" title="AR/getCursorPosition (page does not exist)">getCursorPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setCursorPosition&amp;action=edit&amp;redlink=1" class="new" title="AR/setCursorPosition (page does not exist)">setCursorPosition</a></li>
+<li><a href="isCursorShowing.html" title="AR/isCursorShowing">isCursorShowing</a></li>
+<li><a href="showCursor.html" title="AR/showCursor">showCursor</a></li></ul>
+<ul><li> <a href="setCursorAlpha.html" title="AR/setCursorAlpha">setCursorAlpha</a></li>
+<li> <a href="getCursorAlpha.html" title="AR/getCursorAlpha">getCursorAlpha</a></li></ul>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D8.B1.D8.B3.D9.85">وظائف الرسم</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=AR/dxDrawImage&amp;action=edit&amp;redlink=1" class="new" title="AR/dxDrawImage (page does not exist)">dxDrawImage</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxDrawImageSection&amp;action=edit&amp;redlink=1" class="new" title="AR/dxDrawImageSection (page does not exist)">dxDrawImageSection</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxDrawLine&amp;action=edit&amp;redlink=1" class="new" title="AR/dxDrawLine (page does not exist)">dxDrawLine</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxDrawLine3D&amp;action=edit&amp;redlink=1" class="new" title="AR/dxDrawLine3D (page does not exist)">dxDrawLine3D</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxDrawRectangle&amp;action=edit&amp;redlink=1" class="new" title="AR/dxDrawRectangle (page does not exist)">dxDrawRectangle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxDrawText&amp;action=edit&amp;redlink=1" class="new" title="AR/dxDrawText (page does not exist)">dxDrawText</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxGetFontHeight&amp;action=edit&amp;redlink=1" class="new" title="AR/dxGetFontHeight (page does not exist)">dxGetFontHeight</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxGetTextWidth&amp;action=edit&amp;redlink=1" class="new" title="AR/dxGetTextWidth (page does not exist)">dxGetTextWidth</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxCreateFont&amp;action=edit&amp;redlink=1" class="new" title="AR/dxCreateFont (page does not exist)">dxCreateFont</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxCreateTexture&amp;action=edit&amp;redlink=1" class="new" title="AR/dxCreateTexture (page does not exist)">dxCreateTexture</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxCreateShader&amp;action=edit&amp;redlink=1" class="new" title="AR/dxCreateShader (page does not exist)">dxCreateShader</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxCreateRenderTarget&amp;action=edit&amp;redlink=1" class="new" title="AR/dxCreateRenderTarget (page does not exist)">dxCreateRenderTarget</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxCreateScreenSource&amp;action=edit&amp;redlink=1" class="new" title="AR/dxCreateScreenSource (page does not exist)">dxCreateScreenSource</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxGetMaterialSize&amp;action=edit&amp;redlink=1" class="new" title="AR/dxGetMaterialSize (page does not exist)">dxGetMaterialSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxSetShaderValue&amp;action=edit&amp;redlink=1" class="new" title="AR/dxSetShaderValue (page does not exist)">dxSetShaderValue</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxSetShaderTessellation&amp;action=edit&amp;redlink=1" class="new" title="AR/dxSetShaderTessellation (page does not exist)">dxSetShaderTessellation</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxSetShaderTransform&amp;action=edit&amp;redlink=1" class="new" title="AR/dxSetShaderTransform (page does not exist)">dxSetShaderTransform</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxSetRenderTarget&amp;action=edit&amp;redlink=1" class="new" title="AR/dxSetRenderTarget (page does not exist)">dxSetRenderTarget</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxUpdateScreenSource&amp;action=edit&amp;redlink=1" class="new" title="AR/dxUpdateScreenSource (page does not exist)">dxUpdateScreenSource</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxGetStatus&amp;action=edit&amp;redlink=1" class="new" title="AR/dxGetStatus (page does not exist)">dxGetStatus</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxSetTestMode&amp;action=edit&amp;redlink=1" class="new" title="AR/dxSetTestMode (page does not exist)">dxSetTestMode</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxGetTexturePixels&amp;action=edit&amp;redlink=1" class="new" title="AR/dxGetTexturePixels (page does not exist)">dxGetTexturePixels</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxSetTexturePixels&amp;action=edit&amp;redlink=1" class="new" title="AR/dxSetTexturePixels (page does not exist)">dxSetTexturePixels</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxGetPixelsSize&amp;action=edit&amp;redlink=1" class="new" title="AR/dxGetPixelsSize (page does not exist)">dxGetPixelsSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxGetPixelsFormat&amp;action=edit&amp;redlink=1" class="new" title="AR/dxGetPixelsFormat (page does not exist)">dxGetPixelsFormat</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxConvertPixels&amp;action=edit&amp;redlink=1" class="new" title="AR/dxConvertPixels (page does not exist)">dxConvertPixels</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxGetPixelColor&amp;action=edit&amp;redlink=1" class="new" title="AR/dxGetPixelColor (page does not exist)">dxGetPixelColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxSetPixelColor&amp;action=edit&amp;redlink=1" class="new" title="AR/dxSetPixelColor (page does not exist)">dxSetPixelColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxSetBlendMode&amp;action=edit&amp;redlink=1" class="new" title="AR/dxSetBlendMode (page does not exist)">dxSetBlendMode</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxGetBlendMode&amp;action=edit&amp;redlink=1" class="new" title="AR/dxGetBlendMode (page does not exist)">dxGetBlendMode</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxDrawMaterialLine3D&amp;action=edit&amp;redlink=1" class="new" title="AR/dxDrawMaterialLine3D (page does not exist)">dxDrawMaterialLine3D</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxDrawMaterialSectionLine3D&amp;action=edit&amp;redlink=1" class="new" title="AR/dxDrawMaterialSectionLine3D (page does not exist)">dxDrawMaterialSectionLine3D</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/dxSetAspectRatioAdjustmentEnabled&amp;action=edit&amp;redlink=1" class="new" title="AR/dxSetAspectRatioAdjustmentEnabled (page does not exist)">dxSetAspectRatioAdjustmentEnabled</a></li></ul>
+<ul><li> <a href="../DxSetTextureEdge.html" title="DxSetTextureEdge">dxSetTextureEdge</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.AA.D8.A3.D8.AB.D9.8A.D8.B1.D8.A7.D8.AA_.D8.A7.D9.84.D8.B9.D8.A7.D9.84.D9.85">وظائف تأثيرات العالم</span></h2>
+<p><a href="http://wiki.localhost/index.php?title=Template:AR/Client_Effects_functions&amp;action=edit&amp;redlink=1" class="new" title="Template:AR/Client Effects functions (page does not exist)">Template:AR/Client Effects functions</a>
+</p>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D8.B9.D9.86.D8.A7.D8.B5.D8.B1">وظائف العناصر</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=AR/attachElements&amp;action=edit&amp;redlink=1" class="new" title="AR/attachElements (page does not exist)">attachElements</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/createElement&amp;action=edit&amp;redlink=1" class="new" title="AR/createElement (page does not exist)">createElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/destroyElement&amp;action=edit&amp;redlink=1" class="new" title="AR/destroyElement (page does not exist)">destroyElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/detachElements&amp;action=edit&amp;redlink=1" class="new" title="AR/detachElements (page does not exist)">detachElements</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getAttachedElements&amp;action=edit&amp;redlink=1" class="new" title="AR/getAttachedElements (page does not exist)">getAttachedElements</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getElementAttachedOffsets&amp;action=edit&amp;redlink=1" class="new" title="AR/getElementAttachedOffsets (page does not exist)">getElementAttachedOffsets</a></li>
+<li><a href="getElementAlpha.html" title="AR/getElementAlpha">getElementAlpha</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getElementCollisionsEnabled&amp;action=edit&amp;redlink=1" class="new" title="AR/getElementCollisionsEnabled (page does not exist)">getElementCollisionsEnabled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getElementAttachedTo&amp;action=edit&amp;redlink=1" class="new" title="AR/getElementAttachedTo (page does not exist)">getElementAttachedTo</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getElementBoundingBox&amp;action=edit&amp;redlink=1" class="new" title="AR/getElementBoundingBox (page does not exist)">getElementBoundingBox</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getElementByID&amp;action=edit&amp;redlink=1" class="new" title="AR/getElementByID (page does not exist)">getElementByID</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getElementChild&amp;action=edit&amp;redlink=1" class="new" title="AR/getElementChild (page does not exist)">getElementChild</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getElementChildren&amp;action=edit&amp;redlink=1" class="new" title="AR/getElementChildren (page does not exist)">getElementChildren</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getElementChildrenCount&amp;action=edit&amp;redlink=1" class="new" title="AR/getElementChildrenCount (page does not exist)">getElementChildrenCount</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getElementColShape&amp;action=edit&amp;redlink=1" class="new" title="AR/getElementColShape (page does not exist)">getElementColShape</a></li>
+<li><a href="getElementData.html" title="AR/getElementData">getElementData</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getElementDimension&amp;action=edit&amp;redlink=1" class="new" title="AR/getElementDimension (page does not exist)">getElementDimension</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getElementDistanceFromCentreOfMassToBaseOfModel&amp;action=edit&amp;redlink=1" class="new" title="AR/getElementDistanceFromCentreOfMassToBaseOfModel (page does not exist)">getElementDistanceFromCentreOfMassToBaseOfModel</a></li>
+<li><a href="getElementHealth.html" title="AR/getElementHealth">getElementHealth</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getElementID&amp;action=edit&amp;redlink=1" class="new" title="AR/getElementID (page does not exist)">getElementID</a></li>
+<li><a href="getElementInterior.html" title="AR/getElementInterior">getElementInterior</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getElementMatrix&amp;action=edit&amp;redlink=1" class="new" title="AR/getElementMatrix (page does not exist)">getElementMatrix</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getElementModel&amp;action=edit&amp;redlink=1" class="new" title="AR/getElementModel (page does not exist)">getElementModel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getElementParent&amp;action=edit&amp;redlink=1" class="new" title="AR/getElementParent (page does not exist)">getElementParent</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getElementPosition&amp;action=edit&amp;redlink=1" class="new" title="AR/getElementPosition (page does not exist)">getElementPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getElementRotation&amp;action=edit&amp;redlink=1" class="new" title="AR/getElementRotation (page does not exist)">getElementRotation</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getElementRadius&amp;action=edit&amp;redlink=1" class="new" title="AR/getElementRadius (page does not exist)">getElementRadius</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getElementsByType&amp;action=edit&amp;redlink=1" class="new" title="AR/getElementsByType (page does not exist)">getElementsByType</a></li>
+<li><a href="getElementsWithinColShape.html" title="AR/getElementsWithinColShape">getElementsWithinColShape</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getElementType&amp;action=edit&amp;redlink=1" class="new" title="AR/getElementType (page does not exist)">getElementType</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getElementVelocity&amp;action=edit&amp;redlink=1" class="new" title="AR/getElementVelocity (page does not exist)">getElementVelocity</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getLowLODElement&amp;action=edit&amp;redlink=1" class="new" title="AR/getLowLODElement (page does not exist)">getLowLODElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getRootElement&amp;action=edit&amp;redlink=1" class="new" title="AR/getRootElement (page does not exist)">getRootElement</a></li>
+<li><a href="isElement.html" title="AR/isElement">isElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/isElementAttached&amp;action=edit&amp;redlink=1" class="new" title="AR/isElementAttached (page does not exist)">isElementAttached</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/isElementCallPropagationEnabled&amp;action=edit&amp;redlink=1" class="new" title="AR/isElementCallPropagationEnabled (page does not exist)">isElementCallPropagationEnabled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/isElementCollidableWith&amp;action=edit&amp;redlink=1" class="new" title="AR/isElementCollidableWith (page does not exist)">isElementCollidableWith</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/isElementDoubleSided&amp;action=edit&amp;redlink=1" class="new" title="AR/isElementDoubleSided (page does not exist)">isElementDoubleSided</a></li>
+<li><a href="isElementFrozen.html" title="AR/isElementFrozen">isElementFrozen</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/isElementLocal&amp;action=edit&amp;redlink=1" class="new" title="AR/isElementLocal (page does not exist)">isElementLocal</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/isElementLowLOD&amp;action=edit&amp;redlink=1" class="new" title="AR/isElementLowLOD (page does not exist)">isElementLowLOD</a></li>
+<li><a href="isElementInWater.html" title="AR/isElementInWater">isElementInWater</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/isElementOnScreen&amp;action=edit&amp;redlink=1" class="new" title="AR/isElementOnScreen (page does not exist)">isElementOnScreen</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/isElementStreamable&amp;action=edit&amp;redlink=1" class="new" title="AR/isElementStreamable (page does not exist)">isElementStreamable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/isElementStreamedIn&amp;action=edit&amp;redlink=1" class="new" title="AR/isElementStreamedIn (page does not exist)">isElementStreamedIn</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/isElementSyncer&amp;action=edit&amp;redlink=1" class="new" title="AR/isElementSyncer (page does not exist)">isElementSyncer</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/isElementWaitingForGroundToLoad&amp;action=edit&amp;redlink=1" class="new" title="AR/isElementWaitingForGroundToLoad (page does not exist)">isElementWaitingForGroundToLoad</a></li>
+<li><a href="isElementWithinColShape.html" title="AR/isElementWithinColShape">isElementWithinColShape</a></li>
+<li><a href="setElementAlpha.html" title="AR/setElementAlpha">setElementAlpha</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setElementAttachedOffsets&amp;action=edit&amp;redlink=1" class="new" title="AR/setElementAttachedOffsets (page does not exist)">setElementAttachedOffsets</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setElementCallPropagationEnabled&amp;action=edit&amp;redlink=1" class="new" title="AR/setElementCallPropagationEnabled (page does not exist)">setElementCallPropagationEnabled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setElementCollidableWith&amp;action=edit&amp;redlink=1" class="new" title="AR/setElementCollidableWith (page does not exist)">setElementCollidableWith</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setElementCollisionsEnabled&amp;action=edit&amp;redlink=1" class="new" title="AR/setElementCollisionsEnabled (page does not exist)">setElementCollisionsEnabled</a></li>
+<li><a href="setElementData.html" title="AR/setElementData">setElementData</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setElementDimension&amp;action=edit&amp;redlink=1" class="new" title="AR/setElementDimension (page does not exist)">setElementDimension</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setElementDoubleSided&amp;action=edit&amp;redlink=1" class="new" title="AR/setElementDoubleSided (page does not exist)">setElementDoubleSided</a></li>
+<li><a href="setElementFrozen.html" title="AR/setElementFrozen">setElementFrozen</a></li>
+<li><a href="setElementHealth.html" title="AR/setElementHealth">setElementHealth</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setElementID&amp;action=edit&amp;redlink=1" class="new" title="AR/setElementID (page does not exist)">setElementID</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setElementInterior&amp;action=edit&amp;redlink=1" class="new" title="AR/setElementInterior (page does not exist)">setElementInterior</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setElementMatrix&amp;action=edit&amp;redlink=1" class="new" title="AR/setElementMatrix (page does not exist)">setElementMatrix</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setElementModel&amp;action=edit&amp;redlink=1" class="new" title="AR/setElementModel (page does not exist)">setElementModel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setElementParent&amp;action=edit&amp;redlink=1" class="new" title="AR/setElementParent (page does not exist)">setElementParent</a></li>
+<li><a href="setElementPosition.html" title="AR/setElementPosition">setElementPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setElementRotation&amp;action=edit&amp;redlink=1" class="new" title="AR/setElementRotation (page does not exist)">setElementRotation</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setElementStreamable&amp;action=edit&amp;redlink=1" class="new" title="AR/setElementStreamable (page does not exist)">setElementStreamable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setElementVelocity&amp;action=edit&amp;redlink=1" class="new" title="AR/setElementVelocity (page does not exist)">setElementVelocity</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setLowLODElement&amp;action=edit&amp;redlink=1" class="new" title="AR/setLowLODElement (page does not exist)">setLowLODElement</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D9.85.D8.AD.D8.B1.D9.83_.D8.A7.D9.84.D9.84.D8.B9.D8.A8.D8.A9">وظائف محرك اللعبة</span></h2>
+<p><a href="http://wiki.localhost/index.php?title=Template:AR/Engine_functions&amp;action=edit&amp;redlink=1" class="new" title="Template:AR/Engine functions (page does not exist)">Template:AR/Engine functions</a>
+</p>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D8.A3.D8.AD.D8.AF.D8.A7.D8.AB">وظائف الأحداث</span></h2>
+<p><a href="http://wiki.localhost/index.php?title=Template:AR/Client_event_functions&amp;action=edit&amp;redlink=1" class="new" title="Template:AR/Client event functions (page does not exist)">Template:AR/Client event functions</a>
+</p>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D8.A7.D9.86.D9.81.D8.AC.D8.A7.D8.B1.D8.A7.D8.AA">وظائف الانفجارات</span></h2>
+<ul><li><a href="createExplosion.html" title="AR/createExplosion">createExplosion</a></li></ul>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D9.85.D9.84.D9.81.D8.A7.D8.AA">وظائف الملفات</span></h2>
+<p><a href="http://wiki.localhost/index.php?title=Template:AR/Client_file_functions&amp;action=edit&amp;redlink=1" class="new" title="Template:AR/Client file functions (page does not exist)">Template:AR/Client file functions</a>
+</p>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D8.AD.D8.B1.D8.A7.D8.A6.D9.82">وظائف الحرائق</span></h2>
+<p><a href="http://wiki.localhost/index.php?title=Template:AR/Client_fire_functions&amp;action=edit&amp;redlink=1" class="new" title="Template:AR/Client fire functions (page does not exist)">Template:AR/Client fire functions</a>
+</p>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D9.88.D8.A7.D8.AC.D9.87.D8.A9_.D8.A7.D9.84.D9.85.D8.B3.D8.AA.D8.AE.D8.AF.D9.85_.D8.A7.D9.84.D8.B1.D8.B3.D9.88.D9.85.D9.8A.D8.A9">وظائف واجهة المستخدم الرسومية</span></h2>
+<p><a href="http://wiki.localhost/index.php?title=Template:AR/GUI_functions&amp;action=edit&amp;redlink=1" class="new" title="Template:AR/GUI functions (page does not exist)">Template:AR/GUI functions</a>
+</p>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D9.85.D8.AF.D8.AE.D9.84.D8.A7.D8.AA">وظائف المدخلات</span></h2>
+<p><a href="http://wiki.localhost/index.php?title=Template:AR/Client_input_functions&amp;action=edit&amp;redlink=1" class="new" title="Template:AR/Client input functions (page does not exist)">Template:AR/Client input functions</a>
+</p>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D8.B9.D9.84.D8.A7.D9.85.D8.A7.D8.AA">وظائف العلامات</span></h2>
+<ul><li><a href="createMarker.html" title="AR/createMarker">createMarker</a></li>
+<li><a href="getMarkerColor.html" title="AR/getMarkerColor">getMarkerColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getMarkerCount&amp;action=edit&amp;redlink=1" class="new" title="AR/getMarkerCount (page does not exist)">getMarkerCount</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getMarkerIcon&amp;action=edit&amp;redlink=1" class="new" title="AR/getMarkerIcon (page does not exist)">getMarkerIcon</a></li>
+<li><a href="getMarkerSize.html" title="AR/getMarkerSize">getMarkerSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getMarkerTarget&amp;action=edit&amp;redlink=1" class="new" title="AR/getMarkerTarget (page does not exist)">getMarkerTarget</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getMarkerType&amp;action=edit&amp;redlink=1" class="new" title="AR/getMarkerType (page does not exist)">getMarkerType</a></li>
+<li><a href="isElementWithinMarker.html" title="AR/isElementWithinMarker">isElementWithinMarker</a></li>
+<li><a href="setMarkerColor.html" title="AR/setMarkerColor">setMarkerColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setMarkerIcon&amp;action=edit&amp;redlink=1" class="new" title="AR/setMarkerIcon (page does not exist)">setMarkerIcon</a></li>
+<li><a href="setMarkerSize.html" title="AR/setMarkerSize">setMarkerSize</a></li>
+<li><a href="setMarkerTarget.html" title="AR/setMarkerTarget">setMarkerTarget</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setMarkerType&amp;action=edit&amp;redlink=1" class="new" title="AR/setMarkerType (page does not exist)">setMarkerType</a></li></ul>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D9.85.D8.AC.D8.B3.D9.85.D8.A7.D8.AA_.D8.A7.D9.84.D9.84.D8.B9.D8.A8.D8.A9">وظائف مجسمات اللعبة</span></h2>
+<ul><li><a href="createObject.html" title="AR/createObject">createObject</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/moveObject&amp;action=edit&amp;redlink=1" class="new" title="AR/moveObject (page does not exist)">moveObject</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/stopObject&amp;action=edit&amp;redlink=1" class="new" title="AR/stopObject (page does not exist)">stopObject</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setObjectScale&amp;action=edit&amp;redlink=1" class="new" title="AR/setObjectScale (page does not exist)">setObjectScale</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getObjectScale&amp;action=edit&amp;redlink=1" class="new" title="AR/getObjectScale (page does not exist)">getObjectScale</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setObjectBreakable&amp;action=edit&amp;redlink=1" class="new" title="AR/setObjectBreakable (page does not exist)">setObjectBreakable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/isObjectBreakable&amp;action=edit&amp;redlink=1" class="new" title="AR/isObjectBreakable (page does not exist)">isObjectBreakable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/breakObject&amp;action=edit&amp;redlink=1" class="new" title="AR/breakObject (page does not exist)">breakObject</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/respawnObject&amp;action=edit&amp;redlink=1" class="new" title="AR/respawnObject (page does not exist)">respawnObject</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/toggleObjectRespawn&amp;action=edit&amp;redlink=1" class="new" title="AR/toggleObjectRespawn (page does not exist)">toggleObjectRespawn</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/setObjectMass&amp;action=edit&amp;redlink=1" class="new" title="AR/setObjectMass (page does not exist)">setObjectMass</a></li>
+<li><a href="http://wiki.localhost/index.php?title=AR/getObjectMass&amp;action=edit&amp;redlink=1" class="new" title="AR/getObjectMass (page does not exist)">getObjectMass</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D9.85.D8.AE.D8.B1.D8.AC.D8.A7.D8.AA">وظائف المخرجات</span></h2>
+<ul><li> <a href="outputChatBox.html" title="AR/outputChatBox">outputChatBox</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=AR/outputConsole&amp;action=edit&amp;redlink=1" class="new" title="AR/outputConsole (page does not exist)">outputConsole</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=AR/outputDebugString&amp;action=edit&amp;redlink=1" class="new" title="AR/outputDebugString (page does not exist)">outputDebugString</a></li>
+<li> <a href="showChat.html" title="AR/showChat">showChat</a></li></ul>
+<ul><li> <a href="isChatVisible.html" title="AR/isChatVisible">isChatVisible</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D9.85.D8.AC.D8.B3.D9.85.D8.A7.D8.AA_.D8.A7.D9.84.D9.82.D8.A7.D8.A8.D9.84.D8.A9_.D9.84.D9.84.D8.A7.D9.84.D8.AA.D9.82.D8.A7.D8.B7">وظائف المجسمات القابلة للالتقاط</span></h2>
+<p><a href="http://wiki.localhost/index.php?title=Template:AR/Client_pickup_functions&amp;action=edit&amp;redlink=1" class="new" title="Template:AR/Client pickup functions (page does not exist)">Template:AR/Client pickup functions</a>
+</p>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D8.A7.D8.B9.D8.A8.D9.8A.D9.86">وظائف الاعبين</span></h2>
+<ul><li> <a href="http://wiki.localhost/index.php?title=AR/getLocalPlayer&amp;action=edit&amp;redlink=1" class="new" title="AR/getLocalPlayer (page does not exist)">getLocalPlayer</a></li>
+<li> <a href="givePlayerMoney.html" title="AR/givePlayerMoney">givePlayerMoney</a></li>
+<li> <a href="takePlayerMoney.html" title="AR/takePlayerMoney">takePlayerMoney</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=AR/showPlayerHudComponent&amp;action=edit&amp;redlink=1" class="new" title="AR/showPlayerHudComponent (page does not exist)">showPlayerHudComponent</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=AR/setPlayerBlurLevel&amp;action=edit&amp;redlink=1" class="new" title="AR/setPlayerBlurLevel (page does not exist)">setPlayerBlurLevel</a></li>
+<li> <a href="setPlayerMoney.html" title="AR/setPlayerMoney">setPlayerMoney</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=AR/setPlayerNametagColor&amp;action=edit&amp;redlink=1" class="new" title="AR/setPlayerNametagColor (page does not exist)">setPlayerNametagColor</a></li>
+<li> <a href="setPlayerNametagShowing.html" title="AR/setPlayerNametagShowing">setPlayerNametagShowing</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=AR/setPlayerNametagText&amp;action=edit&amp;redlink=1" class="new" title="AR/setPlayerNametagText (page does not exist)">setPlayerNametagText</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=AR/getPlayerBlurLevel&amp;action=edit&amp;redlink=1" class="new" title="AR/getPlayerBlurLevel (page does not exist)">getPlayerBlurLevel</a></li>
+<li> <a href="getPlayerFromName.html" title="AR/getPlayerFromName">getPlayerFromName</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=AR/getPlayerMapBoundingBox&amp;action=edit&amp;redlink=1" class="new" title="AR/getPlayerMapBoundingBox (page does not exist)">getPlayerMapBoundingBox</a></li>
+<li> <a href="getPlayerMoney.html" title="AR/getPlayerMoney">getPlayerMoney</a></li>
+<li> <a href="getPlayerName.html" title="AR/getPlayerName">getPlayerName</a></li>
+<li> <a href="getPlayerNametagColor.html" title="AR/getPlayerNametagColor">getPlayerNametagColor</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=AR/getPlayerNametagText&amp;action=edit&amp;redlink=1" class="new" title="AR/getPlayerNametagText (page does not exist)">getPlayerNametagText</a></li>
+<li> <a href="getPlayerPing.html" title="AR/getPlayerPing">getPlayerPing</a></li>
+<li> <a href="getPlayerSerial.html" title="AR/getPlayerSerial">getPlayerSerial</a></li>
+<li> <a href="getPlayerTeam.html" title="AR/getPlayerTeam">getPlayerTeam</a></li>
+<li> <a href="getPlayerWantedLevel.html" title="AR/getPlayerWantedLevel">getPlayerWantedLevel</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=AR/isPlayerMapForced&amp;action=edit&amp;redlink=1" class="new" title="AR/isPlayerMapForced (page does not exist)">isPlayerMapForced</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=AR/isPlayerMapVisible&amp;action=edit&amp;redlink=1" class="new" title="AR/isPlayerMapVisible (page does not exist)">isPlayerMapVisible</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=AR/isPlayerNametagShowing&amp;action=edit&amp;redlink=1" class="new" title="AR/isPlayerNametagShowing (page does not exist)">isPlayerNametagShowing</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=AR/isPlayerHudComponentVisible&amp;action=edit&amp;redlink=1" class="new" title="AR/isPlayerHudComponentVisible (page does not exist)">isPlayerHudComponentVisible</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D8.B5.D9.88.D8.A7.D8.B1.D9.8A.D8.AE_.D9.88.D8.A7.D9.84.D9.85.D9.82.D8.B0.D9.88.D9.81.D8.A7.D8.AA">وظائف الصواريخ والمقذوفات</span></h2>
+<p><a href="http://wiki.localhost/index.php?title=Template:AR/Client_projectile_functions&amp;action=edit&amp;redlink=1" class="new" title="Template:AR/Client projectile functions (page does not exist)">Template:AR/Client projectile functions</a>
+</p>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D9.85.D9.86.D9.82.D8.B7.D8.A9_.D8.A8.D8.A7.D9.84.D8.B1.D8.A7.D8.AF.D8.A7.D8.B1">وظائف منقطة بالرادار</span></h2>
+<p><a href="http://wiki.localhost/index.php?title=Template:AR/Client_radar-area_functions&amp;action=edit&amp;redlink=1" class="new" title="Template:AR/Client radar-area functions (page does not exist)">Template:AR/Client radar-area functions</a>
+</p>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D8.B3.D9.83.D8.B1.D8.AA.D8.A8.D8.A7.D8.AA_.D9.88.D8.A7.D9.84.D9.85.D9.88.D8.AF.D8.A7.D8.AA_.D8.A7.D9.84.D8.A8.D8.B1.D9.85.D8.AC.D9.8A.D8.A9">وظائف السكرتبات والمودات البرمجية</span></h2>
+<p><a href="http://wiki.localhost/index.php?title=Template:AR/Client_resource_functions&amp;action=edit&amp;redlink=1" class="new" title="Template:AR/Client resource functions (page does not exist)">Template:AR/Client resource functions</a>
+</p>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D9.81.D8.B1.D9.82_.D9.88.D8.A7.D9.84.D9.85.D8.AC.D9.85.D9.88.D8.B9.D8.A7.D8.AA">وظائف الفرق والمجموعات</span></h2>
+<p><a href="http://wiki.localhost/index.php?title=Template:AR/Client_team_functions&amp;action=edit&amp;redlink=1" class="new" title="Template:AR/Client team functions (page does not exist)">Template:AR/Client team functions</a>
+</p>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A3.D8.AE.D8.B1.D9.89_.D9.85.D9.81.D9.8A.D8.AF.D8.A9">وظائف أخرى مفيدة</span></h2>
+<p><a href="http://wiki.localhost/index.php?title=Template:AR/Client_utility_functions&amp;action=edit&amp;redlink=1" class="new" title="Template:AR/Client utility functions (page does not exist)">Template:AR/Client utility functions</a>
+</p>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D9.85.D8.B1.D9.83.D8.A8.D8.A7.D8.AA_.D9.88.D8.A7.D9.84.D8.B3.D9.8A.D8.A7.D8.B1.D8.A7.D8.AA">وظائف المركبات والسيارات</span></h2>
+<p><a href="http://wiki.localhost/index.php?title=Template:AR/Client_vehicle_functions&amp;action=edit&amp;redlink=1" class="new" title="Template:AR/Client vehicle functions (page does not exist)">Template:AR/Client vehicle functions</a>
+</p>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D9.85.D8.A7.D8.A1">وظائف الماء</span></h2>
+<p><a href="http://wiki.localhost/index.php?title=Template:AR/Client_water_functions&amp;action=edit&amp;redlink=1" class="new" title="Template:AR/Client water functions (page does not exist)">Template:AR/Client water functions</a>
+</p>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.A7.D9.84.D8.A3.D8.B3.D9.84.D8.AD.D8.A9">وظائف الأسلحة</span></h2>
+<p><a href="http://wiki.localhost/index.php?title=Template:AR/Client_weapon_functions&amp;action=edit&amp;redlink=1" class="new" title="Template:AR/Client weapon functions (page does not exist)">Template:AR/Client weapon functions</a>
+</p>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.B5.D9.86.D8.B9_.D8.A7.D9.84.D8.A3.D8.B3.D9.84.D8.AD.D8.A9">وظائف صنع الأسلحة</span></h2>
+<p>Documentation can be found <a rel="nofollow" class="external text" href="http://code.google.com/p/mtasa-blue/source/detail?r=4555">here</a> and <a rel="nofollow" class="external text" href="http://code.google.com/p/mtasa-blue/source/detail?r=4557">here</a>
+<a href="http://wiki.localhost/index.php?title=Template:AR/Client_weapon_creation_functions&amp;action=edit&amp;redlink=1" class="new" title="Template:AR/Client weapon creation functions (page does not exist)">Template:AR/Client weapon creation functions</a>
+</p>
+<h2><span class="mw-headline" id=".D9.88.D8.B8.D8.A7.D8.A6.D9.81_.D8.B9.D8.A7.D9.84.D9.85_.D8.A7.D9.84.D9.84.D8.B9.D8.A8.D8.A9">وظائف عالم اللعبة</span></h2>
+<p><a href="http://wiki.localhost/index.php?title=Template:AR/Client_world_functions&amp;action=edit&amp;redlink=1" class="new" title="Template:AR/Client world functions (page does not exist)">Template:AR/Client world functions</a>
+</p>
+<h2><span class="mw-headline" id="XML_.D9.88.D8.B8.D8.A7.D8.A6.D9.81">XML وظائف</span></h2>
+<p>XML&#160;:  [<a rel="nofollow" class="external autonumber" href="https://ar.wikipedia.org/wiki/لغة_الترميز_القابلة_للامتداد">[1]</a>]
+<a href="http://wiki.localhost/index.php?title=Template:AR/Client_XML_functions&amp;action=edit&amp;redlink=1" class="new" title="Template:AR/Client XML functions (page does not exist)">Template:AR/Client XML functions</a>
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190625164854
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.047 seconds
+Real time usage: 0.059 seconds
+Preprocessor visited node count: 485/1000000
+Preprocessor generated node count: 934/1000000
+Post‐expand include size: 13176/2097152 bytes
+Template argument size: 810/2097152 bytes
+Highest expansion depth: 9/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   34.969      1 - -total
+ 22.33%    7.809      7 - Template:New_items
+ 18.42%    6.441      1 - Template:AR/Audio_functions
+ 15.79%    5.523      9 - Template:Current_Version
+  6.56%    2.293      1 - Template:AR/Blip_functions
+  6.28%    2.195      1 - Template:AR/Client_cursor_functions
+  5.88%    2.057      1 - Template:AR/Drawing_functions
+  5.79%    2.023      2 - Template:New_feature/item
+  4.82%    1.685      1 - Template:AR/Client_Clothes_and_body_functions
+  4.66%    1.631      1 - Template:AR/Collision_shape_functions
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:7428-0!*!0!!en!*!* and timestamp 20190625164854 and revision id 63050
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=AR/Client_Scripting_Functions&amp;oldid=63050">https://wiki.multitheftauto.com/index.php?title=AR/Client_Scripting_Functions&amp;oldid=63050</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="../Special_Categories.html" title="Special:Categories">Categories</a>: <ul><li><a href="http://wiki.localhost/index.php?title=Category:Changes_in_1.3.2&amp;action=edit&amp;redlink=1" class="new" title="Category:Changes in 1.3.2 (page does not exist)">Changes in 1.3.2</a></li><li><a href="http://wiki.localhost/index.php?title=Category:Changes_in_1.3.5&amp;action=edit&amp;redlink=1" class="new" title="Category:Changes in 1.3.5 (page does not exist)">Changes in 1.3.5</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Client_Scripting_Functions.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:AR/Client_Scripting_Functions&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=AR/Client_Scripting_Functions&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=AR/Client_Scripting_Functions&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=AR%2FClient+Scripting+Functions" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=AR%2FClient+Scripting+Functions" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/AR/Client_Scripting_Functions.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/AR/Client_Scripting_Functions.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=AR/Client_Scripting_Functions&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=AR/Client_Scripting_Functions&amp;oldid=63050" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=AR/Client_Scripting_Functions&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-ar"><a href="http://wiki.multitheftauto.com/index.php?title=AR/Client_Scripting_Functions" title="Client Scripting Functions – العربية" lang="ar" hreflang="ar">العربية</a></li>
+													<li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=Client_Scripting_Functions" title="Client Scripting Functions – English" lang="en" hreflang="en">English</a></li>
+													<li class="interlanguage-link interwiki-pl"><a href="http://wiki.multitheftauto.com/index.php?title=PL/Funkcje_po_stronie_klienta" title="Funkcje po stronie klienta – polski" lang="pl" hreflang="pl">Polski</a></li>
+													<li class="interlanguage-link interwiki-it"><a href="http://wiki.multitheftauto.com/index.php?title=IT/Funzioni_Client-side" title="Funzioni Client-side – italiano" lang="it" hreflang="it">Italiano</a></li>
+													<li class="interlanguage-link interwiki-ru"><a href="http://wiki.multitheftauto.com/index.php?title=RU/Client_Scripting_Functions" title="Client Scripting Functions – русский" lang="ru" hreflang="ru">Русский</a></li>
+													<li class="interlanguage-link interwiki-de"><a href="http://wiki.multitheftauto.com/index.php?title=DE/Clientseitige_Funktionen" title="Clientseitige Funktionen – Deutsch" lang="de" hreflang="de">Deutsch</a></li>
+													<li class="interlanguage-link interwiki-tr"><a href="http://wiki.multitheftauto.com/index.php?title=TR/Client_Tarafl%C4%B1_Fonksiyonlar" title="Client Taraflı Fonksiyonlar – Türkçe" lang="tr" hreflang="tr">Türkçe</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 21 June 2019, at 23:06.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":88});});</script></body></html>

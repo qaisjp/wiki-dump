@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>OOP server - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"OOP_server","wgTitle":"OOP server","wgCurRevisionId":55618,"wgRevisionId":55618,"wgArticleId":7765,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Needs Checking","OOP"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"OOP_server","wgRelevantArticleId":7765,"wgRequestId":"cc2997b1a28c82c33b38ae49","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-OOP_server rootpage-OOP_server skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">OOP server</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table cellspacing="0" style="padding: 5px; width: 80%; margin: 2px auto 2px auto; border: 1px dotted #0026FF; background: #CCCCFF; border-left: 10px solid #0026FF;">
+<tr>
+<td style="width: 32px; vertical-align:top;" rowspan="2"> <img alt="Dialog-information.png" src="http://wiki.localhost/images/8/82/Dialog-information.png" width="32" height="32" />
+</td>
+<td style="padding-left: 10px;"><b>This article needs checking.</b>
+</td></tr>
+<tr>
+<td rowspan="1" style="padding-left: 10px;"><hr style="background: #0026FF;" /><b>Reason(s):</b> This page is partially outdated.
+</td></tr></table>
+<p>The new OOP in MTA allows for better code organization and readability. This is a list of <a href="Server_Scripting_Functions.html" title="Server Scripting Functions">server-side functions</a>.
+</p><p><i>See also: <a href="OOP.html" title="OOP">OOP</a></i>
+</p><p><br />
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Element"><span class="tocnumber">1</span> <span class="toctext">Element</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#ACL"><span class="tocnumber">2</span> <span class="toctext">ACL</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#ACLGroup"><span class="tocnumber">3</span> <span class="toctext">ACLGroup</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Account"><span class="tocnumber">4</span> <span class="toctext">Account</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Ban"><span class="tocnumber">5</span> <span class="toctext">Ban</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Blip"><span class="tocnumber">6</span> <span class="toctext">Blip</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#ColShape"><span class="tocnumber">7</span> <span class="toctext">ColShape</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#File"><span class="tocnumber">8</span> <span class="toctext">File</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Marker"><span class="tocnumber">9</span> <span class="toctext">Marker</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Object"><span class="tocnumber">10</span> <span class="toctext">Object</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Ped"><span class="tocnumber">11</span> <span class="toctext">Ped</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Pickup"><span class="tocnumber">12</span> <span class="toctext">Pickup</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Player"><span class="tocnumber">13</span> <span class="toctext">Player</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#RadarArea"><span class="tocnumber">14</span> <span class="toctext">RadarArea</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#Resource"><span class="tocnumber">15</span> <span class="toctext">Resource</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#Connection"><span class="tocnumber">16</span> <span class="toctext">Connection</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#QueryHandle"><span class="tocnumber">17</span> <span class="toctext">QueryHandle</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="#Team"><span class="tocnumber">18</span> <span class="toctext">Team</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="#TextDisplay"><span class="tocnumber">19</span> <span class="toctext">TextDisplay</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="#TextItem"><span class="tocnumber">20</span> <span class="toctext">TextItem</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="#Vehicle"><span class="tocnumber">21</span> <span class="toctext">Vehicle</span></a></li>
+<li class="toclevel-1 tocsection-22"><a href="#Water"><span class="tocnumber">22</span> <span class="toctext">Water</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="#XML"><span class="tocnumber">23</span> <span class="toctext">XML</span></a></li>
+<li class="toclevel-1 tocsection-24"><a href="#Timer"><span class="tocnumber">24</span> <span class="toctext">Timer</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Element">Element</span></h2>
+<pre>areCollisionsEnabled (function: <a href="GetElementCollisionsEnabled.html" title="GetElementCollisionsEnabled">getElementCollisionsEnabled</a>)
+attach (function: <a href="AttachElements.html" title="AttachElements">attachElements</a>)
+clearVisibility (function: <a href="ClearElementVisibleTo.html" title="ClearElementVisibleTo">clearElementVisibleTo</a>)
+clone (function: <a href="CloneElement.html" title="CloneElement">cloneElement</a>)
+create (function: <a href="CreateElement.html" title="CreateElement">createElement</a>)
+destroy (function: <a href="DestroyElement.html" title="DestroyElement">destroyElement</a>)
+detach (function: <a href="DetachElements.html" title="DetachElements">detachElements</a>)
+getAllByType (function: <a href="GetElementsByType.html" title="GetElementsByType">getElementsByType</a>)
+getAllData (function: <a href="GetAllElementData.html" title="GetAllElementData">getAllElementData</a>)
+getAlpha (function: <a href="GetElementAlpha.html" title="GetElementAlpha">getElementAlpha</a>)
+getAttachedElements (function: <a href="GetAttachedElements.html" title="GetAttachedElements">getAttachedElements</a>)
+getAttachedOffsets (function: <a href="GetElementAttachedOffsets.html" title="GetElementAttachedOffsets">getElementAttachedOffsets</a>)
+getAttachedTo (function: <a href="GetElementAttachedTo.html" title="GetElementAttachedTo">getElementAttachedTo</a>)
+getByID (function: <a href="GetElementByID.html" title="GetElementByID">getElementByID</a>)
+getByIndex (function: <a href="GetElementByIndex.html" title="GetElementByIndex">getElementByIndex</a>)
+getChild (function: <a href="GetElementChild.html" title="GetElementChild">getElementChild</a>)
+getChildren (function: <a href="GetElementChildren.html" title="GetElementChildren">getElementChildren</a>)
+getChildrenCount (function: <a href="GetElementChildrenCount.html" title="GetElementChildrenCount">getElementChildrenCount</a>)
+getColShape (function: <a href="GetElementColShape.html" title="GetElementColShape">getElementColShape</a>)
+getData (function: <a href="GetElementData.html" title="GetElementData">getElementData</a>)
+getDimension (function: <a href="GetElementDimension.html" title="GetElementDimension">getElementDimension</a>)
+getHealth (function: <a href="GetElementHealth.html" title="GetElementHealth">getElementHealth</a>)
+getID (function: <a href="GetElementID.html" title="GetElementID">getElementID</a>)
+getInterior (function: <a href="GetElementInterior.html" title="GetElementInterior">getElementInterior</a>)
+getLowLOD (function: <a href="GetLowLODElement.html" title="GetLowLODElement">getLowLODElement</a>)
+getModel (function: <a href="GetElementModel.html" title="GetElementModel">getElementModel</a>)
+getParent (function: <a href="GetElementParent.html" title="GetElementParent">getElementParent</a>)
+getPosition (function: <a href="GetElementPosition.html" title="GetElementPosition">getElementPosition</a>)
+getRotation (function: <a href="GetElementRotation.html" title="GetElementRotation">getElementRotation</a>)
+getSyncer (function: <a href="GetElementSyncer.html" title="GetElementSyncer">getElementSyncer</a>)
+getType (function: <a href="GetElementType.html" title="GetElementType">getElementType</a>)
+getVelocity (function: <a href="GetElementVelocity.html" title="GetElementVelocity">getElementVelocity</a>)
+getZoneName (function: <a href="GetElementZoneName.html" title="GetElementZoneName">getElementZoneName</a>)
+isAttached (function: <a href="IsElementAttached.html" title="IsElementAttached">isElementAttached</a>)
+isCallPropagationEnabled (function: <a href="IsElementCallPropagationEnabled.html" title="IsElementCallPropagationEnabled">isElementCallPropagationEnabled</a>)
+isDoubleSided (function: <a href="IsElementDoubleSided.html" title="IsElementDoubleSided">isElementDoubleSided</a>)
+isFrozen (function: <a href="IsElementFrozen.html" title="IsElementFrozen">isElementFrozen</a>)
+isInWater (function: <a href="IsElementInWater.html" title="IsElementInWater">isElementInWater</a>)
+isLowLOD (function: <a href="IsElementLowLOD.html" title="IsElementLowLOD">isElementLowLOD</a>)
+isVisibleTo (function: <a href="IsElementVisibleTo.html" title="IsElementVisibleTo">isElementVisibleTo</a>)
+isWithinColShape (function: <a href="IsElementWithinColShape.html" title="IsElementWithinColShape">isElementWithinColShape</a>)
+isWithinMarker (function: <a href="IsElementWithinMarker.html" title="IsElementWithinMarker">isElementWithinMarker</a>)
+removeData (function: <a href="RemoveElementData.html" title="RemoveElementData">removeElementData</a>)
+setAlpha (function: <a href="SetElementAlpha.html" title="SetElementAlpha">setElementAlpha</a>)
+setAttachedOffsets (function: <a href="SetElementAttachedOffsets.html" title="SetElementAttachedOffsets">setElementAttachedOffsets</a>)
+setCallPropagationEnabled (function: <a href="SetElementCallPropagationEnabled.html" title="SetElementCallPropagationEnabled">setElementCallPropagationEnabled</a>)
+setCollisionsEnabled (function: <a href="SetElementCollisionsEnabled.html" title="SetElementCollisionsEnabled">setElementCollisionsEnabled</a>)
+setData (function: <a href="SetElementData.html" title="SetElementData">setElementData</a>)
+setDimension (function: <a href="SetElementDimension.html" title="SetElementDimension">setElementDimension</a>)
+setDoubleSided (function: <a href="SetElementDoubleSided.html" title="SetElementDoubleSided">setElementDoubleSided</a>)
+setFrozen (function: <a href="SetElementFrozen.html" title="SetElementFrozen">setElementFrozen</a>)
+setHealth (function: <a href="SetElementHealth.html" title="SetElementHealth">setElementHealth</a>)
+setID (function: <a href="SetElementID.html" title="SetElementID">setElementID</a>)
+setInterior (function: <a href="SetElementInterior.html" title="SetElementInterior">setElementInterior</a>)
+setMatrix (function: <a href="SetElementMatrix.html" title="SetElementMatrix">setElementMatrix</a>)
+setModel (function: <a href="SetElementModel.html" title="SetElementModel">setElementModel</a>)
+setParent (function: <a href="SetElementParent.html" title="SetElementParent">setElementParent</a>)
+setPosition (function: <a href="SetElementPosition.html" title="SetElementPosition">setElementPosition</a>)
+setRotation (function: <a href="SetElementRotation.html" title="SetElementRotation">setElementRotation</a>)
+setSyncer (function: <a href="SetElementSyncer.html" title="SetElementSyncer">setElementSyncer</a>)
+setVelocity (function: <a href="SetElementVelocity.html" title="SetElementVelocity">setElementVelocity</a>)
+</pre>
+<h2><span class="mw-headline" id="ACL">ACL</span></h2>
+<pre>create (function: <a href="AclCreate.html" title="AclCreate">aclCreate</a>)
+destroy (function: <a href="AclDestroy.html" title="AclDestroy">aclDestroy</a>)
+get (function: <a href="AclGet.html" title="AclGet">aclGet</a>)
+getName (function: <a href="AclGetName.html" title="AclGetName">aclGetName</a>)
+getRight (function: <a href="AclGetRight.html" title="AclGetRight">aclGetRight</a>)
+hasObjectPermissionTo (function: <a href="HasObjectPermissionTo.html" title="HasObjectPermissionTo">hasObjectPermissionTo</a>)
+list (function: <a href="AclList.html" title="AclList">aclList</a>)
+listRights (function: <a href="AclListRights.html" title="AclListRights">aclListRights</a>)
+reload (function: <a href="AclReload.html" title="AclReload">aclReload</a>)
+removeRight (function: <a href="AclRemoveRight.html" title="AclRemoveRight">aclRemoveRight</a>)
+save (function: <a href="AclSave.html" title="AclSave">aclSave</a>)
+setRight (function: <a href="AclSetRight.html" title="AclSetRight">aclSetRight</a>)
+</pre>
+<h2><span class="mw-headline" id="ACLGroup">ACLGroup</span></h2>
+<pre>addACL (function: <a href="AclGroupAddACL.html" title="AclGroupAddACL">aclGroupAddACL</a>)
+addObject (function: <a href="AclGroupAddObject.html" title="AclGroupAddObject">aclGroupAddObject</a>)
+addToGroup (function: <a href="AclGroupAddACL.html" title="AclGroupAddACL">aclGroupAddACL</a>)
+create (function: <a href="AclCreateGroup.html" title="AclCreateGroup">aclCreateGroup</a>)
+destroy (function: <a href="AclDestroyGroup.html" title="AclDestroyGroup">aclDestroyGroup</a>)
+doesContainObject (function: <a href="IsObjectInACLGroup.html" title="IsObjectInACLGroup">isObjectInACLGroup</a>)
+get (function: <a href="AclGetGroup.html" title="AclGetGroup">aclGetGroup</a>)
+getName (function: <a href="AclGroupGetName.html" title="AclGroupGetName">aclGroupGetName</a>)
+list (function: <a href="AclGroupList.html" title="AclGroupList">aclGroupList</a>)
+listACL (function: <a href="AclGroupListACL.html" title="AclGroupListACL">aclGroupListACL</a>)
+listObjects (function: <a href="AclGroupListObjects.html" title="AclGroupListObjects">aclGroupListObjects</a>)
+removeACL (function: <a href="AclGroupRemoveACL.html" title="AclGroupRemoveACL">aclGroupRemoveACL</a>)
+removeFromGroup (function: <a href="AclGroupRemoveACL.html" title="AclGroupRemoveACL">aclGroupRemoveACL</a>)
+removeObject (function: <a href="AclGroupRemoveObject.html" title="AclGroupRemoveObject">aclGroupRemoveObject</a>)
+</pre>
+<h2><span class="mw-headline" id="Account">Account</span></h2>
+<pre>add (function: <a href="AddAccount.html" title="AddAccount">addAccount</a>)
+copyDataTo (function: <a href="CopyAccountData.html" title="CopyAccountData">copyAccountData</a>)
+getData (function: <a href="GetAccountData.html" title="GetAccountData">getAccountData</a>)
+getID (function: <a href="GetAccountID.html" title="GetAccountID">getAccountID</a>)
+getIP (function: <a href="GetAccountIP.html" title="GetAccountIP">getAccountIP</a>)
+getName (function: <a href="GetAccountName.html" title="GetAccountName">getAccountName</a>)
+getPlayer (function: <a href="GetAccountPlayer.html" title="GetAccountPlayer">getAccountPlayer</a>)
+getAllByData (function: <a href="GetAccountsByData.html" title="GetAccountsByData">getAccountsByData</a>)
+getAllByIP (function: <a href="GetAccountsByIP.html" title="GetAccountsByIP">getAccountsByIP</a>)
+getAllBySerial (function: <a href="GetAccountsBySerial.html" title="GetAccountsBySerial">getAccountsBySerial</a>)
+getSerial (function: <a href="GetAccountSerial.html" title="GetAccountSerial">getAccountSerial</a>)
+getAll (function: <a href="GetAccounts.html" title="GetAccounts">getAccounts</a>)
+create (function: <a href="GetAccount.html" title="GetAccount">getAccount</a>)
+getAllData (function: <a href="GetAllAccountData.html" title="GetAllAccountData">getAllAccountData</a>)
+getAccount (function: <a href="GetPlayerAccount.html" title="GetPlayerAccount">getPlayerAccount</a>)
+isGuest (function: <a href="IsGuestAccount.html" title="IsGuestAccount">isGuestAccount</a>)
+logIn (function: <a href="LogIn.html" title="LogIn">logIn</a>)
+logOut (function: <a href="LogOut.html" title="LogOut">logOut</a>)
+remove (function: <a href="RemoveAccount.html" title="RemoveAccount">removeAccount</a>)
+setData (function: <a href="SetAccountData.html" title="SetAccountData">setAccountData</a>)
+setName (function: <a href="SetAccountName.html" title="SetAccountName">setAccountName</a>)
+setPassword (function: <a href="SetAccountPassword.html" title="SetAccountPassword">setAccountPassword</a>)
+</pre>
+<h2><span class="mw-headline" id="Ban">Ban</span></h2>
+<pre>create (function: <a href="AddBan.html" title="AddBan">addBan</a>)
+getAdmin (function: <a href="GetBanAdmin.html" title="GetBanAdmin">getBanAdmin</a>)
+getIP (function: <a href="GetBanIP.html" title="GetBanIP">getBanIP</a>)
+getList (function: <a href="GetBans.html" title="GetBans">getBans</a>)
+getNick (function: <a href="GetBanNick.html" title="GetBanNick">getBanNick</a>)
+getReason (function: <a href="GetBanReason.html" title="GetBanReason">getBanReason</a>)
+getSerial (function: <a href="GetBanSerial.html" title="GetBanSerial">getBanSerial</a>)
+getTime (function: <a href="GetBanTime.html" title="GetBanTime">getBanTime</a>)
+getUnbanTime (function: <a href="GetUnbanTime.html" title="GetUnbanTime">getUnbanTime</a>)
+remove (function: <a href="RemoveBan.html" title="RemoveBan">removeBan</a>)
+</pre>
+<h2><span class="mw-headline" id="Blip">Blip</span></h2>
+<p><i>Inherited from <a href="#Element">Element</a></i>
+</p>
+<pre>create (function: <a href="CreateBlip.html" title="CreateBlip">createBlip</a>)
+createAttachedTo (function: <a href="CreateBlipAttachedTo.html" title="CreateBlipAttachedTo">createBlipAttachedTo</a>)
+getColor (function: <a href="GetBlipColor.html" title="GetBlipColor">getBlipColor</a>)
+getIcon (function: <a href="GetBlipIcon.html" title="GetBlipIcon">getBlipIcon</a>)
+getOrdering (function: <a href="GetBlipOrdering.html" title="GetBlipOrdering">getBlipOrdering</a>)
+getSize (function: <a href="GetBlipSize.html" title="GetBlipSize">getBlipSize</a>)
+getVisibleDistance (function: <a href="GetBlipVisibleDistance.html" title="GetBlipVisibleDistance">getBlipVisibleDistance</a>)
+setColor (function: <a href="SetBlipColor.html" title="SetBlipColor">setBlipColor</a>)
+setIcon (function: <a href="SetBlipIcon.html" title="SetBlipIcon">setBlipIcon</a>)
+setOrdering (function: <a href="SetBlipOrdering.html" title="SetBlipOrdering">setBlipOrdering</a>)
+setSize (function: <a href="SetBlipSize.html" title="SetBlipSize">setBlipSize</a>)
+setVisibleDistance (function: <a href="SetBlipVisibleDistance.html" title="SetBlipVisibleDistance">setBlipVisibleDistance</a>)
+</pre>
+<h2><span class="mw-headline" id="ColShape">ColShape</span></h2>
+<p><i>Inherited from <a href="#Element">Element</a></i>
+</p>
+<pre>Circle (function: <a href="CreateColCircle.html" title="CreateColCircle">createColCircle</a>)
+Cuboid (function: <a href="CreateColCuboid.html" title="CreateColCuboid">createColCuboid</a>)
+getElementsWithin (function: <a href="GetElementsWithinColShape.html" title="GetElementsWithinColShape">getElementsWithinColShape</a>)
+getShapeType (function: <a href="GetColShapeType.html" title="GetColShapeType">getColShapeType</a>)
+isElementWithin (function: <a href="IsElementWithinColShape.html" title="IsElementWithinColShape">isElementWithinColShape</a>)
+Polygon (function: <a href="CreateColPolygon.html" title="CreateColPolygon">createColPolygon</a>)
+Rectangle (function: <a href="CreateColRectangle.html" title="CreateColRectangle">createColRectangle</a>)
+Sphere (function: <a href="CreateColSphere.html" title="CreateColSphere">createColSphere</a>)
+Tube (function: <a href="CreateColTube.html" title="CreateColTube">createColTube</a>)
+</pre>
+<h2><span class="mw-headline" id="File">File</span></h2>
+<pre>close (function: <a href="FileClose.html" title="FileClose">fileClose</a>)
+copy (function: <a href="FileCopy.html" title="FileCopy">fileCopy</a>)
+create (function: <a href="FileOpen.html" title="FileOpen">fileOpen</a>)
+delete (function: <a href="FileDelete.html" title="FileDelete">fileDelete</a>)
+destroy (function: <a href="FileClose.html" title="FileClose">fileClose</a>)
+exists (function: <a href="FileExists.html" title="FileExists">fileExists</a>)
+flush (function: <a href="FileFlush.html" title="FileFlush">fileFlush</a>)
+getPos (function: <a href="FileGetPos.html" title="FileGetPos">fileGetPos</a>)
+getSize (function: <a href="FileGetSize.html" title="FileGetSize">fileGetSize</a>)
+isEOF (function: <a href="FileIsEOF.html" title="FileIsEOF">fileIsEOF</a>)
+new (function: <a href="FileCreate.html" title="FileCreate">fileCreate</a>)
+read (function: <a href="FileRead.html" title="FileRead">fileRead</a>)
+rename (function: <a href="FileRename.html" title="FileRename">fileRename</a>)
+setPos (function: <a href="FileSetPos.html" title="FileSetPos">fileSetPos</a>)
+write (function: <a href="FileWrite.html" title="FileWrite">fileWrite</a>)
+</pre>
+<h2><span class="mw-headline" id="Marker">Marker</span></h2>
+<p><i>Inherited from <a href="#Element">Element</a></i>
+</p>
+<pre>create (function: <a href="CreateMarker.html" title="CreateMarker">createMarker</a>)
+getColor (function: <a href="GetMarkerColor.html" title="GetMarkerColor">getMarkerColor</a>)
+getCount (function: <a href="GetMarkerCount.html" title="GetMarkerCount">getMarkerCount</a>)
+getIcon (function: <a href="GetMarkerIcon.html" title="GetMarkerIcon">getMarkerIcon</a>)
+getSize (function: <a href="GetMarkerSize.html" title="GetMarkerSize">getMarkerSize</a>)
+getTarget (function: <a href="GetMarkerTarget.html" title="GetMarkerTarget">getMarkerTarget</a>)
+getType (function: <a href="GetMarkerType.html" title="GetMarkerType">getMarkerType</a>)
+setColor (function: <a href="SetMarkerColor.html" title="SetMarkerColor">setMarkerColor</a>)
+setIcon (function: <a href="SetMarkerIcon.html" title="SetMarkerIcon">setMarkerIcon</a>)
+setSize (function: <a href="SetMarkerSize.html" title="SetMarkerSize">setMarkerSize</a>)
+setTarget (function: <a href="SetMarkerTarget.html" title="SetMarkerTarget">setMarkerTarget</a>)
+setType (function: <a href="SetMarkerType.html" title="SetMarkerType">setMarkerType</a>)
+</pre>
+<h2><span class="mw-headline" id="Object">Object</span></h2>
+<p><i>Inherited from <a href="#Element">Element</a></i>
+</p>
+<pre>create (function: <a href="CreateObject.html" title="CreateObject">createObject</a>)
+getScale (function: <a href="GetObjectScale.html" title="GetObjectScale">getObjectScale</a>)
+move (function: <a href="MoveObject.html" title="MoveObject">moveObject</a>)
+setScale (function: <a href="SetObjectScale.html" title="SetObjectScale">setObjectScale</a>)
+stop (function: <a href="StopObject.html" title="StopObject">stopObject</a>)
+</pre>
+<h2><span class="mw-headline" id="Ped">Ped</span></h2>
+<p><i>Inherited from <a href="#Element">Element</a></i>
+</p>
+<pre>addClothes (function: <a href="AddPedClothes.html" title="AddPedClothes">addPedClothes</a>)
+create (function: <a href="CreatePed.html" title="CreatePed">createPed</a>)
+doesHaveJetpack (function: <a href="DoesPedHaveJetPack.html" title="DoesPedHaveJetPack">doesPedHaveJetPack</a>)
+getAmmoInClip (function: <a href="GetPedAmmoInClip.html" title="GetPedAmmoInClip">getPedAmmoInClip</a>)
+getAnalogControlState (function: <a href="GetPedAnalogControlState.html" title="GetPedAnalogControlState">getPedAnalogControlState</a>)
+getArmor (function: <a href="GetPedArmor.html" title="GetPedArmor">getPedArmor</a>)
+getClothes (function: <a href="GetPedClothes.html" title="GetPedClothes">getPedClothes</a>)
+getContactElement (function: <a href="GetPedContactElement.html" title="GetPedContactElement">getPedContactElement</a>)
+getFightingStyle (function: <a href="GetPedFightingStyle.html" title="GetPedFightingStyle">getPedFightingStyle</a>)
+getGravity (function: <a href="GetPedGravity.html" title="GetPedGravity">getPedGravity</a>)
+getOccupiedVehicle (function: <a href="GetPedOccupiedVehicle.html" title="GetPedOccupiedVehicle">getPedOccupiedVehicle</a>)
+getOccupiedVehicleSeat (function: <a href="GetPedOccupiedVehicleSeat.html" title="GetPedOccupiedVehicleSeat">getPedOccupiedVehicleSeat</a>)
+getStat (function: <a href="GetPedStat.html" title="GetPedStat">getPedStat</a>)
+getTarget (function: <a href="GetPedTarget.html" title="GetPedTarget">getPedTarget</a>)
+getTotalAmmo (function: <a href="GetPedTotalAmmo.html" title="GetPedTotalAmmo">getPedTotalAmmo</a>)
+getValidModels (function: <a href="GetValidPedModels.html" title="GetValidPedModels">getValidPedModels</a>)
+getWalkingStyle (function: <a href="GetPedWalkingStyle.html" title="GetPedWalkingStyle">getPedWalkingStyle</a>)
+getWeapon (function: <a href="GetPedWeapon.html" title="GetPedWeapon">getPedWeapon</a>)
+getWeaponSlot (function: <a href="GetPedWeaponSlot.html" title="GetPedWeaponSlot">getPedWeaponSlot</a>)
+giveJetPack (function: <a href="GivePedJetPack.html" title="GivePedJetPack">givePedJetPack</a>)
+isChoking (function: <a href="IsPedChoking.html" title="IsPedChoking">isPedChoking</a>)
+isDead (function: <a href="IsPedDead.html" title="IsPedDead">isPedDead</a>)
+isDoingGangDriveby (function: <a href="IsPedDoingGangDriveby.html" title="IsPedDoingGangDriveby">isPedDoingGangDriveby</a>)
+isDucked (function: <a href="IsPedDucked.html" title="IsPedDucked">isPedDucked</a>)
+isFrozen (function: <a href="IsPedFrozen.html" title="IsPedFrozen">isPedFrozen</a>)
+isHeadless (function: <a href="IsPedHeadless.html" title="IsPedHeadless">isPedHeadless</a>)
+isInVehicle (function: <a href="IsPedInVehicle.html" title="IsPedInVehicle">isPedInVehicle</a>)
+isInWater (function: <a href="IsPedInWater.html" title="IsPedInWater">isPedInWater</a>)
+isOnFire (function: <a href="IsPedOnFire.html" title="IsPedOnFire">isPedOnFire</a>)
+isOnGround (function: <a href="IsPedOnGround.html" title="IsPedOnGround">isPedOnGround</a>)
+kill (function: <a href="KillPed.html" title="KillPed">killPed</a>)
+reloadWeapon (function: <a href="ReloadPedWeapon.html" title="ReloadPedWeapon">reloadPedWeapon</a>)
+removeClothes (function: <a href="RemovePedClothes.html" title="RemovePedClothes">removePedClothes</a>)
+removeFromVehicle (function: <a href="RemovePedFromVehicle.html" title="RemovePedFromVehicle">removePedFromVehicle</a>)
+removeJetPack (function: <a href="RemovePedJetPack.html" title="RemovePedJetPack">removePedJetPack</a>)
+setAnalogControlState (function: <a href="SetPedAnalogControlState.html" title="SetPedAnalogControlState">setPedAnalogControlState</a>)
+setAnimation (function: <a href="SetPedAnimation.html" title="SetPedAnimation">setPedAnimation</a>)
+setAnimationProgress (function: <a href="SetPedAnimationProgress.html" title="SetPedAnimationProgress">setPedAnimationProgress</a>)
+setArmor (function: <a href="SetPedArmor.html" title="SetPedArmor">setPedArmor</a>)
+setChoking (function: <a href="SetPedChoking.html" title="SetPedChoking">setPedChoking</a>)
+setDoingGangDriveBy (function: <a href="SetPedDoingGangDriveby.html" title="SetPedDoingGangDriveby">setPedDoingGangDriveby</a>)
+setFightingStyle (function: <a href="SetPedFightingStyle.html" title="SetPedFightingStyle">setPedFightingStyle</a>)
+setFrozen (function: <a href="SetPedFrozen.html" title="SetPedFrozen">setPedFrozen</a>)
+setGravity (function: <a href="SetPedGravity.html" title="SetPedGravity">setPedGravity</a>)
+setHeadless (function: <a href="SetPedHeadless.html" title="SetPedHeadless">setPedHeadless</a>)
+setOnFire (function: <a href="SetPedOnFire.html" title="SetPedOnFire">setPedOnFire</a>)
+setStat (function: <a href="SetPedStat.html" title="SetPedStat">setPedStat</a>)
+setWalkingStyle (function: <a href="SetPedWalkingStyle.html" title="SetPedWalkingStyle">setPedWalkingStyle</a>)
+setWeaponSlot (function: <a href="SetPedWeaponSlot.html" title="SetPedWeaponSlot">setPedWeaponSlot</a>)
+warpIntoVehicle (function: <a href="WarpPedIntoVehicle.html" title="WarpPedIntoVehicle">warpPedIntoVehicle</a>)
+</pre>
+<h2><span class="mw-headline" id="Pickup">Pickup</span></h2>
+<p><i>Inherited from <a href="#Element">Element</a></i>
+</p>
+<pre>create (function: <a href="CreatePickup.html" title="CreatePickup">createPickup</a>)
+getAmmo (function: <a href="GetPickupAmmo.html" title="GetPickupAmmo">getPickupAmmo</a>)
+getAmount (function: <a href="GetPickupAmount.html" title="GetPickupAmount">getPickupAmount</a>)
+getRespawnInterval (function: <a href="GetPickupRespawnInterval.html" title="GetPickupRespawnInterval">getPickupRespawnInterval</a>)
+getType (function: <a href="GetPickupType.html" title="GetPickupType">getPickupType</a>)
+getWeapon (function: <a href="GetPickupWeapon.html" title="GetPickupWeapon">getPickupWeapon</a>)
+setRespawnInterval (function: <a href="SetPickupRespawnInterval.html" title="SetPickupRespawnInterval">setPickupRespawnInterval</a>)
+setType (function: <a href="SetPickupType.html" title="SetPickupType">setPickupType</a>)
+use (function: <a href="UsePickup.html" title="UsePickup">usePickup</a>)
+</pre>
+<h2><span class="mw-headline" id="Player">Player</span></h2>
+<p><i>Inherited from <a href="#Ped">Ped</a></i>
+</p>
+<pre>ban (function: <a href="BanPlayer.html" title="BanPlayer">banPlayer</a>)
+create (function: <a href="GetPlayerFromName.html" title="GetPlayerFromName">getPlayerFromName</a>)
+forceMap (function: <a href="ForcePlayerMap.html" title="ForcePlayerMap">forcePlayerMap</a>)
+getAccount (function: <a href="GetPlayerAccount.html" title="GetPlayerAccount">getPlayerAccount</a>)
+getACInfo (function: <a href="GetPlayerACInfo.html" title="GetPlayerACInfo">getPlayerACInfo</a>)
+getAllAlive (function: <a href="GetAlivePlayers.html" title="GetAlivePlayers">getAlivePlayers</a>)
+getAllDead (function: <a href="GetDeadPlayers.html" title="GetDeadPlayers">getDeadPlayers</a>)
+getAnnounceValue (function: <a href="GetPlayerAnnounceValue.html" title="GetPlayerAnnounceValue">getPlayerAnnounceValue</a>)
+getBlurLevel (function: <a href="GetPlayerBlurLevel.html" title="GetPlayerBlurLevel">getPlayerBlurLevel</a>)
+getCount (function: <a href="GetPlayerCount.html" title="GetPlayerCount">getPlayerCount</a>)
+getIdleTime (function: <a href="GetPlayerIdleTime.html" title="GetPlayerIdleTime">getPlayerIdleTime</a>)
+getIP (function: <a href="GetPlayerIP.html" title="GetPlayerIP">getPlayerIP</a>)
+getMoney (function: <a href="GetPlayerMoney.html" title="GetPlayerMoney">getPlayerMoney</a>)
+getName (function: <a href="GetPlayerName.html" title="GetPlayerName">getPlayerName</a>)
+getNametagColor (function: <a href="GetPlayerNametagColor.html" title="GetPlayerNametagColor">getPlayerNametagColor</a>)
+getNametagText (function: <a href="GetPlayerNametagText.html" title="GetPlayerNametagText">getPlayerNametagText</a>)
+getPing (function: <a href="GetPlayerPing.html" title="GetPlayerPing">getPlayerPing</a>)
+getRandom (function: <a href="GetRandomPlayer.html" title="GetRandomPlayer">getRandomPlayer</a>)
+getSerial (function: <a href="GetPlayerSerial.html" title="GetPlayerSerial">getPlayerSerial</a>)
+getTeam (function: <a href="GetPlayerTeam.html" title="GetPlayerTeam">getPlayerTeam</a>)
+getVersion (function: <a href="GetPlayerVersion.html" title="GetPlayerVersion">getPlayerVersion</a>)
+getWantedLevel (function: <a href="GetPlayerWantedLevel.html" title="GetPlayerWantedLevel">getPlayerWantedLevel</a>)
+giveMoney (function: <a href="GivePlayerMoney.html" title="GivePlayerMoney">givePlayerMoney</a>)
+isMapForced (function: <a href="IsPlayerMapForced.html" title="IsPlayerMapForced">isPlayerMapForced</a>)
+isMuted (function: <a href="IsPlayerMuted.html" title="IsPlayerMuted">isPlayerMuted</a>)
+isNametagShowing (function: <a href="IsPlayerNametagShowing.html" title="IsPlayerNametagShowing">isPlayerNametagShowing</a>)
+isObservingDisplay (function: <a href="TextDisplayIsObserver.html" title="TextDisplayIsObserver">textDisplayIsObserver</a>)
+isVoiceEnabled (function: <a href="IsVoiceEnabled.html" title="IsVoiceEnabled">isVoiceEnabled</a>)
+kick (function: <a href="KickPlayer.html" title="KickPlayer">kickPlayer</a>)
+logOut (function: <a href="LogOut.html" title="LogOut">logOut</a>)
+observeDisplay (function: <a href="TextDisplayAddObserver.html" title="TextDisplayAddObserver">textDisplayAddObserver</a>)
+redirect (function: <a href="RedirectPlayer.html" title="RedirectPlayer">redirectPlayer</a>)
+resendModInfo (function: <a href="ResendPlayerModInfo.html" title="ResendPlayerModInfo">resendPlayerModInfo</a>)
+setAnnounceValue (function: <a href="SetPlayerAnnounceValue.html" title="SetPlayerAnnounceValue">setPlayerAnnounceValue</a>)
+setBlurLevel (function: <a href="SetPlayerBlurLevel.html" title="SetPlayerBlurLevel">setPlayerBlurLevel</a>)
+setHudComponentVisible (function: <a href="SetPlayerHudComponentVisible.html" title="SetPlayerHudComponentVisible">setPlayerHudComponentVisible</a>)
+setMoney (function: <a href="SetPlayerMoney.html" title="SetPlayerMoney">setPlayerMoney</a>)
+setMuted (function: <a href="SetPlayerMuted.html" title="SetPlayerMuted">setPlayerMuted</a>)
+setName (function: <a href="SetPlayerName.html" title="SetPlayerName">setPlayerName</a>)
+setNametagColor (function: <a href="SetPlayerNametagColor.html" title="SetPlayerNametagColor">setPlayerNametagColor</a>)
+setNametagShowing (function: <a href="SetPlayerNametagShowing.html" title="SetPlayerNametagShowing">setPlayerNametagShowing</a>)
+setNametagText (function: <a href="SetPlayerNametagText.html" title="SetPlayerNametagText">setPlayerNametagText</a>)
+setTeam (function: <a href="SetPlayerTeam.html" title="SetPlayerTeam">setPlayerTeam</a>)
+setVoiceBroadcastTo (function: <a href="SetPlayerVoiceBroadcastTo.html" title="SetPlayerVoiceBroadcastTo">setPlayerVoiceBroadcastTo</a>)
+setVoiceIgnoreFrom (function: <a href="SetPlayerVoiceIgnoreFrom.html" title="SetPlayerVoiceIgnoreFrom">setPlayerVoiceIgnoreFrom</a>)
+setWantedLevel (function: <a href="SetPlayerWantedLevel.html" title="SetPlayerWantedLevel">setPlayerWantedLevel</a>)
+showHudComponent (function: <a href="ShowPlayerHudComponent.html" title="ShowPlayerHudComponent">showPlayerHudComponent</a>)
+spawn (function: <a href="SpawnPlayer.html" title="SpawnPlayer">spawnPlayer</a>)
+stopObservingDisplay (function: <a href="TextDisplayRemoveObserver.html" title="TextDisplayRemoveObserver">textDisplayRemoveObserver</a>)
+takeMoney (function: <a href="TakePlayerMoney.html" title="TakePlayerMoney">takePlayerMoney</a>)
+takeScreenshot (function: <a href="TakePlayerScreenShot.html" title="TakePlayerScreenShot">takePlayerScreenShot</a>)
+triggerEvent (function: <a href="TriggerClientEvent.html" title="TriggerClientEvent">triggerClientEvent</a>)
+</pre>
+<h2><span class="mw-headline" id="RadarArea">RadarArea</span></h2>
+<p><i>Inherited from <a href="#Element">Element</a></i>
+</p>
+<pre>create (function: <a href="CreateRadarArea.html" title="CreateRadarArea">createRadarArea</a>)
+getColor (function: <a href="GetRadarAreaColor.html" title="GetRadarAreaColor">getRadarAreaColor</a>)
+getSize (function: <a href="GetRadarAreaSize.html" title="GetRadarAreaSize">getRadarAreaSize</a>)
+isFlashing (function: <a href="IsRadarAreaFlashing.html" title="IsRadarAreaFlashing">isRadarAreaFlashing</a>)
+isInside (function: <a href="IsInsideRadarArea.html" title="IsInsideRadarArea">isInsideRadarArea</a>)
+setColor (function: <a href="SetRadarAreaColor.html" title="SetRadarAreaColor">setRadarAreaColor</a>)
+setFlashing (function: <a href="SetRadarAreaFlashing.html" title="SetRadarAreaFlashing">setRadarAreaFlashing</a>)
+setSize (function: <a href="SetRadarAreaSize.html" title="SetRadarAreaSize">setRadarAreaSize</a>)
+</pre>
+<h2><span class="mw-headline" id="Resource">Resource</span></h2>
+<pre>call (function: <a href="Call.html" title="Call">call</a>)
+copy (function: <a href="CopyResource.html" title="CopyResource">copyResource</a>)
+create (function: <a href="CreateResource.html" title="CreateResource">createResource</a>)
+getDynamicElementRoot (function: <a href="GetResourceDynamicElementRoot.html" title="GetResourceDynamicElementRoot">getResourceDynamicElementRoot</a>)
+getFromName (function: <a href="GetResourceFromName.html" title="GetResourceFromName">getResourceFromName</a>)
+getInfo (function: <a href="GetResourceInfo.html" title="GetResourceInfo">getResourceInfo</a>)
+getMapRootElement (function: <a href="GetResourceMapRootElement.html" title="GetResourceMapRootElement">getResourceMapRootElement</a>)
+getName (function: <a href="GetResourceName.html" title="GetResourceName">getResourceName</a>)
+getRootElement (function: <a href="GetResourceRootElement.html" title="GetResourceRootElement">getResourceRootElement</a>)
+getState (function: <a href="GetResourceState.html" title="GetResourceState">getResourceState</a>)
+removeFile (function: <a href="RemoveResourceFile.html" title="RemoveResourceFile">removeResourceFile</a>)
+restart (function: <a href="RestartResource.html" title="RestartResource">restartResource</a>)
+start (function: <a href="StartResource.html" title="StartResource">startResource</a>)
+stop (function: <a href="StopResource.html" title="StopResource">stopResource</a>)
+setInfo (function: <a href="SetResourceInfo.html" title="SetResourceInfo">setResourceInfo</a>)
+rename (function: <a href="RenameResource.html" title="RenameResource">renameResource</a>)
+delete (function: <a href="DeleteResource.html" title="DeleteResource">deleteResource</a>)
+</pre>
+<h2><span class="mw-headline" id="Connection">Connection</span></h2>
+<p><i>Inherited from <a href="#Element">Element</a></i>
+</p>
+<pre>create (function: <a href="DbConnect.html" title="DbConnect">dbConnect</a>)
+exec (function: <a href="DbExec.html" title="DbExec">dbExec</a>)
+query (function: <a href="DbQuery.html" title="DbQuery">dbQuery</a>)
+</pre>
+<h2><span class="mw-headline" id="QueryHandle">QueryHandle</span></h2>
+<pre>free (function: <a href="DbFree.html" title="DbFree">dbFree</a>)
+poll (function: <a href="DbPoll.html" title="DbPoll">dbPoll</a>)
+</pre>
+<h2><span class="mw-headline" id="Team">Team</span></h2>
+<p><i>Inherited from <a href="#Element">Element</a></i>
+</p>
+<pre>countPlayers (function: <a href="CountPlayersInTeam.html" title="CountPlayersInTeam">countPlayersInTeam</a>)
+create (function: <a href="CreateTeam.html" title="CreateTeam">createTeam</a>)
+getColor (function: <a href="GetTeamColor.html" title="GetTeamColor">getTeamColor</a>)
+getFriendlyFire (function: <a href="GetTeamFriendlyFire.html" title="GetTeamFriendlyFire">getTeamFriendlyFire</a>)
+getFromName (function: <a href="GetTeamFromName.html" title="GetTeamFromName">getTeamFromName</a>)
+getName (function: <a href="GetTeamName.html" title="GetTeamName">getTeamName</a>)
+getPlayers (function: <a href="GetPlayersInTeam.html" title="GetPlayersInTeam">getPlayersInTeam</a>)
+setColor (function: <a href="SetTeamColor.html" title="SetTeamColor">setTeamColor</a>)
+setFriendlyFire (function: <a href="SetTeamFriendlyFire.html" title="SetTeamFriendlyFire">setTeamFriendlyFire</a>)
+setName (function: <a href="SetTeamName.html" title="SetTeamName">setTeamName</a>)
+</pre>
+<h2><span class="mw-headline" id="TextDisplay">TextDisplay</span></h2>
+<pre>addObserver (function: <a href="TextDisplayAddObserver.html" title="TextDisplayAddObserver">textDisplayAddObserver</a>)
+addText (function: <a href="TextDisplayAddText.html" title="TextDisplayAddText">textDisplayAddText</a>)
+create (function: <a href="TextCreateDisplay.html" title="TextCreateDisplay">textCreateDisplay</a>)
+destroy (function: <a href="TextDestroyDisplay.html" title="TextDestroyDisplay">textDestroyDisplay</a>)
+getObservers (function: <a href="TextDisplayGetObservers.html" title="TextDisplayGetObservers">textDisplayGetObservers</a>)
+isObserver (function: <a href="TextDisplayIsObserver.html" title="TextDisplayIsObserver">textDisplayIsObserver</a>)
+removeObserver (function: <a href="TextDisplayRemoveObserver.html" title="TextDisplayRemoveObserver">textDisplayRemoveObserver</a>)
+removeText (function: <a href="TextDisplayRemoveText.html" title="TextDisplayRemoveText">textDisplayRemoveText</a>)
+</pre>
+<h2><span class="mw-headline" id="TextItem">TextItem</span></h2>
+<pre>create (function: <a href="TextCreateTextItem.html" title="TextCreateTextItem">textCreateTextItem</a>)
+destroy (function: <a href="TextDestroyTextItem.html" title="TextDestroyTextItem">textDestroyTextItem</a>)
+getColor (function: <a href="TextItemGetColor.html" title="TextItemGetColor">textItemGetColor</a>)
+getPosition (function: <a href="TextItemGetPosition.html" title="TextItemGetPosition">textItemGetPosition</a>)
+getPriority (function: <a href="TextItemGetPriority.html" title="TextItemGetPriority">textItemGetPriority</a>)
+getScale (function: <a href="TextItemGetScale.html" title="TextItemGetScale">textItemGetScale</a>)
+getText (function: <a href="TextItemGetText.html" title="TextItemGetText">textItemGetText</a>)
+setColor (function: <a href="TextItemSetColor.html" title="TextItemSetColor">textItemSetColor</a>)
+setPosition (function: <a href="TextItemSetPosition.html" title="TextItemSetPosition">textItemSetPosition</a>)
+setPriority (function: <a href="TextItemSetPriority.html" title="TextItemSetPriority">textItemSetPriority</a>)
+setScale (function: <a href="TextItemSetScale.html" title="TextItemSetScale">textItemSetScale</a>)
+setText (function: <a href="TextItemSetText.html" title="TextItemSetText">textItemSetText</a>)
+</pre>
+<h2><span class="mw-headline" id="Vehicle">Vehicle</span></h2>
+<p><i>Inherited from <a href="#Element">Element</a></i>
+</p>
+<pre>addSirens (function: <a href="AddVehicleSirens.html" title="AddVehicleSirens">addVehicleSirens</a>)
+addUpgrade (function: <a href="AddVehicleUpgrade.html" title="AddVehicleUpgrade">addVehicleUpgrade</a>)
+areSirensOn (function: <a href="GetVehicleSirensOn.html" title="GetVehicleSirensOn">getVehicleSirensOn</a>)
+attachTrailer (function: <a href="AttachTrailerToVehicle.html" title="AttachTrailerToVehicle">attachTrailerToVehicle</a>)
+blow (function: <a href="BlowVehicle.html" title="BlowVehicle">blowVehicle</a>)
+create (function: <a href="CreateVehicle.html" title="CreateVehicle">createVehicle</a>)
+detachTrailer (function: <a href="DetachTrailerFromVehicle.html" title="DetachTrailerFromVehicle">detachTrailerFromVehicle</a>)
+fix (function: <a href="FixVehicle.html" title="FixVehicle">fixVehicle</a>)
+getAllOfType (function: <a href="GetVehiclesOfType.html" title="GetVehiclesOfType">getVehiclesOfType</a>)
+getColor (function: <a href="GetVehicleColor.html" title="GetVehicleColor">getVehicleColor</a>)
+getCompatibleUpgrades (function: <a href="GetVehicleCompatibleUpgrades.html" title="GetVehicleCompatibleUpgrades">getVehicleCompatibleUpgrades</a>)
+getController (function: <a href="GetVehicleController.html" title="GetVehicleController">getVehicleController</a>)
+getDirection (function: <a href="GetTrainDirection.html" title="GetTrainDirection">getTrainDirection</a>)
+getDoorOpenRatio (function: <a href="GetVehicleDoorOpenRatio.html" title="GetVehicleDoorOpenRatio">getVehicleDoorOpenRatio</a>)
+getDoorState (function: <a href="GetVehicleDoorState.html" title="GetVehicleDoorState">getVehicleDoorState</a>)
+getEngineState (function: <a href="GetVehicleEngineState.html" title="GetVehicleEngineState">getVehicleEngineState</a>)
+getHandling (function: <a href="GetVehicleHandling.html" title="GetVehicleHandling">getVehicleHandling</a>)
+getHeadLightColor (function: <a href="GetVehicleHeadLightColor.html" title="GetVehicleHeadLightColor">getVehicleHeadLightColor</a>)
+getLandingGearDown (function: <a href="GetVehicleLandingGearDown.html" title="GetVehicleLandingGearDown">getVehicleLandingGearDown</a>)
+getLightState (function: <a href="GetVehicleLightState.html" title="GetVehicleLightState">getVehicleLightState</a>)
+getMaxPassengers (function: <a href="GetVehicleMaxPassengers.html" title="GetVehicleMaxPassengers">getVehicleMaxPassengers</a>)
+getModelFromName (function: <a href="GetVehicleModelFromName.html" title="GetVehicleModelFromName">getVehicleModelFromName</a>)
+getModelHandling (function: <a href="GetModelHandling.html" title="GetModelHandling">getModelHandling</a>)
+getName (function: <a href="GetVehicleName.html" title="GetVehicleName">getVehicleName</a>)
+getNameFromModel (function: <a href="GetVehicleNameFromModel.html" title="GetVehicleNameFromModel">getVehicleNameFromModel</a>)
+getOccupant (function: <a href="GetVehicleOccupant.html" title="GetVehicleOccupant">getVehicleOccupant</a>)
+getOccupants (function: <a href="GetVehicleOccupants.html" title="GetVehicleOccupants">getVehicleOccupants</a>)
+getOriginalHandling (function: <a href="GetOriginalHandling.html" title="GetOriginalHandling">getOriginalHandling</a>)
+getOverrideLights (function: <a href="GetVehicleOverrideLights.html" title="GetVehicleOverrideLights">getVehicleOverrideLights</a>)
+getPaintjob (function: <a href="GetVehiclePaintjob.html" title="GetVehiclePaintjob">getVehiclePaintjob</a>)
+getPanelState (function: <a href="GetVehiclePanelState.html" title="GetVehiclePanelState">getVehiclePanelState</a>)
+getPlateText (function: <a href="GetVehiclePlateText.html" title="GetVehiclePlateText">getVehiclePlateText</a>)
+getSirenParams (function: <a href="GetVehicleSirenParams.html" title="GetVehicleSirenParams">getVehicleSirenParams</a>)
+getSirens (function: <a href="GetVehicleSirens.html" title="GetVehicleSirens">getVehicleSirens</a>)
+getSpeed (function: <a href="GetTrainSpeed.html" title="GetTrainSpeed">getTrainSpeed</a>)
+getTowedByVehicle (function: <a href="GetVehicleTowedByVehicle.html" title="GetVehicleTowedByVehicle">getVehicleTowedByVehicle</a>)
+getTowingVehicle (function: <a href="GetVehicleTowingVehicle.html" title="GetVehicleTowingVehicle">getVehicleTowingVehicle</a>)
+getTurnVelocity (function: <a href="GetVehicleTurnVelocity.html" title="GetVehicleTurnVelocity">getVehicleTurnVelocity</a>)
+getTurretPosition (function: <a href="GetVehicleTurretPosition.html" title="GetVehicleTurretPosition">getVehicleTurretPosition</a>)
+getUpgradeOnSlot (function: <a href="GetVehicleUpgradeOnSlot.html" title="GetVehicleUpgradeOnSlot">getVehicleUpgradeOnSlot</a>)
+getUpgrades (function: <a href="GetVehicleUpgrades.html" title="GetVehicleUpgrades">getVehicleUpgrades</a>)
+getUpgradeSlotName (function: <a href="GetVehicleUpgradeSlotName.html" title="GetVehicleUpgradeSlotName">getVehicleUpgradeSlotName</a>)
+getVariant (function: <a href="GetVehicleVariant.html" title="GetVehicleVariant">getVehicleVariant</a>)
+getVehicleType (function: <a href="GetVehicleType.html" title="GetVehicleType">getVehicleType</a>)
+getWheelStates (function: <a href="GetVehicleWheelStates.html" title="GetVehicleWheelStates">getVehicleWheelStates</a>)
+isBlown (function: <a href="IsVehicleBlown.html" title="IsVehicleBlown">isVehicleBlown</a>)
+isDamageProof (function: <a href="IsVehicleDamageProof.html" title="IsVehicleDamageProof">isVehicleDamageProof</a>)
+isDerailable (function: <a href="IsTrainDerailable.html" title="IsTrainDerailable">isTrainDerailable</a>)
+isDerailed (function: <a href="IsTrainDerailed.html" title="IsTrainDerailed">isTrainDerailed</a>)
+isFuelTankExplodable (function: <a href="IsVehicleFuelTankExplodable.html" title="IsVehicleFuelTankExplodable">isVehicleFuelTankExplodable</a>)
+isLocked (function: <a href="IsVehicleLocked.html" title="IsVehicleLocked">isVehicleLocked</a>)
+isOnGround (function: <a href="IsVehicleOnGround.html" title="IsVehicleOnGround">isVehicleOnGround</a>)
+isTaxiLightOn (function: <a href="IsVehicleTaxiLightOn.html" title="IsVehicleTaxiLightOn">isVehicleTaxiLightOn</a>)
+removeSirens (function: <a href="RemoveVehicleSirens.html" title="RemoveVehicleSirens">removeVehicleSirens</a>)
+removeUpgrade (function: <a href="RemoveVehicleUpgrade.html" title="RemoveVehicleUpgrade">removeVehicleUpgrade</a>)
+resetExplosionTime (function: <a href="ResetVehicleExplosionTime.html" title="ResetVehicleExplosionTime">resetVehicleExplosionTime</a>)
+resetIdleTime (function: <a href="ResetVehicleIdleTime.html" title="ResetVehicleIdleTime">resetVehicleIdleTime</a>)
+respawn (function: <a href="RespawnVehicle.html" title="RespawnVehicle">respawnVehicle</a>)
+setColor (function: <a href="SetVehicleColor.html" title="SetVehicleColor">setVehicleColor</a>)
+setDamageProof (function: <a href="SetVehicleDamageProof.html" title="SetVehicleDamageProof">setVehicleDamageProof</a>)
+setDerailable (function: <a href="SetTrainDerailable.html" title="SetTrainDerailable">setTrainDerailable</a>)
+setDerailed (function: <a href="SetTrainDerailed.html" title="SetTrainDerailed">setTrainDerailed</a>)
+setDirection (function: <a href="SetTrainDirection.html" title="SetTrainDirection">setTrainDirection</a>)
+setDoorOpenRatio (function: <a href="SetVehicleDoorOpenRatio.html" title="SetVehicleDoorOpenRatio">setVehicleDoorOpenRatio</a>)
+setDoorState (function: <a href="SetVehicleDoorState.html" title="SetVehicleDoorState">setVehicleDoorState</a>)
+setDoorsUndamageable (function: <a href="SetVehicleDoorsUndamageable.html" title="SetVehicleDoorsUndamageable">setVehicleDoorsUndamageable</a>)
+setEngineState (function: <a href="SetVehicleEngineState.html" title="SetVehicleEngineState">setVehicleEngineState</a>)
+setFuelTankExplodable (function: <a href="SetVehicleFuelTankExplodable.html" title="SetVehicleFuelTankExplodable">setVehicleFuelTankExplodable</a>)
+setHandling (function: <a href="SetVehicleHandling.html" title="SetVehicleHandling">setVehicleHandling</a>)
+setHeadLightColor (function: <a href="SetVehicleHeadLightColor.html" title="SetVehicleHeadLightColor">setVehicleHeadLightColor</a>)
+setIdleRespawnDelay (function: <a href="SetVehicleIdleRespawnDelay.html" title="SetVehicleIdleRespawnDelay">setVehicleIdleRespawnDelay</a>)
+setLandingGearDown (function: <a href="SetVehicleLandingGearDown.html" title="SetVehicleLandingGearDown">setVehicleLandingGearDown</a>)
+setLightState (function: <a href="SetVehicleLightState.html" title="SetVehicleLightState">setVehicleLightState</a>)
+setLocked (function: <a href="SetVehicleLocked.html" title="SetVehicleLocked">setVehicleLocked</a>)
+setModelHandling (function: <a href="SetModelHandling.html" title="SetModelHandling">setModelHandling</a>)
+setOverrideLights (function: <a href="SetVehicleOverrideLights.html" title="SetVehicleOverrideLights">setVehicleOverrideLights</a>)
+setPaintJob (function: <a href="SetVehiclePaintjob.html" title="SetVehiclePaintjob">setVehiclePaintjob</a>)
+setPanelState (function: <a href="SetVehiclePanelState.html" title="SetVehiclePanelState">setVehiclePanelState</a>)
+setPlateText (function: <a href="SetVehiclePlateText.html" title="SetVehiclePlateText">setVehiclePlateText</a>)
+setRespawnDelay (function: <a href="SetVehicleRespawnDelay.html" title="SetVehicleRespawnDelay">setVehicleRespawnDelay</a>)
+setRespawnPosition (function: <a href="SetVehicleRespawnPosition.html" title="SetVehicleRespawnPosition">setVehicleRespawnPosition</a>)
+setSirens (function: <a href="SetVehicleSirens.html" title="SetVehicleSirens">setVehicleSirens</a>)
+setSirensOn (function: <a href="SetVehicleSirensOn.html" title="SetVehicleSirensOn">setVehicleSirensOn</a>)
+setSpeed (function: <a href="SetTrainSpeed.html" title="SetTrainSpeed">setTrainSpeed</a>)
+setTaxiLightOn (function: <a href="SetVehicleTaxiLightOn.html" title="SetVehicleTaxiLightOn">setVehicleTaxiLightOn</a>)
+setTurnVelocity (function: <a href="SetVehicleTurnVelocity.html" title="SetVehicleTurnVelocity">setVehicleTurnVelocity</a>)
+setTurretPosition (function: <a href="SetVehicleTurretPosition.html" title="SetVehicleTurretPosition">setVehicleTurretPosition</a>)
+setVariant (function: <a href="SetVehicleVariant.html" title="SetVehicleVariant">setVehicleVariant</a>)
+setWheelStates (function: <a href="SetVehicleWheelStates.html" title="SetVehicleWheelStates">setVehicleWheelStates</a>)
+spawn (function: <a href="SpawnVehicle.html" title="SpawnVehicle">spawnVehicle</a>)
+toggleRespawn (function: <a href="ToggleVehicleRespawn.html" title="ToggleVehicleRespawn">toggleVehicleRespawn</a>)
+</pre>
+<h2><span class="mw-headline" id="Water">Water</span></h2>
+<p><i>Inherited from <a href="#Element">Element</a></i>
+</p>
+<pre>create (function: <a href="CreateWater.html" title="CreateWater">createWater</a>)
+getColor (function: <a href="GetWaterColor.html" title="GetWaterColor">getWaterColor</a>)
+getVertexPosition (function: <a href="GetWaterVertexPosition.html" title="GetWaterVertexPosition">getWaterVertexPosition</a>)
+getWaveHeight (function: <a href="GetWaveHeight.html" title="GetWaveHeight">getWaveHeight</a>)
+resetColor (function: <a href="ResetWaterColor.html" title="ResetWaterColor">resetWaterColor</a>)
+resetLevel (function: <a href="ResetWaterLevel.html" title="ResetWaterLevel">resetWaterLevel</a>)
+setColor (function: <a href="SetWaterColor.html" title="SetWaterColor">setWaterColor</a>)
+setLevel (function: <a href="SetWaterLevel.html" title="SetWaterLevel">setWaterLevel</a>)
+setVertexPosition (function: <a href="SetWaterVertexPosition.html" title="SetWaterVertexPosition">setWaterVertexPosition</a>)
+setWaveHeight (function: <a href="SetWaveHeight.html" title="SetWaveHeight">setWaveHeight</a>)
+</pre>
+<h2><span class="mw-headline" id="XML">XML</span></h2>
+<pre>copy (function: <a href="XmlCopyFile.html" title="XmlCopyFile">xmlCopyFile</a>)
+create (function: <a href="XmlCreateFile.html" title="XmlCreateFile">xmlCreateFile</a>)
+createChild (function: <a href="XmlCreateChild.html" title="XmlCreateChild">xmlCreateChild</a>)
+destroy (function: <a href="XmlDestroyNode.html" title="XmlDestroyNode">xmlDestroyNode</a>)
+findChild (function: <a href="XmlFindChild.html" title="XmlFindChild">xmlFindChild</a>)
+getAttribute (function: <a href="XmlNodeGetAttribute.html" title="XmlNodeGetAttribute">xmlNodeGetAttribute</a>)
+getAttributes (function: <a href="XmlNodeGetAttributes.html" title="XmlNodeGetAttributes">xmlNodeGetAttributes</a>)
+getChildren (function: <a href="XmlNodeGetChildren.html" title="XmlNodeGetChildren">xmlNodeGetChildren</a>)
+getName (function: <a href="XmlNodeGetName.html" title="XmlNodeGetName">xmlNodeGetName</a>)
+getParent (function: <a href="XmlNodeGetParent.html" title="XmlNodeGetParent">xmlNodeGetParent</a>)
+load (function: <a href="XmlLoadFile.html" title="XmlLoadFile">xmlLoadFile</a>)
+loadMapData (function: <a href="LoadMapData.html" title="LoadMapData">loadMapData</a>)
+saveFile (function: <a href="XmlSaveFile.html" title="XmlSaveFile">xmlSaveFile</a>)
+saveMapData (function: <a href="SaveMapData.html" title="SaveMapData">saveMapData</a>)
+setAttribute (function: <a href="XmlNodeSetAttribute.html" title="XmlNodeSetAttribute">xmlNodeSetAttribute</a>)
+setName (function: <a href="XmlNodeSetName.html" title="XmlNodeSetName">xmlNodeSetName</a>)
+setValue (function: <a href="XmlNodeGetValue.html" title="XmlNodeGetValue">xmlNodeGetValue</a>)
+setValue (function: <a href="XmlNodeSetValue.html" title="XmlNodeSetValue">xmlNodeSetValue</a>)
+unload (function: <a href="XmlUnloadFile.html" title="XmlUnloadFile">xmlUnloadFile</a>)
+</pre>
+<h2><span class="mw-headline" id="Timer">Timer</span></h2>
+<pre>create (function: <a href="SetTimer.html" title="SetTimer">setTimer</a>)
+destroy (function: <a href="KillTimer.html" title="KillTimer">killTimer</a>)
+getDetails (function: <a href="GetTimerDetails.html" title="GetTimerDetails">getTimerDetails</a>)
+isValid (function: <a href="IsTimer.html" title="IsTimer">isTimer</a>)
+reset (function: <a href="ResetTimer.html" title="ResetTimer">resetTimer</a>)
+</pre>
+<!-- 
+NewPP limit report
+Cached time: 20190625164307
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.053 seconds
+Real time usage: 0.061 seconds
+Preprocessor visited node count: 149/1000000
+Preprocessor generated node count: 411/1000000
+Post‐expand include size: 1126/2097152 bytes
+Template argument size: 321/2097152 bytes
+Highest expansion depth: 5/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    3.674      1 - -total
+100.00%    3.674      1 - Template:Needs_Checking
+ 75.70%    2.781      1 - Template:MessageBox
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:7765-0!*!0!!en!5!* and timestamp 20190625164307 and revision id 55618
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=OOP_server&amp;oldid=55618">https://wiki.multitheftauto.com/index.php?title=OOP_server&amp;oldid=55618</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Categories</a>: <ul><li><a href="Category_Needs_Checking.html" title="Category:Needs Checking">Needs Checking</a></li><li><a href="Category_OOP.html" title="Category:OOP">OOP</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="OOP_server.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk"><a href="Talk_OOP_server.html" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=OOP_server&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=OOP_server&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=OOP+server" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=OOP+server" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/OOP_server.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/OOP_server.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=OOP_server&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=OOP_server&amp;oldid=55618" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=OOP_server&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+			</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 2 July 2018, at 21:45.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":93});});</script></body></html>

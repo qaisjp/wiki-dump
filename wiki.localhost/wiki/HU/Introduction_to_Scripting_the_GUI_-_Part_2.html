@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>HU/Introduction to Scripting the GUI - Part 2 - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"HU/Introduction_to_Scripting_the_GUI_-_Part_2","wgTitle":"HU/Introduction to Scripting the GUI - Part 2","wgCurRevisionId":62655,"wgRevisionId":62655,"wgArticleId":10976,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["GUI Tutorials"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"HU/Introduction_to_Scripting_the_GUI_-_Part_2","wgRelevantArticleId":10976,"wgRequestId":"007c509dff40e80b00a298dc","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-HU_Introduction_to_Scripting_the_GUI_-_Part_2 rootpage-HU_Introduction_to_Scripting_the_GUI_-_Part_2 skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">HU/Introduction to Scripting the GUI - Part 2</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>Ebben a tutoriálban létre fogunk hozni egy egyszerű <i>szabályok</i> ablakot egy elfogadási gombbal, és egy listával a szerver összes szabályairól, és infórmációiról.
+</p><p><br />
+</p>
+<table cellspacing="0" style="padding: 5px; width: 80%; margin: 2px auto 2px auto; border: 1px solid #BFBFFF; background: #E0E0FF; border-left: 10px solid #BFBFFF;">
+<tr>
+<td style="width: 32px; vertical-align:top; display: none;" rowspan="2"> [[{{{image}}}|link=]]
+</td>
+<td style=""> <b>Megjegyzés:</b> Vegye figyelembe, hogy ez a tutoriál a <a href="../Introduction_to_Scripting_the_GUI.html" title="Introduction to Scripting the GUI">Bevezetés a GUI készítésébe</a> tartalmára épül.
+</td></tr>
+<tr>
+<td rowspan="1" style="padding-left: 10px;">
+</td></tr></table>
+<p><br />
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#A_GUI_k.C3.A9sz.C3.ADt.C3.A9se"><span class="tocnumber">1</span> <span class="toctext">A GUI készítése</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Alapbe.C3.A1ll.C3.ADt.C3.A1sok"><span class="tocnumber">1.1</span> <span class="toctext">Alapbeállítások</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Ablak_l.C3.A9trehoz.C3.A1sa"><span class="tocnumber">1.2</span> <span class="toctext">Ablak létrehozása</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Gomb_l.C3.A9trehoz.C3.A1sa"><span class="tocnumber">1.3</span> <span class="toctext">Gomb létrehozása</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#C.C3.ADmke_l.C3.A9trehoz.C3.A1sa"><span class="tocnumber">1.4</span> <span class="toctext">Címke létrehozása</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Sz.C3.B6veg"><span class="tocnumber">1.5</span> <span class="toctext">Szöveg</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#A_function_haszn.C3.A1lata"><span class="tocnumber">1.6</span> <span class="toctext">A function használata</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#A_gomb_meg.C3.ADr.C3.A1sa"><span class="tocnumber">2</span> <span class="toctext">A gomb megírása</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#A_klikk_.C3.A9szlel.C3.A9se"><span class="tocnumber">2.1</span> <span class="toctext">A klikk észlelése</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#A_klikk_kezel.C3.A9se"><span class="tocnumber">2.2</span> <span class="toctext">A klikk kezelése</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#Elfogad.C3.A1s_ellen.C5.91rz.C3.A9se"><span class="tocnumber">3</span> <span class="toctext">Elfogadás ellenőrzése</span></a>
+<ul>
+<li class="toclevel-2 tocsection-12"><a href="#Az_id.C5.91z.C3.ADt.C5.91_be.C3.A1ll.C3.ADt.C3.A1sa"><span class="tocnumber">3.1</span> <span class="toctext">Az időzítő beállítása</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Figyelmeztet.C3.A9s"><span class="tocnumber">3.2</span> <span class="toctext">Figyelmeztetés</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#A_j.C3.A1t.C3.A9kos_kickel.C3.A9se"><span class="tocnumber">3.3</span> <span class="toctext">A játékos kickelése</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-15"><a href="#Ford.C3.ADtotta"><span class="tocnumber">4</span> <span class="toctext">Fordította</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="A_GUI_k.C3.A9sz.C3.ADt.C3.A9se">A GUI készítése</span></h2>
+<h3><span class="mw-headline" id="Alapbe.C3.A1ll.C3.ADt.C3.A1sok">Alapbeállítások</span></h3>
+<p>Az első dolog, amit létre kell hoznunk, az a  GUI elem.
+Ehhez a tutoriálhoz egy <a href="../Element/GUI/Window.html" title="Element/GUI/Window">ablakot</a>, egy <a href="../Element/GUI/Button.html" title="Element/GUI/Button">gombot</a> és egy <a href="../Element/GUI/Text_label.html" title="Element/GUI/Text label">címkét</a> használunk.
+<b>Abszolút</b> pozícióértékeket fogunk használni.
+</p><p>Ahogy az <a href="Introduction_to_Scripting_the_GUI.html" title="HU/Introduction to Scripting the GUI">előző tutoriálban</a> is említettük, minden GUI-t client oldalon kell létrehozni. 
+</p><p>Ha követte az utasításokat az előző tutoriálból, akkor nyissa meg a gui.lua fájlt, amivel majd dolgozni fog.
+</p><p>Ha nem, lépjen a /Your MTA Server/mods/deathmatch/resources/myserver/ könyvtárba, és hozzon létre egy mappát "client" néven. 
+A /client/ könyvtárban hozzon létre egy szöveges fájlt "gui.lua" néven.
+</p><p>Ha még nem tette meg, ne felejtse el hozzáadni az új gui.lua fájlt a meta.xml-hez a fő resource-ba, és adja meg client script-ként:
+</p>
+<pre class="prettyprint lang-xml">
+&lt;script src="client/gui.lua" type="client" /&gt;
+</pre>
+<h3><span class="mw-headline" id="Ablak_l.C3.A9trehoz.C3.A1sa">Ablak létrehozása</span></h3>
+<p>Ebben a fájlban írni fogunk egy function-t, ami kirajzolja az ablakot:
+</p>
+<pre class="prettyprint lang-lua">
+-- create the function that will hold our gui creation code
+function createRulesWindow()
+	-- get the screen width and height
+	local sWidth, sHeight = guiGetScreenSize()
+ 
+	-- create the window, using some maths to find the centre of the screen
+	local Width,Height = 445,445
+	local X = (sWidth/2) - (Width/2)
+	local Y = (sHeight/2) - (Height/2)
+
+	-- create the window
+	rulesWindow = guiCreateWindow(X,Y,Width,Height,"Rules",false)
+	
+	-- stop players from being able to simply move the window out of the way
+	guiWindowSetMovable(rulesWindow,false)
+	
+	-- stop players from being able to resize the window
+	guiWindowSetSizable(rulesWindow,false)
+end
+</pre>
+<p>Ez létre fog hozni egy alap ablakot a képernyő közepére, ez az ablak nem mozgatható és méretezhető.
+</p>
+<h3><span class="mw-headline" id="Gomb_l.C3.A9trehoz.C3.A1sa">Gomb létrehozása</span></h3>
+<p>Most létrehozzuk a gombot az ablak aljára, melyre a játékos rá tud kattintani, hogy elfogadja a szabályokat:
+</p><p><b>Mostpedig több kódot adunk hozzá a már meglévő 'createRulesWindow' function-ünkhöz. Ez nem egy új function, hanem a már meglévőt helyettesíti.</b>
+</p>
+<pre class="prettyprint lang-lua">
+function createRulesWindow()
+	-- get the screen width and height
+	local sWidth, sHeight = guiGetScreenSize()
+ 
+	-- create the window, using some maths to find the centre of the screen
+	local Width,Height = 445,445
+	local X = (sWidth/2) - (Width/2)
+	local Y = (sHeight/2) - (Height/2)
+
+	-- create the window and save the window gui element in a variable called 'rulesWindow'
+	rulesWindow = guiCreateWindow(X,Y,Width,Height,"Rules",false)
+	
+	-- stop players from being able to simply move the window out of the way
+	-- note that we use our 'rulesWindow' variable to make changes to the window
+	guiWindowSetMovable(rulesWindow,false)
+	
+	-- stop players from being able to resize the window
+	guiWindowSetSizable(rulesWindow,false)
+	
+	-- create the button and save the button gui element in a variable called 'rulesButton'
+	rulesButton = guiCreateButton(137,394,158,37,"Accept",false,rulesWindow)
+end
+</pre>
+<h3><span class="mw-headline" id="C.C3.ADmke_l.C3.A9trehoz.C3.A1sa">Címke létrehozása</span></h3>
+<p>Most hozzáadjuk a címkét az ablakunk közepére, hogy megjelenítsük a szabályainkat:
+</p><p><b>Mostpedig több kódot adunk hozzá a már meglévő 'createRulesWindow' function-ünkhöz. Ez nem egy új function, hanem a már meglévőt helyettesíti.</b>
+</p>
+<pre class="prettyprint lang-lua">
+function createRulesWindow()
+	-- get the screen width and height
+	local sWidth, sHeight = guiGetScreenSize()
+ 
+	-- create the window, using some maths to find the centre of the screen
+	local Width,Height = 445,445
+	local X = (sWidth/2) - (Width/2)
+	local Y = (sHeight/2) - (Height/2)
+
+	-- create the window and save the window gui element in a variable called 'rulesWindow'
+	rulesWindow = guiCreateWindow(X,Y,Width,Height,"Rules",false)
+	
+	-- stop players from being able to simply move the window out of the way
+	-- note that we use our 'rulesWindow' variable to make changes to the window
+	guiWindowSetMovable(rulesWindow,false)
+	
+	-- stop players from being able to resize the window
+	guiWindowSetSizable(rulesWindow,false)
+	
+	-- create the button and save the button gui element in a variable called 'rulesButton'
+	rulesButton = guiCreateButton(137,394,158,37,"Accept",false,rulesWindow)
+	
+	-- create the label and save the label gui element in a variable called 'rulesLabel'
+	-- we set the text of the label to our rules
+	rulesLabel = guiCreateLabel(10,25,425,359,[[
+	Welcome to my MTA Server!
+
+	Please carefully read the rules before accepting.
+
+	By accepting the rules, you are agreeing to play by them.
+	Anyone caught breaking these rules will be kicked and/or banned from this server.
+
+	If you do not accept the rules within 90 seconds, you will be kicked.
+
+	1: No cheating.
+
+	2: No bug abuse.
+
+	3: No mods to your game.
+
+	4: No flaming.
+
+	5: Respect other players.
+
+	6: Be nice!]],false,rulesWindow)
+	
+	-- set the horizontal alignment of the label to center (ie: in the middle of the window)
+	-- also note the final argument "true" 
+	-- this turns on wordwrap so if your text goes over the edge of the label, it will wrap around and start a new line automatically
+	guiLabelSetHorizontalAlign(rulesLabel,"center",true)	
+end
+</pre>
+<p><i>Vegye figyelembe, hogy a szöveg egy másik módon van hozzáadva (nem használunk idézőjeleket, "").</i>
+</p>
+<h3><span class="mw-headline" id="Sz.C3.B6veg">Szöveg</span></h3>
+<p><i>Két</i> módja létezik a címke szövegének megadására.
+A legtöbb esetben az ajánlott módszer az, hogy az összes szöveget idézőjelek közé írja be:
+</p>
+<pre class="prettyprint lang-lua">
+guiSetText(guiElement,"My text here")
+</pre>
+<p>Azonban, ha egynél több sort szeretnénk a szövegünkbe helyezni, akkor ugyan olyan könnyen használhatjuk a második módszert.
+Csupán a helyzettől, és a személyes választástól függ, hogy melyik módszert válasszuk.
+A tisztánlátás érdekében röviden ismertetem mind a kettőt.
+</p><p><br />
+Idézőjelek használata esetén használhatjuk az újsor karaktert: "\n" Ez lehetővé teszi a számunkra, hogy új sort szúrjunk a szövegünkbe.
+Például:
+</p>
+<pre class="prettyprint lang-lua">
+guiSetText(guiElement,"This is line 1. \n This is line 2. \n This is line 3.")
+</pre>
+<p><br />
+Azonban, ha zárójeleket közé helyezzük a szöveget idézőjelek helyett, akkor nem kell aggódni azon, hogy egy plusz karaktert addjunk a szöveghez. 
+Könnyedén beírhatjuk azt a szöveget, amit majd meg szeretnénk jeleníteni a címkében. Például:
+</p>
+<pre class="prettyprint lang-lua">
+guiSetText(guiElement,[[This is line 1.
+This is line 2.
+This is line 3.]])
+</pre>
+<p>Mindkét példa ugyan azt a szöveget fogja létrehozni a címkében.
+Egyedűl attól függ, hogy melyik módszert szeretné választani a használathoz.
+</p>
+<h3><span class="mw-headline" id="A_function_haszn.C3.A1lata">A function használata</span></h3>
+<p>A createRulesWindow function most már kész, de nem fog csinálni semmit, míg meg nem hívjuk. 
+Ajánlott az összes GUI létrehozás, amikor a client resource elindul. Rejtse el őket, majd amikor szükség van rá, jelenítse meg a játékosnak.
+</p><p>Ezért írni fogunk egy eseménykezelőt az <a href="../OnClientResourceStart.html" title="OnClientResourceStart">onClientResourceStart</a>-ra, hogy hozza létre az ablakot:
+</p>
+<pre class="prettyprint lang-lua">
+-- attach the event handler to the root element of the resource
+-- this means it will only trigger when its own resource is started
+addEventHandler("onClientResourceStart", getResourceRootElement(getThisResource()), 
+	function ()
+		-- call the createRulesWindow function to create our gui
+		createRulesWindow()
+	end
+)
+</pre>
+<p>Mivel ez egy <i>szabályok</i> ablak, ezért ezt meg kell jelenítenünk a játékosnak, amikor csatlakozik. 
+Szerencsére a GUI elemek alapértelmezetten láthatóek, ezért nem kell több kódot írni ennek megvalósítása érdekében.
+</p><p>Azonban láthatóvá kell tenni a kurzort a játékosoknak is. 
+Ezt megtehetjük ugyan azzal az eventel használva, <a href="../OnClientResourceStart.html" title="OnClientResourceStart">onClientResourceStart</a>, így módosítani tudjuk a fenti kódot, hogy láthatóvá tegye a kurzort:
+</p><p><b>Mostpedig több kódot adunk hozzá a már meglévő 'onClientResourceStart' event-ünkhöz. Ez nem egy új function, hanem a már meglévőt helyettesíti.</b>
+</p>
+<pre class="prettyprint lang-lua">
+-- attach the event handler to the root element of the resource
+-- this means it will only trigger when its own resource is started
+addEventHandler("onClientResourceStart", getResourceRootElement(getThisResource()), 
+	function ()
+		-- call the createRulesWindow function to create our gui
+		createRulesWindow()
+		
+		-- show the cursor to the player
+		showCursor(true,true)
+	end
+)
+</pre>
+<p>Most már van egy kész <i>szabályok</i> ablakunk. Ezután megkell írnunk a gomb müködését az elfogadás gombhoz.
+</p>
+<h2><span class="mw-headline" id="A_gomb_meg.C3.ADr.C3.A1sa">A gomb megírása</span></h2>
+<p>Most, hogy létrehoztuk a GUI-t, működővé is kell hogy tegyük.
+</p>
+<h3><span class="mw-headline" id="A_klikk_.C3.A9szlel.C3.A9se">A klikk észlelése</span></h3>
+<p>Ha egy játékos rákattint a GUI bármely részére, akkor az "<a href="../OnClientGUIClick.html" title="OnClientGUIClick">onClientGUIClick</a>" event meg fog hívodni arra a GUI részre, amelyre kattintott. Ez lehetővé teszi a számunkra, hogy kennyedén észlelni tudjunk bármilyen kattintást a GUI elemen, amit használni akarunk.
+Például, hozzá tudjuk csatolni a 'rulesButton' eventet a gombhoz, hogy érzékelje a kattintásokat rajta:
+</p>
+<pre class="prettyprint lang-lua">
+-- attach the event onClientGUIClick to rulesButton and set it to trigger the 'acceptRules' function
+addEventHandler("onClientGUIClick", rulesButton, acceptRules, false)
+</pre>
+<p><b>Vegye figyelembe, hogy az utolsó paraméter az "false". Ez azt mutatja, hogy az event közvetlenül csak a rulesButton-on hívodik meg, és nem akkor, ha az event magasabb, vagy alacsonyabb ágon van. Gui elem csatolása közben, ha "true"-ra állítja, akkor az azt jelenti, hogy bármely ugyan azon ágon lévő elemre kattintás során az event meghívodik.</b>
+</p><p>Ezt a kódot már hozzá is adhatjuk a 'createRulesWindow' function-höz. Gyakori hiba, hogy eventeket próbálnak meg csatolni egy nem létező GUI-hoz, ezért győződjön meg arról, hogy mindig a létrehozott GUI elem után csatolja az eventet (ebben az esetben a gomb):
+</p>
+<pre class="prettyprint lang-lua">
+function createRulesWindow()
+	-- create all our GUI elements
+	...
+
+	-- now add our onClientGUIClick event to the button we just created
+	addEventHandler("onClientGUIClick", rulesButton, acceptRules, false)
+</pre>
+<h3><span class="mw-headline" id="A_klikk_kezel.C3.A9se">A klikk kezelése</span></h3>
+<p>Most, hogy észlelni tudjuk, hogy a játékos mikor kattint a gombra, írnunk kell egy kódot, ami kezelni tudja ezt, amikor a játékos kattint.
+A mi <a href="../OnClientGUIClick.html" title="OnClientGUIClick">onClientGUIClick</a> event handler-ünkben azt mondtuk, hogy hívja meg a 'acceptRules' function-t, amikor a 'rulesButton'-ra kattintottak.
+Ezért most már használhatjuk a 'acceptRules' function-t annak ellenőrzésére, hogy mi történik a gomb megnyomásakor:
+</p>
+<pre class="prettyprint lang-lua">
+-- create the function and define the 'button' and 'state' parameters
+-- (these are passed automatically by onClientGUIClick)
+function acceptRules(button,state)
+	-- if our accept button was clicked with the left mouse button, and the state of the mouse button is up
+	if button == "left" and state == "up" then
+		-- hide the window and all the components
+		guiSetVisible(rulesWindow, false)
+		
+		-- hide the mouse cursor
+		showCursor(false,false)
+		
+		-- output a message to the player
+		outputChatBox("Thank you for accepting our rules. Have fun!")
+		
+		
+		-- if the warning timer exists
+		if rulesWarningTimer then
+			-- stop the timer and set the variable to nil
+			-- this is the timer used to kick players who do not accept the rules. We will cover this in more detail in the next section.
+			killTimer(rulesWarningTimer)
+			rulesWarningTimer = nil
+		end
+	end
+end
+</pre>
+<p>Most, amikor a gombot megnyomják, akkor az ablak és a kurzor elrejtődik.
+</p>
+<h2><span class="mw-headline" id="Elfogad.C3.A1s_ellen.C5.91rz.C3.A9se">Elfogadás ellenőrzése</span></h2>
+<p>Jelenleg a mi ablakunk akkkor fog megjelenni, amikor a játékos csatlakozik a szerverre, és csak az elfogadás után tünik el.
+Azonban, ha nem fogjadja el, akkor bármeddig a szerveren maradhat a nyitott ablakkal együtt.
+</p>
+<h3><span class="mw-headline" id="Az_id.C5.91z.C3.ADt.C5.91_be.C3.A1ll.C3.ADt.C3.A1sa">Az időzítő beállítása</span></h3>
+<p>Ennek elkerülésének érdekében egy <a href="../SetTimer.html" title="SetTimer">setTimer</a>-t adunk hozzá, hogy egy bizonyos idő után kickelje a játékost, ha nem fogadta el a szabályokat.
+Előszőr is szükségünk lesz egy globális változóra, hogy tárolni tudjuk az időt:
+</p>
+<pre class="prettyprint lang-lua">
+local rulesWarningTimer = nil
+</pre>
+<p>Helyezze ezt a sort a script legtetejére (nem kell, hogy a function-on belül legyen)
+</p><p>Ezután létre hozzuk az időzítőt:
+</p><p><b>Mostpedig több kódot adunk hozzá a már meglévő 'createRulesWindow' function-ünkhöz</b>
+</p>
+<pre class="prettyprint lang-lua">
+function createRulesWindow()
+	-- create all of our gui
+	...
+	
+	-- set a timer for 30 seconds and set it to call our 'inactivePlayer' function with "1" as an argument
+	rulesWarningTimer = setTimer(inactivePlayer,30000,1,1)
+end
+</pre>
+<p>Helyezze ezt a <a href="../SetTimer.html" title="SetTimer">setTimer</a> sort a 'createRulesWindow' function közepére.
+Ez létre fog hozni egy időzítőt, amely 30 másodperc után fog meghívódni.
+</p>
+<h3><span class="mw-headline" id="Figyelmeztet.C3.A9s">Figyelmeztetés</span></h3>
+<p>Most megfogjuk írni az 'inactivePlayer' function-ünket, hogy figyelmeztetést adjon a játékosnak, és végül kickelje is ki, ha nem fogadja el:
+</p>
+<pre class="prettyprint lang-lua">
+-- create our function and define the 'status' parameter
+-- the value of status will be passed from our setTimer function call
+function inactivePlayer(status)
+	-- if status is 1 (this means it is the first warning)
+	if status == 1 then
+		-- output a warning
+		outputChatBox("Please accept our rules or be kicked.")
+		
+		-- set another timer to call inactivePlayer in another 30 seconds, with "2" as an argument
+		rulesWarningTimer = setTimer(inactivePlayer,30000,1,2)
+		
+	-- if status is 2 (the second warning)
+	elseif status == 2 then
+		-- output a final warning
+		outputChatBox("FINAL WARNING: Please accept our rules or be kicked.")
+		
+		-- set a final timer to call inactivePlayer in another 30 seconds, with "3" as an argument
+		rulesWarningTimer = setTimer(inactivePlayer,30000,1,3)	
+	elseif status == 3 then
+		-- trigger the server so we can kick the player
+		triggerServerEvent("clientKickInactivePlayer",getLocalPlayer())
+	end
+end
+</pre>
+<p>Vegye figyelembe a <a href="../TriggerServerEvent.html" title="TriggerServerEvent">triggerServerEvent</a> használatát, hogy meghívja a szervert. Tapasztalatának kell lennie a client-server kommunikációjáról <a href="Introduction_to_Scripting_the_GUI.html" title="HU/Introduction to Scripting the GUI">az előző tutorialból</a>. 
+Ha nincs, vissza mehet és elolvashatja a teljes magyarázatot.
+</p><p><br />
+Ezzel be is fejeztük a teljes clint oldali kódunkat ehhez a tutoriálhoz.
+</p>
+<h3><span class="mw-headline" id="A_j.C3.A1t.C3.A9kos_kickel.C3.A9se">A játékos kickelése</span></h3>
+<p>Most foglalkoznunk kell azzal a server oldali eventel, amit a client oldalon hívtunk meg. Nyissa meg a server oldali lua fájlt, amivel dolgozni fogunk.
+</p><p>Kezdésként hozzá fogjuk adni az eventet a szerverhez:
+</p>
+<pre class="prettyprint lang-lua">
+-- add the event, note the final argument "true" indicates it can be triggered from the client
+addEvent("clientKickInactivePlayer",true)
+-- add an event handler for this event to trigger the kickInactivePlayer function
+addEventHandler("clientKickInactivePlayer",root,kickInactivePlayer)
+</pre>
+<p><b>Győződjön meg arról, hogy hozzáadta az event handler-t miután meghatározta a 'kickInactivePlayer' function-t.</b>
+</p><p>Vegye figyelembe az <a href="../AddEvent.html" title="AddEvent">addEvent</a> és az <a href="../AddEventHandler.html" title="AddEventHandler">addEventHandler</a> használatát a szerveren. Mostanra már rendelkeznie kell némi tapasztalattal a client-server kommunikációjáról az <a href="../Introduction_to_Scripting_the_GUI.html" title="Introduction to Scripting the GUI">előző tutorialból</a>. Ha nincs, vissza mehet és elolvashatja a teljes magyarázatot.
+</p><p>Végezetűl hozzáadjuk a 'kickInactivePlayer' function-t, hogy kezelje a játékos kickelését:
+</p>
+<pre class="prettyprint lang-lua">
+-- create our function
+function kickInactivePlayer()
+	-- kick the player
+	kickPlayer(client,"Please accept our rules.")
+end
+</pre>
+<p>Vegye figyelembe a 'client' változó használatát, ez egy MTA specifikus változó, ami az eseményt hívó client-et (player elementet) tartalmazza.
+</p><p><br />
+<b>Vegye figyelembe, hogy a <a href="../KickPlayer.html" title="KickPlayer">kickPlayer</a>-nek rendelkeznie kell ACL hozzáféréssel.</b>
+</p><p><b>Ez a legegyszerűbb módja a resouce hozzáadásának az ACL-ben:</b>
+</p>
+<pre class="prettyprint lang-xml">
+&lt;group name="Admin"&gt;
+	...
+    &lt;object name="resource.YourResourceName" /&gt;
+	...
+&lt;/group&gt;
+</pre>
+<p>További információért az <a href="../ACL.html" title="ACL" class="mw-redirect">ACL</a>-ról, látogassa meg <a href="../ACL.html" title="ACL" class="mw-redirect">ACL</a> wiki oldalt.
+</p><p>Ez fejezi be ezt a tutoriált. Most már rendelkeznie kell egy teljesen működő 'szabályok' ablakkal a szerverén.
+</p><p>A GUI-val való további segítségért látogassa meg a <a href="../Category_GUI_Tutorials_hu.html" title="Category:GUI Tutorials hu">GUI tutorials</a> oldalt.
+</p>
+<h2><span class="mw-headline" id="Ford.C3.ADtotta">Fordította</span></h2>
+<pre><b>2018.11.08.</b> <font size="3"><b><a rel="nofollow" class="external text" href="https://wiki.multitheftauto.com/wiki/User:Surge">Surge</a></b></font>
+</pre>
+<!-- 
+NewPP limit report
+Cached time: 20190625164821
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.014 seconds
+Real time usage: 0.015 seconds
+Preprocessor visited node count: 265/1000000
+Preprocessor generated node count: 708/1000000
+Post‐expand include size: 1144/2097152 bytes
+Template argument size: 464/2097152 bytes
+Highest expansion depth: 5/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    3.349      1 - -total
+100.00%    3.349      1 - Template:Note_hu
+ 78.17%    2.618      1 - Template:MessageBox
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:10976-0!*!0!!en!*!* and timestamp 20190625164821 and revision id 62655
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=HU/Introduction_to_Scripting_the_GUI_-_Part_2&amp;oldid=62655">https://wiki.multitheftauto.com/index.php?title=HU/Introduction_to_Scripting_the_GUI_-_Part_2&amp;oldid=62655</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="../Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="../Category_GUI_Tutorials.html" title="Category:GUI Tutorials">GUI Tutorials</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Introduction_to_Scripting_the_GUI_-_Part_2.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:HU/Introduction_to_Scripting_the_GUI_-_Part_2&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=HU/Introduction_to_Scripting_the_GUI_-_Part_2&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=HU/Introduction_to_Scripting_the_GUI_-_Part_2&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=HU%2FIntroduction+to+Scripting+the+GUI+-+Part+2" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=HU%2FIntroduction+to+Scripting+the+GUI+-+Part+2" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/HU/Introduction_to_Scripting_the_GUI_-_Part_2.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/HU/Introduction_to_Scripting_the_GUI_-_Part_2.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=HU/Introduction_to_Scripting_the_GUI_-_Part_2&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=HU/Introduction_to_Scripting_the_GUI_-_Part_2&amp;oldid=62655" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=HU/Introduction_to_Scripting_the_GUI_-_Part_2&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=Introduction_to_Scripting_the_GUI_-_Part_2" title="Introduction to Scripting the GUI - Part 2 – English" lang="en" hreflang="en">English</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 13 May 2019, at 12:50.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":41});});</script></body></html>

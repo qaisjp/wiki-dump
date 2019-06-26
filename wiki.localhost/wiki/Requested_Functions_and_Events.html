@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Requested Functions and Events - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Requested_Functions_and_Events","wgTitle":"Requested Functions and Events","wgCurRevisionId":52210,"wgRevisionId":52210,"wgArticleId":4183,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Requested_Functions_and_Events","wgRelevantArticleId":4183,"wgRequestId":"793a2c26135acae320d4e153","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Requested_Functions_and_Events rootpage-Requested_Functions_and_Events skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Requested Functions and Events</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><h2><span class="mw-headline" id="Server-side">Server-side</span></h2>
+<p>Event like onServerTick wich is run very often. Like the clientside onClientRender. This could be useful for constat checking wich must be done under 50ms (lower than timers can handle).
+</p>
+<hr />
+<p>onVehicleCreated or an equivalent... shouldn't be too hard? -Robhol (14:15 Jul 6, 08)
+</p>
+<dl><dd>If we did it, it'd be onElementCreated - what do you want this for? <a href="User_EAi.html" title="User:EAi">eAi</a> 08:58, 7 July 2008 (CDT)
+<dl><dd>onElementCreated is a good idea - it could be used for lots of things. Also, how about onVehicleDrown or whatever? that is, when a vehicle hits deep water. Checking for collisions and stuff is very awkward, and client-side only, and has to be checked constantly.. -Robhol (17:31 Jul 9 08)
+<dl><dd>I second that. It would be useful if you use like me element data like the fuel amount or other stuff. And an event like this would help me to setup those element data, when a car spawns. Otherwise I would either have to edit every car spawn script I use or do a post-setup when someone is entering the car.. <a href="User_MaddDogg14.html" title="User:MaddDogg14">User:MaddDogg14</a> (04:34 Apr 4, 10 (CEST))
+<dl><dd>i definetly agree, onElementCreated would be VERY useful for utility/librares scripts, but i think this should be limited by ACL, because "evil" scripts could abuse this othervise -Karlis (9:10 Apr 5, 10)</dd></dl></dd></dl></dd></dl></dd></dl>
+<p><br />
+</p>
+<hr />
+<p>I ask for a function that detects if a ped is on floor, eg. <b>isPedOnFloor(ped thePed)</b>, thanks. --<span style="font-family:Courier New, Courier, monospace"><a href="User_Shadd.html" title="User:Shadd">Shadd</a></span><sub>(<a href="http://wiki.localhost/index.php?title=User_talk:Shadd&amp;action=edit&amp;redlink=1" class="new" title="User talk:Shadd (page does not exist)">In caso di emergenza rompere le scatole</a>)</sub> 11:29, 15 June 2008 (CDT)
+</p>
+<dl><dd> <a href="IsPedOnGround.html" title="IsPedOnGround">isPedOnGround</a>? <a href="User_Awwu.html" title="User:Awwu">Awwu</a> 12:58, 15 June 2008 (CDT)
+<dl><dd>I need to know if the player has its back touching the ground, not if it's simply "on ground". --<span style="font-family:Courier New, Courier, monospace"><a href="User_Shadd.html" title="User:Shadd">Shadd</a></span><sub>(<a href="http://wiki.localhost/index.php?title=User_talk:Shadd&amp;action=edit&amp;redlink=1" class="new" title="User talk:Shadd (page does not exist)">In caso di emergenza rompere le scatole</a>)</sub> 14:16, 16 June 2008 (CDT)
+<dl><dd>Check what task the player has, they should have TASK_COMPLEX_FALL_AND_GET_UP or TASK_COMPLEX_FALL_AND_STAY_DOWN... <a href="User_EAi.html" title="User:EAi">eAi</a> 19:12, 16 June 2008 (CDT)
+<dl><dd>Thanks. What task does player have after being hitten by a melee attack that cause it to fall down? Would "TASK_SIMPLE_BE_KICKED_ON_GROUND" and "TASK_SIMPLE_GET_UP" work? --<span style="font-family:Courier New, Courier, monospace"><a href="User_Shadd.html" title="User:Shadd">Shadd</a></span><sub>(<a href="http://wiki.localhost/index.php?title=User_talk:Shadd&amp;action=edit&amp;redlink=1" class="new" title="User talk:Shadd (page does not exist)">In caso di emergenza rompere le scatole</a>)</sub> 09:35, 17 June 2008 (CDT)
+<dl><dd>Try it, I'm not entirely sure. You should be able to produce some code to show the player's current tasks very easily... <a href="User_EAi.html" title="User:EAi">eAi</a> 19:20, 17 June 2008 (CDT)
+<dl><dd>My goal is to edit the standard damage of the attacks, in this case i have to know when player is on ground to cause higher damage. However it doesn't seem to work, when i hit the player it simply gets up without animation with no damage. --<span style="font-family:Courier New, Courier, monospace"><a href="User_Shadd.html" title="User:Shadd">Shadd</a></span><sub>(<a href="http://wiki.localhost/index.php?title=User_talk:Shadd&amp;action=edit&amp;redlink=1" class="new" title="User talk:Shadd (page does not exist)">In caso di emergenza rompere le scatole</a>)</sub> 19:10, 19 June 2008 (CDT)</dd></dl></dd></dl></dd></dl></dd></dl></dd></dl></dd></dl>
+<hr />
+<p>It may looks strange and useless (waste of time?) but I think that it could be a awesome feature. Having a web browser.
+Like: <a rel="nofollow" class="external free" href="http://www.youtube.com/watch?v=wT1UR6qEgdg">http://www.youtube.com/watch?v=wT1UR6qEgdg</a>
+<a rel="nofollow" class="external free" href="http://princeofcode.com/awesomium.php">http://princeofcode.com/awesomium.php</a>
+</p>
+<dl><dd>definetly useles and waste of time, suporting xfire enought. -karlis
+<dl><dd>Really Karlis, who asked you bro. It could be very useful, actually. For example, creating dynamic billboards. Instead of changing the TXD, they could set up a browser object over the billboard. That way they can also set up a timer to change the image, etc. <a href="http://wiki.localhost/index.php?title=User:JacobS&amp;action=edit&amp;redlink=1" class="new" title="User:JacobS (page does not exist)">JacobS</a> 20:08, 1 August 2010 (UTC)</dd></dl></dd></dl>
+<hr />
+<p>There could be something like createBrowser( float x, float y, float z, [float rx, float ry, float rz, float width, float high, string url, bool locked] ) 
+locked parameter: false = navigation bar present, true = no navigation bar
+toggleBrowserFullsceenMode(browser theBrowser, bool tog, [bool smooth])
+smooth parameter: If set to true the browser will smoothly move from his ingame position to the fullscreen position
+toggleBrowserBackground(browser theBrowser, bool tog)
+Set the browser background transparent.
+</p>
+<hr />
+<p>Security: Disable file downloads, disable popups (disable flash, javascript and any other protocols than http and https [no mailto and stuff...]?)
+</p>
+<hr />
+<p>Should be a Client and server function. --<a href="http://wiki.localhost/index.php?title=User:Masterofquebec&amp;action=edit&amp;redlink=1" class="new" title="User:Masterofquebec (page does not exist)">Masterofquebec</a> 00:10, 15 October 2009 (UTC)
+</p>
+<hr />
+<p>Support of tooltips from CEGUI would be cool. I saw a property for that, but it didn't work for me. <a href="User_MaddDogg14.html" title="User:MaddDogg14">User:MaddDogg14</a> (04:36 Apr 4, 10 (CEST))
+</p>
+<hr />
+<p>I request a function that gets all clothes from a ped, just like getPedClothes but for all bodyparts. With this function it would be more ease to save clothes to database.
+</p>
+<dl><dd>That's so easy to do yourself that it's barely worth adding. Just loop all the indexes 0-17 and save them to a table. <a href="User_Awwu.html" title="User:Awwu">Awwu</a> 19:26, 17 April 2010 (UTC)</dd></dl>
+<hr />
+<p><a href="http://wiki.localhost/index.php?title=SetProjectileTarget&amp;action=edit&amp;redlink=1" class="new" title="SetProjectileTarget (page does not exist)">setProjectileTarget</a> for setting a projectile to target a specific entity. I am trying to create a Battlefield Bad Company type of gamemode and in that game, you can plant a 'tracer'. Any rocket fired (if the tracer is on screen) will seek the tracer. <a href="http://wiki.localhost/index.php?title=User:LeetWoovie&amp;action=edit&amp;redlink=1" class="new" title="User:LeetWoovie (page does not exist)">LeetWoovie</a> 05:01, 19 April 2010 (UTC)
+</p>
+<hr />
+<p>(marcol07, June the 25th, 2010) I would like to have some function to create light source as element or sth like createFire, for example createLight(x,y,z,xrot,yrot,zrot,f,r,g,b) where "f" is an angle of lightning. or it is possible with some model or function? It would be good to create for example fog lamps or classic street lamps
+</p>
+<hr />
+<p>moveElement available for markers, objects, pedestrians and players or maybe more if you can do. <a href="User_Socialz.html" title="User:Socialz">Socialz</a> 13:10, 1 January 2012 (CET)
+</p>
+<h2><span class="mw-headline" id="Client-Side">Client-Side</span></h2>
+<p>Function "<b>isPlayerStunting</b>" for add options to events "<i>onClientPlayerStuntStart</i>" and "<i>onClientPlayerStuntFinish</i>" --<a href="http://wiki.localhost/index.php?title=User:Dfigfjf&amp;action=edit&amp;redlink=1" class="new" title="User:Dfigfjf (page does not exist)">Dfigfjf</a> 18:52, 4 October 2015 (UTC)
+</p>
+<hr />
+<p>Event "onClientVehicleFire", which would be triggered when a vehicle shoots.
+</p>
+<dl><dd>See <a href="OnVehicleWeaponFire.html" title="OnVehicleWeaponFire">OnVehicleWeaponFire</a> --<a href="User_X86dev.html" title="User:X86dev">X86dev</a> 12:11, 19 April 2013 (UTC)</dd></dl>
+<hr />
+<p>Adding possibility to toggle radio hud label by <b>showHudComponent</b> -karlis
+</p>
+<hr />
+<p>Pickup events clientside please, onClientPickupHit onClientPickupUse.
+</p>
+<hr />
+<p>Would it be possible to add a color arg to guiGridListSetItemText()? Im trying to get each item colored differently in one list. Thanks, ABEL
+</p>
+<hr />
+<p>I need a function which could get current target of hydra or a HS rocket launcher, like when someone press space and targets a element, to get what element is it for calculating distance from it. <b>getPlayerOccupiedVehicleTarget</b> or <b>getPlayerHSTarget</b>. 
+Thanks in advance -Nidza a.k.a. CodeMaster 2:26 PM 19th June 2008.
+</p>
+<hr />
+<p>It'd be useful to have something to disable elements of the default hud (weapon display, health display, armor, radar, etcetera) so that you can create your own HUDs. Something like <b>setHudElement(element name, toggle)</b>.
+</p><p><a href="http://wiki.localhost/index.php?title=User:Lord_Xalphox&amp;action=edit&amp;redlink=1" class="new" title="User:Lord Xalphox (page does not exist)">Lord Xalphox</a> 19:32, 22 March 2009 (CET)
+</p>
+<dl><dd><a href="ShowPlayerHudComponent.html" title="ShowPlayerHudComponent">showPlayerHudComponent</a>? <a href="User_Awwu.html" title="User:Awwu">Awwu</a> 19:43, 22 March 2009 (CET)</dd></dl>
+<hr />
+<p>I'd like to have a function that sets the chatbox input line text. Then I could script my own chat history function (that inserts the last sent text into the input line again by pressing arrow up) (which samp has since 0.2 btw) since nobody builds it into the client. <a href="User_NeonBlack.html" title="User:NeonBlack">NeonBlack</a> 12:03, 4 July 2009 (CEST) PS.: samp also supports cut, copy and paste&#160;:P
+</p>
+<hr />
+<p>A function setElementMatrix, doing the exact opposite of getElementMatrix would be much appreciated. --<a href="http://wiki.localhost/index.php?title=User:Kayl&amp;action=edit&amp;redlink=1" class="new" title="User:Kayl (page does not exist)">Kayl</a> 15:21, 13 November 2009 (UTC)
+</p>
+<hr />
+<p>Functions like setTrainPosition(train,track,pos) and track,pos getTrainPosition(train) would be great in order to allow more script side control of trains.
+The track argument would be an index of the track number (currently there are around 4 tracks handled, including 1 incompletely defined).
+The position would be a float between 0 and 1 (or however you guys handle it) telling where on the track the train currently is.
+It would be great if those functions could be available client and server side. --<a href="http://wiki.localhost/index.php?title=User:Kayl&amp;action=edit&amp;redlink=1" class="new" title="User:Kayl (page does not exist)">Kayl</a> 12:58, 23 November 2009 (UTC)
+</p>
+<hr />
+<p>need this function client and server side <b>movePlayerHudComponent(string component, float x, float y)</b> --<a href="http://wiki.localhost/index.php?title=User:SuatEyrice&amp;action=edit&amp;redlink=1" class="new" title="User:SuatEyrice (page does not exist)">SuatEyrice</a> 00:18, 26 February 2010 (UTC)
+</p>
+<hr />
+<p><b>(marcol07, June the 27th, 2010)</b> I would be so happy to have fuction to set Analog control of player sth like <b>getAnalogControlState(string controlName)</b> but inverted to <b>setAnalogControlState(string controlName, float state)</b>
+</p>
+<hr />
+<p>OnPedDamage (serverside) event. There is OnClientPedDamage, but it's clientside. <a href="http://wiki.localhost/index.php?title=User:Damage22&amp;action=edit&amp;redlink=1" class="new" title="User:Damage22 (page does not exist)">damage22</a>
+</p>
+<hr />
+<p><b>setRadioVolume(element thePlayer, int volume)</b>, to create GUI volume control, turn off the radio without changing the station, etc. <a href="http://wiki.localhost/index.php?title=User:JacobS&amp;action=edit&amp;redlink=1" class="new" title="User:JacobS (page does not exist)">JacobS</a> 14:47, 29 July 2010 (UTC)
+</p>
+<hr />
+<p><b>setVehicleHydraulics(element theVehicle, bool state)</b>, to force hydraulics to be up (true) or down (false)
+</p>
+<hr />
+<p><b>createFire(x, y, z, theSize, dimension)</b>, just like <a href="CreateFire.html" title="CreateFire">createFire</a>, only with the option to enter a dimension for the fire to appear in
+</p>
+<hr />
+<p><b>setGunshotsEnabled(bool enabled)</b>, <b>getGunshotsEnabled()</b> and <b>createGunshot(x,y,z,radius)</b> - to enable/disable the game's gunshot ambience, and to create gunshots at specific locations with radii that it is audible in <a href="http://wiki.localhost/index.php?title=User:JacobS.&amp;action=edit&amp;redlink=1" class="new" title="User:JacobS. (page does not exist)">JacobS.</a> 19:28, 11 September 2010 (MDT)
+</p>
+<hr />
+<p>onClick  should pass the name of the clicked SUBobject too (eg: vehicle parts, bone names etc.)--<a href="http://wiki.localhost/index.php?title=User:Lcaseidefensis&amp;action=edit&amp;redlink=1" class="new" title="User:Lcaseidefensis (page does not exist)">Lcaseidefensis</a> 16:48, 21 May 2012 (UTC)
+</p>
+<hr />
+<p>something to open/close doors like in singleplayer (teleports are a bit unrealistic)
+</p>
+<hr />
+<p>moveCamera( player thePlayer, float positionX, float positionY, float positionZ [, float lookAtX, float lookAtY, float lookAtZ, float roll = 0, float fov = 70 ] )
+and
+attachElementToPed( player thePlayer, element theElement, interger bone)
+</p>
+<hr />
+<p>Something like createBrowser, but for making screens which can be used to spectate other players. Kind of like the screens that you see in stadiums.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190625164329
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.005 seconds
+Real time usage: 0.006 seconds
+Preprocessor visited node count: 10/1000000
+Preprocessor generated node count: 20/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 - -total
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:4183-0!*!0!!*!*!* and timestamp 20190625164329 and revision id 52210
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=Requested_Functions_and_Events&amp;oldid=52210">https://wiki.multitheftauto.com/index.php?title=Requested_Functions_and_Events&amp;oldid=52210</a>"</div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Requested_Functions_and_Events.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk"><a href="Talk_Requested_Functions_and_Events.html" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=Requested_Functions_and_Events&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=Requested_Functions_and_Events&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=Requested+Functions+and+Events" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=Requested+Functions+and+Events" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/Requested_Functions_and_Events.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/Requested_Functions_and_Events.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=Requested_Functions_and_Events&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=Requested_Functions_and_Events&amp;oldid=52210" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=Requested_Functions_and_Events&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+			</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 5 September 2017, at 20:16.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":33});});</script></body></html>

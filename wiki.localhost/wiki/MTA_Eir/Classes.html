@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>MTA:Eir/Classes - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"MTA:Eir/Classes","wgTitle":"MTA:Eir/Classes","wgCurRevisionId":38768,"wgRevisionId":38768,"wgArticleId":7396,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"MTA:Eir/Classes","wgRelevantArticleId":7396,"wgRequestId":"dfd9e0f241d62f95ed7ead81","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-MTA_Eir_Classes rootpage-MTA_Eir_Classes skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">MTA:Eir/Classes</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>Here is a list of all MTA:Lua classes that native MTA:Eir supports. They are defined in the MTA:Lua class system. MTA:Lua is the Lua implementation developed and specialized for MTA:Eir.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Game_classes"><span class="tocnumber">1</span> <span class="toctext">Game classes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Game_Entity"><span class="tocnumber">1.1</span> <span class="toctext">Game Entity</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Vehicle"><span class="tocnumber">1.2</span> <span class="toctext">Vehicle</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Ped"><span class="tocnumber">1.3</span> <span class="toctext">Ped</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Object"><span class="tocnumber">1.4</span> <span class="toctext">Object</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#RenderWare_engine_classes"><span class="tocnumber">2</span> <span class="toctext">RenderWare engine classes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Object_2"><span class="tocnumber">2.1</span> <span class="toctext">Object</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Frame"><span class="tocnumber">2.2</span> <span class="toctext">Frame</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Atomic"><span class="tocnumber">2.3</span> <span class="toctext">Atomic</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Clump"><span class="tocnumber">2.4</span> <span class="toctext">Clump</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Light"><span class="tocnumber">2.5</span> <span class="toctext">Light</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Camera"><span class="tocnumber">2.6</span> <span class="toctext">Camera</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#TexDictionary"><span class="tocnumber">2.7</span> <span class="toctext">TexDictionary</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#FileSystem_Translator_Functions"><span class="tocnumber">3</span> <span class="toctext">FileSystem Translator Functions</span></a></li>
+<li class="toclevel-1"><a href="#FileSystem_Archive_Translator_Functions"><span class="tocnumber">4</span> <span class="toctext">FileSystem Archive Translator Functions</span></a></li>
+<li class="toclevel-1"><a href="#FileSystem_File_Functions"><span class="tocnumber">5</span> <span class="toctext">FileSystem File Functions</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#System_classes"><span class="tocnumber">6</span> <span class="toctext">System classes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-15"><a href="#Resource"><span class="tocnumber">6.1</span> <span class="toctext">Resource</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Resource_Manager"><span class="tocnumber">6.2</span> <span class="toctext">Resource Manager</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Timer"><span class="tocnumber">6.3</span> <span class="toctext">Timer</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Game_classes">Game classes</span></h2>
+<h3><span class="mw-headline" id="Game_Entity"><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Game_Entity&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Game Entity (page does not exist)">Game Entity</a></span></h3>
+<ul><li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Game_Entity/isFading&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Game Entity/isFading (page does not exist)">isFading</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Game_Entity/getFadingAlpha&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Game Entity/getFadingAlpha (page does not exist)">getFadingAlpha</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Game_Entity/setColModel&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Game Entity/setColModel (page does not exist)">setColModel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Game_Entity/getColModel&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Game Entity/getColModel (page does not exist)">getColModel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Game_Entity/replaceTexture&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Game Entity/replaceTexture (page does not exist)">replaceTexture</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Game_Entity/isRwObjectPresent&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Game Entity/isRwObjectPresent (page does not exist)">isRwObjectPresent</a></li></ul>
+<h3><span class="mw-headline" id="Vehicle"><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle (page does not exist)">Vehicle</a></span></h3>
+<ul><li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setRotation&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setRotation (page does not exist)">setRotation</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getRotation&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getRotation (page does not exist)">getRotation</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setModel&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setModel (page does not exist)">setModel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getModel&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getModel (page does not exist)">getModel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setHealth&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setHealth (page does not exist)">setHealth</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getHealth&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getHealth (page does not exist)">getHealth</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/fix&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/fix (page does not exist)">fix</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/blow&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/blow (page does not exist)">blow</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/isBlown&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/isBlown (page does not exist)">isBlown</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setExplodeTime&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setExplodeTime (page does not exist)">setExplodeTime</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getExplodeTime&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getExplodeTime (page does not exist)">getExplodeTime</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setBurningTime&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setBurningTime (page does not exist)">setBurningTime</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getBurningTime&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getBurningTime (page does not exist)">getBurningTime</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/addUpgrade&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/addUpgrade (page does not exist)">addUpgrade</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getUpgradeOnSlot&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getUpgradeOnSlot (page does not exist)">getUpgradeOnSlot</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getUpgrades&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getUpgrades (page does not exist)">getUpgrades</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setHandling&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setHandling (page does not exist)">setHandling</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getHandling&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getHandling (page does not exist)">getHandling</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/removeUpgrade&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/removeUpgrade (page does not exist)">removeUpgrade</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getOccupant&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getOccupant (page does not exist)">getOccupant</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getOccupants&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getOccupants (page does not exist)">getOccupants</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setOverrideLights&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setOverrideLights (page does not exist)">setOverrideLights</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getOverrideLights&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getOverrideLights (page does not exist)">getOverrideLights</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setTaxiLightOn&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setTaxiLightOn (page does not exist)">setTaxiLightOn</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/isTaxiLightOn&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/isTaxiLightOn (page does not exist)">isTaxiLightOn</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/isUpsideDown&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/isUpsideDown (page does not exist)">isUpsideDown</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setColor&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setColor (page does not exist)">setColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setColorRGB&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setColorRGB (page does not exist)">setColorRGB</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getColor&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getColor (page does not exist)">getColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getColorRGB&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getColorRGB (page does not exist)">getColorRGB</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setHeadLightColor&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setHeadLightColor (page does not exist)">setHeadLightColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getHeadLightColor&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getHeadLightColor (page does not exist)">getHeadLightColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/attachTrailer&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/attachTrailer (page does not exist)">attachTrailer</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/detachTrailer&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/detachTrailer (page does not exist)">detachTrailer</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getTowBarPos&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getTowBarPos (page does not exist)">getTowBarPos</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getTowHitchPos&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getTowHitchPos (page does not exist)">getTowHitchPos</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setAdjustableProperty&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setAdjustableProperty (page does not exist)">setAdjustableProperty</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getAdjustableProperty&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getAdjustableProperty (page does not exist)">getAdjustableProperty</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setGravity&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setGravity (page does not exist)">setGravity</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getGravity&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getGravity (page does not exist)">getGravity</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setDoorState&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setDoorState (page does not exist)">setDoorState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getDoorState&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getDoorState (page does not exist)">getDoorState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setLightState&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setLightState (page does not exist)">setLightState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getLightState&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getLightState (page does not exist)">getLightState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setPanelState&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setPanelState (page does not exist)">setPanelState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getPanelState&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getPanelState (page does not exist)">getPanelState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setWheelStates&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setWheelStates (page does not exist)">setWheelStates</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getWheelStates&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getWheelStates (page does not exist)">getWheelStates</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/cloneClump&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/cloneClump (page does not exist)">cloneClump</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getComponent&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getComponent (page does not exist)">getComponent</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getComponentNames&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getComponentNames (page does not exist)">getComponentNames</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setEngineState&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setEngineState (page does not exist)">setEngineState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getEngineState&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getEngineState (page does not exist)">getEngineState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setHandbrakeOn&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setHandbrakeOn (page does not exist)">setHandbrakeOn</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/isHandbrakeOn&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/isHandbrakeOn (page does not exist)">isHandbrakeOn</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setLandingGearDown&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setLandingGearDown (page does not exist)">setLandingGearDown</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getLandingGearDown&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getLandingGearDown (page does not exist)">getLandingGearDown</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setLandingGearPosition&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setLandingGearPosition (page does not exist)">setLandingGearPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getLandingGearPosition&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getLandingGearPosition (page does not exist)">getLandingGearPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setBrakePedal&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setBrakePedal (page does not exist)">setBrakePedal</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setGasPedal&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setGasPedal (page does not exist)">setGasPedal</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setSteerAngle&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setSteerAngle (page does not exist)">setSteerAngle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setSecSteerAngle&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setSecSteerAngle (page does not exist)">setSecSteerAngle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getCurrentGear&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getCurrentGear (page does not exist)">getCurrentGear</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getBrakePedal&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getBrakePedal (page does not exist)">getBrakePedal</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getGasPedal&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getGasPedal (page does not exist)">getGasPedal</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getSteerAngle&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getSteerAngle (page does not exist)">getSteerAngle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getSecSteerAngle&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getSecSteerAngle (page does not exist)">getSecSteerAngle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setNitrousFuel&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setNitrousFuel (page does not exist)">setNitrousFuel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getNitrousFuel&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getNitrousFuel (page does not exist)">getNitrousFuel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setPaintjob&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setPaintjob (page does not exist)">setPaintjob</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getPaintjob&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getPaintjob (page does not exist)">getPaintjob</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getPlateText&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getPlateText (page does not exist)">getPlateText</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setSirensOn&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setSirensOn (page does not exist)">setSirensOn</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getTowedByVehicle&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getTowedByVehicle (page does not exist)">getTowedByVehicle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getTowingVehicle&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getTowingVehicle (page does not exist)">getTowingVehicle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setTurnVelocity&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setTurnVelocity (page does not exist)">setTurnVelocity</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getTurnVelocity&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getTurnVelocity (page does not exist)">getTurnVelocity</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setTurretRotation&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setTurretRotation (page does not exist)">setTurretRotation</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getTurretRotation&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getTurretRotation (page does not exist)">getTurretRotation</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setDamageProof&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setDamageProof (page does not exist)">setDamageProof</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/isDamageProof&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/isDamageProof (page does not exist)">isDamageProof</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setFrozen&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setFrozen (page does not exist)">setFrozen</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/isFrozen&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/isFrozen (page does not exist)">isFrozen</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setFuelTankExplodable&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setFuelTankExplodable (page does not exist)">setFuelTankExplodable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/isFuelTankExplodable&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/isFuelTankExplodable (page does not exist)">isFuelTankExplodable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setHeatSeekable&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setHeatSeekable (page does not exist)">setHeatSeekable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/isHeatSeekable&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/isHeatSeekable (page does not exist)">isHeatSeekable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setLocked&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setLocked (page does not exist)">setLocked</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/isLocked&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/isLocked (page does not exist)">isLocked</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/isOnGround&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/isOnGround (page does not exist)">isOnGround</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setDirtLevel&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setDirtLevel (page does not exist)">setDirtLevel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getDirtLevel&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getDirtLevel (page does not exist)">getDirtLevel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setDoorsUndamageable&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setDoorsUndamageable (page does not exist)">setDoorsUndamageable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/areDoorsUndamageable&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/areDoorsUndamageable (page does not exist)">areDoorsUndamageable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setDoorOpenRatio&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setDoorOpenRatio (page does not exist)">setDoorOpenRatio</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getDoorOpenRatio&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getDoorOpenRatio (page does not exist)">getDoorOpenRatio</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/allowSwingingDoors&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/allowSwingingDoors (page does not exist)">allowSwingingDoors</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/areSwingingDoorsAllowed&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/areSwingingDoorsAllowed (page does not exist)">areSwingingDoorsAllowed</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setRotorSpeed&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setRotorSpeed (page does not exist)">setRotorSpeed</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getRotorSpeed&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getRotorSpeed (page does not exist)">getRotorSpeed</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setSearchLightVisible&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setSearchLightVisible (page does not exist)">setSearchLightVisible</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/isSearchLightVisible&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/isSearchLightVisible (page does not exist)">isSearchLightVisible</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setHeliWinchType&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setHeliWinchType (page does not exist)">setHeliWinchType</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getHeliWinchType&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getHeliWinchType (page does not exist)">getHeliWinchType</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/pickUpWithWinch&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/pickUpWithWinch (page does not exist)">pickUpWithWinch</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getWinchedEntity&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getWinchedEntity (page does not exist)">getWinchedEntity</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/releaseWinched&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/releaseWinched (page does not exist)">releaseWinched</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setSmokeTrailEnabled&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setSmokeTrailEnabled (page does not exist)">setSmokeTrailEnabled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/isSmokeTrailEnabled&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/isSmokeTrailEnabled (page does not exist)">isSmokeTrailEnabled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setTrainDirection&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setTrainDirection (page does not exist)">setTrainDirection</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getTrainDirection&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getTrainDirection (page does not exist)">getTrainDirection</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setTrainSpeed&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setTrainSpeed (page does not exist)">setTrainSpeed</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getTrainSpeed&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getTrainSpeed (page does not exist)">getTrainSpeed</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getNextCarriage&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getNextCarriage (page does not exist)">getNextCarriage</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setNextCarriage&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setNextCarriage (page does not exist)">setNextCarriage</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setPreviousCarriage&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setPreviousCarriage (page does not exist)">setPreviousCarriage</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/getPreviousCarriage&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/getPreviousCarriage (page does not exist)">getPreviousCarriage</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setDerailable&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setDerailable (page does not exist)">setDerailable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/isDerailable&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/isDerailable (page does not exist)">isDerailable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/setDerailed&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/setDerailed (page does not exist)">setDerailed</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Vehicle/isDerailed&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Vehicle/isDerailed (page does not exist)">isDerailed</a></li></ul>
+<h3><span class="mw-headline" id="Ped"><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped (page does not exist)">Ped</a></span></h3>
+<ul><li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/setRotation&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/setRotation (page does not exist)">setRotation</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/getRotation&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/getRotation (page does not exist)">getRotation</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/setHealth&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/setHealth (page does not exist)">setHealth</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/getHealth&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/getHealth (page does not exist)">getHealth</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/isDead&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/isDead (page does not exist)">isDead</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/setModel&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/setModel (page does not exist)">setModel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/getModel&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/getModel (page does not exist)">getModel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/addClothes&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/addClothes (page does not exist)">addClothes</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/getClothes&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/getClothes (page does not exist)">getClothes</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/removeClothes&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/removeClothes (page does not exist)">removeClothes</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/setControlState&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/setControlState (page does not exist)">setControlState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/getControlState&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/getControlState (page does not exist)">getControlState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/getAmmoInClip&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/getAmmoInClip (page does not exist)">getAmmoInClip</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/getTotalAmmo&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/getTotalAmmo (page does not exist)">getTotalAmmo</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/setWeaponSlot&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/setWeaponSlot (page does not exist)">setWeaponSlot</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/getWeaponSlot&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/getWeaponSlot (page does not exist)">getWeaponSlot</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/getWeapon&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/getWeapon (page does not exist)">getWeapon</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/setArmor&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/setArmor (page does not exist)">setArmor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/getArmor&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/getArmor (page does not exist)">getArmor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/getContactElement&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/getContactElement (page does not exist)">getContactElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/getFightingStyle&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/getFightingStyle (page does not exist)">getFightingStyle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/getMoveState&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/getMoveState (page does not exist)">getMoveState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/getVehicle&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/getVehicle (page does not exist)">getVehicle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/getVehicleSeat&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/getVehicleSeat (page does not exist)">getVehicleSeat</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/getTarget&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/getTarget (page does not exist)">getTarget</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/giveJetPack&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/giveJetPack (page does not exist)">giveJetPack</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/hasJetPack&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/hasJetPack (page does not exist)">hasJetPack</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/removeJetPack&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/removeJetPack (page does not exist)">removeJetPack</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/setChoking&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/setChoking (page does not exist)">setChoking</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/isChoking&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/isChoking (page does not exist)">isChoking</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/setDoingGangDriveby&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/setDoingGangDriveby (page does not exist)">setDoingGangDriveby</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/isDucked&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/isDucked (page does not exist)">isDucked</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/isInWater&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/isInWater (page does not exist)">isInWater</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/isOnGround&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/isOnGround (page does not exist)">isOnGround</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/isInVehicle&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/isInVehicle (page does not exist)">isInVehicle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/setAnimation&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/setAnimation (page does not exist)">setAnimation</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/setAnimationProgress&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/setAnimationProgress (page does not exist)">setAnimationProgress</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/setHeadless&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/setHeadless (page does not exist)">setHeadless</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/isHeadless&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/isHeadless (page does not exist)">isHeadless</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/setOnFire&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/setOnFire (page does not exist)">setOnFire</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/isOnFire&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/isOnFire (page does not exist)">isOnFire</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Ped/getStat&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Ped/getStat (page does not exist)">getStat</a></li></ul>
+<h3><span class="mw-headline" id="Object"><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Object&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Object (page does not exist)">Object</a></span></h3>
+<ul><li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Object/setHealth&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Object/setHealth (page does not exist)">setHealth</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Object/getHealth&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Object/getHealth (page does not exist)">getHealth</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Object/setRotation&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Object/setRotation (page does not exist)">setRotation</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Object/getRotation&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Object/getRotation (page does not exist)">getRotation</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Object/setModel&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Object/setModel (page does not exist)">setModel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Object/getModel&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Object/getModel (page does not exist)">getModel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Object/cloneAtomic&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Object/cloneAtomic (page does not exist)">cloneAtomic</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Object/setObjectStatic&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Object/setObjectStatic (page does not exist)">setObjectStatic</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Object/isObjectStatic&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Object/isObjectStatic (page does not exist)">isObjectStatic</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Object/setObjectScale&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Object/setObjectScale (page does not exist)">setObjectScale</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Object/getObjectScale&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Object/getObjectScale (page does not exist)">getObjectScale</a></li></ul>
+<h2><span class="mw-headline" id="RenderWare_engine_classes">RenderWare engine classes</span></h2>
+<h3><span class="mw-headline" id="Object_2"><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Object&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Object (page does not exist)">Object</a></span></h3>
+<ul><li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Object/setParent&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Object/setParent (page does not exist)">setParent</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Frame/getFrame&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Frame/getFrame (page does not exist)">getFrame</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Frame/isValidChild&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Frame/isValidChild (page does not exist)">isValidChild</a></li></ul>
+<h3><span class="mw-headline" id="Frame"><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Frame&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Frame (page does not exist)">Frame</a></span></h3>
+<ul><li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Frame/getName&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Frame/getName (page does not exist)">getName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Frame/setName&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Frame/setName (page does not exist)">setName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Frame/getHash&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Frame/getHash (page does not exist)">getHash</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Frame/getLTM&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Frame/getLTM (page does not exist)">getLTM</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Frame/setModelling&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Frame/setModelling (page does not exist)">setModelling</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Frame/getModelling&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Frame/getModelling (page does not exist)">getModelling</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Frame/setPosition&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Frame/setPosition (page does not exist)">setPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Frame/getPosition&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Frame/getPosition (page does not exist)">getPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Frame/getObjects&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Frame/getObjects (page does not exist)">getObjects</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Frame/findFrame&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Frame/findFrame (page does not exist)">findFrame</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Frame/getLinkedFrames&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Frame/getLinkedFrames (page does not exist)">getLinkedFrames</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Frame/isValidChild&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Frame/isValidChild (page does not exist)">isValidChild</a></li></ul>
+<h3><span class="mw-headline" id="Atomic"><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Atomic&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Atomic (page does not exist)">Atomic</a></span></h3>
+<ul><li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Atomic/clone&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Atomic/clone (page does not exist)">clone</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Atomic/setClump&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Atomic/setClump (page does not exist)">setClump</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Atomic/getClump&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Atomic/getClump (page does not exist)">getClump</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Atomic/render&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Atomic/render (page does not exist)">render</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Atomic/getWorldSphere&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Atomic/getWorldSphere (page does not exist)">getWorldSphere</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Atomic/replaceModel&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Atomic/replaceModel (page does not exist)">replaceModel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Atomic/isReplaced&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Atomic/isReplaced (page does not exist)">isReplaced</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Atomic/getReplaced&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Atomic/getReplaced (page does not exist)">getReplaced</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Atomic/restoreModel&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Atomic/restoreModel (page does not exist)">restoreModel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Atomic/restoreAll&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Atomic/restoreAll (page does not exist)">restoreAll</a></li></ul>
+<h3><span class="mw-headline" id="Clump"><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Clump&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Clump (page does not exist)">Clump</a></span></h3>
+<ul><li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Clump/clone&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Clump/clone (page does not exist)">clone</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Clump/render&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Clump/render (page does not exist)">render</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Clump/getAtomics&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Clump/getAtomics (page does not exist)">getAtomics</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Clump/getLights&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Clump/getLights (page does not exist)">getLights</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Clump/getCameras&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Clump/getCameras (page does not exist)">getCameras</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Clump/replaceModel&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Clump/replaceModel (page does not exist)">replaceModel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Clump/isReplaced&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Clump/isReplaced (page does not exist)">isReplaced</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Clump/getReplaced&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Clump/getReplaced (page does not exist)">getReplaced</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Clump/restoreModel&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Clump/restoreModel (page does not exist)">restoreModel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Clump/restoreAll&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Clump/restoreAll (page does not exist)">restoreAll</a></li></ul>
+<h3><span class="mw-headline" id="Light"><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Light&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Light (page does not exist)">Light</a></span></h3>
+<ul><li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Light/clone&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Light/clone (page does not exist)">clone</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Light/getLightType&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Light/getLightType (page does not exist)">getLightType</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Light/setClump&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Light/setClump (page does not exist)">setClump</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Light/getClump&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Light/getClump (page does not exist)">getClump</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Light/setRadius&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Light/setRadius (page does not exist)">setRadius</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Light/getRadius&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Light/getRadius (page does not exist)">getRadius</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Light/setConeAngle&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Light/setConeAngle (page does not exist)">setConeAngle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Light/getConeAngle&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Light/getConeAngle (page does not exist)">getConeAngle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Light/setColor&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Light/setColor (page does not exist)">setColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Light/getColor&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Light/getColor (page does not exist)">getColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Light/setAttenuation&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Light/setAttenuation (page does not exist)">setAttenuation</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Light/getAttenuation&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Light/getAttenuation (page does not exist)">getAttenuation</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Light/setLightIndex&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Light/setLightIndex (page does not exist)">setLightIndex</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Light/getLightIndex&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Light/getLightIndex (page does not exist)">getLightIndex</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Light/addToScene&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Light/addToScene (page does not exist)">addToScene</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Light/isAddedToScene&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Light/isAddedToScene (page does not exist)">isAddedToScene</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Light/removeFromScene&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Light/removeFromScene (page does not exist)">removeFromScene</a></li></ul>
+<h3><span class="mw-headline" id="Camera"><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Camera&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Camera (page does not exist)">Camera</a></span></h3>
+<ul><li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Camera/setParent&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Camera/setParent (page does not exist)">setParent</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Camera/setClump&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Camera/setClump (page does not exist)">setClump</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Camera/getClump&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Camera/getClump (page does not exist)">getClump</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Camera/isRendering&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Camera/isRendering (page does not exist)">isRendering</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/Camera/update&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/Camera/update (page does not exist)">update</a></li></ul>
+<h3><span class="mw-headline" id="TexDictionary"><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/TexDictionary&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/TexDictionary (page does not exist)">TexDictionary</a></span></h3>
+<ul><li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/TexDictionary/getTextures&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/TexDictionary/getTextures (page does not exist)">getTextures</a></li>
+<li><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/rw/TexDictionary/setGlobalEmitter&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/rw/TexDictionary/setGlobalEmitter (page does not exist)">setGlobalEmitter</a></li></ul>
+<h2><span class="mw-headline" id="FileSystem_Translator_Functions"><a href="FileSystem.html" title="MTA:Eir/FileSystem">FileSystem</a> Translator Functions</span></h2>
+<ul><li><a href="FileSystem/translator/open.html" title="MTA:Eir/FileSystem/translator/open">open</a></li>
+<li><a href="FileSystem/translator/exists.html" title="MTA:Eir/FileSystem/translator/exists">exists</a></li>
+<li><a href="FileSystem/translator/createDir.html" title="MTA:Eir/FileSystem/translator/createDir">createDir</a></li>
+<li><a href="FileSystem/translator/chdir.html" title="MTA:Eir/FileSystem/translator/chdir">chdir</a></li>
+<li><a href="FileSystem/translator/delete.html" title="MTA:Eir/FileSystem/translator/delete">delete</a></li>
+<li><a href="FileSystem/translator/copy.html" title="MTA:Eir/FileSystem/translator/copy">copy</a></li>
+<li><a href="FileSystem/translator/rename.html" title="MTA:Eir/FileSystem/translator/rename">rename</a></li>
+<li><a href="FileSystem/translator/size.html" title="MTA:Eir/FileSystem/translator/size">size</a></li>
+<li><a href="FileSystem/translator/stat.html" title="MTA:Eir/FileSystem/translator/stat">stat</a></li>
+<li><a href="FileSystem/translator/relPath.html" title="MTA:Eir/FileSystem/translator/relPath">relPath</a></li>
+<li><a href="FileSystem/translator/relPathRoot.html" title="MTA:Eir/FileSystem/translator/relPathRoot">relPathRoot</a></li>
+<li><a href="FileSystem/translator/absPath.html" title="MTA:Eir/FileSystem/translator/absPath">absPath</a></li>
+<li><a href="FileSystem/translator/absPathRoot.html" title="MTA:Eir/FileSystem/translator/absPathRoot">absPathRoot</a></li>
+<li><a href="FileSystem/translator/scanDir.html" title="MTA:Eir/FileSystem/translator/scanDir">scanDir</a></li>
+<li><a href="FileSystem/translator/scanDirEx.html" title="MTA:Eir/FileSystem/translator/scanDirEx">scanDirEx</a></li>
+<li><a href="FileSystem/translator/getDirs.html" title="MTA:Eir/FileSystem/translator/getDirs">getDirs</a></li>
+<li><a href="FileSystem/translator/getFiles.html" title="MTA:Eir/FileSystem/translator/getFiles">getFiles</a></li></ul>
+<h2><span class="mw-headline" id="FileSystem_Archive_Translator_Functions"><a href="FileSystem.html" title="MTA:Eir/FileSystem">FileSystem</a> Archive Translator Functions</span></h2>
+<ul><li><a href="FileSystem/atranslator/save.html" title="MTA:Eir/FileSystem/atranslator/save">save</a></li></ul>
+<h2><span class="mw-headline" id="FileSystem_File_Functions"><a href="FileSystem.html" title="MTA:Eir/FileSystem">FileSystem</a> File Functions</span></h2>
+<ul><li><a href="FileSystem/file/read.html" title="MTA:Eir/FileSystem/file/read">read</a></li>
+<li><a href="FileSystem/file/readByte.html" title="MTA:Eir/FileSystem/file/readByte">readByte</a></li>
+<li><a href="FileSystem/file/readUByte.html" title="MTA:Eir/FileSystem/file/readUByte">readUByte</a></li>
+<li><a href="FileSystem/file/readShort.html" title="MTA:Eir/FileSystem/file/readShort">readShort</a></li>
+<li><a href="FileSystem/file/readUShort.html" title="MTA:Eir/FileSystem/file/readUShort">readUShort</a></li>
+<li><a href="FileSystem/file/readInt.html" title="MTA:Eir/FileSystem/file/readInt">readInt</a></li>
+<li><a href="FileSystem/file/readUInt.html" title="MTA:Eir/FileSystem/file/readUInt">readUInt</a></li>
+<li><a href="FileSystem/file/readFloat.html" title="MTA:Eir/FileSystem/file/readFloat">readFloat</a></li>
+<li><a href="FileSystem/file/readDouble.html" title="MTA:Eir/FileSystem/file/readDouble">readDouble</a></li>
+<li><a href="FileSystem/file/readBoolean.html" title="MTA:Eir/FileSystem/file/readBoolean">readBoolean</a></li>
+<li><a href="FileSystem/file/write.html" title="MTA:Eir/FileSystem/file/write">write</a></li>
+<li><a href="FileSystem/file/writeByte.html" title="MTA:Eir/FileSystem/file/writeByte">writeByte</a></li>
+<li><a href="FileSystem/file/writeUByte.html" title="MTA:Eir/FileSystem/file/writeUByte">writeUByte</a></li>
+<li><a href="FileSystem/file/writeShort.html" title="MTA:Eir/FileSystem/file/writeShort">writeShort</a></li>
+<li><a href="FileSystem/file/writeUShort.html" title="MTA:Eir/FileSystem/file/writeUShort">writeUShort</a></li>
+<li><a href="FileSystem/file/writeInt.html" title="MTA:Eir/FileSystem/file/writeInt">writeInt</a></li>
+<li><a href="FileSystem/file/writeUInt.html" title="MTA:Eir/FileSystem/file/writeUInt">writeUInt</a></li>
+<li><a href="FileSystem/file/writeFloat.html" title="MTA:Eir/FileSystem/file/writeFloat">writeFloat</a></li>
+<li><a href="FileSystem/file/writeDouble.html" title="MTA:Eir/FileSystem/file/writeDouble">writeDouble</a></li>
+<li><a href="FileSystem/file/writeBoolean.html" title="MTA:Eir/FileSystem/file/writeBoolean">writeBoolean</a></li>
+<li><a href="FileSystem/file/size.html" title="MTA:Eir/FileSystem/file/size">size</a></li>
+<li><a href="FileSystem/file/stat.html" title="MTA:Eir/FileSystem/file/stat">stat</a></li>
+<li><a href="FileSystem/file/tell.html" title="MTA:Eir/FileSystem/file/tell">tell</a></li>
+<li><a href="FileSystem/file/seek.html" title="MTA:Eir/FileSystem/file/seek">seek</a></li>
+<li><a href="FileSystem/file/eof.html" title="MTA:Eir/FileSystem/file/eof">eof</a></li>
+<li><a href="FileSystem/file/flush.html" title="MTA:Eir/FileSystem/file/flush">flush</a></li>
+<li><a href="FileSystem/file/isWritable.html" title="MTA:Eir/FileSystem/file/isWritable">isWritable</a></li>
+<li><a href="FileSystem/file/isReadable.html" title="MTA:Eir/FileSystem/file/isReadable">isReadable</a></li></ul>
+<h2><span class="mw-headline" id="System_classes">System classes</span></h2>
+<h3><span class="mw-headline" id="Resource"><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Resource&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Resource (page does not exist)">Resource</a></span></h3>
+<h3><span class="mw-headline" id="Resource_Manager"><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Resource_Manager&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Resource Manager (page does not exist)">Resource Manager</a></span></h3>
+<h3><span class="mw-headline" id="Timer"><a href="http://wiki.localhost/index.php?title=MTA:Eir/classes/Timer&amp;action=edit&amp;redlink=1" class="new" title="MTA:Eir/classes/Timer (page does not exist)">Timer</a></span></h3>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625170526
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.029 seconds
+Real time usage: 0.034 seconds
+Preprocessor visited node count: 82/1000000
+Preprocessor generated node count: 108/1000000
+Post‐expand include size: 2469/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    4.152      1 - -total
+ 41.45%    1.721      1 - MTA:Eir/FileSystem/translator/functions
+ 27.05%    1.123      1 - MTA:Eir/FileSystem/atranslator/functions
+ 20.93%    0.869      1 - MTA:Eir/FileSystem/file/functions
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:7396-0!*!0!!en!*!* and timestamp 20190625170526 and revision id 38768
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=MTA:Eir/Classes&amp;oldid=38768">https://wiki.multitheftauto.com/index.php?title=MTA:Eir/Classes&amp;oldid=38768</a>"</div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Classes.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:MTA:Eir/Classes&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=MTA:Eir/Classes&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=MTA:Eir/Classes&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=MTA%3AEir%2FClasses" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=MTA%3AEir%2FClasses" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/MTA_Eir/Classes.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/MTA_Eir/Classes.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=MTA:Eir/Classes&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=MTA:Eir/Classes&amp;oldid=38768" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=MTA:Eir/Classes&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+			</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 1 February 2014, at 12:16.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":64});});</script></body></html>

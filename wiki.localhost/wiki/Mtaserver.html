@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Server mtaserver.conf - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Server_mtaserver.conf","wgTitle":"Server mtaserver.conf","wgCurRevisionId":62912,"wgRevisionId":62912,"wgArticleId":5974,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Support"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Server_mtaserver.conf","wgRelevantArticleId":5974,"wgRequestId":"2af211ddccd13ab2a87b56d1","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Mtaserver.conf","wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false},"wgInternalRedirectTargetUrl":"/wiki/Server_mtaserver.conf"});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.action.view.redirect","mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://wiki.multitheftauto.com/wiki/Server_mtaserver.conf"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Server_mtaserver_conf rootpage-Server_mtaserver_conf skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Server mtaserver.conf</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"><span class="mw-redirectedfrom">(Redirected from <a href="http://wiki.localhost/index.php?title=Mtaserver.conf&amp;redirect=no" title="Mtaserver.conf">Mtaserver.conf</a>)</span></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>This page lists the settings that can be set in the settings file. <i>Setting from the default <b>mtaserver.conf</b> settings file is in italics</i>.
+</p><p><br />
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#servername"><span class="tocnumber">1</span> <span class="toctext">servername</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#owner_email_address"><span class="tocnumber">2</span> <span class="toctext">owner_email_address</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#serverip"><span class="tocnumber">3</span> <span class="toctext">serverip</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#serverport"><span class="tocnumber">4</span> <span class="toctext">serverport</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#maxplayers"><span class="tocnumber">5</span> <span class="toctext">maxplayers</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#httpserver"><span class="tocnumber">6</span> <span class="toctext">httpserver</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#httpport"><span class="tocnumber">7</span> <span class="toctext">httpport</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#httpdownloadurl"><span class="tocnumber">8</span> <span class="toctext">httpdownloadurl</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#httpmaxconnectionsperclient"><span class="tocnumber">9</span> <span class="toctext">httpmaxconnectionsperclient</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#httpdosthreshold"><span class="tocnumber">10</span> <span class="toctext">httpdosthreshold</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#http_dos_exclude"><span class="tocnumber">11</span> <span class="toctext">http_dos_exclude</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#allow_gta3_img_mods"><span class="tocnumber">12</span> <span class="toctext">allow_gta3_img_mods</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#client_file"><span class="tocnumber">13</span> <span class="toctext">client_file</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#disableac"><span class="tocnumber">14</span> <span class="toctext">disableac</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#enablesd"><span class="tocnumber">15</span> <span class="toctext">enablesd</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#minclientversion"><span class="tocnumber">16</span> <span class="toctext">minclientversion</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#minclientversion_auto_update"><span class="tocnumber">17</span> <span class="toctext">minclientversion_auto_update</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="#recommendedclientversion"><span class="tocnumber">18</span> <span class="toctext">recommendedclientversion</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="#ase"><span class="tocnumber">19</span> <span class="toctext">ase</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="#donotbroadcastlan"><span class="tocnumber">20</span> <span class="toctext">donotbroadcastlan</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="#password"><span class="tocnumber">21</span> <span class="toctext">password</span></a></li>
+<li class="toclevel-1 tocsection-22"><a href="#bandwidth_reduction"><span class="tocnumber">22</span> <span class="toctext">bandwidth_reduction</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="#unoccupied_vehicle_syncer_distance"><span class="tocnumber">23</span> <span class="toctext">unoccupied_vehicle_syncer_distance</span></a></li>
+<li class="toclevel-1 tocsection-24"><a href="#ped_syncer_distance"><span class="tocnumber">24</span> <span class="toctext">ped_syncer_distance</span></a></li>
+<li class="toclevel-1 tocsection-25"><a href="#player_sync_interval"><span class="tocnumber">25</span> <span class="toctext">player_sync_interval</span></a></li>
+<li class="toclevel-1 tocsection-26"><a href="#lightweight_sync_interval"><span class="tocnumber">26</span> <span class="toctext">lightweight_sync_interval</span></a></li>
+<li class="toclevel-1 tocsection-27"><a href="#camera_sync_interval"><span class="tocnumber">27</span> <span class="toctext">camera_sync_interval</span></a></li>
+<li class="toclevel-1 tocsection-28"><a href="#ped_sync_interval"><span class="tocnumber">28</span> <span class="toctext">ped_sync_interval</span></a></li>
+<li class="toclevel-1 tocsection-29"><a href="#unoccupied_vehicle_sync_interval"><span class="tocnumber">29</span> <span class="toctext">unoccupied_vehicle_sync_interval</span></a></li>
+<li class="toclevel-1 tocsection-30"><a href="#keysync_mouse_sync_interval"><span class="tocnumber">30</span> <span class="toctext">keysync_mouse_sync_interval</span></a></li>
+<li class="toclevel-1 tocsection-31"><a href="#keysync_analog_sync_interval"><span class="tocnumber">31</span> <span class="toctext">keysync_analog_sync_interval</span></a></li>
+<li class="toclevel-1 tocsection-32"><a href="#bullet_sync"><span class="tocnumber">32</span> <span class="toctext">bullet_sync</span></a></li>
+<li class="toclevel-1 tocsection-33"><a href="#vehext_percent"><span class="tocnumber">33</span> <span class="toctext">vehext_percent</span></a></li>
+<li class="toclevel-1 tocsection-34"><a href="#vehext_ping_limit"><span class="tocnumber">34</span> <span class="toctext">vehext_ping_limit</span></a></li>
+<li class="toclevel-1 tocsection-35"><a href="#latency_reduction"><span class="tocnumber">35</span> <span class="toctext">latency_reduction</span></a></li>
+<li class="toclevel-1 tocsection-36"><a href="#threadnet"><span class="tocnumber">36</span> <span class="toctext">threadnet</span></a></li>
+<li class="toclevel-1 tocsection-37"><a href="#idfile"><span class="tocnumber">37</span> <span class="toctext">idfile</span></a></li>
+<li class="toclevel-1 tocsection-38"><a href="#logfile"><span class="tocnumber">38</span> <span class="toctext">logfile</span></a></li>
+<li class="toclevel-1 tocsection-39"><a href="#authfile"><span class="tocnumber">39</span> <span class="toctext">authfile</span></a></li>
+<li class="toclevel-1 tocsection-40"><a href="#dbfile"><span class="tocnumber">40</span> <span class="toctext">dbfile</span></a></li>
+<li class="toclevel-1 tocsection-41"><a href="#loadstringfile"><span class="tocnumber">41</span> <span class="toctext">loadstringfile</span></a></li>
+<li class="toclevel-1 tocsection-42"><a href="#acl"><span class="tocnumber">42</span> <span class="toctext">acl</span></a></li>
+<li class="toclevel-1 tocsection-43"><a href="#scriptdebuglogfile"><span class="tocnumber">43</span> <span class="toctext">scriptdebuglogfile</span></a></li>
+<li class="toclevel-1 tocsection-44"><a href="#scriptdebugloglevel"><span class="tocnumber">44</span> <span class="toctext">scriptdebugloglevel</span></a></li>
+<li class="toclevel-1 tocsection-45"><a href="#htmldebuglevel"><span class="tocnumber">45</span> <span class="toctext">htmldebuglevel</span></a></li>
+<li class="toclevel-1 tocsection-46"><a href="#filter_duplicate_log_lines"><span class="tocnumber">46</span> <span class="toctext">filter_duplicate_log_lines</span></a></li>
+<li class="toclevel-1 tocsection-47"><a href="#fpslimit"><span class="tocnumber">47</span> <span class="toctext">fpslimit</span></a></li>
+<li class="toclevel-1 tocsection-48"><a href="#voice"><span class="tocnumber">48</span> <span class="toctext">voice</span></a></li>
+<li class="toclevel-1 tocsection-49"><a href="#voice_samplerate"><span class="tocnumber">49</span> <span class="toctext">voice_samplerate</span></a></li>
+<li class="toclevel-1 tocsection-50"><a href="#voice_quality"><span class="tocnumber">50</span> <span class="toctext">voice_quality</span></a></li>
+<li class="toclevel-1 tocsection-51"><a href="#voice_bitrate"><span class="tocnumber">51</span> <span class="toctext">voice_bitrate</span></a></li>
+<li class="toclevel-1 tocsection-52"><a href="#backup_path"><span class="tocnumber">52</span> <span class="toctext">backup_path</span></a></li>
+<li class="toclevel-1 tocsection-53"><a href="#backup_interval"><span class="tocnumber">53</span> <span class="toctext">backup_interval</span></a></li>
+<li class="toclevel-1 tocsection-54"><a href="#backup_copies"><span class="tocnumber">54</span> <span class="toctext">backup_copies</span></a></li>
+<li class="toclevel-1 tocsection-55"><a href="#compact_internal_databases"><span class="tocnumber">55</span> <span class="toctext">compact_internal_databases</span></a></li>
+<li class="toclevel-1 tocsection-56"><a href="#crash_dump_upload"><span class="tocnumber">56</span> <span class="toctext">crash_dump_upload</span></a></li>
+<li class="toclevel-1 tocsection-57"><a href="#fakelag"><span class="tocnumber">57</span> <span class="toctext">fakelag</span></a></li>
+<li class="toclevel-1 tocsection-58"><a href="#auth_serial_groups"><span class="tocnumber">58</span> <span class="toctext">auth_serial_groups</span></a></li>
+<li class="toclevel-1 tocsection-59"><a href="#auth_serial_http"><span class="tocnumber">59</span> <span class="toctext">auth_serial_http</span></a></li>
+<li class="toclevel-1 tocsection-60"><a href="#auth_serial_http_ip_exceptions"><span class="tocnumber">60</span> <span class="toctext">auth_serial_http_ip_exceptions</span></a></li>
+<li class="toclevel-1 tocsection-61"><a href="#database_credentials_protection"><span class="tocnumber">61</span> <span class="toctext">database_credentials_protection</span></a></li>
+<li class="toclevel-1 tocsection-62"><a href="#module"><span class="tocnumber">62</span> <span class="toctext">module</span></a></li>
+<li class="toclevel-1 tocsection-63"><a href="#resource"><span class="tocnumber">63</span> <span class="toctext">resource</span></a></li>
+<li class="toclevel-1 tocsection-64"><a href="#Deprecated_settings"><span class="tocnumber">64</span> <span class="toctext">Deprecated settings</span></a>
+<ul>
+<li class="toclevel-2 tocsection-65"><a href="#networkencryption"><span class="tocnumber">64.1</span> <span class="toctext">networkencryption</span></a></li>
+<li class="toclevel-2 tocsection-66"><a href="#autologin"><span class="tocnumber">64.2</span> <span class="toctext">autologin</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h4><span class="mw-headline" id="servername">servername</span></h4>
+<dl><dd><i>&lt;servername&gt;Default MTA Server&lt;/servername&gt;</i></dd>
+<dd>This parameter specifies the name the server will be visible as in the ingame server browser and on Game-Monitor. It is a required parameter. </dd></dl>
+<h4><span class="mw-headline" id="owner_email_address">owner_email_address</span></h4>
+<dl><dd><i>&lt;owner_email_address&gt;&lt;/owner_email_address&gt;</i></dd>
+<dd>This parameter specifies the contact email addresses for the owner(s) of this server.</dd>
+<dd>The email addresses will not be publicly available, and only used by MTA administrators to contact the server owner.</dd>
+<dd>Note: Missing or incorrect owner_email_address can affect visibility in the master server list.</dd>
+<dd>Values: Comma separated list of email addresses</dd></dl>
+<h4><span class="mw-headline" id="serverip">serverip</span></h4>
+<dl><dd><i>&lt;serverip&gt;auto&lt;/serverip&gt;</i></dd>
+<dd><b>ONLY USE THIS PARAMETER IF YOU ARE SURE OF WHAT YOU ARE DOING</b> - it is generally only needed for professional servers and should be left at the default value otherwise.</dd>
+<dd> This parameter specifies the IP to use for servers that have multiple IP addresses. If set to auto, it will automatically detect and use the server's standard local IP address.</dd>
+<dd>Values: auto or x.x.x.x&#160;; default value: auto</dd>
+<dd>SERVERIP SHOULD BE LEFT SET TO auto UNLESS YOU ARE SURE OF WHAT YOU ARE DOING</dd>
+<dd>WARNING: SETTING serverip AND THEN ASKING FOR SUPPORT CAN CAUSE DEATH OR INJURY</dd></dl>
+<h4><span class="mw-headline" id="serverport">serverport</span></h4>
+<dl><dd><i>&lt;serverport&gt;22003&lt;/serverport&gt; </i></dd>
+<dd>This parameter specifies the UDP port on which the server will be accepting incoming player connections;</dd>
+<dd>default value: 22003. It is a required parameter.</dd></dl>
+<h4><span class="mw-headline" id="maxplayers">maxplayers</span></h4>
+<dl><dd><i>&lt;maxplayers&gt;32&lt;/maxplayers&gt;</i></dd>
+<dd>This parameter specifies the number of maximum player slots available on the server;</dd>
+<dd>default value: 32. It is a required parameter.</dd></dl>
+<h4><span class="mw-headline" id="httpserver">httpserver</span></h4>
+<dl><dd><i>&lt;httpserver&gt;1&lt;/httpserver&gt;</i></dd>
+<dd>This parameter specifies whether the built-in http server will be used.</dd>
+<dd>Values: 0 - disabled , 1 - enabled&#160;; default value: 1. Optional parameter.</dd>
+<dd>More information: <a href="Server_Manual.html#Using_the_web_interface" title="Server Manual">Using the web interface</a></dd></dl>
+<h4><span class="mw-headline" id="httpport">httpport</span></h4>
+<dl><dd><i>&lt;httpport&gt;22005&lt;/httpport&gt;</i></dd>
+<dd>This parameter specifies the TCP port on which the server will be accepting incoming http connections. It can be set to the same value as &lt;serverport&gt;. It is a required parameter if &lt;httpserver&gt; is set to 1.</dd>
+<dd>More information: <a href="Server_Manual.html#Using_the_web_interface" title="Server Manual">Using the web interface</a></dd></dl>
+<h4><span class="mw-headline" id="httpdownloadurl">httpdownloadurl</span></h4>
+<dl><dd><i>&lt;httpdownloadurl&gt;&lt;/httpdownloadurl&gt;</i></dd>
+<dd>If set, this parameter specifies the external URL from which clients will be able to download needed resources ingame. Otherwise they will download them directly from the server.</dd>
+<dd>More information: <a href="Server_Manual.html#Configuring_an_external_web_server" title="Server Manual">Configuring an external web server</a></dd></dl>
+<h4><span class="mw-headline" id="httpmaxconnectionsperclient">httpmaxconnectionsperclient</span></h4>
+<dl><dd><i>&lt;httpmaxconnectionsperclient&gt;5&lt;/httpmaxconnectionsperclient&gt;</i></dd>
+<dd>This parameter limits the number of http connections each client can make. Depending on the type of http server that is used, a lower figure may reduce download timeouts. Only relevant when using an external http server.</dd>
+<dd>Available range: 1 to 8.</dd></dl>
+<h4><span class="mw-headline" id="httpdosthreshold">httpdosthreshold</span></h4>
+<dl><dd><i>&lt;httpdosthreshold&gt;20&lt;/httpdosthreshold&gt;</i></dd>
+<dd>This parameter limits the number http connections that an IP can initiate over a short period of time.</dd>
+<dd>Available range: 1 to 100. default value: 20</dd></dl>
+<h4><span class="mw-headline" id="http_dos_exclude">http_dos_exclude</span></h4>
+<dl><dd><i>&lt;http_dos_exclude&gt;&lt;/http_dos_exclude&gt;</i></dd>
+<dd>This parameter lists the IP addresses that are to be excluded from http dos threshold limits.</dd>
+<dd>e.g. 88.11.22.33,101.2.3.4</dd></dl>
+<h4><span class="mw-headline" id="allow_gta3_img_mods">allow_gta3_img_mods</span></h4>
+<dl><dd><i>&lt;allow_gta3_img_mods&gt;none&lt;/allow_gta3_img_mods&gt;</i></dd>
+<dd>By default, the server will block the use of locally customized gta3.img player skins</dd>
+<dd>This setting can be used to allow such mods. Not recommended for competitive servers.</dd>
+<dd>Values: none, peds&#160;; default value: none</dd></dl>
+<h4><span class="mw-headline" id="client_file">client_file</span></h4>
+<dl><dd><i>&lt;!-- &lt;client_file name="data/carmods.dat" verify="0" /&gt; --&gt;</i></dd>
+<dd>By default, the server will block the use of customized GTA:SA data files.</dd>
+<dd>To allow specific client files, add one or more of the above lines.</dd>
+<dd>More information: <a href="Anti-cheat_guide.html" title="Anti-cheat guide">Anti-cheat guide</a></dd></dl>
+<h4><span class="mw-headline" id="disableac">disableac</span></h4>
+<dl><dd><i>&lt;disableac&gt;&lt;/disableac&gt;</i></dd>
+<dd>Comma separated list of disabled anti-cheats.</dd>
+<dd>e.g. To disable anti-cheat #2 and #3, use: 2,3</dd>
+<dd>More information: <a href="Anti-cheat_guide.html" title="Anti-cheat guide">Anti-cheat guide</a></dd></dl>
+<h4><span class="mw-headline" id="enablesd">enablesd</span></h4>
+<dl><dd><i>&lt;enablesd&gt;&lt;/enablesd&gt;</i></dd>
+<dd>Comma seperated list of enabled special detections. A special detection is a type of anti-cheat for (usually) harmless game modifications. Competitive servers may wish to enable special detections, but most servers should leave this setting blank.</dd>
+<dd>e.g. To enable special detection #12 (disallow custom D3D9.DLL) use: 12</dd>
+<dd>More information: <a href="Anti-cheat_guide.html" title="Anti-cheat guide">Anti-cheat guide</a></dd></dl>
+<h4><span class="mw-headline" id="minclientversion">minclientversion</span></h4>
+<dl><dd><i>&lt;minclientversion&gt;&lt;/minclientversion&gt;</i></dd>
+<dd>Minimum client version. Clients with a lower version will not be allowed to connect. After disconnection, clients will be given an opportunity to download an update. If left blank, this setting is disabled and there are no restrictions on who can connect. Version numbers are described in <a href="GetPlayerVersion.html" title="GetPlayerVersion">getPlayerVersion</a> and look like this: 1.1.0-9.03100.0</dd>
+<dd>This parameter can changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd>
+<dd><b>Note that this setting only determines if the client should be prompted to update. The actual build number they receive will be the [<a rel="nofollow" class="external text" href="http://nightly.mtasa.com/ver">highest available</a>].</b></dd></dl>
+<h4><span class="mw-headline" id="minclientversion_auto_update">minclientversion_auto_update</span></h4>
+<dl><dd><i>&lt;minclientversion_auto_update&gt;1&lt;/minclientversion_auto_update&gt;</i></dd>
+<dd>This parameter specifies if/when the &lt;minclientversion&gt; setting is automatically updated.</dd>
+<dd>Keeping &lt;minclientversion&gt; updated can help reduce cheating.</dd>
+<dd>Note: The instant setting (2) is only recommended for competitive servers.</dd>
+<dd>Values: 0 - disabled, 1 - enabled (delayed by a few days), 2 - enabled (instant)&#160;; default value: 1.</dd></dl>
+<h4><span class="mw-headline" id="recommendedclientversion">recommendedclientversion</span></h4>
+<dl><dd><i>&lt;recommendedclientversion&gt;&lt;/recommendedclientversion&gt;</i></dd>
+<dd>Recommended client version. When connecting, if clients have a lower version, they will be given the option to download an update. If left blank, this setting is disabled.</dd>
+<dd>This parameter can changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd>
+<dd><b>Note that this setting only determines if the client should be prompted to update. The actual build number they receive will be the [<a rel="nofollow" class="external text" href="http://nightly.mtasa.com/ver">highest available</a>].</b></dd></dl>
+<h4><span class="mw-headline" id="ase">ase</span></h4>
+<dl><dd><i>&lt;ase&gt;1&lt;/ase&gt;</i></dd>
+<dd>This parameter can be used to make the server report to Game-Monitor master servers, allowing it to be visible in the in-game server browser. An additional UDP port needs to be available for this to work (value from &lt;serverport&gt; + 123 , so on a default &lt;serverport&gt; value 22003 the right port will be 22126 ).</dd>
+<dd>Available values: 0 - disabled , 1 - enabled. Optional parameter, defaults to 0.</dd></dl>
+<h4><span class="mw-headline" id="donotbroadcastlan">donotbroadcastlan</span></h4>
+<dl><dd><i>&lt;donotbroadcastlan&gt;0&lt;/donotbroadcastlan&gt;</i></dd>
+<dd>This parameter allows you to disable LAN broadcasting.	</dd></dl>
+<h4><span class="mw-headline" id="password">password</span></h4>
+<dl><dd><i>&lt;password&gt;&lt;/password&gt; </i></dd>
+<dd>If set, players will have to provide a password specified below, before they can connect to the server. If left blank, server doesn't require a password from them.</dd>
+<dd>This parameter can changed and saved while the server is running with <a href="SetServerPassword.html" title="SetServerPassword">setServerPassword</a> or <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd></dl>
+<h4><span class="mw-headline" id="bandwidth_reduction">bandwidth_reduction</span></h4>
+<dl><dd><i>&lt;bandwidth_reduction&gt;medium&lt;/bandwidth_reduction&gt; </i></dd>
+<dd>This parameter reduces the server's bandwidth usage by using various optimizations.</dd>
+<dd>Values: none, medium or maximum&#160;; default value: medium</dd>
+<dd>This parameter can be changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd></dl>
+<h4><span class="mw-headline" id="unoccupied_vehicle_syncer_distance">unoccupied_vehicle_syncer_distance</span></h4>
+<dl><dd><i>&lt;unoccupied_vehicle_syncer_distance&gt;130&lt;/unoccupied_vehicle_syncer_distance&gt;</i></dd>
+<dd>This parameter determines the distance limit for remote synced unoccupied vehicles</dd>
+<dd>Available range: 50 - 400; default value: 130</dd>
+<dd>This parameter can be changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd></dl>
+<h4><span class="mw-headline" id="ped_syncer_distance">ped_syncer_distance</span></h4>
+<dl><dd><i>&lt;ped_syncer_distance&gt;100&lt;/ped_syncer_distance&gt;</i></dd>
+<dd>This parameter determines the distance limit for remote synced peds</dd>
+<dd>Available range: 50 - 400; default value: 100</dd>
+<dd>This parameter can be changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd></dl>
+<h4><span class="mw-headline" id="player_sync_interval">player_sync_interval</span></h4>
+<dl><dd><i>&lt;player_sync_interval&gt;100&lt;/player_sync_interval&gt; </i></dd>
+<dd>This parameter determines the time in milliseconds between player sync packets.</dd>
+<dd>Available range: 50 - 500; default value: 100</dd>
+<dd>This parameter can be changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd>
+<dd>Suggested values for this and the other sync_interval settings can be found here: <a href="Sync_interval_settings.html" title="Sync interval settings">Sync interval settings</a></dd></dl>
+<h4><span class="mw-headline" id="lightweight_sync_interval">lightweight_sync_interval</span></h4>
+<dl><dd><i>&lt;lightweight_sync_interval&gt;1500&lt;/lightweight_sync_interval&gt; </i></dd>
+<dd>This parameter determines the time in milliseconds between lightweight (player) sync packets.</dd>
+<dd>Available range: 200 - 4000; default value: 1500</dd>
+<dd>This parameter can be changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd>
+<dd>Suggested values for this and the other sync_interval settings can be found here: <a href="Sync_interval_settings.html" title="Sync interval settings">Sync interval settings</a></dd></dl>
+<h4><span class="mw-headline" id="camera_sync_interval">camera_sync_interval</span></h4>
+<dl><dd><i>&lt;camera_sync_interval&gt;500&lt;/camera_sync_interval&gt; </i></dd>
+<dd>This parameter determines the time in milliseconds between camera sync packets.</dd>
+<dd>Available range: 200 - 400; default value: 500</dd>
+<dd>This parameter can be changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd>
+<dd>Suggested values for this and the other sync_interval settings can be found here: <a href="Sync_interval_settings.html" title="Sync interval settings">Sync interval settings</a></dd></dl>
+<h4><span class="mw-headline" id="ped_sync_interval">ped_sync_interval</span></h4>
+<dl><dd><i>&lt;ped_sync_interval&gt;400&lt;/ped_sync_interval&gt; </i></dd>
+<dd>This parameter determines the time in milliseconds between ped sync packets.</dd>
+<dd>Available range: 200 - 4000; default value: 400</dd>
+<dd>This parameter can be changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd>
+<dd>Suggested values for this and the other sync_interval settings can be found here: <a href="Sync_interval_settings.html" title="Sync interval settings">Sync interval settings</a></dd></dl>
+<h4><span class="mw-headline" id="unoccupied_vehicle_sync_interval">unoccupied_vehicle_sync_interval</span></h4>
+<dl><dd><i>&lt;unoccupied_vehicle_sync_interval&gt;1000&lt;/unoccupied_vehicle_sync_interval&gt; </i></dd>
+<dd>This parameter determines the time in milliseconds between unoccupied vehicle sync packets.</dd>
+<dd>Available range: 200 - 4000; default value: 1000</dd>
+<dd>This parameter can be changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd>
+<dd>Suggested values for this and the other sync_interval settings can be found here: <a href="Sync_interval_settings.html" title="Sync interval settings">Sync interval settings</a></dd></dl>
+<h4><span class="mw-headline" id="keysync_mouse_sync_interval">keysync_mouse_sync_interval</span></h4>
+<dl><dd><i>&lt;keysync_mouse_sync_interval&gt;100&lt;/keysync_mouse_sync_interval&gt; </i></dd>
+<dd>This parameter determines the minimum time in milliseconds between key sync packets due to mouse movement.</dd>
+<dd>Available range: 50 - 500; default value: 100</dd>
+<dd>This parameter can be changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd>
+<dd>Suggested values for this and the other sync_interval settings can be found here: <a href="Sync_interval_settings.html" title="Sync interval settings">Sync interval settings</a></dd></dl>
+<h4><span class="mw-headline" id="keysync_analog_sync_interval">keysync_analog_sync_interval</span></h4>
+<dl><dd><i>&lt;keysync_analog_sync_interval&gt;100&lt;/keysync_analog_sync_interval&gt; </i></dd>
+<dd>This parameter determines the minimum time in milliseconds between key sync packets due to joystick movement.</dd>
+<dd>Available range: 50 - 500; default value: 100</dd>
+<dd>This parameter can be changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd>
+<dd>Suggested values for this and the other sync_interval settings can be found here: <a href="Sync_interval_settings.html" title="Sync interval settings">Sync interval settings</a></dd></dl>
+<h4><span class="mw-headline" id="bullet_sync">bullet_sync</span></h4>
+<dl><dd><i>&lt;bullet_sync&gt;1&lt;/bullet_sync&gt;   </i></dd>
+<dd>This parameter can improve the reliability of shots when using certain weapons. However, it uses more bandwidth.</dd>
+<dd>Note that bullet sync will be active regardless of this setting when certain <a href="SetGlitchEnabled.html" title="SetGlitchEnabled">glitches</a> are enabled.</dd>
+<dd>Values: 0 - disabled , 1 - enabled&#160;; default value: 1.</dd>
+<dd>This parameter can be changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd></dl>
+<h4><span class="mw-headline" id="vehext_percent">vehext_percent</span></h4>
+<dl><dd><i>&lt;vehext_percent&gt;0&lt;/vehext_percent&gt;</i></dd>
+<dd>This parameter sets the amount of extrapolation that clients will apply to remote vehicles. </dd>
+<dd>This can reduce some of the latency induced location disparency by predicting where the remote vehicles will probably be.</dd>
+<dd>Depending on the gamemode, an incorrect prediction may have a negative effect. </dd>
+<dd>Therefore this setting should be considered experimental.</dd>
+<dd>Available range: 0 to 100.  Default - 0</dd></dl>
+<h4><span class="mw-headline" id="vehext_ping_limit">vehext_ping_limit</span></h4>
+<dl><dd><i>&lt;vehext_ping_limit&gt;150&lt;/vehext_ping_limit&gt;</i></dd>
+<dd>This parameter places a limit on how much time (in milliseconds) the vehicle extrapolation will attempt to compensate for.</dd>
+<dd>Only relevant if &lt;vehext_percent&gt; is greater than zero.</dd>
+<dd>Available range: 50 to 500.  Default - 150</dd></dl>
+<h4><span class="mw-headline" id="latency_reduction">latency_reduction</span></h4>
+<dl><dd><i>&lt;latency_reduction&gt;0&lt;/latency_reduction&gt;</i></dd>
+<dd>This parameter can reduce the delay of player actions appearing on remote clients by 2 frames (approx 50ms).</dd>
+<dd>Due to the impact this may have on shot lag compensation, it should be considered experimental.</dd>
+<dd>Values: 0 - disabled , 1 - enabled&#160;; default value: 0.</dd>
+<dd>Bugs caused by enabling latency_reduction: <a rel="nofollow" class="external free" href="http://bugs.mtasa.com/view.php?id=8191">http://bugs.mtasa.com/view.php?id=8191</a> + <a rel="nofollow" class="external free" href="http://bugs.mtasa.com/view.php?id=8226">http://bugs.mtasa.com/view.php?id=8226</a></dd></dl>
+<h4><span class="mw-headline" id="threadnet">threadnet</span></h4>
+<dl><dd><i>&lt;threadnet&gt;1&lt;/threadnet&gt;</i></dd>
+<dd>This parameter specifies whether or not to run the network synchronization on another thread.</dd>
+<dd>Enabling will make the sync smoother, but may increase CPU usage slightly.</dd>
+<dd>Values: 0 - disabled , 1 - enabled&#160;; default value: 1.</dd>
+<dd>This parameter can be changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd></dl>
+<h4><span class="mw-headline" id="idfile">idfile</span></h4>
+<dl><dd><i>&lt;idfile&gt;server-id.keys&lt;/idfile&gt; </i></dd>
+<dd>Specifies the location and file name of this servers unique private key. This is used to prevent private files saved on the client from being read by other servers. </dd>
+<dd>Keep a backup of this file in a safe place. Default value: server-id.keys</dd>
+<dd>More information about client private files: <a href="Filepath.html" title="Filepath">Filepath</a></dd></dl>
+<h4><span class="mw-headline" id="logfile">logfile</span></h4>
+<dl><dd><i>&lt;logfile&gt;logs/server.log&lt;/logfile&gt;</i></dd>
+<dd>Specifies the location and name of the main server log file. If left blank, server won't be saving this file.</dd></dl>
+<h4><span class="mw-headline" id="authfile">authfile</span></h4>
+<dl><dd><i>&lt;authfile&gt;logs/server_auth.log&lt;/authfile&gt;</i></dd>
+<dd>As well as the main log file, login successes and failures are logged here for easy reviewing of security issues. If left blank, this file is not used</dd></dl>
+<h4><span class="mw-headline" id="dbfile">dbfile</span></h4>
+<dl><dd><i>&lt;dbfile&gt;logs/db.log&lt;/dbfile&gt;</i></dd>
+<dd>Specifies the location and name of the file used to log database queries. The server command <a href="Server_Commands.html#debugdb" title="Server Commands">debugdb</a> sets the amount of logging.</dd></dl>
+<h4><span class="mw-headline" id="loadstringfile">loadstringfile</span></h4>
+<dl><dd><i>&lt;!-- &lt;loadstringfile&gt;logs/loadstring.log&lt;/loadstringfile&gt; --&gt;</i></dd>
+<dd>Specifies the location and name of the file used to log loadstring function calls. If left blank or not set, no logging is done.</dd></dl>
+<h4><span class="mw-headline" id="acl">acl</span></h4>
+<dl><dd><i>&lt;acl&gt;acl.xml&lt;/acl&gt; </i></dd>
+<dd>This parameter specifies the location and name of the Access Control List settings file. If left</dd>
+<dd>blank, server will use acl.xml file, located in the same folder as this configuration file.</dd></dl>
+<h4><span class="mw-headline" id="scriptdebuglogfile">scriptdebuglogfile</span></h4>
+<dl><dd><i>&lt;scriptdebuglogfile&gt;logs/scripts.log&lt;/scriptdebuglogfile&gt; </i></dd>
+<dd>Specifies the location and name of the debugscript log file. If left blank, server won't be saving this file.</dd></dl>
+<h4><span class="mw-headline" id="scriptdebugloglevel">scriptdebugloglevel</span></h4>
+<dl><dd><i>&lt;scriptdebugloglevel&gt;0&lt;/scriptdebugloglevel&gt;</i></dd>
+<dd>Specifies the level of the debugscript log file. Available values: 0, 1, 2, 3. When not set, defaults to 0.</dd></dl>
+<h4><span class="mw-headline" id="htmldebuglevel">htmldebuglevel</span></h4>
+<dl><dd><i>&lt;htmldebuglevel&gt;0&lt;/htmldebuglevel&gt;</i></dd>
+<dd>Specifies the level of the html debug. Available values: 0, 1, 2, 3. When not set, defaults to 0.</dd></dl>
+<h4><span class="mw-headline" id="filter_duplicate_log_lines">filter_duplicate_log_lines</span></h4>
+<dl><dd><i>&lt;filter_duplicate_log_lines&gt;1&lt;/filter_duplicate_log_lines&gt;</i></dd>
+<dd>Specifies whether or not duplicate log lines should be filtered. Available values: 0 or 1, defaults to 1.</dd></dl>
+<h4><span class="mw-headline" id="fpslimit">fpslimit</span></h4>
+<dl><dd><i>&lt;fpslimit&gt;36&lt;/fpslimit&gt;</i></dd>
+<dd>Specifies the frame rate limit that will be applied to connecting clients.</dd>
+<dd>Available range: 25 to 100. Default: 36.</dd>
+<dd>When running the map editor locally (i.e. from the client), the default FPS limit is 50.</dd>
+<dd>This parameter can be changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd></dl>
+<h4><span class="mw-headline" id="voice">voice</span></h4>
+<dl><dd><i>&lt;voice&gt;0&lt;/voice&gt;</i></dd>
+<dd>This parameter specifies whether or not to enable player voice chat in-game</dd>
+<dd>Values: 0 - disabled , 1 - enabled</dd></dl>
+<h4><span class="mw-headline" id="voice_samplerate">voice_samplerate</span></h4>
+<dl><dd><i>&lt;voice_samplerate&gt;1&lt;/voice_samplerate&gt;</i></dd>
+<dd>This parameter specifies the sample rate for voice chat.  'voice' parameter must be set to 1 for this to be effective. Higher settings use more bandwidth and increase the sampling quality of voice chat</dd>
+<dd>Values: 0 - Narrowband (8kHz), 1 - Wideband (16kHz), 2 - Ultrawideband (32kHz).  Default - 1</dd></dl>
+<h4><span class="mw-headline" id="voice_quality">voice_quality</span></h4>
+<dl><dd><i>&lt;voice_quality&gt;4&lt;/voice_quality&gt;</i></dd>
+<dd>This parameter specifies the voice quality for voice chat.  'voice' parameter must be set to 1 for this to be effective. Higher settings use more bandwidth and increase the the overall quality of voice chat</dd>
+<dd>Available range: 0 to 10.  Default - 4</dd></dl>
+<h4><span class="mw-headline" id="voice_bitrate">voice_bitrate</span></h4>
+<dl><dd><i>&lt;!-- &lt;voice_bitrate&gt;24600&lt;/voice_bitrate&gt; --&gt;</i></dd>
+<dd>Specifies the voice bitrate, in bps. This optional parameter overrides the previous two settings. If not set, MTA handles this automatically.  Use with care.</dd></dl>
+<h4><span class="mw-headline" id="backup_path">backup_path</span></h4>
+<dl><dd><i>&lt;backup_path&gt;backups&lt;/backup_path&gt;</i></dd>
+<dd>This parameter specifies the path to use for a basic backup of some server files. Note that basic backups are only made during server startup. Default value: backups</dd></dl>
+<h4><span class="mw-headline" id="backup_interval">backup_interval</span></h4>
+<dl><dd><i>&lt;backup_interval&gt;3&lt;/backup_interval&gt;</i></dd>
+<dd>This parameter specifies the number of days between each basic backup. Backups are only made during server startup, so the actual interval maybe much longer. Setting backup_interval to 0 will disable backups</dd>
+<dd>Available range: 0 to 30.  Default - 3</dd></dl>
+<h4><span class="mw-headline" id="backup_copies">backup_copies</span></h4>
+<dl><dd><i>&lt;backup_copies&gt;10&lt;/backup_copies&gt;</i></dd>
+<dd>This parameter specifies the maximum number of backup copies to keep. Setting backup_copies to 0 will disable backups</dd>
+<dd>Available range: 0 to 100.  Default - 10</dd></dl>
+<h4><span class="mw-headline" id="compact_internal_databases">compact_internal_databases</span></h4>
+<dl><dd><i>&lt;compact_internal_databases&gt;1&lt;/compact_internal_databases&gt;</i></dd>
+<dd>This parameter specifies when the internal sqlite databases should be defragmented.</dd>
+<dd>For more info see: <a rel="nofollow" class="external free" href="http://www.sqlite.org/lang_vacuum.html">http://www.sqlite.org/lang_vacuum.html</a></dd>
+<dd>Values: 0 - Never, 1 - On server start only after basic backup, 2 - On server start always.  Default - 1</dd></dl>
+<h4><span class="mw-headline" id="crash_dump_upload">crash_dump_upload</span></h4>
+<dl><dd><i>&lt;crash_dump_upload&gt;1&lt;/crash_dump_upload&gt;</i></dd>
+<dd>This parameter specifies whether server crash dump files should be sent to MTA HQ.</dd>
+<dd>Values: 0 - Off, 1 - On. Default - 1</dd></dl>
+<h4><span class="mw-headline" id="fakelag">fakelag</span></h4>
+<dl><dd><i>&lt;fakelag&gt;0&lt;/fakelag&gt;</i></dd>
+<dd>This parameter specifies whether the <a href="Command_fakelag.html" title="Command fakelag">fakelag and sfakelag</a> commands are enabled</dd>
+<dd>Values: 0 - Off, 1 - On. Default - 0</dd></dl>
+<h4><span class="mw-headline" id="auth_serial_groups">auth_serial_groups</span></h4>
+<dl><dd><i>&lt;auth_serial_groups&gt;Admin&lt;/auth_serial_groups&gt;</i></dd>
+<dd>This parameter lists the ACL groups that are protected by serial authorization.</dd>
+<dd>Login attempts to a protected account from a second serial are blocked until the serial is manually authorized via the authserial command.</dd>
+<dd>For more info see: <a rel="nofollow" class="external free" href="https://mtasa.com/authserial">https://mtasa.com/authserial</a></dd>
+<dd>Note: This is security critical feature and disabling auth_serial_groups can affect visibility in the master server list.</dd>
+<dd>Values: Comma separated list of ACL groups.  Default - Admin</dd></dl>
+<h4><span class="mw-headline" id="auth_serial_http">auth_serial_http</span></h4>
+<dl><dd><i>&lt;auth_serial_http&gt;1&lt;/auth_serial_http&gt;</i></dd>
+<dd>This parameter specifies if the authorized serial login checks should also apply to the http interface.</dd>
+<dd>Protected account login attempts to the http interface will only succeed if the IP address matches one recently used by the account holder in-game.</dd>
+<dd>For more info see: <a rel="nofollow" class="external free" href="https://mtasa.com/authserialhttp">https://mtasa.com/authserialhttp</a></dd>
+<dd>Note: This is security critical feature and disabling auth_serial_http can affect visibility in the master server list.</dd>
+<dd>Values: 0 - Off, 1 - Enabled.  Default - 1</dd></dl>
+<h4><span class="mw-headline" id="auth_serial_http_ip_exceptions">auth_serial_http_ip_exceptions</span></h4>
+<dl><dd><i>&lt;auth_serial_http_ip_exceptions&gt;127.0.0.1&lt;/auth_serial_http_ip_exceptions&gt;</i></dd>
+<dd>This parameter specifies which IP addresses should always pass auth_serial_http checks.</dd>
+<dd>Values: Comma separated list of IP addresses</dd></dl>
+<h4><span class="mw-headline" id="database_credentials_protection">database_credentials_protection</span></h4>
+<dl><dd><i>&lt;database_credentials_protection&gt;1&lt;/database_credentials_protection&gt;</i></dd>
+<dd>This parameter specifies if extra security measures are applied to resources which use <a href="DbConnect.html" title="DbConnect">dbConnect</a> with MySQL.</dd>
+<dd>The extra measures are:</dd>
+<dd> - script files cannot be accessed with <a href="FileOpen.html" title="FileOpen">fileOpen</a></dd>
+<dd> - <a href="Meta.html" title="Meta.xml">meta.xml</a> is read-only</dd>
+<dd><b>NOTE:</b> This only protects resources which use <a href="DbConnect.html" title="DbConnect">dbConnect</a> with MySQL.</dd>
+<dd>Values: 0 - Off, 1 - Enabled.  Default - 1</dd></dl>
+<h4><span class="mw-headline" id="module">module</span></h4>
+<dl><dd><i>&lt;!-- &lt;module src="sample_win32.dll" /&gt; --&gt;</i></dd>
+<dd><i>&lt;!-- &lt;module src="sample_linux.so" /&gt; --&gt;</i></dd>
+<dd>Specifies the module(s) which are loaded with the server. To load several modules, add more &lt;module&gt; parameter(s). Optional parameter.</dd></dl>
+<h4><span class="mw-headline" id="resource">resource</span></h4>
+<dl><dd><i>&lt;resource src="admin" startup="1" protected="0" /&gt;</i></dd>
+<dd><i>&lt;resource src="defaultstats" startup="1" protected="0" /&gt;</i></dd>
+<dd><i>&lt;resource src="helpmanager" startup="1" protected="0" /&gt;</i></dd>
+<dd><i>&lt;resource src="joinquit" startup="1" protected="0" /&gt;</i></dd>
+<dd><i>&lt;resource src="mapcycler" startup="1" protected="0" /&gt;</i></dd>
+<dd><i>&lt;resource src="mapmanager" startup="1" protected="0" /&gt;</i></dd>
+<dd><i>&lt;resource src="parachute" startup="1" protected="0" /&gt;</i></dd>
+<dd><i>&lt;resource src="resourcebrowser" startup="1" protected="1" default="true" /&gt;</i></dd>
+<dd><i>&lt;resource src="resourcemanager" startup="1" protected="1" /&gt;</i></dd>
+<dd><i>&lt;resource src="scoreboard" startup="1" protected="0" /&gt;</i></dd>
+<dd><i>&lt;resource src="spawnmanager" startup="1" protected="0" /&gt;</i></dd>
+<dd><i>&lt;resource src="voice" startup="1" protected="0" /&gt;</i></dd>
+<dd><i>&lt;resource src="votemanager" startup="1" protected="0" /&gt;</i></dd>
+<dd><i>&lt;resource src="webadmin" startup="1" protected="0" /&gt;</i></dd>
+<dd><i>&lt;resource src="play" startup="1" protected="0" /&gt;</i></dd></dl>
+<dl><dd>Specifies persistent resources which are loaded when the server starts. Persistent resources are not stopped even if all the other resources that depend on them stop; that is, the only way to stop them is by explicitly using the <i>stop</i> server command or <a href="StopResource.html" title="StopResource">stopResource</a> scripting function. To load several resources, add more &lt;resource&gt; parameters.</dd></dl>
+<dl><dd>In addition, there are several flags which control how the server deals with each resource:</dd></dl>
+<dl><dd><ul><li> <b>src</b>: the resource name. This is the only mandatory flag.</li>
+<li> <b>startup</b>: controls whether the resource will be started with the server or not. If "1", "true" or "yes", the resource will be started. If not specified, defaults to not starting the resource.</li>
+<li> <b>protected</b>: if "1", "true" or "yes", the resource will not be able to be stopped when started. Otherwise, even if not specified, it will default to the normal behaviour.</li>
+<li> <b>default</b>: if given a "1", "true" or "yes" value, this resource will be the one who populates the built-in HTTP server main page, which is seen when no resource is given in the web address. It is not possible to have more than one default resource.</li></ul></dd></dl>
+<h2><span class="mw-headline" id="Deprecated_settings">Deprecated settings</span></h2>
+<p>The following settings have been deprecated in the production version of MTA:SA and no longer work.
+</p>
+<h4><span class="mw-headline" id="networkencryption">networkencryption</span></h4>
+<dl><dd><i>&lt;networkencryption&gt;1&lt;/networkencryption&gt;</i></dd>
+<dd>This parameter specifies whether communications between the server and client is encrypted. Encryption can help prevent network data being viewed and modified.</dd>
+<dd>Values: 0 - disabled , 1 - enabled&#160;; default value: 1. Optional parameter.</dd>
+<dd>This parameter can changed and saved while the server is running with <a href="SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></dd></dl>
+<h4><span class="mw-headline" id="autologin">autologin</span></h4>
+<dl><dd><i>&lt;autologin&gt;0&lt;/autologin&gt;</i></dd>
+<dd>Specifies whether or not players should automatically be logged in based on their IP adresses.</dd>
+<dd>Values: 0 - disabled , 1 - enabled&#160;; default value: 0.</dd></dl>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625164507
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.014 seconds
+Real time usage: 0.015 seconds
+Preprocessor visited node count: 320/1000000
+Preprocessor generated node count: 396/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 - -total
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:5974-0!*!0!!en!*!* and timestamp 20190625164507 and revision id 62912
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=Server_mtaserver.conf&amp;oldid=62912">https://wiki.multitheftauto.com/index.php?title=Server_mtaserver.conf&amp;oldid=62912</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_Support.html" title="Category:Support">Support</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Server_mtaserver.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:Server_mtaserver.conf&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=Server_mtaserver.conf&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=Server_mtaserver.conf&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=Server+mtaserver.conf" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=Server+mtaserver.conf" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/Server_mtaserver.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/Server_mtaserver.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=Server_mtaserver.conf&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=Server_mtaserver.conf&amp;oldid=62912" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=Server_mtaserver.conf&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-ru"><a href="http://wiki.multitheftauto.com/index.php?title=RU/Server_mtaserver.conf" title="Server mtaserver.conf – русский" lang="ru" hreflang="ru">Русский</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 31 May 2019, at 11:57.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":46});});</script></body></html>

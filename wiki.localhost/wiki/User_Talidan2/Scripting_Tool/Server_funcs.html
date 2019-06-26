@@ -1,0 +1,2663 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>User:Talidan/Scripting Tool/Server funcs - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"User","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":2,"wgPageName":"User:Talidan/Scripting_Tool/Server_funcs","wgTitle":"Talidan/Scripting Tool/Server funcs","wgCurRevisionId":13146,"wgRevisionId":13146,"wgArticleId":2649,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"User:Talidan/Scripting_Tool/Server_funcs","wgRelevantArticleId":2649,"wgRequestId":"f1dafb9a081e5a06b92b642a","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"User:Talidan2/Scripting_Tool/Server_funcs","wgRelevantUserName":"Talidan","wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false},"wgInternalRedirectTargetUrl":"/wiki/User:Talidan/Scripting_Tool/Server_funcs"});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.action.view.redirect","mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://wiki.multitheftauto.com/wiki/User:Talidan/Scripting_Tool/Server_funcs"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-2 ns-subject page-User_Talidan_Scripting_Tool_Server_funcs rootpage-User_Talidan skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">User:Talidan/Scripting Tool/Server funcs</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"><span class="subpages">&lt; <a href="../../User_Talidan.html" title="User:Talidan">User:Talidan</a>&lrm; | <a href="../../User_Talidan/Scripting_Tool.html" title="User:Talidan/Scripting Tool">Scripting Tool</a></span><span class="mw-redirectedfrom">(Redirected from <a href="http://wiki.localhost/index.php?title=User:Talidan2/Scripting_Tool/Server_funcs&amp;redirect=no" title="User:Talidan2/Scripting Tool/Server funcs">User:Talidan2/Scripting Tool/Server funcs</a>)</span></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>; ToolbarEditor v1.1 (A Toolbar configuration file)
+; A toolbar to help with the creation/editing of Toolbar configuration files.
+; (Requires Notepad.exe to be in the system path.)
+;
+; Thanks to Tom Stout &lt;tomstout@writeme.com&gt; for this file.
+; 
+; Revisions:
+; v1.1 - added RightAlt(!) button 
+
+[Toolbar]
+Title=MTA Server functions
+ButtonSize=10				; minimum height/width of buttons (in pixels)
+ShowHints=1				; 1=show hint when mouse idle over button / 0=don't (default)
+CutAndPaste=1				; 1=send ctrl-x before and ctrl-v after keystrokes / 0=don't (default)
+StayOnTop=1				; 1=stay on top of other windows (default) / 0=don't
+TaskbarButton=0				; 1=display application button on taskbar / 0=don't (default)
+Sleep=1					; # milliseconds to pause between keystrokes (&gt;=0, default=0)
+ButtonCount=410
+
+[Button1]
+Hint=Section break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=Account functions
+
+[Button2]
+Hint=client getAccountClient ( account theAccount )
+InsertText="getAccountClient +9 account +0"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=getAccountClient
+
+[Button3]
+Hint=string getAccountData ( account theAccount, string key )
+InsertText="string getAccountData ( account, key )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=getAccountData
+
+[Button4]
+Hint=int getAccountLevel ( account theAccount )
+InsertText="int getAccountLevel ( account )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=getAccountLevel
+
+[Button5]
+Hint=string getAccountName ( account theAccount )
+InsertText="string getAccountName ( account )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=getAccountName
+
+[Button6]
+Hint=bool isGuestAccount ( account theAccount )
+InsertText="isGuestAccount ( account )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=isGuestAccount
+
+[Button7]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button8]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button9]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button10]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button11]
+Hint=bool setAccountData ( account theAccount, string key, string value )
+InsertText="setAccountData ( account, key, value )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=setAccountData
+
+[Button12]
+Hint=copyAccountData ( account theAccount, account fromAccount )
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=copyAccountData
+
+[Button13]
+Hint=Section Break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=Admin functions
+
+[Button14]
+Hint=kickPlayer ( player kickedPlayer , [ player responsiblePlayer , string reason ] ) 
+InsertText="kickPlayer ( player, [ responsiblePlayer, reason ] )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=kickPlayer
+
+[Button15]
+Hint=banPlayer ( player bannedPlayer , [ player responsiblePlayer , string reason ] )
+InsertText="banPlayer ( player, [ responsiblePlayer, reason ] )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= banPlayer
+
+[Button16]
+Hint=Section Break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=Audio functions
+
+[Button17]
+Hint=bool preloadMissionAudio ( player thePlayer, int sound, int slot )
+InsertText="preloadMissionAudio ( player, sound, slot )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=preLoadMissonAudio
+
+[Button18]
+Hint=bool playMissionAudio ( player thePlayer, int slot, float x, float y, float z )
+InsertText="playMissionAudio ( player, slot, x, y, z )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=playMissionAudio
+
+[Button19]
+Hint=bool playSoundFrontEnd ( player thePlayer, int sound )
+InsertText="playSoundFrontEnd ( player, sound )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=playSoundFrontEnd
+
+[Button20]
+Hint=Section Break
+InsertText="Button"
+Font=Times Arial,8,B,0,clGreen,0
+Caption=All Seeing Eye functions
+
+[Button21]
+Hint=bool setGameType ( string gameType )
+InsertText="setGameType ( stringGameType )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=setGameType
+
+[Button22]
+Hint=bool setMapName ( string )
+InsertText="setMapName ( stringMap )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=setMapName
+
+[Button23]
+Hint=string getRuleValue ( string key )
+InsertText="getRuleValue ( key )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=getRuleValue
+
+[Button24]
+Hint=bool setRuleValue ( string key, string value )
+InsertText="setRuleValue ( key, value )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=setRuleValue
+
+[Button25]
+Hint=Section Break
+InsertText="Button"
+Font=Times Arial,8,B,0,clGreen,0
+Caption=Blip functions
+
+[Button26]
+Hint=blip createBlip ( float x, float y, float z, [int icon=0, int size=2, int r=255, int g=0, int b=0, int a=255, visibleTo=getRootElement()] )
+InsertText="createBlip ( x, y, z, [icon=0, size=2, r, g, b, a, visibleTo=getRootElement()] )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=createBlip
+
+[Button27]
+Hint=blip createBlipAttachedTo ( entity entityToAttachTo, [int icon=0, int size=2, int r=255, int g=0, int b=0, int a=255, visibleTo=getRootElement()] )
+InsertText="createBlipAttachedTo ( element, [icon=0, size=2, r, g, b, a, visibleTo=getRootElement()] )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=createBlipAttachedTo
+
+[Button28]
+Hint=bool destroyBlipsAttachedTo ( entity entityWithBlipAttached )
+InsertText="destroyBlipsAttachedTo ( element )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=destroyBlipsAttachedTo
+
+[Button29]
+Hint=int getBlipIcon ( element blip )
+InsertText="getBlipIcon ( blip )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=getBlipIcon
+
+[Button30]
+Hint=int getBlipSize ( blip theBlip )
+InsertText="getBlipSize ( blip )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=getBlipSize
+
+[Button31]
+Hint=int int int int getBlipColor ( blip theBlip )
+InsertText="r,g,b,a = getBlipColor ( blip )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=getBlipColor
+
+[Button32]
+Hint=bool setBlipIcon ( blip theBlip, int icon )
+InsertText="setBlipIcon ( blip, iconID )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=setBlipIcon
+
+[Button33]
+Hint=bool setBlipSize ( blip theBlip, int iconSize )
+InsertText="bool setBlipSize ( blip, iconSize )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=setBlipSize
+
+[Button34]
+Hint=bool setBlipColor ( blip theBlip, int red, int green, int blue, int alpha )
+InsertText="setBlipColor ( blip, r, g, b, a )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=setBlipColor
+
+[Button35]
+Hint=Section Break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=Camera functions
+
+[Button36]
+Hint=bool fadeCamera ( player thePlayer, bool fadeIn, [ float timeToFade = 1.0, int red = 0, int green = 0, int blue = 0 ] )
+InsertText="fadeCamera ( player, boolfadeIn, [timeToFade = 1.0, r, g, b )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=fadeCamera
+
+[Button37]
+Hint=string getCameraMode ( player thePlayer )
+InsertText="getCameraMode ( player )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=getCameraMode
+
+[Button38]
+Hint=float float float getCameraPosition ( player thePlayer )
+InsertText="x,y,z = getCameraPosition ( player )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=getCameraPosition
+
+[Button39]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+;remove
+[Button40]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button41]
+Hint=element getCameraTarget ( player thePlayer )
+InsertText="getCameraTarget ( player )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=getCameraTarget
+
+[Button42]
+Hint=bool setCameraLookAt ( player thePlayer, float x, float y, float z )
+InsertText="bool setCameraLookAt ( player, x, y, z )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=setCameraLookAt
+
+[Button43]
+Hint=bool setCameraMode ( player thePlayer, string mode )
+InsertText="setCameraMode ( player, stringmode )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=setCameraMode
+
+[Button44]
+Hint=bool setCameraPosition ( player thePlayer, float x, float y, float z )
+InsertText="setCameraPosition ( player, x, y, z )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=setCameraPosition
+;remove
+[Button45]
+Hint=bool setCameraTarget ( player thePlayer, element target )
+InsertText="setCameraTarget ( player, elementtarget )"
+Font=Times Arial,8,,0,clBtnText,0
+Caption=setCameraTarget
+
+[Button46]
+Hint=Section Break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=Collision shape functions
+
+[Button47]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button48]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button49]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button50]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button51]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button52]
+Hint=Section Break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=Client functions
+
+[Button53]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button54]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button55]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button56]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button57]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button58]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button59]
+Hint=Section Break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=Clothes and body functions
+
+[Button60]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button61]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button62]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button63]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button64]
+Hint=Section Break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=Cursor functions
+
+[Button65]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button66]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button67]
+Hint=Section Break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=Element functions
+
+[Button68]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button69]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button70]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button71]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button72]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button73]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button74]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button75]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button76]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button77]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button78]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button79]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button80]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button81]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button82]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button83]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button84]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button85]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button86]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button87]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button88]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button89]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button90]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button91]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button92]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button93]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button94]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button95]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button96]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button97]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button98]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button99]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button100]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button101]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button102]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button103]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button104]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button105]
+Hint=Section Break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=Event functions
+
+[Button106]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button107]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button108]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button109]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button110]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button111]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button112]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button113]
+Hint=Section Break 
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=Explosion functions
+
+[Button114]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button115]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button116]
+Hint=Section Break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=Input functions
+
+[Button117]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button118]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button119]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button120]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button121]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button122]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button123]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button124]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button125]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button126]
+Hint=Section Break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=Map functions
+
+[Button127]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button128]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button129]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button130]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button131]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button132]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button133]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button134]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button135]
+Hint=Section Break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=Marker functions
+
+[Button136]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button137]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button138]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button139]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button140]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button141]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button142]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button143]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button144]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button145]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button146]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button147]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button148]
+Hint=Section Break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=Object functions
+
+[Button149]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button150]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button151]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button152]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button153]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button154]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button155]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button156]
+Hint=Section Break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=Pickup functions
+
+[Button157]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button158]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button159]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button160]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button161]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button162]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button163]
+Hint=Section Break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=Player functions
+
+[Button164]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button165]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button166]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button167]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button168]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button169]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button170]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button171]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button172]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button173]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button174]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button175]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button176]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button177]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button178]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button179]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button180]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button181]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button182]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button183]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button184]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button185]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button186]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button187]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button188]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button189]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button190]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button191]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button192]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button193]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button194]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button195]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button196]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button197]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button198]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button199]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button200]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button201]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button202]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button203]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button204]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button205]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button206]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button207]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button208]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button209]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button210]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button211]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button212]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button213]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button214]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button215]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button216]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button217]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button218]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button219]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button220]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button221]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button222]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button223]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button224]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button225]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button226]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button227]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button228]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button229]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button230]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button231]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button232]
+Hint=Section Break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=Radar area functions
+
+[Button233]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button234]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button235]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button236]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button237]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button238]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button239]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button240]
+Hint=Section Break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=Resource functions
+
+[Button241]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button242]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button243]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button244]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button245]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button246]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button247]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button248]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button249]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button250]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button251]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button252]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button253]
+Hint=Section Break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=Scoreboard functions
+
+[Button254]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button255]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button256]
+Hint=Section Break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=Server functions
+
+[Button257]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button258]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button259]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button260]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button261]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button262]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button263]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button264]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button265]
+Hint=Section Break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=Spawnpoint functions
+
+[Button266]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button267]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button268]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button269]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button270]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button271]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button272]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button273]
+Hint=Section Break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=SQL functions
+
+[Button274]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button275]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button276]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button277]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button278]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button279]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button280]
+Hint=Section Break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=Team functions
+
+[Button281]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button282]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button283]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button284]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button285]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button286]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button287]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button288]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button289]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button290]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button291]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button292]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button293]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button294]
+Hint=Section Break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=Text functions
+
+[Button295]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button296]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button297]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button298]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button299]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button300]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button301]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button302]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button303]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button304]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button305]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button306]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button307]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button308]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button309]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button310]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button311]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button312]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button313]
+Hint=Section Break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=Utility functions
+
+[Button314]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button315]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button316]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button317]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button318]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button319]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button320]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button321]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button322]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button323]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button324]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button325]
+Hint=Section Break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=Vehicle functions
+
+[Button326]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button327]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button328]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button329]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button330]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button331]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button332]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button333]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button334]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button335]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button336]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button337]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button338]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button339]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button340]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button341]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button342]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button343]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button344]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button345]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button346]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button347]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button348]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button349]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button350]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button351]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button352]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button353]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button354]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button355]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button356]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button357]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button358]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button359]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button360]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button361]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button362]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button363]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button364]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button365]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button366]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button367]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button368]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button369]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button370]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button371]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button372]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button373]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button374]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button375]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button376]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button377]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button378]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button379]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button380]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button381]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button382]
+Hint=Section Break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=Weapon functions
+
+[Button383]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button384]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button385]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button386]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button387]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button388]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button389]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button390]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button391]
+Hint=Section Break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=World functions
+
+[Button392]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button393]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button394]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button395]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button396]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button397]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button398]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button399]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button400]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button401]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button402]
+Hint=Section Break
+InsertText=" "
+Font=Times Arial,8,B,0,clGreen,0
+Caption=XML functions
+
+[Button403]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button404]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button405]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button406]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button407]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button408]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button409]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[Button410]
+Hint= 
+InsertText="Button"
+Font=Times Arial,8,,0,clBtnText,0
+Caption= 
+
+[TToolbarMainForm]
+Flags=0
+ShowCmd=1
+PixelsPerInch=96
+MinMaxPos(1024x768)=-1,-1,-1,-1
+MinMaxPos=-1,-1,-1,-1
+NormPos(1024x768)=541,212,697,625
+NormPos=541,212,697,625
+Visible=0
+ButtonCount=410
+
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190625170710
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.002 seconds
+Real time usage: 0.002 seconds
+Preprocessor visited node count: 4/1000000
+Preprocessor generated node count: 24/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 - -total
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:2649-0!*!*!*!*!*!* and timestamp 20190625170710 and revision id 13146
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=User:Talidan/Scripting_Tool/Server_funcs&amp;oldid=13146">https://wiki.multitheftauto.com/index.php?title=User:Talidan/Scripting_Tool/Server_funcs&amp;oldid=13146</a>"</div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-user" class="selected"><a href="../../User_Talidan/Scripting_Tool/Server_funcs.html" title="View the user page [c]" accesskey="c">User page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=User_talk:Talidan/Scripting_Tool/Server_funcs&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=User:Talidan/Scripting_Tool/Server_funcs&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=User:Talidan/Scripting_Tool/Server_funcs&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=User%3ATalidan%2FScripting+Tool%2FServer+funcs" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=User%3ATalidan%2FScripting+Tool%2FServer+funcs" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../../Special_WhatLinksHere/User_Talidan/Scripting_Tool/Server_funcs.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../../Special_RecentChangesLinked/User_Talidan/Scripting_Tool/Server_funcs.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-contributions"><a href="../../Special_Contributions/Talidan.html" title="A list of contributions by this user">User contributions</a></li>
+											<li id="t-log"><a href="../../Special_Log/Talidan.html">Logs</a></li>
+											<li id="t-specialpages"><a href="../../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=User:Talidan/Scripting_Tool/Server_funcs&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=User:Talidan/Scripting_Tool/Server_funcs&amp;oldid=13146" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=User:Talidan/Scripting_Tool/Server_funcs&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+			</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 18 November 2007, at 15:38.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":47});});</script></body></html>

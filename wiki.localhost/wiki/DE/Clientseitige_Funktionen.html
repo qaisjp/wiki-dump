@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>DE/Clientseitige Funktionen - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"DE/Clientseitige_Funktionen","wgTitle":"DE/Clientseitige Funktionen","wgCurRevisionId":35644,"wgRevisionId":35644,"wgArticleId":6297,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Changes in 1.4"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"DE/Clientseitige_Funktionen","wgRelevantArticleId":6297,"wgRequestId":"43fc91f3b2940e3fb3767fa5","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta name='headingclass' content='' data-class='client' data-subcaption=''>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-DE_Clientseitige_Funktionen rootpage-DE_Clientseitige_Funktionen skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">DE/Clientseitige Funktionen</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
+Diese Seite zählt alle <b>Client-Seitigen</b> scripting Funktionen auf, die vorhanden sind.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Audiofunktionen"><span class="tocnumber">1</span> <span class="toctext">Audiofunktionen</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Blipfunktionen"><span class="tocnumber">2</span> <span class="toctext">Blipfunktionen</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Kamerafunktionen"><span class="tocnumber">3</span> <span class="toctext">Kamerafunktionen</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Kleider-und_K.C3.B6rperfunktionen"><span class="tocnumber">4</span> <span class="toctext">Kleider-und Körperfunktionen</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Collision_shape_Funktionen"><span class="tocnumber">5</span> <span class="toctext">Collision shape Funktionen</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Mauszeiger_Funktionen"><span class="tocnumber">6</span> <span class="toctext">Mauszeiger Funktionen</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Zeichnungsfunktionen"><span class="tocnumber">7</span> <span class="toctext">Zeichnungsfunktionen</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Effektfunktionen"><span class="tocnumber">8</span> <span class="toctext">Effektfunktionen</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Elementfunktionen"><span class="tocnumber">9</span> <span class="toctext">Elementfunktionen</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Enginefunktionen"><span class="tocnumber">10</span> <span class="toctext">Enginefunktionen</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Eventfunktionen"><span class="tocnumber">11</span> <span class="toctext">Eventfunktionen</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Explosionfunktionen"><span class="tocnumber">12</span> <span class="toctext">Explosionfunktionen</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Dateifunktionen"><span class="tocnumber">13</span> <span class="toctext">Dateifunktionen</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#Feuerfunktionen"><span class="tocnumber">14</span> <span class="toctext">Feuerfunktionen</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#GUI-Funktionen"><span class="tocnumber">15</span> <span class="toctext">GUI-Funktionen</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Kn.C3.B6pfe"><span class="tocnumber">15.1</span> <span class="toctext">Knöpfe</span></a></li>
+<li class="toclevel-2"><a href="#Checkboxes"><span class="tocnumber">15.2</span> <span class="toctext">Checkboxes</span></a></li>
+<li class="toclevel-2"><a href="#Comboboxes"><span class="tocnumber">15.3</span> <span class="toctext">Comboboxes</span></a></li>
+<li class="toclevel-2"><a href="#Bearbeitungsfelder"><span class="tocnumber">15.4</span> <span class="toctext">Bearbeitungsfelder</span></a></li>
+<li class="toclevel-2"><a href="#Gridlists"><span class="tocnumber">15.5</span> <span class="toctext">Gridlists</span></a></li>
+<li class="toclevel-2"><a href="#Memos"><span class="tocnumber">15.6</span> <span class="toctext">Memos</span></a></li>
+<li class="toclevel-2"><a href="#Fortschrittbar"><span class="tocnumber">15.7</span> <span class="toctext">Fortschrittbar</span></a></li>
+<li class="toclevel-2"><a href="#Radio_Kn.C3.B6pfe"><span class="tocnumber">15.8</span> <span class="toctext">Radio Knöpfe</span></a></li>
+<li class="toclevel-2"><a href="#Bildlaufleisten"><span class="tocnumber">15.9</span> <span class="toctext">Bildlaufleisten</span></a></li>
+<li class="toclevel-2"><a href="#Bildlauffenster"><span class="tocnumber">15.10</span> <span class="toctext">Bildlauffenster</span></a></li>
+<li class="toclevel-2"><a href="#Feste_Bilder"><span class="tocnumber">15.11</span> <span class="toctext">Feste Bilder</span></a></li>
+<li class="toclevel-2"><a href="#Tab_Panel"><span class="tocnumber">15.12</span> <span class="toctext">Tab Panel</span></a></li>
+<li class="toclevel-2"><a href="#Tabs"><span class="tocnumber">15.13</span> <span class="toctext">Tabs</span></a></li>
+<li class="toclevel-2"><a href="#Text_Beschriftung"><span class="tocnumber">15.14</span> <span class="toctext">Text Beschriftung</span></a></li>
+<li class="toclevel-2"><a href="#Fenster"><span class="tocnumber">15.15</span> <span class="toctext">Fenster</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="#Eingabefunktionen"><span class="tocnumber">16</span> <span class="toctext">Eingabefunktionen</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#Markerfunktionen"><span class="tocnumber">17</span> <span class="toctext">Markerfunktionen</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="#Objektfunktionen"><span class="tocnumber">18</span> <span class="toctext">Objektfunktionen</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="#Ausgabefunktionen"><span class="tocnumber">19</span> <span class="toctext">Ausgabefunktionen</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="#Pedfunktionen"><span class="tocnumber">20</span> <span class="toctext">Pedfunktionen</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="#Pickupfunktionen"><span class="tocnumber">21</span> <span class="toctext">Pickupfunktionen</span></a></li>
+<li class="toclevel-1 tocsection-22"><a href="#Spielerfunktionen"><span class="tocnumber">22</span> <span class="toctext">Spielerfunktionen</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="#Projektilfunktionen"><span class="tocnumber">23</span> <span class="toctext">Projektilfunktionen</span></a></li>
+<li class="toclevel-1 tocsection-24"><a href="#Radar-Arena_Funktionen"><span class="tocnumber">24</span> <span class="toctext">Radar-Arena Funktionen</span></a></li>
+<li class="toclevel-1 tocsection-25"><a href="#Ressourcenfunktionen"><span class="tocnumber">25</span> <span class="toctext">Ressourcenfunktionen</span></a></li>
+<li class="toclevel-1 tocsection-26"><a href="#Serialfunktionen"><span class="tocnumber">26</span> <span class="toctext">Serialfunktionen</span></a></li>
+<li class="toclevel-1 tocsection-27"><a href="#Teamfunktionen"><span class="tocnumber">27</span> <span class="toctext">Teamfunktionen</span></a></li>
+<li class="toclevel-1 tocsection-28"><a href="#Werkzeugfunktionen"><span class="tocnumber">28</span> <span class="toctext">Werkzeugfunktionen</span></a></li>
+<li class="toclevel-1 tocsection-29"><a href="#Fahrzeugfunktionen"><span class="tocnumber">29</span> <span class="toctext">Fahrzeugfunktionen</span></a></li>
+<li class="toclevel-1 tocsection-30"><a href="#Wasserfunktionen"><span class="tocnumber">30</span> <span class="toctext">Wasserfunktionen</span></a></li>
+<li class="toclevel-1 tocsection-31"><a href="#Waffenfunktionen"><span class="tocnumber">31</span> <span class="toctext">Waffenfunktionen</span></a></li>
+<li class="toclevel-1 tocsection-32"><a href="#Weltfunktionen"><span class="tocnumber">32</span> <span class="toctext">Weltfunktionen</span></a></li>
+<li class="toclevel-1 tocsection-33"><a href="#XML-Funktionen"><span class="tocnumber">33</span> <span class="toctext">XML-Funktionen</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Audiofunktionen">Audiofunktionen</span></h2>
+<ul><li><a href="playSoundFrontEnd.html" title="DE/playSoundFrontEnd">DE/playSoundFrontEnd</a></li>
+<li><a href="getRadioChannel.html" title="DE/getRadioChannel">DE/getRadioChannel</a></li>
+<li><a href="getRadioChannelName.html" title="DE/getRadioChannelName">DE/getRadioChannelName</a></li></ul>
+<ul><li><a href="getSoundEffects.html" title="DE/getSoundEffects">DE/getSoundEffects</a></li>
+<li><a href="getSoundLength.html" title="DE/getSoundLength">DE/getSoundLength</a></li>
+<li><a href="getSoundMaxDistance.html" title="DE/getSoundMaxDistance">DE/getSoundMaxDistance</a></li></ul>
+<ul><li><a href="getSoundMetaTags.html" title="DE/getSoundMetaTags">DE/getSoundMetaTags</a></li>
+<li><a href="getSoundMinDistance.html" title="DE/getSoundMinDistance">DE/getSoundMinDistance</a></li>
+<li><a href="getSoundPosition.html" title="DE/getSoundPosition">DE/getSoundPosition</a></li>
+<li><a href="getSoundSpeed.html" title="DE/getSoundSpeed">DE/getSoundSpeed</a></li>
+<li><a href="getSoundVolume.html" title="DE/getSoundVolume">DE/getSoundVolume</a></li>
+<li><a href="isSoundPaused.html" title="DE/isSoundPaused">DE/isSoundPaused</a></li>
+<li><a href="playSound.html" title="DE/playSound">DE/playSound</a></li>
+<li><a href="playSound3D.html" title="DE/playSound3D">DE/playSound3D</a></li>
+<li><a href="setRadioChannel.html" title="DE/setRadioChannel">DE/setRadioChannel</a></li></ul>
+<ul><li><a href="setSoundEffectEnabled.html" title="DE/setSoundEffectEnabled">DE/setSoundEffectEnabled</a></li>
+<li><a href="setSoundMaxDistance.html" title="DE/setSoundMaxDistance">DE/setSoundMaxDistance</a></li>
+<li><a href="setSoundMinDistance.html" title="DE/setSoundMinDistance">DE/setSoundMinDistance</a></li>
+<li><a href="setSoundPaused.html" title="DE/setSoundPaused">DE/setSoundPaused</a></li>
+<li><a href="setSoundPosition.html" title="DE/setSoundPosition">DE/setSoundPosition</a></li>
+<li><a href="setSoundSpeed-2.html" title="DE/setSoundSpeed">DE/setSoundSpeed</a></li>
+<li><a href="setSoundVolume.html" title="DE/setSoundVolume">DE/setSoundVolume</a></li>
+<li><a href="stopSound.html" title="DE/stopSound">DE/stopSound</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Blipfunktionen">Blipfunktionen</span></h2>
+<ul><li><a href="createBlip.html" title="DE/createBlip">DE/createBlip</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/createBlipAttachedTo&amp;action=edit&amp;redlink=1" class="new" title="DE/createBlipAttachedTo (page does not exist)">DE/createBlipAttachedTo</a></li>
+<li><a href="getBlipColor.html" title="DE/getBlipColor">DE/getBlipColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getBlipIcon&amp;action=edit&amp;redlink=1" class="new" title="DE/getBlipIcon (page does not exist)">DE/getBlipIcon</a></li>
+<li><a href="getBlipSize.html" title="DE/getBlipSize">DE/getBlipSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setBlipColor&amp;action=edit&amp;redlink=1" class="new" title="DE/setBlipColor (page does not exist)">DE/setBlipColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setBlipIcon&amp;action=edit&amp;redlink=1" class="new" title="DE/setBlipIcon (page does not exist)">DE/setBlipIcon</a></li>
+<li><a href="setBlipSize.html" title="DE/setBlipSize">DE/setBlipSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getBlipOrdering&amp;action=edit&amp;redlink=1" class="new" title="DE/getBlipOrdering (page does not exist)">DE/getBlipOrdering</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setBlipOrdering&amp;action=edit&amp;redlink=1" class="new" title="DE/setBlipOrdering (page does not exist)">DE/setBlipOrdering</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/getBlipVisibleDistance&amp;action=edit&amp;redlink=1" class="new" title="DE/getBlipVisibleDistance (page does not exist)">DE/getBlipVisibleDistance</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setBlipVisibleDistance&amp;action=edit&amp;redlink=1" class="new" title="DE/setBlipVisibleDistance (page does not exist)">DE/setBlipVisibleDistance</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Kamerafunktionen">Kamerafunktionen</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/fadeCamera&amp;action=edit&amp;redlink=1" class="new" title="DE/fadeCamera (page does not exist)">DE/fadeCamera</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getCameraTarget&amp;action=edit&amp;redlink=1" class="new" title="DE/getCameraTarget (page does not exist)">DE/getCameraTarget</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setCameraTarget&amp;action=edit&amp;redlink=1" class="new" title="DE/setCameraTarget (page does not exist)">DE/setCameraTarget</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/getCameraInterior&amp;action=edit&amp;redlink=1" class="new" title="DE/getCameraInterior (page does not exist)">DE/getCameraInterior</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getCameraMatrix&amp;action=edit&amp;redlink=1" class="new" title="DE/getCameraMatrix (page does not exist)">DE/getCameraMatrix</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setCameraInterior&amp;action=edit&amp;redlink=1" class="new" title="DE/setCameraInterior (page does not exist)">DE/setCameraInterior</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setCameraMatrix&amp;action=edit&amp;redlink=1" class="new" title="DE/setCameraMatrix (page does not exist)">DE/setCameraMatrix</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/setCameraClip&amp;action=edit&amp;redlink=1" class="new" title="DE/setCameraClip (page does not exist)">DE/setCameraClip</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/getCameraViewMode&amp;action=edit&amp;redlink=1" class="new" title="DE/getCameraViewMode (page does not exist)">DE/getCameraViewMode</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setCameraViewMode&amp;action=edit&amp;redlink=1" class="new" title="DE/setCameraViewMode (page does not exist)">DE/setCameraViewMode</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getCameraGoggleEffect&amp;action=edit&amp;redlink=1" class="new" title="DE/getCameraGoggleEffect (page does not exist)">DE/getCameraGoggleEffect</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setCameraGoggleEffect&amp;action=edit&amp;redlink=1" class="new" title="DE/setCameraGoggleEffect (page does not exist)">DE/setCameraGoggleEffect</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Kleider-und_K.C3.B6rperfunktionen">Kleider-und Körperfunktionen</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/addPedClothes&amp;action=edit&amp;redlink=1" class="new" title="DE/addPedClothes (page does not exist)">DE/addPedClothes</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getBodyPartName&amp;action=edit&amp;redlink=1" class="new" title="DE/getBodyPartName (page does not exist)">DE/getBodyPartName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getClothesByTypeIndex&amp;action=edit&amp;redlink=1" class="new" title="DE/getClothesByTypeIndex (page does not exist)">DE/getClothesByTypeIndex</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getClothesTypeName&amp;action=edit&amp;redlink=1" class="new" title="DE/getClothesTypeName (page does not exist)">DE/getClothesTypeName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPedClothes&amp;action=edit&amp;redlink=1" class="new" title="DE/getPedClothes (page does not exist)">DE/getPedClothes</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getTypeIndexFromClothes&amp;action=edit&amp;redlink=1" class="new" title="DE/getTypeIndexFromClothes (page does not exist)">DE/getTypeIndexFromClothes</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/removePedClothes&amp;action=edit&amp;redlink=1" class="new" title="DE/removePedClothes (page does not exist)">DE/removePedClothes</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Collision_shape_Funktionen">Collision shape Funktionen</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/createColCircle&amp;action=edit&amp;redlink=1" class="new" title="DE/createColCircle (page does not exist)">DE/createColCircle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/createColCuboid&amp;action=edit&amp;redlink=1" class="new" title="DE/createColCuboid (page does not exist)">DE/createColCuboid</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/createColRectangle&amp;action=edit&amp;redlink=1" class="new" title="DE/createColRectangle (page does not exist)">DE/createColRectangle</a></li>
+<li><a href="createColSphere.html" title="DE/createColSphere">DE/createColSphere</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/createColTube&amp;action=edit&amp;redlink=1" class="new" title="DE/createColTube (page does not exist)">DE/createColTube</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/createColPolygon&amp;action=edit&amp;redlink=1" class="new" title="DE/createColPolygon (page does not exist)">DE/createColPolygon</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Mauszeiger_Funktionen">Mauszeiger Funktionen</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/getCursorPosition&amp;action=edit&amp;redlink=1" class="new" title="DE/getCursorPosition (page does not exist)">DE/getCursorPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isCursorShowing&amp;action=edit&amp;redlink=1" class="new" title="DE/isCursorShowing (page does not exist)">DE/isCursorShowing</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/showCursor&amp;action=edit&amp;redlink=1" class="new" title="DE/showCursor (page does not exist)">DE/showCursor</a></li></ul>
+<h2><span class="mw-headline" id="Zeichnungsfunktionen">Zeichnungsfunktionen</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/dxDrawImage&amp;action=edit&amp;redlink=1" class="new" title="DE/dxDrawImage (page does not exist)">DE/dxDrawImage</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/dxDrawImageSection&amp;action=edit&amp;redlink=1" class="new" title="DE/dxDrawImageSection (page does not exist)">DE/dxDrawImageSection</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/dxDrawLine&amp;action=edit&amp;redlink=1" class="new" title="DE/dxDrawLine (page does not exist)">DE/dxDrawLine</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/dxDrawLine3D&amp;action=edit&amp;redlink=1" class="new" title="DE/dxDrawLine3D (page does not exist)">DE/dxDrawLine3D</a></li>
+<li><a href="dxDrawRectangle.html" title="DE/dxDrawRectangle">DE/dxDrawRectangle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/dxDrawText&amp;action=edit&amp;redlink=1" class="new" title="DE/dxDrawText (page does not exist)">DE/dxDrawText</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/dxGetFontHeight&amp;action=edit&amp;redlink=1" class="new" title="DE/dxGetFontHeight (page does not exist)">DE/dxGetFontHeight</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/dxGetTextWidth&amp;action=edit&amp;redlink=1" class="new" title="DE/dxGetTextWidth (page does not exist)">DE/dxGetTextWidth</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/dxCreateFont&amp;action=edit&amp;redlink=1" class="new" title="DE/dxCreateFont (page does not exist)">DE/dxCreateFont</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/dxCreateTexture&amp;action=edit&amp;redlink=1" class="new" title="DE/dxCreateTexture (page does not exist)">DE/dxCreateTexture</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/dxCreateShader&amp;action=edit&amp;redlink=1" class="new" title="DE/dxCreateShader (page does not exist)">DE/dxCreateShader</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/dxCreateRenderTarget&amp;action=edit&amp;redlink=1" class="new" title="DE/dxCreateRenderTarget (page does not exist)">DE/dxCreateRenderTarget</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/dxCreateScreenSource&amp;action=edit&amp;redlink=1" class="new" title="DE/dxCreateScreenSource (page does not exist)">DE/dxCreateScreenSource</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/dxGetMaterialSize&amp;action=edit&amp;redlink=1" class="new" title="DE/dxGetMaterialSize (page does not exist)">DE/dxGetMaterialSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/dxSetShaderValue&amp;action=edit&amp;redlink=1" class="new" title="DE/dxSetShaderValue (page does not exist)">DE/dxSetShaderValue</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/dxSetShaderTessellation&amp;action=edit&amp;redlink=1" class="new" title="DE/dxSetShaderTessellation (page does not exist)">DE/dxSetShaderTessellation</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/dxSetShaderTransform&amp;action=edit&amp;redlink=1" class="new" title="DE/dxSetShaderTransform (page does not exist)">DE/dxSetShaderTransform</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/dxSetRenderTarget&amp;action=edit&amp;redlink=1" class="new" title="DE/dxSetRenderTarget (page does not exist)">DE/dxSetRenderTarget</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/dxUpdateScreenSource&amp;action=edit&amp;redlink=1" class="new" title="DE/dxUpdateScreenSource (page does not exist)">DE/dxUpdateScreenSource</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/dxGetStatus&amp;action=edit&amp;redlink=1" class="new" title="DE/dxGetStatus (page does not exist)">DE/dxGetStatus</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/dxSetTestMode&amp;action=edit&amp;redlink=1" class="new" title="DE/dxSetTestMode (page does not exist)">DE/dxSetTestMode</a></li></ul>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/dxGetTexturePixels&amp;action=edit&amp;redlink=1" class="new" title="DE/dxGetTexturePixels (page does not exist)">DE/dxGetTexturePixels</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/dxSetTexturePixels&amp;action=edit&amp;redlink=1" class="new" title="DE/dxSetTexturePixels (page does not exist)">DE/dxSetTexturePixels</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/dxGetPixelsSize&amp;action=edit&amp;redlink=1" class="new" title="DE/dxGetPixelsSize (page does not exist)">DE/dxGetPixelsSize</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/dxGetPixelsFormat&amp;action=edit&amp;redlink=1" class="new" title="DE/dxGetPixelsFormat (page does not exist)">DE/dxGetPixelsFormat</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/dxConvertPixels&amp;action=edit&amp;redlink=1" class="new" title="DE/dxConvertPixels (page does not exist)">DE/dxConvertPixels</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/dxGetPixelColor&amp;action=edit&amp;redlink=1" class="new" title="DE/dxGetPixelColor (page does not exist)">DE/dxGetPixelColor</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/dxSetPixelColor&amp;action=edit&amp;redlink=1" class="new" title="DE/dxSetPixelColor (page does not exist)">DE/dxSetPixelColor</a></li></ul>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/dxSetBlendMode&amp;action=edit&amp;redlink=1" class="new" title="DE/dxSetBlendMode (page does not exist)">DE/dxSetBlendMode</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/dxGetBlendMode&amp;action=edit&amp;redlink=1" class="new" title="DE/dxGetBlendMode (page does not exist)">DE/dxGetBlendMode</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/dxDrawMaterialLine3D&amp;action=edit&amp;redlink=1" class="new" title="DE/dxDrawMaterialLine3D (page does not exist)">DE/dxDrawMaterialLine3D</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/dxDrawMaterialSectionLine3D&amp;action=edit&amp;redlink=1" class="new" title="DE/dxDrawMaterialSectionLine3D (page does not exist)">DE/dxDrawMaterialSectionLine3D</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Effektfunktionen">Effektfunktionen</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/fxAddBlood&amp;action=edit&amp;redlink=1" class="new" title="DE/fxAddBlood (page does not exist)">DE/fxAddBlood</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/fxAddBulletImpact&amp;action=edit&amp;redlink=1" class="new" title="DE/fxAddBulletImpact (page does not exist)">DE/fxAddBulletImpact</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/fxAddBulletSplash&amp;action=edit&amp;redlink=1" class="new" title="DE/fxAddBulletSplash (page does not exist)">DE/fxAddBulletSplash</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/fxAddDebris&amp;action=edit&amp;redlink=1" class="new" title="DE/fxAddDebris (page does not exist)">DE/fxAddDebris</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/fxAddFootSplash&amp;action=edit&amp;redlink=1" class="new" title="DE/fxAddFootSplash (page does not exist)">DE/fxAddFootSplash</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/fxAddGlass&amp;action=edit&amp;redlink=1" class="new" title="DE/fxAddGlass (page does not exist)">DE/fxAddGlass</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/fxAddGunshot&amp;action=edit&amp;redlink=1" class="new" title="DE/fxAddGunshot (page does not exist)">DE/fxAddGunshot</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/fxAddPunchImpact&amp;action=edit&amp;redlink=1" class="new" title="DE/fxAddPunchImpact (page does not exist)">DE/fxAddPunchImpact</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/fxAddSparks&amp;action=edit&amp;redlink=1" class="new" title="DE/fxAddSparks (page does not exist)">DE/fxAddSparks</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/fxAddTankFire&amp;action=edit&amp;redlink=1" class="new" title="DE/fxAddTankFire (page does not exist)">DE/fxAddTankFire</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/fxAddTyreBurst&amp;action=edit&amp;redlink=1" class="new" title="DE/fxAddTyreBurst (page does not exist)">DE/fxAddTyreBurst</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/fxAddWaterHydrant&amp;action=edit&amp;redlink=1" class="new" title="DE/fxAddWaterHydrant (page does not exist)">DE/fxAddWaterHydrant</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/fxAddWaterSplash&amp;action=edit&amp;redlink=1" class="new" title="DE/fxAddWaterSplash (page does not exist)">DE/fxAddWaterSplash</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/fxAddWood&amp;action=edit&amp;redlink=1" class="new" title="DE/fxAddWood (page does not exist)">DE/fxAddWood</a></li></ul>
+<h2><span class="mw-headline" id="Elementfunktionen">Elementfunktionen</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/createElement&amp;action=edit&amp;redlink=1" class="new" title="DE/createElement (page does not exist)">DE/createElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/destroyElement&amp;action=edit&amp;redlink=1" class="new" title="DE/destroyElement (page does not exist)">DE/destroyElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getAttachedElements&amp;action=edit&amp;redlink=1" class="new" title="DE/getAttachedElements (page does not exist)">DE/getAttachedElements</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getElementAttachedOffsets&amp;action=edit&amp;redlink=1" class="new" title="DE/getElementAttachedOffsets (page does not exist)">DE/getElementAttachedOffsets</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getElementCollisionsEnabled&amp;action=edit&amp;redlink=1" class="new" title="DE/getElementCollisionsEnabled (page does not exist)">DE/getElementCollisionsEnabled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getElementAttachedTo&amp;action=edit&amp;redlink=1" class="new" title="DE/getElementAttachedTo (page does not exist)">DE/getElementAttachedTo</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getElementBoundingBox&amp;action=edit&amp;redlink=1" class="new" title="DE/getElementBoundingBox (page does not exist)">DE/getElementBoundingBox</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getElementByID&amp;action=edit&amp;redlink=1" class="new" title="DE/getElementByID (page does not exist)">DE/getElementByID</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getElementChild&amp;action=edit&amp;redlink=1" class="new" title="DE/getElementChild (page does not exist)">DE/getElementChild</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getElementChildren&amp;action=edit&amp;redlink=1" class="new" title="DE/getElementChildren (page does not exist)">DE/getElementChildren</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getElementChildrenCount&amp;action=edit&amp;redlink=1" class="new" title="DE/getElementChildrenCount (page does not exist)">DE/getElementChildrenCount</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getElementData&amp;action=edit&amp;redlink=1" class="new" title="DE/getElementData (page does not exist)">DE/getElementData</a></li>
+<li><a href="getElementDimension.html" title="DE/getElementDimension">DE/getElementDimension</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getElementDistanceFromCentreOfMassToBaseOfModel&amp;action=edit&amp;redlink=1" class="new" title="DE/getElementDistanceFromCentreOfMassToBaseOfModel (page does not exist)">DE/getElementDistanceFromCentreOfMassToBaseOfModel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getElementHealth&amp;action=edit&amp;redlink=1" class="new" title="DE/getElementHealth (page does not exist)">DE/getElementHealth</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getElementID&amp;action=edit&amp;redlink=1" class="new" title="DE/getElementID (page does not exist)">DE/getElementID</a></li>
+<li><a href="getElementInterior.html" title="DE/getElementInterior">DE/getElementInterior</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getElementParent&amp;action=edit&amp;redlink=1" class="new" title="DE/getElementParent (page does not exist)">DE/getElementParent</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getElementPosition&amp;action=edit&amp;redlink=1" class="new" title="DE/getElementPosition (page does not exist)">DE/getElementPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getElementRadius&amp;action=edit&amp;redlink=1" class="new" title="DE/getElementRadius (page does not exist)">DE/getElementRadius</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getElementsByType&amp;action=edit&amp;redlink=1" class="new" title="DE/getElementsByType (page does not exist)">DE/getElementsByType</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getElementsWithinColShape&amp;action=edit&amp;redlink=1" class="new" title="DE/getElementsWithinColShape (page does not exist)">DE/getElementsWithinColShape</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getElementType&amp;action=edit&amp;redlink=1" class="new" title="DE/getElementType (page does not exist)">DE/getElementType</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getElementVelocity&amp;action=edit&amp;redlink=1" class="new" title="DE/getElementVelocity (page does not exist)">DE/getElementVelocity</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getRootElement&amp;action=edit&amp;redlink=1" class="new" title="DE/getRootElement (page does not exist)">DE/getRootElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isElement&amp;action=edit&amp;redlink=1" class="new" title="DE/isElement (page does not exist)">DE/isElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isElementAttached&amp;action=edit&amp;redlink=1" class="new" title="DE/isElementAttached (page does not exist)">DE/isElementAttached</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isElementLocal&amp;action=edit&amp;redlink=1" class="new" title="DE/isElementLocal (page does not exist)">DE/isElementLocal</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isElementOnScreen&amp;action=edit&amp;redlink=1" class="new" title="DE/isElementOnScreen (page does not exist)">DE/isElementOnScreen</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isElementStreamable&amp;action=edit&amp;redlink=1" class="new" title="DE/isElementStreamable (page does not exist)">DE/isElementStreamable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isElementStreamedIn&amp;action=edit&amp;redlink=1" class="new" title="DE/isElementStreamedIn (page does not exist)">DE/isElementStreamedIn</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isElementWithinColShape&amp;action=edit&amp;redlink=1" class="new" title="DE/isElementWithinColShape (page does not exist)">DE/isElementWithinColShape</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setElementAlpha&amp;action=edit&amp;redlink=1" class="new" title="DE/setElementAlpha (page does not exist)">DE/setElementAlpha</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setElementCollisionsEnabled&amp;action=edit&amp;redlink=1" class="new" title="DE/setElementCollisionsEnabled (page does not exist)">DE/setElementCollisionsEnabled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setElementData&amp;action=edit&amp;redlink=1" class="new" title="DE/setElementData (page does not exist)">DE/setElementData</a></li>
+<li><a href="setElementDimension.html" title="DE/setElementDimension">DE/setElementDimension</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setElementDoubleSided&amp;action=edit&amp;redlink=1" class="new" title="DE/setElementDoubleSided (page does not exist)">DE/setElementDoubleSided</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setElementHealth&amp;action=edit&amp;redlink=1" class="new" title="DE/setElementHealth (page does not exist)">DE/setElementHealth</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setElementID&amp;action=edit&amp;redlink=1" class="new" title="DE/setElementID (page does not exist)">DE/setElementID</a></li>
+<li><a href="setElementInterior.html" title="DE/setElementInterior">DE/setElementInterior</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setElementParent&amp;action=edit&amp;redlink=1" class="new" title="DE/setElementParent (page does not exist)">DE/setElementParent</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setElementPosition&amp;action=edit&amp;redlink=1" class="new" title="DE/setElementPosition (page does not exist)">DE/setElementPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setElementStreamable&amp;action=edit&amp;redlink=1" class="new" title="DE/setElementStreamable (page does not exist)">DE/setElementStreamable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setElementVelocity&amp;action=edit&amp;redlink=1" class="new" title="DE/setElementVelocity (page does not exist)">DE/setElementVelocity</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/attachElements&amp;action=edit&amp;redlink=1" class="new" title="DE/attachElements (page does not exist)">DE/attachElements</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/detachElements&amp;action=edit&amp;redlink=1" class="new" title="DE/detachElements (page does not exist)">DE/detachElements</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getElementColShape&amp;action=edit&amp;redlink=1" class="new" title="DE/getElementColShape (page does not exist)">DE/getElementColShape</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getElementMatrix&amp;action=edit&amp;redlink=1" class="new" title="DE/getElementMatrix (page does not exist)">DE/getElementMatrix</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getElementModel&amp;action=edit&amp;redlink=1" class="new" title="DE/getElementModel (page does not exist)">DE/getElementModel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getElementRotation&amp;action=edit&amp;redlink=1" class="new" title="DE/getElementRotation (page does not exist)">DE/getElementRotation</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isElementInWater&amp;action=edit&amp;redlink=1" class="new" title="DE/isElementInWater (page does not exist)">DE/isElementInWater</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isElementSyncer&amp;action=edit&amp;redlink=1" class="new" title="DE/isElementSyncer (page does not exist)">DE/isElementSyncer</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setElementModel&amp;action=edit&amp;redlink=1" class="new" title="DE/setElementModel (page does not exist)">DE/setElementModel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setElementRotation&amp;action=edit&amp;redlink=1" class="new" title="DE/setElementRotation (page does not exist)">DE/setElementRotation</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isElementCollidableWith&amp;action=edit&amp;redlink=1" class="new" title="DE/isElementCollidableWith (page does not exist)">DE/isElementCollidableWith</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setElementCollidableWith&amp;action=edit&amp;redlink=1" class="new" title="DE/setElementCollidableWith (page does not exist)">DE/setElementCollidableWith</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isElementDoubleSided&amp;action=edit&amp;redlink=1" class="new" title="DE/isElementDoubleSided (page does not exist)">DE/isElementDoubleSided</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setLowLODElement&amp;action=edit&amp;redlink=1" class="new" title="DE/setLowLODElement (page does not exist)">DE/setLowLODElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getLowLODElement&amp;action=edit&amp;redlink=1" class="new" title="DE/getLowLODElement (page does not exist)">DE/getLowLODElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isElementLowLOD&amp;action=edit&amp;redlink=1" class="new" title="DE/isElementLowLOD (page does not exist)">DE/isElementLowLOD</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/attachElementToElement&amp;action=edit&amp;redlink=1" class="new" title="DE/attachElementToElement (page does not exist)">DE/attachElementToElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/detachElementFromElement&amp;action=edit&amp;redlink=1" class="new" title="DE/detachElementFromElement (page does not exist)">DE/detachElementFromElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isElementFrozen&amp;action=edit&amp;redlink=1" class="new" title="DE/isElementFrozen (page does not exist)">DE/isElementFrozen</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setElementFrozen&amp;action=edit&amp;redlink=1" class="new" title="DE/setElementFrozen (page does not exist)">DE/setElementFrozen</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Enginefunktionen">Enginefunktionen</span></h2>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/engineImportTXD&amp;action=edit&amp;redlink=1" class="new" title="DE/engineImportTXD (page does not exist)">DE/engineImportTXD</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/engineLoadCOL&amp;action=edit&amp;redlink=1" class="new" title="DE/engineLoadCOL (page does not exist)">DE/engineLoadCOL</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/engineLoadDFF&amp;action=edit&amp;redlink=1" class="new" title="DE/engineLoadDFF (page does not exist)">DE/engineLoadDFF</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/engineLoadTXD&amp;action=edit&amp;redlink=1" class="new" title="DE/engineLoadTXD (page does not exist)">DE/engineLoadTXD</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/engineReplaceCOL&amp;action=edit&amp;redlink=1" class="new" title="DE/engineReplaceCOL (page does not exist)">DE/engineReplaceCOL</a></li>
+<li> <a href="engineReplaceModel.html" title="DE/engineReplaceModel">DE/engineReplaceModel</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/engineRestoreCOL&amp;action=edit&amp;redlink=1" class="new" title="DE/engineRestoreCOL (page does not exist)">DE/engineRestoreCOL</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/engineRestoreModel&amp;action=edit&amp;redlink=1" class="new" title="DE/engineRestoreModel (page does not exist)">DE/engineRestoreModel</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/engineSetAsynchronousLoading&amp;action=edit&amp;redlink=1" class="new" title="DE/engineSetAsynchronousLoading (page does not exist)">DE/engineSetAsynchronousLoading</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/engineSetModelLODDistance&amp;action=edit&amp;redlink=1" class="new" title="DE/engineSetModelLODDistance (page does not exist)">DE/engineSetModelLODDistance</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/engineApplyShaderToWorldTexture&amp;action=edit&amp;redlink=1" class="new" title="DE/engineApplyShaderToWorldTexture (page does not exist)">DE/engineApplyShaderToWorldTexture</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/engineRemoveShaderFromWorldTexture&amp;action=edit&amp;redlink=1" class="new" title="DE/engineRemoveShaderFromWorldTexture (page does not exist)">DE/engineRemoveShaderFromWorldTexture</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/engineGetModelNameFromID&amp;action=edit&amp;redlink=1" class="new" title="DE/engineGetModelNameFromID (page does not exist)">DE/engineGetModelNameFromID</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/engineGetModelIDFromName&amp;action=edit&amp;redlink=1" class="new" title="DE/engineGetModelIDFromName (page does not exist)">DE/engineGetModelIDFromName</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/engineGetVisibleTextureNames&amp;action=edit&amp;redlink=1" class="new" title="DE/engineGetVisibleTextureNames (page does not exist)">DE/engineGetVisibleTextureNames</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Eventfunktionen">Eventfunktionen</span></h2>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/addEvent&amp;action=edit&amp;redlink=1" class="new" title="DE/addEvent (page does not exist)">DE/addEvent</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/addEventHandler&amp;action=edit&amp;redlink=1" class="new" title="DE/addEventHandler (page does not exist)">DE/addEventHandler</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/cancelEvent&amp;action=edit&amp;redlink=1" class="new" title="DE/cancelEvent (page does not exist)">DE/cancelEvent</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/removeEventHandler&amp;action=edit&amp;redlink=1" class="new" title="DE/removeEventHandler (page does not exist)">DE/removeEventHandler</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/triggerEvent&amp;action=edit&amp;redlink=1" class="new" title="DE/triggerEvent (page does not exist)">DE/triggerEvent</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/triggerServerEvent&amp;action=edit&amp;redlink=1" class="new" title="DE/triggerServerEvent (page does not exist)">DE/triggerServerEvent</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/wasEventCanceled&amp;action=edit&amp;redlink=1" class="new" title="DE/wasEventCanceled (page does not exist)">DE/wasEventCanceled</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/triggerLatentServerEvent&amp;action=edit&amp;redlink=1" class="new" title="DE/triggerLatentServerEvent (page does not exist)">DE/triggerLatentServerEvent</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getLatentEventHandles&amp;action=edit&amp;redlink=1" class="new" title="DE/getLatentEventHandles (page does not exist)">DE/getLatentEventHandles</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getLatentEventStatus&amp;action=edit&amp;redlink=1" class="new" title="DE/getLatentEventStatus (page does not exist)">DE/getLatentEventStatus</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/cancelLatentEvent&amp;action=edit&amp;redlink=1" class="new" title="DE/cancelLatentEvent (page does not exist)">DE/cancelLatentEvent</a></li></ul>
+<h2><span class="mw-headline" id="Explosionfunktionen">Explosionfunktionen</span></h2>
+<ul><li> <a href="createExplosion.html" title="DE/createExplosion">DE/createExplosion</a></li></ul>
+<h2><span class="mw-headline" id="Dateifunktionen">Dateifunktionen</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/fileClose&amp;action=edit&amp;redlink=1" class="new" title="DE/fileClose (page does not exist)">DE/fileClose</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/fileCreate&amp;action=edit&amp;redlink=1" class="new" title="DE/fileCreate (page does not exist)">DE/fileCreate</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/fileDelete&amp;action=edit&amp;redlink=1" class="new" title="DE/fileDelete (page does not exist)">DE/fileDelete</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/fileExists&amp;action=edit&amp;redlink=1" class="new" title="DE/fileExists (page does not exist)">DE/fileExists</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/fileFlush&amp;action=edit&amp;redlink=1" class="new" title="DE/fileFlush (page does not exist)">DE/fileFlush</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/fileGetPos&amp;action=edit&amp;redlink=1" class="new" title="DE/fileGetPos (page does not exist)">DE/fileGetPos</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/fileGetSize&amp;action=edit&amp;redlink=1" class="new" title="DE/fileGetSize (page does not exist)">DE/fileGetSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/fileIsEOF&amp;action=edit&amp;redlink=1" class="new" title="DE/fileIsEOF (page does not exist)">DE/fileIsEOF</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/fileOpen&amp;action=edit&amp;redlink=1" class="new" title="DE/fileOpen (page does not exist)">DE/fileOpen</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/fileRead&amp;action=edit&amp;redlink=1" class="new" title="DE/fileRead (page does not exist)">DE/fileRead</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/fileRename&amp;action=edit&amp;redlink=1" class="new" title="DE/fileRename (page does not exist)">DE/fileRename</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/fileSetPos&amp;action=edit&amp;redlink=1" class="new" title="DE/fileSetPos (page does not exist)">DE/fileSetPos</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/fileWrite&amp;action=edit&amp;redlink=1" class="new" title="DE/fileWrite (page does not exist)">DE/fileWrite</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Feuerfunktionen">Feuerfunktionen</span></h2>
+<ul><li><a href="createFire.html" title="DE/createFire">DE/createFire</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="GUI-Funktionen">GUI-Funktionen</span></h2>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/getChatboxLayout&amp;action=edit&amp;redlink=1" class="new" title="DE/getChatboxLayout (page does not exist)">DE/getChatboxLayout</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiBringToFront&amp;action=edit&amp;redlink=1" class="new" title="DE/guiBringToFront (page does not exist)">DE/guiBringToFront</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/guiCreateFont&amp;action=edit&amp;redlink=1" class="new" title="DE/guiCreateFont (page does not exist)">DE/guiCreateFont</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGetAlpha&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGetAlpha (page does not exist)">DE/guiGetAlpha</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGetEnabled&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGetEnabled (page does not exist)">DE/guiGetEnabled</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGetFont&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGetFont (page does not exist)">DE/guiGetFont</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGetInputEnabled&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGetInputEnabled (page does not exist)">DE/guiGetInputEnabled</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/guiGetInputMode&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGetInputMode (page does not exist)">DE/guiGetInputMode</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGetPosition&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGetPosition (page does not exist)">DE/guiGetPosition</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGetProperties&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGetProperties (page does not exist)">DE/guiGetProperties</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGetProperty&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGetProperty (page does not exist)">DE/guiGetProperty</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGetScreenSize&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGetScreenSize (page does not exist)">DE/guiGetScreenSize</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGetSize&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGetSize (page does not exist)">DE/guiGetSize</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGetText&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGetText (page does not exist)">DE/guiGetText</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGetVisible&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGetVisible (page does not exist)">DE/guiGetVisible</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiMoveToBack&amp;action=edit&amp;redlink=1" class="new" title="DE/guiMoveToBack (page does not exist)">DE/guiMoveToBack</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiSetAlpha&amp;action=edit&amp;redlink=1" class="new" title="DE/guiSetAlpha (page does not exist)">DE/guiSetAlpha</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiSetEnabled&amp;action=edit&amp;redlink=1" class="new" title="DE/guiSetEnabled (page does not exist)">DE/guiSetEnabled</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiSetFont&amp;action=edit&amp;redlink=1" class="new" title="DE/guiSetFont (page does not exist)">DE/guiSetFont</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiSetInputEnabled&amp;action=edit&amp;redlink=1" class="new" title="DE/guiSetInputEnabled (page does not exist)">DE/guiSetInputEnabled</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/guiSetInputMode&amp;action=edit&amp;redlink=1" class="new" title="DE/guiSetInputMode (page does not exist)">DE/guiSetInputMode</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiSetPosition&amp;action=edit&amp;redlink=1" class="new" title="DE/guiSetPosition (page does not exist)">DE/guiSetPosition</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiSetProperty&amp;action=edit&amp;redlink=1" class="new" title="DE/guiSetProperty (page does not exist)">DE/guiSetProperty</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiSetSize&amp;action=edit&amp;redlink=1" class="new" title="DE/guiSetSize (page does not exist)">DE/guiSetSize</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiSetText&amp;action=edit&amp;redlink=1" class="new" title="DE/guiSetText (page does not exist)">DE/guiSetText</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiSetVisible&amp;action=edit&amp;redlink=1" class="new" title="DE/guiSetVisible (page does not exist)">DE/guiSetVisible</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/isChatBoxInputActive&amp;action=edit&amp;redlink=1" class="new" title="DE/isChatBoxInputActive (page does not exist)">DE/isChatBoxInputActive</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/isConsoleActive&amp;action=edit&amp;redlink=1" class="new" title="DE/isConsoleActive (page does not exist)">DE/isConsoleActive</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/isDebugViewActive&amp;action=edit&amp;redlink=1" class="new" title="DE/isDebugViewActive (page does not exist)">DE/isDebugViewActive</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/isMainMenuActive&amp;action=edit&amp;redlink=1" class="new" title="DE/isMainMenuActive (page does not exist)">DE/isMainMenuActive</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/isMTAWindowActive&amp;action=edit&amp;redlink=1" class="new" title="DE/isMTAWindowActive (page does not exist)">DE/isMTAWindowActive</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/isTransferBoxActive&amp;action=edit&amp;redlink=1" class="new" title="DE/isTransferBoxActive (page does not exist)">DE/isTransferBoxActive</a></li></ul>
+<h3><span class="mw-headline" id="Kn.C3.B6pfe">Knöpfe</span></h3>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/guiCreateButton&amp;action=edit&amp;redlink=1" class="new" title="DE/guiCreateButton (page does not exist)">DE/guiCreateButton</a></li></ul>
+<h3><span class="mw-headline" id="Checkboxes">Checkboxes</span></h3>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/guiCheckBoxGetSelected&amp;action=edit&amp;redlink=1" class="new" title="DE/guiCheckBoxGetSelected (page does not exist)">DE/guiCheckBoxGetSelected</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiCheckBoxSetSelected&amp;action=edit&amp;redlink=1" class="new" title="DE/guiCheckBoxSetSelected (page does not exist)">DE/guiCheckBoxSetSelected</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiCreateCheckBox&amp;action=edit&amp;redlink=1" class="new" title="DE/guiCreateCheckBox (page does not exist)">DE/guiCreateCheckBox</a></li></ul>
+<h3><span class="mw-headline" id="Comboboxes">Comboboxes</span></h3>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/guiCreateComboBox&amp;action=edit&amp;redlink=1" class="new" title="DE/guiCreateComboBox (page does not exist)">DE/guiCreateComboBox</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiComboBoxAddItem&amp;action=edit&amp;redlink=1" class="new" title="DE/guiComboBoxAddItem (page does not exist)">DE/guiComboBoxAddItem</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiComboBoxClear&amp;action=edit&amp;redlink=1" class="new" title="DE/guiComboBoxClear (page does not exist)">DE/guiComboBoxClear</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiComboBoxGetItemText&amp;action=edit&amp;redlink=1" class="new" title="DE/guiComboBoxGetItemText (page does not exist)">DE/guiComboBoxGetItemText</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiComboBoxSetItemText&amp;action=edit&amp;redlink=1" class="new" title="DE/guiComboBoxSetItemText (page does not exist)">DE/guiComboBoxSetItemText</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiComboBoxRemoveItem&amp;action=edit&amp;redlink=1" class="new" title="DE/guiComboBoxRemoveItem (page does not exist)">DE/guiComboBoxRemoveItem</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiComboBoxGetSelected&amp;action=edit&amp;redlink=1" class="new" title="DE/guiComboBoxGetSelected (page does not exist)">DE/guiComboBoxGetSelected</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiComboBoxSetSelected&amp;action=edit&amp;redlink=1" class="new" title="DE/guiComboBoxSetSelected (page does not exist)">DE/guiComboBoxSetSelected</a></li></ul>
+<h3><span class="mw-headline" id="Bearbeitungsfelder">Bearbeitungsfelder</span></h3>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/guiCreateEdit&amp;action=edit&amp;redlink=1" class="new" title="DE/guiCreateEdit (page does not exist)">DE/guiCreateEdit</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiEditSetMasked&amp;action=edit&amp;redlink=1" class="new" title="DE/guiEditSetMasked (page does not exist)">DE/guiEditSetMasked</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiEditSetMaxLength&amp;action=edit&amp;redlink=1" class="new" title="DE/guiEditSetMaxLength (page does not exist)">DE/guiEditSetMaxLength</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiEditSetReadOnly&amp;action=edit&amp;redlink=1" class="new" title="DE/guiEditSetReadOnly (page does not exist)">DE/guiEditSetReadOnly</a></li></ul>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/guiEditSetCaretIndex&amp;action=edit&amp;redlink=1" class="new" title="DE/guiEditSetCaretIndex (page does not exist)">DE/guiEditSetCaretIndex</a></li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Gridlists">Gridlists</span></h3>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/guiCreateGridList&amp;action=edit&amp;redlink=1" class="new" title="DE/guiCreateGridList (page does not exist)">DE/guiCreateGridList</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGridListAddColumn&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGridListAddColumn (page does not exist)">DE/guiGridListAddColumn</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGridListAddRow&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGridListAddRow (page does not exist)">DE/guiGridListAddRow</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGridListAutoSizeColumn&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGridListAutoSizeColumn (page does not exist)">DE/guiGridListAutoSizeColumn</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGridListClear&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGridListClear (page does not exist)">DE/guiGridListClear</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGridListGetItemData&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGridListGetItemData (page does not exist)">DE/guiGridListGetItemData</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGridListGetItemText&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGridListGetItemText (page does not exist)">DE/guiGridListGetItemText</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGridListGetRowCount&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGridListGetRowCount (page does not exist)">DE/guiGridListGetRowCount</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGridListGetSelectedItem&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGridListGetSelectedItem (page does not exist)">DE/guiGridListGetSelectedItem</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGridListInsertRowAfter&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGridListInsertRowAfter (page does not exist)">DE/guiGridListInsertRowAfter</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGridListRemoveColumn&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGridListRemoveColumn (page does not exist)">DE/guiGridListRemoveColumn</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGridListRemoveRow&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGridListRemoveRow (page does not exist)">DE/guiGridListRemoveRow</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGridListSetItemData&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGridListSetItemData (page does not exist)">DE/guiGridListSetItemData</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGridListSetItemText&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGridListSetItemText (page does not exist)">DE/guiGridListSetItemText</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGridListSetScrollBars&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGridListSetScrollBars (page does not exist)">DE/guiGridListSetScrollBars</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGridListSetSelectedItem&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGridListSetSelectedItem (page does not exist)">DE/guiGridListSetSelectedItem</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGridListSetSelectionMode&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGridListSetSelectionMode (page does not exist)">DE/guiGridListSetSelectionMode</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGridListSetSortingEnabled&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGridListSetSortingEnabled (page does not exist)">DE/guiGridListSetSortingEnabled</a></li></ul>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/guiGridListGetSelectedCount&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGridListGetSelectedCount (page does not exist)">DE/guiGridListGetSelectedCount</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGridListGetSelectedItems&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGridListGetSelectedItems (page does not exist)">DE/guiGridListGetSelectedItems</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGridListSetColumnWidth&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGridListSetColumnWidth (page does not exist)">DE/guiGridListSetColumnWidth</a></li></ul>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/guiGridListGetColumnCount&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGridListGetColumnCount (page does not exist)">DE/guiGridListGetColumnCount</a></li></ul>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/guiGridListGetItemColor&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGridListGetItemColor (page does not exist)">DE/guiGridListGetItemColor</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiGridListSetItemColor&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGridListSetItemColor (page does not exist)">DE/guiGridListSetItemColor</a></li></ul>
+<h3><span class="mw-headline" id="Memos">Memos</span></h3>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/guiCreateMemo&amp;action=edit&amp;redlink=1" class="new" title="DE/guiCreateMemo (page does not exist)">DE/guiCreateMemo</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiMemoSetReadOnly&amp;action=edit&amp;redlink=1" class="new" title="DE/guiMemoSetReadOnly (page does not exist)">DE/guiMemoSetReadOnly</a></li></ul>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/guiMemoSetCaretIndex&amp;action=edit&amp;redlink=1" class="new" title="DE/guiMemoSetCaretIndex (page does not exist)">DE/guiMemoSetCaretIndex</a></li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Fortschrittbar">Fortschrittbar</span></h3>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/guiCreateProgressBar&amp;action=edit&amp;redlink=1" class="new" title="DE/guiCreateProgressBar (page does not exist)">DE/guiCreateProgressBar</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiProgressBarGetProgress&amp;action=edit&amp;redlink=1" class="new" title="DE/guiProgressBarGetProgress (page does not exist)">DE/guiProgressBarGetProgress</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiProgressBarSetProgress&amp;action=edit&amp;redlink=1" class="new" title="DE/guiProgressBarSetProgress (page does not exist)">DE/guiProgressBarSetProgress</a></li></ul>
+<h3><span class="mw-headline" id="Radio_Kn.C3.B6pfe">Radio Knöpfe</span></h3>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/guiCreateRadioButton&amp;action=edit&amp;redlink=1" class="new" title="DE/guiCreateRadioButton (page does not exist)">DE/guiCreateRadioButton</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiRadioButtonGetSelected&amp;action=edit&amp;redlink=1" class="new" title="DE/guiRadioButtonGetSelected (page does not exist)">DE/guiRadioButtonGetSelected</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiRadioButtonSetSelected&amp;action=edit&amp;redlink=1" class="new" title="DE/guiRadioButtonSetSelected (page does not exist)">DE/guiRadioButtonSetSelected</a></li></ul>
+<h3><span class="mw-headline" id="Bildlaufleisten">Bildlaufleisten</span></h3>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/guiCreateScrollBar&amp;action=edit&amp;redlink=1" class="new" title="DE/guiCreateScrollBar (page does not exist)">DE/guiCreateScrollBar</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiScrollBarGetScrollPosition&amp;action=edit&amp;redlink=1" class="new" title="DE/guiScrollBarGetScrollPosition (page does not exist)">DE/guiScrollBarGetScrollPosition</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiScrollBarSetScrollPosition&amp;action=edit&amp;redlink=1" class="new" title="DE/guiScrollBarSetScrollPosition (page does not exist)">DE/guiScrollBarSetScrollPosition</a></li></ul>
+<h3><span class="mw-headline" id="Bildlauffenster">Bildlauffenster</span></h3>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/guiCreateScrollPane&amp;action=edit&amp;redlink=1" class="new" title="DE/guiCreateScrollPane (page does not exist)">DE/guiCreateScrollPane</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiScrollPaneGetHorizontalScrollPosition&amp;action=edit&amp;redlink=1" class="new" title="DE/guiScrollPaneGetHorizontalScrollPosition (page does not exist)">DE/guiScrollPaneGetHorizontalScrollPosition</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiScrollPaneGetVerticalScrollPosition&amp;action=edit&amp;redlink=1" class="new" title="DE/guiScrollPaneGetVerticalScrollPosition (page does not exist)">DE/guiScrollPaneGetVerticalScrollPosition</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiScrollPaneSetHorizontalScrollPosition&amp;action=edit&amp;redlink=1" class="new" title="DE/guiScrollPaneSetHorizontalScrollPosition (page does not exist)">DE/guiScrollPaneSetHorizontalScrollPosition</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiScrollPaneSetScrollBars&amp;action=edit&amp;redlink=1" class="new" title="DE/guiScrollPaneSetScrollBars (page does not exist)">DE/guiScrollPaneSetScrollBars</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiScrollPaneSetVerticalScrollPosition&amp;action=edit&amp;redlink=1" class="new" title="DE/guiScrollPaneSetVerticalScrollPosition (page does not exist)">DE/guiScrollPaneSetVerticalScrollPosition</a></li></ul>
+<h3><span class="mw-headline" id="Feste_Bilder">Feste Bilder</span></h3>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/guiCreateStaticImage&amp;action=edit&amp;redlink=1" class="new" title="DE/guiCreateStaticImage (page does not exist)">DE/guiCreateStaticImage</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiStaticImageLoadImage&amp;action=edit&amp;redlink=1" class="new" title="DE/guiStaticImageLoadImage (page does not exist)">DE/guiStaticImageLoadImage</a></li></ul>
+<h3><span class="mw-headline" id="Tab_Panel">Tab Panel</span></h3>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/guiCreateTabPanel&amp;action=edit&amp;redlink=1" class="new" title="DE/guiCreateTabPanel (page does not exist)">DE/guiCreateTabPanel</a></li></ul>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/guiGetSelectedTab&amp;action=edit&amp;redlink=1" class="new" title="DE/guiGetSelectedTab (page does not exist)">DE/guiGetSelectedTab</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiSetSelectedTab&amp;action=edit&amp;redlink=1" class="new" title="DE/guiSetSelectedTab (page does not exist)">DE/guiSetSelectedTab</a></li></ul>
+<h3><span class="mw-headline" id="Tabs">Tabs</span></h3>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/guiCreateTab&amp;action=edit&amp;redlink=1" class="new" title="DE/guiCreateTab (page does not exist)">DE/guiCreateTab</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiDeleteTab&amp;action=edit&amp;redlink=1" class="new" title="DE/guiDeleteTab (page does not exist)">DE/guiDeleteTab</a></li></ul>
+<h3><span class="mw-headline" id="Text_Beschriftung">Text Beschriftung</span></h3>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/guiCreateLabel&amp;action=edit&amp;redlink=1" class="new" title="DE/guiCreateLabel (page does not exist)">DE/guiCreateLabel</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiLabelGetFontHeight&amp;action=edit&amp;redlink=1" class="new" title="DE/guiLabelGetFontHeight (page does not exist)">DE/guiLabelGetFontHeight</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiLabelGetTextExtent&amp;action=edit&amp;redlink=1" class="new" title="DE/guiLabelGetTextExtent (page does not exist)">DE/guiLabelGetTextExtent</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiLabelSetColor&amp;action=edit&amp;redlink=1" class="new" title="DE/guiLabelSetColor (page does not exist)">DE/guiLabelSetColor</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiLabelSetHorizontalAlign&amp;action=edit&amp;redlink=1" class="new" title="DE/guiLabelSetHorizontalAlign (page does not exist)">DE/guiLabelSetHorizontalAlign</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiLabelSetVerticalAlign&amp;action=edit&amp;redlink=1" class="new" title="DE/guiLabelSetVerticalAlign (page does not exist)">DE/guiLabelSetVerticalAlign</a></li></ul>
+<h3><span class="mw-headline" id="Fenster">Fenster</span></h3>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/guiCreateWindow&amp;action=edit&amp;redlink=1" class="new" title="DE/guiCreateWindow (page does not exist)">DE/guiCreateWindow</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiWindowSetMovable&amp;action=edit&amp;redlink=1" class="new" title="DE/guiWindowSetMovable (page does not exist)">DE/guiWindowSetMovable</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/guiWindowSetSizable&amp;action=edit&amp;redlink=1" class="new" title="DE/guiWindowSetSizable (page does not exist)">DE/guiWindowSetSizable</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Eingabefunktionen">Eingabefunktionen</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/bindKey&amp;action=edit&amp;redlink=1" class="new" title="DE/bindKey (page does not exist)">DE/bindKey</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/unbindKey&amp;action=edit&amp;redlink=1" class="new" title="DE/unbindKey (page does not exist)">DE/unbindKey</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getKeyState&amp;action=edit&amp;redlink=1" class="new" title="DE/getKeyState (page does not exist)">DE/getKeyState</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/getCommandsBoundToKey&amp;action=edit&amp;redlink=1" class="new" title="DE/getCommandsBoundToKey (page does not exist)">DE/getCommandsBoundToKey</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getFunctionsBoundToKey&amp;action=edit&amp;redlink=1" class="new" title="DE/getFunctionsBoundToKey (page does not exist)">DE/getFunctionsBoundToKey</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getKeyBoundToCommand&amp;action=edit&amp;redlink=1" class="new" title="DE/getKeyBoundToCommand (page does not exist)">DE/getKeyBoundToCommand</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getKeyBoundToFunction&amp;action=edit&amp;redlink=1" class="new" title="DE/getKeyBoundToFunction (page does not exist)">DE/getKeyBoundToFunction</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getControlState&amp;action=edit&amp;redlink=1" class="new" title="DE/getControlState (page does not exist)">DE/getControlState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isControlEnabled&amp;action=edit&amp;redlink=1" class="new" title="DE/isControlEnabled (page does not exist)">DE/isControlEnabled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setControlState&amp;action=edit&amp;redlink=1" class="new" title="DE/setControlState (page does not exist)">DE/setControlState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/toggleControl&amp;action=edit&amp;redlink=1" class="new" title="DE/toggleControl (page does not exist)">DE/toggleControl</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/toggleAllControls&amp;action=edit&amp;redlink=1" class="new" title="DE/toggleAllControls (page does not exist)">DE/toggleAllControls</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getCursorPosition&amp;action=edit&amp;redlink=1" class="new" title="DE/getCursorPosition (page does not exist)">DE/getCursorPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/addCommandHandler&amp;action=edit&amp;redlink=1" class="new" title="DE/addCommandHandler (page does not exist)">DE/addCommandHandler</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/removeCommandHandler&amp;action=edit&amp;redlink=1" class="new" title="DE/removeCommandHandler (page does not exist)">DE/removeCommandHandler</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/executeCommandHandler&amp;action=edit&amp;redlink=1" class="new" title="DE/executeCommandHandler (page does not exist)">DE/executeCommandHandler</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getBoundKeys&amp;action=edit&amp;redlink=1" class="new" title="DE/getBoundKeys (page does not exist)">DE/getBoundKeys</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getAnalogControlState&amp;action=edit&amp;redlink=1" class="new" title="DE/getAnalogControlState (page does not exist)">DE/getAnalogControlState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setCursorPosition&amp;action=edit&amp;redlink=1" class="new" title="DE/setCursorPosition (page does not exist)">DE/setCursorPosition</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Markerfunktionen">Markerfunktionen</span></h2>
+<ul><li><a href="createMarker.html" title="DE/createMarker">DE/createMarker</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getMarkerColor&amp;action=edit&amp;redlink=1" class="new" title="DE/getMarkerColor (page does not exist)">DE/getMarkerColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getMarkerCount&amp;action=edit&amp;redlink=1" class="new" title="DE/getMarkerCount (page does not exist)">DE/getMarkerCount</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getMarkerIcon&amp;action=edit&amp;redlink=1" class="new" title="DE/getMarkerIcon (page does not exist)">DE/getMarkerIcon</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getMarkerSize&amp;action=edit&amp;redlink=1" class="new" title="DE/getMarkerSize (page does not exist)">DE/getMarkerSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getMarkerTarget&amp;action=edit&amp;redlink=1" class="new" title="DE/getMarkerTarget (page does not exist)">DE/getMarkerTarget</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getMarkerType&amp;action=edit&amp;redlink=1" class="new" title="DE/getMarkerType (page does not exist)">DE/getMarkerType</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isElementWithinMarker&amp;action=edit&amp;redlink=1" class="new" title="DE/isElementWithinMarker (page does not exist)">DE/isElementWithinMarker</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setMarkerColor&amp;action=edit&amp;redlink=1" class="new" title="DE/setMarkerColor (page does not exist)">DE/setMarkerColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setMarkerIcon&amp;action=edit&amp;redlink=1" class="new" title="DE/setMarkerIcon (page does not exist)">DE/setMarkerIcon</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setMarkerSize&amp;action=edit&amp;redlink=1" class="new" title="DE/setMarkerSize (page does not exist)">DE/setMarkerSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setMarkerTarget&amp;action=edit&amp;redlink=1" class="new" title="DE/setMarkerTarget (page does not exist)">DE/setMarkerTarget</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setMarkerType&amp;action=edit&amp;redlink=1" class="new" title="DE/setMarkerType (page does not exist)">DE/setMarkerType</a></li></ul>
+<h2><span class="mw-headline" id="Objektfunktionen">Objektfunktionen</span></h2>
+<ul><li><a href="createObject-2.html" title="DE/createObject">DE/createObject</a></li>
+<li><a href="moveObject-2.html" title="DE/moveObject">DE/moveObject</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setObjectScale&amp;action=edit&amp;redlink=1" class="new" title="DE/setObjectScale (page does not exist)">DE/setObjectScale</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/stopObject&amp;action=edit&amp;redlink=1" class="new" title="DE/stopObject (page does not exist)">DE/stopObject</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/isObjectStatic&amp;action=edit&amp;redlink=1" class="new" title="DE/isObjectStatic (page does not exist)">DE/isObjectStatic</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setObjectStatic&amp;action=edit&amp;redlink=1" class="new" title="DE/setObjectStatic (page does not exist)">DE/setObjectStatic</a></li></ul>
+<ul><li><a href="isObjectBreakable-2.html" title="DE/isObjectBreakable">DE/isObjectBreakable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setObjectBreakable&amp;action=edit&amp;redlink=1" class="new" title="DE/setObjectBreakable (page does not exist)">DE/setObjectBreakable</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Ausgabefunktionen">Ausgabefunktionen</span></h2>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/outputChatBox&amp;action=edit&amp;redlink=1" class="new" title="DE/outputChatBox (page does not exist)">DE/outputChatBox</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/outputConsole&amp;action=edit&amp;redlink=1" class="new" title="DE/outputConsole (page does not exist)">DE/outputConsole</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/outputDebugString&amp;action=edit&amp;redlink=1" class="new" title="DE/outputDebugString (page does not exist)">DE/outputDebugString</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/showChat&amp;action=edit&amp;redlink=1" class="new" title="DE/showChat (page does not exist)">DE/showChat</a></li></ul>
+<h2><span class="mw-headline" id="Pedfunktionen">Pedfunktionen</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/canPedBeKnockedOffBike&amp;action=edit&amp;redlink=1" class="new" title="DE/canPedBeKnockedOffBike (page does not exist)">DE/canPedBeKnockedOffBike</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/createPed&amp;action=edit&amp;redlink=1" class="new" title="DE/createPed (page does not exist)">DE/createPed</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/doesPedHaveJetPack&amp;action=edit&amp;redlink=1" class="new" title="DE/doesPedHaveJetPack (page does not exist)">DE/doesPedHaveJetPack</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPedAmmoInClip&amp;action=edit&amp;redlink=1" class="new" title="DE/getPedAmmoInClip (page does not exist)">DE/getPedAmmoInClip</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPedAnimation&amp;action=edit&amp;redlink=1" class="new" title="DE/getPedAnimation (page does not exist)">DE/getPedAnimation</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPedAnimationData&amp;action=edit&amp;redlink=1" class="new" title="DE/getPedAnimationData (page does not exist)">DE/getPedAnimationData</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPedArmor&amp;action=edit&amp;redlink=1" class="new" title="DE/getPedArmor (page does not exist)">DE/getPedArmor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPedBonePosition&amp;action=edit&amp;redlink=1" class="new" title="DE/getPedBonePosition (page does not exist)">DE/getPedBonePosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPedClothes&amp;action=edit&amp;redlink=1" class="new" title="DE/getPedClothes (page does not exist)">DE/getPedClothes</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPedContactElement&amp;action=edit&amp;redlink=1" class="new" title="DE/getPedContactElement (page does not exist)">DE/getPedContactElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPedControlState&amp;action=edit&amp;redlink=1" class="new" title="DE/getPedControlState (page does not exist)">DE/getPedControlState</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/getPedMoveState&amp;action=edit&amp;redlink=1" class="new" title="DE/getPedMoveState (page does not exist)">DE/getPedMoveState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPedOccupiedVehicle&amp;action=edit&amp;redlink=1" class="new" title="DE/getPedOccupiedVehicle (page does not exist)">DE/getPedOccupiedVehicle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPedRotation&amp;action=edit&amp;redlink=1" class="new" title="DE/getPedRotation (page does not exist)">DE/getPedRotation</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPedSimplestTask&amp;action=edit&amp;redlink=1" class="new" title="DE/getPedSimplestTask (page does not exist)">DE/getPedSimplestTask</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPedSkin&amp;action=edit&amp;redlink=1" class="new" title="DE/getPedSkin (page does not exist)">DE/getPedSkin</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPedStat&amp;action=edit&amp;redlink=1" class="new" title="DE/getPedStat (page does not exist)">DE/getPedStat</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPedTarget&amp;action=edit&amp;redlink=1" class="new" title="DE/getPedTarget (page does not exist)">DE/getPedTarget</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPedTargetCollision&amp;action=edit&amp;redlink=1" class="new" title="DE/getPedTargetCollision (page does not exist)">DE/getPedTargetCollision</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPedTargetEnd&amp;action=edit&amp;redlink=1" class="new" title="DE/getPedTargetEnd (page does not exist)">DE/getPedTargetEnd</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPedTargetStart&amp;action=edit&amp;redlink=1" class="new" title="DE/getPedTargetStart (page does not exist)">DE/getPedTargetStart</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPedTask&amp;action=edit&amp;redlink=1" class="new" title="DE/getPedTask (page does not exist)">DE/getPedTask</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPedTotalAmmo&amp;action=edit&amp;redlink=1" class="new" title="DE/getPedTotalAmmo (page does not exist)">DE/getPedTotalAmmo</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPedVoice&amp;action=edit&amp;redlink=1" class="new" title="DE/getPedVoice (page does not exist)">DE/getPedVoice</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPedWeapon&amp;action=edit&amp;redlink=1" class="new" title="DE/getPedWeapon (page does not exist)">DE/getPedWeapon</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPedWeaponMuzzlePosition&amp;action=edit&amp;redlink=1" class="new" title="DE/getPedWeaponMuzzlePosition (page does not exist)">DE/getPedWeaponMuzzlePosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPedWeaponSlot&amp;action=edit&amp;redlink=1" class="new" title="DE/getPedWeaponSlot (page does not exist)">DE/getPedWeaponSlot</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isPedChoking&amp;action=edit&amp;redlink=1" class="new" title="DE/isPedChoking (page does not exist)">DE/isPedChoking</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isPedDoingGangDriveby&amp;action=edit&amp;redlink=1" class="new" title="DE/isPedDoingGangDriveby (page does not exist)">DE/isPedDoingGangDriveby</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isPedDoingTask&amp;action=edit&amp;redlink=1" class="new" title="DE/isPedDoingTask (page does not exist)">DE/isPedDoingTask</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isPedDucked&amp;action=edit&amp;redlink=1" class="new" title="DE/isPedDucked (page does not exist)">DE/isPedDucked</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isPedFrozen&amp;action=edit&amp;redlink=1" class="new" title="DE/isPedFrozen (page does not exist)">DE/isPedFrozen</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isPedHeadless&amp;action=edit&amp;redlink=1" class="new" title="DE/isPedHeadless (page does not exist)">DE/isPedHeadless</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isPedInVehicle&amp;action=edit&amp;redlink=1" class="new" title="DE/isPedInVehicle (page does not exist)">DE/isPedInVehicle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isPedInWater&amp;action=edit&amp;redlink=1" class="new" title="DE/isPedInWater (page does not exist)">DE/isPedInWater</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isPedOnFire&amp;action=edit&amp;redlink=1" class="new" title="DE/isPedOnFire (page does not exist)">DE/isPedOnFire</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isPedOnGround&amp;action=edit&amp;redlink=1" class="new" title="DE/isPedOnGround (page does not exist)">DE/isPedOnGround</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setPedAimTarget&amp;action=edit&amp;redlink=1" class="new" title="DE/setPedAimTarget (page does not exist)">DE/setPedAimTarget</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setPedAnimation&amp;action=edit&amp;redlink=1" class="new" title="DE/setPedAnimation (page does not exist)">DE/setPedAnimation</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setPedCameraRotation&amp;action=edit&amp;redlink=1" class="new" title="DE/setPedCameraRotation (page does not exist)">DE/setPedCameraRotation</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setPedCanBeKnockedOffBike&amp;action=edit&amp;redlink=1" class="new" title="DE/setPedCanBeKnockedOffBike (page does not exist)">DE/setPedCanBeKnockedOffBike</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setPedControlState&amp;action=edit&amp;redlink=1" class="new" title="DE/setPedControlState (page does not exist)">DE/setPedControlState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setPedDoingGangDriveby&amp;action=edit&amp;redlink=1" class="new" title="DE/setPedDoingGangDriveby (page does not exist)">DE/setPedDoingGangDriveby</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setPedFrozen&amp;action=edit&amp;redlink=1" class="new" title="DE/setPedFrozen (page does not exist)">DE/setPedFrozen</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setPedHeadless&amp;action=edit&amp;redlink=1" class="new" title="DE/setPedHeadless (page does not exist)">DE/setPedHeadless</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setPedLookAt&amp;action=edit&amp;redlink=1" class="new" title="DE/setPedLookAt (page does not exist)">DE/setPedLookAt</a></li>
+<li><a href="setPedOnFire.html" title="DE/setPedOnFire">DE/setPedOnFire</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setPedRotation&amp;action=edit&amp;redlink=1" class="new" title="DE/setPedRotation (page does not exist)">DE/setPedRotation</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setPedSkin&amp;action=edit&amp;redlink=1" class="new" title="DE/setPedSkin (page does not exist)">DE/setPedSkin</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setPedVoice&amp;action=edit&amp;redlink=1" class="new" title="DE/setPedVoice (page does not exist)">DE/setPedVoice</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setPedWeaponSlot&amp;action=edit&amp;redlink=1" class="new" title="DE/setPedWeaponSlot (page does not exist)">DE/setPedWeaponSlot</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setPedFootBloodEnabled&amp;action=edit&amp;redlink=1" class="new" title="DE/setPedFootBloodEnabled (page does not exist)">DE/setPedFootBloodEnabled</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Pickupfunktionen">Pickupfunktionen</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/createPickup&amp;action=edit&amp;redlink=1" class="new" title="DE/createPickup (page does not exist)">DE/createPickup</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPickupAmmo&amp;action=edit&amp;redlink=1" class="new" title="DE/getPickupAmmo (page does not exist)">DE/getPickupAmmo</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPickupAmount&amp;action=edit&amp;redlink=1" class="new" title="DE/getPickupAmount (page does not exist)">DE/getPickupAmount</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPickupType&amp;action=edit&amp;redlink=1" class="new" title="DE/getPickupType (page does not exist)">DE/getPickupType</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPickupWeapon&amp;action=edit&amp;redlink=1" class="new" title="DE/getPickupWeapon (page does not exist)">DE/getPickupWeapon</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setPickupType&amp;action=edit&amp;redlink=1" class="new" title="DE/setPickupType (page does not exist)">DE/setPickupType</a></li></ul>
+<h2><span class="mw-headline" id="Spielerfunktionen">Spielerfunktionen</span></h2>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/getLocalPlayer&amp;action=edit&amp;redlink=1" class="new" title="DE/getLocalPlayer (page does not exist)">DE/getLocalPlayer</a></li>
+<li> <a href="getPlayerFromName.html" title="DE/getPlayerFromName">DE/getPlayerFromName</a></li>
+<li> <a href="getPlayerName.html" title="DE/getPlayerName">DE/getPlayerName</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getPlayerNametagColor&amp;action=edit&amp;redlink=1" class="new" title="DE/getPlayerNametagColor (page does not exist)">DE/getPlayerNametagColor</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getPlayerNametagText&amp;action=edit&amp;redlink=1" class="new" title="DE/getPlayerNametagText (page does not exist)">DE/getPlayerNametagText</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getPlayerPing&amp;action=edit&amp;redlink=1" class="new" title="DE/getPlayerPing (page does not exist)">DE/getPlayerPing</a></li>
+<li> <a href="getPlayerTeam.html" title="DE/getPlayerTeam">DE/getPlayerTeam</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getPlayerWantedLevel&amp;action=edit&amp;redlink=1" class="new" title="DE/getPlayerWantedLevel (page does not exist)">DE/getPlayerWantedLevel</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/isPlayerDead&amp;action=edit&amp;redlink=1" class="new" title="DE/isPlayerDead (page does not exist)">DE/isPlayerDeada</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/isPlayerMapForced&amp;action=edit&amp;redlink=1" class="new" title="DE/isPlayerMapForced (page does not exist)">DE/isPlayerMapForced</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/isPlayerMapVisible&amp;action=edit&amp;redlink=1" class="new" title="DE/isPlayerMapVisible (page does not exist)">DE/isPlayerMapVisible</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/isPlayerNametagShowing&amp;action=edit&amp;redlink=1" class="new" title="DE/isPlayerNametagShowing (page does not exist)">DE/isPlayerNametagShowing</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/showPlayerHudComponent&amp;action=edit&amp;redlink=1" class="new" title="DE/showPlayerHudComponent (page does not exist)">DE/showPlayerHudComponent</a></li></ul>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/getPlayerMapBoundingBox&amp;action=edit&amp;redlink=1" class="new" title="DE/getPlayerMapBoundingBox (page does not exist)">DE/getPlayerMapBoundingBox</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getPlayerMoney&amp;action=edit&amp;redlink=1" class="new" title="DE/getPlayerMoney (page does not exist)">DE/getPlayerMoney</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/givePlayerMoney&amp;action=edit&amp;redlink=1" class="new" title="DE/givePlayerMoney (page does not exist)">DE/givePlayerMoney</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setPlayerMoney&amp;action=edit&amp;redlink=1" class="new" title="DE/setPlayerMoney (page does not exist)">DE/setPlayerMoney</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setPlayerNametagColor&amp;action=edit&amp;redlink=1" class="new" title="DE/setPlayerNametagColor (page does not exist)">DE/setPlayerNametagColor</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setPlayerNametagShowing&amp;action=edit&amp;redlink=1" class="new" title="DE/setPlayerNametagShowing (page does not exist)">DE/setPlayerNametagShowing</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setPlayerNametagText&amp;action=edit&amp;redlink=1" class="new" title="DE/setPlayerNametagText (page does not exist)">DE/setPlayerNametagText</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/takePlayerMoney&amp;action=edit&amp;redlink=1" class="new" title="DE/takePlayerMoney (page does not exist)">DE/takePlayerMoney</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Projektilfunktionen">Projektilfunktionen</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/createProjectile&amp;action=edit&amp;redlink=1" class="new" title="DE/createProjectile (page does not exist)">DE/createProjectile</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/getProjectileCreator&amp;action=edit&amp;redlink=1" class="new" title="DE/getProjectileCreator (page does not exist)">DE/getProjectileCreator</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getProjectileForce&amp;action=edit&amp;redlink=1" class="new" title="DE/getProjectileForce (page does not exist)">DE/getProjectileForce</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getProjectileTarget&amp;action=edit&amp;redlink=1" class="new" title="DE/getProjectileTarget (page does not exist)">DE/getProjectileTarget</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/getProjectileType&amp;action=edit&amp;redlink=1" class="new" title="DE/getProjectileType (page does not exist)">DE/getProjectileType</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/detonateSatchels&amp;action=edit&amp;redlink=1" class="new" title="DE/detonateSatchels (page does not exist)">DE/detonateSatchels</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Radar-Arena_Funktionen">Radar-Arena Funktionen</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/createRadarArea&amp;action=edit&amp;redlink=1" class="new" title="DE/createRadarArea (page does not exist)">DE/createRadarArea</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/getRadarAreaColor&amp;action=edit&amp;redlink=1" class="new" title="DE/getRadarAreaColor (page does not exist)">DE/getRadarAreaColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getRadarAreaSize&amp;action=edit&amp;redlink=1" class="new" title="DE/getRadarAreaSize (page does not exist)">DE/getRadarAreaSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isInsideRadarArea&amp;action=edit&amp;redlink=1" class="new" title="DE/isInsideRadarArea (page does not exist)">DE/isInsideRadarArea</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isRadarAreaFlashing&amp;action=edit&amp;redlink=1" class="new" title="DE/isRadarAreaFlashing (page does not exist)">DE/isRadarAreaFlashing</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setRadarAreaColor&amp;action=edit&amp;redlink=1" class="new" title="DE/setRadarAreaColor (page does not exist)">DE/setRadarAreaColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setRadarAreaFlashing&amp;action=edit&amp;redlink=1" class="new" title="DE/setRadarAreaFlashing (page does not exist)">DE/setRadarAreaFlashing</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setRadarAreaSize&amp;action=edit&amp;redlink=1" class="new" title="DE/setRadarAreaSize (page does not exist)">DE/setRadarAreaSize</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Ressourcenfunktionen">Ressourcenfunktionen</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/call&amp;action=edit&amp;redlink=1" class="new" title="DE/call (page does not exist)">DE/call</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getResourceConfig&amp;action=edit&amp;redlink=1" class="new" title="DE/getResourceConfig (page does not exist)">DE/getResourceConfig</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getResourceDynamicElementRoot&amp;action=edit&amp;redlink=1" class="new" title="DE/getResourceDynamicElementRoot (page does not exist)">DE/getResourceDynamicElementRoot</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/getResourceExportedFunctions&amp;action=edit&amp;redlink=1" class="new" title="DE/getResourceExportedFunctions (page does not exist)">DE/getResourceExportedFunctions</a></li>
+<li><a href="getResourceFromName.html" title="DE/getResourceFromName">DE/getResourceFromName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getResourceGUIElement&amp;action=edit&amp;redlink=1" class="new" title="DE/getResourceGUIElement (page does not exist)">DE/getResourceGUIElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getResourceName&amp;action=edit&amp;redlink=1" class="new" title="DE/getResourceName (page does not exist)">DE/getResourceName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getResourceRootElement&amp;action=edit&amp;redlink=1" class="new" title="DE/getResourceRootElement (page does not exist)">DE/getResourceRootElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getThisResource&amp;action=edit&amp;redlink=1" class="new" title="DE/getThisResource (page does not exist)">DE/getThisResource</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Serialfunktionen">Serialfunktionen</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/getPlayerUserName&amp;action=edit&amp;redlink=1" class="new" title="DE/getPlayerUserName (page does not exist)">DE/getPlayerUserName</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/getPlayerSerial&amp;action=edit&amp;redlink=1" class="new" title="DE/getPlayerSerial (page does not exist)">DE/getPlayerSerial</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Teamfunktionen">Teamfunktionen</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/countPlayersInTeam&amp;action=edit&amp;redlink=1" class="new" title="DE/countPlayersInTeam (page does not exist)">DE/countPlayersInTeam</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getTeamColor&amp;action=edit&amp;redlink=1" class="new" title="DE/getTeamColor (page does not exist)">DE/getTeamColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getTeamFriendlyFire&amp;action=edit&amp;redlink=1" class="new" title="DE/getTeamFriendlyFire (page does not exist)">DE/getTeamFriendlyFire</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getTeamFromName&amp;action=edit&amp;redlink=1" class="new" title="DE/getTeamFromName (page does not exist)">DE/getTeamFromName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getTeamName&amp;action=edit&amp;redlink=1" class="new" title="DE/getTeamName (page does not exist)">DE/getTeamName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getPlayersInTeam&amp;action=edit&amp;redlink=1" class="new" title="DE/getPlayersInTeam (page does not exist)">DE/getPlayersInTeam</a></li></ul>
+<h2><span class="mw-headline" id="Werkzeugfunktionen">Werkzeugfunktionen</span></h2>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/getDistanceBetweenPoints2D&amp;action=edit&amp;redlink=1" class="new" title="DE/getDistanceBetweenPoints2D (page does not exist)">DE/getDistanceBetweenPoints2D</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getDistanceBetweenPoints3D&amp;action=edit&amp;redlink=1" class="new" title="DE/getDistanceBetweenPoints3D (page does not exist)">DE/getDistanceBetweenPoints3D</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getEasingValue&amp;action=edit&amp;redlink=1" class="new" title="DE/getEasingValue (page does not exist)">DE/getEasingValue</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/interpolateBetween&amp;action=edit&amp;redlink=1" class="new" title="DE/interpolateBetween (page does not exist)">DE/interpolateBetween</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getColorFromString&amp;action=edit&amp;redlink=1" class="new" title="DE/getColorFromString (page does not exist)">DE/getColorFromString</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getRealTime&amp;action=edit&amp;redlink=1" class="new" title="DE/getRealTime (page does not exist)">DE/getRealTime</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getTickCount&amp;action=edit&amp;redlink=1" class="new" title="DE/getTickCount (page does not exist)">DE/getTickCount</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getTimerDetails&amp;action=edit&amp;redlink=1" class="new" title="DE/getTimerDetails (page does not exist)">DE/getTimerDetails</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getNetworkStats&amp;action=edit&amp;redlink=1" class="new" title="DE/getNetworkStats (page does not exist)">DE/getNetworkStats</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setClipboard&amp;action=edit&amp;redlink=1" class="new" title="DE/setClipboard (page does not exist)">DE/setClipboard</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getTimers&amp;action=edit&amp;redlink=1" class="new" title="DE/getTimers (page does not exist)">DE/getTimers</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/gettok&amp;action=edit&amp;redlink=1" class="new" title="DE/gettok (page does not exist)">DE/gettok</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/killTimer&amp;action=edit&amp;redlink=1" class="new" title="DE/killTimer (page does not exist)">DE/killTimer</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/resetTimer&amp;action=edit&amp;redlink=1" class="new" title="DE/resetTimer (page does not exist)">DE/resetTimer</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setTimer&amp;action=edit&amp;redlink=1" class="new" title="DE/setTimer (page does not exist)">DE/setTimer</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/split&amp;action=edit&amp;redlink=1" class="new" title="DE/split (page does not exist)">DE/split</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getVersion&amp;action=edit&amp;redlink=1" class="new" title="DE/getVersion (page does not exist)">DE/getVersion</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/isTimer&amp;action=edit&amp;redlink=1" class="new" title="DE/isTimer (page does not exist)">DE/isTimer</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/md5&amp;action=edit&amp;redlink=1" class="new" title="DE/md5 (page does not exist)">DE/md5</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/tocolor&amp;action=edit&amp;redlink=1" class="new" title="DE/tocolor (page does not exist)">DE/tocolor</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/utfChar&amp;action=edit&amp;redlink=1" class="new" title="DE/utfChar (page does not exist)">DE/utfChar</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/utfCode&amp;action=edit&amp;redlink=1" class="new" title="DE/utfCode (page does not exist)">DE/utfCode</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/utfLen&amp;action=edit&amp;redlink=1" class="new" title="DE/utfLen (page does not exist)">DE/utfLen</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/utfSeek&amp;action=edit&amp;redlink=1" class="new" title="DE/utfSeek (page does not exist)">DE/utfSeek</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/utfSub&amp;action=edit&amp;redlink=1" class="new" title="DE/utfSub (page does not exist)">DE/utfSub</a></li></ul>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/toJSON&amp;action=edit&amp;redlink=1" class="new" title="DE/toJSON (page does not exist)">DE/toJSON</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/fromJSON&amp;action=edit&amp;redlink=1" class="new" title="DE/fromJSON (page does not exist)">DE/fromJSON</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setDevelopmentMode&amp;action=edit&amp;redlink=1" class="new" title="DE/setDevelopmentMode (page does not exist)">DE/setDevelopmentMode</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getDevelopmentMode&amp;action=edit&amp;redlink=1" class="new" title="DE/getDevelopmentMode (page does not exist)">DE/getDevelopmentMode</a></li></ul>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/downloadFile&amp;action=edit&amp;redlink=1" class="new" title="DE/downloadFile (page does not exist)">DE/downloadFile</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Fahrzeugfunktionen">Fahrzeugfunktionen</span></h2>
+<ul><li><a href="addVehicleUpgrade.html" title="DE/addVehicleUpgrade">DE/addVehicleUpgrade</a></li>
+<li><a href="attachTrailerToVehicle.html" title="DE/attachTrailerToVehicle">DE/attachTrailerToVehicle</a></li>
+<li><a href="blowVehicle.html" title="DE/blowVehicle">DE/blowVehicle</a></li>
+<li><a href="detachTrailerFromVehicle.html" title="DE/detachTrailerFromVehicle">DE/detachTrailerFromVehicle</a></li>
+<li><a href="createVehicle.html" title="DE/createVehicle">DE/createVehicle</a></li>
+<li><a href="fixVehicle.html" title="DE/fixVehicle">DE/fixVehicle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleAdjustableProperty&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleAdjustableProperty (page does not exist)">DE/getVehicleAdjustableProperty</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleColor&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleColor (page does not exist)">DE/getVehicleColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleCompatibleUpgrades&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleCompatibleUpgrades (page does not exist)">DE/getVehicleCompatibleUpgrades</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleController&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleController (page does not exist)">DE/getVehicleController</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleDoorState&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleDoorState (page does not exist)">DE/getVehicleDoorState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleEngineState&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleEngineState (page does not exist)">DE/getVehicleEngineState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleLandingGearDown&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleLandingGearDown (page does not exist)">DE/getVehicleLandingGearDown</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleLightState&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleLightState (page does not exist)">DE/getVehicleLightState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleMaxPassengers&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleMaxPassengers (page does not exist)">DE/getVehicleMaxPassengers</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleName&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleName (page does not exist)">DE/getVehicleName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleOccupant&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleOccupant (page does not exist)">DE/getVehicleOccupant</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleOccupants&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleOccupants (page does not exist)">DE/getVehicleOccupants</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleCurrentGear&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleCurrentGear (page does not exist)">DE/getVehicleCurrentGear</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleOverrideLights&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleOverrideLights (page does not exist)">DE/getVehicleOverrideLights</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehiclePaintjob&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehiclePaintjob (page does not exist)">DE/getVehiclePaintjob</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehiclePanelState&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehiclePanelState (page does not exist)">DE/getVehiclePanelState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehiclePlateText&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehiclePlateText (page does not exist)">DE/getVehiclePlateText</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleRotation&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleRotation (page does not exist)">DE/getVehicleRotation</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleSirensOn&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleSirensOn (page does not exist)">DE/getVehicleSirensOn</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleTowedByVehicle&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleTowedByVehicle (page does not exist)">DE/getVehicleTowedByVehicle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleTowingVehicle&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleTowingVehicle (page does not exist)">DE/getVehicleTowingVehicle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleTurnVelocity&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleTurnVelocity (page does not exist)">DE/getVehicleTurnVelocity</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleTurretPosition&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleTurretPosition (page does not exist)">DE/getVehicleTurretPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleUpgradeOnSlot&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleUpgradeOnSlot (page does not exist)">DE/getVehicleUpgradeOnSlot</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleUpgrades&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleUpgrades (page does not exist)">DE/getVehicleUpgrades</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleUpgradeSlotName&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleUpgradeSlotName (page does not exist)">DE/getVehicleUpgradeSlotName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleWheelStates&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleWheelStates (page does not exist)">DE/getVehicleWheelStates</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleDoorOpenRatio&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleDoorOpenRatio (page does not exist)">DE/getVehicleDoorOpenRatio</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleHandling&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleHandling (page does not exist)">DE/getVehicleHandling</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getOriginalHandling&amp;action=edit&amp;redlink=1" class="new" title="DE/getOriginalHandling (page does not exist)">DE/getOriginalHandling</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isVehicleDamageProof&amp;action=edit&amp;redlink=1" class="new" title="DE/isVehicleDamageProof (page does not exist)">DE/isVehicleDamageProof</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isVehicleFrozen&amp;action=edit&amp;redlink=1" class="new" title="DE/isVehicleFrozen (page does not exist)">DE/isVehicleFrozen</a></li>
+<li><a href="isVehicleFuelTankExplodable.html" title="DE/isVehicleFuelTankExplodable">DE/isVehicleFuelTankExplodable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isVehicleLocked&amp;action=edit&amp;redlink=1" class="new" title="DE/isVehicleLocked (page does not exist)">DE/isVehicleLocked</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isVehicleOnGround&amp;action=edit&amp;redlink=1" class="new" title="DE/isVehicleOnGround (page does not exist)">DE/isVehicleOnGround</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/removeVehicleUpgrade&amp;action=edit&amp;redlink=1" class="new" title="DE/removeVehicleUpgrade (page does not exist)">DE/removeVehicleUpgrade</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setVehicleAdjustableProperty&amp;action=edit&amp;redlink=1" class="new" title="DE/setVehicleAdjustableProperty (page does not exist)">DE/setVehicleAdjustableProperty</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setVehicleColor&amp;action=edit&amp;redlink=1" class="new" title="DE/setVehicleColor (page does not exist)">DE/setVehicleColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setVehicleDamageProof&amp;action=edit&amp;redlink=1" class="new" title="DE/setVehicleDamageProof (page does not exist)">DE/setVehicleDamageProof</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setVehicleDirtLevel&amp;action=edit&amp;redlink=1" class="new" title="DE/setVehicleDirtLevel (page does not exist)">DE/setVehicleDirtLevel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setVehicleDoorState&amp;action=edit&amp;redlink=1" class="new" title="DE/setVehicleDoorState (page does not exist)">DE/setVehicleDoorState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setVehicleDoorsUndamageable&amp;action=edit&amp;redlink=1" class="new" title="DE/setVehicleDoorsUndamageable (page does not exist)">DE/setVehicleDoorsUndamageable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setVehicleEngineState&amp;action=edit&amp;redlink=1" class="new" title="DE/setVehicleEngineState (page does not exist)">DE/setVehicleEngineState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setVehicleFrozen&amp;action=edit&amp;redlink=1" class="new" title="DE/setVehicleFrozen (page does not exist)">DE/setVehicleFrozen</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setVehicleFuelTankExplodable&amp;action=edit&amp;redlink=1" class="new" title="DE/setVehicleFuelTankExplodable (page does not exist)">DE/setVehicleFuelTankExplodable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setVehicleLandingGearDown&amp;action=edit&amp;redlink=1" class="new" title="DE/setVehicleLandingGearDown (page does not exist)">DE/setVehicleLandingGearDown</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setVehicleLightState&amp;action=edit&amp;redlink=1" class="new" title="DE/setVehicleLightState (page does not exist)">DE/setVehicleLightState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setVehicleLocked&amp;action=edit&amp;redlink=1" class="new" title="DE/setVehicleLocked (page does not exist)">DE/setVehicleLocked</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setVehicleOverrideLights&amp;action=edit&amp;redlink=1" class="new" title="DE/setVehicleOverrideLights (page does not exist)">DE/setVehicleOverrideLights</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setVehiclePaintjob&amp;action=edit&amp;redlink=1" class="new" title="DE/setVehiclePaintjob (page does not exist)">DE/setVehiclePaintjob</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setVehiclePanelState&amp;action=edit&amp;redlink=1" class="new" title="DE/setVehiclePanelState (page does not exist)">DE/setVehiclePanelState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setVehicleRotation&amp;action=edit&amp;redlink=1" class="new" title="DE/setVehicleRotation (page does not exist)">DE/setVehicleRotation</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setVehicleSirensOn&amp;action=edit&amp;redlink=1" class="new" title="DE/setVehicleSirensOn (page does not exist)">DE/setVehicleSirensOn</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setVehicleTurretPosition&amp;action=edit&amp;redlink=1" class="new" title="DE/setVehicleTurretPosition (page does not exist)">DE/setVehicleTurretPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setVehicleDoorOpenRatio&amp;action=edit&amp;redlink=1" class="new" title="DE/setVehicleDoorOpenRatio (page does not exist)">DE/setVehicleDoorOpenRatio</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setVehicleTurnVelocity&amp;action=edit&amp;redlink=1" class="new" title="DE/setVehicleTurnVelocity (page does not exist)">DE/setVehicleTurnVelocity</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setVehicleWheelStates&amp;action=edit&amp;redlink=1" class="new" title="DE/setVehicleWheelStates (page does not exist)">DE/setVehicleWheelStates</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getHelicopterRotorSpeed&amp;action=edit&amp;redlink=1" class="new" title="DE/getHelicopterRotorSpeed (page does not exist)">DE/getHelicopterRotorSpeed</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getTrainDirection&amp;action=edit&amp;redlink=1" class="new" title="DE/getTrainDirection (page does not exist)">DE/getTrainDirection</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getTrainSpeed&amp;action=edit&amp;redlink=1" class="new" title="DE/getTrainSpeed (page does not exist)">DE/getTrainSpeed</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleGravity&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleGravity (page does not exist)">DE/getVehicleGravity</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleHeadLightColor&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleHeadLightColor (page does not exist)">DE/getVehicleHeadLightColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleModelFromName&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleModelFromName (page does not exist)">DE/getVehicleModelFromName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleNameFromModel&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleNameFromModel (page does not exist)">DE/getVehicleNameFromModel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleType&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleType (page does not exist)">DE/getVehicleType</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isTrainDerailable&amp;action=edit&amp;redlink=1" class="new" title="DE/isTrainDerailable (page does not exist)">DE/isTrainDerailable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isTrainDerailed&amp;action=edit&amp;redlink=1" class="new" title="DE/isTrainDerailed (page does not exist)">DE/isTrainDerailed</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isVehicleBlown&amp;action=edit&amp;redlink=1" class="new" title="DE/isVehicleBlown (page does not exist)">DE/isVehicleBlown</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/isVehicleTaxiLightOn&amp;action=edit&amp;redlink=1" class="new" title="DE/isVehicleTaxiLightOn (page does not exist)">DE/isVehicleTaxiLightOn</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setHelicopterRotorSpeed&amp;action=edit&amp;redlink=1" class="new" title="DE/setHelicopterRotorSpeed (page does not exist)">DE/setHelicopterRotorSpeed</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setTrainDerailable&amp;action=edit&amp;redlink=1" class="new" title="DE/setTrainDerailable (page does not exist)">DE/setTrainDerailable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setTrainDerailed&amp;action=edit&amp;redlink=1" class="new" title="DE/setTrainDerailed (page does not exist)">DE/setTrainDerailed</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setTrainDirection&amp;action=edit&amp;redlink=1" class="new" title="DE/setTrainDirection (page does not exist)">DE/setTrainDirection</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setTrainSpeed&amp;action=edit&amp;redlink=1" class="new" title="DE/setTrainSpeed (page does not exist)">DE/setTrainSpeed</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setVehicleGravity&amp;action=edit&amp;redlink=1" class="new" title="DE/setVehicleGravity (page does not exist)">DE/setVehicleGravity</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setVehicleHeadLightColor&amp;action=edit&amp;redlink=1" class="new" title="DE/setVehicleHeadLightColor (page does not exist)">DE/setVehicleHeadLightColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setVehicleTaxiLightOn&amp;action=edit&amp;redlink=1" class="new" title="DE/setVehicleTaxiLightOn (page does not exist)">DE/setVehicleTaxiLightOn</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleVariant&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleVariant (page does not exist)">DE/getVehicleVariant</a></li></ul>
+<div style="font-weight: bold;background:black;color:white;padding:2px; padding-left:8px;">FROM VERSION 1.4 <a rel="nofollow" class="external text" href="http://code.google.com/p/mtasa-blue/source/detail?r=3966"><span style="color: #FFFFFF;">r3966</span></a> ONWARDS</div><div style="border: 2px solid black;padding: 3px;">
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/getVehicleSirenParams&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleSirenParams (page does not exist)">DE/getVehicleSirenParams</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/removeVehicleSirens&amp;action=edit&amp;redlink=1" class="new" title="DE/removeVehicleSirens (page does not exist)">DE/removeVehicleSirens</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getVehicleSirens&amp;action=edit&amp;redlink=1" class="new" title="DE/getVehicleSirens (page does not exist)">DE/getVehicleSirens</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setVehicleSirens&amp;action=edit&amp;redlink=1" class="new" title="DE/setVehicleSirens (page does not exist)">DE/setVehicleSirens</a></li></ul>
+ </div>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Wasserfunktionen">Wasserfunktionen</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/createWater&amp;action=edit&amp;redlink=1" class="new" title="DE/createWater (page does not exist)">DE/createWater</a></li></ul>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/getWaterColor&amp;action=edit&amp;redlink=1" class="new" title="DE/getWaterColor (page does not exist)">DE/getWaterColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getWaterVertexPosition&amp;action=edit&amp;redlink=1" class="new" title="DE/getWaterVertexPosition (page does not exist)">DE/getWaterVertexPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getWaterLevel&amp;action=edit&amp;redlink=1" class="new" title="DE/getWaterLevel (page does not exist)">DE/getWaterLevel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getWaveHeight&amp;action=edit&amp;redlink=1" class="new" title="DE/getWaveHeight (page does not exist)">DE/getWaveHeight</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/resetWaterColor&amp;action=edit&amp;redlink=1" class="new" title="DE/resetWaterColor (page does not exist)">DE/resetWaterColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setWaterColor&amp;action=edit&amp;redlink=1" class="new" title="DE/setWaterColor (page does not exist)">DE/setWaterColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setWaterLevel&amp;action=edit&amp;redlink=1" class="new" title="DE/setWaterLevel (page does not exist)">DE/setWaterLevel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setWaterVertexPosition&amp;action=edit&amp;redlink=1" class="new" title="DE/setWaterVertexPosition (page does not exist)">DE/setWaterVertexPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/setWaveHeight&amp;action=edit&amp;redlink=1" class="new" title="DE/setWaveHeight (page does not exist)">DE/setWaveHeight</a></li></ul>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/resetWaterLevel&amp;action=edit&amp;redlink=1" class="new" title="DE/resetWaterLevel (page does not exist)">DE/resetWaterLevel</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Waffenfunktionen">Waffenfunktionen</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/getWeaponIDFromName&amp;action=edit&amp;redlink=1" class="new" title="DE/getWeaponIDFromName (page does not exist)">DE/getWeaponIDFromName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getWeaponNameFromID&amp;action=edit&amp;redlink=1" class="new" title="DE/getWeaponNameFromID (page does not exist)">DE/getWeaponNameFromID</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/getWeaponProperty&amp;action=edit&amp;redlink=1" class="new" title="DE/getWeaponProperty (page does not exist)">DE/getWeaponProperty</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/getOriginalWeaponProperty&amp;action=edit&amp;redlink=1" class="new" title="DE/getOriginalWeaponProperty (page does not exist)">DE/getOriginalWeaponProperty</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Weltfunktionen">Weltfunktionen</span></h2>
+<ul><li> <a href="http://wiki.localhost/index.php?title=DE/areTrafficLightsLocked&amp;action=edit&amp;redlink=1" class="new" title="DE/areTrafficLightsLocked (page does not exist)">DE/areTrafficLightsLocked</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getAircraftMaxHeight&amp;action=edit&amp;redlink=1" class="new" title="DE/getAircraftMaxHeight (page does not exist)">DE/getAircraftMaxHeight</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getCloudsEnabled&amp;action=edit&amp;redlink=1" class="new" title="DE/getCloudsEnabled (page does not exist)">DE/getCloudsEnabled</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getGameSpeed&amp;action=edit&amp;redlink=1" class="new" title="DE/getGameSpeed (page does not exist)">DE/getGameSpeed</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getGravity&amp;action=edit&amp;redlink=1" class="new" title="DE/getGravity (page does not exist)">DE/getGravity</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getGroundPosition&amp;action=edit&amp;redlink=1" class="new" title="DE/getGroundPosition (page does not exist)">DE/getGroundPosition</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getHeatHaze&amp;action=edit&amp;redlink=1" class="new" title="DE/getHeatHaze (page does not exist)">DE/getHeatHaze</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getJetpackMaxHeight&amp;action=edit&amp;redlink=1" class="new" title="DE/getJetpackMaxHeight (page does not exist)">DE/getJetpackMaxHeight</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getScreenFromWorldPosition&amp;action=edit&amp;redlink=1" class="new" title="DE/getScreenFromWorldPosition (page does not exist)">DE/getScreenFromWorldPosition</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getTime&amp;action=edit&amp;redlink=1" class="new" title="DE/getTime (page does not exist)">DE/getTime</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getTrafficLightState&amp;action=edit&amp;redlink=1" class="new" title="DE/getTrafficLightState (page does not exist)">DE/getTrafficLightState</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getWeather&amp;action=edit&amp;redlink=1" class="new" title="DE/getWeather (page does not exist)">DE/getWeather</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getWindVelocity&amp;action=edit&amp;redlink=1" class="new" title="DE/getWindVelocity (page does not exist)">DE/getWindVelocity</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getWorldFromScreenPosition&amp;action=edit&amp;redlink=1" class="new" title="DE/getWorldFromScreenPosition (page does not exist)">DE/getWorldFromScreenPosition</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getZoneName&amp;action=edit&amp;redlink=1" class="new" title="DE/getZoneName (page does not exist)">DE/getZoneName</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/isLineOfSightClear&amp;action=edit&amp;redlink=1" class="new" title="DE/isLineOfSightClear (page does not exist)">DE/isLineOfSightClear</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/processLineOfSight&amp;action=edit&amp;redlink=1" class="new" title="DE/processLineOfSight (page does not exist)">DE/processLineOfSight</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/resetHeatHaze&amp;action=edit&amp;redlink=1" class="new" title="DE/resetHeatHaze (page does not exist)">DE/resetHeatHaze</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/resetSkyGradient&amp;action=edit&amp;redlink=1" class="new" title="DE/resetSkyGradient (page does not exist)">DE/resetSkyGradient</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/resetWindVelocity&amp;action=edit&amp;redlink=1" class="new" title="DE/resetWindVelocity (page does not exist)">DE/resetWindVelocity</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setAircraftMaxHeight&amp;action=edit&amp;redlink=1" class="new" title="DE/setAircraftMaxHeight (page does not exist)">DE/setAircraftMaxHeight</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setCloudsEnabled&amp;action=edit&amp;redlink=1" class="new" title="DE/setCloudsEnabled (page does not exist)">DE/setCloudsEnabled</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setGameSpeed&amp;action=edit&amp;redlink=1" class="new" title="DE/setGameSpeed (page does not exist)">DE/setGameSpeed</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setGravity&amp;action=edit&amp;redlink=1" class="new" title="DE/setGravity (page does not exist)">DE/setGravity</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setHeatHaze&amp;action=edit&amp;redlink=1" class="new" title="DE/setHeatHaze (page does not exist)">DE/setHeatHaze</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setSkyGradient&amp;action=edit&amp;redlink=1" class="new" title="DE/setSkyGradient (page does not exist)">DE/setSkyGradient</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setTime&amp;action=edit&amp;redlink=1" class="new" title="DE/setTime (page does not exist)">DE/setTime</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setTrafficLightState&amp;action=edit&amp;redlink=1" class="new" title="DE/setTrafficLightState (page does not exist)">DE/setTrafficLightState</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setTrafficLightsLocked&amp;action=edit&amp;redlink=1" class="new" title="DE/setTrafficLightsLocked (page does not exist)">DE/setTrafficLightsLocked</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setWeather&amp;action=edit&amp;redlink=1" class="new" title="DE/setWeather (page does not exist)">DE/setWeather</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setWeatherBlended&amp;action=edit&amp;redlink=1" class="new" title="DE/setWeatherBlended (page does not exist)">DE/setWeatherBlended</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setWindVelocity&amp;action=edit&amp;redlink=1" class="new" title="DE/setWindVelocity (page does not exist)">DE/setWindVelocity</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/testLineAgainstWater&amp;action=edit&amp;redlink=1" class="new" title="DE/testLineAgainstWater (page does not exist)">DE/testLineAgainstWater</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getGarageBoundingBox&amp;action=edit&amp;redlink=1" class="new" title="DE/getGarageBoundingBox (page does not exist)">DE/getGarageBoundingBox</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getGaragePosition&amp;action=edit&amp;redlink=1" class="new" title="DE/getGaragePosition (page does not exist)">DE/getGaragePosition</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getGarageSize&amp;action=edit&amp;redlink=1" class="new" title="DE/getGarageSize (page does not exist)">DE/getGarageSize</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getMinuteDuration&amp;action=edit&amp;redlink=1" class="new" title="DE/getMinuteDuration (page does not exist)">DE/getMinuteDuration</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getPlayerBlurLevel&amp;action=edit&amp;redlink=1" class="new" title="DE/getPlayerBlurLevel (page does not exist)">DE/getPlayerBlurLevel</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/isGarageOpen&amp;action=edit&amp;redlink=1" class="new" title="DE/isGarageOpen (page does not exist)">DE/isGarageOpen</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/isWorldSpecialPropertyEnabled&amp;action=edit&amp;redlink=1" class="new" title="DE/isWorldSpecialPropertyEnabled (page does not exist)">DE/isWorldSpecialPropertyEnabled</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setCloudsEnabled&amp;action=edit&amp;redlink=1" class="new" title="DE/setCloudsEnabled (page does not exist)">DE/setCloudsEnabled</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setGarageOpen&amp;action=edit&amp;redlink=1" class="new" title="DE/setGarageOpen (page does not exist)">DE/setGarageOpen</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setJetpackMaxHeight&amp;action=edit&amp;redlink=1" class="new" title="DE/setJetpackMaxHeight (page does not exist)">DE/setJetpackMaxHeight</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setMinuteDuration&amp;action=edit&amp;redlink=1" class="new" title="DE/setMinuteDuration (page does not exist)">DE/setMinuteDuration</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setPlayerBlurLevel&amp;action=edit&amp;redlink=1" class="new" title="DE/setPlayerBlurLevel (page does not exist)">DE/setPlayerBlurLevel</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setWorldSpecialPropertyEnabled&amp;action=edit&amp;redlink=1" class="new" title="DE/setWorldSpecialPropertyEnabled (page does not exist)">DE/setWorldSpecialPropertyEnabled</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setAmbientSoundEnabled&amp;action=edit&amp;redlink=1" class="new" title="DE/setAmbientSoundEnabled (page does not exist)">DE/setAmbientSoundEnabled</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/isAmbientSoundEnabled&amp;action=edit&amp;redlink=1" class="new" title="DE/isAmbientSoundEnabled (page does not exist)">DE/isAmbientSoundEnabled</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/resetAmbientSounds&amp;action=edit&amp;redlink=1" class="new" title="DE/resetAmbientSounds (page does not exist)">DE/resetAmbientSounds</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setInteriorSoundsEnabled&amp;action=edit&amp;redlink=1" class="new" title="DE/setInteriorSoundsEnabled (page does not exist)">DE/setInteriorSoundsEnabled</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getInteriorSoundsEnabled&amp;action=edit&amp;redlink=1" class="new" title="DE/getInteriorSoundsEnabled (page does not exist)">DE/getInteriorSoundsEnabled</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setRainLevel&amp;action=edit&amp;redlink=1" class="new" title="DE/setRainLevel (page does not exist)">DE/setRainLevel</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getRainLevel&amp;action=edit&amp;redlink=1" class="new" title="DE/getRainLevel (page does not exist)">DE/getRainLevel</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/resetRainLevel&amp;action=edit&amp;redlink=1" class="new" title="DE/resetRainLevel (page does not exist)">DE/resetRainLevel</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setSunSize&amp;action=edit&amp;redlink=1" class="new" title="DE/setSunSize (page does not exist)">DE/setSunSize</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getSunSize&amp;action=edit&amp;redlink=1" class="new" title="DE/getSunSize (page does not exist)">DE/getSunSize</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/resetSunSize&amp;action=edit&amp;redlink=1" class="new" title="DE/resetSunSize (page does not exist)">DE/resetSunSize</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setSunColor&amp;action=edit&amp;redlink=1" class="new" title="DE/setSunColor (page does not exist)">DE/setSunColor</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getSunColor&amp;action=edit&amp;redlink=1" class="new" title="DE/getSunColor (page does not exist)">DE/getSunColor</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/resetSunColor&amp;action=edit&amp;redlink=1" class="new" title="DE/resetSunColor (page does not exist)">DE/resetSunColor</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setFarClipDistance&amp;action=edit&amp;redlink=1" class="new" title="DE/setFarClipDistance (page does not exist)">DE/setFarClipDistance</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getFarClipDistance&amp;action=edit&amp;redlink=1" class="new" title="DE/getFarClipDistance (page does not exist)">DE/getFarClipDistance</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/resetFarClipDistance&amp;action=edit&amp;redlink=1" class="new" title="DE/resetFarClipDistance (page does not exist)">DE/resetFarClipDistance</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setFogDistance&amp;action=edit&amp;redlink=1" class="new" title="DE/setFogDistance (page does not exist)">DE/setFogDistance</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getFogDistance&amp;action=edit&amp;redlink=1" class="new" title="DE/getFogDistance (page does not exist)">DE/getFogDistance</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/resetFogDistance&amp;action=edit&amp;redlink=1" class="new" title="DE/resetFogDistance (page does not exist)">DE/resetFogDistance</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/createSWATRope&amp;action=edit&amp;redlink=1" class="new" title="DE/createSWATRope (page does not exist)">DE/createSWATRope</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/removeWorldModel&amp;action=edit&amp;redlink=1" class="new" title="DE/removeWorldModel (page does not exist)">DE/removeWorldModel</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/restoreWorldModel&amp;action=edit&amp;redlink=1" class="new" title="DE/restoreWorldModel (page does not exist)">DE/restoreWorldModel</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/restoreAllWorldModels&amp;action=edit&amp;redlink=1" class="new" title="DE/restoreAllWorldModels (page does not exist)">DE/restoreAllWorldModels</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setOcclusionsEnabled&amp;action=edit&amp;redlink=1" class="new" title="DE/setOcclusionsEnabled (page does not exist)">DE/setOcclusionsEnabled</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getOcclusionsEnabled&amp;action=edit&amp;redlink=1" class="new" title="DE/getOcclusionsEnabled (page does not exist)">DE/getOcclusionsEnabled</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/setBirdsEnabled&amp;action=edit&amp;redlink=1" class="new" title="DE/setBirdsEnabled (page does not exist)">DE/setBirdsEnabled</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=DE/getBirdsEnabled&amp;action=edit&amp;redlink=1" class="new" title="DE/getBirdsEnabled (page does not exist)">DE/getBirdsEnabled</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="XML-Funktionen">XML-Funktionen</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/xmlCopyFile&amp;action=edit&amp;redlink=1" class="new" title="DE/xmlCopyFile (page does not exist)">DE/xmlCopyFile</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/xmlCreateFile&amp;action=edit&amp;redlink=1" class="new" title="DE/xmlCreateFile (page does not exist)">DE/xmlCreateFile</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/xmlDestroyNode&amp;action=edit&amp;redlink=1" class="new" title="DE/xmlDestroyNode (page does not exist)">DE/xmlDestroyNode</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/xmlLoadFile&amp;action=edit&amp;redlink=1" class="new" title="DE/xmlLoadFile (page does not exist)">DE/xmlLoadFile</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/xmlNodeGetAttribute&amp;action=edit&amp;redlink=1" class="new" title="DE/xmlNodeGetAttribute (page does not exist)">DE/xmlNodeGetAttribute</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/xmlNodeGetValue&amp;action=edit&amp;redlink=1" class="new" title="DE/xmlNodeGetValue (page does not exist)">DE/xmlNodeGetValue</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/xmlNodeSetAttribute&amp;action=edit&amp;redlink=1" class="new" title="DE/xmlNodeSetAttribute (page does not exist)">DE/xmlNodeSetAttribute</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/xmlNodeSetValue&amp;action=edit&amp;redlink=1" class="new" title="DE/xmlNodeSetValue (page does not exist)">DE/xmlNodeSetValue</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/xmlSaveFile&amp;action=edit&amp;redlink=1" class="new" title="DE/xmlSaveFile (page does not exist)">DE/xmlSaveFile</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/xmlUnloadFile&amp;action=edit&amp;redlink=1" class="new" title="DE/xmlUnloadFile (page does not exist)">DE/xmlUnloadFile</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=DE/xmlCreateChild&amp;action=edit&amp;redlink=1" class="new" title="DE/xmlCreateChild (page does not exist)">DE/xmlCreateChild</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/xmlFindChild&amp;action=edit&amp;redlink=1" class="new" title="DE/xmlFindChild (page does not exist)">DE/xmlFindChild</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/xmlNodeGetAttributes&amp;action=edit&amp;redlink=1" class="new" title="DE/xmlNodeGetAttributes (page does not exist)">DE/xmlNodeGetAttributes</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/xmlNodeGetChildren&amp;action=edit&amp;redlink=1" class="new" title="DE/xmlNodeGetChildren (page does not exist)">DE/xmlNodeGetChildren</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/xmlNodeGetName&amp;action=edit&amp;redlink=1" class="new" title="DE/xmlNodeGetName (page does not exist)">DE/xmlNodeGetName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/xmlNodeGetParent&amp;action=edit&amp;redlink=1" class="new" title="DE/xmlNodeGetParent (page does not exist)">DE/xmlNodeGetParent</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DE/xmlNodeSetName&amp;action=edit&amp;redlink=1" class="new" title="DE/xmlNodeSetName (page does not exist)">DE/xmlNodeSetName</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625165401
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.127 seconds
+Real time usage: 0.157 seconds
+Preprocessor visited node count: 1517/1000000
+Preprocessor generated node count: 1926/1000000
+Post‐expand include size: 30583/2097152 bytes
+Template argument size: 4762/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   84.644      1 - -total
+ 29.05%   24.586     33 - Template:DE/New_items
+ 23.94%   20.267     47 - Template:Current_Version
+ 13.72%   11.615      1 - Template:DE/GUI_functions
+  9.17%    7.759      9 - Template:New_items
+  7.34%    6.214      1 - Template:DE/Client_pickup_functions
+  6.00%    5.082      1 - Template:DE/Client_audio_functions
+  4.06%    3.433      1 - Template:DE/Drawing_functions
+  3.73%    3.155      1 - Template:DE/Client_camera_functions
+  3.68%    3.115      1 - Template:DE/Client_vehicle_functions
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:6297-0!*!0!!en!*!* and timestamp 20190625165401 and revision id 35644
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=DE/Clientseitige_Funktionen&amp;oldid=35644">https://wiki.multitheftauto.com/index.php?title=DE/Clientseitige_Funktionen&amp;oldid=35644</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="../Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="../Category_Changes_in_1-5.html" title="Category:Changes in 1.4">Changes in 1.4</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Clientseitige_Funktionen.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk"><a href="../Talk_DE/Clientseitige_Funktionen.html" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=DE/Clientseitige_Funktionen&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=DE/Clientseitige_Funktionen&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=DE%2FClientseitige+Funktionen" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=DE%2FClientseitige+Funktionen" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/DE/Clientseitige_Funktionen.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/DE/Clientseitige_Funktionen.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=DE/Clientseitige_Funktionen&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=DE/Clientseitige_Funktionen&amp;oldid=35644" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=DE/Clientseitige_Funktionen&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=Client_Scripting_Functions" title="Client Scripting Functions – English" lang="en" hreflang="en">English</a></li>
+													<li class="interlanguage-link interwiki-tr"><a href="http://wiki.multitheftauto.com/index.php?title=TR/Client_Tarafl%C4%B1_Fonksiyonlar" title="Client Taraflı Fonksiyonlar – Türkçe" lang="tr" hreflang="tr">Türkçe</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 30 April 2013, at 12:05.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":244});});</script></body></html>

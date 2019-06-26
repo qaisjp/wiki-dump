@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Wstęp do pisania skryptów - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Wstęp_do_pisania_skryptów","wgTitle":"Wstęp do pisania skryptów","wgCurRevisionId":44121,"wgRevisionId":44121,"wgArticleId":5756,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Wstęp_do_pisania_skryptów","wgRelevantArticleId":5756,"wgRequestId":"b54d89d45e6dbef5fbf86ef1","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Wstęp_do_pisania_skryptów rootpage-Wstęp_do_pisania_skryptów skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Wstęp do pisania skryptów</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>Zasoby są kluczową częścią MTA. Najprościej rzecz ujmując, zasób to folder lub plik .zip, który zawiera zbiór plików, oraz dodatkowo plik meta, który opisuje serwerowi jak zasób powinien być ładowany i jakie pliki zawiera. Zasób w MTA, w przełożeniu na bardziej znane środowisko systemu operacyjnego, odpowiada programowi lub usłudze (sys. Windows), działającego pod jego kontrolą - mogą być uruchamiane i zatrzymywane, przy czym wiele z nich może działać jednocześnie (multitasking).
+</p><p>Wszystko, co dzieje się wokół skryptów, dzieje się w zasobach, które to definiują, czy jest to gamemode, mapa, czy też cokolwiek innego. MTA jest dostępne do pobrania z wieloma zasobami, których to można opcjonalnie użyć w swoich gamemodach, np. takimi jak maplimits (zatrzymuje graczy w określonych granicach na mapie), deathpickups (tworzy pickupy z brońmi), czy też admin (panel administratora).
+</p><p><br />
+</p>
+<table cellspacing="0" style="padding: 5px; width: 80%; margin: 2px auto 2px auto; border: 1px solid #81C687; background: #E2FFE5; border-left: 10px solid #81C687;">
+<tr>
+<td style="width: 32px; vertical-align:top; display: none;" rowspan="2"> [[{{{image}}}|link=]]
+</td>
+<td style=""> <b>Wskazówka:</b> Pierwszym krokiem na drodze pisania skryptów w LUA powinno być używanie odpowiedniego edytora skryptów. Ułatwi to znacznie pisanie skryptów. Polecamy <a rel="nofollow" class="external text" href="http://notepad-plus.sourceforge.net/uk/site.htm">Notepad++</a> lub <a rel="nofollow" class="external text" href="http://luaedit.sourceforge.net/">LuaEdit</a>. Istnieje także nieoficjalny <a href="MTASE.html" title="MTASE">MTA Script Editor</a> (w stanie in-development), którego także można użyć.
+</td></tr>
+<tr>
+<td rowspan="1" style="padding-left: 10px;">
+</td></tr></table>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Tworzymy_dzia.C5.82aj.C4.85cy_skrypt"><span class="tocnumber">1</span> <span class="toctext">Tworzymy działający skrypt</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Ale_gdzie_zacz.C4.85.C4.87.3F"><span class="tocnumber">1.1</span> <span class="toctext">Ale gdzie zacząć?</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Identyfikujemy_sw.C3.B3j_zas.C3.B3b"><span class="tocnumber">1.2</span> <span class="toctext">Identyfikujemy swój zasób</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Piszemy_prosty_skrypt"><span class="tocnumber">1.3</span> <span class="toctext">Piszemy prosty skrypt</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Uruchamianie_skryptu"><span class="tocnumber">1.4</span> <span class="toctext">Uruchamianie skryptu</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Tworzymy_prost.C4.85_komend.C4.99"><span class="tocnumber">2</span> <span class="toctext">Tworzymy prostą komendę</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#O_command_handlerach"><span class="tocnumber">2.1</span> <span class="toctext">O command handlerach</span></a>
+<ul>
+<li class="toclevel-3 tocsection-8"><a href="#Piszemy_funkcj.C4.99"><span class="tocnumber">2.1.1</span> <span class="toctext">Piszemy funkcję</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Tworzymy_dzia.C5.82aj.C4.85cy_skrypt">Tworzymy działający skrypt</span></h2>
+<p>Najpierw nauczymy się, krok po kroku, jak stworzyć podstawowy, prosty skrypt, który pozwoli graczowi chodzić po mieście Los Santos.
+</p>
+<h3><span class="mw-headline" id="Ale_gdzie_zacz.C4.85.C4.87.3F">Ale gdzie zacząć?</span></h3>
+<p>Spójrzmy na strukturę skryptów. Wejdź do swojego folderu serwera MTA (MTA Server), a następnie w poniższą ścieżkę:
+</p>
+<pre>       /MTA Server/mods/deathmatch/resources/
+</pre>
+<p>Powinieneś zobaczyć dużo plików .zip, które są przykładowymi skryptami, dostarczanymi wraz z MTA. Każdy plik jest "zasobem", oraz mogą być rozpakowane i załadowane przez serwer, kiedy jest uruchamiany. Aby stworzyć swój własny zasób, po prostu utwórz folder z preferowaną nazwą. Do celów tego samouczka, użyjemy nazwy "myserver".
+</p><p>Powinieneś być teraz w tym katalogu:
+</p>
+<pre>       /MTA Server/mods/deathmatch/resources/myserver/
+</pre>
+<h3><span class="mw-headline" id="Identyfikujemy_sw.C3.B3j_zas.C3.B3b">Identyfikujemy swój zasób</span></h3>
+<p>Aby serwer wiedział, co znajduje się w zasobie, plik <i>meta.xml</i> musi zostać stworzony, aby wylistować wszystkie pliki zasobu serwerowi. Musi on znajdować się w głównym katalogu naszego zasobu (w tym przypadku, "myserver"). Tak więc, stwórz plik tekstowy i nazwij go "meta.xml", oraz otwórz go do edycji.
+</p><p>Wpisz do pliku <i>meta.xml</i> ponizszy kod:
+</p>
+<pre class="prettyprint lang-xml">
+&lt;meta&gt;
+     &lt;info author="TwojNick" version="0.1" type="gamemode" name="My Server" description="Moj pierwszy serwer MTA" /&gt;
+     &lt;script src="script.lua" type="server" /&gt;
+&lt;/meta&gt;
+</pre>
+<p>W znaczniku <i>&lt;info /&gt;</i> znajduje się pole "type", które wskazuje na typ zasobu (może być to: gamemode, zwykły include lub mapa, która zostanie objaśniona w dalszej części). Gamemode to właśnie to, czego potrzebujesz, aby utworzyć działający serwer.
+</p><p>Znacznik <i>&lt;script /&gt;</i> wskazuje na pliki skryptów (.lua), które znajdują się w zasobie, większość z nich utworzysz samodzielnie później.
+</p>
+<h3><span class="mw-headline" id="Piszemy_prosty_skrypt">Piszemy prosty skrypt</span></h3>
+<p>Zauważ, że w znaczniku <i>&lt;script /&gt;</i> plik skryptu .lua umieściliśmy w bieżącym katalogu (gdybyśmy chcieli inaczej, zawsze jest taka możliwości, działa to dokładnie tak, jak w HTML'u). Teraz utwórzmy ten plik.
+Możesz teraz skopiować i wkleić poniższy kod do pliku script.lua:
+</p>
+<pre class="prettyprint lang-lua">
+function joinHandler()
+	local x = 1959.55
+	local y = -1714.46
+	local z = 15
+	spawnPlayer(source, x, y, z)
+	fadeCamera(source, true)
+	setCameraTarget(source, source)
+	outputChatBox("Witaj na moim serwerze!", source)
+end
+addEventHandler("onPlayerJoin", getRootElement(), joinHandler)
+</pre>
+<p>Skrypt ten zespawnuję cię w powyższych koordynatach (x, y, z), kiedy tylko dołączysz do gry. Zauważ, że funkcja <i>fadeCamera</i> musi zostać tutaj użyta, inaczej ekran byłby cały czas czarny. Także, w wydaniach MTA po DP2, musisz ustawić cel kamery (inaczej gracz zobaczy tylko niebo).
+</p><p>Zmienna <b>source</b> wskazuje, kto wywołał event (zdarzenie). Gdy gracz dołączy, kiedy kod jest wykonywany, zmiennej tej używa się, aby zobaczyć, kto dołączył. Dzięki niej, zespawnuję docelowego gracza, zamiast każdego, lub losowej osoby.
+</p><p>Jeżeli bliżej przyjrzymy się funkcji <a href="AddEventHandler.html" title="AddEventHandler">addEventHandler</a>, możemy zauważyć 3 rzeczy: zdarzenie 'onPlayerJoin', który wskazuje, kiedy event jest wywoływany; getRootElement(), które pokazuje kto/co może go wywołać (getRootElement() to wszystko/każdy), oraz joinHandler, które wskazuje na funkcję, która ma być wywołana po tym, kiedy event się zaczął. Wszelakie inne detale zostaną wyjaśnione w dalszej części. Teraz można już uruchomić serwer, oraz wytestować skrypt!
+</p>
+<h3><span class="mw-headline" id="Uruchamianie_skryptu">Uruchamianie skryptu</span></h3>
+<p>Żeby wystartować serwer pod kontrolą systemu Windows, po prostu uruchom plik wykonywalny w katalogu twojego serwera MTA. Na początku wyświetlą się dane twojego serwera. Zanotuj numer portu, którego będziesz potem potrzebował, przy dołączaniu do gry. Następnie serwer załaduje wszystkie zasoby (załaduje, ale nie uruchomi), które znajdują się w katalogu /resources/, i finalnie, stanie się dostępny dla graczy ("ready to accept connections!").
+</p><p>Zanim podłączysz się do serwera, musisz wpierw uruchomić gamemode. To logiczne, po to, aby można było mieć na "czymś" grać. Wpisz "gamemode myserver", oraz wciśnij Enter. Serwer uruchomi twój świeżo utworzony gamemode, a także wyświetli tutaj listę wszystkich błędów/ostrzeżeń. Wreszcie, możesz uruchomić klienta MTA, wybrać opcję "Quick Connect" i używając swojego adresu IP, oraz portu (który zdobyliśmy wcześniej) połączyć się. Jeżeli wszystko pójdzie dobrze, za kilka chwil twoja postać będzie wędrowała po ulicach Los Santos.
+</p><p>Następnie, utworzymy prostą komendę do wcześniejszego skryptu, którą gracze będą mogli używać, aby przywoływać sobie pojazdy, blisko ich pozycji. Możesz pominąć tą część, i przejść do bardziej zaawansowanego skryptowania z <a href="Map_manager.html" title="Map manager" class="mw-redirect">Map Managerem</a>, które kontynuuje ten samouczek. Inną drogą jest przejście do samouczka <a href="Introduction_to_Scripting_the_GUI.html" title="Introduction to Scripting the GUI">Wstęp do pisania skryptów z GUI</a>, gdzie wyjaśnione jest, jak interfejs graficzny jest rysowany oraz oskryptowany w MTA.
+</p>
+<h2><span class="mw-headline" id="Tworzymy_prost.C4.85_komend.C4.99">Tworzymy prostą komendę</span></h2>
+<p>Wróćmy więc do zawartości pliku <i>script.lua</i>. Jak zostało wspomniane wyżej, stworzymy komendę, po której wywołaniu obok bieżącej pozycji gracza pojawi się wybrany pojazd. Po pierwsze, musimy utworzyć funkcję, którą będziemy wzywali wywołaniem komendy, oraz tzw. <i>command handler</i>, który tworzy i powoduje, że komenda może być wprowadzona przez gracza w konsoli.
+</p>
+<pre class="prettyprint lang-lua">
+-- tworzymy funkcję, którą będzie wzywał command handler, z argumentami thePlayer (gracz), command (komenda), vehicleModel (model pojazdu)
+function createVehicleForPlayer(thePlayer, command, vehicleModel)
+   -- Tutaj stworzymy i zespawnujemy pojazd
+end
+
+-- tworzymy command handler
+addCommandHandler("stworzpojazd", createVehicleForPlayer)
+</pre>
+<p><i>Notka: kliknięcie nazwy funkcji powoduje przejście do strony z informacjami na jej temat.</i>
+</p>
+<h3><span class="mw-headline" id="O_command_handlerach">O command handlerach</span></h3>
+<p>Pierwszym argumentem funkcji <a href="AddCommandHandler.html" title="AddCommandHandler">addCommandHandler</a> jest nazwa komendy, którą gracz może wprowadzić, drugim argumentem jest nazwa funkcji, którą chcielibyśmy wywołać, w tym przypadku <i>createVehicleForPlayer</i>.
+</p><p>Jeżeli masz już doświadczenie w programowaniu, zapewne wiesz, jak wygląda typowa postać funkcji:
+</p>
+<pre class="prettyprint lang-lua">
+nazwaFunkcji(argument1, argument2, argument3, ..)
+</pre>
+<pre class="prettyprint lang-lua">
+nazwaFunkcji(thePlayer, commandName, argument3, ..)
+</pre>
+<p>Jeżeli bliżej przypatrzymy się powyższemu przykładowi, zobaczymy, że argumentem1 jest thePlayer, a argumentem2 jest commandName. thePlayer jest po prostu zmienną oznaczającą kto wprowadził komendę, więc jakkolwiek byś jej nie nazwał, będzie zawierała gracza, który aktywował komendę. commandName jest komendą, którą gracz wprowadził. Także, jeżeli gracz wpisałby np. "/alarm", ten argument zawierałby wartość typu string "alarm". Argument3 jest czymś dodatkowym, co tylko wpisze gracz za komendą, będzie to później omawiane. Nigdy nie zapomnij, że pierwsze 2 argumenty są obowiązkowe, lecz możesz je nazwać dowolnie.
+</p><p>Dlatego też najpierw wywołaliśmy funkcję, do której <a href="AddCommandHandler.html" title="AddCommandHandler">addCommandHandler</a> się odwołuje, a potem dopiero dodaliśmy command handler. W innym przypadku komenda nie zostałaby poprawnie przypisana do funkcji. Zalecany jest taki porządek.
+</p><p>Dla przykładu: ktoś wpisze w konsoli "/stworzpojazd 468", aby stworzyć obok siebie Sancheza, command handler wywoła funkcję createVehicleForPlayer, która będzie wyglądała tak, kiedy argumenty zostaną do niej przekazane:
+</p>
+<pre class="prettyprint lang-lua">
+createVehicleForPlayer(thePlayer,"stworzpojazd","468") -- thePlayer to zmienna typu element (gracz), która wskazuje na tego gracza, który wprowadził komendę
+</pre>
+<p>Jak możemy zobaczyć, dostarczane jest kilka parametrów: gracza, który wywołał komendę, treść komendy, oraz wartość, która została wprowadzona po niej, w tym przypadku "486" (ID Sancheza). Pierwsze dwa parametry będą takie same we wszystkich command handlerach, można to doczytać na stronie funkcji <a href="AddCommandHandler.html" title="AddCommandHandler">addCommandHandler</a>. W wyniku tego, zawsze będziesz musiał definiować przynajmniej dwa pierwsze argumenty, aby potem dodać ich dowolną ilość (dla przykładu, jakieś wartości, które funkcja ma przetwarzać)
+</p><p><i>Przypomnienie: Musisz zawsze dodawać command handler PO funkcji, którą definiowałeś. Porządek wykonania ma znaczenie, inaczej command handler jej nie znajdzie.</i>
+</p>
+<h4><span class="mw-headline" id="Piszemy_funkcj.C4.99">Piszemy funkcję</span></h4>
+<p>Aby prawidłowo "zapełnić" naszą funkcję, powinniśmy pomyśleć o rzeczach, które ma zrobić:
+</p>
+<ul><li> Pobrać pozycję gracza, skąd będziemy wiedzieli, gdzie respawnować pojazd (chcemy, aby pojawił się po lewej stronie)</li>
+<li> Obliczyć dokładną pozycję spawnu auta (nie chcemy, aby spadło na gracza)</li>
+<li> Zespawnować podany pojazd</li>
+<li> Sprawdzić, czy się udało, w innym wypadku wypisać komunikat</li></ul>
+<p>Aby dokonać tego celu, będziemy potrzebować kilku funkcji. Aby znaleźć funkcje, których będziemy potrzebować, powinniśmy odwiedzić <a href="Scripting_Functions.html" title="Scripting Functions" class="mw-redirect">Server Functions List</a>. Po pierwsze, potrzebujemy funkcji, która pobierze i zwróci pozycję gracza. Odkąd gracze są Elementami, przejdziemy najpierw do <b>Element functions</b>, gdzie znajdziemy funkcję <a href="GetElementPosition.html" title="GetElementPosition">getElementPosition</a>. Klikając nazwę funkcji na liście, pokaże się jej opis. Możemy tam zobaczyć jej składnię, co zwraca, oraz przykłady użycia. Składnia pokazuje nam, jakich argumentów trzeba użyć:
+</p><p>Dla <a href="GetElementPosition.html" title="GetElementPosition">getElementPosition</a>, składnia wygląda tak:
+</p>
+<pre class="prettyprint lang-lua">
+float, float, float getElementPosition ( element theElement )
+</pre>
+<p>Trzy zmienne typu <i>float</i> na początku oznaczają wartości, które funkcja zwraca. W tym wypadku są to 3 wartości typu zmiennoprzecinkowego (floating point) (x, y i z). W nawiasach możesz dostrzec argumenty, które musisz dostarczyć funkcji, aby została prawidłowo wykonana. W tym przypadku będzie to jedynie element (gracz), którego pozycję chcesz znać.
+</p>
+<pre class="prettyprint lang-lua">
+function createVehicleForPlayer(thePlayer, command, vehicleModel)
+	-- pobierz pozycję i zapisz ją w zmiennych x,y,z
+	-- (local znaczy, że zmienna będzie istniała tylko w obrębie tej funkcji, przeciwieństwo globalnej zmiennej)
+	local x,y,z = getElementPosition(thePlayer)
+end
+</pre>
+<p>Następnie chcemy mieć pewność, że pojazd nie zespawnuje się przygniatając gracza, toteż dodamy kilka jednostek do zmiennej x, aby go przesunąć na wschód:
+</p>
+<pre class="prettyprint lang-lua">
+function createVehicleForPlayer(thePlayer, command, vehicleModel)
+	local x,y,z = getElementPosition(thePlayer) -- pobierz pozycję gracza
+	x = x + 5 -- dodaj 5 jednostek do pozycji
+end
+</pre>
+<p>Teraz potrzebujemy następnej, innej funkcji, która będzie spawnować podane auto. Raz jeszcze poszukamy jej w <a href="Scripting_Functions.html" title="Scripting Functions" class="mw-redirect">Server Functions List</a>, tym razem powinna być w kategorii <b>Vehicle functions</b>, gdzie wybierzemy właściwą: <a href="CreateVehicle.html" title="CreateVehicle">createVehicle</a>. W składnie tej funkcji mamy tylko jedną rzecz, którą zwraca (jest to często spotykane), element typu vehicle, który wskazuje na spawnowany pojazd. Także, możemy zauważyć argumenty objęte nawiasem kwadratowym, które są opcjonalne.
+</p><p>Mamy już wszystkie argumenty, których potrzebujemy dla <a href="CreateVehicle.html" title="CreateVehicle">createVehicle</a> w naszej funkcji: Pozycję, którą obliczyliśmy w zmiennych <i>x,y,z</i>, oraz model pojazdu, który dostarczymy przez komendę ("stworzpojazd 486"), oraz możliwość dostępu do funkcji przez zmienną <i>vehicleModel</i> (model pojazdu)
+</p>
+<pre class="prettyprint lang-lua">
+function createVehicleForPlayer(thePlayer, command, vehicleModel)
+	local x,y,z = getElementPosition(thePlayer) -- pobierz pozycję gracza
+	x = x + 5 -- dodaj 5 jednostek do pozycji
+	-- Stwórz pojazd i przechowaj element typu vehicle w zmiennej ''createdVehicle''
+	local createdVehicle = createVehicle(tonumber(vehicleModel),x,y,z)
+end
+</pre>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625164525
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.008 seconds
+Real time usage: 0.016 seconds
+Preprocessor visited node count: 140/1000000
+Preprocessor generated node count: 521/1000000
+Post‐expand include size: 1882/2097152 bytes
+Template argument size: 1203/2097152 bytes
+Highest expansion depth: 5/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    8.644      1 - -total
+100.00%    8.644      1 - Template:PL/Tip
+ 22.37%    1.934      1 - Template:MessageBox
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:5756-0!*!0!!en!*!* and timestamp 20190625164525 and revision id 44121
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=Wst%c4%99p_do_pisania_skrypt%c3%b3w&amp;oldid=44121">https://wiki.multitheftauto.com/index.php?title=Wstęp_do_pisania_skryptów&amp;oldid=44121</a>"</div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Wst%c4%99p_do_pisania_skrypt%c3%b3w.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:Wst%C4%99p_do_pisania_skrypt%C3%B3w&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=Wst%C4%99p_do_pisania_skrypt%C3%B3w&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=Wst%C4%99p_do_pisania_skrypt%C3%B3w&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=Wst%C4%99p+do+pisania+skrypt%C3%B3w" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=Wst%C4%99p+do+pisania+skrypt%C3%B3w" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/Wst%c4%99p_do_pisania_skrypt%c3%b3w.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/Wst%c4%99p_do_pisania_skrypt%c3%b3w.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=Wst%C4%99p_do_pisania_skrypt%C3%B3w&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=Wst%C4%99p_do_pisania_skrypt%C3%B3w&amp;oldid=44121" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=Wst%C4%99p_do_pisania_skrypt%C3%B3w&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+			</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 27 January 2015, at 08:30.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":55});});</script></body></html>

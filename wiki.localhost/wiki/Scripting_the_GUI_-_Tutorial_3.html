@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Scripting the GUI - Tutorial 3 - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Scripting_the_GUI_-_Tutorial_3","wgTitle":"Scripting the GUI - Tutorial 3","wgCurRevisionId":60346,"wgRevisionId":60346,"wgArticleId":5026,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["GUI Tutorials"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Scripting_the_GUI_-_Tutorial_3","wgRelevantArticleId":5026,"wgRequestId":"f4c6826a95b2de79ac698988","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Scripting_the_GUI_-_Tutorial_3 rootpage-Scripting_the_GUI_-_Tutorial_3 skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Scripting the GUI - Tutorial 3</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><b>Scripting the GUI - Tutorial 3 (Scrolling News Feed)</b>
+</p><p>In this tutorial we will explore how to create a simple scrolling news feed GUI, 
+allowing you to quickly and easily show server updates and other server information to your players.
+We will store all news items in a clientside xml file and use some simple xml reading to load them into the game.
+</p><p>We will then animate the news item to scroll along the bottom of the screen, updating the news text once it has scrolled beyond the edge of the screen.
+</p><p><b>Note that this tutorial assumes you are familiar with all the content covered in the <a href="Introduction_to_Scripting_GUI.html" title="Introduction to Scripting GUI" class="mw-redirect">GUI Scripting Introduction</a>.</b>
+</p><p><br />
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Setting_up_the_News_Feed"><span class="tocnumber">1</span> <span class="toctext">Setting up the News Feed</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Creating_the_GUI"><span class="tocnumber">1.1</span> <span class="toctext">Creating the GUI</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Writing_the_News"><span class="tocnumber">1.2</span> <span class="toctext">Writing the News</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Collecting_the_News"><span class="tocnumber">1.3</span> <span class="toctext">Collecting the News</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Updating_the_News"><span class="tocnumber">2</span> <span class="toctext">Updating the News</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Sizing_the_Label"><span class="tocnumber">2.1</span> <span class="toctext">Sizing the Label</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Positioning_the_Label"><span class="tocnumber">2.2</span> <span class="toctext">Positioning the Label</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Scrolling_the_News"><span class="tocnumber">3</span> <span class="toctext">Scrolling the News</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Looking_at_Frames"><span class="tocnumber">3.1</span> <span class="toctext">Looking at Frames</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Moving_the_News"><span class="tocnumber">3.2</span> <span class="toctext">Moving the News</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Looping_around"><span class="tocnumber">3.3</span> <span class="toctext">Looping around</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Improving_the_code"><span class="tocnumber">4</span> <span class="toctext">Improving the code</span></a>
+<ul>
+<li class="toclevel-2 tocsection-13"><a href="#GUI_Customisation"><span class="tocnumber">4.1</span> <span class="toctext">GUI Customisation</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Multiple_News_Items"><span class="tocnumber">4.2</span> <span class="toctext">Multiple News Items</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Globally_controlled_scroll_speed"><span class="tocnumber">4.3</span> <span class="toctext">Globally controlled scroll speed</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Setting_up_the_News_Feed">Setting up the News Feed</span></h2>
+<p>To begin, open up a clientside lua file (if you have been following the <a href="Introduction_to_Scripting_GUI.html" title="Introduction to Scripting GUI" class="mw-redirect">GUI Scripting Introduction</a>, this is gui.lua) to work with.
+</p>
+<h3><span class="mw-headline" id="Creating_the_GUI">Creating the GUI</span></h3>
+<p>As with the previous tutorial, you should be suitably familiar with GUI creation already so we will not go into too much detail here. 
+</p>
+<pre class="prettyprint lang-lua">
+function createNewsFeed()
+	-- get the screen width and height
+	local sWidth, sHeight = guiGetScreenSize()
+ 
+	-- create the gridlist, using some maths to find the bottom-centre of the screen
+	local Width,Height = 800,45
+	local X = (sWidth/2) - (Width/2)
+	local Y = sHeight - (Height/2)
+	
+	-- the gridlist will act as the background to our news reel
+	newsGridlist = guiCreateGridList(X,Y,Width,Height,false)
+	
+	-- create the label in the same place, but as a child of the gridlist
+	-- also make it half the height of the gridlist, as half of the gridlist is off the bottom of the screen
+	newsLabel = guiCreateLabel(X,Y,Width,Height/2,"Test text",false,newsGridlist)
+	
+	-- call our function to read the news out of the xml file
+	loadNews()
+	
+	-- load the first news item in the table
+	updateNewsItem(1)
+	
+	-- define a global variable called 'currentItem' with the value 1
+	currentItem = 1
+end
+
+addEventHandler("onClientResourceStart",resourceRoot,createNewsFeed)
+</pre>
+<p>Note that the label is created as a child of the gridlist. 
+Not only is this good practice in general, but it means that we can freely move parts of the label beyond the edge of the gridlist without them showing, which is critical to the visual effect of this tutorial.
+</p><p>Also notice the use of the 'resourceRoot' variable. This is an MTA variable that holds the root element value of the resource you are using it in.
+</p><p>The 'currentItem' variable is what we will use to keep track of which news item we are currently showing
+</p>
+<h3><span class="mw-headline" id="Writing_the_News">Writing the News</span></h3>
+<p>Now that we have our GUI created, we need some news to fill it with.
+To do this, we will read our news items out of a clientside xml file.
+</p><p>So, navigate to your resource directory and create a new xml file called newsfeed.xml (don't forget to add it to your meta.xml with the appropriate client tag).
+</p><p>Inside this file enter the following information:
+</p>
+<pre class="prettyprint lang-lua">
+&lt;root&gt;
+	&lt;news&gt;This is an example news item.&lt;/news&gt;
+	&lt;news&gt;From the 'Scripting the GUI' tutorial.&lt;/news&gt;
+	&lt;news&gt;Showing scrolling news text.&lt;/news&gt;
+	&lt;news&gt;Written on a GUI news feed.&lt;/news&gt;
+&lt;/root&gt;
+</pre>
+<p>As you can see, each news item is defined as a &lt;news&gt; node with the value being the news text you want to display.
+There is no limit on how many news items you can add.
+</p>
+<h3><span class="mw-headline" id="Collecting_the_News">Collecting the News</span></h3>
+<p>Once we have written all our news items, we will need to collect them all and store them in a table on the client.
+We will do this when the resource starts, saving us from having to repeatedly access the xml for new news items.
+</p><p>First, we need to define a table to store the items in:
+</p>
+<pre class="prettyprint lang-lua">
+local newsItems = {}
+</pre>
+<p>Add this line to the top of your script.
+Make sure it is not inside a function otherwise it will not exist outside of that function (as denoted by the prefix "local").
+When defined in the main body of the script it will exist in all functions.
+</p><p><br />
+Next, we will need to load the xml file:
+</p>
+<pre class="prettyprint lang-lua">
+function loadNews()
+	-- load our "newsfeed.xml" file
+	local newsfile = xmlLoadFile("newsfeed.xml")
+	
+	-- if it was successfully loaded
+	if newsfile then
+	
+		-- always remember to unload files once you are finished
+		xmlUnloadFile(newsfile)
+	end
+end
+</pre>
+<p><b>Always remember to unload files once you are finished using them.</b>
+</p><p>Finally, we can add some more code to our loadNews function to read the news items into our newsItems table:
+</p>
+<pre class="prettyprint lang-lua">
+function loadNews()
+	local newsfile = xmlLoadFile("newsfeed.xml")
+	
+	if newsfile then
+		-- loop through all the children of the root node (the "news" nodes)
+		for index,itemNode in ipairs(xmlNodeGetChildren(newsfile)) do
+			-- get the text (the news item) from the node
+			local item = xmlNodeGetValue(itemNode)
+			
+			-- insert it into our newsItems table
+			table.insert(newsItems,item)
+		end
+	
+		xmlUnloadFile(newsfile)
+	end
+end
+</pre>
+<p>We now have a table called 'newsItems' holding all of our news text from the xml file.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Updating_the_News">Updating the News</span></h2>
+<p>Now that we have our GUI created and our news items ready, we need to write some code to update the news item being shown to players.
+As stated earlier, our news items will be shown on our 'newsLabel' GUI label.
+</p><p>To do this, we will write a simple function to get the next news item from our 'newsItems' table and display it in our label.
+</p>
+<pre class="prettyprint lang-lua">
+-- define our function with a newIndex parameter, so that we can pass which news item we want to show
+function updateNewsItem(newIndex)
+	-- get the new news item from the table
+	local item = newsItems[newIndex]
+	
+	-- update the label text
+	guiSetText(newsLabel,item)
+	
+	-- update the 'currentItem' global variable
+	currentItem = newIndex
+end
+</pre>
+<h3><span class="mw-headline" id="Sizing_the_Label">Sizing the Label</span></h3>
+<p>To make our news scrolling as accurate as possible, we need to be able to make the GUI label the same size as the news item text it is showing.
+</p><p>While this may seem like a tricky thing to do, it is made very easy with the function <a href="GuiLabelGetTextExtent.html" title="GuiLabelGetTextExtent">guiLabelGetTextExtent</a>.
+This will tell us the extent, or width, of the text currently shown in our label.
+So with a few modifications to our 'updateNewsItems' function, we get:
+</p>
+<pre class="prettyprint lang-lua">
+function updateNewsItem(newIndex)
+	local item = newsItems[newIndex]
+	
+	guiSetText(newsLabel,item)
+	
+	currentItem = newIndex
+	
+	-- get the current dimensions of the gui label
+	local width,height = guiGetSize(newsLabel,false)
+	
+	-- get the text width of the label
+	local extent = guiLabelGetTextExtent(newsLabel)
+	
+	-- update the size of the label with the new width (we do not change the height)
+	guiSetSize(newsLabel,extent,height,false)
+end
+</pre>
+<h3><span class="mw-headline" id="Positioning_the_Label">Positioning the Label</span></h3>
+<p>Now that our GUI label is the correct width, we need to move it to a position where it is ready to scroll onto the screen.
+</p><p>Again, we can do this with a small modification to our 'updateNewsItems' function:
+</p>
+<pre class="prettyprint lang-lua">
+function updateNewsItem(newIndex)
+	local item = newsItems[newIndex]
+	
+	guiSetText(newsLabel,item)
+	
+	currentItem = newIndex
+	
+	local width,height = guiGetSize(newsLabel,false)
+	
+	local extent = guiLabelGetTextExtent(newsLabel)
+	
+	guiSetSize(newsLabel,extent,height,false)
+	
+	-- set the positon to the far right side of the gridlist, ready to scroll on to the left
+	guiSetPosition(newsLabel,1,0,true)
+end
+</pre>
+<p>Note the use of <b>relative</b> position values in the final line of the function. 
+</p><p>In this case, it is far easier than calculating pixel values.
+</p><p>You can use both relative and absolute in the same script if you want to, the only limitation is that you cannot mix them in the same function call. The type of values you are using is defined by the final argument (true or false).
+</p><p>This means you cannot do the following and have it set to 400 pixels in, but 0.5% down
+</p>
+<pre class="prettyprint lang-lua">
+guiSetPosition(yourElement,400,0.5,false)
+</pre>
+<p>The final argument "false" means both 400 and 0.5 will be read as pixel values.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Scrolling_the_News">Scrolling the News</span></h2>
+<p>The next step is to animate our news feed.
+</p>
+<h3><span class="mw-headline" id="Looking_at_Frames">Looking at Frames</span></h3>
+<p>To do this, we will introduce a new event: <a href="OnClientRender.html" title="OnClientRender">onClientRender</a>.
+As stated on the <a href="OnClientRender.html" title="OnClientRender">onClientRender</a> wiki page, this event is called every time GTA renders a new frame (ie: very often).
+</p><p>As usual, to use this event we will need to create an event handler for it:
+</p>
+<pre class="prettyprint lang-lua">
+addEventHandler("onClientRender",root,scrollNews)
+</pre>
+<p>This will call our scrollNews function every frame, which we will then use to update the position of our news item.
+</p><p><b>Make sure you add this handler after you have defined your scrollNews function.</b>
+</p><p>For our purposes, <a href="OnClientRender.html" title="OnClientRender">onClientRender</a> has one main advantage over, for example, <a href="SetTimer.html" title="SetTimer">setTimer</a>.
+As it is called every frame (and therefore is dependant on the players FPS), the movement of the news item will always appear to be completely smooth,
+unlike using a timer which would often appear to lag.
+</p>
+<h3><span class="mw-headline" id="Moving_the_News">Moving the News</span></h3>
+<p>In our 'updateNewsItem' function, we position the 'newsLabel' to the far right, so we will scroll in from the right to the left.
+</p><p>For this we will simply move the X position by -1 every frame:
+</p>
+<pre class="prettyprint lang-lua">
+function scrollNews()
+	-- if the newsLabel exists
+	if newsLabel then
+		-- get the current position of the label
+		local x,y = guiGetPosition(newsLabel,false)
+		
+		-- set the new x position of the label as the old position -1
+		guiSetPosition(newsLabel,x-1,y,false)
+	end
+end
+</pre>
+<h3><span class="mw-headline" id="Looping_around">Looping around</span></h3>
+<p>Now that our news scrolls across the screen, we need to be able to check when it has scrolled too far to the left
+so we can start scrolling from the far-right side again.
+</p><p>We will also need to update the news item, so we should check the next item exists, and if it doesn't, go back to the first.
+</p><p>For this we will use some simple maths in a modification to our 'scrollNews' function:
+</p>
+<pre class="prettyprint lang-lua">
+function scrollNews()
+	local x,y = guiGetPosition(newsLabel,false)
+	
+	local labelWidth, labelHeight = guiGetSize(newsLabel,false)
+	
+	-- if the far right position of the label (x + labelWidth) is greater than or equal to 0 (ie: still showing on the gridlist)
+	if ((x-1) + labelWidth) &gt;= 0 then
+		-- compensate for a small off-by-one bug in MTA
+		if x &lt;= 0 then x = x - 1 end
+		
+		-- update the position as normal
+		guiSetPosition(newsLabel,x-1,y,false)
+		
+	-- otherwise, we move on to the next item and reset the position
+	else
+		-- get the total number of items in the 'newsItems' table
+		local totalItems = #newsItems
+		
+		-- if the next item on our list does not exist in our table
+		if (currentItem + 1) &gt; totalItems then
+			-- loop back to the first item in the list
+			updateNewsItem(1)
+		else
+			-- otherwise move onto the next item in the list
+			updateNewsItem(currentItem + 1)
+		end
+	end
+end
+</pre>
+<p>Notice the use of the '#' symbol to get the size of the 'newsItems' table. 
+This is the Lua length operator, but it only works on tables that have numerical indexes (like an array or a list).
+It also works on strings, eg: #"hello" would return 5.
+</p><p>That completes this section of the tutorial.
+For ideas on how to further improve and advance this code, continue reading the next section.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Improving_the_code">Improving the code</span></h2>
+<p>This section will detail several ways to improve upon the code you now have.
+</p>
+<h3><span class="mw-headline" id="GUI_Customisation">GUI Customisation</span></h3>
+<p>To give your GUI a more unique feel, you have the ability to customise some aspects of your GUI elements.
+</p><p>For ideas on what is possible, browse the <a href="Client_Scripting_Functions.html#GUI_functions" title="Client Scripting Functions">MTA GUI functions</a>.
+</p><p>For the purposes of this tutorial, we will be using Font, Colour and Alpha.
+</p><p>To start, we will change the alpha of the background gridlist GUI element we are using.
+To set the alpha, use <a href="GuiSetAlpha.html" title="GuiSetAlpha">guiSetAlpha</a> and pass a value between 1 and 0; 1 being fully opaque and 0 being fully transparent.
+</p>
+<pre class="prettyprint lang-lua">
+guiSetAlpha(newsGridlist,0.8)
+</pre>
+<p>Place this line of code in your 'createNewsFeed' function, after your gridlist has been created.
+</p><p>I find an alpha level of 0.8 looks best, however this is personal preference and you can experiment to suit your needs.
+</p><p><br />
+Next, we will look at the font of the label text.
+To set the font, use <a href="GuiSetFont.html" title="GuiSetFont">guiSetFont</a> and pass the string name of the font you want to use (available to see on the <a href="Standard_GUI_Font_Names.html" title="Standard GUI Font Names">Standard GUI Font Names</a> page).
+</p>
+<pre class="prettyprint lang-lua">
+guiSetFont(newsLabel,"default-bold-small")
+</pre>
+<p>Place this line of code in your 'createNewsFeed' function, after your label has been created.
+</p><p><br />
+Finally, we will look at setting the colour of the label text.
+To set the colour, use <a href="GuiLabelSetColor.html" title="GuiLabelSetColor">guiLabelSetColor</a> and pass the individual red,green and blue values.
+</p>
+<pre class="prettyprint lang-lua">
+guiLabelSetColor(newsLabel,255,70,0)
+</pre>
+<p>Place this line of code in your 'createNewsFeed' function, after your label has been created.
+</p><p>This will give your news items an orange-red colour.
+</p>
+<h3><span class="mw-headline" id="Multiple_News_Items">Multiple News Items</span></h3>
+<p>In its current form, this code is only capable of showing one news item at a time.
+However, with a few modifications we can show multiple news items at once, one after another.
+</p><p>To begin with, we need to make sure we have a 'newItems' table defined at the very start of our script,
+as well as a 'distance' variable that will control the pixel distance between each news item:
+</p>
+<pre class="prettyprint lang-lua">
+local newsItems = {}
+local distance = 30
+</pre>
+<p>So put these lines at the top of the file.
+</p><p>Next, we will not know how many items we have (and consequently, how many labels we need) until we have loaded the file.
+With that in mind, we will move around some of the code in our 'createNewsFeed' function to support this:
+</p>
+<pre class="prettyprint lang-lua">
+function createNewsFeed()
+	-- get the screen width and height
+	local sWidth, sHeight = guiGetScreenSize()
+ 
+	-- create the gridlist, using some maths to find the bottom-centre of the screen
+	local Width,Height = 800,45
+	local X = (sWidth/2) - (Width/2)
+	local Y = sHeight - (Height/2)
+	
+	-- the gridlist will act as the background to our news reel
+	newsGridlist = guiCreateGridList(X,Y,Width,Height,false)
+	
+	guiSetAlpha(newsGridlist,0.8)
+	
+	-- call our function to read the news out of the xml file, before we create the labels
+	loadNews()
+		
+	-- define a table to hold our labels
+	newsLabel = {}
+	
+	-- now we can loop all our news items, and create a label for each one
+	for index,item in ipairs(newsItems) do
+	
+		-- because we now have one label for every item, we can just set the text here and it wont need to be changed again.
+		newsLabel[index] = guiCreateLabel(0,0,Width,Height/2,item,false,newsGridlist)
+		
+		guiSetFont(newsLabel[index],"default-bold-small")
+
+		guiLabelSetColor(newsLabel[index],255,70,0)		
+
+		-- modify the width of the label to fit the text
+		local extent = guiLabelGetTextExtent(newsLabel[index])		
+		guiSetSize(newsLabel[index],extent,Height/2,false)
+		
+		
+		-- get the size of the gridlist
+		local x,y = guiGetSize(newsGridlist,false)
+		
+		-- loop from 1 until index-1 in steps of 1
+		-- this allows us to loop every label before the label we are currently on
+		for i=1, index-1, 1 do
+			-- tally up the sizes of all labels before our current one and store them in x
+			local width = guiGetSize(newsLabel[i],false)
+			x = x + width
+		end
+		
+		-- put a 'distance' pixel gap between each news item
+		x = x + (distance*(index-1))
+		
+		-- set the positon to the far right side of the gridlist, ready to scroll on to the left
+		guiSetPosition(newsLabel[index],x,0,false)	
+	end	
+end
+</pre>
+<p><br />
+Now we need to update our 'updateNewsItem' function to account for having multiple labels:
+</p>
+<pre class="prettyprint lang-lua">
+function updateNewsItem(newIndex)
+	-- find the index of the news item directly infront (in the looping order) of the newIndex item
+	local index = newIndex - 1
+	if index == 0 then index = #newsItems end
+	
+	-- find the position of the right-edge of the label directly infront of the newIndex label
+	local x = guiGetPosition(newsLabel[index],false) 
+	local width = guiGetSize(newsLabel[index],false)
+	x = x + width
+
+	-- add a 'distance' pixel gap in
+	x = x + distance
+
+	-- check the new position isnt actually on the gridlist (ie: so it wont suddenly appear in the centre of the list)
+	local gridlistWidth = guiGetSize(newsGridlist,false)
+	
+	if x &lt; gridlistWidth then
+		-- if it is, simple move it back to the edge
+		x = gridlistWidth
+	end
+	
+	-- set the new position
+	guiSetPosition(newsLabel[newIndex],x,0,false)
+end
+</pre>
+<p><br />
+Finally, we need to make some small adjustments to our 'scrollNews' function:
+</p>
+<pre class="prettyprint lang-lua">
+function scrollNews()
+	if newsItems then
+		-- loop every news item
+		for index,item in ipairs(newsItems) do
+			local x,y = guiGetPosition(newsLabel[index],false)
+			
+			local labelWidth, labelHeight = guiGetSize(newsLabel[index],false)
+			
+			-- if the far right position of the label (x + labelWidth) is greater than or equal to 0 (ie: still showing on the gridlist)
+			if ((x-1) + labelWidth) &gt;= 0 then
+				-- compensate for a small off-by-one bug in MTA
+				if x &lt;= 0 then x = x - 1 end
+			
+				-- update the position as normal
+				guiSetPosition(newsLabel[index],x-1,y,false)
+				
+			-- otherwise, we move on to the next item and reset the position
+			else
+				updateNewsItem(index)
+			end
+		end
+	end
+end
+</pre>
+<p>You should now have multiple news items scrolling along your news feed simultaneously.
+</p>
+<h3><span class="mw-headline" id="Globally_controlled_scroll_speed">Globally controlled scroll speed</span></h3>
+<p>As with the 'distance' variable above, we can set a global variable for controlling the scroll speed of the news items as well.
+Note that the speed will still be dependant on the players FPS (ie: lower FPS means slightly slower scrolling).
+</p><p>To do this, we simply need to create the variable at the start of our code:
+</p>
+<pre class="prettyprint lang-lua">
+local scrollSpeed = 1
+</pre>
+<p>Put this line at the top of your file.
+</p><p>Then, we just replace the instance of "x-1" in our 'scrollNews' function with "x-scrollSpeed":
+</p>
+<pre class="prettyprint lang-lua">
+function scrollNews()
+		...
+				-- update the position as normal
+				guiSetPosition(newsLabel[index],x-scrollSpeed,y,false)
+		...
+	end
+end
+</pre>
+<p>That concludes this section of the tutorial.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190625164821
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.007 seconds
+Real time usage: 0.008 seconds
+Preprocessor visited node count: 236/1000000
+Preprocessor generated node count: 484/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 - -total
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:5026-0!*!0!!en!*!* and timestamp 20190625164821 and revision id 60346
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=Scripting_the_GUI_-_Tutorial_3&amp;oldid=60346">https://wiki.multitheftauto.com/index.php?title=Scripting_the_GUI_-_Tutorial_3&amp;oldid=60346</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_GUI_Tutorials.html" title="Category:GUI Tutorials">GUI Tutorials</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Scripting_the_GUI_-_Tutorial_3.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:Scripting_the_GUI_-_Tutorial_3&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=Scripting_the_GUI_-_Tutorial_3&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=Scripting_the_GUI_-_Tutorial_3&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=Scripting+the+GUI+-+Tutorial+3" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=Scripting+the+GUI+-+Tutorial+3" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/Scripting_the_GUI_-_Tutorial_3.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/Scripting_the_GUI_-_Tutorial_3.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=Scripting_the_GUI_-_Tutorial_3&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=Scripting_the_GUI_-_Tutorial_3&amp;oldid=60346" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=Scripting_the_GUI_-_Tutorial_3&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-hu"><a href="http://wiki.multitheftauto.com/index.php?title=HU/Scripting_the_GUI_-_Tutorial_3" title="Scripting the GUI - Tutorial 3 – magyar" lang="hu" hreflang="hu">Magyar</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 5 November 2018, at 22:39.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":47});});</script></body></html>

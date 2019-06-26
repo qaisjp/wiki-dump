@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>HU/Client Scripting Events - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"HU/Client_Scripting_Events","wgTitle":"HU/Client Scripting Events","wgCurRevisionId":59813,"wgRevisionId":59813,"wgArticleId":6879,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"HU/Client_Scripting_Events","wgRelevantArticleId":6879,"wgRequestId":"8f20451b3f4a45fb8e8ea7db","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta name='headingclass' content='' data-class='client' data-subcaption=''>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-HU_Client_Scripting_Events rootpage-HU_Client_Scripting_Events skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">HU/Client Scripting Events</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
+This page lists all <b>client-side</b> scripting <a href="../Event.html" title="Event" class="mw-redirect">events</a> that have been implemented and are available in the Deathmatch mod.
+</p><p>To request a function or event, use <a href="../Requested_Functions_and_Events.html" title="Requested Functions and Events">Requested Functions and Events</a>.
+</p><p><b>Server-side scripting events can be found here: <a href="../Server_Scripting_Events.html" title="Server Scripting Events">Server Scripting Events</a></b>
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Browser_events"><span class="tocnumber">1</span> <span class="toctext">Browser events</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Colshape_events"><span class="tocnumber">2</span> <span class="toctext">Colshape events</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Element_events"><span class="tocnumber">3</span> <span class="toctext">Element events</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#GUI_events"><span class="tocnumber">4</span> <span class="toctext">GUI events</span></a>
+<ul>
+<li class="toclevel-2"><a href="#GUI_events_2"><span class="tocnumber">4.1</span> <span class="toctext">GUI events</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Marker_events"><span class="tocnumber">5</span> <span class="toctext">Marker events</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Ped_events"><span class="tocnumber">6</span> <span class="toctext">Ped events</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Pickup_events"><span class="tocnumber">7</span> <span class="toctext">Pickup events</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Player_events"><span class="tocnumber">8</span> <span class="toctext">Player events</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Object_events"><span class="tocnumber">9</span> <span class="toctext">Object events</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Projectile_events"><span class="tocnumber">10</span> <span class="toctext">Projectile events</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Resource_events"><span class="tocnumber">11</span> <span class="toctext">Resource events</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Sound_events"><span class="tocnumber">12</span> <span class="toctext">Sound events</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Vehicle_events"><span class="tocnumber">13</span> <span class="toctext">Vehicle events</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#Weapon_creation_events"><span class="tocnumber">14</span> <span class="toctext">Weapon creation events</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#Other_events"><span class="tocnumber">15</span> <span class="toctext">Other events</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Browser_events">Browser events</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=HU/onClientBrowserCreated&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientBrowserCreated (page does not exist)">HU/onClientBrowserCreated</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientBrowserCursorChange&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientBrowserCursorChange (page does not exist)">HU/onClientBrowserCursorChange</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientBrowserDocumentReady&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientBrowserDocumentReady (page does not exist)">HU/onClientBrowserDocumentReady</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientBrowserInputFocusChanged&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientBrowserInputFocusChanged (page does not exist)">HU/onClientBrowserInputFocusChanged</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientBrowserLoadingFailed&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientBrowserLoadingFailed (page does not exist)">HU/onClientBrowserLoadingFailed</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientBrowserLoadingStart&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientBrowserLoadingStart (page does not exist)">HU/onClientBrowserLoadingStart</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientBrowserNavigate&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientBrowserNavigate (page does not exist)">HU/onClientBrowserNavigate</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientBrowserPopup&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientBrowserPopup (page does not exist)">HU/onClientBrowserPopup</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientBrowserResourceBlocked&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientBrowserResourceBlocked (page does not exist)">HU/onClientBrowserResourceBlocked</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientBrowserTooltip&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientBrowserTooltip (page does not exist)">HU/onClientBrowserTooltip</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientBrowserWhitelistChange&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientBrowserWhitelistChange (page does not exist)">HU/onClientBrowserWhitelistChange</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Colshape_events">Colshape events</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=HU/onClientColShapeHit&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientColShapeHit (page does not exist)">HU/onClientColShapeHit</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientColShapeLeave&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientColShapeLeave (page does not exist)">HU/onClientColShapeLeave</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Element_events">Element events</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=HU/onClientElementColShapeHit&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientElementColShapeHit (page does not exist)">HU/onClientElementColShapeHit</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientElementColShapeLeave&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientElementColShapeLeave (page does not exist)">HU/onClientElementColShapeLeave</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientElementDataChange&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientElementDataChange (page does not exist)">HU/onClientElementDataChange</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientElementDestroy&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientElementDestroy (page does not exist)">HU/onClientElementDestroy</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientElementStreamIn&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientElementStreamIn (page does not exist)">HU/onClientElementStreamIn</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientElementStreamOut&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientElementStreamOut (page does not exist)">HU/onClientElementStreamOut</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="GUI_events">GUI events</span></h2>
+<h3><span class="mw-headline" id="GUI_events_2">GUI events</span></h3>
+<ul><li><a href="http://wiki.localhost/index.php?title=HU/onClientCharacter&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientCharacter (page does not exist)">HU/onClientCharacter</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientClick&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientClick (page does not exist)">HU/onClientClick</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientCursorMove&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientCursorMove (page does not exist)">HU/onClientCursorMove</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientDoubleClick&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientDoubleClick (page does not exist)">HU/onClientDoubleClick</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientGUIAccepted&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientGUIAccepted (page does not exist)">HU/onClientGUIAccepted</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientGUIBlur&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientGUIBlur (page does not exist)">HU/onClientGUIBlur</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientGUIChanged&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientGUIChanged (page does not exist)">HU/onClientGUIChanged</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientGUIClick&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientGUIClick (page does not exist)">HU/onClientGUIClick</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientGUIComboBoxAccepted&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientGUIComboBoxAccepted (page does not exist)">HU/onClientGUIComboBoxAccepted</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientGUIDoubleClick&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientGUIDoubleClick (page does not exist)">HU/onClientGUIDoubleClick</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientGUIFocus&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientGUIFocus (page does not exist)">HU/onClientGUIFocus</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientGUIMouseDown&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientGUIMouseDown (page does not exist)">HU/onClientGUIMouseDown</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientGUIMouseUp&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientGUIMouseUp (page does not exist)">HU/onClientGUIMouseUp</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientGUIMove&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientGUIMove (page does not exist)">HU/onClientGUIMove</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientGUIScroll&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientGUIScroll (page does not exist)">HU/onClientGUIScroll</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientGUISize&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientGUISize (page does not exist)">HU/onClientGUISize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientGUITabSwitched&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientGUITabSwitched (page does not exist)">HU/onClientGUITabSwitched</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientKey&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientKey (page does not exist)">HU/onClientKey</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientMouseEnter&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientMouseEnter (page does not exist)">HU/onClientMouseEnter</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientMouseLeave&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientMouseLeave (page does not exist)">HU/onClientMouseLeave</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientMouseMove&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientMouseMove (page does not exist)">HU/onClientMouseMove</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientMouseWheel&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientMouseWheel (page does not exist)">HU/onClientMouseWheel</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Marker_events">Marker events</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=HU/onClientMarkerHit&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientMarkerHit (page does not exist)">HU/onClientMarkerHit</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientMarkerLeave&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientMarkerLeave (page does not exist)">HU/onClientMarkerLeave</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Ped_events">Ped events</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=HU/onClientPedDamage&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPedDamage (page does not exist)">HU/onClientPedDamage</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPedHeliKilled&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPedHeliKilled (page does not exist)">HU/onClientPedHeliKilled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPedHitByWaterCannon&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPedHitByWaterCannon (page does not exist)">HU/onClientPedHitByWaterCannon</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPedWasted&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPedWasted (page does not exist)">HU/onClientPedWasted</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPedWeaponFire&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPedWeaponFire (page does not exist)">HU/onClientPedWeaponFire</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Pickup_events">Pickup events</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=HU/onClientPickupHit&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPickupHit (page does not exist)">HU/onClientPickupHit</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPickupLeave&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPickupLeave (page does not exist)">HU/onClientPickupLeave</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Player_events">Player events</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=HU/onClientPlayerChangeNick&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPlayerChangeNick (page does not exist)">HU/onClientPlayerChangeNick</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPlayerChoke&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPlayerChoke (page does not exist)">HU/onClientPlayerChoke</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPlayerDamage&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPlayerDamage (page does not exist)">HU/onClientPlayerDamage</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPlayerHeliKilled&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPlayerHeliKilled (page does not exist)">HU/onClientPlayerHeliKilled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPlayerHitByWaterCannon&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPlayerHitByWaterCannon (page does not exist)">HU/onClientPlayerHitByWaterCannon</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPlayerJoin&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPlayerJoin (page does not exist)">HU/onClientPlayerJoin</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPlayerPickupHit&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPlayerPickupHit (page does not exist)">HU/onClientPlayerPickupHit</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPlayerPickupLeave&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPlayerPickupLeave (page does not exist)">HU/onClientPlayerPickupLeave</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPlayerQuit&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPlayerQuit (page does not exist)">HU/onClientPlayerQuit</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPlayerRadioSwitch&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPlayerRadioSwitch (page does not exist)">HU/onClientPlayerRadioSwitch</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPlayerSpawn&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPlayerSpawn (page does not exist)">HU/onClientPlayerSpawn</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPlayerStealthKill&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPlayerStealthKill (page does not exist)">HU/onClientPlayerStealthKill</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPlayerStuntFinish&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPlayerStuntFinish (page does not exist)">HU/onClientPlayerStuntFinish</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPlayerStuntStart&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPlayerStuntStart (page does not exist)">HU/onClientPlayerStuntStart</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPlayerTarget&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPlayerTarget (page does not exist)">HU/onClientPlayerTarget</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPlayerVehicleEnter&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPlayerVehicleEnter (page does not exist)">HU/onClientPlayerVehicleEnter</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPlayerVehicleExit&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPlayerVehicleExit (page does not exist)">HU/onClientPlayerVehicleExit</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPlayerVoicePause&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPlayerVoicePause (page does not exist)">HU/onClientPlayerVoicePause</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPlayerVoiceResumed&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPlayerVoiceResumed (page does not exist)">HU/onClientPlayerVoiceResumed</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPlayerVoiceStart&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPlayerVoiceStart (page does not exist)">HU/onClientPlayerVoiceStart</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPlayerVoiceStop&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPlayerVoiceStop (page does not exist)">HU/onClientPlayerVoiceStop</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPlayerWasted&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPlayerWasted (page does not exist)">HU/onClientPlayerWasted</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPlayerWeaponFire&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPlayerWeaponFire (page does not exist)">HU/onClientPlayerWeaponFire</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPlayerWeaponSwitch&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPlayerWeaponSwitch (page does not exist)">HU/onClientPlayerWeaponSwitch</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Object_events">Object events</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=HU/onClientObjectBreak&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientObjectBreak (page does not exist)">HU/onClientObjectBreak</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientObjectDamage&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientObjectDamage (page does not exist)">HU/onClientObjectDamage</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Projectile_events">Projectile events</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=HU/onClientProjectileCreation&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientProjectileCreation (page does not exist)">HU/onClientProjectileCreation</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Resource_events">Resource events</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=HU/onClientResourceStart&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientResourceStart (page does not exist)">HU/onClientResourceStart</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientResourceStop&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientResourceStop (page does not exist)">HU/onClientResourceStop</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Sound_events">Sound events</span></h2>
+<ul><li> <a href="http://wiki.localhost/index.php?title=HU/onClientSoundBeat&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientSoundBeat (page does not exist)">HU/onClientSoundBeat</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=HU/onClientSoundChangedMeta&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientSoundChangedMeta (page does not exist)">HU/onClientSoundChangedMeta</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=HU/onClientSoundFinishedDownload&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientSoundFinishedDownload (page does not exist)">HU/onClientSoundFinishedDownload</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=HU/onClientSoundStarted&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientSoundStarted (page does not exist)">HU/onClientSoundStarted</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=HU/onClientSoundStopped&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientSoundStopped (page does not exist)">HU/onClientSoundStopped</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=HU/onClientSoundStream&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientSoundStream (page does not exist)">HU/onClientSoundStream</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Vehicle_events">Vehicle events</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=HU/onClientTrailerAttach&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientTrailerAttach (page does not exist)">HU/onClientTrailerAttach</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientTrailerDetach&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientTrailerDetach (page does not exist)">HU/onClientTrailerDetach</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientVehicleCollision&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientVehicleCollision (page does not exist)">HU/onClientVehicleCollision</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientVehicleDamage&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientVehicleDamage (page does not exist)">HU/onClientVehicleDamage</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientVehicleEnter&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientVehicleEnter (page does not exist)">HU/onClientVehicleEnter</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientVehicleExit&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientVehicleExit (page does not exist)">HU/onClientVehicleExit</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientVehicleExplode&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientVehicleExplode (page does not exist)">HU/onClientVehicleExplode</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientVehicleNitroStateChange&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientVehicleNitroStateChange (page does not exist)">HU/onClientVehicleNitroStateChange</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientVehicleRespawn&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientVehicleRespawn (page does not exist)">HU/onClientVehicleRespawn</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientVehicleStartEnter&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientVehicleStartEnter (page does not exist)">HU/onClientVehicleStartEnter</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientVehicleStartExit&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientVehicleStartExit (page does not exist)">HU/onClientVehicleStartExit</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Weapon_creation_events">Weapon creation events</span></h2>
+<ul><li><a href="onClientWeaponFire.html" title="HU/onClientWeaponFire">HU/onClientWeaponFire</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Other_events">Other events</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=HU/onClientChatMessage&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientChatMessage (page does not exist)">HU/onClientChatMessage</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientConsole&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientConsole (page does not exist)">HU/onClientConsole</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientDebugMessage&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientDebugMessage (page does not exist)">HU/onClientDebugMessage</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientExplosion&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientExplosion (page does not exist)">HU/onClientExplosion</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientFileDownloadComplete&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientFileDownloadComplete (page does not exist)">HU/onClientFileDownloadComplete</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientHUDRender&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientHUDRender (page does not exist)">HU/onClientHUDRender</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientMinimize&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientMinimize (page does not exist)">HU/onClientMinimize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPlayerNetworkStatus&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPlayerNetworkStatus (page does not exist)">HU/onClientPlayerNetworkStatus</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientPreRender&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientPreRender (page does not exist)">HU/onClientPreRender</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientRender&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientRender (page does not exist)">HU/onClientRender</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/onClientRestore&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientRestore (page does not exist)">HU/onClientRestore</a></li></ul>
+<div style="font-weight: bold;background:black;color:white;padding:2px; padding-left:8px;">FROM VERSION 1.5.7 <a rel="nofollow" class="external text" href="https://buildinfo.mtasa.com/?Author=&amp;Branch=&amp;Revision=14652"><span style="color: #FFFFFF;">r14652</span></a> ONWARDS</div><div style="border: 2px solid black;padding: 3px;">
+<ul><li><a href="http://wiki.localhost/index.php?title=HU/onClientWorldSound&amp;action=edit&amp;redlink=1" class="new" title="HU/onClientWorldSound (page does not exist)">HU/onClientWorldSound</a></li></ul>
+ </div>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625165102
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.036 seconds
+Real time usage: 0.057 seconds
+Preprocessor visited node count: 170/1000000
+Preprocessor generated node count: 529/1000000
+Post‐expand include size: 4577/2097152 bytes
+Template argument size: 64/2097152 bytes
+Highest expansion depth: 9/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   28.412      1 - -total
+ 20.87%    5.930      1 - Template:Client_other_events_hu
+ 15.62%    4.438      1 - Template:New_items
+  8.13%    2.309      1 - Template:CEF_events_hu
+  6.41%    1.820      1 - Template:GUI_events_hu
+  6.17%    1.754      1 - Template:Client_colshape_events_hu
+  5.63%    1.601      1 - Template:Current_Version
+  5.07%    1.439      1 - Template:Client_marker_events_hu
+  4.99%    1.418      1 - Template:Client_vehicle_events_hu
+  4.78%    1.358      1 - Template:Client_player_events_hu
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:6879-0!*!0!!en!*!* and timestamp 20190625165102 and revision id 59813
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=HU/Client_Scripting_Events&amp;oldid=59813">https://wiki.multitheftauto.com/index.php?title=HU/Client_Scripting_Events&amp;oldid=59813</a>"</div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Client_Scripting_Events.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:HU/Client_Scripting_Events&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=HU/Client_Scripting_Events&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=HU/Client_Scripting_Events&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=HU%2FClient+Scripting+Events" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=HU%2FClient+Scripting+Events" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/HU/Client_Scripting_Events.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/HU/Client_Scripting_Events.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=HU/Client_Scripting_Events&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=HU/Client_Scripting_Events&amp;oldid=59813" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=HU/Client_Scripting_Events&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=Client_Scripting_Events" title="Client Scripting Events – English" lang="en" hreflang="en">English</a></li>
+													<li class="interlanguage-link interwiki-pl"><a href="http://wiki.multitheftauto.com/index.php?title=PL/Client_Scripting_Events" title="Client Scripting Events – polski" lang="pl" hreflang="pl">Polski</a></li>
+													<li class="interlanguage-link interwiki-ru"><a href="http://wiki.multitheftauto.com/index.php?title=RU/Client_Scripting_Events" title="Client Scripting Events – русский" lang="ru" hreflang="ru">Русский</a></li>
+													<li class="interlanguage-link interwiki-es"><a href="http://wiki.multitheftauto.com/index.php?title=ES/Client_Scripting_Events" title="Client Scripting Events – español" lang="es" hreflang="es">Español</a></li>
+													<li class="interlanguage-link interwiki-fr"><a href="http://wiki.multitheftauto.com/index.php?title=FR/Client_Scripting_Events" title="Client Scripting Events – français" lang="fr" hreflang="fr">Français</a></li>
+													<li class="interlanguage-link interwiki-tr"><a href="http://wiki.multitheftauto.com/index.php?title=TR/Client_Tarafl%C4%B1_Eventler" title="Client Taraflı Eventler – Türkçe" lang="tr" hreflang="tr">Türkçe</a></li>
+													<li class="interlanguage-link interwiki-ar"><a href="http://wiki.multitheftauto.com/index.php?title=AR/Client_Scripting_Events" title="Client Scripting Events – العربية" lang="ar" hreflang="ar">العربية</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 11 October 2018, at 11:03.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":112});});</script></body></html>

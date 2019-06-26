@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>HU/Introduction to Scripting the GUI - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"HU/Introduction_to_Scripting_the_GUI","wgTitle":"HU/Introduction to Scripting the GUI","wgCurRevisionId":60829,"wgRevisionId":60829,"wgArticleId":6870,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["GUI Tutorials"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"HU/Introduction_to_Scripting_the_GUI","wgRelevantArticleId":6870,"wgRequestId":"f4cfff4ff102397e4c449575","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-HU_Introduction_to_Scripting_the_GUI rootpage-HU_Introduction_to_Scripting_the_GUI skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">HU/Introduction to Scripting the GUI</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>Egy fontos funkciója az MTA-nak az egyedi GUI, azaz Graphic User Interface, magyarul Grafikus Felhasználói Felület létrehozása. A GUI állhat ablakokból, gombokból, beviteli mezőkből, illetve jelölőnégyzetekből. Majdnem minden standard formájú alkotórész a grafikus környezetből. Meglehetnek jelenítve, miközben a játékos játszik, és lehet őket használni bemenetre és kimenetre hagyományos parancsok helyett.
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="../File_AdminGUI.html" class="image"><img alt="" src="http://wiki.localhost/images/thumb/2/2f/AdminGUI.png/300px-AdminGUI.png" width="300" height="240" class="thumbimage" srcset="/images/thumb/2/2f/AdminGUI.png/450px-AdminGUI.png 1.5x, /images/thumb/2/2f/AdminGUI.png/600px-AdminGUI.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="../File_AdminGUI.html" class="internal" title="Enlarge"></a></div>Admin Console GUI</div></div></div>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Egy_oktat.C3.A1s_egy_bejelentkez.C5.91_ablak_l.C3.A9trehoz.C3.A1s.C3.A1hoz"><span class="tocnumber">1</span> <span class="toctext">Egy oktatás egy bejelentkező ablak létrehozásához</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Az_ablak_.22megrajzol.C3.A1sa.22"><span class="tocnumber">1.1</span> <span class="toctext">Az ablak "megrajzolása"</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Relat.C3.ADv_.C3.A9s_Abszol.C3.BAt"><span class="tocnumber">1.2</span> <span class="toctext">Relatív és Abszolút</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Az_alkot.C3.B3r.C3.A9szek_hozz.C3.A1ad.C3.A1sa"><span class="tocnumber">1.3</span> <span class="toctext">Az alkotórészek hozzáadása</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Function_haszn.C3.A1lata.2C_amit_.C3.ADrtunk"><span class="tocnumber">1.4</span> <span class="toctext">Function használata, amit írtunk</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#A_gomb_meg.C3.ADr.C3.A1sa"><span class="tocnumber">2</span> <span class="toctext">A gomb megírása</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#A_kattint.C3.A1s_.C3.A9szlel.C3.A9se"><span class="tocnumber">2.1</span> <span class="toctext">A kattintás észlelése</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#A_klikk_kezel.C3.A9se"><span class="tocnumber">2.2</span> <span class="toctext">A klikk kezelése</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Triggering_the_server"><span class="tocnumber">2.3</span> <span class="toctext">Triggering the server</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Szerveroldali_event_l.C3.A9trehoz.C3.A1sa"><span class="tocnumber">2.4</span> <span class="toctext">Szerveroldali event létrehozása</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Bejelentkez.C3.A9s"><span class="tocnumber">2.5</span> <span class="toctext">Bejelentkezés</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Ford.C3.ADtotta"><span class="tocnumber">3</span> <span class="toctext">Fordította</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Egy_oktat.C3.A1s_egy_bejelentkez.C5.91_ablak_l.C3.A9trehoz.C3.A1s.C3.A1hoz">Egy oktatás egy bejelentkező ablak létrehozásához</span></h2>
+<p>Ebben az oktatásban létre fogunk hozni egy sima bejelentkező ablakot, két bemeneti mezővel és egy gombbal. Az ablak akkor fog megjelenni, amikor a játékos belép a játékba, és amikor a gomb meglesz nyomva, a játékos lefog spawnolni. Ez az oktatás folytatni fogja azt a gamemodet, amit elkészítettünk a <a href="Scripting_Introduction.html" title="HU/Scripting Introduction" class="mw-redirect">Bevezetés a scriptelésbe</a> részlegben.
+<i>(Ha használtad a <a href="Scripting_Introduction.html" title="HU/Scripting Introduction" class="mw-redirect">Bevezetés a scriptelésbe</a> részleget, kikell törölnöd, vagy kommentelned a <a href="../SpawnPlayer.html" title="SpawnPlayer">spawnPlayer</a> sort a "csatlakozasKezelo" funkcióban, mivel helyettesíteni fogjuk egy GUI alternatívával ebben az oktatásban.)</i> Illetve befogunk tekinteni a kliens-oldali scriptelésbe is.
+</p>
+<h3><span class="mw-headline" id="Az_ablak_.22megrajzol.C3.A1sa.22">Az ablak "megrajzolása"</span></h3>
+<p>Minden GUIt csak kliens-oldalon tudunk elkészíteni. És amúgy egy jó gyakorlat, hogy minden kliens-oldali fájlt egy külön mappában tartsunk.
+</p><p>Menj az /MTA szerver/mods/deathmatch/resources/enszerverem/ könyvtárba, majd hozz létre egy mappát "kliens" néven. A /kliens/ könyvtárban hozz létre egy szöveges fájlt, majd nevezd el "gui.lua"-nak.
+</p><p>Ebben a fájlban fogunk megírni egy funkciót, ami az ablakot fogja megrajzolni. Ahhoz, hogy létrehozzunk egy ablakot a <a href="../GuiCreateWindow.html" title="GuiCreateWindow">guiCreateWindow</a> funkciót fogjunk használni:
+</p>
+<pre class="prettyprint lang-lua">
+function bejelentkezesiAblakLetrehozasa()
+	-- Az X és az Y koordináta definiálása
+	local X = 0.375
+	local Y = 0.375
+	-- A szélesség és a magasság definiálása
+	local wSzelesseg = 0.25
+	local wMagassag = 0.25
+	-- Hozzuk létre az ablakot, és mentsük el az elementjét egy változóban amit nevezzünk el 'wLogin'-nak
+	-- Nyomj rá a funkció nevére hogy elolvasd a hozzátartozó dokumentációt
+	wLogin = guiCreateWindow(X, Y, wSzelesseg, wMagassag, "Kérlek jelentkezz be", true)
+end
+</pre>
+<h3><span class="mw-headline" id="Relat.C3.ADv_.C3.A9s_Abszol.C3.BAt">Relatív és Abszolút</span></h3>
+<p>Figyeld meg, hogy az utolsó argumentum a guiCreateWindownál a példában <i>true</i>. Ez mutatja, hogy a koordináta és a dimenzió az ablaknál <i>relatív</i>, szóval azt jelenti, hogy <i>százaléka</i> a teljes képernyőméretének. Ez azt jelenti hogy a bal oldala a képernyőnek 0, a jobb oldala 1, akkor egy X pozíció 0.5-nél mutatná a középpontját a képernyőnek. Hasonlóképpen a teteje a képernyőnek 0 és az alja 1, akkor egy Y pozíció 0.2-nél lenne a képernyő 20 százalékánál a képernyőnek fentről lefele. Ezek az elvek igazak mint a wSzelesseg és a wMagassagra is (a wSzelesseg 0.5-nél azt jelenti, hogy az ablak fele olyan széles lesz, mint a képernyőnk).
+</p><p>Az alternatíva a relatív érzékek használatának az <b>abszolút</b> (<i>false</i> adása a true helyett a guiCreateWindownak). Az abszolút értékek úgy vannak kiszámolva, hogy az összes pixel a bal-felső sarokból a <b>szülőnek</b> (ha nem egy gui element a szülő, akkor a szülő a képernyő maga). Feltételezzük, hogy a képernyőnk 1920x1200, a bal oldala a képernyőnknek 0 pixelnél, a jobb oldala 1920 pixelnél kezdődik, akkor egy X pozíció 960-nál mutatnál a középpontját a képernyőnek. Hasonlóképpen a teteje 0 pixelnél, és az alja 1200 pixelnél kezdődik, akkor egy Y pozíció 20-nál 20 pixellel tolná el lefele a képernyő tetejétől. Ezek az elvek igazak mint a wSzelesseg és a wMagassagra is (a wSzelesseg 50-nél azt jelenti, hogy az ablak 50 pixel széles lenne). <i>Használhatod a <a href="../GuiGetScreenSize.html" title="GuiGetScreenSize">guiGetScreenSizefunkci</a>ót és egy kis matematikai számolást hogy kiszámíts bizonyos abszolút pozíciókat.</i>
+</p><p>Az abszolútot általában egyszerűbb fenntartani amikor egy kódot kézzel hozunk létre, viszont a választásod függ a szituációtól.
+</p><p><br />
+Az oktatás céljából relatív értékeket fogunk használni.
+</p>
+<h3><span class="mw-headline" id="Az_alkot.C3.B3r.C3.A9szek_hozz.C3.A1ad.C3.A1sa">Az alkotórészek hozzáadása</span></h3>
+<p>Következőnek, szövegeket fogunk hozzáadni ("felhasználónév:" és "jelszó:"), bemeneti mezőket (az adat beviteléhez) és egy gombot a bejelentkezéshez.
+</p><p>Egy gomb létrehozásához a <a href="../GuiCreateButton.html" title="GuiCreateButton">guiCreateButton</a>, egy bemeneti mező létrehozásához a <a href="../GuiCreateEdit.html" title="GuiCreateEdit">guiCreateEdit</a> funkciót használjuk:
+</p><p><b>Mostpedig több kódot adunk hozzá a már meglévő 'createLoginWindow' function-ünkhöz. Ez nem egy új function, hanem a már meglévőt helyettesíti.</b> 
+</p>
+<pre class="prettyprint lang-lua">
+function createLoginWindow()
+	local X = 0.375
+	local Y = 0.375
+	local wSzelesseg = 0.25
+	local wMagassag = = 0.25
+	wLogin = guiCreateWindow(X, Y, wSzelesseg, wMagassag, "Kérlek jelentkezz be", true)
+	
+	-- Új X és Y koordináta definiálása az első felirathoz
+	X = 0.0825
+	Y = 0.2
+	-- Új wSzelesseg és wMagassag definiálása az első felirathoz
+	wSzelesseg = 0.25
+	wMagassag = 0.25
+	-- Az első felirat létrehozása, jegyezd meg hogy az utolsó 'wLogin' argumentum az ablakot jelenti
+	-- amit már feljebb létrehoztunk, és ez lesz a felirat szülője (szóval minden pozíció és méret relatív az ablak pozíciójához képest)
+	guiCreateLabel(X, Y, wSzelesseg , wMagassag , "Felhasználónév", true, wdwLogin)
+	-- Változtassuk meg az Y értéket, szóval a második címke némileg lejjebb van mint az 
+	Y = 0.5
+	guiCreateLabel(X, Y, wSzelesseg, wMagassag, "Jelszó", true, wdwLogin)
+	
+
+	X = 0.415
+	Y = 0.2
+	wSzelesseg = 0.5
+	wMagassag = 0.15
+	edtFelh = guiCreateEdit(X, Y, wSzelesseg, wMagassag, "", true, wdwLogin)
+	Y = 0.5
+	edtJelszo = guiCreateEdit(X, Y, wSzelesseg, wMagassag, "", true, wdwLogin)
+	-- Állíts be a maximum hosszt a felhasználónév és a jelszó mezőnek 50re
+	guiEditSetMaxLength(edtFelh, 50)
+	guiEditSetMaxLength(edtJelszo, 50)
+	
+	X = 0.415
+	Y = 0.7
+	Width = 0.25
+	Height = 0.2
+	btnLogin = guiCreateButton(X, Y, Width, Height, "Log In", true, wdwLogin)
+	
+	-- make the window invisible
+	guiSetVisible(wdwLogin, false)
+end
+</pre>
+<p>Ne feledje, hogy minden létrehozott GUI alkotóelem az ablak gyermeke, ezt a alkotóelem létrehozásakor a szülőelem (ebben az esetben wdwLogin) megadásával végezzük. 
+</p><p>Ez nagyon hasznos, mert nem csak azt jelenti, hogy az összes alkotóelem az ablakhoz lett hozzákapcsolva, és vele együtt mozog, hanem azt is, hogyha bármi változás történik a fő ablakkal, akkor azok az alsóbbrendű ablakoknál is változni fognak. Például elrejthetjük az összes létrehozott GUI-t, egyszerűen az ablak elrejtésével:
+</p>
+<pre class="prettyprint lang-lua">
+guiSetVisible(wdwLogin, false) --hides all the GUI we made so we can show them to the player at the appropriate moment. 
+</pre>
+<h3><span class="mw-headline" id="Function_haszn.C3.A1lata.2C_amit_.C3.ADrtunk">Function használata, amit írtunk</span></h3>
+<p>A createLoginWindow function most már kész, de nem fog csinálni semmit, amíg meg nem hívjuk. Ajánlott minden GUI létrehozása, amikor a client resource elindul, elrejtjük őket, majd amikor szükséges megjelenítjük a játékosnak. Ezért létrehozunk egy event handler-t az "<a href="../OnClientResourceStart.html" title="OnClientResourceStart">onClientResourceStart</a>"-ra az ablak létrehozásához:
+</p>
+<pre class="prettyprint lang-lua">
+-- attach the event handler to the root element of the resource
+-- this means it will only trigger when its own resource is started
+addEventHandler("onClientResourceStart", getResourceRootElement(), 
+	function ()
+		createLoginWindow()
+	end
+)	
+</pre>
+<p>Mivel ez egy bejelentkezési ablak, ezért meg kell jelenítenünk az ablakot, amikor a játékos csatlakozik a szerverre. 
+Ezt megtehetjük az "<a href="../OnClientResourceStart.html" title="OnClientResourceStart">onClientResourceStart</a>" event használatával is, így módosíthatjuk a fenti kódot az ablak megjelenítéséhez:
+</p><p><b>Mostpedig több kódot adunk hozzá a már meglévő 'onClientResourceStart' handler-ünkhöz. Ez nem egy új event handler, hanem a már meglévőt helyettesíti.</b> 
+</p>
+<pre class="prettyprint lang-lua">
+addEventHandler("onClientResourceStart", getResourceRootElement(), 
+	function ()
+		-- create the log in window and its components
+		createLoginWindow()
+
+		-- output a brief welcome message to the player
+                outputChatBox("Welcome to My MTA:SA Server, please log in.")
+
+		-- if the GUI was successfully created, then show the GUI to the player
+	        if (wdwLogin ~= nil) then
+			guiSetVisible(wdwLogin, true)
+		else
+			-- if the GUI hasnt been properly created, tell the player
+			outputChatBox("An unexpected error has occurred and the log in GUI has not been created.")
+	        end 
+
+		-- enable the players cursor (so they can select and click on the components)
+	        showCursor(true)
+		-- set the input focus onto the GUI, allowing players (for example) to press 'T' without the chatbox opening
+	        guiSetInputEnabled(true)
+	end
+)	
+</pre>
+<p>Ne feledje, hogy van egy egyszerű biztonsági ellenőrzés, mielőtt az ablakot láthatóvá tennénk, így abban a szerencsétlen esetben, ha az ablakot nem sikerült létrehozni, vagyis, hogy a wdwLogin nem egy érvényes elem, nem kapunk hibát, és csak tájékoztatjuk a játékost, hogy mi történt. 
+A következő lépésben létrehozzuk a gomb funkcióját a bejelentkezéshez.
+</p>
+<h2><span class="mw-headline" id="A_gomb_meg.C3.ADr.C3.A1sa">A gomb megírása</span></h2>
+<p>Most, hogy létrehoztuk a GUI-t, és megmutattuk a játékosnak, használhatóvá is kell, hogy tegyük. 
+</p>
+<h3><span class="mw-headline" id="A_kattint.C3.A1s_.C3.A9szlel.C3.A9se">A kattintás észlelése</span></h3>
+<p>Amikor a játékos a GUI felület bármely részére kattint, akkor az "<a href="../OnClientGUIClick.html" title="OnClientGUIClick">onClientGUIClick</a>" event fog meghívodni a GUI elemre, amire kattintott. Ez lehetővé teszi számunkra, hogy könnyen észleljünk minden kattintást a használni kívánt grafikus felhasználói felületen.
+Például, hozzá tudunk kapcsolni egy eventet a btnLogin gombra, hogy észleljük az összes rányomó kattintást:
+</p>
+<pre class="prettyprint lang-lua">
+-- attach the event onClientGUIClick to btnLogin and set it to trigger the 'clientSubmitLogin' function
+addEventHandler("onClientGUIClick", btnLogin, clientSubmitLogin, false)
+</pre>
+<p><b>Az utolsó paraméter az "false". Ez azt jelenti, hogy csak a közvetlenül a btnLogin-t érintő eseménykor fut le. Ennek a paraméternek "true"-ra állítása, miközben a GUI elemekhez rögzítesz eseménykezelőt azt eredményezi, hogy az összes azon az ágon lévő elemhez hozzácsatolja - így bármelyik ugyanazon ágon lévő elemen meghívódik az esemény, le fog futni.</b>
+</p><p>Ezt a kódsort hozzáadhatjuk a createLoginWindow functionba. Gyakori hiba, hogy egy event-et próbál meg csatolni egy nem létező GUI elemhez, ezért mindig győződjön meg róla, hogy az event-et mindig a gui elem <b>után</b> csatolja (ebben az esetben a gomb), ami létre lett hozva:
+</p><p><b>Mostpedig hozzáírunk több kódot a már meglévő 'createLoginWindow' function-hoz.</b> 
+</p>
+<pre class="prettyprint lang-lua">
+function createLoginWindow()
+	-- create all our GUI elements
+	...
+
+	-- now add our onClientGUIClick event to the button we just created
+	addEventHandler("onClientGUIClick", btnLogin, clientSubmitLogin, false)
+</pre>
+<h3><span class="mw-headline" id="A_klikk_kezel.C3.A9se">A klikk kezelése</span></h3>
+<p>Most, hogy észlelni tudjuk, hogy a játékos mikor kattint a gombra, írnunk kell egy kódot, ami kezelni tudja ezt, amikor a játékos kattint.
+A mi <a href="../OnClientGUIClick.html" title="OnClientGUIClick">onClientGUIClick</a> event handler-ünkben azt mondtuk, hogy hívja meg a clientSubmitLogin function-t, amikor a btnLogin-ra kattintottak.
+Ezért most már használhatjuk a clientSubmitLogin function-t annak ellenőrzésére, hogy mi történik a gomb megnyomásakor:
+</p>
+<pre class="prettyprint lang-lua">
+-- create the function and define the 'button' and 'state' parameters
+-- (these are passed automatically by onClientGUIClick)
+function clientSubmitLogin(button,state)
+	-- if our login button was clicked with the left mouse button, and the state of the mouse button is up
+	if button == "left" and state == "up" then
+		-- move the input focus back onto the game (allowing players to move around, open the chatbox, etc)
+		guiSetInputEnabled(false)
+		-- hide the window and all the components
+		guiSetVisible(wdwLogin, false)
+		-- hide the mouse cursor
+		showCursor(false)
+	end
+end
+</pre>
+<p>Most, amikor a gombot megnyomják, az ablakot elrejti, és az összes irányítás visszakerül a játékoshoz. A következőkben megmondjuk a szervernek, hogy engedélyezze a játékos spawnolását.
+</p>
+<h3><span class="mw-headline" id="Triggering_the_server">Triggering the server</span></h3>
+<p>Szerveroldali események hívását a <a href="../TriggerServerEvent.html" title="TriggerServerEvent">triggerServerEvent</a>-el lehet megoldani. Ez lehetővé teszi, hogy eseményeket hívj meg client oldalról a server oldalra. Ugyan ezt a műveletet fordítva is elvégezheti a <a href="../TriggerClientEvent.html" title="TriggerClientEvent">triggerClientEvent</a>-t használatával.
+Itt a <a href="../TriggerServerEvent.html" title="TriggerServerEvent">triggerServerEvent</a> function-t használjuk, hogy meghívjuk a saját eventünket a szerveren "submitLogin" néven, amely a játékosok lerakását szabályozza server oldalon.
+</p><p><b>Mostpedig hozzáírunk több kódot a már meglévő 'clientSubmitLogin' function-hoz. Ez nem egy új function, hanem a már meglévőt helyettesíti.</b> 
+</p>
+<pre class="prettyprint lang-lua">
+function clientSubmitLogin(button,state)
+	if button == "left" and state == "up" then
+		-- get the text entered in the 'username' field
+		local username = guiGetText(edtUser)
+		-- get the text entered in the 'password' field
+		local password = guiGetText(edtPass)
+
+		-- if the username and password both exist
+		if username and password then
+			-- trigger the server event 'submitLogin' and pass the username and password to it
+			triggerServerEvent("submitLogin", getRootElement(), username, password)
+
+			-- hide the gui, hide the cursor and return control to the player
+			guiSetInputEnabled(false)
+			guiSetVisible(wdwLogin, false)
+			showCursor(false)
+		else
+			-- otherwise, output a message to the player, do not trigger the server
+			-- and do not hide the gui
+			outputChatBox("Please enter a username and password.")
+		end
+	end
+end
+</pre>
+<h3><span class="mw-headline" id="Szerveroldali_event_l.C3.A9trehoz.C3.A1sa">Szerveroldali event létrehozása</span></h3>
+<p>Az összes szükséges client oldali kódunk megvan már, szóval nyisd meg a server oldali 'script.lua' fájlt (az <a href="../Scripting_Introduction.html" title="Scripting Introduction">Introduction to Scripting</a>-ből), vagy egy másik alkalmas server oldali fájlt, amivel működik.
+</p><p>On the server side, recall that we are spawning the player as soon as they login.
+So, first of all, we will need to define the custom event that we used before on the client. This can be done using <a href="../AddEvent.html" title="AddEvent">addEvent</a> and <a href="../AddEventHandler.html" title="AddEventHandler">addEventHandler</a>.
+</p>
+<pre class="prettyprint lang-lua">
+-- create our loginHandler function, with username and password parameters (passed from the client gui)
+function loginHandler(username,password)
+
+end
+
+-- define our custom event, and allow it to be triggered from the client ('true')
+addEvent("submitLogin",true)
+-- add an event handler so that when submitLogin is triggered, the function loginHandler is called
+addEventHandler("submitLogin",root,loginHandler)
+</pre>
+<h3><span class="mw-headline" id="Bejelentkez.C3.A9s">Bejelentkezés</span></h3>
+<p>Most már van egy function-unk, ami a 'submitLogin' eventen keresztül hívódik meg, így dolgozhatunk a bejelentkezésen és a játékos lerakásán a   'loginHandler' használatával:
+</p>
+<pre class="prettyprint lang-lua">
+function loginHandler(username,password)
+	-- check that the username and password are correct
+	if username == "user" and password == "apple" then
+		-- the player has successfully logged in, so spawn them
+		if (client) then
+			spawnPlayer(client, 1959.55, -1714.46, 10)
+			fadeCamera(client, true)
+                        setCameraTarget(client, client)
+			outputChatBox("Welcome to My Server.", client)
+		end
+	else
+		-- if the username or password are not correct, output a message to the player
+		outputChatBox("Invalid username and password. Please re-connect and try again.",client)
+        end			
+end
+
+addEvent("submitLogin",true)
+addEventHandler("submitLogin",root,loginHandler)
+</pre>
+<p><b>Ennek az útmutatónak a céljából egy nagyon egyszerű felhasználónév és jelszó rendszer látható. Egy átfogóbb megoldás érdekében használhatja az Account System-et, vagy a MySQL adatbázist.</b>
+</p><p>Valamint vegye figyelembe a "client" változó használatát is, ez egy belső változó, amit az MTA használ azon játékosok azonosítására, akik meghívták az eventet. 
+</p><p><br />
+Végeztűl, ne felejtsük el hozzáadni az gui.lua fájlt a meta.xml-hez a fő resource-ban, és jelöljük meg client-ként:
+</p>
+<pre class="prettyprint lang-xml">
+&lt;script src="client/gui.lua" type="client" /&gt;
+</pre>
+<p><br />
+Ezen a ponton van egy alap bejelentkezési ablakunk, ami ellenőrzi a játékos felhasználónevét és jelszavát, amikor rákattint a bejelentkezési gombra. Ha ezek megegyeznek, akkor a játékost automatikusan lespawnolja.
+</p><p>A GUI-val való további segítségért látogassa meg a <a href="../Category_GUI_Tutorials_hu.html" title="Category:GUI Tutorials hu">GUI tutorials</a> oldalt.
+</p>
+<h2><span class="mw-headline" id="Ford.C3.ADtotta">Fordította</span></h2>
+<pre><b>2018.11.11.</b> <font size="3"><b><a rel="nofollow" class="external text" href="https://wiki.multitheftauto.com/wiki/User:Surge">Surge</a></b></font>
+</pre>
+<pre><b>2016.06.27.</b> <font size="3">NeXuS</font>
+</pre>
+<!-- 
+NewPP limit report
+Cached time: 20190625164819
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.009 seconds
+Real time usage: 0.010 seconds
+Preprocessor visited node count: 158/1000000
+Preprocessor generated node count: 300/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 - -total
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:6870-0!*!0!!en!5!* and timestamp 20190625164819 and revision id 60829
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=HU/Introduction_to_Scripting_the_GUI&amp;oldid=60829">https://wiki.multitheftauto.com/index.php?title=HU/Introduction_to_Scripting_the_GUI&amp;oldid=60829</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="../Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="../Category_GUI_Tutorials.html" title="Category:GUI Tutorials">GUI Tutorials</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Introduction_to_Scripting_the_GUI.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:HU/Introduction_to_Scripting_the_GUI&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=HU/Introduction_to_Scripting_the_GUI&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=HU/Introduction_to_Scripting_the_GUI&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=HU%2FIntroduction+to+Scripting+the+GUI" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=HU%2FIntroduction+to+Scripting+the+GUI" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/HU/Introduction_to_Scripting_the_GUI.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/HU/Introduction_to_Scripting_the_GUI.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=HU/Introduction_to_Scripting_the_GUI&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=HU/Introduction_to_Scripting_the_GUI&amp;oldid=60829" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=HU/Introduction_to_Scripting_the_GUI&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=Introduction_to_Scripting_the_GUI" title="Introduction to Scripting the GUI – English" lang="en" hreflang="en">English</a></li>
+													<li class="interlanguage-link interwiki-it"><a href="http://wiki.multitheftauto.com/index.php?title=IT/Introduzione_allo_scripting_della_GUI" title="Introduzione allo scripting della GUI – italiano" lang="it" hreflang="it">Italiano</a></li>
+													<li class="interlanguage-link interwiki-ru"><a href="http://wiki.multitheftauto.com/index.php?title=RU/Introduction_to_Scripting_the_GUI" title="Introduction to Scripting the GUI – русский" lang="ru" hreflang="ru">Русский</a></li>
+													<li class="interlanguage-link interwiki-es"><a href="http://wiki.multitheftauto.com/index.php?title=ES/Introducci%C3%B3n_a_la_Programaci%C3%B3n_de_GUI" title="Introducción a la Programación de GUI – español" lang="es" hreflang="es">Español</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 18 November 2018, at 18:33.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":38});});</script></body></html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>RenderWare Plugin System - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"RenderWare_Plugin_System","wgTitle":"RenderWare Plugin System","wgCurRevisionId":42110,"wgRevisionId":42110,"wgArticleId":7196,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["GTA Games"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"RenderWare_Plugin_System","wgRelevantArticleId":7196,"wgRequestId":"08e93249a0cd49513b2cb9eb","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-RenderWare_Plugin_System rootpage-RenderWare_Plugin_System skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">RenderWare Plugin System</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>The <b>RenderWare Plugin System</b> is an interface used to extend known RenderWare types. RenderWare structs are allocated in free lists which know the RenderWare struct size at runtime. One free list is created for every type which is to be extended. Management of RenderWare plugins is done through plugin container structs that hold <b>constructors</b>, <b>destructors</b> and <b>copy-constructors</b> of their plugin. Plugins can define stream <b>read</b> and <b>write</b> algorithms to save their properties to disk.
+</p>
+<h3><span class="mw-headline" id="Reference">Reference</span></h3>
+<ul><li> <b>plugin struct</b> is the data structure which should be registered to the RenderWare type</li>
+<li> <b>plugin object</b> is a RenderWare type with plugin support</li>
+<li> <b>plugin container</b> is a global descriptor with extension information about the plugin object (such as size, constructors, destructors and stream callbacks)</li></ul>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Reference"><span class="tocnumber">1</span> <span class="toctext">Reference</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Known_RenderWare_types_with_.28built-in.29_plugin_support"><span class="tocnumber">2</span> <span class="toctext">Known RenderWare types with (built-in) plugin support</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Registration_of_plugin_object_extensions"><span class="tocnumber">3</span> <span class="toctext">Registration of plugin object extensions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#RwObjectRegisterPlugin"><span class="tocnumber">3.1</span> <span class="toctext">RwObjectRegisterPlugin</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Callback_types_.28templates.29"><span class="tocnumber">3.2</span> <span class="toctext">Callback types (templates)</span></a>
+<ul>
+<li class="toclevel-3 tocsection-6"><a href="#RwPluginConstructor"><span class="tocnumber">3.2.1</span> <span class="toctext">RwPluginConstructor</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#RwPluginDestructor"><span class="tocnumber">3.2.2</span> <span class="toctext">RwPluginDestructor</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#RwPluginCopyConstructor"><span class="tocnumber">3.2.3</span> <span class="toctext">RwPluginCopyConstructor</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Registration_of_plugin_object_stream_extensions"><span class="tocnumber">4</span> <span class="toctext">Registration of plugin object stream extensions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#RwObjectRegisterPluginStream"><span class="tocnumber">4.1</span> <span class="toctext">RwObjectRegisterPluginStream</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Callback_types_.28templates.29_2"><span class="tocnumber">4.2</span> <span class="toctext">Callback types (templates)</span></a>
+<ul>
+<li class="toclevel-3 tocsection-12"><a href="#RwPluginStreamRead"><span class="tocnumber">4.2.1</span> <span class="toctext">RwPluginStreamRead</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="#RwPluginStreamWrite"><span class="tocnumber">4.2.2</span> <span class="toctext">RwPluginStreamWrite</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="#RwPluginStreamGetSize"><span class="tocnumber">4.2.3</span> <span class="toctext">RwPluginStreamGetSize</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-15"><a href="#Lifetime_of_a_RenderWare_plugin_object"><span class="tocnumber">5</span> <span class="toctext">Lifetime of a RenderWare plugin object</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Known_RenderWare_types_with_.28built-in.29_plugin_support">Known RenderWare types with (built-in) plugin support</span></h2>
+<ul><li> <b>RpAtomic</b> - geometry rendering descriptor</li>
+<li> <b>RpClump</b> - container of atomics, lights and cameras</li>
+<li> <b>RpGeometry</b> - 3D mesh holder</li>
+<li> <b>RpMaterial</b> - rendering material for geometry</li>
+<li> <b>RpWorld</b> - sector manager for RenderWare scenes which handles dynamic lights</li>
+<li> <b>RpLight</b> - dynamic light descriptor</li>
+<li> <b>RwFrame</b> - matrix in 3d space which holds frame objects (atomics, lights, cameras), creates a hierarchy to transform and offset objects</li>
+<li> <b>RwCamera</b> - viewport into 3d space with rendering properties</li>
+<li> <b>RwRaster</b> - gfx texture data</li>
+<li> <b>RwTexture</b> - raster rendering descriptor</li>
+<li> <b>RwTexDictionary</b> - container of textures to look-up by name</li></ul>
+<h2><span class="mw-headline" id="Registration_of_plugin_object_extensions">Registration of plugin object extensions</span></h2>
+<p>Each plugin object (that is one of the above RenderWare types) offers a <b>plugin registration routine</b>. It registers plugin struct details into the <b>plugin container</b>. It is defined as follows...
+</p>
+<h3><span class="mw-headline" id="RwObjectRegisterPlugin">RwObjectRegisterPlugin</span></h3>
+<pre>size_t RwObjectRegisterPlugin( size_t sPluginSize, unsigned int uiPluginID, RwPluginConstructor constructor,
+RwPluginDestructor destructor, RwPluginCopyConstructor copyConstructor = NULL );
+</pre>
+<ul><li> <b>sPluginSize</b> - size of the plugin struct which is to be registered at the plugin object</li>
+<li> <b>uiPluginID</b> - unique ID of the plugin so it can be recognized by the system (e.g. in streams)</li>
+<li> <b>constructor</b> - called upon plugin object construction to set up plugin struct at it's offset</li>
+<li> <b>destructor</b> - called upon plugin object destruction to release associated resources</li>
+<li> <b>copyConstructor</b> (can be NULL) - called upon plugin cloning to recreated properties of the source plugin object in the new one with same properties</li></ul>
+<p>The function returns the offset of the registered plugin struct.
+</p>
+<h3><span class="mw-headline" id="Callback_types_.28templates.29">Callback types (templates)</span></h3>
+<h4><span class="mw-headline" id="RwPluginConstructor">RwPluginConstructor</span></h4>
+<pre>template &lt;class objectType&gt;
+objectType* RwPluginConstructor( objectType *obj, size_t sPluginOffset );
+</pre>
+<h4><span class="mw-headline" id="RwPluginDestructor">RwPluginDestructor</span></h4>
+<pre>template &lt;class objectType&gt;
+void RwPluginDestructor( objectType *obj, size_t sPluginOffset );
+</pre>
+<ul><li> <b>obj</b> - plugin object in question</li>
+<li> <b>sPluginOffset</b> - offset of the plugin struct</li></ul>
+<p>If the constructor routine returns NULL, the plugin has failed to construct. It is not recommended to do so, since the plugin object will be given to the runtime anyway. On the other hand, the destructor must not fail.
+</p>
+<h4><span class="mw-headline" id="RwPluginCopyConstructor">RwPluginCopyConstructor</span></h4>
+<pre>template &lt;class objectType&gt;
+objectType* RwPluginCopyConstructor( objectType *objNew, objectType *source, size_t sPluginOffset );
+</pre>
+<ul><li> <b>objNew</b> - the newly created plugin object</li>
+<li> <b>source</b> - plugin object to clone data from</li>
+<li> <b>sPluginOffset</b> - offset of the plugin struct</li></ul>
+<h2><span class="mw-headline" id="Registration_of_plugin_object_stream_extensions">Registration of plugin object stream extensions</span></h2>
+<p>Plugin structs may offer a stream representation. Once sections designated by the struct id are found in a RwStream, the <b>read callback</b> is issued. If a RenderWare type is written to disk, all <b>write callback</b>s are invoked. Plugins do not have to write details to disk. The registration routine is defined as follows...
+</p>
+<h3><span class="mw-headline" id="RwObjectRegisterPluginStream">RwObjectRegisterPluginStream</span></h3>
+<pre>size_t RwObjectRegisterPluginStream( unsigned int uiPluginID, RwPluginStreamRead readCallback, RwPluginStreamWrite writeCallback,
+</pre>
+<p>RwPluginStreamGetSize sizeCallback );
+</p>
+<ul><li> <b>uiPluginID</b> - id of the plugin struct (to find it in the registry)</li>
+<li> <b>readCallback</b> - issued once a plugin struct is found by id in the RwStream</li>
+<li> <b>writeCallback</b> - invoked once a plugin object is written to RwStream</li>
+<li> <b>sizeCallback</b> - called to return the size of the plugin struct in the stream (for allocation purposes)</li></ul>
+<p>The plugin struct offset is returned if successfully registered. Otherwise the function returns 0 (which is always an invalid offset). The registration will fail if the plugin struct has not been registered previously. Therefor call RwObjectRegisterPlugin before RwObjectRegisterPluginStream!
+</p>
+<h3><span class="mw-headline" id="Callback_types_.28templates.29_2">Callback types (templates)</span></h3>
+<h4><span class="mw-headline" id="RwPluginStreamRead">RwPluginStreamRead</span></h4>
+<pre>template &lt;class objectType&gt;
+RwStream* RwPluginStreamRead( RwStream *stream, size_t sPluginSize, objectType *obj );
+</pre>
+<ul><li> <b>stream</b> - source stream of the plugin object</li>
+<li> <b>sPluginSize</b> - size of the plugin object (returned from RwPluginStreamGetSize)</li>
+<li> <b>obj</b> - plugin object to write data to</li></ul>
+<p>If this function succeeds, it should return the stream. Otherwise it can return NULL. This means that reading the RenderWare type has failed. The runtime will receive a NULL pointer then.
+</p>
+<h4><span class="mw-headline" id="RwPluginStreamWrite">RwPluginStreamWrite</span></h4>
+<pre>template &lt;class objectType&gt;
+int RwPluginStreamWrite( RwStream *stream, size_t sPluginSize, objectType *obj );
+</pre>
+<ul><li> <b>stream</b> - source stream of the plugin object</li>
+<li> <b>sPluginSize</b> - size of the plugin object (returned from RwPluginStreamGetSize)</li>
+<li> <b>obj</b> - plugin object to write data to</li></ul>
+<p>This callback should return a boolean whether writing succeeded or not.
+</p>
+<h4><span class="mw-headline" id="RwPluginStreamGetSize">RwPluginStreamGetSize</span></h4>
+<pre>template &lt;class objectType&gt;
+size_t RwPluginStreamGetSize( objectType *obj );
+</pre>
+<ul><li> <b>obj</b> - plugin object to write to disk</li></ul>
+<p>This callback should return the required size to write to the RwStream. If 0 is returned, no data has to be written to disk (hence no section is created). The return value is passed to the write callback.
+</p>
+<h2><span class="mw-headline" id="Lifetime_of_a_RenderWare_plugin_object">Lifetime of a RenderWare plugin object</span></h2>
+<p>Once a plugin object is created, first it is filled with RenderWare data. Then all constructors are called in their assignment order to fill all plugin details. To access plugin details, API has to be created which accesses the plugin struct (which has been registered at said plugin) at the offset it is assigned to. Usually there is a global variable which holds the plugin struct offset that is used in all API. Since the structs are constructed the same way all the time, the plugin struct offset information could be omitted by creating a new definition which maps out the offsets statically at compile-time. Optimal implementations use the plugin struct offset returned by the registration function, so that each registered struct in the plugin object is independent from others.
+</p><p>On destruction, all plugin structs are destroyed by calling their destructors in reverse assignment order.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190625165955
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.004 seconds
+Real time usage: 0.005 seconds
+Preprocessor visited node count: 59/1000000
+Preprocessor generated node count: 64/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 - -total
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:7196-0!*!*!!en!*!* and timestamp 20190625165955 and revision id 42110
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=RenderWare_Plugin_System&amp;oldid=42110">https://wiki.multitheftauto.com/index.php?title=RenderWare_Plugin_System&amp;oldid=42110</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_GTA_Games.html" title="Category:GTA Games">GTA Games</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="RenderWare_Plugin_System.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:RenderWare_Plugin_System&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=RenderWare_Plugin_System&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=RenderWare_Plugin_System&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=RenderWare+Plugin+System" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=RenderWare+Plugin+System" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/RenderWare_Plugin_System.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/RenderWare_Plugin_System.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=RenderWare_Plugin_System&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=RenderWare_Plugin_System&amp;oldid=42110" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=RenderWare_Plugin_System&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+			</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 20 September 2014, at 12:22.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":37});});</script></body></html>

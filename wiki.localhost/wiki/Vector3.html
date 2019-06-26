@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Vector/Vector3 - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Vector/Vector3","wgTitle":"Vector/Vector3","wgCurRevisionId":54155,"wgRevisionId":54155,"wgArticleId":8113,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Incomplete"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Vector/Vector3","wgRelevantArticleId":8113,"wgRequestId":"bdd878031eefa88b2edde9f3","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Vector3","wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false},"wgInternalRedirectTargetUrl":"/wiki/Vector/Vector3"});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.action.view.redirect","mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://wiki.multitheftauto.com/wiki/Vector/Vector3"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Vector_Vector3 rootpage-Vector_Vector3 skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Vector/Vector3</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"><span class="mw-redirectedfrom">(Redirected from <a href="http://wiki.localhost/index.php?title=Vector3&amp;redirect=no" title="Vector3">Vector3</a>)</span></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>The <b>vector3</b> class represents a three-dimensional <a href="Vector.html" title="Vector">vector</a>.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Methods"><span class="tocnumber">1</span> <span class="toctext">Methods</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#create"><span class="tocnumber">1.1</span> <span class="toctext">create</span></a>
+<ul>
+<li class="toclevel-3 tocsection-3"><a href="#Syntax"><span class="tocnumber">1.1.1</span> <span class="toctext">Syntax</span></a>
+<ul>
+<li class="toclevel-4 tocsection-4"><a href="#Optional_arguments"><span class="tocnumber">1.1.1.1</span> <span class="toctext">Optional arguments</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-5"><a href="#Example"><span class="tocnumber">1.1.2</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-6"><a href="#cross"><span class="tocnumber">1.2</span> <span class="toctext">cross</span></a>
+<ul>
+<li class="toclevel-3 tocsection-7"><a href="#Syntax_2"><span class="tocnumber">1.2.1</span> <span class="toctext">Syntax</span></a>
+<ul>
+<li class="toclevel-4 tocsection-8"><a href="#Required_arguments"><span class="tocnumber">1.2.1.1</span> <span class="toctext">Required arguments</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-9"><a href="#Example_2"><span class="tocnumber">1.2.2</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-10"><a href="#dot"><span class="tocnumber">1.3</span> <span class="toctext">dot</span></a>
+<ul>
+<li class="toclevel-3 tocsection-11"><a href="#Syntax_3"><span class="tocnumber">1.3.1</span> <span class="toctext">Syntax</span></a>
+<ul>
+<li class="toclevel-4 tocsection-12"><a href="#Required_arguments_2"><span class="tocnumber">1.3.1.1</span> <span class="toctext">Required arguments</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-13"><a href="#Example_3"><span class="tocnumber">1.3.2</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-14"><a href="#normalize"><span class="tocnumber">1.4</span> <span class="toctext">normalize</span></a>
+<ul>
+<li class="toclevel-3 tocsection-15"><a href="#Syntax_4"><span class="tocnumber">1.4.1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-3 tocsection-16"><a href="#Example_4"><span class="tocnumber">1.4.2</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-17"><a href="#getX_and_setX"><span class="tocnumber">1.5</span> <span class="toctext">getX and setX</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#getY_and_setY"><span class="tocnumber">1.6</span> <span class="toctext">getY and setY</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#getZ_and_setZ"><span class="tocnumber">1.7</span> <span class="toctext">getZ and setZ</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#getNormalized"><span class="tocnumber">1.8</span> <span class="toctext">getNormalized</span></a>
+<ul>
+<li class="toclevel-3 tocsection-21"><a href="#Syntax_5"><span class="tocnumber">1.8.1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-3 tocsection-22"><a href="#Example_5"><span class="tocnumber">1.8.2</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-23"><a href="#getSquaredLength"><span class="tocnumber">1.9</span> <span class="toctext">getSquaredLength</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#getLength"><span class="tocnumber">1.10</span> <span class="toctext">getLength</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Methods">Methods</span></h2>
+<h3><span class="mw-headline" id="create">create</span></h3>
+<p>This is default constructor for the Vector3 class and returns a Vector3 object.
+</p>
+<h4><span class="mw-headline" id="Syntax">Syntax</span></h4>
+<pre class="prettyprint lang-lua">vector3 Vector3 ( [ float x = 0, float y = 0, float z = 0 ] )</pre>
+<h5><span class="mw-headline" id="Optional_arguments">Optional arguments</span></h5>
+<ul><li> <b>x</b>, <b>y</b> and <b>z</b>: coordinates for the vector. If not specified, they default to 0.</li>
+<li> Instead of these three coordinates, a single Vector3 object may be inserted to clone it.</li></ul>
+<h4><span class="mw-headline" id="Example">Example</span></h4>
+<p>This example sorts all players in a nice line on the center of the map.
+</p>
+<!-- BEGIN SECTION |1|both|Shared|--><div class='bothHeader' onclick='expandSection(1);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander1'>Click to collapse [-]</div>Shared</div><div style='display:;' class='bothContent' id='section1'>
+<pre class="prettyprint lang-lua">
+local players = getElementsByType("player")
+local newPlayerPosition = Vector3(-#players - 1, 0, 10) -- Initialize the position vector for the first player in the list
+for _, player in ipairs(players) do
+    -- Move each player 1 unit forward in X from the previous one
+    newPlayerPosition.x = newPlayerPosition.x + 1
+    setElementPosition(player, newPlayerPosition)
+end
+</pre>
+</div><!-- END SECTION |1|-->
+<h3><span class="mw-headline" id="cross">cross</span></h3>
+<p>Calculates the cross product of two vectors, A and B, and is written as A × B. The result is another vector which:
+</p>
+<ul><li> Is orthogonal to both A and B.</li>
+<li> Its direction is determined by the <a rel="nofollow" class="external text" href="https://upload.wikimedia.org/wikipedia/commons/d/d2/Right_hand_rule_cross_product.svg">right-hand rule</a>.</li>
+<li> Its length is equal to the area of the parallelogram that A and B form (which in turn is equal to A's length by B's length by the sine of the minimum angle between A and B).</li></ul>
+<h4><span class="mw-headline" id="Syntax_2">Syntax</span></h4>
+<pre class="prettyprint lang-lua">vector3 Vector3:cross ( vector3 vector )</pre>
+<h5><span class="mw-headline" id="Required_arguments">Required arguments</span></h5>
+<ul><li> <b>vector</b>: a vector3 object to get the cross product with.</li></ul>
+<h4><span class="mw-headline" id="Example_2">Example</span></h4>
+<p>This example creates a tiny sun which is always at the right of the vehicle the local player drives. By default it will draw the vectors used to compute the position where it should be, so you can understand what does this function do. Note that the code could be made simpler by simply getting the right component of the vehicle matrix. <b>Make sure that you put this code in a resource which has OOP enabled, or it won't work</b>.
+</p>
+<!-- BEGIN SECTION |2|client|Client|--><div class='clientHeader' onclick='expandSection(2);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander2'>Click to collapse [-]</div>Client</div><div style='display:;' class='clientContent' id='section2'>
+<pre class="prettyprint lang-lua">-- OPTIONS --
+local debugMode = true -- If true, the script will draw the vectors used to compute the effect
+
+-- EFFECT CONTROL FUNCTIONS --
+local playerVehicle, lightMarker, light
+local function applyDrivingLightEffect()
+    -- Get the vehicle matrix and use it to get the vehicle and vehicle base position
+    local vehicleMatrix = playerVehicle.matrix
+    local vehiclePosition = vehicleMatrix:getPosition()
+    -- Get the vehicle upwards vector and vehicle forward direction vector
+    local vehicleUpwardsVector, vehicleForwardVector = vehicleMatrix:getUp(), vehicleMatrix:getForward()
+    -- Get the normalized cross product of the vehicle forward vector and the vehicleUpwardsVector vector
+    local crossVector = vehicleForwardVector:cross(vehicleUpwardsVector):getNormalized()
+    -- Draw all the interesting vectors we have now
+    if debugMode then
+        local forwardPoint = vehiclePosition + vehicleForwardVector
+        dxDrawLine3D(vehiclePosition, forwardPoint, tocolor(255, 0, 0))
+        local sx, sy = getScreenFromWorldPosition(forwardPoint)
+        if sx then
+            dxDrawText("F", sx, sy)
+        end
+            
+        local vehicleUpwardsVectorPoint = vehiclePosition + vehicleUpwardsVector
+        dxDrawLine3D(vehiclePosition, vehicleUpwardsVectorPoint, tocolor(0, 255, 0))
+        local sx, sy = getScreenFromWorldPosition(vehicleUpwardsVectorPoint, 1.1)
+        if sx then
+            dxDrawText("U", sx, sy)
+        end
+          
+        local crossPoint = vehiclePosition + crossVector
+        dxDrawLine3D(vehiclePosition, crossPoint, tocolor(0, 0, 255))
+        local sx, sy = getScreenFromWorldPosition(crossPoint)
+        if sx then
+            dxDrawText("C", sx, sy)
+        end
+    end
+    -- Calculate the half length of the vehicle based in its bounding box, and use it to position the light effects at the right
+    local _, bmy, _, _, bMy = playerVehicle:getBoundingBox()
+    local newEffectPosition = vehiclePosition + crossVector * (bMy - bmy) / 2
+    lightMarker.position = newEffectPosition
+    light.position = newEffectPosition
+end
+
+local function startDrivingLightEffect()
+    -- Create the effects and start updating them every frame
+    addEventHandler("onClientPreRender", root, applyDrivingLightEffect)
+    playerVehicle, lightMarker, light = localPlayer.vehicle, createMarker(0, 0, 0, "corona", 0.5, 255, 255, 0), createLight(0, 0, 0, 0, 8, 255, 255)
+    -- If we are in debug mode, render the vehicle invisible to see the vectors clearly
+    if debugMode then
+        playerVehicle.alpha = 0
+    end
+end
+
+local function stopDrivingLightEffect()
+    -- Stop applyDrivingLightEffect from being called and destroy everything created
+    removeEventHandler("onClientPreRender", root, applyDrivingLightEffect)
+    destroyElement(lightMarker)
+    destroyElement(light)
+    -- If we are in debug mode, reset the vehicle alpha to normal again
+    if debugMode then
+        playerVehicle.alpha = 255
+    end
+    playerVehicle, lightMarker, light = nil, nil, nil
+end
+
+-- FUNCTIONS THAT MANAGE THE EFFECT --
+-- Start or stop the effect when the player is driving a car
+local function manageDrivingLightEffectStatus(_, seat)
+    if eventName == "onClientPlayerVehicleEnter" then
+        if seat == 0 then
+            -- The player has just entered a vehicle as the driver. Start the effect
+            startDrivingLightEffect()
+        end
+    elseif playerVehicle then
+        -- The player has just exited a vehicle and we were applying the effect. Stop it
+        stopDrivingLightEffect()
+    end
+end
+addEventHandler("onClientPlayerVehicleEnter", localPlayer, manageDrivingLightEffectStatus)
+addEventHandler("onClientPlayerVehicleExit", localPlayer, manageDrivingLightEffectStatus)
+
+-- Start the effect when the resource starts if the player is driving a vehicle, and reset vehicle alpha back to normal if necessary
+local function handleResourceStartStop()
+    if eventName == "onClientResourceStart" then
+        playerVehicle = localPlayer.vehicle or nil
+        if playerVehicle then
+            startDrivingLightEffect()
+        end
+    elseif playerVehicle then
+        -- It is not necessary to call this function to just reset the car alpha, but it is a good practise to ALWAYS clean up everything nevertheless
+        stopDrivingLightEffect()
+    end
+end
+addEventHandler("onClientResourceStart", resourceRoot, handleResourceStartStop)
+addEventHandler("onClientResourceStop", resourceRoot, handleResourceStartStop)</pre></div><!-- END SECTION |2|-->
+<h3><span class="mw-headline" id="dot">dot</span></h3>
+<p>Calculates the (standard) dot/scalar product of two vectors. If we call that vectors A and B, the dot product is written as A · B. This can be used to calculate the angle between them. If the standard scalar product is 0, both vectors are orthogonal.
+</p>
+<h4><span class="mw-headline" id="Syntax_3">Syntax</span></h4>
+<pre class="prettyprint lang-lua">float Vector3:dot ( vector3 vector )</pre>
+<h5><span class="mw-headline" id="Required_arguments_2">Required arguments</span></h5>
+<ul><li> <b>vector</b>: a vector3 object to get the dot product with.</li></ul>
+<h4><span class="mw-headline" id="Example_3">Example</span></h4>
+<p>This examples illustrates the concept of dot/scalar product and implements a useful function which can be used to get the angle between two vectors.
+</p>
+<!-- BEGIN SECTION |3|both|Shared|--><div class='bothHeader' onclick='expandSection(3);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander3'>Click to collapse [-]</div>Shared</div><div style='display:;' class='bothContent' id='section3'>
+<pre class="prettyprint lang-lua">
+local vec1 = Vector3(1, 0, 0)
+local vec2 = Vector3(0, 0, 0)
+local dotproduct = vec1:dot(vec2)
+
+if dotproduct == 0 then
+    outputDebugString("vec1 is orthogonal to vec2")
+end
+
+-- Calculate angle between vec1 and vec2
+function angle(vec1, vec2)
+    -- Calculate the angle by applying law of cosines
+    return math.acos(vec1:dot(vec2)/(vec1.length*vec2.length))
+end
+
+outputDebugString("Angle between vec1 and vec2: "..math.deg(angle(vec1, vec2)).."°")
+</pre>
+</div><!-- END SECTION |3|-->
+<h3><span class="mw-headline" id="normalize">normalize</span></h3>
+<p>Converts a vector to a unit vector (a vector of length 1).
+</p>
+<h4><span class="mw-headline" id="Syntax_4">Syntax</span></h4>
+<pre class="prettyprint lang-lua">bool Vector3:normalize ( )</pre>
+<h4><span class="mw-headline" id="Example_4">Example</span></h4>
+<p>This example slowly moves all the players' camera to look at the Mount Chilliad.
+</p>
+<!-- BEGIN SECTION |4|client|Client|--><div class='clientHeader' onclick='expandSection(4);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander4'>Click to collapse [-]</div>Client</div><div style='display:;' class='clientContent' id='section4'>
+<pre class="prettyprint lang-lua">
+local targetPosition = Vector3(-2627.32, -1083.2, 433.35) -- Somewhere in Mount Chilliad
+
+local function moveCameraToTarget(deltaTime)
+    local currentPosition = Vector3(getCameraMatrix())
+    local direction = targetPosition - currentPosition
+    direction:normalize() -- Get a direction vector by normalizing the vector from the current position to the target position
+    setCameraMatrix(currentPosition + direction * deltaTime * 0.05, -2589.45, -1174.49, 418.09)
+end
+addEventHandler("onClientPreRender", root, moveCameraToTarget)
+</pre>
+</div><!-- END SECTION |4|-->
+<h3><span class="mw-headline" id="getX_and_setX">getX and setX</span></h3>
+<h3><span class="mw-headline" id="getY_and_setY">getY and setY</span></h3>
+<h3><span class="mw-headline" id="getZ_and_setZ">getZ and setZ</span></h3>
+<h3><span class="mw-headline" id="getNormalized">getNormalized</span></h3>
+<p>Returns a normalized vector (of length 1) of the vector it's used on. Differently from the <i>Vector3:normalize</i> method, this one returns a <i>vector3</i> and doesn't modify the original vector.
+</p>
+<h4><span class="mw-headline" id="Syntax_5">Syntax</span></h4>
+<pre class="prettyprint lang-lua">vector3 Vector3:getNormalized ( )</pre>
+<h4><span class="mw-headline" id="Example_5">Example</span></h4>
+<p>This example slowly moves all the players' camera to look at the Mount Chilliad with a shorter code than the previous example.
+</p>
+<!-- BEGIN SECTION |5|client|Client|--><div class='clientHeader' onclick='expandSection(5);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander5'>Click to collapse [-]</div>Client</div><div style='display:;' class='clientContent' id='section5'>
+<pre class="prettyprint lang-lua">
+local targetPosition = Vector3(-2627.32, -1083.2, 433.35) -- Somewhere in Mount Chilliad
+
+local function moveCameraToTarget(deltaTime)
+    local currentPosition = Vector3(getCameraMatrix())
+    local direction = (targetPosition - currentPosition):getNormalized() -- Get a direction vector by normalizing the vector from the current position to the target position
+    setCameraMatrix(currentPosition + direction * deltaTime * 0.05, -2589.45, -1174.49, 418.09)
+end
+addEventHandler("onClientPreRender", root, moveCameraToTarget)
+</pre>
+</div><!-- END SECTION |5|-->
+<h3><span class="mw-headline" id="getSquaredLength">getSquaredLength</span></h3>
+<h3><span class="mw-headline" id="getLength">getLength</span></h3>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625164247
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.007 seconds
+Real time usage: 0.007 seconds
+Preprocessor visited node count: 205/1000000
+Preprocessor generated node count: 420/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 - -total
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:8113-0!*!0!!en!*!* and timestamp 20190625164247 and revision id 54155
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=Vector/Vector3&amp;oldid=54155">https://wiki.multitheftauto.com/index.php?title=Vector/Vector3&amp;oldid=54155</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_Incomplete.html" title="Category:Incomplete">Incomplete</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Vector/Vector3.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:Vector/Vector3&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=Vector/Vector3&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=Vector/Vector3&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=Vector%2FVector3" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=Vector%2FVector3" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/Vector/Vector3.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/Vector/Vector3.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=Vector/Vector3&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=Vector/Vector3&amp;oldid=54155" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=Vector/Vector3&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-ru"><a href="http://wiki.multitheftauto.com/index.php?title=RU/Vector/Vector3" title="Vector/Vector3 – русский" lang="ru" hreflang="ru">Русский</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 17 March 2018, at 18:53.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":39});});</script></body></html>

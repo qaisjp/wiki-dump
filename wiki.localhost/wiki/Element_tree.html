@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Element tree - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Element_tree","wgTitle":"Element tree","wgCurRevisionId":60018,"wgRevisionId":60018,"wgArticleId":1622,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Scripting Concepts"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Element_tree","wgRelevantArticleId":1622,"wgRequestId":"2b314642bd6d6ea522f161a2","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Element_tree rootpage-Element_tree skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Element tree</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="thumb tright"><div class="thumbinner" style="width:513px;"><a href="File_Tre.html" class="image"><img alt="" src="http://wiki.localhost/images/b/b3/Tre.png" width="511" height="408" class="thumbimage" /></a>  <div class="thumbcaption">Element tree</div></div></div>
+<p>MTA uses a so-called <i>element tree</i> to store all the elements that exist on the server and the client. This is directly related to the set of running <a href="Resources.html" title="Resources">resources</a> and their map files' XML layout, although it can be changed at run-time by scripts.
+</p><p>If you are familiar with the concept of <i>trees</i> in computer-science, this should be easy to understand. If you are not, think of it like a family tree - except everyone only has a single parent. Every <a href="Element.html" title="Element">element</a> has a <i>parent</i> element.
+</p><p>All elements that are created within scripts or from .map files are child elements of the resource they belong to. Thus, most elements (except for <a href="Client.html" title="Client">clients</a>) exist only within resources and are also destroyed as soon as their resource is stopped.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Tree_elements"><span class="tocnumber">1</span> <span class="toctext">Tree elements</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Example"><span class="tocnumber">2</span> <span class="toctext">Example</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Explanation"><span class="tocnumber">2.1</span> <span class="toctext">Explanation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Pratical_application"><span class="tocnumber">3</span> <span class="toctext">Pratical application</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Setting_data_for_elements"><span class="tocnumber">3.1</span> <span class="toctext">Setting data for elements</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Map_manager"><span class="tocnumber">3.2</span> <span class="toctext">Map manager</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Element_browser"><span class="tocnumber">4</span> <span class="toctext">Element browser</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Tree_elements">Tree elements</span></h2>
+<ul><li> <b>root</b>: This is at the very base of the tree - all elements are children (or descendants) of this element.</li></ul>
+<pre class="prettyprint lang-lua">
+getRootElement()
+</pre>
+<ul><li> <b>resource</b>: These are direct children of the root element - with one for each <i>running</i> resource. This element is called the <i>resource root</i>. Its ID holds the name of the resource.</li></ul>
+<pre class="prettyprint lang-lua">
+getResourceRootElement()
+</pre>
+<ul><li> <b>map</b>: Each resource element contains at least one map element, representing either a ".map" file in the resource or the one containing the elements created by scripts (this is called the <i>dynamic</i> map). Their IDs contain the maps' filenames, or <i>dynamic</i> for the dynamic map.
+<ul><li> Map files can contain a number of other <a href="Element.html" title="Element">elements</a> as well as an unlimited number of custom elements.</li></ul></li></ul>
+<h2><span class="mw-headline" id="Example">Example</span></h2>
+<p>This in an example of a serverside tree dumped to XML from a running server.
+<i>Please note that it is shortened on some places for the sake of overview.</i>
+</p>
+<pre class="prettyprint lang-xml">
+&lt;root&gt;
+	&lt;console/&gt;
+	&lt;player dontRespawn="false"/&gt;
+	&lt;player dontRespawn="false" lastSpawnarea=""/&gt;
+	&lt;resource id="resourcebrowser"/&gt;
+	&lt;resource id="ajax"/&gt;
+	&lt;resource id="resourcemanager"/&gt;
+	&lt;resource id="spawnmanager"/&gt;
+	&lt;resource id="mapmanager"/&gt;
+	&lt;resource id="runcode"/&gt;
+	&lt;resource id="fr"&gt;
+		&lt;map id="dynamic"&gt;
+			&lt;vehicle/&gt;
+		&lt;/map&gt;
+	&lt;/resource&gt;
+	&lt;resource id="elementbrowser"/&gt;
+	&lt;resource id="assault"&gt;
+		&lt;map id="dynamic"&gt;
+			&lt;team/&gt;
+			&lt;team/&gt;
+			&lt;blip/&gt;
+			&lt;marker/&gt;
+			&lt;colshape/&gt;
+			&lt;blip/&gt;
+			&lt;blip/&gt;
+		&lt;/map&gt;
+	&lt;/resource&gt;
+	&lt;resource id="as-farm"&gt;
+		&lt;map id="dynamic"/&gt;
+		&lt;map id="as-farm.map"&gt;
+			&lt;spawngroup req="" type="attacker"&gt;
+				&lt;spawnarea posY="-8.3976354598999" posX="20.182683944702" skins="9" ... /&gt;
+			&lt;/spawngroup&gt;
+			&lt;spawngroup req="" type="attacker"&gt;
+				&lt;spawnarea posY="32.166355133057" posX="-46.90763092041" skins="9" ... /&gt;
+			&lt;/spawngroup&gt;
+			&lt;spawngroup req="" type="attacker"&gt;
+				&lt;spawnarea posY="35.214984893799" posX="-33.486911773682" skins="9" ... /&gt;
+			&lt;/spawngroup&gt;
+			&lt;spawngroup req="" type="attacker"&gt;
+				&lt;spawnarea posY="35.214984893799" posX="-33.486911773682" skins="9" ... /&gt;
+			&lt;/spawngroup&gt;
+			&lt;objective id="first" type="checkpoint" description="Breach into the farm" ... /&gt;
+			&lt;pickup type="weapon" ... /&gt;
+		&lt;/map&gt;
+	&lt;/resource&gt;
+&lt;/root&gt;
+</pre>
+<h3><span class="mw-headline" id="Explanation">Explanation</span></h3>
+<p>This tree consists of a number of resource root elements, the <a href="Element/Console.html" title="Element/Console">server console</a> and two <a href="Player.html" title="Player" class="mw-redirect">player</a> elements, that are direct children of the <b>root</b> element. All these resources have a <i>dynamic map</i> as child element (it is just not shown for most of them). These contain the elements that are created dynamically by this resource using scripts, for example a <a href="Vehicle.html" title="Vehicle" class="mw-redirect">vehicle</a>. If the resource has a map file, it is also a child element, itself containing all the elements in the .map file.
+</p><p>Let's have a closer look at the <b>assault</b> resource: This contains just one <i>dynamic</i> map that has 2 teams, 3 blips, 1 marker and 1 colshape as child elements. These are the elements that are created by the script, for example the marker, the colshape and one of the blips are probably used for the objective.
+</p><p>The <b>as-farm</b> resource's function on the contrary is to be a map for the <b>assault</b> gamemode. The dynamic map is empty (it could contain elements if there was a script in it though), while there is a map called 'as-farm.map', that contains a number of elements. These are mostly custom elements (like spawngroup, spawnarea, objective) but also a few elements that MTA creates automactically after loading the map (like pickup). In the brackets after the element type, you can see the element data it contains. These are identical with the attributes the .map file contains within these elements, while you can also set and get element data for any other elements (e.g. players) with <a href="SetElementData.html" title="SetElementData">setElementData</a> and <a href="GetElementData.html" title="GetElementData">getElementData</a>.
+</p>
+<h2><span class="mw-headline" id="Pratical_application">Pratical application</span></h2>
+<p>Elements can have as many children as they like. This does not directly affect the map in any way, but it comes in to its own when combined with the scripting system.
+</p>
+<h3><span class="mw-headline" id="Setting_data_for_elements">Setting data for elements</span></h3>
+<p>If you call a set... function on a node of the element tree, the function will affect every element within it (that it can work on).
+</p><p>So, the following code would set the size of every marker (the only type of element the setMarkerSize function can work on) that is below the root element to <i>2.5</i>.
+</p>
+<pre class="prettyprint lang-lua">
+setMarkerSize ( getRootElement(), 2.5 )
+</pre>
+<p>The same can be done on any element, it is not restricted to the root element.
+</p>
+<h3><span class="mw-headline" id="Map_manager">Map manager</span></h3>
+<p>The <a href="#Example">example above</a> shows the way the <a href="Map_manager.html" title="Map manager" class="mw-redirect">map manager</a> uses different resources. The 'assault' resource is the gamemode, that manages what happens on the server using scripts and thus by creating elements in the tree dynamically. When a map resource is started, the gamemode receives a <a href="Resource.html" title="Resource">resource pointer</a> referring to the started resource - in this case <i>as-farm</i> - from which you can retrieve and store the resource root element. Using this element in conjunction with functions like <a href="GetElementsByType.html" title="GetElementsByType">getElementsByType</a>, <a href="GetElementData.html" title="GetElementData">getElementData</a> and various others, you can access any of the information that was loaded into the tree from the 'as-farm.map'-file through scripts in the gamemode resource.
+</p><p>Another thing that has to be considered related to the tree of elements is the fact that when you change the map, you don't have to remove any elements you created within the map resource, while you <b>do</b> have to remove elements that are created within the gamemode resource, <b>if</b> they are specific to the map (which will be probably the case for those items you create based on information read from the map resource's .map files).
+</p>
+<h2><span class="mw-headline" id="Element_browser">Element browser</span></h2>
+<p>You can start the resource <i>elementbrowser</i> to see a live view of the element tree on your server. Just start the resource and browser to your server's web page and choose the <i>Element browser</i> option in the sidebar (firefox only currently).
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190625162851
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.007 seconds
+Real time usage: 0.008 seconds
+Preprocessor visited node count: 63/1000000
+Preprocessor generated node count: 112/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 - -total
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:1622-0!*!0!!en!5!* and timestamp 20190625162851 and revision id 60018
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=Element_tree&amp;oldid=60018">https://wiki.multitheftauto.com/index.php?title=Element_tree&amp;oldid=60018</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_Scripting_Concepts.html" title="Category:Scripting Concepts">Scripting Concepts</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Element_tree.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:Element_tree&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=Element_tree&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=Element_tree&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=Element+tree" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=Element+tree" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/Element_tree.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/Element_tree.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=Element_tree&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=Element_tree&amp;oldid=60018" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=Element_tree&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-hu"><a href="http://wiki.multitheftauto.com/index.php?title=HU/Element_tree" title="Element tree – magyar" lang="hu" hreflang="hu">Magyar</a></li>
+													<li class="interlanguage-link interwiki-es"><a href="http://wiki.multitheftauto.com/index.php?title=ES/%C3%81rbol_de_elementos" title="Árbol de elementos – español" lang="es" hreflang="es">Español</a></li>
+													<li class="interlanguage-link interwiki-ru"><a href="http://wiki.multitheftauto.com/index.php?title=RU/Element_tree" title="Element tree – русский" lang="ru" hreflang="ru">Русский</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 24 October 2018, at 09:07.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":25});});</script></body></html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>AR/reloadBans - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"AR/reloadBans","wgTitle":"AR/reloadBans","wgCurRevisionId":47247,"wgRevisionId":47247,"wgArticleId":6922,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Server functions"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"AR/reloadBans","wgRelevantArticleId":6922,"wgRequestId":"75b33b43de704374a5ed1a91","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta name='headingclass' content='' data-class='server' data-subcaption='Server-only function'>
+<meta name='lowercasetitle' content=''>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-AR_reloadBans rootpage-AR_reloadBans skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">AR/reloadBans</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
+<!--LC-->
+(هذه الوظيفه ستقوم بإعادة تحميل ملف قائمة الحظر (الباندات
+</p>
+<h2><span class="mw-headline" id="Syntax">Syntax</span></h2>
+<pre class="prettyprint lang-lua">
+bool reloadBans()
+</pre>
+<h3><span class="mw-headline" id="Returns_.D8.A7.D9.84.D9.86.D8.AA.D8.A7.D8.A6.D8.AC">Returns النتائج</span></h3>
+<hr />
+<p><b>تكون النتيجه true اذا تمت إعادة تحميل ملف قائمة الحظر بنجاح</b>
+<i>وتكون false اذا كان العكس</i><b> </b>
+</p>
+<h2><span class="mw-headline" id=".D9.85.D8.AB.D8.A7.D9.84">مثال</span></h2>
+<p>هذا المثال يضيف الامر "reloadban" لإعادة تحميل ملف قائمة الحظر
+</p>
+<pre class="prettyprint lang-lua">
+function ReBan (player)
+   if (reloadBans()) then 
+      outputChatBox("تم اعادة تحميل قائمة الحظر بنجاح.",player)
+   else
+      outputChatBox("فشل في إعادة تحميل قائمة الحظر.",player)
+   end
+end
+addCommandHandler("reloadban",ReBan)
+</pre>
+<h2><span class="mw-headline" id=".D8.A7.D9.84.D9.85.D8.AA.D8.B7.D9.84.D8.A8.D8.A7.D8.AA">المتطلبات</span></h2>
+<table cellpadding="4" style="border-collapse: collapse; border-width: 1px; border-style: solid; border-color: #FFF">
+
+<tr>
+<th style="background-color: #FFAA44; border-style: solid; border-width: 1px; border-color: #FFF; color:#7A4A20"> Minimum supported server
+</th>
+<th width="60" style="white-space: nowrap; background-color: #FFCC66; border-style: solid; border-width: 1px; border-color: #FFF"> 1.3.0-9.03931
+</th></tr>
+<tr>
+<th style="background-color: #FF6666; border-style: solid; border-width: 1px; border-color: #FFF; color:#AA0028"> Minimum supported client
+</th>
+<th style="white-space: nowrap; background-color: #FFBBBB; border-style: solid; border-width: 1px; border-color: #FFF"> n/a
+</th></tr></table>Note: Using this function requires the resource to have the above minimum version declared in the <a href="../Meta.html" title="Meta.xml">meta.xml</a> <b>&lt;min_mta_version&gt;</b> section. <i>e.g. &lt;min_mta_version server="1.3.0-9.03931"  /&gt;</i>
+<h2><span class="mw-headline" id=".D8.A7.D9.86.D8.B8.D8.B1_.D8.A7.D9.8A.D8.B6.D8.A7.D9.8B">انظر ايضاً</span></h2>
+<ul><li><a href="banPlayer.html" title="AR/banPlayer">banPlayer</a></li>
+<li><a href="kickPlayer.html" title="AR/kickPlayer">kickPlayer</a></li>
+<li><a href="addBan.html" title="AR/addBan">addBan</a></li>
+<li><a href="getBanAdmin.html" title="AR/getBanAdmin">getBanAdmin</a></li>
+<li><a href="getBanIP.html" title="AR/getBanIP">getBanIP</a></li>
+<li><a href="getBanNick.html" title="AR/getBanNick">getBanNick</a></li>
+<li><a href="getBanReason.html" title="AR/getBanReason">getBanReason</a></li>
+<li><a href="getBans.html" title="AR/getBans">getBans</a></li>
+<li><a href="getBanSerial.html" title="AR/getBanSerial">getBanSerial</a></li>
+<li><a href="getBanTime.html" title="AR/getBanTime">getBanTime</a></li>
+<li><a href="getBanUsername.html" title="AR/getBanUsername">getBanUsername</a></li>
+<li><a href="getUnbanTime.html" title="AR/getUnbanTime">getUnbanTime</a></li>
+<li><a href="removeBan.html" title="AR/removeBan">removeBan</a></li></ul>
+<ul><li><strong class="selflink">reloadBans</strong></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625165326
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.008 seconds
+Real time usage: 0.009 seconds
+Preprocessor visited node count: 92/1000000
+Preprocessor generated node count: 431/1000000
+Post‐expand include size: 1502/2097152 bytes
+Template argument size: 82/2097152 bytes
+Highest expansion depth: 9/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    4.979      1 - -total
+ 57.24%    2.850      1 - Template:AR/Admin_functions
+ 41.78%    2.080      1 - Template:New_items
+ 22.71%    1.131      1 - Template:Current_Version
+ 20.45%    1.018      1 - Template:Requirements
+ 12.80%    0.637      1 - Template:Server_function
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:6922-0!*!0!!*!*!* and timestamp 20190625165326 and revision id 47247
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=AR/reloadBans&amp;oldid=47247">https://wiki.multitheftauto.com/index.php?title=AR/reloadBans&amp;oldid=47247</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="../Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="../Category_Server_functions.html" title="Category:Server functions">Server functions</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="reloadBans.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:AR/reloadBans&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=AR/reloadBans&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=AR/reloadBans&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=AR%2FreloadBans" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=AR%2FreloadBans" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/AR/reloadBans.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/AR/reloadBans.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=AR/reloadBans&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=AR/reloadBans&amp;oldid=47247" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=AR/reloadBans&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+			</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 1 April 2016, at 03:07.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":40});});</script></body></html>

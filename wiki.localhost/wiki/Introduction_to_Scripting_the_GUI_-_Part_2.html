@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Introduction to Scripting the GUI - Part 2 - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Introduction_to_Scripting_the_GUI_-_Part_2","wgTitle":"Introduction to Scripting the GUI - Part 2","wgCurRevisionId":60545,"wgRevisionId":60545,"wgArticleId":5027,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["GUI Tutorials"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Introduction_to_Scripting_the_GUI_-_Part_2","wgRelevantArticleId":5027,"wgRequestId":"ac01647036f577285132251b","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Introduction_to_Scripting_the_GUI_-_Part_2 rootpage-Introduction_to_Scripting_the_GUI_-_Part_2 skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Introduction to Scripting the GUI - Part 2</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>In this tutorial we will make a simple rules window, with an accept button and a list of all the server rules &amp; information.
+</p><p><b>Note that this tutorial builds on content covered in the <a href="Introduction_to_Scripting_the_GUI.html" title="Introduction to Scripting the GUI">GUI Scripting Introduction</a>.</b>
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Making_the_GUI"><span class="tocnumber">1</span> <span class="toctext">Making the GUI</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Getting_set_up"><span class="tocnumber">1.1</span> <span class="toctext">Getting set up</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Making_the_window"><span class="tocnumber">1.2</span> <span class="toctext">Making the window</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Making_the_button"><span class="tocnumber">1.3</span> <span class="toctext">Making the button</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Making_the_label"><span class="tocnumber">1.4</span> <span class="toctext">Making the label</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Text"><span class="tocnumber">1.5</span> <span class="toctext">Text</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Using_the_function_we_wrote"><span class="tocnumber">1.6</span> <span class="toctext">Using the function we wrote</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Scripting_the_Button"><span class="tocnumber">2</span> <span class="toctext">Scripting the Button</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Detecting_the_click"><span class="tocnumber">2.1</span> <span class="toctext">Detecting the click</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Managing_the_click"><span class="tocnumber">2.2</span> <span class="toctext">Managing the click</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#Checking_for_agreement"><span class="tocnumber">3</span> <span class="toctext">Checking for agreement</span></a>
+<ul>
+<li class="toclevel-2 tocsection-12"><a href="#Setting_a_timer"><span class="tocnumber">3.1</span> <span class="toctext">Setting a timer</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Giving_a_warning"><span class="tocnumber">3.2</span> <span class="toctext">Giving a warning</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Kicking_the_player"><span class="tocnumber">3.3</span> <span class="toctext">Kicking the player</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Making_the_GUI">Making the GUI</span></h2>
+<h3><span class="mw-headline" id="Getting_set_up">Getting set up</span></h3>
+<p>The first thing we need to do is create our GUI elements.
+For this tutorial we will be using one <a href="Element/GUI/Window.html" title="Element/GUI/Window">window</a>, one <a href="Element/GUI/Button.html" title="Element/GUI/Button">button</a> and one <a href="Element/GUI/Text_label.html" title="Element/GUI/Text label">label</a>.
+We will be using <b>absolute</b> position values.
+</p><p>As noted in the <a href="Introduction_to_Scripting_the_GUI.html" title="Introduction to Scripting the GUI">Previous tutorial</a>, all the GUI must be made client side. 
+</p><p>If you are following on from that tutorial, open up your gui.lua file to work with.
+</p><p>If you are not, browse to /Your MTA Server/mods/deathmatch/resources/myserver/ directory, and create a folder named "client". 
+Under /client/ directory, create a text file and name it "gui.lua".
+</p><p>If you have not already done so, do not forget to include the new gui.lua file in the meta.xml of the main resource, and label it as a client script:
+</p>
+<pre class="prettyprint lang-xml">
+&lt;script src="client/gui.lua" type="client" /&gt;
+</pre>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Making_the_window">Making the window</span></h3>
+<p>In this file we will write a function that draws the window:
+</p>
+<pre class="prettyprint lang-lua">
+-- create the function that will hold our gui creation code
+function createRulesWindow()
+	-- get the screen width and height
+	local sWidth, sHeight = guiGetScreenSize()
+ 
+	-- create the window, using some maths to find the centre of the screen
+	local Width,Height = 445,445
+	local X = (sWidth/2) - (Width/2)
+	local Y = (sHeight/2) - (Height/2)
+
+	-- create the window
+	rulesWindow = guiCreateWindow(X,Y,Width,Height,"Rules",false)
+	
+	-- stop players from being able to simply move the window out of the way
+	guiWindowSetMovable(rulesWindow,false)
+	
+	-- stop players from being able to resize the window
+	guiWindowSetSizable(rulesWindow,false)
+end
+</pre>
+<p>This will create a basic window in the centre of the screen that cannot be moved and cannot be resized.
+</p>
+<h3><span class="mw-headline" id="Making_the_button">Making the button</span></h3>
+<p>Next, we will add the button to the bottom of our window that players can click on to accept the rules:
+</p><p><b>Note that we are now writing more code for our existing 'createRulesWindow' function. This is not a new function and is meant to replace what you already have.</b>
+</p>
+<pre class="prettyprint lang-lua">
+function createRulesWindow()
+	-- get the screen width and height
+	local sWidth, sHeight = guiGetScreenSize()
+ 
+	-- create the window, using some maths to find the centre of the screen
+	local Width,Height = 445,445
+	local X = (sWidth/2) - (Width/2)
+	local Y = (sHeight/2) - (Height/2)
+
+	-- create the window and save the window gui element in a variable called 'rulesWindow'
+	rulesWindow = guiCreateWindow(X,Y,Width,Height,"Rules",false)
+	
+	-- stop players from being able to simply move the window out of the way
+	-- note that we use our 'rulesWindow' variable to make changes to the window
+	guiWindowSetMovable(rulesWindow,false)
+	
+	-- stop players from being able to resize the window
+	guiWindowSetSizable(rulesWindow,false)
+	
+	-- create the button and save the button gui element in a variable called 'rulesButton'
+	rulesButton = guiCreateButton(137,394,158,37,"Accept",false,rulesWindow)
+end
+</pre>
+<h3><span class="mw-headline" id="Making_the_label">Making the label</span></h3>
+<p>Next, we will add the label to the centre of our window that our rules will be displayed on:
+</p><p><b>Note that we are now writing more code for our existing 'createRulesWindow' function. This is not a new function and is meant to replace what you already have.</b>
+</p>
+<pre class="prettyprint lang-lua">
+function createRulesWindow()
+	-- get the screen width and height
+	local sWidth, sHeight = guiGetScreenSize()
+ 
+	-- create the window, using some maths to find the centre of the screen
+	local Width,Height = 445,445
+	local X = (sWidth/2) - (Width/2)
+	local Y = (sHeight/2) - (Height/2)
+
+	-- create the window and save the window gui element in a variable called 'rulesWindow'
+	rulesWindow = guiCreateWindow(X,Y,Width,Height,"Rules",false)
+	
+	-- stop players from being able to simply move the window out of the way
+	-- note that we use our 'rulesWindow' variable to make changes to the window
+	guiWindowSetMovable(rulesWindow,false)
+	
+	-- stop players from being able to resize the window
+	guiWindowSetSizable(rulesWindow,false)
+	
+	-- create the button and save the button gui element in a variable called 'rulesButton'
+	rulesButton = guiCreateButton(137,394,158,37,"Accept",false,rulesWindow)
+	
+	-- create the label and save the label gui element in a variable called 'rulesLabel'
+	-- we set the text of the label to our rules
+	rulesLabel = guiCreateLabel(10,25,425,359,[[
+	Welcome to my MTA Server!
+
+	Please carefully read the rules before accepting.
+
+	By accepting the rules, you are agreeing to play by them.
+	Anyone caught breaking these rules will be kicked and/or banned from this server.
+
+	If you do not accept the rules within 90 seconds, you will be kicked.
+
+	1: No cheating.
+
+	2: No bug abuse.
+
+	3: No mods to your game.
+
+	4: No flaming.
+
+	5: Respect other players.
+
+	6: Be nice!]],false,rulesWindow)
+	
+	-- set the horizontal alignment of the label to center (ie: in the middle of the window)
+	-- also note the final argument "true" 
+	-- this turns on wordwrap so if your text goes over the edge of the label, it will wrap around and start a new line automatically
+	guiLabelSetHorizontalAlign(rulesLabel,"center",true)	
+end
+</pre>
+<p><i>Note that the text is added in a different way to usual (we are not using quotation marks, "").</i>
+</p>
+<h3><span class="mw-headline" id="Text">Text</span></h3>
+<p>There are <i>two</i> ways to define text for a label.
+For most situations, the recommended method is to enter all your text between quotation marks:
+</p>
+<pre class="prettyprint lang-lua">
+guiSetText(guiElement,"My text here")
+</pre>
+<p><br />
+However, when we want to have more than 1 line in our text, it becomes just as easy to use the second method. 
+It is purely dependant on situation and personal choice which method you chose.
+For clarity's sake, i will briefly outline both here.
+</p><p><br />
+When using quotation marks, we can make use of the newline character: "\n"
+This allows us to break onto a new line in our text by entering "\n". For example:
+</p>
+<pre class="prettyprint lang-lua">
+guiSetText(guiElement,"This is line 1. \n This is line 2. \n This is line 3.")
+</pre>
+<p><br />
+However, if we use brackets to enclose the text instead of quotation marks, we do not need to worry about entering any extra characters.
+We can simply type the text out as we want it to appear in the label. For example:
+</p>
+<pre class="prettyprint lang-lua">
+guiSetText(guiElement,[[This is line 1.
+This is line 2.
+This is line 3.]])
+</pre>
+<p>Both of these examples will create exactly the same text on the label.
+It is entirely up to you which method you chose to use.
+</p>
+<h3><span class="mw-headline" id="Using_the_function_we_wrote">Using the function we wrote</span></h3>
+<p>The createRulesWindow function is now complete, but it won't do anything until we call it. 
+It is recommended to create all GUI when the client resource starts, hide them, and show them to the player later when needed. 
+</p><p>Therefore, we'll write an event handler for <a href="OnClientResourceStart.html" title="OnClientResourceStart">onClientResourceStart</a> to create the window:
+</p>
+<pre class="prettyprint lang-lua">
+-- attach the event handler to the root element of the resource
+-- this means it will only trigger when its own resource is started
+addEventHandler("onClientResourceStart", getResourceRootElement(getThisResource()), 
+	function ()
+		-- call the createRulesWindow function to create our gui
+		createRulesWindow()
+	end
+)
+</pre>
+<p>As this is a rules window, we need to show the window when the player joins the game. 
+Fortunately, GUI elements are visible by default so we do not need to write any more code to achieve this.
+</p><p>However, we will also need to show the cursor for the player. 
+This can be done using the same event, <a href="OnClientResourceStart.html" title="OnClientResourceStart">onClientResourceStart</a>, so we can modify the above code to include showing the cursor:
+</p><p><b>Note that we are now writing more code for our 'onClientResourceStart' event. This is not a new function and is meant to replace what you already have.</b>
+</p>
+<pre class="prettyprint lang-lua">
+-- attach the event handler to the root element of the resource
+-- this means it will only trigger when its own resource is started
+addEventHandler("onClientResourceStart", getResourceRootElement(getThisResource()), 
+	function ()
+		-- call the createRulesWindow function to create our gui
+		createRulesWindow()
+		
+		-- show the cursor to the player
+		showCursor(true,true)
+	end
+)
+</pre>
+<p>We now have a completed GUI rules window. Next, we need to write the button functionality for the accept button.
+</p>
+<h2><span class="mw-headline" id="Scripting_the_Button">Scripting the Button</span></h2>
+<p>Now that we have created our GUI, we need to make it work.
+</p>
+<h3><span class="mw-headline" id="Detecting_the_click">Detecting the click</span></h3>
+<p>When the player clicks on any part of the GUI, the event "<a href="OnClientGUIClick.html" title="OnClientGUIClick">onClientGUIClick</a>" will be triggered for the GUI component you clicked on. This allows us to easily detect any clicks on the GUI elements we want to use.
+For example, we can attach the event to the 'rulesButton' button to catch any clicks on it:
+</p>
+<pre class="prettyprint lang-lua">
+-- attach the event onClientGUIClick to rulesButton and set it to trigger the 'acceptRules' function
+addEventHandler("onClientGUIClick", rulesButton, acceptRules, false)
+</pre>
+<p><b>Note the final argument passed is "false". This indicates that the event will only trigger directly on rulesButton, not if the event has propagated up or down the tree. Setting this to "true" while attaching to gui elements will mean that clicking on any element in the same branch will trigger this event.</b>
+</p><p>This line of code can now be added inside the 'createRulesWindow' function. It is a common mistake to try and attach events to non-existant GUI elements, so make sure you always attach your events <b>after</b> the GUI element (in this case, the button) has been created:
+</p>
+<pre class="prettyprint lang-lua">
+function createRulesWindow()
+	-- create all our GUI elements
+	...
+
+	-- now add our onClientGUIClick event to the button we just created
+	addEventHandler("onClientGUIClick", rulesButton, acceptRules, false)
+</pre>
+<h3><span class="mw-headline" id="Managing_the_click">Managing the click</span></h3>
+<p>Now that we can detect when the player clicks on the button, we need to write code to manage what happens when they do.
+In our <a href="OnClientGUIClick.html" title="OnClientGUIClick">onClientGUIClick</a> event handle, we told it to call the function 'acceptRules' whenever 'rulesButton' is clicked.
+Therefore, we can now use the function 'acceptRules' to control what happens when the button is clicked:
+</p>
+<pre class="prettyprint lang-lua">
+-- create the function and define the 'button' and 'state' parameters
+-- (these are passed automatically by onClientGUIClick)
+function acceptRules(button,state)
+	-- if our accept button was clicked with the left mouse button, and the state of the mouse button is up
+	if button == "left" and state == "up" then
+		-- hide the window and all the components
+		guiSetVisible(rulesWindow, false)
+		
+		-- hide the mouse cursor
+		showCursor(false,false)
+		
+		-- output a message to the player
+		outputChatBox("Thank you for accepting our rules. Have fun!")
+		
+		
+		-- if the warning timer exists
+		if rulesWarningTimer then
+			-- stop the timer and set the variable to nil
+			-- this is the timer used to kick players who do not accept the rules. We will cover this in more detail in the next section.
+			killTimer(rulesWarningTimer)
+			rulesWarningTimer = nil
+		end
+	end
+end
+</pre>
+<p>Now, when the button is clicked, the window and the cursor will be hidden.
+</p>
+<h2><span class="mw-headline" id="Checking_for_agreement">Checking for agreement</span></h2>
+<p>Currently, our window will show when the player joins the server, and they must click accept to remove it.
+However, if they do not accept it they can stay in the server indefinitely with the window open.
+</p>
+<h3><span class="mw-headline" id="Setting_a_timer">Setting a timer</span></h3>
+<p>To combat this, we will add a timer using <a href="SetTimer.html" title="SetTimer">setTimer</a> to kick them from the server after a period of time if they have not accepted the rules.
+First, we will need a global variable to store the timer pointer:
+</p>
+<pre class="prettyprint lang-lua">
+local rulesWarningTimer = nil
+</pre>
+<p>Put this line at the very top of your script (it does not need to be inside a function)
+</p><p>Next, we will create our timer:
+</p><p><b>Note that we are now writing more code for our existing 'createRulesWindow' function.</b>
+</p>
+<pre class="prettyprint lang-lua">
+function createRulesWindow()
+	-- create all of our gui
+	...
+	
+	-- set a timer for 30 seconds and set it to call our 'inactivePlayer' function with "1" as an argument
+	rulesWarningTimer = setTimer(inactivePlayer,30000,1,1)
+end
+</pre>
+<p>Put this <a href="SetTimer.html" title="SetTimer">setTimer</a> line at the bottom of your 'createRulesWindow' function.
+This will create a timer that will trigger after 30 seconds.
+</p>
+<h3><span class="mw-headline" id="Giving_a_warning">Giving a warning</span></h3>
+<p>Now we will write our 'inactivePlayer' function, to administer warnings to the player and finally kick him if he does not accept:
+</p>
+<pre class="prettyprint lang-lua">
+-- create our function and define the 'status' parameter
+-- the value of status will be passed from our setTimer function call
+function inactivePlayer(status)
+	-- if status is 1 (this means it is the first warning)
+	if status == 1 then
+		-- output a warning
+		outputChatBox("Please accept our rules or be kicked.")
+		
+		-- set another timer to call inactivePlayer in another 30 seconds, with "2" as an argument
+		rulesWarningTimer = setTimer(inactivePlayer,30000,1,2)
+		
+	-- if status is 2 (the second warning)
+	elseif status == 2 then
+		-- output a final warning
+		outputChatBox("FINAL WARNING: Please accept our rules or be kicked.")
+		
+		-- set a final timer to call inactivePlayer in another 30 seconds, with "3" as an argument
+		rulesWarningTimer = setTimer(inactivePlayer,30000,1,3)	
+	elseif status == 3 then
+		-- trigger the server so we can kick the player
+		triggerServerEvent("clientKickInactivePlayer",getLocalPlayer())
+	end
+end
+</pre>
+<p>Note the use of <a href="TriggerServerEvent.html" title="TriggerServerEvent">triggerServerEvent</a> to call the server. You should have experience with client-server interaction from the <a href="Introduction_to_Scripting_the_GUI.html" title="Introduction to Scripting the GUI">Previous tutorial</a>. 
+If not, you can go back and read the full explanation there.
+</p><p><br />
+We have now completed all the clientside code for this tutorial.
+</p>
+<h3><span class="mw-headline" id="Kicking_the_player">Kicking the player</span></h3>
+<p>We now need to catch the event on the server that we triggered from the client, so open up a serverside lua file to work with.
+</p><p>To begin, we will add the event on the server:
+</p>
+<pre class="prettyprint lang-lua">
+-- add the event, note the final argument "true" indicates it can be triggered from the client
+addEvent("clientKickInactivePlayer",true)
+-- add an event handler for this event to trigger the kickInactivePlayer function
+addEventHandler("clientKickInactivePlayer",root,kickInactivePlayer)
+</pre>
+<p><b>Make sure you add your event handler after you have defined your 'kickInactivePlayer' function.</b>
+</p><p>Note the use of <a href="AddEvent.html" title="AddEvent">addEvent</a> and <a href="AddEventHandler.html" title="AddEventHandler">addEventHandler</a> on the server. You should have experience with client-server interaction from the <a href="Introduction_to_Scripting_the_GUI.html" title="Introduction to Scripting the GUI">Previous tutorial</a>. 
+If not, you can go back and read the full explanation there.
+</p><p>Finally, we will add the 'kickInactivePlayer' function to control kicking of the player:
+</p>
+<pre class="prettyprint lang-lua">
+-- create our function
+function kickInactivePlayer()
+	-- kick the player
+	kickPlayer(client,"Please accept our rules.")
+end
+</pre>
+<p>Note the use of the 'client' variable, this is an MTA variable that holds the value of the client (player) that triggered the event.
+</p><p><br />
+<b>Note that <a href="KickPlayer.html" title="KickPlayer">kickPlayer</a> will require your resource to have kick access in your ACL.</b>
+</p><p><b>This is most easily accomplished by adding your resource into your admin group in the ACL:</b>
+</p>
+<pre class="prettyprint lang-xml">
+&lt;group name="Admin"&gt;
+	...
+    &lt;object name="resource.YourResourceName" /&gt;
+	...
+&lt;/group&gt;
+</pre>
+<p>For more information on the <a href="ACL.html" title="ACL" class="mw-redirect">ACL</a>, see the <a href="ACL.html" title="ACL" class="mw-redirect">ACL</a> wiki page.
+</p><p>That concludes this tutorial. You should now have a fully working rules window for your server.
+</p><p>For further help with GUI, see the <a href="Category_GUI_Tutorials.html" title="Category:GUI Tutorials">GUI tutorials</a>.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190625164820
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.007 seconds
+Real time usage: 0.008 seconds
+Preprocessor visited node count: 199/1000000
+Preprocessor generated node count: 420/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 - -total
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:5027-0!*!0!!en!*!* and timestamp 20190625164820 and revision id 60545
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=Introduction_to_Scripting_the_GUI_-_Part_2&amp;oldid=60545">https://wiki.multitheftauto.com/index.php?title=Introduction_to_Scripting_the_GUI_-_Part_2&amp;oldid=60545</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_GUI_Tutorials.html" title="Category:GUI Tutorials">GUI Tutorials</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Introduction_to_Scripting_the_GUI_-_Part_2.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:Introduction_to_Scripting_the_GUI_-_Part_2&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=Introduction_to_Scripting_the_GUI_-_Part_2&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=Introduction_to_Scripting_the_GUI_-_Part_2&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=Introduction+to+Scripting+the+GUI+-+Part+2" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=Introduction+to+Scripting+the+GUI+-+Part+2" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/Introduction_to_Scripting_the_GUI_-_Part_2.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/Introduction_to_Scripting_the_GUI_-_Part_2.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=Introduction_to_Scripting_the_GUI_-_Part_2&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=Introduction_to_Scripting_the_GUI_-_Part_2&amp;oldid=60545" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=Introduction_to_Scripting_the_GUI_-_Part_2&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-hu"><a href="http://wiki.multitheftauto.com/index.php?title=HU/Introduction_to_Scripting_the_GUI_-_Part_2" title="Introduction to Scripting the GUI - Part 2 – magyar" lang="hu" hreflang="hu">Magyar</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 8 November 2018, at 13:47.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":50});});</script></body></html>

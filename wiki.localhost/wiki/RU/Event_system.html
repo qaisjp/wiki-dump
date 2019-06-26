@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>RU/Event system - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"RU/Event_system","wgTitle":"RU/Event system","wgCurRevisionId":54246,"wgRevisionId":54246,"wgArticleId":9810,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Scripting Concepts"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"RU/Event_system","wgRelevantArticleId":9810,"wgRequestId":"77a24d6a95ba86cd22491104","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-RU_Event_system rootpage-RU_Event_system skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">RU/Event system</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>Система событий лежит в основе MTA-скриптинга. События тесно связаны с <a href="Element_tree.html" title="RU/Element tree">деревом элементов</a>. События срабатывают, когда что-либо происходит: игрок встаёт на маркер, выбирается элемент и т.д. Каждое событие имеет исходный элемент, а именно элемент, который выполнил действие
+</p>
+<h2><span class="mw-headline" id=".D0.9E.D0.B1.D1.80.D0.B0.D0.B1.D0.BE.D1.82.D1.87.D0.B8.D0.BA.D0.B8_.D1.81.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D0.B9">Обработчики событий</span></h2>
+<p>Чтобы использовать систему событий, Вы присоединяете обработчики событий к элементам в дереве элементов с помощью функции <a href="addEventHandler.html" title="RU/addEventHandler">addEventHandler</a>. Когда Вы это сделаете, Ваша функция будет активирована для всех событий, инициированных этим элементом, это родители (и их родители) и дети (и их дети). Таким образом, обработчик событий, прикрепленный к корневому элементу, запускается, когда событие происходит для любого элемента. Как правило, Вы должны обычно использовать специфичный обработчик, как можете. Если Вы хотите просто увидеть, когда игрок встаёт на определённый маркер, просто присоедините обработчик события к этому маркеру.
+</p><p>Каждый обработчик событий имеет три "скрытые" переменные:
+</p>
+<ul><li> <b>source</b>. Это элемент, от которого произошло событие.</li>
+<li> <b>this</b>. Это элемент, на который запускается обработчик (т.е. тот, к которому Вы привязывали его функцией addEventHandler).</li>
+<li> <b>eventName</b>. Это строка имени события, которое было вызвано (т.е имя, которое было добавлено функцией addEventHandler).</li></ul>
+<p>Кроме того, серверная система событий также имеет ещё одну "скрытую" переменную:
+</p>
+<ul><li> <b>client</b>: Это клиент, который вызвал событие с помощью функции <a href="triggerServerEvent.html" title="RU/triggerServerEvent">triggerServerEvent</a>.  Это значение не задано, если событие не было инициировано клиентом.</li></ul>
+<p>Исходная переменная является наиболее важной для большинства обработчиков. Вы почти всегда захотите ссылаться на эту переменную, чтобы сообщить, какой элемент вызвал событие. Эта переменная используется для обеспечения того, чтобы событие было вызвано элементом, к которому присоединён обработчик.
+</p><p>Важно отметить, что события следуют за иерархией элементов. Все события изначально запускаются в элементе <i>source</i>, за которым следуют все родительские и дочерние элементы. Это имеет несколько важных последствий:
+</p>
+<ul><li> Событие, инициированное на корневом элементе, будет инициировано для каждого элемента в дереве элементов. Этого следует избегать, когда это возможно.</li>
+<li> Все события в любом месте дерева элементов будут инициированы на корневом элементе. Это означает, что вы можете легко поймать каждое событие типа, связав обработчик с корневым элементом. Это следует делать только в том случае, если действительно требуется любое событие этого типа, иначе же прикрепите его к более специфичному элементу дерева элементов.</li>
+<li> Вы можете прикрепить обработчик события к корневому элементу вашего ресурса, чтобы получить все события, инициированные элементами, содержащими Ваш ресурс.</li>
+<li> Вы можете создавать фиктивные элементы для захвата событий из группы дочерних элементов.</li>
+<li> Вы можете использовать фиктивные элементы, указанные в файле <i>.map</i> (например, <i>&lt;flag&gt;</i>) и создать для них реальные представления (например, объекты), и сделать эти реальные элементы дочерними элементами фиктивного элемента. Обработчики событий затем могут быть прикреплены к фиктивному элементу и будут получать все события реальных элементов. Это полезно, когда один ресурс управляет представлением элемента (например, создавая объекты), а другой хочет обрабатывать специальные события. Это может быть ресурс карты, который хочет обработать флаг, захваченный определенным образом. Ресурс карты, как правило, не будет знать о том, как представлен флаг. Это не имеет значения, поскольку он может просто привязывать обработчики к своему фиктивному элементу флага, в то время как другой ресурс игрового режима может обрабатывать представление.</li></ul>
+<p>Функция, которую Вы привязали к событию, вызывается и передает множество аргументов. Эти аргументы специфичны для событий. Каждое событие имеет определенные параметры, например <a href="http://wiki.localhost/index.php?title=RU/onClientGUIClick&amp;action=edit&amp;redlink=1" class="new" title="RU/onClientGUIClick (page does not exist)">onClientGUIClick</a> имеет 4 параметра.
+</p>
+<pre class="prettyprint lang-lua">string button, string state, int absoluteX, int absoluteY</pre>
+<p>Функция, которую Вы привязали к этому событию, будет передана этими параметрами в качестве аргументов. Вы должны помнить, что каждое событие имеет разные параметры.
+</p>
+<h2><span class="mw-headline" id=".D0.92.D1.81.D1.82.D1.80.D0.BE.D0.B5.D0.BD.D0.BD.D1.8B.D0.B5_.D1.81.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F">Встроенные события</span></h2>
+<p>MTA имеет ряд встроенных событий. Они перечислены на страницах "<a href="Client_Scripting_Events.html" title="RU/Client Scripting Events">Клиентские события скриптинга</a>" и "<a href="http://wiki.localhost/index.php?title=RU/Scripting_Events&amp;action=edit&amp;redlink=1" class="new" title="RU/Scripting Events (page does not exist)">Скриптинговые события</a>".
+</p>
+<h2><span class="mw-headline" id=".D0.9F.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D1.82.D0.B5.D0.BB.D1.8C.D1.81.D0.BA.D0.B8.D0.B5_.D1.81.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F">Пользовательские события</span></h2>
+<p>Вы можете создавать свои собственные события, которые могут запускаться во всех ресурсах. Это важный способ связаться с другими ресурсами и позволить им подключиться к вашему коду. Чтобы добавить свое собственное событие, просто вызовите функцию <a href="addEvent-2.html" title="RU/addEvent">addEvent</a>. Затем Вы можете использовать функцию <a href="triggerEvent.html" title="RU/triggerEvent">triggerEvent</a> для запуска этого события в любое время: либо с использованием таймера, либо на основе более общего события.
+</p><p>Например, Вы можете сделать игровой режим <i>Capture the Flag</i> и вызвать событие, когда игрок фиксирует флаг. Вы можете сделать это, связав обработчик события со стандартным событием MTA <a href="http://wiki.localhost/index.php?title=RU/onMarkerHit&amp;action=edit&amp;redlink=1" class="new" title="RU/onMarkerHit (page does not exist)">onMarkerHit</a> и проверив, что игрок, входящий в маркер, имеет флаг. Если Вы сделаете это, Вы можете затем запустить своё более специфическое событие <i>onFlagCaptured</i>, и другие ресурсы смогут справиться с этим, как им заблагорассудится.
+</p>
+<h2><span class="mw-headline" id=".D0.9E.D1.82.D0.BC.D0.B5.D0.BD.D0.B0_.D1.81.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D0.B9">Отмена событий</span></h2>
+<p>События могут быть отменены с помощью функции <a href="http://wiki.localhost/index.php?title=RU/cancelEvent&amp;action=edit&amp;redlink=1" class="new" title="RU/cancelEvent (page does not exist)">cancelEvent</a>. Это может иметь множество последствий, но в целом это означает, что сервер не будет выполнять никаких действий, которые обычно выполняются. Например, отмена события <a href="http://wiki.localhost/index.php?title=RU/onPickupUse&amp;action=edit&amp;redlink=1" class="new" title="RU/onPickupUse (page does not exist)">onPickupUse</a> не позволит игроку использовать пикап, отмена события <a href="http://wiki.localhost/index.php?title=RU/onVehicleStartEnter&amp;action=edit&amp;redlink=1" class="new" title="RU/onVehicleStartEnter (page does not exist)">onVehicleStartEnter</a> помешает игроку войти в транспорт. Вы можете проверить, было ли отменено текущее активное событие, используя функцию <a href="http://wiki.localhost/index.php?title=RU/wasEventCanceled&amp;action=edit&amp;redlink=1" class="new" title="RU/wasEventCanceled (page does not exist)">wasEventCanceled</a>. Важно отметить, что событие отмены не предотвращает запуск других обработчиков событий.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190625164458
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.004 seconds
+Real time usage: 0.005 seconds
+Preprocessor visited node count: 24/1000000
+Preprocessor generated node count: 40/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 - -total
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:9810-0!*!0!!*!*!* and timestamp 20190625164458 and revision id 54246
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=RU/Event_system&amp;oldid=54246">https://wiki.multitheftauto.com/index.php?title=RU/Event_system&amp;oldid=54246</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="../Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="../Category_Scripting_Concepts.html" title="Category:Scripting Concepts">Scripting Concepts</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Event_system.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:RU/Event_system&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=RU/Event_system&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=RU/Event_system&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=RU%2FEvent+system" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=RU%2FEvent+system" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/RU/Event_system.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/RU/Event_system.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=RU/Event_system&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=RU/Event_system&amp;oldid=54246" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=RU/Event_system&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=Event_system" title="Event system – English" lang="en" hreflang="en">English</a></li>
+													<li class="interlanguage-link interwiki-es"><a href="http://wiki.multitheftauto.com/index.php?title=ES/Sistema_de_eventos" title="Sistema de eventos – español" lang="es" hreflang="es">Español</a></li>
+													<li class="interlanguage-link interwiki-pt-br"><a href="http://wiki.multitheftauto.com/index.php?title=PT-BR/Sistema_de_eventos" title="Sistema de eventos – português do Brasil" lang="pt-BR" hreflang="pt-BR">Português do Brasil</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 30 March 2018, at 06:18.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":43});});</script></body></html>

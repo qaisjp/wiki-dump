@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>GUI Classes/Button:RemoveOnTextChanged - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"GUI_Classes/Button:RemoveOnTextChanged","wgTitle":"GUI Classes/Button:RemoveOnTextChanged","wgCurRevisionId":44508,"wgRevisionId":44508,"wgArticleId":4384,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"GUI_Classes/Button:RemoveOnTextChanged","wgRelevantArticleId":4384,"wgRequestId":"ea4259405e4838ac8bca4019","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta name='headingclass' content='' data-class='client' data-subcaption='GUI Class method'>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-GUI_Classes_Button_RemoveOnTextChanged rootpage-GUI_Classes_Button_RemoveOnTextChanged skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">GUI Classes/Button:RemoveOnTextChanged</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
+</p><p><br />
+You can use this method to remove a function that was attached to the sham event with <a href="Button_AddOnTextChanged.html" title="GUI Classes/Button:AddOnTextChanged">object:AddOnTextChanged</a>. The function you pass to this method will be removed from the list and will no longer be triggered when text changes.
+</p>
+<h2><span class="mw-headline" id="Syntax">Syntax</span></h2>
+<pre class="prettyprint lang-lua">
+bool Button:RemoveOnTextChanged ( function func )
+</pre>
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>func:</b> the function you want to remove from the list of functions triggered when text changes</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<ul><li><b>true</b> if function was removed successfully </li>
+<li><b>false</b> otherwise</li></ul>
+<h2><span class="mw-headline" id="Example">Example</span></h2>
+<p>This example creates a button. The button has two functions attached to it, one is triggered when user clicks the button (to change text on the button) and the other one is triggered when the text has changed then the function is detached and no longer triggered.
+</p>
+<pre class="prettyprint lang-lua">
+addEventHandler ( "onClientResourceStart", getResourceRootElement(),
+    function( )
+        --create a button object
+        local button = Button:Create( 0.7, 0.1, 0.2, 0.1, "Hello", true );
+
+        -- and attach a function to the button which changes its text
+        button:AddOnClick( changeMyText );
+
+        -- add myTextHasChanged to the list of triggered functions when text changes
+        button:AddOnTextChanged( myTextHasChanged );
+    end
+)
+
+--setup a function to change the text
+function changeMyText ( )
+    local text = button:Text( ) --get the text from the button
+    if text == "Hello" then
+        -- if text of button was "Hello", change it to "World!"
+        button:Text( "World!" );
+        button:Enabled( false );
+    end
+end
+
+function myTextHasChanged( btn, oldText, newText  )
+    -- if new text is "World!" then set a timer which will change it back to old text (in this case "Hello"),
+    -- enable the button and remove this function from the stack
+    if newText == "World!" then
+        setTimer( btn:Text, 2500, 1, oldTex );
+        setTimer( btn:Enabled, 2500, 1, true );
+    end
+    btn:RemoveOnTextChanged( myTextHasChanged );
+end
+
+</pre>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<p><a href="../GUI_Classes.html" title="GUI Classes">Back to GUI Classes page</a>
+</p>
+<h3><span class="mw-headline" id="Button_class">Button class</span></h3>
+<ul><li><a href="Button_Create.html" title="GUI Classes/Button:Create">Button:Create</a></li>
+<li><a href="Button_ColorOnHover.html" title="GUI Classes/Button:ColorOnHover">Button:ColorOnHover</a></li>
+<li><a href="Button_AddOnTextChanged.html" title="GUI Classes/Button:AddOnTextChanged">Button:AddOnTextChanged</a></li>
+<li><strong class="selflink">Button:RemoveOnTextChanged</strong></li></ul>
+<h3><span class="mw-headline" id="Check_Box_class">Check Box class</span></h3>
+<ul><li><a href="CheckBox_Create.html" title="GUI Classes/CheckBox:Create">CheckBox:Create</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/CheckBox:Selected&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/CheckBox:Selected (page does not exist)">CheckBox:Selected</a></li></ul>
+<h3><span class="mw-headline" id="Gridlist_class">Gridlist class</span></h3>
+<ul><li><a href="http://wiki.localhost/index.php?title=GridList:Create&amp;action=edit&amp;redlink=1" class="new" title="GridList:Create (page does not exist)">GridList:Create</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GridList:AutoSizeColumn&amp;action=edit&amp;redlink=1" class="new" title="GridList:AutoSizeColumn (page does not exist)">GridList:AutoSizeColumn</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GridList:AddColumn&amp;action=edit&amp;redlink=1" class="new" title="GridList:AddColumn (page does not exist)">GridList:AddColumn</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GridList:AddRow&amp;action=edit&amp;redlink=1" class="new" title="GridList:AddRow (page does not exist)">GridList:AddRow</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GridList:Clear&amp;action=edit&amp;redlink=1" class="new" title="GridList:Clear (page does not exist)">GridList:Clear</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GridList:ItemData&amp;action=edit&amp;redlink=1" class="new" title="GridList:ItemData (page does not exist)">GridList:ItemData</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GridList:ItemText&amp;action=edit&amp;redlink=1" class="new" title="GridList:ItemText (page does not exist)">GridList:ItemText</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GridList:SelectedItem&amp;action=edit&amp;redlink=1" class="new" title="GridList:SelectedItem (page does not exist)">GridList:SelectedItem</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GridList:SortingEnabled&amp;action=edit&amp;redlink=1" class="new" title="GridList:SortingEnabled (page does not exist)">GridList:SortingEnabled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GridList:RowCount&amp;action=edit&amp;redlink=1" class="new" title="GridList:RowCount (page does not exist)">GridList:RowCount</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GridList:ColumnCount&amp;action=edit&amp;redlink=1" class="new" title="GridList:ColumnCount (page does not exist)">GridList:ColumnCount</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GridList:InsertRowAfter&amp;action=edit&amp;redlink=1" class="new" title="GridList:InsertRowAfter (page does not exist)">GridList:InsertRowAfter</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GridList:RemoveColumn&amp;action=edit&amp;redlink=1" class="new" title="GridList:RemoveColumn (page does not exist)">GridList:RemoveColumn</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GridList:RemoveRow&amp;action=edit&amp;redlink=1" class="new" title="GridList:RemoveRow (page does not exist)">GridList:RemoveRow</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GridList:ScrollBars&amp;action=edit&amp;redlink=1" class="new" title="GridList:ScrollBars (page does not exist)">GridList:ScrollBars</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GridList:SelectionMode&amp;action=edit&amp;redlink=1" class="new" title="GridList:SelectionMode (page does not exist)">GridList:SelectionMode</a></li></ul>
+<h3><span class="mw-headline" id="Label_class">Label class</span></h3>
+<ul><li><a href="http://wiki.localhost/index.php?title=GUI_Classes/Label:Create&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/Label:Create (page does not exist)">Label:Create</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/Label:Color&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/Label:Color (page does not exist)">Label:Color</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/Label:VerticalAlign&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/Label:VerticalAlign (page does not exist)">Label:VerticalAlign</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/Label:HorizontalAlign&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/Label:HorizontalAlign (page does not exist)">Label:HorizontalAlign</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/Label:GetTextExtent&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/Label:GetTextExtent (page does not exist)">Label:GetTextExtent</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/Label:GetFontHeight&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/Label:GetFontHeight (page does not exist)">Label:GetFontHeight</a></li></ul>
+<h3><span class="mw-headline" id="Memo_class">Memo class</span></h3>
+<ul><li><a href="http://wiki.localhost/index.php?title=GUI_Classes/Memo:Create&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/Memo:Create (page does not exist)">Memo:Create</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/Memo:SetCaretIndex&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/Memo:SetCaretIndex (page does not exist)">Memo:SetCaretIndex</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/Memo:ReadOnly&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/Memo:ReadOnly (page does not exist)">Memo:ReadOnly</a></li></ul>
+<h3><span class="mw-headline" id="Progress_Bar_class">Progress Bar class</span></h3>
+<ul><li><a href="http://wiki.localhost/index.php?title=GUI_Classes/ProgressBar:Create&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/ProgressBar:Create (page does not exist)">ProgressBar:Create</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/ProgressBar:Font&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/ProgressBar:Font (page does not exist)">ProgressBar:Font</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/ProgressBar:LabelColor&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/ProgressBar:LabelColor (page does not exist)">ProgressBar:LabelColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/ProgressBar:Progress&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/ProgressBar:Progress (page does not exist)">ProgressBar:Progress</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/ProgressBar:Text&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/ProgressBar:Text (page does not exist)">ProgressBar:Text</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/ProgressBar:Size&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/ProgressBar:Size (page does not exist)">ProgressBar:Size</a></li></ul>
+<h3><span class="mw-headline" id="Radio_Button_class">Radio Button class</span></h3>
+<ul><li><a href="http://wiki.localhost/index.php?title=GUI_Classes/RadioButton:Create&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/RadioButton:Create (page does not exist)">RadioButton:Create</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/RadioButton:Selected&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/RadioButton:Selected (page does not exist)">RadioButton:Selected</a></li></ul>
+<h3><span class="mw-headline" id="Scroll_Bar_class">Scroll Bar class</span></h3>
+<ul><li><a href="http://wiki.localhost/index.php?title=GUI_Classes/ScrollBar:Create&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/ScrollBar:Create (page does not exist)">ScrollBar:Create</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/ScrollBar:ScrollPosition&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/ScrollBar:ScrollPosition (page does not exist)">ScrollBar:ScrollPosition</a></li></ul>
+<h3><span class="mw-headline" id="Static_Image_class">Static Image class</span></h3>
+<ul><li><a href="http://wiki.localhost/index.php?title=GUI_Classes/StaticImage:Create&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/StaticImage:Create (page does not exist)">StaticImage:Create</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/StaticImage:LoadImage&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/StaticImage:LoadImage (page does not exist)">StaticImage:LoadImage</a></li></ul>
+<h3><span class="mw-headline" id="Tab_class">Tab class</span></h3>
+<ul><li><a href="http://wiki.localhost/index.php?title=GUI_Classes/Tab:Create&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/Tab:Create (page does not exist)">Tab:Create</a></li></ul>
+<h3><span class="mw-headline" id="Tab_panel_class">Tab panel class</span></h3>
+<ul><li><a href="http://wiki.localhost/index.php?title=GUI_Classes/TabPanel:Create&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/TabPanel:Create (page does not exist)">TabPanel:Create</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/TabPanel:AddTab&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/TabPanel:AddTab (page does not exist)">TabPanel:AddTab</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/TabPanel:DeleteTab&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/TabPanel:DeleteTab (page does not exist)">TabPanel:DeleteTab</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/TabPanel:GetTabs&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/TabPanel:GetTabs (page does not exist)">TabPanel:GetTabs</a></li></ul>
+<h3><span class="mw-headline" id="Text_Box_class_.28formally_known_as_Edit.29">Text Box class (formally known as Edit)</span></h3>
+<ul><li><a href="http://wiki.localhost/index.php?title=GUI_Classes/TextBox:Create&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/TextBox:Create (page does not exist)">TextBox:Create</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/TextBox:SetCaratIndex&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/TextBox:SetCaratIndex (page does not exist)">TextBox:SetCaratIndex</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/TextBox:Masked&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/TextBox:Masked (page does not exist)">TextBox:Masked</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/TextBox:MaxLength&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/TextBox:MaxLength (page does not exist)">TextBox:MaxLength</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/TextBox:ReadOnly&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/TextBox:ReadOnly (page does not exist)">TextBox:ReadOnly</a></li></ul>
+<h3><span class="mw-headline" id="Window_class">Window class</span></h3>
+<ul><li><a href="http://wiki.localhost/index.php?title=GUI_Classes/Window:Create&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/Window:Create (page does not exist)">Window:Create</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/Window:Movable&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/Window:Movable (page does not exist)">Window:Movable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/Window:Sizable&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/Window:Sizable (page does not exist)">Window:Sizable</a></li></ul>
+<h3><span class="mw-headline" id="Shared_methods_with_all_classes">Shared methods with all classes</span></h3>
+<ul><li><a href="http://wiki.localhost/index.php?title=GUI_Classes/GUISharedFuncs:Alpha&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/GUISharedFuncs:Alpha (page does not exist)">GUISharedFuncs:Alpha</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/GUISharedFuncs:BringToFront&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/GUISharedFuncs:BringToFront (page does not exist)">GUISharedFuncs:BringToFront</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/GUISharedFuncs:Dragable&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/GUISharedFuncs:Dragable (page does not exist)">GUISharedFuncs:Dragable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/GUISharedFuncs:Enabled&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/GUISharedFuncs:Enabled (page does not exist)">GUISharedFuncs:Enabled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/GUISharedFuncs:Font&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/GUISharedFuncs:Font (page does not exist)">GUISharedFuncs:Font</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/GUISharedFuncs:MoveToBack&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/GUISharedFuncs:MoveToBack (page does not exist)">GUISharedFuncs:MoveToBack</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/GUISharedFuncs:Property&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/GUISharedFuncs:Property (page does not exist)">GUISharedFuncs:Property</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/GUISharedFuncs:Text&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/GUISharedFuncs:Text (page does not exist)">GUISharedFuncs:Text</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/GUISharedFuncs:Position&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/GUISharedFuncs:Position (page does not exist)">GUISharedFuncs:Position</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/GUISharedFuncs:Size&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/GUISharedFuncs:Size (page does not exist)">GUISharedFuncs:Size</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/GUISharedFuncs:Visible&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/GUISharedFuncs:Visible (page does not exist)">GUISharedFuncs:Visible</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/GUISharedFuncs:AddOnClick&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/GUISharedFuncs:AddOnClick (page does not exist)">GUISharedFuncs:AddOnClick</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/GUISharedFuncs:RemoveOnClick&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/GUISharedFuncs:RemoveOnClick (page does not exist)">GUISharedFuncs:RemoveOnClick</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/GUISharedFuncs:AddOnMouseEnter&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/GUISharedFuncs:AddOnMouseEnter (page does not exist)">GUISharedFuncs:AddOnMouseEnter</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/GUISharedFuncs:RemoveOnMouseEnter&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/GUISharedFuncs:RemoveOnMouseEnter (page does not exist)">GUISharedFuncs:RemoveOnMouseEnter</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/GUISharedFuncs:AddOnMouseLeave&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/GUISharedFuncs:AddOnMouseLeave (page does not exist)">GUISharedFuncs:AddOnMouseLeave</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GUI_Classes/GUISharedFuncs:RemoveOnMouseLeave&amp;action=edit&amp;redlink=1" class="new" title="GUI Classes/GUISharedFuncs:RemoveOnMouseLeave (page does not exist)">GUISharedFuncs:RemoveOnMouseLeave</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625170035
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.015 seconds
+Real time usage: 0.017 seconds
+Preprocessor visited node count: 89/1000000
+Preprocessor generated node count: 206/1000000
+Post‐expand include size: 8035/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    8.575      1 - Template:GUI_Classes_allfunctions
+100.00%    8.575      1 - -total
+  6.05%    0.519      1 - Template:GUI_Classes_Gridlist
+  5.72%    0.491      1 - Template:GUI_Classes_Window
+  5.53%    0.474      1 - Template:GUI_Classes_Label
+  5.46%    0.468      1 - Template:GUI_Classes_Button
+  5.36%    0.460      1 - Template:GUI_Classes_SharedFuncs
+  5.36%    0.459      1 - Template:GUI_Classes_ProgressBar
+  5.34%    0.458      1 - Template:GUI_Classes_CheckBox
+  5.24%    0.449      1 - Template:GUI_Classes_Memo
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:4384-0!*!0!!*!*!* and timestamp 20190625170035 and revision id 44508
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=GUI_Classes/Button:RemoveOnTextChanged&amp;oldid=44508">https://wiki.multitheftauto.com/index.php?title=GUI_Classes/Button:RemoveOnTextChanged&amp;oldid=44508</a>"</div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Button_RemoveOnTextChanged.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:GUI_Classes/Button:RemoveOnTextChanged&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=GUI_Classes/Button:RemoveOnTextChanged&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=GUI_Classes/Button:RemoveOnTextChanged&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=GUI+Classes%2FButton%3ARemoveOnTextChanged" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=GUI+Classes%2FButton%3ARemoveOnTextChanged" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/GUI_Classes/Button_RemoveOnTextChanged.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/GUI_Classes/Button_RemoveOnTextChanged.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=GUI_Classes/Button:RemoveOnTextChanged&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=GUI_Classes/Button:RemoveOnTextChanged&amp;oldid=44508" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=GUI_Classes/Button:RemoveOnTextChanged&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+			</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 11 February 2015, at 16:35.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":45});});</script></body></html>

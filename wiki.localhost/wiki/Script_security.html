@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Script security - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Script_security","wgTitle":"Script security","wgCurRevisionId":51100,"wgRevisionId":51100,"wgArticleId":9399,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Script_security","wgRelevantArticleId":9399,"wgRequestId":"c84445e6516868daa7117b44","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Script_security rootpage-Script_security skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Script security</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Detecting_and_dealing_with_the_effects_of_rogue_clients"><span class="tocnumber">1</span> <span class="toctext">Detecting and dealing with the effects of rogue clients</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#How_to_never_trust_data_coming_from_a_client"><span class="tocnumber">2</span> <span class="toctext">How to never trust data coming from a client</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Validating_client_setElementData"><span class="tocnumber">3</span> <span class="toctext">Validating client setElementData</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Validating_client_triggerServerEvent"><span class="tocnumber">4</span> <span class="toctext">Validating client triggerServerEvent</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Validating_client_ACL_rights"><span class="tocnumber">5</span> <span class="toctext">Validating client ACL rights</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Detecting_and_dealing_with_the_effects_of_rogue_clients">Detecting and dealing with the effects of rogue clients</span></h2>
+<p>To ensure minimum damage when a player with a hacked client connects to your server:
+</p>
+<ul><li> When making scripts, remember to never trust data coming from a client.</li>
+<li> When reviewing scripts for possible security holes. Look at any data coming from the client that is being trusted.</li></ul>
+<h2><span class="mw-headline" id="How_to_never_trust_data_coming_from_a_client">How to never trust data coming from a client</span></h2>
+<p>A hacked client could send anything, so all client data received by server scripts should be validated before use. Most data is received via client calls to <a href="SetElementData.html" title="SetElementData">setElementData</a> or <a href="TriggerServerEvent.html" title="TriggerServerEvent">triggerServerEvent</a>.
+</p>
+<h2><span class="mw-headline" id="Validating_client_setElementData">Validating client setElementData</span></h2>
+<ul><li> All parameters including 'source' can be faked and should not be trusted.</li>
+<li> Global variable 'client' can be trusted.</li></ul>
+<hr />
+<!-- BEGIN SECTION |1|server|Server|--><div class='serverHeader' onclick='expandSection(1);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander1'>Click to collapse [-]</div>Server</div><div style='display:;' class='serverContent' id='section1'>
+<p>Example validation of element data changes
+</p>
+<pre class="prettyprint lang-lua">
+addEventHandler("onElementDataChange", root,
+    function(dataName, oldValue)
+        -- Check data is coming from a client
+        if client then
+
+            -- Validate 'special_thing'
+            if dataName == "special_thing" then
+                -- 'special_thing' can only be set by a client on its own player
+                if client ~= source then
+                    -- Illegal activity here, so log and revert the change
+                    reportAndRevertDataChange( dataName, oldValue, source, client )
+                end
+            end
+
+            -- Validate 'flag_waving'
+            if dataName == "flag_waving" then
+                -- 'flag_waving' can only be set by a client on its own vehicle
+                local vehicle = getPedOccupiedVehicle(client)
+                if vehicle ~= source then
+                    -- Illegal activity here, so log and revert the change
+                    reportAndRevertDataChange( dataName, oldValue, source, client )
+                end
+            end
+
+        end
+    end
+)
+
+-- Helper function to log and revert changes
+function reportAndRevertDataChange( dataName, oldValue, source, client )
+    -- Report
+    outputConsole( "Possible rouge client!"
+            .. " client:" .. tostring(getPlayerName(client))
+            .. " dataName:" .. tostring(dataName)
+            .. " oldValue:" .. tostring(oldValue)
+            .. " newValue:" .. tostring(getElementData(source,dataName))
+            .. " source:" .. tostring(source)
+            )
+    -- Revert (Note this will cause an onElementDataChange event, but 'client' will be nil)
+    setElementData( source, dataName, oldValue )               
+end
+</pre>
+</div><!-- END SECTION |1|-->
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Validating_client_triggerServerEvent">Validating client triggerServerEvent</span></h2>
+<ul><li> All parameters including 'source' can be faked and should not be trusted.</li>
+<li> Global variable 'client' can be trusted.</li></ul>
+<hr />
+<!-- BEGIN SECTION |2|server|Server|--><div class='serverHeader' onclick='expandSection(2);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander2'>Click to collapse [-]</div>Server</div><div style='display:;' class='serverContent' id='section2'>
+<p>Example validation of event parameters
+</p>
+<pre class="prettyprint lang-lua">
+addEvent("onRaiseTheRoof", true)
+addEventHandler("onRaiseTheRoof", resourceRoot,
+    function(arg1, arg2)
+        -- Check data is coming from a client
+        if client then
+
+            -- The source for this event is always 'resourceRoot'
+            if source ~= resourceRoot then
+                reportNaughtyness( eventName, client, "source" )
+                return
+            end
+
+            -- arg1 should be the player
+            if arg1 ~= client then
+                reportNaughtyness( eventName, client, "arg1" )
+                return
+            end
+
+            -- arg2 should be between 1 and 100
+            if arg2 &lt; 1 or arg2 &gt;100 then
+                reportNaughtyness( eventName, client, "arg2" )
+                return
+            end
+        end
+
+        --
+        -- Do usual code for 'onRaiseTheRoof'
+        --
+    end
+)
+
+-- Helper function to log illegal things
+function reportNaughtyness( eventName, client, reason )
+    -- Report
+    outputConsole( "Possible rouge client!"
+            .. " client:" .. tostring(getPlayerName(client))
+            .. " eventName:" .. tostring(eventName)
+            .. " reason:" .. tostring(reason)
+            )
+end
+</pre>
+</div><!-- END SECTION |2|-->
+<p><br />
+</p>
+<hr />
+<!-- BEGIN SECTION |3|server|Server|--><div class='serverHeader' onclick='expandSection(3);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander3'>Click to collapse [-]</div>Server</div><div style='display:;' class='serverContent' id='section3'>
+<p>Example validation of event parameters for admin style event
+</p>
+<pre class="prettyprint lang-lua">
+addEvent("onRequestBanPlayer", true)
+addEventHandler("onRequestBanPlayer", resourceRoot,
+    function(arg1, arg2)
+        -- Check data is coming from a client
+        if client then
+
+            -- Check client has permission to do the deed
+            if not canPlayerBan(client) then
+                reportNaughtyness( eventName, client, "client" )
+                return
+            end
+
+        end
+
+        --
+        -- Do usual code for 'onRequestBanPlayer'
+        --
+    end
+)
+
+</pre>
+</div><!-- END SECTION |3|-->
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Validating_client_ACL_rights">Validating client ACL rights</span></h2>
+<p>In server side event handlers, always check the '<b>client'</b> global variable has permission before doing anything. This will stop hackers and script bugs from destroying your server.
+</p><p>Firstly, and example of BAD, INSECURE script:
+</p>
+<!-- BEGIN SECTION |4|server|Server|--><div class='serverHeader' onclick='expandSection(4);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander4'>Click to collapse [-]</div>Server</div><div style='display:;' class='serverContent' id='section4'>
+<p>BAD, INSECURE script:
+</p>
+<pre class="prettyprint lang-lua">
+-- NO PROBLEM HERE: Command 'showgui' will only show the gui for admins
+function showGui(player)
+    if isObjectInGroup( player, "admin" ) then
+        -- Only trigger client GUI for admins
+        triggerEvent( player, "onShowGui", getResourceRootElement() )
+    end
+end
+addCommandHandler("showgui", showGui)
+
+-- MISTAKE HERE: Incorrectly assume onMyGuiCommand can only be called by admins
+-- Script bugs and hackers mean this function can be called by anyone
+function onMyGuiCommand(name)
+    aclGroupAddObject(aclGetGroup("admin"), "user."..name)
+    outputServerLog( "DO NOT USE THIS IS WRONG " )
+end
+addEventHandler("onMyGuiCommand", getResourceRootElement(), onMyGuiCommand)
+</pre>
+</div><!-- END SECTION |4|-->
+<p>onMyGuiCommand does not check if the sending player has permission, and is depending on code having no bugs, and no hackers in the world.
+Simple to fix by adding a '<b>client'</b> global variable check at the start.
+<i>(Note: checking 'source' will not fix the problem - It has to be '<b>client'</b>)</i>
+</p>
+<!-- BEGIN SECTION |5|server|Server|--><div class='serverHeader' onclick='expandSection(5);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander5'>Click to collapse [-]</div>Server</div><div style='display:;' class='serverContent' id='section5'>
+<p>Fixed onMyGuiCommand:
+</p>
+<pre class="prettyprint lang-lua">
+function onMyGuiCommand(name)
+    -- Check 'client' really does have permission
+    local clientAccountName = getAccountName( getPlayerAccount( client ) )
+    if not isObjectInACLGroup ( "user." .. clientAccountName, aclGetGroup ( "Admin" ) ) ) then
+        outputServerLog( "ACCESS VIOLATION by " .. getPlayerName( client ) )
+        return
+    end
+    -- Client has permission now
+    aclGroupAddObject(aclGetGroup("admin"), "user."..name)
+end
+addEventHandler("onMyGuiCommand", getResourceRootElement(), onMyGuiCommand)
+</pre>
+</div><!-- END SECTION |5|-->
+
+<!-- 
+NewPP limit report
+Cached time: 20190625164308
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.006 seconds
+Real time usage: 0.006 seconds
+Preprocessor visited node count: 71/1000000
+Preprocessor generated node count: 244/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 - -total
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:9399-0!*!0!!en!*!* and timestamp 20190625164308 and revision id 51100
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=Script_security&amp;oldid=51100">https://wiki.multitheftauto.com/index.php?title=Script_security&amp;oldid=51100</a>"</div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Script_security.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:Script_security&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=Script_security&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=Script_security&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=Script+security" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=Script+security" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/Script_security.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/Script_security.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=Script_security&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=Script_security&amp;oldid=51100" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=Script_security&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+			</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 28 May 2017, at 18:54.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":37});});</script></body></html>

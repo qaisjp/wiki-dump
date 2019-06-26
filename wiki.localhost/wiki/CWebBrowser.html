@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>CWebBrowser - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"CWebBrowser","wgTitle":"CWebBrowser","wgCurRevisionId":45791,"wgRevisionId":45791,"wgArticleId":7648,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Client Classes (Blue)","Classes (Blue)"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"CWebBrowser","wgRelevantArticleId":7648,"wgRequestId":"92946c0dbb0c71a1d71ade96","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta name='headingclass' content='' data-class='client' data-subcaption='Client class (Blue)'>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-CWebBrowser rootpage-CWebBrowser skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">CWebBrowser</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Potential_issues_with_implementation_of_CEF_.28Chromium_Embedded_Framework.29"><span class="tocnumber">1</span> <span class="toctext">Potential issues with implementation of CEF (Chromium Embedded Framework)</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Awesomium_vs_CEF"><span class="tocnumber">1.1</span> <span class="toctext">Awesomium vs CEF</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Problems_with_CEF"><span class="tocnumber">1.2</span> <span class="toctext">Problems with CEF</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Flash"><span class="tocnumber">1.3</span> <span class="toctext">Flash</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#HTTP_Auth"><span class="tocnumber">1.4</span> <span class="toctext">HTTP Auth</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Pop-ups.2FNew_windows"><span class="tocnumber">1.5</span> <span class="toctext">Pop-ups/New windows</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Alerts"><span class="tocnumber">1.6</span> <span class="toctext">Alerts</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Other_plugins"><span class="tocnumber">1.7</span> <span class="toctext">Other plugins</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Whitelist.2FBlacklist_of_websites"><span class="tocnumber">1.8</span> <span class="toctext">Whitelist/Blacklist of websites</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Audio_.26_3D"><span class="tocnumber">1.9</span> <span class="toctext">Audio &amp; 3D</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Privacy_and_cookies"><span class="tocnumber">1.10</span> <span class="toctext">Privacy and cookies</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Ability_to_modify_content"><span class="tocnumber">1.11</span> <span class="toctext">Ability to modify content</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Ability_to_view_content_in_Screen_shots"><span class="tocnumber">1.12</span> <span class="toctext">Ability to view content in Screen shots</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Authentification"><span class="tocnumber">1.13</span> <span class="toctext">Authentification</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Prevent_subsequent_loading_of_HTML_code_via_javascript"><span class="tocnumber">1.14</span> <span class="toctext">Prevent subsequent loading of HTML code via javascript</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Potential_issues_with_implementation_of_CEF_.28Chromium_Embedded_Framework.29">Potential issues with implementation of CEF (Chromium Embedded Framework)</span></h1>
+<p>This page discusses the issues when implementing an in-game web browser.  Some of these need to be resolved before it's safe to include in MTA.  The full discussion is here: <a rel="nofollow" class="external free" href="http://pastebin.com/m5sqTRqH">http://pastebin.com/m5sqTRqH</a>
+</p>
+<h2><span class="mw-headline" id="Awesomium_vs_CEF">Awesomium vs CEF</span></h2>
+<table class="wikitable">
+<tr>
+<th>Awesomium
+</th>
+<th>CEF
+</th></tr>
+<tr>
+<td><b>Proven library for embedding web browsers into games</b>
+</td>
+<td>Also established (mostly in <b>windowed</b> applications)
+</td></tr>
+<tr>
+<td>Closed source
+</td>
+<td><b>Open source</b>
+</td></tr>
+<tr>
+<td><s>Frequent</s> Infrequent updates
+</td>
+<td><span style="color:red;"><b>Frequent updates</b></span>
+</td></tr>
+<tr>
+<td>Well implemented multi-process design
+</td>
+<td><s>Due to a bad implementation we are probably forced to run CEF in the main process (gta_sa.exe)</s> Since a few months also well implemented multi-process design
+</td></tr>
+<tr>
+<td>Less CPU usage
+</td>
+<td>A bit higher CPU usage, but better multi-threading
+</td></tr>
+<tr>
+<td><b>Small DLLs and static libraries (~19MB extra size)</b>
+</td>
+<td>Larger DLLs and static libraries
+</td></tr>
+<tr>
+<td>Less features
+</td>
+<td><b>More features</b>
+</td></tr></table>
+<p>Verdict: Go with CEF.  We can link the source tree, and push updates frequently as needed. This may prove vital with critical security updates. It'll just require Jusonex to do small 2-600hour changes.
+</p>
+<ul><li> I'm not sure if we should really go with CEF since we are probably forced to run CEF in the main process @ "Problems with CEF" --<a href="User_Jusonex.html" title="User:Jusonex">Jusonex</a> 12:24, 5 May 2014 (UTC)</li></ul>
+<p>Verdict 2: Go with Awesomium since CEF doesn't match our requirements (as described below).
+</p><p>Verdict 3:
+</p>
+<ul><li> I fear that Awesomium updates are and will be very infrequent. Since this is very bad in terms of security, we should ponder on moving back to CEF. CEF also introduced a separate executeable-mode (<a rel="nofollow" class="external free" href="https://code.google.com/p/chromiumembedded/wiki/GeneralUsage#Separate_Sub-Process_Executable">https://code.google.com/p/chromiumembedded/wiki/GeneralUsage#Separate_Sub-Process_Executable</a>) which might solve the problem stated below. --<a href="User_Jusonex.html" title="User:Jusonex">Jusonex</a> 11:39, 19 August 2014 (CET)</li></ul>
+<h2><span class="mw-headline" id="Problems_with_CEF"><s>Problems with CEF</s></span></h2>
+<p><span style="color: red;"><b>Problems were solved in a newer CEF revision</b></span>
+</p><p><s>CEF implements Chromium's multi-process architecture by "cloning" the application's main process and running <i>CefExecuteProcess</i> which blocks the process while executing all the stuff (i.e. audio, rendering etc.). The behaviour leads to <b>big issues</b> in case of gta_sa.exe: <i>CefExecuteProcess</i> has to be called from <i>WinMain</i>. Since we can't inject a DLL at this time easily, we have to patch GTA either in memory or on the harddisk (which is too crap).
+As an alternative, CEF provides a setting in order to run it in single-process mode. However this is a bad solution for two reason:
+</p>
+<ul><li> Performance and stability (We can't use more than 2GB memory without the LargeAddressAware flag; if GTA uses up to 1GB and CEF as well, we'll run into trouble). Additionally, we can't react to crashes properly</li>
+<li> Quotation from CEF's developer (- <i>yeah, CEF's team consists of only 1 developer</i>): "Single process mode is intended as a development/debugging tool and is not recommended for production use. There are many potential bugs and stability issues related to use of single process mode. You should strongly consider making your application work in multi process mode." (Source: <a rel="nofollow" class="external autonumber" href="http://magpcss.org/ceforum/viewtopic.php?f=6&amp;t=3427#p6950">[1]</a>)</s></li></ul>
+<h2><span class="mw-headline" id="Flash">Flash</span></h2>
+<ul><li>Not everyone has flash, and there's likely to be great demand for streaming video.  HTML5 doesn't cut it at the moment.</li>
+<li>For it to function, the special "Other Browsers" version of Flash Player needs to be installed from Adobe's Website
+<ul><li> Should a suggestion of installation of "Flash for other browsers" be included in the MTA installer?
+<ul><li> I think that we shouldn't be prematurely suggesting/promoting/forcing the install of 3rd party software without knowing the exact demand for it.  Server owners might find ways around this problem, and we might end up looking like fools for spyware-like adverts (extreme case scenario&#160;:P) --<a href="User_Talidan.html" title="User:Talidan">Talidan</a> 18:32, 17 April 2014 (UTC)</li></ul></li>
+<li> Using user-agent to spoof various HTML5 Browsers may allow dodging of the use of flash.  This requires a few things:
+<ul><li> A scripting function to set the user agent of the session</li>
+<li> Some sample scripts, or some nagging to make sure the community uses HTML5 wherever possible, by the use of user agent or otherwise.  We should try and make server owners responsible to avoid taking the lazy route (flash streaming)</li></ul></li></ul></li>
+<li> Note: <a rel="nofollow" class="external free" href="http://www.permadi.com/tutorial/flashjscommand/">http://www.permadi.com/tutorial/flashjscommand/</a> (limited way of communication) - thanks to <a href="User_Cazomino05.html" title="User:Cazomino05">Cazomino05</a></li></ul>
+<h2><span class="mw-headline" id="HTTP_Auth">HTTP Auth</span></h2>
+<ul><li> Browsers normally have a built-in dialog for logging into an HTTP auth'd website</li>
+<li> Do we provide the GUI internally or pass an event for script owners to callback on?
+<ul><li> I say do this internally.  It's somewhat a security thing, i dont think scripts can be trusted necessarilly.  --<a href="User_Talidan.html" title="User:Talidan">Talidan</a> 18:38, 17 April 2014 (UTC)</li></ul></li>
+<li> Can we pass ACL auth from the server to website, if they're hosted on the same box? 
+<ul><li> It's quite niche.  See if the use case opens up. --<a href="User_Talidan.html" title="User:Talidan">Talidan</a> 18:38, 17 April 2014 (UTC)</li></ul></li></ul>
+<h2><span class="mw-headline" id="Pop-ups.2FNew_windows">Pop-ups/New windows</span></h2>
+<ul><li>How to handle?
+<ul><li>Fire an event.  This means an event is fired when a web page requests a pop-up or a href in a new window, and it's left for the scripter to deal with it. --<a href="User_Woovie.html" title="User:Woovie">Woovie</a> 18:38, 17 April 2014 (UTC)</li></ul></li></ul>
+<h2><span class="mw-headline" id="Alerts">Alerts</span></h2>
+<ul><li> How to handle Alert message boxes?
+<ul><li> Either we create a message box GUI in CEGUI to fulfil this</li>
+<li> Otherwise, we ignore alerts and make them incompatible.  This might end up being the better solution.</li></ul></li></ul>
+<h2><span class="mw-headline" id="Other_plugins">Other plugins</span></h2>
+<ul><li>Are they supported? If so, which ones?
+<ul><li>I'm gonna say we disable most plugins, and have a whitelist for approved ones, if feasible.  Who want's to deal with crap like Java? --<a href="User_Talidan.html" title="User:Talidan">Talidan</a> 18:32, 17 April 2014 (UTC)</li>
+<li>If we disable most we need a function to get the list of installed plugins for scripters so they can detect this --<a href="User_Cazomino05.html" title="User:Cazomino05">Cazomino05</a> 18:49, 17 April 2014 (UTC)</li></ul></li></ul>
+<h2><span class="mw-headline" id="Whitelist.2FBlacklist_of_websites">Whitelist/Blacklist of websites</span></h2>
+<ul><li>Global blacklist?</li>
+<li>How to implement whitelist popup?</li></ul>
+<p>Current proposal consists of:
+</p>
+<ul><li> A global whitelist of approved websites, that are always allowed.  E.g. youtube, google, reddit</li>
+<li> All other websites have a message box popup requesting that you allow access to certain websites</li>
+<li> A possible global blacklist/killswitch for bad websites or the entire web browser.</li></ul>
+<h2><span class="mw-headline" id="Audio_.26_3D">Audio &amp; 3D</span></h2>
+<ul><li> Audio support in Chromium/Awesomium/CEF is currently multi-threaded.  This means it can't be integrated with BASS, which would have opened up possibilities for all the nice BASS functions we have.</li>
+<li> This also means 3D support can't be added as easily.  We can however adjust the volume manually, like we do currently.  
+<ul><li> Unfortunately, Chromium uses COM volume control.  This means that it uses Windows global settings, and for XP/2000 probably can't be controlled easily.  3D might not be possible for these systems.
+<ul><li> HTML5 does support volume control.  So long as the audio source is on an HTML5 page, these can be wrapped locally with a crafted .html document.  This can be fed with volume controls to simulate 3D in Lua, rather than in MTA itself. </li></ul></li></ul></li></ul>
+<h2><span class="mw-headline" id="Privacy_and_cookies">Privacy and cookies</span></h2>
+<ul><li> Cookies should not be transferred from one server to another.  If you login to Google on one server, another server should not be able to hijack that session.
+<ul><li> Easy solution: Delete cookie and cache data upon quit every single time (or perhaps on start in case of crashes?)</li>
+<li> Otherwise, CEF offers a Cookie Manager where cookie sessions can be created.  Each server could have it's own cookie session so it could remember logins etc, which could be handy for login panels
+<ul><li> If this option is chosen, we should have a button in the settings menu to clear all browsing data.</li></ul></li></ul></li></ul>
+<h2><span class="mw-headline" id="Ability_to_modify_content">Ability to modify content</span></h2>
+<ul><li> The ability to modify content inside the web page is quite a useful one however it leaves us prone to javascript attacks such as the ones used in XSS.
+<ul><li> Solution: For a first release it would be best that content inside the browser be uneditable as this could lead to security issues. --<a href="User_Cazomino05.html" title="User:Cazomino05">Cazomino05</a> 18:49, 17 April 2014 (UTC)</li></ul></li></ul>
+<h2><span class="mw-headline" id="Ability_to_view_content_in_Screen_shots">Ability to view content in Screen shots</span></h2>
+<ul><li> Sensitive information can be leaked in script taken screen shots
+<ul><li> Solution: As with our current implementation of the chat box the web browsers should be hidden from takePlayerScreenShot as these can be sent to server owners/admins and reveal sensitive information. --<a href="User_Cazomino05.html" title="User:Cazomino05">Cazomino05</a> 18:49, 17 April 2014 (UTC)</li></ul></li></ul>
+<h2><span class="mw-headline" id="Authentification">Authentification</span></h2>
+<ul><li> Sensitive key presses can be intercepted via script
+<ul><li> Solution: Educate - Window on entry explaining the insecurities of putting personal details into a website and a reminder in edit boxes --<a href="User_Cazomino05.html" title="User:Cazomino05">Cazomino05</a> 00:21, 23 April 2014 (UTC)
+<ul><li> reminder should be a string in all edit fields depending on if it's remote or local saying something like Insecure to remind people not to put those details in. --<a href="User_Cazomino05.html" title="User:Cazomino05">Cazomino05</a> 00:21, 23 April 2014 (UTC)</li></ul></li></ul></li></ul>
+<h2><span class="mw-headline" id="Prevent_subsequent_loading_of_HTML_code_via_javascript">Prevent subsequent loading of HTML code via javascript</span></h2>
+<p>Since we need javascript to create HTML GUIs, it'd be bad to disable javascript (for local HTML pages) entirely.
+</p>
+<ul><li> Problem: A function like <i>executeBrowserJavascript</i> would allow loading HTML code via <i>document.write</i>.
+<ul><li> Possible solution: Don't implement <i>executeBrowserJavascript</i> and introduce a "web" flag in the <i>meta.xml</i> file. If this flag is set, <i>fileOpen</i> will only work in read-only mode. (You'll have to set the web flag then in order to be able to open the website via <i>loadBrowserURL</i>).</li></ul></li></ul>
+<p>Negative: Less possibilities --<a href="User_Jusonex.html" title="User:Jusonex">Jusonex</a> 11:16, 09 May 2014 (UTC)
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190625164801
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.006 seconds
+Real time usage: 0.007 seconds
+Preprocessor visited node count: 67/1000000
+Preprocessor generated node count: 92/1000000
+Post‐expand include size: 99/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    1.199      1 - Template:Client_devclass
+100.00%    1.199      1 - -total
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:7648-0!*!0!!en!*!* and timestamp 20190625164801 and revision id 45791
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=CWebBrowser&amp;oldid=45791">https://wiki.multitheftauto.com/index.php?title=CWebBrowser&amp;oldid=45791</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Categories</a>: <ul><li><a href="Category_Client_Classes_(Blue).html" title="Category:Client Classes (Blue)">Client Classes (Blue)</a></li><li><a href="Category_Classes_(Blue).html" title="Category:Classes (Blue)">Classes (Blue)</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="CWebBrowser.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:CWebBrowser&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=CWebBrowser&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=CWebBrowser&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=CWebBrowser" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=CWebBrowser" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/CWebBrowser.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/CWebBrowser.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=CWebBrowser&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=CWebBrowser&amp;oldid=45791" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=CWebBrowser&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+			</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 25 August 2015, at 21:55.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":66});});</script></body></html>

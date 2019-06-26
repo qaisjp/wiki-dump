@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>NL/Resource:Irc - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"NL/Resource:Irc","wgTitle":"NL/Resource:Irc","wgCurRevisionId":37423,"wgRevisionId":37423,"wgArticleId":5532,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Resource"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"NL/Resource:Irc","wgRelevantArticleId":5532,"wgRequestId":"08c73c30599935b9afa76f93","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta name='headingclass' content='' data-class='resource' data-subcaption='Resource'>
+<meta name='removenamespace' content=''>
+<meta name='lowercasetitle' content=''>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-NL_Resource_Irc rootpage-NL_Resource_Irc skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">NL/Resource:Irc</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
+<!--NS-->
+<!--LC-->
+</p><p>De "irc" resource zorgt voor een echobot die berichten zoals chatberichten output op een irc channel.
+Informatie over "irc" of "Internet Relay Chat" kan gevonden worden op <a rel="nofollow" class="external text" href="http://nl.wikipedia.org/wiki/Internet_Relay_Chat">Wikipedia.</a>
+</p>
+<h2><span class="mw-headline" id="Installatie">Installatie</span></h2>
+<p>Om deze resource aan de praat te krijgen op je Linux of Windows server, volg deze stappen:
+</p>
+<ul><li> <b>Installeer de sockets module</b>
+<ul><li> <b>Download de module</b>: Je kan deze module vinden op het <a rel="nofollow" class="external text" href="http://code.google.com/p/multitheftauto-modules/downloads/list">mta-modules project</a>. Download het ml_sockets.dll bestand voor Windows en het ml_sockets.so bestand voor Linux</li>
+<li> <b>Voeg de module toe in de MTA map</b>: Om deze module te laten moet deze in de volgende map geplaatst worden: mods/deathmatch/modules, als deze map niet bestaat, maak ze dan.</li>
+<li> <b>Voeg de module toe aan het mtaserver.conf bestand</b>: Om de module te laden wanneer de server start, voeg dan dit lijntje &lt;module src="ml_sockets.dll"/&gt; voor Windows en dit lijntje &lt;module src="ml_sockets.so"/&gt; voor Linux toe aan je mtaserver.conf.</li></ul></li>
+<li> <b>Installeer de IRC resource</b>
+<ul><li> <b>Download de resource</b>: De IRC resource kan gevond worden op de <a rel="nofollow" class="external text" href="http://community.mtasa.com/index.php?p=resources&amp;s=details&amp;id=731">community</a>, plaats de resource in de resources map.</li>
+<li> <b>Pas het settings.xml bestand aan</b>: Open dit bestand en volg de instructies in het bestand om de bot te configureren.</li>
+<li> <b>Pas het meta.xml bestand aan</b>: In dit bestand staan een aantal settings met betrekken tot reclame en ingame gui's, <b>blijf van de rest!</b> Je kan deze settings ook veranderen in je admin paneel wanneer de resource geladen is.</li>
+<li> <b>Acl rechten</b> De resource heeft een aantal rechten nodig om goed te werken waaronder: addBan, kickPlayer &amp; callRemote. Als de resource niet genoeg rechten heeft verschijnt er een bericht in de console en kan de resource niet starten.</li></ul></li></ul>
+<p>Nu kan je de resource starten, als de server aan het werken was tijdens deze bewerkingen doe dan eerst: /loadmodule ml_sockets.dll of /loadmodule ml_sockets.so en /refreshall voordat je /start irc doet.
+</p>
+<h2><span class="mw-headline" id="Het_acl.xml_bestand">Het acl.xml bestand</span></h2>
+<p>Het acl.xml bestand in de irc resource zorgt voor de acl rechten van irc commands.
+</p><p>Syntax
+</p>
+<pre class="prettyprint lang-xml">
+&lt;command name="!kick" level="2" echoChannelOnly="true" /&gt;
+</pre>
+<ul><li> De name is de command met uitroepteken</li>
+<li> De level is het minimum level dat de irc user moet hebben om de command te gebruiken.</li>
+<li> De echoChannelOnly bepaald ofdat je de command kan gebruiken buiten het echochannel</li></ul>
+<h2><span class="mw-headline" id="Elementen">Elementen</span></h2>
+<p>Alle gebruikers, kanalen &amp; servers gekend door de irc resource worden voorgestand door elementen
+</p>
+<ul><li> Servers zijn de volgende elementen: 'irc-server'</li>
+<li> Channels zijn de volgende elementen: 'irc-channel'</li>
+<li> Users zijn de volgende elementen: 'irc-user'</li></ul>
+<h2><span class="mw-headline" id="Level_systeem">Level systeem</span></h2>
+<p>De irc resource gebruikt geen irc modes systeem voor zijn acl, maar wel nummers.
+</p>
+<ul><li> Owner (~) is nu level 5</li>
+<li> Super Operator (&amp;) is nu level 4</li>
+<li> Operator (@) is nu level 3</li>
+<li> Helper (%) is nu level 2</li>
+<li> Voice (+) is nu level 1</li></ul>
+<p>Alle andere gebruikers zijn nu level 0
+</p>
+<h2><span class="mw-headline" id="Events">Events</span></h2>
+<p>Gedurende het irc proces worden een aantal events getriggerd om het je gemakkelijk te maken om extensies te schrijven.
+Je moet wel addEvent("eventName") doen om ze te kunnen gebruiken.
+</p>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>Naam</b>
+</td>
+<td width="200pt"><b>Source</b>
+</td>
+<td><b>Parameters</b>
+</td></tr></table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>onIRCConnecting</b>
+</td>
+<td width="200pt">server theIRCServer
+</td>
+<td><pre class="prettyprint lang-lua"></pre>
+</td></tr></table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>onIRCConnect</b>
+</td>
+<td width="200pt">server theIRCServer
+</td>
+<td><pre class="prettyprint lang-lua"></pre>
+</td></tr></table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>onIRCFailConnect</b>
+</td>
+<td width="200pt">server theIRCServer
+</td>
+<td><pre class="prettyprint lang-lua">string reason</pre>
+</td></tr></table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>onIRCUserJoin</b>
+</td>
+<td width="200pt">user theIRCUser
+</td>
+<td><pre class="prettyprint lang-lua">channel theIRCChannel, string vhost</pre>
+</td></tr></table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>onIRCUserNickChange</b>
+</td>
+<td width="200pt">user theIRCUser
+</td>
+<td><pre class="prettyprint lang-lua">string oldNick, string newNick</pre>
+</td></tr></table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>onIRCUserPart</b>
+</td>
+<td width="200pt">user theIRCUser
+</td>
+<td><pre class="prettyprint lang-lua">channel theIRCChannel, string theReason</pre>
+</td></tr></table>
+<p><b>NOTE:</b> 'theReason' kan nil zijn als 'theUser' gequit heeft zonder reden.
+</p>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>onIRCUserKick</b>
+</td>
+<td width="200pt">user theIRCUser
+</td>
+<td><pre class="prettyprint lang-lua">channel theIRCChannel, string theReason, user theKicker</pre>
+</td></tr></table>
+<p><b>NOTE:</b> 'theKicker' kan false zijn als 'theUser' gekickt was door een service zoals de nickserv.
+</p>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>onIRCPrivateMessage</b>
+</td>
+<td width="200pt">user theIRCUser
+</td>
+<td><pre class="prettyprint lang-lua">string theMessage</pre>
+</td></tr></table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>onIRCMessage</b>
+</td>
+<td width="200pt">user theIRCUser
+</td>
+<td><pre class="prettyprint lang-lua">channel theIRCChannel, string theMessage</pre>
+</td></tr></table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>onIRCPrivateNotice</b>
+</td>
+<td width="200pt">user theIRCUser
+</td>
+<td><pre class="prettyprint lang-lua">string theMessage</pre>
+</td></tr></table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>onIRCNotice</b>
+</td>
+<td width="200pt">user theIRCUser
+</td>
+<td><pre class="prettyprint lang-lua">channel theIRCChannel, string theMessage</pre>
+</td></tr></table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>onIRCUserMode</b>
+</td>
+<td width="200pt">user theIRCUser
+</td>
+<td><pre class="prettyprint lang-lua">channel theIRCChannel, boolean positive, string theMode, user theSetter</pre>
+</td></tr></table>
+<p><b>NOTE:</b> 'theSetter' kan false zijn als 'theUser' geopt was door een service zoals de chanserv
+</p>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>onIRCChannelMode</b>
+</td>
+<td width="200pt">channel theIRCChannel
+</td>
+<td><pre class="prettyprint lang-lua">boolean positive, string theMode, user theSetter</pre>
+</td></tr></table>
+<p><b>NOTE:</b> 'theSetter' kan false zijn als de mode geset was door een service zoals chanserv
+</p>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>onIRCLevelChange</b>
+</td>
+<td width="200pt">user theIRCUser
+</td>
+<td><pre class="prettyprint lang-lua">channel theIRCChannel, number oldlevel, number newlevel</pre>
+</td></tr></table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>onIRCUserQuit</b>
+</td>
+<td width="200pt">user theIRCUser
+</td>
+<td><pre class="prettyprint lang-lua">string theReason</pre>
+</td></tr></table>
+<h2><span class="mw-headline" id="Ge.C3.ABxporteerde_functies">Geëxporteerde functies</span></h2>
+<p>Deze functies kunnen gebeld worden van andere resources om het schrijven van extensies mogelijk te maken
+Gebruik de exports tabel of <a href="../Call.html" title="Call">call</a> om ze te gebruiken.
+</p><p>Voorbeeld 1:
+</p>
+<pre class="prettyprint lang-lua">[Lua]
+	exports.irc:ircConnect("irc.gtanet.com","bot",6667)
+</pre>
+<p>Voorbeeld 2:
+</p>
+<pre class="prettyprint lang-lua">[Lua]
+	call(getResourceFromName("irc"),"ircConnect","irc.gtanet.com","bot",6667)
+</pre>
+<p><br />
+</p>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">returns</pre>
+</td>
+<td width="150pt"><b>functie naam</b>
+</td>
+<td><b>Parameters</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">boolean</pre>
+</td>
+<td width="200pt"><b>ircHop</b>
+</td>
+<td><pre class="prettyprint lang-lua">server theIRCServer, (string theReason)</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">boolean</pre>
+</td>
+<td width="200pt"><b>ircSay</b>
+</td>
+<td><pre class="prettyprint lang-lua">channel theIRCChannel/user theIRCUser, string theMessage</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">boolean</pre>
+</td>
+<td width="200pt"><b>ircRaw</b>
+</td>
+<td><pre class="prettyprint lang-lua">server theIRCServer, string theRaw</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">boolean</pre>
+</td>
+<td width="200pt"><b>ircPart</b>
+</td>
+<td><pre class="prettyprint lang-lua">channel theIRCChannel, (string theReason)</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">userdata</pre>
+</td>
+<td width="200pt"><b>ircJoin</b>
+</td>
+<td><pre class="prettyprint lang-lua">server theIRCServer, string theChannelName, (string theChannelPassword)</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">boolean</pre>
+</td>
+<td width="200pt"><b>ircAction</b>
+</td>
+<td><pre class="prettyprint lang-lua">channel theIRCChannel/user theIRCUser, string theMessage</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">boolean</pre>
+</td>
+<td width="200pt"><b>ircNotice</b>
+</td>
+<td><pre class="prettyprint lang-lua">channel theIRCChannel/user theUserChannel, string theMessage</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">boolean</pre>
+</td>
+<td width="200pt"><b>outputIRC</b>
+</td>
+<td><pre class="prettyprint lang-lua">string theMessage</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">boolean</pre>
+</td>
+<td width="200pt"><b>ircConnect</b>
+</td>
+<td><pre class="prettyprint lang-lua">string serverHost/IP, string nickname, (number serverPort), (string serverPassword), (boolean secure)</pre>
+</td></tr>
+</table> <b>NOTE:</b> Secure connections are not available yet due to the module not suporting SSL yet.
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">boolean</pre>
+</td>
+<td width="200pt"><b>ircIdentify</b>
+</td>
+<td><pre class="prettyprint lang-lua">server theIRCServer, string thePassword</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">boolean</pre>
+</td>
+<td width="200pt"><b>ircReconnect</b>
+</td>
+<td><pre class="prettyprint lang-lua">server theIRCServer</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">boolean</pre>
+</td>
+<td width="200pt"><b>ircDisconnect</b>
+</td>
+<td><pre class="prettyprint lang-lua">server theIRCServer, string theReason</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">boolean</pre>
+</td>
+<td width="200pt"><b>ircChangeNick</b>
+</td>
+<td><pre class="prettyprint lang-lua">server theIRCServer, string newNick</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">table</pre>
+</td>
+<td width="200pt"><b>ircGetServers</b>
+</td>
+<td><pre class="prettyprint lang-lua"></pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">string</pre>
+</td>
+<td width="200pt"><b>ircGetServerName</b>
+</td>
+<td><pre class="prettyprint lang-lua">server theIRCServer</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">string</pre>
+</td>
+<td width="200pt"><b>ircGetServerHost</b>
+</td>
+<td><pre class="prettyprint lang-lua">server theIRCServer</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">number</pre>
+</td>
+<td width="200pt"><b>ircGetServerPort</b>
+</td>
+<td><pre class="prettyprint lang-lua">server theIRCServer</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">string</pre>
+</td>
+<td width="200pt"><b>ircGetServerPass</b>
+</td>
+<td><pre class="prettyprint lang-lua">server theIRCServer</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">string</pre>
+</td>
+<td width="200pt"><b>ircGetServerNick</b>
+</td>
+<td><pre class="prettyprint lang-lua">server theIRCServer</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">boolean</pre>
+</td>
+<td width="200pt"><b>ircIsServerSecure</b>
+</td>
+<td><pre class="prettyprint lang-lua">server theIRCServer</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">table</pre>
+</td>
+<td width="200pt"><b>ircGetServerChannels</b>
+</td>
+<td><pre class="prettyprint lang-lua">server theIRCServer</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">userdata</pre>
+</td>
+<td width="200pt"><b>ircGetChannelServer</b>
+</td>
+<td><pre class="prettyprint lang-lua">channel theIRCChannel</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">table</pre>
+</td>
+<td width="200pt"><b>ircGetChannels</b>
+</td>
+<td><pre class="prettyprint lang-lua">(server theIRCServer)</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">boolean</pre>
+</td>
+<td width="200pt"><b>ircSetChannelMode</b>
+</td>
+<td><pre class="prettyprint lang-lua">channel theIRCChannel, string theMode</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">string</pre>
+</td>
+<td width="200pt"><b>ircGetChannelName</b>
+</td>
+<td><pre class="prettyprint lang-lua">channel theIRCChannel</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">string</pre>
+</td>
+<td width="200pt"><b>ircGetChannelMode</b>
+</td>
+<td><pre class="prettyprint lang-lua">channel theIRCChannel</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">table</pre>
+</td>
+<td width="200pt"><b>ircGetChannelUsers</b>
+</td>
+<td><pre class="prettyprint lang-lua">channel theIRCChannel</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">string</pre>
+</td>
+<td width="200pt"><b>ircGetChannelTopic</b>
+</td>
+<td><pre class="prettyprint lang-lua">channel theIRCChannel</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">userdata</pre>
+</td>
+<td width="200pt"><b>ircGetChannelFromName</b>
+</td>
+<td><pre class="prettyprint lang-lua">string theChannelName</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">bool</pre>
+</td>
+<td width="200pt"><b>ircIsEchoChannel</b>
+</td>
+<td><pre class="prettyprint lang-lua">channel theIRCChannel</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">boolean</pre>
+</td>
+<td width="200pt"><b>ircSetUserMode</b>
+</td>
+<td><pre class="prettyprint lang-lua">user theIRCUser, string theMode</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">string</pre>
+</td>
+<td width="200pt"><b>ircGetUserMode</b>
+</td>
+<td><pre class="prettyprint lang-lua">user theIRCUser</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">string</pre>
+</td>
+<td width="200pt"><b>ircGetUserNick</b>
+</td>
+<td><pre class="prettyprint lang-lua">user theIRCUser</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">number</pre>
+</td>
+<td width="200pt"><b>ircGetUserLevel</b>
+</td>
+<td><pre class="prettyprint lang-lua">user theIRCUser</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">table</pre>
+</td>
+<td width="200pt"><b>ircGetUsers</b>
+</td>
+<td><pre class="prettyprint lang-lua">(server theIRCServer)</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">userdata</pre>
+</td>
+<td width="200pt"><b>ircGetUserServer</b>
+</td>
+<td><pre class="prettyprint lang-lua">user theIRCUser</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">number</pre>
+</td>
+<td width="200pt"><b>ircGetUserLevel</b>
+</td>
+<td><pre class="prettyprint lang-lua">user theIRCUser, channel theIRCChannel</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">string</pre>
+</td>
+<td width="200pt"><b>ircGetUserVhost</b>
+</td>
+<td><pre class="prettyprint lang-lua">user theIRCUser</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">userdata</pre>
+</td>
+<td width="200pt"><b>ircGetUserFromNick</b>
+</td>
+<td><pre class="prettyprint lang-lua">string theNickname</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">table</pre>
+</td>
+<td width="200pt"><b>ircGetUserChannels</b>
+</td>
+<td><pre class="prettyprint lang-lua">user theIRCUser</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">bool</pre>
+</td>
+<td width="200pt"><b>addIRCCommandHandler</b>
+</td>
+<td><pre class="prettyprint lang-lua">string theCommandName, function theFunctionToCall/string functionName, (number minimumLevel), (boolean echoChannelOnly)</pre>
+</td></tr>
+</table> <b>NOTE:</b> Gebruik een string met de functie naam als je deze functie gebruikt vanuit een andere resource, zorg ervoor dat deze functie geëxporteerd is
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">table</pre>
+</td>
+<td width="200pt"><b>ircGetCommands</b>
+</td>
+<td><pre class="prettyprint lang-lua"></pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">number</pre>
+</td>
+<td width="200pt"><b>ircGetCommandLevel</b>
+</td>
+<td><pre class="prettyprint lang-lua">string theCommand</pre>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="100pt"><pre class="prettyprint lang-lua">boolean</pre>
+</td>
+<td width="200pt"><b>ircIsCommandEchoChannelOnly</b>
+</td>
+<td><pre class="prettyprint lang-lua">string theCommand</pre>
+</td></tr>
+</table>
+<p><b>NOTE:</b> Alle parameters die tussen haakjes staan zijn optioneel, zie <a href="../Optional_arguments-2.html" title="Optional arguments" class="mw-redirect">optional arguments</a>
+</p>
+<h2><span class="mw-headline" id="Commandos">Commandos</span></h2>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>commando</b>
+</td>
+<td width="100pt"><b>level</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!kick</b>
+</td>
+<td width="100pt"><b>2</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!uptime</b>
+</td>
+<td width="100pt"><b>0</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!say</b>
+</td>
+<td width="100pt"><b>0</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!s</b>
+</td>
+<td width="100pt"><b>0</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!m</b>
+</td>
+<td width="100pt"><b>0</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!players</b>
+</td>
+<td width="100pt"><b>0</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!pm</b>
+</td>
+<td width="100pt"><b>0</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!ts</b>
+</td>
+<td width="100pt"><b>0</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!getip</b>
+</td>
+<td width="100pt"><b>2</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!getserial</b>
+</td>
+<td width="100pt"><b>2</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!mute</b>
+</td>
+<td width="100pt"><b>2</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!unmute</b>
+</td>
+<td width="100pt"><b>2</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!mutes</b>
+</td>
+<td width="100pt"><b>2</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!freeze</b>
+</td>
+<td width="100pt"><b>2</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!unfreeze</b>
+</td>
+<td width="100pt"><b>2</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!kill</b>
+</td>
+<td width="100pt"><b>2</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!slap</b>
+</td>
+<td width="100pt"><b>2</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!ban</b>
+</td>
+<td width="100pt"><b>3</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!banip</b>
+</td>
+<td width="100pt"><b>3</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!banserial</b>
+</td>
+<td width="100pt"><b>3</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!banname</b>
+</td>
+<td width="100pt"><b>3</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!unbanip</b>
+</td>
+<td width="100pt"><b>3</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!unbanserial</b>
+</td>
+<td width="100pt"><b>3</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!unban</b>
+</td>
+<td width="100pt"><b>3</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!bans</b>
+</td>
+<td width="100pt"><b>3</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!commands</b>
+</td>
+<td width="100pt"><b>0</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!cmds</b>
+</td>
+<td width="100pt"><b>0</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!lua</b>
+</td>
+<td width="100pt"><b>4</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!run</b>
+</td>
+<td width="100pt"><b>4</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!crun</b>
+</td>
+<td width="100pt"><b>4</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!resources</b>
+</td>
+<td width="100pt"><b>3</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!start</b>
+</td>
+<td width="100pt"><b>3</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!restart</b>
+</td>
+<td width="100pt"><b>3</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!stop</b>
+</td>
+<td width="100pt"><b>3</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!account</b>
+</td>
+<td width="100pt"><b>3</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!community</b>
+</td>
+<td width="100pt"><b>3</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!money</b>
+</td>
+<td width="100pt"><b>0</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!health</b>
+</td>
+<td width="100pt"><b>0</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!wantedlevel</b>
+</td>
+<td width="100pt"><b>0</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!team</b>
+</td>
+<td width="100pt"><b>0</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!ping</b>
+</td>
+<td width="100pt"><b>0</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!modules</b>
+</td>
+<td width="100pt"><b>3</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!changemap</b>
+</td>
+<td width="100pt"><b>3</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!map</b>
+</td>
+<td width="100pt"><b>0</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!shutdown</b>
+</td>
+<td width="100pt"><b>5</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!password</b>
+</td>
+<td width="100pt"><b>4</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!gravity</b>
+</td>
+<td width="100pt"><b>3</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!weather</b>
+</td>
+<td width="100pt"><b>3</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!server</b>
+</td>
+<td width="100pt"><b>0</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!zone</b>
+</td>
+<td width="100pt"><b>0</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!refreshall</b>
+</td>
+<td width="100pt"><b>4</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!refresh</b>
+</td>
+<td width="100pt"><b>4</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!checkmap</b>
+</td>
+<td width="100pt"><b>2</b>
+</td></tr>
+</table>
+<table class="wikitable" border="0">
+
+<tr>
+<td width="200pt"><b>!country</b>
+</td>
+<td width="100pt"><b>2</b>
+</td></tr>
+</table>
+<h2><span class="mw-headline" id="Aanpassen">Aanpassen</span></h2>
+<p>Gelieve de resource niet aan te passen, je kan ze breken. Schrijf extensies.
+</p>
+<h2><span class="mw-headline" id="Contacteren">Contacteren</span></h2>
+<p>De auteur (MCvarial) kan gecontacteerd worden op IRC (#mta,#mta.dutch)
+Of via email (MCvarial@gmail.com)
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190625164257
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.027 seconds
+Real time usage: 0.027 seconds
+Preprocessor visited node count: 1011/1000000
+Preprocessor generated node count: 2228/1000000
+Post‐expand include size: 181/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.878      1 - Template:Resource_page
+100.00%    0.878      1 - -total
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:5532-0!*!0!!*!*!* and timestamp 20190625164257 and revision id 37423
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=NL/Resource:Irc&amp;oldid=37423">https://wiki.multitheftauto.com/index.php?title=NL/Resource:Irc&amp;oldid=37423</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="../Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="../Category_Resource.html" title="Category:Resource">Resource</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Resource_Irc.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:NL/Resource:Irc&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=NL/Resource:Irc&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=NL/Resource:Irc&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=NL%2FResource%3AIrc" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=NL%2FResource%3AIrc" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/NL/Resource_Irc.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/NL/Resource_Irc.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=NL/Resource:Irc&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=NL/Resource:Irc&amp;oldid=37423" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=NL/Resource:Irc&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=Resource:Irc" title="Resource:Irc – English" lang="en" hreflang="en">English</a></li>
+													<li class="interlanguage-link interwiki-ru"><a href="http://wiki.multitheftauto.com/index.php?title=RU/Resource:Irc" title="Resource:Irc – русский" lang="ru" hreflang="ru">Русский</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 26 October 2013, at 22:26.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":56});});</script></body></html>

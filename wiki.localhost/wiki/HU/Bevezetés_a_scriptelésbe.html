@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>HU/Bevezetés a scriptelésbe - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"HU/Bevezetés_a_scriptelésbe","wgTitle":"HU/Bevezetés a scriptelésbe","wgCurRevisionId":61004,"wgRevisionId":61004,"wgArticleId":6869,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Tutorials","Translated/Support"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"HU/Bevezetés_a_scriptelésbe","wgRelevantArticleId":6869,"wgRequestId":"aec0eff861740de969422e90","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-HU_Bevezetés_a_scriptelésbe rootpage-HU_Bevezetés_a_scriptelésbe skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">HU/Bevezetés a scriptelésbe</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>A resourceok egy nagy része az MTAnak. A resource lényegében egy mappa vagy egy zip ami tartalmazza a fájlokat, plusz egy meta fájlt, ami leírja a szervernek, hogy a resource hogyan legyen betöltve, és milyen fájlokat tartalmaz. A resource részben hasonlít egy programhoz, ami az operációs rendszerünkön fut - lelehet állítani, ellehet indítani, és egyszerre több resource is futhat.
+</p><p>Minden ami a scripteléssel foglalkozik, a resourcekben történik, amit a resource tesz határozza meg, hogy az egy játéktípus, egy map vagy bármi más. Az MTA tartalmaz scripteket, amiket opcionálisan fel is használhatsz, mint pl egy map korlátozás, ami által csak a játszható térben lehetünk vagy deathpickupok, amivel létrehozhatunk fegyver felvételi pontokat.
+</p>
+<table cellspacing="0" style="padding: 5px; width: 80%; margin: 2px auto 2px auto; border: 1px solid #81C687; background: #E2FFE5; border-left: 10px solid #81C687;">
+<tr>
+<td style="width: 32px; vertical-align:top; display: none;" rowspan="2"> [[{{{image}}}|link=]]
+</td>
+<td style=""> <b>Tipp:</b> Az első lépés ahhoz, hogy elkezdj scriptelni, az az hogy használj egy LUA szerkesztőt. Ez megkönnyíti a scriptelést. Ajánlom a <a rel="nofollow" class="external text" href="http://www.sublimetext.com/">Sublime Text</a>, a <a rel="nofollow" class="external text" href="http://notepad-plus.sourceforge.net/uk/site.htm">Notepad++</a> vagy a <a rel="nofollow" class="external text" href="http://luaedit.sourceforge.net/">LuaEdit</a> programot. Van egy nem hivatalos <a href="../MTASE.html" title="MTASE">MTA Script Szerkesztő</a> (fejlesztési státuszban, de nem tudok arról, hogy még fejlesztik) amit kipróbálhatsz.
+</td></tr>
+<tr>
+<td rowspan="1" style="padding-left: 10px;">
+</td></tr></table>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Egy_m.C5.B1k.C3.B6d.C5.91_script_k.C3.A9sz.C3.ADt.C3.A9se"><span class="tocnumber">1</span> <span class="toctext">Egy működő script készítése</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Hol_tal.C3.A1ljuk_meg_a_scripteket.3F"><span class="tocnumber">1.1</span> <span class="toctext">Hol találjuk meg a scripteket?</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#A_resourceok_azonos.C3.ADt.C3.A1sa"><span class="tocnumber">1.2</span> <span class="toctext">A resourceok azonosítása</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Egy_egyszer.C5.B1_script_l.C3.A9trehoz.C3.A1sa"><span class="tocnumber">1.3</span> <span class="toctext">Egy egyszerű script létrehozása</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#A_script_futtat.C3.A1sa"><span class="tocnumber">1.4</span> <span class="toctext">A script futtatása</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Egy_egyszer.C5.B1_parancs_l.C3.A9trehoz.C3.A1sa"><span class="tocnumber">2</span> <span class="toctext">Egy egyszerű parancs létrehozása</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#A_parancskezel.C5.91kr.C5.91l"><span class="tocnumber">2.1</span> <span class="toctext">A parancskezelőkről</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#A_funcki.C3.B3_meg.C3.ADr.C3.A1sa"><span class="tocnumber">2.2</span> <span class="toctext">A funckió megírása</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Amit_tudnod_kell"><span class="tocnumber">3</span> <span class="toctext">Amit tudnod kell</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#Kliens_oldali_.C3.A9s_Szerver_oldali_scriptek"><span class="tocnumber">3.1</span> <span class="toctext">Kliens oldali és Szerver oldali scriptek</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#.C3.96sszetettebb_scriptek"><span class="tocnumber">3.2</span> <span class="toctext">Összetettebb scriptek</span></a>
+<ul>
+<li class="toclevel-3 tocsection-12"><a href="#Els.C5.91_p.C3.A9lda"><span class="tocnumber">3.2.1</span> <span class="toctext">Első példa</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="#M.C3.A1sodik_p.C3.A9lda_-_Egy_j.C3.A1t.C3.A9km.C3.B3d"><span class="tocnumber">3.2.2</span> <span class="toctext">Második példa - Egy játékmód</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="#Harmadik_p.C3.A9lda_-_Egy_map"><span class="tocnumber">3.2.3</span> <span class="toctext">Harmadik példa - Egy map</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-15"><a href="#Esem.C3.A9nyek"><span class="tocnumber">3.3</span> <span class="toctext">Események</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="#Innen_hova_tov.C3.A1bb"><span class="tocnumber">4</span> <span class="toctext">Innen hova tovább</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#Ford.C3.ADtotta"><span class="tocnumber">5</span> <span class="toctext">Fordította</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Egy_m.C5.B1k.C3.B6d.C5.91_script_k.C3.A9sz.C3.ADt.C3.A9se">Egy működő script készítése</span></h2>
+<p>Lépésről-lépésre megfogunk tanulni egy olyan alap script elkészítését, ami lehetővé teszi, hogy a karakterünk a városban sétáljon.
+</p>
+<h3><span class="mw-headline" id="Hol_tal.C3.A1ljuk_meg_a_scripteket.3F">Hol találjuk meg a scripteket?</span></h3>
+<p>Először is tekintsük meg a script fájlok szerkezetét. Menj az MTA szerver mappájába és kövesd a következő útvonalat:
+</p><p>server/mods/deathmatch/resources/
+</p><p>Itt találni fogsz egy csomó .zip fájlt, amik az általános tömörített scriptek, amit az MTA hordoz magával. Minden fájl egy "resource", az összes kilesz csomagolva és ellesz indítva a szerver által, amikor az elindul. Ahhoz, hogy létrehozzuk a saját resourceunkat csak szimplán létre kell hoznunk egy mappát az általad preferált névvel. Mi most az "enszerverem" mappa nevet fogjuk használni az oktatáshoz.
+Hozzuk létre ezt a mappát, majd menjünk bele.
+</p><p>Most ebben a könyvtárban kell lenned:
+</p><p>server/mods/deathmatch/resources/enszerverem
+</p>
+<h3><span class="mw-headline" id="A_resourceok_azonos.C3.ADt.C3.A1sa">A resourceok azonosítása</span></h3>
+<p>Ahhoz, hogy a szerver tudja, hogy mi van a resourceban, szükségünk lesz egy meta.xml fájlra a tartalmazott fájlokkal. Ennek a resource főkönyvtárában kell elhelyezkednie, ami az "enszerverem" az esetünkben. Szóval hozz létre egy szöveges dokumentumot, majd nevezd át "meta.xml"-re, és nyisd meg notepaddal.
+</p><p>Írd be a következő kódot a meta.xml fájlba.
+</p>
+<pre class="prettyprint lang-xml">
+&lt;meta&gt;
+      &lt;info author="A neved" type="gamemode" name="A szerverem" description="Az első MTA szerverem"/&gt;
+      &lt;script src="script.lua"/&gt;
+&lt;/meta&gt;
+</pre>
+<p>Az &lt;info/&gt; címkében láthatsz egy "type" mezőt ami eldönti, hogy ez a resource egy játéktípus, és nem egy map, vagy egy script, ami később lesz elmagyarázva. A játéktípus kell nekünk, hogy egy önálló szervert tudjunk létrehozni.
+</p><p>A &lt;script/&gt; címke dönti el azokat a script fájlokat, amit a resource tartalmaz. Ezeket fogjunk elkészíteni következőnek.
+</p>
+<h3><span class="mw-headline" id="Egy_egyszer.C5.B1_script_l.C3.A9trehoz.C3.A1sa">Egy egyszerű script létrehozása</span></h3>
+<p>Ne feledd, hogy a &lt;script/&gt; címkében a .lua nincs egy másik könyvtárban. Ez miatt ugyan ott fogjuk létrehozni, mint ahol a meta.xml-t. 
+Hozd létre, majd nyisd meg azt a fájlt. Most már betudod másolni a következő kódot a script.lua fájlodba.
+</p>
+<pre class="prettyprint lang-lua">
+local spawnX, spawnY, spawnZ = 1959,55, -1714,46, 10
+function csatlakozasKezelo()
+	spawnPlayer(source, spawnX, spawnY, spawnZ)
+	fadeCamera(source, true)
+	setCameraTarget(source, source)
+	outputChatBox ("Üdvözöllek a szerveremen.", source)
+end
+addEventHandler ("onPlayerJoin", getRootElement (), csatlakozasKezelo)
+</pre>
+<p>Amikor csatlakozunk, a script lespawnol minket arra a koordinátára ( x, y, z ), amint az elején adtunk meg neki. Ne feledjük, hogy a <i>fadeCamera</i> funkció szükséges, vagy különben fekete lesz a képernyő. Szintúgy, a DP2 kiadása után be kell állítanunk a kamera célját (különben minden játékos a kék eget fogja látni.)
+</p><p>A <i>source</i> változó jelenti, hogy ki hívta meg az eseményt. Mivel egy játékos csatlakozott, amikor a kódunk meglett hívva, ezért ezt a változót használjuk, ahhoz hogy megnézzük, hogy ki csatlakozott. Ez miatt nem fog mindenkit, vagy egy véletlenszerű játékost lespawnolni.
+</p><p>Ha egy közelebbi pillantást vetünk az <a href="../AddEventHandler.html" title="AddEventHandler">addEventHandler</a>-re, akkor láthatunk 3 dolgot: "onPlayerJoin", ami azt jelzi, hogy mikor legyen meghívva. getRootElement(), ami azt jelzi, hogy ki/mi által lehet meghívva. (A getRootElement() mindent/mindenkit jelent.) És joinHandler, ami azt jelzi, hogy melyik funckió legyen lefuttatva, az esemény meghívása után. Egyéb részletek hamarosan le lesznek írva egy másik példában, most indítsuk el a szerverünket, és próbáljuk ki!
+</p>
+<h3><span class="mw-headline" id="A_script_futtat.C3.A1sa">A script futtatása</span></h3>
+<p>Ahhoz, hogy a szervert elindítsuk, egyszerűen futtassuk az <i>"MTA Server"</i> fájlt a server/ mappában. Egy lista fog kijönni először, a szerver adataival; jegyezd meg a port számát, ami a kapcsolódáshoz lesz szükséges. Ezután a szerver betölti a resourceokat a server/mods/deathmatch/resources/ mappából, és ezután "kész a csatlakozásokra".
+</p><p>Mielőtt kapcsolódnál a szerverre, el kell indítani a játékmódunkat. Írd be a "start enszerverem", parancsot, és nyomj entert. A szerver elindítja a játékmódot, amit létrehoztál, ettől a ponttól kezdve a hibákat és a figyelmeztetéseket is írni fogja. Most már elindíthatod az MTA klienst, majd a "Qyors Csatlakozás" gombbal csatlakozhatsz is az előbb látott IP-vel és porttal. Ha minden jól megy, pár másodperc múlva a karaktered megjelenik, és Los Santos utcáin járkál.
+</p><p>Következőnek egy parancsot fogunk létrehozni, amivel képesek leszünk egy kocsit létrehozni a helyzetünkön. Lehet, hogy kiszeretnéd ezt hagyni, és a haladó scriptelést szeretnéd megismerni a <a href="http://wiki.localhost/index.php?title=Map_Manager&amp;action=edit&amp;redlink=1" class="new" title="Map Manager (page does not exist)"> Map Manager</a> használatával, ami ezt az oktatást folytatja. Egy másik ág a <a href="http://wiki.localhost/index.php?title=Bevezet%C3%A9s_a_GUI_scriptel%C3%A9sbe&amp;action=edit&amp;redlink=1" class="new" title="Bevezetés a GUI scriptelésbe (page does not exist)">Bevezetés a GUI scriptelésbe</a>, ami megmutatja hogy hogyan hozunk létre Grafikus Felhasználói Felületet MTAn belül.
+</p>
+<h2><span class="mw-headline" id="Egy_egyszer.C5.B1_parancs_l.C3.A9trehoz.C3.A1sa">Egy egyszerű parancs létrehozása</span></h2>
+<p>Menjünk vissza a <i>script.lua</i> fájl tartalmához. Ahogy említettük feljebb, egy parancsot akarunk szolgáltatni, amivel egy kocsit lehet létrehozni a jelenlegi helyzeteden. Először, létre kell hoznunk egy funkciót, amit megakarunk hívni és egy parancskezelőt, ami létrehozza a parancsot, amit a játékos betud írni a konzolba.
+</p>
+<pre class="prettyprint lang-lua">
+-- A funckió létrehozása, ezekkel az argumentumokkal: thePlayer, command, vehicleModel
+function jarmuLetrehozasaJatekosnak(thePlayer, command, vehicleModel)
+   -- A jármű létrehozása és még pár dolog
+end
+
+-- A parancskezelő létrehozása
+addCommandHandler("jarmuletrehozas", jarmuLetrehozasaJatekosnak)
+</pre>
+<p><i>Megjegyzés: A funckió nevek megnyomhatóak a példákban, és a wikin elhelyezkedő funkció leírására dobnak.</i>
+</p>
+<h4><span class="mw-headline" id="A_parancskezel.C5.91kr.C5.91l">A parancskezelőkről</span></h4>
+<p>Az első argumentuma az <a href="../AddCommandHandler.html" title="AddCommandHandler">addCommandHandler</a> funckiónak a parancs neve, amit a játékos betud majd írni, a második argumentuma amit ez megfog hívni, az esetünkben a <i>jarmuLetrehozasaJatekosnak</i>.
+</p><p>Ha már van némi tudásod a scriptelésben, akkor tudni fogod, hogy így hívjuk meg a funckiókat:
+</p>
+<pre class="prettyprint lang-lua">
+funkcioNeve(argumentum1, argumentum2, argumentum3, ..)
+</pre>
+<pre class="prettyprint lang-lua">
+funkcioNeve(thePlayer, parancsNeve, argumentum3, ..)
+</pre>
+<p>Ha egy közelebbről megnézzük az alsó példát felettünk láthatjuk, hogy az argumentum1 a thePlayer és az argumentum2 a commandName. thePlayer simán az az egy, aki beírta a parancsot, szóval, akárminek nevezed el, ez a változó fogja tartalmazni a játékost, aki aktiválta a parancsot. A commandName simán a parancs, amit beírtak. Szóval ha beírták a "/üdvözlet", parancsot akkor ez az argumentum  tartalmazza az "üdvözlet" szöveget. Az argumentum3 az plusz dolog, amit a játékos beírt. Erről egy kicsit később fogsz tanulni az oktatásban. Soha ne felejtsd el, hogy az első kettő argumentum standard, de akárminek elnevezheted.
+</p><p>Mi már meghívtuk az <a href="../AddCommandHandler.html" title="AddCommandHandler">addCommandHandler</a> funckiót ilyen módon, és mióta a <i>jarmuLetrehozasaJatekosnak</i> is egy ilyen funckió, ezért ilyen módon meghívható ő is. De e helyett mi egy parancskezelőt használunk, ami hasonló módon hívja meg.
+</p><p>Például: Valaki beírja a "jarmuletrehozas 468" parancsot a játék konzoljába, hogy lehívjon egy Sanchezt, a parancskezelő meghívja a  "jarmuLetrehozasaJatekosnak" funkciót, az olyan <b>mintha</b> ezt a sort raktuk volna a scriptbe:
+</p>
+<pre class="prettyprint lang-lua">
+jarmuLetrehozasaJatekosnak(thePlayer,"jarmuletrehozas","468") -- A thePlayer a játékos, aki beírta a parancsot
+</pre>
+<p>Ahogy láthatjuk, ez pár paramétert szolgáltat: A játékost, aki beírta a parancsot, a parancsot, amit beírt és minden más szöveget, amit utána beírt, ebben a példában a "468" ami a Sanchez IDje a játékban. Az első kettő paraméter mindig ugyan az a parancskezelőknél, amit elolvashatsz az <a href="../AddEventHandler.html" title="AddEventHandler">addEventHandler</a> oldalnál. Ez miatt, mindig minimum kettő paramétert kell meghatározni, hogy akármi mást tudsz utána használni (például, ahhoz, hogy egy szöveget beolvassunk a parancs beírása után, a mi példánkban a jármű model IDje).
+</p><p><i>Megjegyzés: Minden esetben a funckió létrehozása UTÁN kell definiálni a parancskezelőt, különben nem fogja megtalálni. A meghívások sorrendje számít.</i>
+</p>
+<h4><span class="mw-headline" id="A_funcki.C3.B3_meg.C3.ADr.C3.A1sa">A funckió megírása</span></h4>
+<p>Ahhoz, hogy feltöltsük azt a funkciót, amit írtunk, először gondolkoznunk kell, hogy mit is akarunk csinálni:
+</p>
+<ul><li> Lekérni a játékos pozícióját, hogy megtudjuk, hogy hova is rakjuk le a kocsit (azt akarjuk, hogy pontosan a játékosnál jelenjen meg).</li>
+<li> Számítsuk ki a pozíciót, ahova létrehozzuk a járművet (nem akarjuk, hogy a játékosban jelenjen meg).</li>
+<li> Hozzuk létre a járművet.</li>
+<li> Nézzük meg, hogy létre lett hova, vagy írjunk ki egy hibát.</li></ul>
+<p>Ahhoz, hogy elérjük a célunkat, szükséges lesz pár funkcióra. Ahhoz, hogy megtaláljuk a funkciókat, amiket használnunk kell, látogassunk el a <a href="../Scripting_Functions.html" title="Scripting Functions" class="mw-redirect">Szerver Scriptelési Funckiókhoz</a>. Először is, le kell kérnünk a játékos pozícióját. Mivel a játékosok elementek, először az <b>Element funkcióhoz</b> lépünk, ahol megtaláljuk a <a href="../GetElementPosition.html" title="GetElementPosition">getElementPosition</a> funkciót. A funkció nevére kattintással a listában, eljutsz a funkció leírásához. Itt láthatjuk a szintaxist, mit ad vissza, és általában egy példát. A szintaxis mutatja meg, hogy milyen argumentumokat lehet, vagy kell beírnunk.
+</p><p>A <a href="../GetElementPosition.html" title="GetElementPosition">getElementPosition</a> funkcióhoz szintaxis:
+</p>
+<pre class="prettyprint lang-lua">
+float, float, float getElementPosition ( element azElement )
+</pre>
+<p>A három <i>float</i> a visszaadási érték típusa. Ebben az esetben a funkció három lebegőpontos szám. (x, y és z) A zárójelekben láthatod, hogy milyen argumentumokat kell beírnod. Ebben az esetben csak az elementet, akinek leakarod kérni a pozícióját, ami a játékos a példánkban.
+</p>
+<pre class="prettyprint lang-lua">
+function jarmuLetrehozasaJatekosnak(thePlayer, command, vehicleModel)
+	-- Kérjük le a koordinátát és rakjuk be az x, y, z változókban
+	-- (A local azt jelenti, hgy a változó csak a jelenlegi területben létezik, ebben az esetben a funckió)
+	local x, y, z = getElementPosition(thePlayer)
+end
+</pre>
+<p>Következőnek  to biztosítani akarjuk, hogy a jármű nem lesz létrehozva pontosan a játékosban szóval hozzáadunk pár egységet az <i>x</i> változóhoz, ami azt fogja eredményezni, hogy a játékostól keletre lesz létrehozva.
+</p>
+<pre class="prettyprint lang-lua">
+function jarmuLetrehozasaJatekosnak(thePlayer, command, vehicleModel)
+	local x, y, z = getElementPosition(thePlayer) -- A játékos pozíciójának lekérése
+	x = x + 5 -- 5 egység hozzáadása az "x" változóhoz
+end
+</pre>
+<p>Most kell egy másik funckió, ami lehívja a járművet. Mégegyszer megkeressük a <a href="../Scripting_Functions.html" title="Scripting Functions" class="mw-redirect">Szerver Funkciók Listáj</a>ában, most - miután járművekről beszélünk - a <b>Jármű funkciók</b> résznél, ahol kifogjuk választani a <a href="../CreateVehicle.html" title="CreateVehicle">createVehicle</a> funkciót. Ennek a funkciónak a szintaxisában, csak egy visszaadási értékünk van (ami többször jellemző), egy kocsi element ami egy kocsira mutat, amit éppen létrehoztunk. Ugyanúgy látunk argumentumokat amik [ ] között vannak, ez azt jelenti, hogy nem kötelező.
+</p><p>Minden argumentumunk megvan a <a href="../CreateVehicle.html" title="CreateVehicle">createVehicle</a>-hoz a funkicónban: A pozíciók ami kiszámoltunk <i>x, y, z</i> változó és a model ID amit a parancson keresztül szolgáltattunk ("jarmuletrehozas 468") és eltudjuk érni a funkción belül, mint <i>vehicleModel</i> változó.
+</p>
+<pre class="prettyprint lang-lua">
+function jarmuLetrehozasaJatekosnak(thePlayer, command, vehicleModel)
+	local x, y, z = getElementPosition(thePlayer) -- A játékos pozíciójának lekérése
+	x = x + 5 -- 5 egység hozzáadása az "x" változóhoz
+	-- Hozzuk létre a kocsit, és mentsük el a visszaadott értéket, mint a ''letrehozottJarmu'' változó.
+	local letrehozottJarmu = createVehicle(tonumber(vehicleModel),x,y,z)
+end
+</pre>
+<p>Persze ez a kód fejleszthető lenne nagyon sok módon, de legalább akarunk benne, egy ellenőrzést, hogy a kocsi sikeresen létre lett-e hozva, vagy sem. Ahogy olvashatjuk a <a href="../CreateVehicle.html" title="CreateVehicle">createVehicle</a> oldal alatt <b>Returns</b>-nél, a funckió visszaad egy <i>false</i> értéket, ha nem sikerült létrehozni a járművet. Ezért, ellenőrizzuk az értéket a <i>letrehozottJarmu</i> változónak.
+</p><p>Most már megvan a teljes script:
+</p>
+<pre class="prettyprint lang-lua">
+function jarmuLetrehozasaJatekosnak(thePlayer, command, vehicleModel)
+	local x, y, z = getElementPosition(thePlayer) -- A játékos pozíciójának lekérése
+	x = x + 5 -- 5 egység hozzáadása az "x" változóhoz
+	-- Hozzuk létre a kocsit, és mentsük el a visszaadott értéket, mint a ''letrehozottJarmu'' változó.
+	local letrehozottJarmu = createVehicle(tonumber(vehicleModel),x,y,z)
+	-- Nézzük meg, hogy a visszaadási érték az ''false''
+	if (letrehozottJarmu == false) then
+		-- Ha igen, akkor írjunk ki egy üzenet, de csak ennek a játékosnak.
+		outputChatBox("Nem sikerült létrehozni a járművet.",thePlayer)
+	end
+end
+addCommandHandler("jarmuletrehozas", jarmuLetrehozasaJatekosnak)
+</pre>
+<p>Ahogy láthatod, megismertettük veled az <a href="../OutputChatBox.html" title="OutputChatBox">outputChatBox</a> funkciót is. Mostmár saját magadnak is képesnek kell lenned, hogy felfedezd a funkciók dokumentációs oldalát. Több haladó scriptért látogass el a <a href="../Map_manager.html" title="Map manager" class="mw-redirect">Map Manager</a> oldalra.
+</p>
+<h2><span class="mw-headline" id="Amit_tudnod_kell">Amit tudnod kell</span></h2>
+<p>Már elolvastál pár dolgot a resourceokról, parancskezelőkről, és funkciók megtalálásáról a dokumentumokban az első paragrafusban, de még nagyon sok minden van, amit meg kell tanulnod. Ez a rész adni fog egy rövid bemutatót ezekről a dolgokról, miközben linkelgetek oldalakra, ha lehetséges.
+</p>
+<h3><span class="mw-headline" id="Kliens_oldali_.C3.A9s_Szerver_oldali_scriptek">Kliens oldali és Szerver oldali scriptek</span></h3>
+<p>Talán már találkoztál ezekkel, vagy hasonlókkal (Szerver/Kliens) valahol a wikin, legtöbbet a funkciókkal kapcsolatban. Az MTA nem csak a szerver oldalon futó scripteket támogatja, parancsokat szolgáltat ( mint amit feljebb írtunk ), vagy más funkciókat, hanem azokat a scripteket is, amik azon az MTA kliensen futnak, amit a játékosok a szerverekhez való csatlakozásra használnak. Ennek az az oka, hogy néhány funkciónak, amit az MTA szolgáltat, kliens oldalon kell lennie ( mint például a GUI - Grafikus Felhasználói Felület ), a többinek szerver oldalon kell lennie, mivel ott jobban működnek, vagy nem működnek kliens oldalon.
+</p><p>A legtöbb script, amit készíteni fogsz (játéktípusok, mappok) valószínűleg szerver oldalon lesznek létrehozva, mint amit írtunk az első részben. Ha belefutsz valamibe, amit nem lehet megoldani szerveroldalon, valószínűleg kliens oldalon kell megoldanod. Egy kliens oldali scripthez, létre kell hozni egy sima script fájlt, ( például nevezzük el <i>client.lua</i>-nak ) és jelezzük a meta.xml-ben így:
+</p>
+<pre class="prettyprint lang-xml">
+&lt;script src="client.lua" type="client" /&gt;
+</pre>
+<p>A <i>type</i> tulajdonság alapból 'server', szóval csak akkor kell meghatározni, ha kliens oldali a script. Amikor ezt csinálot, a kliens oldali script le lesz töltve a játékos számítógépére amikor csatlakozik a szerverre. Többet olvass a <a href="../Client_side_scripts.html" title="Client side scripts">Kliens Oldali Scriptek</a> oldalon.
+</p>
+<h3><span class="mw-headline" id=".C3.96sszetettebb_scriptek">Összetettebb scriptek</span></h3>
+<p>Az előző rész tömören megmutatta nekünk, hogyan adjunk hozzá kliens oldali scripteket a resourcehoz, de van rá több másik mód is. Ahogy említettem az oldal tetején, a resource körülbelül minden lehet. Az a céljük az alapján van meghatározva, hogy mit csinálnak. Legyen egy elméleti resourceunk, a fájlokra nézve tartalmaz egy <i>meta.xml</i>t.
+</p>
+<h4><span class="mw-headline" id="Els.C5.91_p.C3.A9lda">Első példa</span></h4>
+<pre class="prettyprint lang-xml">
+/admin_commands
+	/meta.xml
+	/commands.lua
+	/client.lua
+</pre>
+<pre class="prettyprint lang-xml">
+&lt;meta&gt;
+	&lt;info author="Someguy" description="Admin Parancsok" /&gt;
+	&lt;script src="commands.lua" /&gt;
+	&lt;script src="client.lua" type="client" /&gt;
+&lt;/meta&gt;
+</pre>
+<ul><li> A <i>commands.lua</i> fájl szolgáltat pár admin parancsot, mint pl. játékos kitiltása, vagy némítása, vagy egyéb más, amivel a szervert moderálhatod.</li>
+<li> A <i>client.lua</i> fájl szolgáltatja a GUI-t amivel egyszerűbben tudod elvégezni az akciókat.</li></ul>
+<p>Ez a példa talán mindig fut (esetleg még auto-indítva is van, amikor a szerver elindul) hiszen ez egy hasznos script az egész játéktapasztalat közben, és nem fogja zavarni a játékmenetet, hacsak egy admin nem dönt úgy, és tesz néhány akciót.
+</p>
+<h4><span class="mw-headline" id="M.C3.A1sodik_p.C3.A9lda_-_Egy_j.C3.A1t.C3.A9km.C3.B3d">Második példa - Egy játékmód</span></h4>
+<pre class="prettyprint lang-xml">
+/counterstrike
+	/meta.xml
+	/counterstrike.lua
+	/buymenu.lua
+</pre>
+<pre class="prettyprint lang-xml">
+&lt;meta&gt;
+	&lt;info author="Someguy" description="Counter Strike [REMAKE]" type="gamemode" /&gt;
+	&lt;script src="counterstrike.lua" /&gt;
+	&lt;script src="buymenu.lua" type="client" /&gt;
+&lt;/meta&gt;
+</pre>
+<ul><li> A <i>counterstrike.lua</i> tartalmazza az ehhez hasonló funkciókat:
+<ul><li> Engedélyezze a játékosokat a csapatváltáshoz, és hozza létre őket.</li>
+<li> Fegyvereket, célpontokat és leírásokat szolgáltat.</li>
+<li> Meghatározza a játékszabályokat, pl. mikor ér véget egy kör, mi történik ha egy játékos meghal</li>
+<li> .. és talán még néhány dolog</li></ul></li>
+<li> A <i>buymenu.lua</i>  egy kliens oldali script, ez hozza létra a fegyvervásárlás menüt.</li></ul>
+<p>Ezt a példát hívhatjuk egy játéktípusnak, hiszen nem csak a játékmenetbe avatkozik bele, de meghatározza a szabályait is. A <i>type</i> tulajdonság jelzi, hogy ez a példa a <a href="../Map_manager.html" title="Map manager" class="mw-redirect">Map manager</a>-rel működik, egy másik resource amit a QA Team írt, hogy kezelje a játéktípusait, és a map betöltést. Magasan ajánlott, hogy olyan technikákra alapozd a játékmódot, amit szolgáltat ez a resource.
+</p><p>Ez azt is jelenti, hogy a játékmód nem fog futni egy map nélkül. A játékmódoknak annyira kell generikusnak lennie, amennyire csak lehet. Egy példa a mapra a következő példában található.
+</p>
+<h4><span class="mw-headline" id="Harmadik_p.C3.A9lda_-_Egy_map">Harmadik példa - Egy map</span></h4>
+<pre class="prettyprint lang-xml">
+/cs-airport
+	/meta.xml
+	/airport.map
+	/airport.lua
+</pre>
+<pre class="prettyprint lang-xml">
+&lt;meta&gt;
+	&lt;info author="Someguy" description="Counter Strike Reptér Map" type="map" gamemodes="counterstrike" /&gt;
+	&lt;map src="airport.map" /&gt;
+	&lt;script src="airport.lua" /&gt;
+&lt;/meta&gt;
+</pre>
+<ul><li> Az <i>airport.map</i> az XML fájlban szolgáltat információkat a mapról a játékmódnak, ami ezeket tartalmazhatja:
+<ul><li> A játékosok hogyan legyenek létrehozva, milyen fegyverrel, és melyik csapatban</li>
+<li> Mik a célpontok</li>
+<li> Időjárás, Idő, Időlimit</li>
+<li> Kocsikat szolgáltat</li></ul></li>
+<li> Az <i>airport.lua</i> talán tartalmaz különleges funkciókat amik ezek lehetnek:
+<ul><li> Nyitható ajtók/robbanjon fel valami, amikor valami történik</li>
+<li> Hozzon létre, vagy mozgasson egyedi objekteket, vagy manipulálja azokat az objekteket, amik a .map fájl által lettek létrehozva</li>
+<li> .. Minden különleges, amit eltudsz képzelni</li></ul></li></ul>
+<p>Ahogy láthatod, a <i>type</i> tulajdonság megváltozott 'map'-ra, jelezve a <a href="../Map_manager.html" title="Map manager" class="mw-redirect">Map manager</a>-nek, hogy ez a resource egy map, míg a <i>gamemodes</i> tulajdonság megmondja, hogy melyik játéktípushoz érvényes a pálya, ebben az esetben a felette lévő példában lévő játékmód.
+Ami talán meglepő, hogy egy script van a map resourceben. Persze ez nem kötelező egy mapban, de elég nagy szélességben megnyitja a lehetőségeket a map készítőknek, hogy létrehozhassák a saját világukat azokkal a szabályokkal, amivel létrehozták a játékmódot.
+</p><p>Az <i>airport.map</i> fájl hasonlóan nézhet ki:
+</p>
+<pre class="prettyprint lang-xml">
+&lt;map mode="deathmatch" version="1.0"&gt;
+	&lt;terrorists&gt;
+		&lt;spawnpoint posX="2332.23" posY="-12232.33" posZ="4.42223" skins="23-40" /&gt;
+	&lt;/terrorists&gt;
+	&lt;counterterrorists&gt;
+		&lt;spawnpoint posX="2334.23443" posY="-12300.233" posZ="10.2344" skins="40-50" /&gt;
+	&lt;/counterterrorists&gt;
+
+	&lt;bomb posX="23342.23" posY="" posZ="" /&gt;
+	
+	&lt;vehicle posX="" posY="" posZ="" model="602" /&gt;	
+	&lt;vehicle posX="" posY="" posZ="" model="603" /&gt;	
+&lt;/map&gt;
+</pre>
+<p>Ha egy játékmód egy mappal indul, a map automatikusan ellesz indítva a mapmanager által, és az információkat, amiket tárol, beolvashatóvá válnak a játéktípus resource által. Amikor egy map váltás van, az éppen futó map resource leáll, és a következő map resource elindul. Több mélyreható magyarázatért és példákért, hogy hogyan vannak felhasználva a map resourceok a fő scriptben, kérlek látogass el a <a href="Writing_Gamemodes.html" title="HU/Writing Gamemodes">Játékmód készítése</a> oldalra.
+</p>
+<h3><span class="mw-headline" id="Esem.C3.A9nyek">Események</span></h3>
+<p>Az <a href="../Event.html" title="Event" class="mw-redirect">Események</a> a módja, ahogy az MTA közli, hogy valami történt. Például, ha egy játékos meghal, az <a href="../OnPlayerWasted.html" title="OnPlayerWasted">onPlayerWasted</a> esemény lesz meghívva. Ahhoz, hogy valamit tudj tenni, amikor egy játékos meghal, fel kell készítened magad, hogy olyasmi, mint egy parancskezelő létrehozása, ahogy az  <a href="#Egy_m.C5.B1k.C3.B6d.C5.91_script_k.C3.A9sz.C3.ADt.C3.A9s">első fejezetben</a> leírtam.
+</p><p>Ez a példa kifog írni egy üzenet, a játékos nevével, aki meghalt.
+</p>
+<pre class="prettyprint lang-lua">
+function jatekosMeghalt(osszesTolteny, gyilkos, gyilkosFegyver, testresz)
+	outputChatBox(getPlayerName(source).." meghalt!")
+end
+addEventHandler("onPlayerWasted",getRootElement(),jatekosMeghalt)
+</pre>
+<p>Ahelyett, hogy megmutatnám, milyen argumentumok szükségesek, az Események dokumentum oldala megmutatja, hogy milyen paramétereket kell megadni a függvénynek, éppen ugyan úgy, ahogy a <a href="#.23A_parancskezel.C5.91kr.C5.91l">parancskezelőkn</a>él is csak itt különbözik az eseményeknél. Egy másik fontos pont, a <i>source</i> változó, ami létezik a függvényeknél. Ennek nem kell szerepelni a paraméterlistában a funkciónál, de mégis létezik. Minden eseménynél más-más értéket vesz, játékos eseménynél (ahogy a példában) a játékos element. Egy másik példáért nézd meg az <a href="#Egy_egyszer.C5.B1_script_l.C3.A9trehoz.C3.A1sa">első részben</a> létrehozott alap spawn scriptet, hogy hogyan is használjuk a <i>source</i> változót.
+</p>
+<h2><span class="mw-headline" id="Innen_hova_tov.C3.A1bb">Innen hova tovább</span></h2>
+<p>Most már egy kicsit ismered az alap helyzetet az MTA scripteléssel és egy a kicsit dokumentációkkal kapcsolatban. A <a href="F%c5%91oldal.html" title="HU/Főoldal">Főoldal</a> több linkel szolgáltat még több információért, oktatásért, és referenciákért amivel mélyebb betekintést nyerhetsz azokban a témákban amire vágysz.
+</p>
+<table cellspacing="0" style="padding: 5px; width: 80%; margin: 2px auto 2px auto; border: 1px solid #BFBFFF; background: #E0E0FF; border-left: 10px solid #BFBFFF;">
+<tr>
+<td style="width: 32px; vertical-align:top; display: none;" rowspan="2"> [[{{{image}}}|link=]]
+</td>
+<td style=""> <b>Megjegyzés:</b> Innentől ajánlom a <a href="Debugging.html" title="HU/Debugging">hibakeresés</a> oktatást. A jó hibakeresési tudás feltétlen szükséges, amikor scripteket készítesz. Továbbá javaslom, hogy használd, az <a href="../Predefined_variables_list.html" title="Predefined variables list">előre meghatározott változók listáját</a>, hogy segítse, megkönnyítse, és gyorsabbá tegye a scriptelést.
+</td></tr>
+<tr>
+<td rowspan="1" style="padding-left: 10px;">
+</td></tr></table>
+<p><b>Lásd még:</b>
+</p>
+<ul><li> <a href="../OOP_Introduction.html" title="OOP Introduction">OOP Scriptelés Oktatás</a></li>
+<li> <a href="../Advanced_Topics.html" title="Advanced Topics">Haladó Témák</a></li>
+<li> <a href="../Script_security.html" title="Script security">Script Védelem</a></li>
+<li> <a href="../Scripting_Introduction.html" title="Scripting Introduction">Angol Verzió</a></li></ul>
+<h2><span class="mw-headline" id="Ford.C3.ADtotta">Fordította</span></h2>
+<ul><li> NeXuS</li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625164525
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.018 seconds
+Real time usage: 0.020 seconds
+Preprocessor visited node count: 333/1000000
+Preprocessor generated node count: 805/1000000
+Post‐expand include size: 3806/2097152 bytes
+Template argument size: 2453/2097152 bytes
+Highest expansion depth: 5/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    7.265      1 - -total
+ 46.21%    3.357      1 - Template:Tipp
+ 39.76%    2.889      2 - Template:MessageBox
+ 31.21%    2.267      1 - Template:Note_hu
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:6869-0!*!0!!en!*!* and timestamp 20190625164525 and revision id 61004
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=HU/Bevezet%c3%a9s_a_scriptel%c3%a9sbe&amp;oldid=61004">https://wiki.multitheftauto.com/index.php?title=HU/Bevezetés_a_scriptelésbe&amp;oldid=61004</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="../Special_Categories.html" title="Special:Categories">Categories</a>: <ul><li><a href="../Category_Tutorials.html" title="Category:Tutorials">Tutorials</a></li><li><a href="../Category_Translated/Support.html" title="Category:Translated/Support">Translated/Support</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Bevezet%c3%a9s_a_scriptel%c3%a9sbe.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:HU/Bevezet%C3%A9s_a_scriptel%C3%A9sbe&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=HU/Bevezet%C3%A9s_a_scriptel%C3%A9sbe&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=HU/Bevezet%C3%A9s_a_scriptel%C3%A9sbe&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=HU%2FBevezet%C3%A9s+a+scriptel%C3%A9sbe" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=HU%2FBevezet%C3%A9s+a+scriptel%C3%A9sbe" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/HU/Bevezet%c3%a9s_a_scriptel%c3%a9sbe.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/HU/Bevezet%c3%a9s_a_scriptel%c3%a9sbe.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=HU/Bevezet%C3%A9s_a_scriptel%C3%A9sbe&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=HU/Bevezet%C3%A9s_a_scriptel%C3%A9sbe&amp;oldid=61004" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=HU/Bevezet%C3%A9s_a_scriptel%C3%A9sbe&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=Scripting_Introduction" title="Scripting Introduction – English" lang="en" hreflang="en">English</a></li>
+													<li class="interlanguage-link interwiki-es"><a href="http://wiki.multitheftauto.com/index.php?title=ES/Introducci%C3%B3n_a_la_Programaci%C3%B3n" title="Introducción a la Programación – español" lang="es" hreflang="es">Español</a></li>
+													<li class="interlanguage-link interwiki-it"><a href="http://wiki.multitheftauto.com/index.php?title=IT/Introduzione_allo_scripting" title="Introduzione allo scripting – italiano" lang="it" hreflang="it">Italiano</a></li>
+													<li class="interlanguage-link interwiki-nl"><a href="http://wiki.multitheftauto.com/index.php?title=NL/Scripting_introductie" title="Scripting introductie – Nederlands" lang="nl" hreflang="nl">Nederlands</a></li>
+													<li class="interlanguage-link interwiki-pt-br"><a href="http://wiki.multitheftauto.com/index.php?title=PT-BR/Introdu%C3%A7%C3%A3o_ao_Scripting" title="Introdução ao Scripting – português do Brasil" lang="pt-BR" hreflang="pt-BR">Português do Brasil</a></li>
+													<li class="interlanguage-link interwiki-ru"><a href="http://wiki.multitheftauto.com/index.php?title=RU/Scripting_Introduction" title="Scripting Introduction – русский" lang="ru" hreflang="ru">Русский</a></li>
+													<li class="interlanguage-link interwiki-ar"><a href="http://wiki.multitheftauto.com/index.php?title=AR/%D9%85%D9%82%D8%AF%D9%85%D9%87_%D9%81%D9%8A_%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%87" title="مقدمه في البرمجه – العربية" lang="ar" hreflang="ar">العربية</a></li>
+													<li class="interlanguage-link interwiki-zh-cn"><a href="http://wiki.multitheftauto.com/index.php?title=ZH-CN/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%E4%BB%8B%E7%BB%8D" title="脚本编写介绍 – 中文（中国大陆）‎" lang="zh-CN" hreflang="zh-CN">中文（中国大陆）‎</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 3 December 2018, at 14:02.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":53});});</script></body></html>

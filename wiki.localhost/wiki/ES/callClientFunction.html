@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>ES/callClientFunction - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ES/callClientFunction","wgTitle":"ES/callClientFunction","wgCurRevisionId":30618,"wgRevisionId":30618,"wgArticleId":6368,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Useful Functions"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"ES/callClientFunction","wgRelevantArticleId":6368,"wgRequestId":"4e555b3b08295dcf633f3b5d","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta name='headingclass' content='' data-class='#228B22' data-subcaption='Useful Function'>
+<meta name='lowercasetitle' content=''>
+<meta name='lowercasetitle' content=''>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-ES_callClientFunction rootpage-ES_callClientFunction skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">ES/callClientFunction</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
+<!--LC-->
+</p><p><!--LC-->
+</p><p>Esta función permite llamar cualquier función del lado del cliente desde el lado del servidor. Por supesto que solo aquellas disponibles en en lado del cliente. No importa si es una función del MTA, una función Lua estándar o una función creada.
+<br /><br />
+Los números se convierten automáticamenta a un string y vice versa en el lado del cliente para evitar una posible perdida de datos. Si no necesitas esta característica, solo borrala.
+<br /><br />
+<b>Nota Importante:</b> Ten en cuenta que que el nombre de funcion debe ser un <b>string</b>! Evita usar callClientFunction dentro del evento onResourceStart del lado del servidor ya que el cliente no ha añadido aún el controlador de eventos onServerCallsClientFunction.
+</p>
+<h2><span class="mw-headline" id="Sintaxis">Sintaxis</span></h2>
+<pre class="prettyprint lang-lua">void callClientFunction( element cliente, string nombreFuncion, [ var arg1, ... ] )</pre>
+<h3><span class="mw-headline" id="Argumentos_Requeridos">Argumentos Requeridos</span></h3>
+<ul><li> <b>cliente</b>: El elemento player correspondiente al jugador afectado.</li>
+<li> <b>nombreFuncion</b>: El nombre de la función que que debe ser llamada del lado del cliente. También puede ser una función dentro de un tabla, p.ej. "math.round".</li></ul>
+<h3><span class="mw-headline" id="Argumentos_opcionales">Argumentos opcionales</span></h3>
+<p><i>NOTE:</i> When using optional arguments, you might need to supply all arguments before the one you wish to use. For more information on optional arguments, see <a href="../Optional_arguments-2.html" title="Optional arguments" class="mw-redirect">optional arguments</a>.
+</p>
+<ul><li> <b>arg1-argn</b>: Los argumentos que deben ser pasados a la función.</li></ul>
+<h2><span class="mw-headline" id="C.C3.B3digo">Código</span></h2>
+<!-- BEGIN SECTION |1|server|Script Servidor|--><div class='serverHeader' onclick='expandSection(1);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander1'>Click to collapse [-]</div>Script Servidor</div><div style='display:;' class='serverContent' id='section1'>
+<pre class="prettyprint lang-lua">
+function callClientFunction(cliente, nombreFuncion, ...)
+    local arg = { ... }
+    if (arg[1]) then
+        for key, value in next, arg do
+            if (type(value) == "number") then arg[key] = tostring(value) end
+        end
+    end
+    -- Si el controlador de eventos del lado del cliente no está en el mismo resource, reemplaza 'resourceRoot' por el elemento apropiado
+    triggerClientEvent(cliente, "onServerCallsClientFunction", resourceRoot, nombreFuncion, unpack(arg or {}))
+end
+</pre>
+</div><!-- END SECTION |1|-->
+<!-- BEGIN SECTION |2|client|Script Cliente|--><div class='clientHeader' onclick='expandSection(2);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander2'>Click to collapse [-]</div>Script Cliente</div><div style='display:;' class='clientContent' id='section2'>
+<pre class="prettyprint lang-lua">
+function callClientFunction(nombreFuncion, ...)
+    local arg = { ... }
+    if (arg[1]) then
+        for key, value in next, arg do arg[key] = tonumber(value) or value end
+    end
+    loadstring("return "..nombreFuncion)()(unpack(arg))
+end
+addEvent("onServerCallsClientFunction", true)
+addEventHandler("onServerCallsClientFunction", resourceRoot, callClientFunction)
+</pre>
+</div><!-- END SECTION |2|-->
+<h2><span class="mw-headline" id="Ejemplo">Ejemplo</span></h2>
+<!-- BEGIN SECTION |3|server|Servidor|--><div class='serverHeader' onclick='expandSection(3);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander3'>Click to collapse [-]</div>Servidor</div><div style='display:;' class='serverContent' id='section3'>
+<p>En este ejemplo se establece la duración del minuto del jugador.
+</p>
+<pre class="prettyprint lang-lua">
+-- define la función para controlar playerJoinging
+function playerJoinging()
+    -- establece la duración del minuto
+    callClientFunction(source, "setMinuteDuration", 10000)
+end
+-- añade el controlador de eventos
+addEventHandler("onPlayerJoin", root, playerJoinging)
+</pre>
+</div><!-- END SECTION |3|-->
+<h2><span class="mw-headline" id="Vea_tambi.C3.A9n">Vea también</span></h2>
+<ul><li><strong class="selflink">callClientFunction</strong> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Esta función permite llamar cualquier función del lado del cliente desde el lado del servidor.</span></li></ul>
+<ul><li><a href="callServerFunction.html" title="ES/callServerFunction">callServerFunction</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Esta función permite llamar cualquier función del lado del servidor desde el lado del cliente.</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/centerWindow&amp;action=edit&amp;redlink=1" class="new" title="ES/centerWindow (page does not exist)">centerWindow</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Esta función centra la ventana en cualquier resolución.</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/Check&amp;action=edit&amp;redlink=1" class="new" title="ES/Check (page does not exist)">Check</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Esta funcion verifica si sus argumentos son de los tipos correctos y llama la función error si uno no lo es.</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/coroutine.resume&amp;action=edit&amp;redlink=1" class="new" title="ES/coroutine.resume (page does not exist)">coroutine.resume</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Fix for hidden coroutine error messages</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/doForAllElements&amp;action=edit&amp;redlink=1" class="new" title="ES/doForAllElements (page does not exist)">doForAllElements</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Esta función puede ser usada para ejecutar una funcion especifica para todos los elementos de un tipo especifico.</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/dxDrawColorText&amp;action=edit&amp;redlink=1" class="new" title="ES/dxDrawColorText (page does not exist)">dxDrawColorText</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Esta función dibuja un texto dx con soporte para códigos de color #RRGGBB.</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/findRotation&amp;action=edit&amp;redlink=1" class="new" title="ES/findRotation (page does not exist)">findRotation</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Toma dos puntos y devuelve la dirección del punto A al punto B.</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/FormatDate&amp;action=edit&amp;redlink=1" class="new" title="ES/FormatDate (page does not exist)">FormatDate</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Formatea una fecha sobre la basándose en una cadena de formato y la devuelve.</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/getAge&amp;action=edit&amp;redlink=1" class="new" title="ES/getAge (page does not exist)">getAge</a> <span style="color:gray; font-family:&#39;Georgia&#39;, sans-serif; font-size:smaller;">» Esta función la edad según el cumpleaños.</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/getAlivePlayersInTeam&amp;action=edit&amp;redlink=1" class="new" title="ES/getAlivePlayersInTeam (page does not exist)">getAlivePlayersInTeam</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Esta función devuelve una tabla de los jugadores vivos en un equipo.</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/getCursorMoveOn&amp;action=edit&amp;redlink=1" class="new" title="ES/getCursorMoveOn (page does not exist)">getCursorMoveOn</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Esta función verifica de que forma se está moviendo el cursor actualmente.</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/getElementSpeed&amp;action=edit&amp;redlink=1" class="new" title="ES/getElementSpeed (page does not exist)">getElementSpeed</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Esta función permite obtener la velocidad del elemento en unidades de kph o mph.</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/getPlayerFromNamePart&amp;action=edit&amp;redlink=1" class="new" title="ES/getPlayerFromNamePart (page does not exist)">getPlayerFromNamePart</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Esta función permite obtener al jugador a partir de una parte de su nombre.</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/getPointFromDistanceRotation&amp;action=edit&amp;redlink=1" class="new" title="ES/getPointFromDistanceRotation (page does not exist)">getPointFromDistanceRotation</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">»Encuentra un punto basado en su punto inicial, dirección y distancia.</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/getResourceSettings&amp;action=edit&amp;redlink=1" class="new" title="ES/getResourceSettings (page does not exist)">getResourceSettings</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Esta función devuelve una tabla con los datos del resource.</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/getTimestamp&amp;action=edit&amp;redlink=1" class="new" title="ES/getTimestamp (page does not exist)">getTimestamp</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Con esta funcion se puede obtener la <a rel="nofollow" class="external text" href="http://es.wikipedia.org/wiki/Tiempo_Unix">marca de Tiempo Unix</a>.</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/IfElse&amp;action=edit&amp;redlink=1" class="new" title="ES/IfElse (page does not exist)">IfElse</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Devuelve uno de dos valores basado en una expresión booleana.</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/isLeapYear&amp;action=edit&amp;redlink=1" class="new" title="ES/isLeapYear (page does not exist)">isLeapYear</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Comprueba si año proporcionado es bisiesto.</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/iterElements&amp;action=edit&amp;redlink=1" class="new" title="ES/iterElements (page does not exist)">iterElements</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Devuelve un iterador para tus bucles, ahorrando tiempo en escribir ipairs( getElementsByType( type ) ), en lugar de eso escribes: iterElements( type ).</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/math.round&amp;action=edit&amp;redlink=1" class="new" title="ES/math.round (page does not exist)">math.round</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">»Redondea un número mientras  pueden establecerce el numero de decimales y el método.</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/onVehicleWeaponFire&amp;action=edit&amp;redlink=1" class="new" title="ES/onVehicleWeaponFire (page does not exist)">onVehicleWeaponFire</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Este código implementa un evento que provocado cuando un jugador en un vehículo dispara un arma del vehículo.</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/RGBToHex&amp;action=edit&amp;redlink=1" class="new" title="ES/RGBToHex (page does not exist)">RGBToHex</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Esta funcion devuelve un string que representa el color en hexadecimal.</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/setElementSpeed&amp;action=edit&amp;redlink=1" class="new" title="ES/setElementSpeed (page does not exist)">setElementSpeed</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Esta funcio permite establecer la velocidad de movimiento de un elemento en unidades de kph o mph.</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/setTableProtected&amp;action=edit&amp;redlink=1" class="new" title="ES/setTableProtected (page does not exist)">setTableProtected</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Protege una table y la hace de solo lectura.</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/setVehicleGravityPoint&amp;action=edit&amp;redlink=1" class="new" title="ES/setVehicleGravityPoint (page does not exist)">setVehicleGravityPoint</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Esta función del lado del cliente establece una gravedad de vehiculo en la dirección de una coordenada tridimensional con la fuerza especificada.</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/string.explode&amp;action=edit&amp;redlink=1" class="new" title="ES/string.explode (page does not exist)">string.explode</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Esta función divide un string con un patrón separador dado y devuelve una tabla con las partes.</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/table.copy&amp;action=edit&amp;redlink=1" class="new" title="ES/table.copy (page does not exist)">table.copy</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Esta función copia una tabla completa y todas las tablas dentro de ella.</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/table.map&amp;action=edit&amp;redlink=1" class="new" title="ES/table.map (page does not exist)">table.map</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Esta función recorre una tabla y reemplaza cada campo con lo que devuelva la función que es pasada, donde los valores de campo son pasados como primer argumento y opcionalmente más argumentos.</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/table.size&amp;action=edit&amp;redlink=1" class="new" title="ES/table.size (page does not exist)">table.size</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Encuentra el tamaño completo de una tabla.</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/toHex&amp;action=edit&amp;redlink=1" class="new" title="ES/toHex (page does not exist)">toHex</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Esta función convierte un número decimal a un número hexadecimal, como una corrección para el lado del cliente.</span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/var_dump&amp;action=edit&amp;redlink=1" class="new" title="ES/var dump (page does not exist)">var_dump</a> <span style="color:gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Esta función entrega información acerca de una o más variables usando outputConsole(). </span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/multi_check&amp;action=edit&amp;redlink=1" class="new" title="ES/multi check (page does not exist)">multi_check</a> <span style="color: gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Esta función comprueba de de uno a varios elementos, util y limpia. </span></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=ES/isElementInPhotograph&amp;action=edit&amp;redlink=1" class="new" title="ES/isElementInPhotograph (page does not exist)">isElementInPhotograph</a> <span style="color: gray; font-family:&#39;Georgia&#39;,sans-serif; font-size:smaller;">» Esta función comprueba si un elemento estuvo en la foto de cámara de un jugador. Necesita se escrita aun. --<a href="../User_Ransom.html" title="User:Ransom">Ransom</a> 21:45, 2 May 2012 (UTC) </span></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625165628
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.012 seconds
+Real time usage: 0.014 seconds
+Preprocessor visited node count: 130/1000000
+Preprocessor generated node count: 322/1000000
+Post‐expand include size: 7651/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    4.264      1 - -total
+ 22.44%    0.957      1 - Template:Funciones_Útiles
+ 19.51%    0.832      1 - Template:OptionalArg
+ 18.13%    0.773      1 - Template:Useful_Function
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:6368-0!*!0!!*!*!* and timestamp 20190625165628 and revision id 30618
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=ES/callClientFunction&amp;oldid=30618">https://wiki.multitheftauto.com/index.php?title=ES/callClientFunction&amp;oldid=30618</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="../Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="../Category_Useful_Functions.html" title="Category:Useful Functions">Useful Functions</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="callClientFunction.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:ES/callClientFunction&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=ES/callClientFunction&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=ES/callClientFunction&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=ES%2FcallClientFunction" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=ES%2FcallClientFunction" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/ES/callClientFunction.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/ES/callClientFunction.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=ES/callClientFunction&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=ES/callClientFunction&amp;oldid=30618" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=ES/callClientFunction&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+			</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 13 May 2012, at 02:16.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":54});});</script></body></html>

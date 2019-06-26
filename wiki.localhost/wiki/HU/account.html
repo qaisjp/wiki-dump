@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>HU/account - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"HU/account","wgTitle":"HU/account","wgCurRevisionId":61516,"wgRevisionId":61516,"wgArticleId":11099,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Scripting Concepts"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"HU/account","wgRelevantArticleId":11099,"wgRequestId":"066ca1fbae80c317ace46e4f","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-HU_account rootpage-HU_account skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">HU/account</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>Az <b>account</b> osztály a <a href="Element/Player.html" title="HU/Element/Player">játékos</a> szerveren lévő felhasználóját jelenti. Bármely klienshez tartozó <b>account</b> objektum lekérdezhető a <a href="getPlayerAccount.html" title="HU/getPlayerAccount">HU/getPlayerAccount</a> hívással.
+</p><p>Minden kliens accountja egyedi, valamint infórmáicók tárolásához is használható, ami megmarad a felhasználói munkamenetben, így pályaváltáskor is. Az account nélkül csatlakozó kliensek ideiglenesen egy 'guest' accountot kapnak. Ez ugyan úgy képes információkat tárolni, mint bármelyik más account, de az adatok nem kerülnek mentésre.
+</p><p>Ha a játékos bejelentkezik, vagy ki, akkor a hozzárendelt account objektum megváltozik. Ezért nem szabad azt feltételeznie, hogy a klienshez csatolt account állandó marad a munkamenet során.
+</p><p>A PHP kód, mely ellenőrzi a jelszó hash-eket az MTA adatbáziból <a href="../Account_PHP.html" title="Account PHP">itt</a> találhaó.
+</p>
+<h2><span class="mw-headline" id="Related_scripting_functions">Related scripting functions</span></h2>
+<h3><span class="mw-headline" id="Server">Server</span></h3>
+<ul><li><a href="http://wiki.localhost/index.php?title=HU/addAccount&amp;action=edit&amp;redlink=1" class="new" title="HU/addAccount (page does not exist)">HU/addAccount</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/copyAccountData&amp;action=edit&amp;redlink=1" class="new" title="HU/copyAccountData (page does not exist)">HU/copyAccountData</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/getAccount&amp;action=edit&amp;redlink=1" class="new" title="HU/getAccount (page does not exist)">HU/getAccount</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/getAccountData&amp;action=edit&amp;redlink=1" class="new" title="HU/getAccountData (page does not exist)">HU/getAccountData</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/getAccountName&amp;action=edit&amp;redlink=1" class="new" title="HU/getAccountName (page does not exist)">HU/getAccountName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/getAccountPlayer&amp;action=edit&amp;redlink=1" class="new" title="HU/getAccountPlayer (page does not exist)">HU/getAccountPlayer</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/getAccountSerial&amp;action=edit&amp;redlink=1" class="new" title="HU/getAccountSerial (page does not exist)">HU/getAccountSerial</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/getAccounts&amp;action=edit&amp;redlink=1" class="new" title="HU/getAccounts (page does not exist)">HU/getAccounts</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/getAccountsBySerial&amp;action=edit&amp;redlink=1" class="new" title="HU/getAccountsBySerial (page does not exist)">HU/getAccountsBySerial</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/getAllAccountData&amp;action=edit&amp;redlink=1" class="new" title="HU/getAllAccountData (page does not exist)">HU/getAllAccountData</a></li>
+<li><a href="getPlayerAccount.html" title="HU/getPlayerAccount">HU/getPlayerAccount</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/isGuestAccount&amp;action=edit&amp;redlink=1" class="new" title="HU/isGuestAccount (page does not exist)">HU/isGuestAccount</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/logIn&amp;action=edit&amp;redlink=1" class="new" title="HU/logIn (page does not exist)">HU/logIn</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/logOut&amp;action=edit&amp;redlink=1" class="new" title="HU/logOut (page does not exist)">HU/logOut</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/removeAccount&amp;action=edit&amp;redlink=1" class="new" title="HU/removeAccount (page does not exist)">HU/removeAccount</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/setAccountData&amp;action=edit&amp;redlink=1" class="new" title="HU/setAccountData (page does not exist)">HU/setAccountData</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/setAccountPassword&amp;action=edit&amp;redlink=1" class="new" title="HU/setAccountPassword (page does not exist)">HU/setAccountPassword</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=HU/getAccountByID&amp;action=edit&amp;redlink=1" class="new" title="HU/getAccountByID (page does not exist)">HU/getAccountByID</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/getAccountID&amp;action=edit&amp;redlink=1" class="new" title="HU/getAccountID (page does not exist)">HU/getAccountID</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=HU/getAccountIP&amp;action=edit&amp;redlink=1" class="new" title="HU/getAccountIP (page does not exist)">HU/getAccountIP</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/getAccountsByData&amp;action=edit&amp;redlink=1" class="new" title="HU/getAccountsByData (page does not exist)">HU/getAccountsByData</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/getAccountsByIP&amp;action=edit&amp;redlink=1" class="new" title="HU/getAccountsByIP (page does not exist)">HU/getAccountsByIP</a></li>
+<li><a href="http://wiki.localhost/index.php?title=HU/setAccountName&amp;action=edit&amp;redlink=1" class="new" title="HU/setAccountName (page does not exist)">HU/setAccountName</a></li></ul>
+<h2><span class="mw-headline" id="Ford.C3.ADtotta">Fordította</span></h2>
+<pre><b>2018.12.14.</b> <font size="3"><b><a rel="nofollow" class="external text" href="https://wiki.multitheftauto.com/wiki/User:Surge">Surge</a></b></font>
+</pre>
+<!-- 
+NewPP limit report
+Cached time: 20190625164456
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.007 seconds
+Real time usage: 0.009 seconds
+Preprocessor visited node count: 68/1000000
+Preprocessor generated node count: 276/1000000
+Post‐expand include size: 857/2097152 bytes
+Template argument size: 152/2097152 bytes
+Highest expansion depth: 9/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    3.985      1 - Template:Account_functions_hu
+100.00%    3.985      1 - -total
+ 67.05%    2.672      2 - Template:New_items
+ 33.67%    1.342      2 - Template:Current_Version
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:11099-0!*!0!!*!*!* and timestamp 20190625164456 and revision id 61516
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=HU/account&amp;oldid=61516">https://wiki.multitheftauto.com/index.php?title=HU/account&amp;oldid=61516</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="../Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="../Category_Scripting_Concepts.html" title="Category:Scripting Concepts">Scripting Concepts</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="account.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:HU/account&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=HU/account&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=HU/account&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=HU%2Faccount" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=HU%2Faccount" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/HU/account.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/HU/account.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=HU/account&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=HU/account&amp;oldid=61516" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=HU/account&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=Account" title="Account – English" lang="en" hreflang="en">English</a></li>
+													<li class="interlanguage-link interwiki-ru"><a href="http://wiki.multitheftauto.com/index.php?title=RU/Account" title="Account – русский" lang="ru" hreflang="ru">Русский</a></li>
+													<li class="interlanguage-link interwiki-pl"><a href="http://wiki.multitheftauto.com/index.php?title=PL/Account" title="Account – polski" lang="pl" hreflang="pl">Polski</a></li>
+													<li class="interlanguage-link interwiki-it"><a href="http://wiki.multitheftauto.com/index.php?title=IT/Account" title="Account – italiano" lang="it" hreflang="it">Italiano</a></li>
+													<li class="interlanguage-link interwiki-de"><a href="http://wiki.multitheftauto.com/index.php?title=DE/Account" title="Account – Deutsch" lang="de" hreflang="de">Deutsch</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 14 December 2018, at 12:23.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":34});});</script></body></html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>IsPedInVehicle - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"IsPedInVehicle","wgTitle":"IsPedInVehicle","wgCurRevisionId":46095,"wgRevisionId":46095,"wgArticleId":3959,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Server functions","Client functions"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"IsPedInVehicle","wgRelevantArticleId":3959,"wgRequestId":"d7f66129d981933e64d1fdf3","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta name='headingclass' content='' data-class='both' data-subcaption='Shared function'>
+<meta name='lowercasetitle' content=''>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-IsPedInVehicle rootpage-IsPedInVehicle skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">IsPedInVehicle</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
+<!--LC-->
+</p><p>Checks whether or not a given ped is currently in a vehicle. This also returns true if they're trying to enter a vehicle.
+</p>
+<table cellspacing="0" style="padding: 5px; width: 80%; margin: 2px auto 2px auto; border: 1px solid #BFBFFF; background: #E0E0FF; border-left: 10px solid #BFBFFF;">
+<tr>
+<td style="width: 32px; vertical-align:top; display: none;" rowspan="2"> [[{{{image}}}|link=]]
+</td>
+<td style=""> <b>Note:</b> Client side <strong class="selflink">IsPedInVehicle</strong> can be unreliable. Solution is to use: <i><b>not <a href="GetPedOccupiedVehicle.html" title="GetPedOccupiedVehicle">getPedOccupiedVehicle</a>(ped)</b></i>
+</td></tr>
+<tr>
+<td rowspan="1" style="padding-left: 10px;">
+</td></tr></table>
+<h2><span class="mw-headline" id="Syntax">Syntax</span></h2>
+<pre class="prettyprint lang-lua">
+bool isPedInVehicle ( ped thePed )
+</pre>
+<p><u><b>OOP Syntax</b></u> <small><a href="OOP_Introduction.html" title="OOP Introduction">Help! I don't understand this!</a></small>
+</p>
+<dl><dd> <b>Method</b>: <i><a href="Ped.html" title="Ped" class="mw-redirect">ped</a>:isInVehicle(...)</i></dd>
+<dd> <b>Variable</b>: <i>.inVehicle</i></dd></dl>
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>thePed:</b> the ped you want to check.</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>Returns <i>true</i> if the ped is in a vehicle, <i>false</i> if he is on foot or an invalid element was passed.
+</p>
+<h2><span class="mw-headline" id="Example">Example</span></h2>
+<p>This code defines an <i>isinvehicle</i> command which tells a player whether another player is in a vehicle or not.
+</p>
+<pre class="prettyprint lang-lua">
+-- we create our handler function, where sourcePlayer is the player who sent the command,
+-- and checkedPlayerName is the player name specified.
+function outputIsInVehicle ( sourcePlayer, commandName, checkedPlayerName )
+	-- we get the player element from the nick specified
+	local checkedPlayer = getPlayerFromName ( checkedPlayerName )
+	-- if there exists a player with that nick
+	if ( checkedPlayer ) then
+		-- if he's in a vehicle,
+		if isPedInVehicle ( checkedPlayer ) then
+			-- tell the source player
+			outputChatBox ( checkedPlayerName .. " is in a vehicle.", sourcePlayer )
+		-- if he's not in a vehicle,
+		else
+			-- tell the source player
+			outputChatBox ( checkedPlayerName .. " is not in a vehicle.", sourcePlayer )
+		end
+	-- if it doesn't exist,
+	else
+		-- tell the source player
+		outputChatBox ( "Invalid player name.", sourcePlayer )
+	end
+end
+
+-- define a handler for the isinvehicle command
+addCommandHandler ( "isinvehicle", outputIsInVehicle )
+</pre>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<ul><li><a href="AddPedClothes.html" title="AddPedClothes">addPedClothes</a></li>
+<li><a href="CanPedBeKnockedOffBike.html" title="CanPedBeKnockedOffBike">canPedBeKnockedOffBike</a></li>
+<li><a href="CreatePed.html" title="CreatePed">createPed</a></li></ul>
+<ul><li><a href="GetPedAmmoInClip.html" title="GetPedAmmoInClip">getPedAmmoInClip</a></li>
+<li><a href="GetPedAnalogControlState.html" title="GetPedAnalogControlState">getPedAnalogControlState</a></li>
+<li><a href="GetPedAnimation.html" title="GetPedAnimation">getPedAnimation</a></li>
+<li><a href="GetPedArmor.html" title="GetPedArmor">getPedArmor</a></li>
+<li><a href="GetPedBonePosition.html" title="GetPedBonePosition">getPedBonePosition</a></li>
+<li><a href="GetPedCameraRotation.html" title="GetPedCameraRotation">getPedCameraRotation</a></li>
+<li><a href="GetPedClothes.html" title="GetPedClothes">getPedClothes</a></li>
+<li><a href="GetPedContactElement.html" title="GetPedContactElement">getPedContactElement</a></li>
+<li><a href="GetPedControlState.html" title="GetPedControlState">getPedControlState</a></li></ul>
+<div style="font-weight: bold;background:black;color:white;padding:2px; padding-left:8px;">FROM VERSION 1.5.6 <a rel="nofollow" class="external text" href="https://buildinfo.mtasa.com/?Author=&amp;Branch=&amp;Revision=16362"><span style="color: #FFFFFF;">r16362</span></a> ONWARDS</div><div style="border: 2px solid black;padding: 3px;">
+<ul><li><a href="GetPedFightingStyle.html" title="GetPedFightingStyle">getPedFightingStyle</a></li></ul>
+ </div>
+<ul><li><a href="GetPedMoveState.html" title="GetPedMoveState">getPedMoveState</a></li>
+<li><a href="GetPedOccupiedVehicle.html" title="GetPedOccupiedVehicle">getPedOccupiedVehicle</a></li>
+<li><a href="GetPedOccupiedVehicleSeat.html" title="GetPedOccupiedVehicleSeat">getPedOccupiedVehicleSeat</a></li>
+<li><a href="GetPedOxygenLevel.html" title="GetPedOxygenLevel">getPedOxygenLevel</a></li>
+<li><a href="GetPedSimplestTask.html" title="GetPedSimplestTask">getPedSimplestTask</a></li>
+<li><a href="GetPedStat.html" title="GetPedStat">getPedStat</a></li>
+<li><a href="GetPedTarget.html" title="GetPedTarget">getPedTarget</a></li>
+<li><a href="GetPedTargetCollision.html" title="GetPedTargetCollision">getPedTargetCollision</a></li>
+<li><a href="GetPedTargetEnd.html" title="GetPedTargetEnd">getPedTargetEnd</a></li>
+<li><a href="GetPedTargetStart.html" title="GetPedTargetStart">getPedTargetStart</a></li>
+<li><a href="GetPedTask.html" title="GetPedTask">getPedTask</a></li>
+<li><a href="GetPedTotalAmmo.html" title="GetPedTotalAmmo">getPedTotalAmmo</a></li>
+<li><a href="GetPedVoice.html" title="GetPedVoice">getPedVoice</a></li>
+<li><a href="GetPedWalkingStyle.html" title="GetPedWalkingStyle">getPedWalkingStyle</a></li>
+<li><a href="GetPedWeapon.html" title="GetPedWeapon">getPedWeapon</a></li>
+<li><a href="GetPedWeaponMuzzlePosition.html" title="GetPedWeaponMuzzlePosition">getPedWeaponMuzzlePosition</a></li>
+<li><a href="GetPedWeaponSlot.html" title="GetPedWeaponSlot">getPedWeaponSlot</a></li>
+<li><a href="GetValidPedModels.html" title="GetValidPedModels">getValidPedModels</a></li>
+<li><a href="GivePedWeapon.html" title="GivePedWeapon">givePedWeapon</a></li>
+<li><a href="IsPedChoking.html" title="IsPedChoking">isPedChoking</a></li>
+<li><a href="IsPedDead.html" title="IsPedDead">isPedDead</a></li>
+<li><a href="IsPedDoingGangDriveby.html" title="IsPedDoingGangDriveby">isPedDoingGangDriveby</a></li>
+<li><a href="IsPedDoingTask.html" title="IsPedDoingTask">isPedDoingTask</a></li>
+<li><a href="IsPedDucked.html" title="IsPedDucked">isPedDucked</a></li>
+<li><a href="IsPedHeadless.html" title="IsPedHeadless">isPedHeadless</a></li>
+<li><strong class="selflink">isPedInVehicle</strong></li>
+<li><a href="IsPedOnFire.html" title="IsPedOnFire">isPedOnFire</a></li>
+<li><a href="IsPedOnGround.html" title="IsPedOnGround">isPedOnGround</a></li></ul>
+<ul><li><a href="IsPedReloadingWeapon.html" title="IsPedReloadingWeapon">isPedReloadingWeapon</a></li>
+<li><a href="IsPedTargetingMarkerEnabled.html" title="IsPedTargetingMarkerEnabled">isPedTargetingMarkerEnabled</a></li></ul>
+<ul><li><a href="IsPedWearingJetpack.html" title="IsPedWearingJetpack">isPedWearingJetpack</a></li>
+<li><a href="KillPed.html" title="KillPed">killPed</a></li>
+<li><a href="RemovePedClothes.html" title="RemovePedClothes">removePedClothes</a></li>
+<li><a href="RemovePedFromVehicle.html" title="RemovePedFromVehicle">removePedFromVehicle</a></li>
+<li><a href="SetAnalogControlState.html" title="SetAnalogControlState">setAnalogControlState</a></li>
+<li><a href="SetPedAimTarget.html" title="SetPedAimTarget">setPedAimTarget</a></li>
+<li><a href="SetPedAnalogControlState.html" title="SetPedAnalogControlState">setPedAnalogControlState</a></li>
+<li><a href="SetPedAnimation.html" title="SetPedAnimation">setPedAnimation</a></li>
+<li><a href="SetPedAnimationProgress.html" title="SetPedAnimationProgress">setPedAnimationProgress</a></li></ul>
+<ul><li><a href="SetPedAnimationSpeed.html" title="SetPedAnimationSpeed">setPedAnimationSpeed</a></li>
+<li><a href="SetPedCameraRotation.html" title="SetPedCameraRotation">setPedCameraRotation</a></li>
+<li><a href="SetPedCanBeKnockedOffBike.html" title="SetPedCanBeKnockedOffBike">setPedCanBeKnockedOffBike</a></li>
+<li><a href="SetPedControlState.html" title="SetPedControlState">setPedControlState</a></li>
+<li><a href="SetPedDoingGangDriveby.html" title="SetPedDoingGangDriveby">setPedDoingGangDriveby</a></li>
+<li><a href="SetPedFootBloodEnabled.html" title="SetPedFootBloodEnabled">setPedFootBloodEnabled</a></li>
+<li><a href="SetPedHeadless.html" title="SetPedHeadless">setPedHeadless</a></li>
+<li><a href="SetPedLookAt.html" title="SetPedLookAt">setPedLookAt</a></li>
+<li><a href="SetPedOnFire.html" title="SetPedOnFire">setPedOnFire</a></li>
+<li><a href="SetPedOxygenLevel.html" title="SetPedOxygenLevel">setPedOxygenLevel</a></li>
+<li><a href="SetPedStat.html" title="SetPedStat">setPedStat</a></li>
+<li><a href="SetPedTargetingMarkerEnabled.html" title="SetPedTargetingMarkerEnabled">setPedTargetingMarkerEnabled</a></li>
+<li><a href="SetPedVoice.html" title="SetPedVoice">setPedVoice</a></li>
+<li><a href="SetPedWalkingStyle.html" title="SetPedWalkingStyle">setPedWalkingStyle</a></li>
+<li><a href="SetPedWeaponSlot.html" title="SetPedWeaponSlot">setPedWeaponSlot</a></li>
+<li><a href="WarpPedIntoVehicle.html" title="WarpPedIntoVehicle">warpPedIntoVehicle</a></li></ul>
+<p><br />
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190625164023
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.020 seconds
+Real time usage: 0.099 seconds
+Preprocessor visited node count: 259/1000000
+Preprocessor generated node count: 980/1000000
+Post‐expand include size: 4492/2097152 bytes
+Template argument size: 625/2097152 bytes
+Highest expansion depth: 9/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   90.452      1 - -total
+ 87.83%   79.447      1 - Template:Note
+ 86.97%   78.663      1 - Template:MessageBox
+  8.68%    7.849      1 - Template:Client_ped_functions
+  5.21%    4.714      4 - Template:New_items
+  3.36%    3.040      5 - Template:Current_Version
+  2.20%    1.992      1 - Template:Deprecated_items
+  1.49%    1.352      1 - Template:Server_client_function
+  1.38%    1.245      1 - Template:OOP
+  0.99%    0.894      1 - Template:R
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:3959-0!*!0!!*!*!* and timestamp 20190625164023 and revision id 46095
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=IsPedInVehicle&amp;oldid=46095">https://wiki.multitheftauto.com/index.php?title=IsPedInVehicle&amp;oldid=46095</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Categories</a>: <ul><li><a href="Category_Server_functions.html" title="Category:Server functions">Server functions</a></li><li><a href="Category_Client_functions.html" title="Category:Client functions">Client functions</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="IsPedInVehicle.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:IsPedInVehicle&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=IsPedInVehicle&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=IsPedInVehicle&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=IsPedInVehicle" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=IsPedInVehicle" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/IsPedInVehicle.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/IsPedInVehicle.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=IsPedInVehicle&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=IsPedInVehicle&amp;oldid=46095" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=IsPedInVehicle&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+			</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 6 November 2015, at 00:43.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":129});});</script></body></html>

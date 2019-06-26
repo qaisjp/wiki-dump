@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>HU/Scripting the GUI - Tutorial 2 - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"HU/Scripting_the_GUI_-_Tutorial_2","wgTitle":"HU/Scripting the GUI - Tutorial 2","wgCurRevisionId":61683,"wgRevisionId":61683,"wgArticleId":10980,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["GUI Tutorials"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"HU/Scripting_the_GUI_-_Tutorial_2","wgRelevantArticleId":10980,"wgRequestId":"74c0a5a56a32b83f6e8cd948","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-HU_Scripting_the_GUI_-_Tutorial_2 rootpage-HU_Scripting_the_GUI_-_Tutorial_2 skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">HU/Scripting the GUI - Tutorial 2</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><b>Scripting the GUI - Tutorial 2 (Gates and Keypads)</b>
+</p><p>Ebben a tutoriálban meg fogjuk nézni a GUI keypad létrehozását egy kombinációs kód használatával a map által meghatározott kapu objecthez.
+We will be using serverside keycodes, with some client - server interaction to verify the codes and report the outcome.
+</p><p><b>Ne feledje, hogy ez a tutoriál feltételezi azt, hogy tisztában van az <a href="Introduction_to_Scripting_the_GUI.html" title="HU/Introduction to Scripting the GUI">előző tutoriálban</a> bemutatott összes tartalommal</b>
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:152px;"><a href="../File_Gui_keypad_tutorial.html" class="image"><img alt="" src="http://wiki.localhost/images/4/4e/Gui_keypad_tutorial.png" width="150" height="286" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="../File_Gui_keypad_tutorial.html" class="internal" title="Enlarge"></a></div>GUI Keypad</div></div></div>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#A_billenty.C5.B1zet_l.C3.A9trehoz.C3.A1sa"><span class="tocnumber">1</span> <span class="toctext">A billentyűzet létrehozása</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#A_GUI_l.C3.A9trehoz.C3.A1sa"><span class="tocnumber">1.1</span> <span class="toctext">A GUI létrehozása</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#A_kijelz.C5.91_kezel.C3.A9se"><span class="tocnumber">1.2</span> <span class="toctext">A kijelző kezelése</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#A_klikk_.C3.A9szlel.C3.A9se"><span class="tocnumber">1.3</span> <span class="toctext">A klikk észlelése</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#A_klikk_kezel.C3.A9se"><span class="tocnumber">1.4</span> <span class="toctext">A klikk kezelése</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Szerver_oldal_ellen.C5.91rz.C3.A9se"><span class="tocnumber">2</span> <span class="toctext">Szerver oldal ellenőrzése</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#A_keycode_meghat.C3.A1roz.C3.A1sa"><span class="tocnumber">2.1</span> <span class="toctext">A keycode meghatározása</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#A_k.C3.B3d_meger.C5.91s.C3.ADt.C3.A9se"><span class="tocnumber">2.2</span> <span class="toctext">A kód megerősítése</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Az_eredm.C3.A9ny_megtekint.C3.A9se"><span class="tocnumber">3</span> <span class="toctext">Az eredmény megtekintése</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#Az_eredm.C3.A9ny_elfog.C3.A1sa_.C3.A9s_feldolgoz.C3.A1sa"><span class="tocnumber">3.1</span> <span class="toctext">Az eredmény elfogása és feldolgozása</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#A_Keypad_alkalmaz.C3.A1sa"><span class="tocnumber">4</span> <span class="toctext">A Keypad alkalmazása</span></a>
+<ul>
+<li class="toclevel-2 tocsection-12"><a href="#A_kapu_l.C3.A9trehoz.C3.A1sa"><span class="tocnumber">4.1</span> <span class="toctext">A kapu létrehozása</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#A_keypad_megnyit.C3.A1sa"><span class="tocnumber">4.2</span> <span class="toctext">A keypad megnyitása</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#A_kapu_kinyit.C3.A1sa"><span class="tocnumber">4.3</span> <span class="toctext">A kapu kinyitása</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-15"><a href="#Ford.C3.ADtotta"><span class="tocnumber">5</span> <span class="toctext">Fordította</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="A_billenty.C5.B1zet_l.C3.A9trehoz.C3.A1sa">A billentyűzet létrehozása</span></h2>
+<p>Kezdésként nyisson meg egy client oldali lua fájlt (ha követte a <a href="Bevezet%c3%a9s_a_scriptel%c3%a9sbe.html" title="HU/Bevezetés a scriptelésbe">bevezetés a scriptelésbe</a> oldalt, akkor ez a gui.lua lesz) amivel majd dolgozni fog.
+</p>
+<h3><span class="mw-headline" id="A_GUI_l.C3.A9trehoz.C3.A1sa">A GUI létrehozása</span></h3>
+<p>Mostanra a GUI létrehozása viszonylag egyenesen előre láthatónak tűnhet, ezért nem fogunk túl nagy részleteiben belemenni.
+Ahogy az <a href="Scripting_the_GUI_-_Tutorial_1.html" title="HU/Scripting the GUI - Tutorial 1">előző tutoriálban</a> is, itt is <b>absolute</b> értékeket fogunk használni.
+</p>
+<pre class="prettyprint lang-lua">
+function createKeypad()
+	-- get the screen width and height
+	local sWidth, sHeight = guiGetScreenSize()
+
+	-- create the window, using some maths to find the centre of the screen
+	local Width,Height = 142,276
+	local X = (sWidth/2) - (Width/2)
+	local Y = (sHeight/2) - (Height/2)
+	keypadWindow = guiCreateWindow(X,Y,Width,Height,"Keypad",false)
+	
+	-- don't allow people to resize the keypad
+	guiWindowSetSizable(keypadWindow,false)
+
+	-- create buttons labeled 0-9, "*", "#", "Enter" and "C" (clear)
+	keypadButton1 = guiCreateButton(13,68,37,36,"1",false,keypadWindow)
+	keypadButton2 = guiCreateButton(53,68,37,36,"2",false,keypadWindow)
+	keypadButton3 = guiCreateButton(93,68,37,36,"3",false,keypadWindow)
+	keypadButton4 = guiCreateButton(13,108,37,36,"4",false,keypadWindow)
+	keypadButton5 = guiCreateButton(53,108,37,36,"5",false,keypadWindow)
+	keypadButton6 = guiCreateButton(93,108,37,36,"6",false,keypadWindow)
+	keypadButton7 = guiCreateButton(13,148,37,36,"7",false,keypadWindow)
+	keypadButton8 = guiCreateButton(53,148,37,36,"8",false,keypadWindow)
+	keypadButton9 = guiCreateButton(93,148,37,36,"9",false,keypadWindow)
+	keypadButtonAsterix = guiCreateButton(13,188,37,36,"*",false,keypadWindow)
+	keypadButton0 = guiCreateButton(53,188,37,36,"0",false,keypadWindow)
+	keypadButtonHash = guiCreateButton(93,188,37,36,"#",false,keypadWindow)
+	keypadButtonExit = guiCreateButton(13,228,37,36,"Exit",false,keypadWindow)
+	keypadButtonEnter = guiCreateButton(53,228,37,36,"Enter",false,keypadWindow)
+	keypadButtonClear = guiCreateButton(93,228,37,36,"Clear",false,keypadWindow)
+
+	-- create a gridlist to act as a backdrop on the kaypad display
+	keypadGridlistDisplay = guiCreateGridList(13,25,117,33,false,keypadWindow)
+	guiGridListSetSelectionMode(keypadGridlistDisplay,2)
+	guiSetAlpha(keypadGridlistDisplay,0.6)
+	-- create a label so we can write text on the keypad display
+	keypadLabelDisplay = guiCreateLabel(14,26,115,30,"Enter Keycode.",false,keypadWindow)
+	guiLabelSetColor(keypadLabelDisplay,255,000,000)
+	guiLabelSetVerticalAlign(keypadLabelDisplay,"center")
+	guiLabelSetHorizontalAlign(keypadLabelDisplay,"center",false)
+	
+	guiSetVisible(keypadWindow,false)
+end
+
+-- create the GUI when the resource starts
+addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),createKeypad)
+</pre>
+<p>Ahogy azt láthatja, a keypad 10 numerikus billentyűből áll (0-9), két karakterből (* és #), egy törlés gombból, valamint egy bezár és egy indító gombból.
+Ez azt jelenti, hogy a keypad-on használt kódok tartalmazhatják ezeket a karaktereket (0123456789*#).
+</p>
+<h3><span class="mw-headline" id="A_kijelz.C5.91_kezel.C3.A9se">A kijelző kezelése</span></h3>
+<p>Kezdjük azzal, hogy egy kis funkciót írunk a keypad kijelzőjének a szabályozására.
+Ez megtehető úgy, hogy megírunk egy függvényt amely tartalmaz számos hívást, melyek a szöveg megváltoztatásához szükségesek,
+ez lehetővé teszi a számunkra, hogy a későbbiekben könnyedén tudjunk hozzáadni/eltávolítani szövegetek a kijelzőről.
+</p>
+<pre class="prettyprint lang-lua">
+function updateDisplay(text)
+s	if text then
+		-- if its a digit or * or #, then append it to the end of the display
+		if tonumber(text) or text == "*" or text == "#" then
+			guiSetText(keypadLabelDisplay,guiGetText(keypadLabelDisplay) .. text)
+		-- otherwise replace the display with the new text
+		else
+			guiSetText(keypadLabelDisplay,text)
+		end	
+	-- if we pass nil, clear the display entirely
+	else
+		guiSetText(keypadLabelDisplay,"")
+	end
+end
+</pre>
+<p>Így egyszerűen meghívhatjuk az updateDisplay-t(our text), hogy megváltoztassa a szöveget a kijelzőn, vagy az updateDisplay(nil)-t, hogy kiürítse azt.
+</p>
+<h3><span class="mw-headline" id="A_klikk_.C3.A9szlel.C3.A9se">A klikk észlelése</span></h3>
+<p>Sok gomb van, amelyek hasonló feladatokat végeznek a keypad-on, két módszer áll a rendelkezésünkre, hogy észleljük amikor a játékos rájuk kattint.
+</p><p>Hozzáadhatjuk egyenként mindegyik gombhoz az <a href="../OnClientGUIClick.html" title="OnClientGUIClick">onClientGUIClick</a> event-et, ahogy azt az előző tutoriálban is tettük; vagy hozzáadhatunk egy <a href="../OnClientGUIClick.html" title="OnClientGUIClick">onClientGUIClick</a> handler-t az ablakhoz (amely az összes többi keypad GUI elemünk szülője), majd szűrjük az eredményt, hogy csak a kívánt gombokat tartalmazza, és meghívjuk a saját egyedi event-ünket.
+</p><p><br />
+Ennek a tutoriálnak a céljából, és a többféle megközelítés felvázolása érdekében megnézzük a második módszert is, mindkét megoldás elfogadható.
+</p>
+<pre class="prettyprint lang-lua">
+addEventHandler("onClientGUIClick",keypadWindow,processKeypadClicks,true)
+</pre>
+<p><b>Ne feledje, hogy az utolsó paraméter az 'true'. Ez azt jelenti, hogy a fa ugyanazon ágán lévő bármely elemre való kattintást meghívja ezt a handler-t.</b>
+</p><p>Adja hozzá ezt a sort a createKeypad függvényhez, a létrehozott GUI után.
+</p><p><br />
+Most, hogy az összes kattintást észlelni tudjuk a GUI-nkon, ki kell szűrnünk azt az egyet, amelyiket nem szeretnénk kezelni (azaz: az ablakon vagy a kijelzőn történő kattintást) és hívjuk meg az egyedi event-ünket:
+</p>
+<pre class="prettyprint lang-lua">
+function processKeypadClicks(button,state)
+	if button == "left" and state == "up" then
+		-- if the source of this event is a gui button
+		if getElementType(source) == "gui-button" then
+			-- trigger our custom event and send the keypad id of this keypad as an argument
+			triggerEvent("onKeypadButtonClicked",source,getElementData(keypadWindow,"keypadID"))
+		end
+	end
+end
+</pre>
+<p>Ahogy azt láthatja, meghívjuk az egyedi "onKeypadButtonClicked" event-ünket, amikor valaki rákattint a gombra a keypad-on.
+Also note we use element data "keypadID" to differentiate between keypads. This data will need to be set whenever the player is shown a new keypad.
+Erről majd a későbbiekben fogunk részletesen beszélni.
+</p>
+<h3><span class="mw-headline" id="A_klikk_kezel.C3.A9se">A klikk kezelése</span></h3>
+<p>Úgy, mint az előző tutoriálban használt <a href="../TriggerServerEvent.html" title="TriggerServerEvent">triggerServerEvent</a>, most meg kell határoznunk az eventet, csak itt most client oldali:
+</p>
+<pre class="prettyprint lang-lua">
+addEvent("onKeypadButtonClicked",false)
+addEventHandler("onKeypadButtonClicked",root,
+	function(keypadID)
+
+	end
+)
+</pre>
+<p>Vegye figyelembe, hogy az <a href="../AddEvent.html" title="AddEvent">addEvent</a> második paramétere false-ra van állítva, jelezve, hogy ezt az eventet nem lehet meghívni a szerverről.
+Valamint azt is vegye figyelembe, hogy az <a href="../AddEventHandler.html" title="AddEventHandler">addEventHandler</a>-ben használt függvénynek nincs neve. Ha összevonod és eltávolítot a szóközt, akkor ezt kapot:
+</p>
+<pre class="prettyprint lang-lua">
+addEventHandler("onKeypadButtonClicked",root,function() ... end)
+</pre>
+<p>Ez egyszerűen annyit jelent, hogy ahelyett, hogy a függvény mutatóját egy változóban tároljuk, simán megadjuk mint argumentum.
+Ez gyakran tisztábbá teszi a kód átláthatóságát, és könyebbé a mukálatokat.
+</p><p>Most, hogy az eventet létrehoztuk, megírhatjuk a kód logikai részét, ami vezérelni fogja a gombunk lenyomását.
+</p>
+<pre class="prettyprint lang-lua">
+addEvent("onKeypadButtonClicked",false)
+addEventHandler("onKeypadButtonClicked",root,
+	function(keypadID)
+		-- clear the display if this is the first time its being used
+		if guiGetText(keypadLabelDisplay) == "Enter Keycode." or guiGetText(keypadLabelDisplay) == "Invalid Keycode." then
+			updateDisplay()
+		end
+	
+	
+		-- if its the clear button
+		if guiGetText(source) == "Clear" then
+			-- clear the display
+			updateDisplay()
+		
+		-- if its the enter button
+		elseif guiGetText(source) == "Enter" then
+			-- get the currently entered code from the display
+			local code = guiGetText(keypadLabelDisplay)
+			
+			-- if they have entered a code
+			if code then
+				-- trigger the server so we can verify their code
+				triggerServerEvent("verifyKeypadCode",getLocalPlayer(),code,keypadID)
+			end
+		
+		-- if its the exit button
+		elseif guiGetText(source) == "Exit" then
+			-- hide the keypad and reset the display text ready for next time
+			guiSetVisible(keypadWindow,false)
+			updateDisplay("Enter Keycode.")
+			showCursor(false,false)
+			
+		-- otherwise, it must be a character button
+		else
+			updateDisplay(guiGetText(source))	
+		end
+	end
+)
+</pre>
+<p>Ne feledje, hogy a kijelző törléséhez csak egyszerűen meg kell hívnunk az updateDisplay()-t argumentumok nélkül. Nem kell megadnunk neki a 'nil' értéket, mivel alapértelmezetten az összes paraméter (és a változók) nil.
+</p>
+<h2><span class="mw-headline" id="Szerver_oldal_ellen.C5.91rz.C3.A9se">Szerver oldal ellenőrzése</span></h2>
+<p>A tutoriál további részéhez meg kell nyitnia a szerver oldali lua fájlt a resource-ból, amivel majd dolgozni fog.
+</p>
+<h3><span class="mw-headline" id="A_keycode_meghat.C3.A1roz.C3.A1sa">A keycode meghatározása</span></h3>
+<p>Most, hogy befejeztük a keypad-nak a klikkelés részét, tovább kell haladnunk, hogy ellenőrizzük a bevitt kódot a keypad-ba.
+Ehhez kelleni fog nekünk a megfelelő kód valahol a szerver oldalon elmentve, amihez majd a játékos kódját tudjuk ellenőrizni.
+</p>
+<table cellspacing="0" style="padding: 5px; width: 80%; margin: 2px auto 2px auto; border: 1px solid #BFBFFF; background: #E0E0FF; border-left: 10px solid #BFBFFF;">
+<tr>
+<td style="width: 32px; vertical-align:top; display: none;" rowspan="2"> [[{{{image}}}|link=]]
+</td>
+<td style=""> <b>Megjegyzés:</b> Ne tároljon bizalmas adatokat a kliens oldali fájlokban, mint például keycode-okat, vagy jelszavakat. Minden kliens oldali fájlok lementésre kerülnek a játékos számítógépére, és bárki, aki felcsatlakozik a szerverre az képes hozzáférni és olvasni ezeket a fájlokat.
+</td></tr>
+<tr>
+<td rowspan="1" style="padding-left: 10px;">
+</td></tr></table><br />
+<p>Ennek a tutoriálnak a céljából most csak egyszerűen egy szerver oldali táblában fogjuk tárolni a kódot, bár ezt számos módon megteheti (mint például a szerver oldali xml fájlok, vagy MySQL adatbázisok).
+</p>
+<pre class="prettyprint lang-lua">
+local keypadCodes = {
+	["a51MainGateKeypadCode"] = "4455*#"
+}
+</pre>
+<p>Ez a tábla egy "a51MainGateKeypadCode"-nak nevezett bejegyzést tárol a 4455*# kóddal
+</p><p><b>Ez a keycode, amit majd használni fog a kapu kinyitásához a tutoriál későbbi részében.</b>
+</p>
+<h3><span class="mw-headline" id="A_k.C3.B3d_meger.C5.91s.C3.ADt.C3.A9se">A kód megerősítése</span></h3>
+<p>Most, hogy van egy keycode-unk, amit ellenőrizni tudunk, megírhatjuk a szerver oldali event-ünket:
+</p>
+<pre class="prettyprint lang-lua">
+addEvent("verifyKeypadCode",true)
+addEventHandler("verifyKeypadCode",root,function(code,keypadID)
+	if code then
+		-- using the table we created earlier, check if the code supplied is the same as the code for this gate
+		if code == keypadCodes[keypadID] then
+			-- if it is, tell the client that it was successful
+			triggerClientEvent(client,"onKeypadVerificationSuccessful",client,keypadID)
+		else
+			-- if it is not, tell the client that it was not successful
+			triggerClientEvent(client,"onKeypadVerificationFailed",client,keypadID)
+		end
+	end
+end)
+</pre>
+<p>Itt használni fogjuk a táblánkat és a játékos által beírt keypadID-t, hogy ellenőrizzük, hogy a kód az egyezik-e.
+</p><p>Ha nem használ táblát a kódok tárálásához, akkor ki kell cserélni a 'keypadCodes[keypadID]'-t a saját tárolási módszerével.
+Miután sikeres lett az ellenőrzés (vagy nem), meghívhatjuk a kliens oldali szkriptünket, hogy a megfelelő információt jelenítse meg a keypad kijelzőjén.
+</p>
+<h2><span class="mw-headline" id="Az_eredm.C3.A9ny_megtekint.C3.A9se">Az eredmény megtekintése</span></h2>
+<p>Ezzel be is befejeztük a tutoriál szerver oldali részét, szóval most meg kell nyitnia a kliens oldali lua fájlt a resource-jából, amivel az előzőekben dolgozott.
+</p><p><br />
+Miután a kódunk meg lett erősítve, a szerver visszaküldi a választ a kliensnek.
+Ugyan úgy, mint a client -&gt; server közötti kommunikációnál, hozzá kell adnunk a klienshez azt az eseményt, amelyet a szerver fog meghívni.
+</p>
+<h3><span class="mw-headline" id="Az_eredm.C3.A9ny_elfog.C3.A1sa_.C3.A9s_feldolgoz.C3.A1sa">Az eredmény elfogása és feldolgozása</span></h3>
+<p>Először hozzáadunk egy eseményt, ha a megerősítés sikeres:
+</p>
+<pre class="prettyprint lang-lua">
+addEvent("onKeypadVerificationSuccessful",true)
+addEventHandler("onKeypadVerificationSuccessful",root,
+	function()
+		-- hide the keypad and reset the display text ready for next time
+		guiSetVisible(keypadWindow,false)
+		updateDisplay("Enter Keycode.")
+		showCursor(false,false)
+	end
+)
+</pre>
+<p>Végül hozzáadunk még egy eseményt, ha a megerősítés sikertelen:
+</p>
+<pre class="prettyprint lang-lua">
+addEvent("onKeypadVerificationFailed",true)
+addEventHandler("onKeypadVerificationFailed",root,
+	function()
+		-- update the display text to show the code was invalid
+		updateDisplay("Invalid Keycode.")
+	end
+)
+</pre>
+<p>Ezzel lezárjuk a tutoriál keypad részét.
+</p><p>Egy példa arról, hogy hogyan lehet ezt megvalósítani egy működő kapu rendszerben, folytassa a fejezet olvasását.
+</p>
+<h2><span class="mw-headline" id="A_Keypad_alkalmaz.C3.A1sa">A Keypad alkalmazása</span></h2>
+<p>A keypad használatához szükségünk lesz valamire, amivel használni tudjuk.
+Ehhez a tutoriálhoz kapukat fogunk használni, és ahogyan korábban említettük egy fő kaput fogunk létrehozni az A51-be.
+</p>
+<h3><span class="mw-headline" id="A_kapu_l.C3.A9trehoz.C3.A1sa">A kapu létrehozása</span></h3>
+<p>Mindenek előtt létre kell hoznunk egy kapu objektumot.
+Ennek a példának a céljából egy .map fájlt fogunk használni az objektum tárolásához. 
+Habár ez egy ajánlott módja az objektumok meghatározásához, nem ez az egyetlen módja, hogy kivitelezzük ezt.
+</p><p>Menjen a resource mappához, és hozzon létre egy új fájt gate.map néven, majd adja hozzá ehhez az új fájlhoz a meta.xml-t:
+</p>
+<pre class="prettyprint lang-lua">
+&lt;map src="gate.map"/&gt;
+</pre>
+<p><i>Ha nem biztos a map fájl szintaxisában, kérjük látogassa meg a <a href="Writing_Gamemodes.html" title="HU/Writing Gamemodes">Játékmódok írása</a>, vagy az <a href="Element/Object.html" title="HU/Element/Object">Object</a>-t oldalt a további segítségért.</i>
+</p>
+<pre class="prettyprint lang-lua">
+&lt;map&gt;
+    &lt;object id="a51MainGateKeypadCode" model="971" posX="96.736" posY="1918.352" posZ="20.694" rotX="0" rotY="0" rotZ="270.40" newPosX="96.751" newPosY="1914.474" newPosZ="20.694" /&gt;
+&lt;/map&gt;
+</pre>
+<p>Ez létrehoz egy kapu objektumot az A51 bejáratánál. Az objektnek most lesz pozíció és tengely körüli forgatás adata, ami a newPosX,newPosY és newPosZ, amivel képesek leszünk mozgatni.
+</p><p><b>Ne felejde, hogy az objekt id megegyezik a korábban létrehozott táblázatbejegyzéssel, hogy megtartsa a hozzáférési kódot.</b>
+Ez az egyik lehetséges módszer, amelyhez hozzá lehet férni a kapu összekapcsolásához az adott keycode-val.
+</p>
+<h3><span class="mw-headline" id="A_keypad_megnyit.C3.A1sa">A keypad megnyitása</span></h3>
+<p>Térjünk vissza a klisensoldali lua fájlhoz ismét, most már dolgozhatunk a kapu és a keypad összekapcsolásán.
+</p><p>Most, hogy a kapunk megvan, kell egy mód, hogy hozzáférjünk a keypadhoz, hogy kinyissa a kaput.
+Ennek a tutoriálnak a céljából egy egyszerű parancsot fogunk használni, emellett persze könnyedén használhat colshape-t, vagy gomblenyomást.
+</p>
+<pre class="prettyprint lang-lua">
+addCommandHandler("a51gate",function()
+	guiSetVisible(keypadWindow,true)
+	showCursor(true,true)
+	setElementData(keypadWindow,"keypadID","a51MainGateKeypadCode")
+end)
+</pre>
+<p>Vegye figyelembe, hogy beállítottuk az elementdata-t a "keypadID"-re.
+Ez nagyon fontos, mert lehetővé teszi a számunkra, hogy nyomon tudjuk követni, hogy melyik kaput próbáljuk kinyitni (ebben az esetben ez a  "a51MainGateKeypadCode" kapu).
+</p>
+<h3><span class="mw-headline" id="A_kapu_kinyit.C3.A1sa">A kapu kinyitása</span></h3>
+<p>A létrehozott kapunkkal és a készenálló keypaddal, már csak annyi maradt hátra, hogy kinyissuk a kaput.
+Having created custom events earlier for successfully and unsuccessfully verifying the code, this now becomes very easy to do.
+All we do is add an event handler for our custom "success" event, and using the keypadID we defined earlier we can move the gate inside it:
+</p>
+<pre class="prettyprint lang-lua">
+addEventHandler("onKeypadVerificationSuccessful",root,
+	-- keypadID is sent back from the server
+	function(keypadID)
+		-- get the gate object (this is where the id="a51MainGateKeypadCode" tag in the map file becomes useful)
+		local gate = getElementByID(keypadID)
+
+		-- if we found the object
+		if gate then
+			-- get the new position (as we defined in the map file)
+			local x = tonumber(getElementData(gate,"newPosX"))
+			local y = tonumber(getElementData(gate,"newPosY"))
+			local z = tonumber(getElementData(gate,"newPosZ"))
+
+			-- move the gate
+			moveObject(gate,1500,x,y,z)
+			
+			-- get the original position
+			x = tonumber(getElementData(gate,"posX"))
+			y = tonumber(getElementData(gate,"posY"))
+			z = tonumber(getElementData(gate,"posZ"))	
+			
+			-- set a timer to close the gate in 5 seconds
+			setTimer(moveObject,5000,1,gate,1500,x,y,z)
+		end
+	end
+)
+</pre>
+<p>Note how by using the keypadID sent back from the server, we can use if statements and checks against the id to control any number of gates from the same function.
+</p><p>You should now have a working example of a GUI Keypad controlling an A51 Gate.
+</p><p>Az előző GUI tutoriálokért látogassa meg a <a href="Scripting_the_GUI_-_Tutorial_1.html" title="HU/Scripting the GUI - Tutorial 1">GUI készítése - Tutorial 1 (Gridlists)</a> oldalt <br />
+A további GUI tutoriálokért látogassa meg a <a href="Scripting_the_GUI_-_Tutorial_3.html" title="HU/Scripting the GUI - Tutorial 3">GUI készítése - Tutorial 3 (Scrolling News Feed)</a> oldalt
+</p>
+<h2><span class="mw-headline" id="Ford.C3.ADtotta">Fordította</span></h2>
+<pre><b>2018.11.26.</b> <font size="3"><b><a rel="nofollow" class="external text" href="https://wiki.multitheftauto.com/wiki/User:Surge">Surge</a></b></font>
+</pre>
+<!-- 
+NewPP limit report
+Cached time: 20190625164821
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.018 seconds
+Real time usage: 0.019 seconds
+Preprocessor visited node count: 238/1000000
+Preprocessor generated node count: 648/1000000
+Post‐expand include size: 1612/2097152 bytes
+Template argument size: 932/2097152 bytes
+Highest expansion depth: 5/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    3.199      1 - -total
+100.00%    3.199      1 - Template:Note_hu
+ 71.90%    2.300      1 - Template:MessageBox
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:10980-0!*!0!!en!5!* and timestamp 20190625164821 and revision id 61683
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=HU/Scripting_the_GUI_-_Tutorial_2&amp;oldid=61683">https://wiki.multitheftauto.com/index.php?title=HU/Scripting_the_GUI_-_Tutorial_2&amp;oldid=61683</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="../Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="../Category_GUI_Tutorials.html" title="Category:GUI Tutorials">GUI Tutorials</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Scripting_the_GUI_-_Tutorial_2.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:HU/Scripting_the_GUI_-_Tutorial_2&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=HU/Scripting_the_GUI_-_Tutorial_2&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=HU/Scripting_the_GUI_-_Tutorial_2&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=HU%2FScripting+the+GUI+-+Tutorial+2" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=HU%2FScripting+the+GUI+-+Tutorial+2" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/HU/Scripting_the_GUI_-_Tutorial_2.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/HU/Scripting_the_GUI_-_Tutorial_2.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=HU/Scripting_the_GUI_-_Tutorial_2&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=HU/Scripting_the_GUI_-_Tutorial_2&amp;oldid=61683" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=HU/Scripting_the_GUI_-_Tutorial_2&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=Scripting_the_GUI_-_Tutorial_2" title="Scripting the GUI - Tutorial 2 – English" lang="en" hreflang="en">English</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 15 December 2018, at 20:58.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":50});});</script></body></html>

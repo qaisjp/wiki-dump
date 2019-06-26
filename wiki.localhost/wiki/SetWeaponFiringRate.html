@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>SetWeaponFiringRate - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"SetWeaponFiringRate","wgTitle":"SetWeaponFiringRate","wgCurRevisionId":47994,"wgRevisionId":47994,"wgArticleId":6724,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Client functions"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"SetWeaponFiringRate","wgRelevantArticleId":6724,"wgRequestId":"bf36d83c3928f95babaf9b3e","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta name='headingclass' content='' data-class='client' data-subcaption='Client-only function'>
+<meta name='lowercasetitle' content=''>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-SetWeaponFiringRate rootpage-SetWeaponFiringRate skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">SetWeaponFiringRate</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
+<!--LC-->
+This function sets the firing rate to be used when a <a href="Element/Weapon.html" title="Element/Weapon">custom weapon</a> is in <i>firing</i> state.
+</p>
+<h2><span class="mw-headline" id="Syntax">Syntax</span></h2>
+<pre class="prettyprint lang-lua">bool setWeaponFiringRate ( weapon theWeapon, int firingRate )</pre>
+<p><u><b>OOP Syntax</b></u> <small><a href="OOP_Introduction.html" title="OOP Introduction">Help! I don't understand this!</a></small>
+</p>
+<dl><dd> <b>Method</b>: <i><a href="Element/Weapon.html" title="Element/Weapon">weapon</a>:setFiringRate(...)</i></dd>
+<dd> <b>Variable</b>: <i>.firingRate</i></dd>
+<dd> <b>Counterpart</b>: <i><a href="GetWeaponFiringRate.html" title="GetWeaponFiringRate">getWeaponFiringRate</a></i></dd></dl>
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li> <b>theWeapon:</b> The weapon to modify the firing rate of.</li>
+<li> <b>firingRate:</b> The weapon firing rate. It seems to be a kind of frecuency value, so the lower the quicker the <a href="Element/Weapon.html" title="Element/Weapon">custom weapon</a> will shoot.</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>Returns <i>true</i> on success, <i>false</i> otherwise.
+</p>
+<h2><span class="mw-headline" id="Example">Example</span></h2>
+<p>This example makes the Desert Eagle gun fire faster.
+</p>
+<pre class="prettyprint lang-lua">
+addEventHandler("onClientResourceStart", resourceRoot,
+function()
+   local weapon = createWeapon ("deagle",0,0,10) -- create the weapon (deagle)
+   setWeaponAmmo(weapon,5000) -- set weapon ammo to 5000
+   setWeaponState(weapon, "firing") -- in firing state.
+   setWeaponFiringRate (weapon,2) -- change the weapon firing rate
+end
+)
+</pre>
+<h2><span class="mw-headline" id="Requirements">Requirements</span></h2>
+<table cellpadding="4" style="border-collapse: collapse; border-width: 1px; border-style: solid; border-color: #FFF">
+
+<tr>
+<th style="background-color: #FFAA44; border-style: solid; border-width: 1px; border-color: #FFF; color:#7A4A20"> Minimum supported server
+</th>
+<th width="60" style="white-space: nowrap; background-color: #FFCC66; border-style: solid; border-width: 1px; border-color: #FFF"> n/a
+</th></tr>
+<tr>
+<th style="background-color: #FF6666; border-style: solid; border-width: 1px; border-color: #FFF; color:#AA0028"> Minimum supported client
+</th>
+<th style="white-space: nowrap; background-color: #FFBBBB; border-style: solid; border-width: 1px; border-color: #FFF"> 1.3.0-9.04555
+</th></tr></table>Note: Using this function requires the resource to have the above minimum version declared in the <a href="Meta.html" title="Meta.xml">meta.xml</a> <b>&lt;min_mta_version&gt;</b> section. <i>e.g. &lt;min_mta_version  client="1.3.0-9.04555" /&gt;</i>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li><a href="CreateWeapon.html" title="CreateWeapon">createWeapon</a></li>
+<li><a href="FireWeapon.html" title="FireWeapon">fireWeapon</a></li>
+<li><a href="GetWeaponAmmo.html" title="GetWeaponAmmo">getWeaponAmmo</a></li>
+<li><a href="GetWeaponClipAmmo.html" title="GetWeaponClipAmmo">getWeaponClipAmmo</a></li>
+<li><a href="GetWeaponFiringRate.html" title="GetWeaponFiringRate">getWeaponFiringRate</a></li>
+<li><a href="GetWeaponFlags.html" title="GetWeaponFlags">getWeaponFlags</a></li>
+<li><a href="GetWeaponOwner.html" title="GetWeaponOwner">getWeaponOwner</a></li>
+<li><a href="GetWeaponProperty.html" title="GetWeaponProperty">getWeaponProperty</a></li>
+<li><a href="GetWeaponState.html" title="GetWeaponState">getWeaponState</a></li>
+<li><a href="GetWeaponTarget.html" title="GetWeaponTarget">getWeaponTarget</a></li>
+<li><a href="ResetWeaponFiringRate.html" title="ResetWeaponFiringRate">resetWeaponFiringRate</a></li>
+<li><a href="SetWeaponAmmo.html" title="SetWeaponAmmo">setWeaponAmmo</a></li>
+<li><a href="SetWeaponClipAmmo.html" title="SetWeaponClipAmmo">setWeaponClipAmmo</a></li>
+<li><strong class="selflink">setWeaponFiringRate</strong></li>
+<li><a href="SetWeaponFlags.html" title="SetWeaponFlags">setWeaponFlags</a></li>
+<li><a href="SetWeaponProperty.html" title="SetWeaponProperty">setWeaponProperty</a></li>
+<li><a href="SetWeaponState.html" title="SetWeaponState">setWeaponState</a></li>
+<li><a href="SetWeaponTarget.html" title="SetWeaponTarget">setWeaponTarget</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625164300
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.007 seconds
+Real time usage: 0.008 seconds
+Preprocessor visited node count: 93/1000000
+Preprocessor generated node count: 384/1000000
+Post‐expand include size: 1761/2097152 bytes
+Template argument size: 181/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    3.790      1 - -total
+ 26.46%    1.003      1 - Template:OOP
+ 24.93%    0.945      1 - Template:Requirements
+ 20.19%    0.765      1 - Template:Client_function
+ 15.33%    0.581      1 - Template:Client_weapon_creation_functions
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:6724-0!*!0!!*!*!* and timestamp 20190625164300 and revision id 47994
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=SetWeaponFiringRate&amp;oldid=47994">https://wiki.multitheftauto.com/index.php?title=SetWeaponFiringRate&amp;oldid=47994</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_Client_functions.html" title="Category:Client functions">Client functions</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="SetWeaponFiringRate.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:SetWeaponFiringRate&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=SetWeaponFiringRate&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=SetWeaponFiringRate&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=SetWeaponFiringRate" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=SetWeaponFiringRate" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/SetWeaponFiringRate.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/SetWeaponFiringRate.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=SetWeaponFiringRate&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=SetWeaponFiringRate&amp;oldid=47994" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=SetWeaponFiringRate&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+			</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 4 July 2016, at 14:50.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":36});});</script></body></html>

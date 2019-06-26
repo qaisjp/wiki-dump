@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>HU/Server Scripting Events - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"HU/Server_Scripting_Events","wgTitle":"HU/Server Scripting Events","wgCurRevisionId":59774,"wgRevisionId":59774,"wgArticleId":6881,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"HU/Server_Scripting_Events","wgRelevantArticleId":6881,"wgRequestId":"2c0ef64b7f42f434bb55e652","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta name='headingclass' content='' data-class='server' data-subcaption=''>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-HU_Server_Scripting_Events rootpage-HU_Server_Scripting_Events skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">HU/Server Scripting Events</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
+This page lists all <b>server-side</b> scripting <a href="../Event.html" title="Event" class="mw-redirect">events</a> that have been implemented and are available in the Deathmatch mod.
+</p><p>To request a function or event, use <a href="../Requested_Functions_and_Events.html" title="Requested Functions and Events">Requested Functions and Events</a>.
+</p><p><b>Client-side scripting events can be found here: <a href="../Client_Scripting_Events.html" title="Client Scripting Events">Client Scripting Events</a></b>
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Account_events"><span class="tocnumber">1</span> <span class="toctext">Account events</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Client_events"><span class="tocnumber">2</span> <span class="toctext">Client events</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Colshape_events"><span class="tocnumber">3</span> <span class="toctext">Colshape events</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Element_events"><span class="tocnumber">4</span> <span class="toctext">Element events</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Marker_events"><span class="tocnumber">5</span> <span class="toctext">Marker events</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Pickup_events"><span class="tocnumber">6</span> <span class="toctext">Pickup events</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Player_events"><span class="tocnumber">7</span> <span class="toctext">Player events</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Ped_events"><span class="tocnumber">8</span> <span class="toctext">Ped events</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Resource_events"><span class="tocnumber">9</span> <span class="toctext">Resource events</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Server_events"><span class="tocnumber">10</span> <span class="toctext">Server events</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Vehicle_events"><span class="tocnumber">11</span> <span class="toctext">Vehicle events</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Weapon_events"><span class="tocnumber">12</span> <span class="toctext">Weapon events</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Account_events">Account events</span></h2>
+<ul><li><a href="../OnAccountDataChange.html" title="OnAccountDataChange">onAccountDataChange</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Client_events">Client events</span></h2>
+<ul><li><a href="../OnConsole.html" title="OnConsole">onConsole</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Colshape_events">Colshape events</span></h2>
+<ul><li><a href="../OnColShapeHit.html" title="OnColShapeHit">onColShapeHit</a></li>
+<li><a href="../OnColShapeLeave.html" title="OnColShapeLeave">onColShapeLeave</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Element_events">Element events</span></h2>
+<ul><li><a href="../OnElementClicked.html" title="OnElementClicked">onElementClicked</a></li>
+<li><a href="../OnElementColShapeHit.html" title="OnElementColShapeHit">onElementColShapeHit</a></li>
+<li><a href="../OnElementColShapeLeave.html" title="OnElementColShapeLeave">onElementColShapeLeave</a></li>
+<li><a href="../OnElementDataChange.html" title="OnElementDataChange">onElementDataChange</a></li>
+<li><a href="../OnElementDestroy.html" title="OnElementDestroy">onElementDestroy</a></li>
+<li><a href="../OnElementModelChange.html" title="OnElementModelChange">onElementModelChange</a></li>
+<li><a href="../OnElementStartSync.html" title="OnElementStartSync">onElementStartSync</a></li>
+<li><a href="../OnElementStopSync.html" title="OnElementStopSync">onElementStopSync</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Marker_events">Marker events</span></h2>
+<ul><li><a href="../OnMarkerHit.html" title="OnMarkerHit">onMarkerHit</a></li>
+<li><a href="../OnMarkerLeave.html" title="OnMarkerLeave">onMarkerLeave</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Pickup_events">Pickup events</span></h2>
+<ul><li><a href="../OnPickupHit.html" title="OnPickupHit">onPickupHit</a></li></ul>
+<ul><li><a href="../OnPickupLeave.html" title="OnPickupLeave">onPickupLeave</a></li>
+<li><a href="../OnPickupSpawn.html" title="OnPickupSpawn">onPickupSpawn</a></li>
+<li><a href="../OnPickupUse.html" title="OnPickupUse">onPickupUse</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Player_events">Player events</span></h2>
+<ul><li><a href="../OnPlayerACInfo.html" title="OnPlayerACInfo">onPlayerACInfo</a></li>
+<li><a href="../OnPlayerBan.html" title="OnPlayerBan">onPlayerBan</a></li>
+<li><a href="../OnPlayerChangeNick.html" title="OnPlayerChangeNick">onPlayerChangeNick</a></li>
+<li><a href="../OnPlayerChat.html" title="OnPlayerChat">onPlayerChat</a></li>
+<li><a href="../OnPlayerClick.html" title="OnPlayerClick">onPlayerClick</a></li>
+<li><a href="../OnPlayerCommand.html" title="OnPlayerCommand">onPlayerCommand</a></li>
+<li><a href="../OnPlayerConnect.html" title="OnPlayerConnect">onPlayerConnect</a></li>
+<li><a href="../OnPlayerContact.html" title="OnPlayerContact">onPlayerContact</a></li>
+<li><a href="../OnPlayerDamage.html" title="OnPlayerDamage">onPlayerDamage</a></li>
+<li><a href="../OnPlayerJoin.html" title="OnPlayerJoin">onPlayerJoin</a></li>
+<li><a href="../OnPlayerLogin.html" title="OnPlayerLogin">onPlayerLogin</a></li>
+<li><a href="../OnPlayerLogout.html" title="OnPlayerLogout">onPlayerLogout</a></li>
+<li><a href="../OnPlayerMarkerHit.html" title="OnPlayerMarkerHit">onPlayerMarkerHit</a></li>
+<li><a href="../OnPlayerMarkerLeave.html" title="OnPlayerMarkerLeave">onPlayerMarkerLeave</a></li>
+<li><a href="../OnPlayerModInfo.html" title="OnPlayerModInfo">onPlayerModInfo</a></li>
+<li><a href="../OnPlayerMute.html" title="OnPlayerMute">onPlayerMute</a></li>
+<li><a href="../OnPlayerNetworkStatus.html" title="OnPlayerNetworkStatus">onPlayerNetworkStatus</a></li>
+<li><a href="../OnPlayerPickupHit.html" title="OnPlayerPickupHit">onPlayerPickupHit</a></li></ul>
+<ul><li><a href="../OnPlayerPickupLeave.html" title="OnPlayerPickupLeave">onPlayerPickupLeave</a></li>
+<li><a href="../OnPlayerPickupUse.html" title="OnPlayerPickupUse">onPlayerPickupUse</a></li>
+<li><a href="../OnPlayerPrivateMessage.html" title="OnPlayerPrivateMessage">onPlayerPrivateMessage</a></li>
+<li><a href="../OnPlayerQuit.html" title="OnPlayerQuit">onPlayerQuit</a></li>
+<li><a href="../OnPlayerScreenShot.html" title="OnPlayerScreenShot">onPlayerScreenShot</a></li>
+<li><a href="../OnPlayerSpawn.html" title="OnPlayerSpawn">onPlayerSpawn</a></li>
+<li><a href="../OnPlayerStealthKill.html" title="OnPlayerStealthKill">onPlayerStealthKill</a></li>
+<li><a href="../OnPlayerTarget.html" title="OnPlayerTarget">onPlayerTarget</a></li>
+<li><a href="../OnPlayerUnmute.html" title="OnPlayerUnmute">onPlayerUnmute</a></li>
+<li><a href="../OnPlayerVehicleEnter.html" title="OnPlayerVehicleEnter">onPlayerVehicleEnter</a></li>
+<li><a href="../OnPlayerVehicleExit.html" title="OnPlayerVehicleExit">onPlayerVehicleExit</a></li>
+<li><a href="../OnPlayerVoiceStart.html" title="OnPlayerVoiceStart">onPlayerVoiceStart</a></li>
+<li><a href="../OnPlayerVoiceStop.html" title="OnPlayerVoiceStop">onPlayerVoiceStop</a></li>
+<li><a href="../OnPlayerWasted.html" title="OnPlayerWasted">onPlayerWasted</a></li>
+<li><a href="../OnPlayerWeaponFire.html" title="OnPlayerWeaponFire">onPlayerWeaponFire</a></li>
+<li><a href="../OnPlayerWeaponSwitch.html" title="OnPlayerWeaponSwitch">onPlayerWeaponSwitch</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Ped_events">Ped events</span></h2>
+<ul><li><a href="../OnPedWasted.html" title="OnPedWasted">onPedWasted</a></li>
+<li><a href="../OnPedWeaponSwitch.html" title="OnPedWeaponSwitch">onPedWeaponSwitch</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Resource_events">Resource events</span></h2>
+<ul><li><a href="../OnResourcePreStart.html" title="OnResourcePreStart">onResourcePreStart</a></li>
+<li><a href="../OnResourceStart.html" title="OnResourceStart">onResourceStart</a></li>
+<li><a href="../OnResourceStop.html" title="OnResourceStop">onResourceStop</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Server_events">Server events</span></h2>
+<ul><li><a href="../OnBan.html" title="OnBan">onBan</a></li>
+<li><a href="../OnChatMessage.html" title="OnChatMessage">onChatMessage</a></li>
+<li><a href="../OnDebugMessage.html" title="OnDebugMessage">onDebugMessage</a></li>
+<li><a href="../OnSettingChange.html" title="OnSettingChange">onSettingChange</a></li>
+<li><a href="../OnUnban.html" title="OnUnban">onUnban</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Vehicle_events">Vehicle events</span></h2>
+<ul><li><a href="../OnTrailerAttach.html" title="OnTrailerAttach">onTrailerAttach</a></li>
+<li><a href="../OnTrailerDetach.html" title="OnTrailerDetach">onTrailerDetach</a></li>
+<li><a href="../OnVehicleDamage.html" title="OnVehicleDamage">onVehicleDamage</a></li>
+<li><a href="../OnVehicleEnter.html" title="OnVehicleEnter">onVehicleEnter</a></li>
+<li><a href="../OnVehicleExit.html" title="OnVehicleExit">onVehicleExit</a></li>
+<li><a href="../OnVehicleExplode.html" title="OnVehicleExplode">onVehicleExplode</a></li>
+<li><a href="../OnVehicleRespawn.html" title="OnVehicleRespawn">onVehicleRespawn</a></li>
+<li><a href="../OnVehicleStartEnter.html" title="OnVehicleStartEnter">onVehicleStartEnter</a></li>
+<li><a href="../OnVehicleStartExit.html" title="OnVehicleStartExit">onVehicleStartExit</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Weapon_events">Weapon events</span></h2>
+<ul><li><a href="../OnWeaponFire.html" title="OnWeaponFire">onWeaponFire</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625165039
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.018 seconds
+Real time usage: 0.025 seconds
+Preprocessor visited node count: 179/1000000
+Preprocessor generated node count: 481/1000000
+Post‐expand include size: 1762/2097152 bytes
+Template argument size: 90/2097152 bytes
+Highest expansion depth: 9/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   15.978      1 - -total
+ 20.92%    3.343      3 - Template:New_items
+ 17.26%    2.758      1 - Template:Account_events
+ 12.77%    2.040      1 - Template:Player_events
+ 11.60%    1.854      1 - Template:Pickup_events
+ 11.22%    1.792      3 - Template:Current_Version
+  6.62%    1.058      1 - Template:Vehicle_events
+  6.51%    1.040      1 - Template:Server_events
+  6.43%    1.028      1 - Template:Resource_events
+  6.16%    0.984      1 - Template:Marker_events
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:6881-0!*!0!!en!*!* and timestamp 20190625165039 and revision id 59774
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=HU/Server_Scripting_Events&amp;oldid=59774">https://wiki.multitheftauto.com/index.php?title=HU/Server_Scripting_Events&amp;oldid=59774</a>"</div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Server_Scripting_Events.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:HU/Server_Scripting_Events&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=HU/Server_Scripting_Events&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=HU/Server_Scripting_Events&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=HU%2FServer+Scripting+Events" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=HU%2FServer+Scripting+Events" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/HU/Server_Scripting_Events.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/HU/Server_Scripting_Events.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=HU/Server_Scripting_Events&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=HU/Server_Scripting_Events&amp;oldid=59774" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=HU/Server_Scripting_Events&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=Server_Scripting_Events" title="Server Scripting Events – English" lang="en" hreflang="en">English</a></li>
+													<li class="interlanguage-link interwiki-tr"><a href="http://wiki.multitheftauto.com/index.php?title=TR/Server_Scripting_Events" title="Server Scripting Events – Türkçe" lang="tr" hreflang="tr">Türkçe</a></li>
+													<li class="interlanguage-link interwiki-pt-br"><a href="http://wiki.multitheftauto.com/index.php?title=PT-BR/Eventos_de_Scripting_do_Servidor" title="Eventos de Scripting do Servidor – português do Brasil" lang="pt-BR" hreflang="pt-BR">Português do Brasil</a></li>
+													<li class="interlanguage-link interwiki-ru"><a href="http://wiki.multitheftauto.com/index.php?title=RU/Server_Scripting_Events" title="Server Scripting Events – русский" lang="ru" hreflang="ru">Русский</a></li>
+													<li class="interlanguage-link interwiki-fr"><a href="http://wiki.multitheftauto.com/index.php?title=FR/Server_Scripting_Events" title="Server Scripting Events – français" lang="fr" hreflang="fr">Français</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 10 October 2018, at 14:21.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":50});});</script></body></html>

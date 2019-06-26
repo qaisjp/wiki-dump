@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Resource:Voice - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"Resource","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":100,"wgPageName":"Resource:Voice","wgTitle":"Voice","wgCurRevisionId":49922,"wgRevisionId":49922,"wgArticleId":5793,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Resource"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Resource:Voice","wgRelevantArticleId":5793,"wgRequestId":"19a1f2952be4b3a060ef45f8","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta name='headingclass' content='' data-class='resource' data-subcaption='Resource'>
+<meta name='removenamespace' content=''>
+<meta name='lowercasetitle' content=''>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-100 ns-subject page-Resource_Voice rootpage-Resource_Voice skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Resource:Voice</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
+<!--NS-->
+<!--LC-->
+The introduction of voice support in 1.1 comes with very basic, yet flexible scripting interface for it.
+</p><p>The purpose of the <b>Voice</b> resource is to provide a typical interface which wraps on top of MTA's own basic scripting, to provide typical features a user would expect of voice chat - including team assignment, channel assignment, and muting.  Players can be muted by opening the scoreboard and clicking their name.
+</p><p>Before you begin, you need to open your mtaserver.conf and enable voice support:
+</p>
+<pre class="prettyprint lang-xml">&lt;!-- This parameter specifies whether or not to enable player voice chat in-game
+    Values: 0 - disabled , 1 - enabled --&gt;
+&lt;voice&gt;1&lt;/voice&gt;
+</pre>
+<p><br />
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Concepts"><span class="tocnumber">1</span> <span class="toctext">Concepts</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Settings"><span class="tocnumber">2</span> <span class="toctext">Settings</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Chat_Icons"><span class="tocnumber">2.1</span> <span class="toctext">Chat Icons</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Team_autoassignment"><span class="tocnumber">2.2</span> <span class="toctext">Team autoassignment</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Clientside_Scripting_functions"><span class="tocnumber">3</span> <span class="toctext">Clientside Scripting functions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#isPlayerVoiceMuted"><span class="tocnumber">3.1</span> <span class="toctext">isPlayerVoiceMuted</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#setPlayerVoiceMuted"><span class="tocnumber">3.2</span> <span class="toctext">setPlayerVoiceMuted</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Serverside_Scripting_functions"><span class="tocnumber">4</span> <span class="toctext">Serverside Scripting functions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#isPlayerVoiceMuted_2"><span class="tocnumber">4.1</span> <span class="toctext">isPlayerVoiceMuted</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#setPlayerVoiceMuted_2"><span class="tocnumber">4.2</span> <span class="toctext">setPlayerVoiceMuted</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#getPlayerMutedByList"><span class="tocnumber">4.3</span> <span class="toctext">getPlayerMutedByList</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#getPlayerChannel"><span class="tocnumber">4.4</span> <span class="toctext">getPlayerChannel</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#setPlayerChannel"><span class="tocnumber">4.5</span> <span class="toctext">setPlayerChannel</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#getPlayersInChannel"><span class="tocnumber">4.6</span> <span class="toctext">getPlayersInChannel</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#getNextEmptyChannel"><span class="tocnumber">4.7</span> <span class="toctext">getNextEmptyChannel</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Concepts">Concepts</span></h1>
+<p>The Voice resource provides <b>channel</b> functionality.  A channel is a way of controlling who you can speak to and hear from.  There are three main types of channels:
+</p>
+<ul><li> <b>Scripted channel:</b>  This channel is set using the <a href="Resource_Voice.html#getPlayerChannel" title="Resource:Voice">setPlayerChannel</a> function, and is in the format of a number.  Players in channel <i>1</i> cannot hear players who are in channel <i>2</i>.</li></ul>
+<ul><li> <b>Team channel:</b> Scripts do not have access to this type of channel, but it is quite similar to a scripted channel.  This type of channel is automatically assigned based upon the <a href="Resource_Voice.html#Team_autoassignment" title="Resource:Voice">Team autoassignment</a> setting.  When players are in a team, <a href="Resource_Voice.html#getPlayerChannel" title="Resource:Voice">getPlayerChannel</a> will return the actual <a href="Team.html" title="Team" class="mw-redirect">team</a> element.  Players of one team channel cannot hear players in another team channel.  Equally, players in a team channel cannot hear players in a <i>Scripted Channel</i>.</li></ul>
+<ul><li> <b>The "root" channel:</b>  Players are placed into this channel by default.  This channel is associated to the <a href="GetRootElement.html" title="GetRootElement">root</a> element concept, and <a href="Resource_Voice.html#getPlayerChannel" title="Resource:Voice">getPlayerChannel</a> will actually return the root element.  When a player is in the root channel, he is broadcasting to <b>everyone</b> in the server, and they will be able to hear him.  However, he will not be able to hear from people who are either in a <i>Team channel</i> or a <i>Scripted channel</i>.</li></ul>
+<p><br />
+</p><p><br />
+</p>
+<h1><span class="mw-headline" id="Settings">Settings</span></h1>
+<p>All settings can be modified using MTA's set() functions, modifying the meta.xml of the resource, or modifying the settings.xml.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Chat_Icons">Chat Icons</span></h3>
+<ul><li> <b>Setting name:</b> <i>show_chat_icon</i></li>
+<li> <b>Description:</b> A boolean value which allows you to disable or enable the voice chat broadcast icon that appears above a player when he speaks.</li>
+<li> <b>XML Example:</b> <pre class="prettyprint lang-xml">&lt;setting name="show_chat_icon" value="[false]"/&gt;</pre></li></ul>
+<h3><span class="mw-headline" id="Team_autoassignment">Team autoassignment</span></h3>
+<ul><li> <b>Setting name:</b> <i>autoassign_to_teams</i></li>
+<li> <b>Description:</b> A boolean value which allows you to disable or enable the voice resource automatically managing players into voice channels according to the team they're in.</li>
+<li> <b>XML Example:</b> <pre class="prettyprint lang-xml">&lt;setting name="autoassign_to_teams" value="[false]"/&gt;</pre></li></ul>
+<p><br />
+</p><p><br />
+</p>
+<h1><span class="mw-headline" id="Clientside_Scripting_functions">Clientside Scripting functions</span></h1>
+<p>All these scripting functions are <b>clientside</b> and therefore only affect the <b>local player</b>.  All functions must be called using the <a href="Call.html" title="Call">exports</a>  system.
+</p>
+<h3><span class="mw-headline" id="isPlayerVoiceMuted">isPlayerVoiceMuted</span></h3>
+<p>This function allows you to determine if a remote player is muted to the local player.  In other words, can I hear this other player?
+</p>
+<pre class="prettyprint lang-lua">
+bool exports.voice:isPlayerVoiceMuted ( player playerToCheck )
+</pre>
+<ul><li> <b>playerToCheck:</b> The player for which you wish to check if they are muted</li></ul>
+<p>Returns a bool - <b>true<i> if muted, </i></b><i>false'</i> if not
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="setPlayerVoiceMuted">setPlayerVoiceMuted</span></h3>
+<p>This function allows you to set whether a remote player is muted to the local player.  In simple terms, I can set whether I can hear this other player.
+</p>
+<pre class="prettyprint lang-lua">
+bool exports.voice:setPlayerVoiceMuted ( player playerToMute, bool muted )
+</pre>
+<ul><li> <b>playerToMute:</b> The player for which you wish to mute or unmute</li>
+<li> <b>muted&#160;:</b> A bool of whether they should be muted or unmuted.  <b>true</b> for muted, <b>false</b> for unmuted.</li></ul>
+<p>Returns a <b>true</b> if the operation was successful, <b>false</b> otherwise
+</p>
+<h1><span class="mw-headline" id="Serverside_Scripting_functions">Serverside Scripting functions</span></h1>
+<p>All these scripting functions are <b>serverside</b> and can affect all players in the server.  All functions must be called using the <a href="Call.html" title="Call">exports</a>  system.
+</p>
+<h3><span class="mw-headline" id="isPlayerVoiceMuted_2">isPlayerVoiceMuted</span></h3>
+<p>This function allows you to determine if a player is muted to everyone in the server.
+</p>
+<pre class="prettyprint lang-lua">
+bool exports.voice:isPlayerVoiceMuted ( player playerToCheck )
+</pre>
+<ul><li> <b>playerToCheck:</b> The player for which you wish to check if they are muted</li></ul>
+<p>Returns a bool - <b>true<i> if muted, </i></b><i>false'</i> if not
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="setPlayerVoiceMuted_2">setPlayerVoiceMuted</span></h3>
+<p>This function allows you to set whether a player is muted to everyone in the server.
+</p>
+<pre class="prettyprint lang-lua">
+bool exports.voice:setPlayerVoiceMuted ( player playerToMute, bool muted )
+</pre>
+<ul><li> <b>playerToMute:</b> The player for which you wish to mute or unmute</li>
+<li> <b>muted&#160;:</b> A bool of whether they should be muted or unmuted.  <b>true</b> for muted, <b>false</b> for unmuted.</li></ul>
+<p>Returns a <b>true</b> if the operation was successful, <b>false</b> otherwise
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="getPlayerMutedByList">getPlayerMutedByList</span></h3>
+<p>This function allows you to retrive a list of the players who have muted a specified player
+</p>
+<pre class="prettyprint lang-lua">
+table exports.voice:getPlayerVoiceMutedByList( player playerToCheck )
+</pre>
+<ul><li> <b>playerToCheck:</b> The player who you wish to retrieve the list of who  has muted this player</li></ul>
+<p>Returns a table of players who have muted the specified player.
+</p>
+<h3><span class="mw-headline" id="getPlayerChannel">getPlayerChannel</span></h3>
+<p>This function allows you to get what voice chat channel the specified player is in.
+</p>
+<pre class="prettyprint lang-lua">
+int/element exports.voice:getPlayerChannel ( player playerToCheck )
+</pre>
+<ul><li> <b>playerToCheck:</b> The player who you wish to retrieve the channel of</li></ul>
+<p>Returns an integer of the channel ID they are in, or a <a href="Team.html" title="Team" class="mw-redirect">team</a> element if they have been assigned to a team channel, or the <a href="GetRootElement.html" title="GetRootElement">root</a> element if they are not in a specific channel.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="setPlayerChannel">setPlayerChannel</span></h3>
+<p>This function allows you to set what voice chat channel the specified player is in.
+</p>
+<pre class="prettyprint lang-lua">
+bool exports.voice:setPlayerChannel ( player playerToCheck, [ int channelID ] )
+</pre>
+<ul><li> <b>playerToCheck:</b> The player who you wish to set the channel of</li>
+<li> <b>channelID&#160;:</b> <i>Optional:</i> The channel ID you wish to assign to this player.  Not passing this argument will allow the Voice resource to automatically manage this player (e.g. Team assignment).</li></ul>
+<p>Returns <b>true</b> if the operation was successful, <b>false</b> otherwise.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="getPlayersInChannel">getPlayersInChannel</span></h3>
+<p>This function allows you to retrive a list of the players who are in a certain channel.
+</p>
+<pre class="prettyprint lang-lua">
+table exports.voice:getPlayersInChannel ( int channelID )
+</pre>
+<ul><li> <b>channelID&#160;:</b> The channelID which you want to get the list of players from.</li></ul>
+<p>Returns a table of players are in the specified channel.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="getNextEmptyChannel">getNextEmptyChannel</span></h3>
+<p>This function allows you to get the next channel ID which is completely empty, allowing for easy creation of new channels
+</p>
+<pre class="prettyprint lang-lua">
+int getNextEmptyChannel ( )
+</pre>
+<p>Returns an integer of the first channel ID which is completely empty.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190625164258
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.006 seconds
+Real time usage: 0.007 seconds
+Preprocessor visited node count: 174/1000000
+Preprocessor generated node count: 352/1000000
+Post‐expand include size: 161/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.817      1 - Template:Resource_page
+100.00%    0.817      1 - -total
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:5793-0!*!0!!en!*!* and timestamp 20190625164258 and revision id 49922
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=Resource:Voice&amp;oldid=49922">https://wiki.multitheftauto.com/index.php?title=Resource:Voice&amp;oldid=49922</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_Resource.html" title="Category:Resource">Resource</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-resource" class="selected"><a href="Resource_Voice.html">Resource</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=:Voice&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=Resource:Voice&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=Resource:Voice&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=Resource%3AVoice" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=Resource%3AVoice" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/Resource_Voice.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/Resource_Voice.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=Resource:Voice&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=Resource:Voice&amp;oldid=49922" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=Resource:Voice&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-ru"><a href="http://wiki.multitheftauto.com/index.php?title=RU/Resource:Voice" title="Resource:Voice – русский" lang="ru" hreflang="ru">Русский</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 12 December 2016, at 21:53.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":36});});</script></body></html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>FR/A propos des Map - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"FR/A_propos_des_Map","wgTitle":"FR/A propos des Map","wgCurRevisionId":49974,"wgRevisionId":49974,"wgArticleId":6170,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"FR/A_propos_des_Map","wgRelevantArticleId":6170,"wgRequestId":"055ce3d891a660863d13e7e0","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-FR_A_propos_des_Map rootpage-FR_A_propos_des_Map skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">FR/A propos des Map</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>Le "Map manager" est une ressource inclue dans la suite serveur de MTA DM. Elle offre des commandes, fonctions et événements pour les modes de jeu afin de dynamiser vos maps. Par exemple, quand un serveur doit charger plusieurs routes pour plusieurs maps, au lieu d'avoir le tout dans un seul script principal, ces routes peuvent êtres stockée dans plusieurs ressources et chargée simplement grâce à la fonction "changeGamemodeMap" quand une map démarre.
+</p><p>Plus spécifiquement, le "Map manager" liste les modes de jeux et maps chargés sur le serveur. Il inclut un listing sur l'interface web, il rafraîchit cette liste fréquemment et met en gras les ressources et/ou maps actuellement entrain d'être utilisées. 
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Un_Simple_Tutoriel"><span class="tocnumber">1</span> <span class="toctext">Un Simple Tutoriel</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Utilisation"><span class="tocnumber">2</span> <span class="toctext">Utilisation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Param.C3.A8tres_Suppl.C3.A9mentaires"><span class="tocnumber">3</span> <span class="toctext">Paramètres Supplémentaires</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Commandes"><span class="tocnumber">4</span> <span class="toctext">Commandes</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Param.C3.A8tres"><span class="tocnumber">5</span> <span class="toctext">Paramètres</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Autres_fonctions"><span class="tocnumber">6</span> <span class="toctext">Autres fonctions</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Ev.C3.AAnement_Appel.C3.A9s"><span class="tocnumber">7</span> <span class="toctext">Evênement Appelés</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Param.C3.A8tres_d.27une_Map"><span class="tocnumber">8</span> <span class="toctext">Paramètres d'une Map</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Un_Simple_Tutoriel">Un Simple Tutoriel</span></h2>
+<p>Dans cette section nous allons poursuivre le travail commencé dans <a href="Introduction_Programmation.html" title="FR/Introduction Programmation">Introduction to Scripting</a>. Nous allons ajouter une ressource qui enregistre l'endroit de spawn des joueurs sur la map, le chargement de ce script se fera depuis le script principal.
+</p><p>Premièrement, créez un dossier dans /Your MTA Server/mods/deathmatch/resources/, nommez-le "mymap". Ensuite dans ce dossier, créez un fichier texte et nommez-le "meta.xml", ce fichier est présent dans chaque scripts.
+</p><p>Ecrivez les lignes suivantes dans le fichier <i>meta.xml</i>&#160;:
+</p>
+<pre class="prettyprint lang-xml">
+&lt;meta&gt;
+   &lt;info type="map" gamemodes="myserver"/&gt;
+   &lt;map src="mymap.map"/&gt;
+&lt;/meta&gt;
+</pre>
+<p>Prenez garde car ce fichier est "lié" avec le <i>gamemodes=""</i> choisit, qui contient le nom de la ressource principale qu'utilise ce mode. le paramètre <i>map</i>, indique le nom de la map qui sera afficher sur le serveur.
+</p><p>Maintenant créez un nouveau fichier texte dans /mymap/ et nommez le "mymap.map", écrivez y les lignes suivantes:
+</p>
+<pre class="prettyprint lang-xml">
+&lt;map&gt;
+   &lt;spawnpoint id="spawnpoint1" posX="1959.5487060547" posY="-1714.4613037109" posZ="18" rot="63.350006103516" model="0"/&gt;
+&lt;/map&gt;
+</pre>
+<p>Notez que "spawnpoint" est le type de l'élément utilisé dans la fonction <a href="../GetElementsByType.html" title="GetElementsByType">getElementsByType</a>, "id" est utilisée dans la fonction <a href="../GetElementByID.html" title="GetElementByID">getElementByID</a>
+</p><p>Pour charger la map, le script principal doit pouvoir accéder aux maps par lui même. Quelques modifications sont à apportées dans script.lua situé dans "myserver". Entrez les lignes suivantes&#160;:
+</p>
+<pre class="prettyprint lang-lua">
+function loadMap(startedMap)
+	mapRoot = getResourceRootElement(startedMap)
+end
+
+addEventHandler("onGamemodeMapStart", getRootElement(), loadMap)
+</pre>
+<p>Par défaut, l'evênement "onGamemodeMapStart" nous donne le "handle"(?) de la map ("startedMap"), lequel nous avons utilisé pour le "handle"(?) de la ressource contenant la map ("mapRoot").
+</p><p>Avec la ressource "handle"(?), nous pouvons extraire les informations relatives au spawnpoint. Jetez un œil à la fonction joinHandler() dans script.lua, à la place de x, y and z, nous pouvons utiliser les informations de la map comme suit&#160;:
+</p>
+<pre class="prettyprint lang-lua">
+function joinHandler()
+	local spawn = getElementsByType("spawnpoint", mapRoot)
+	local x,y,z,r
+	for key, value in pairs(spawn) do
+		x = getElementData(value, "posX")
+		y = getElementData(value, "posY")
+		z = getElementData(value, "posZ")
+		r = getElementData(value, "rot")
+	end
+	spawnPlayer(source, x, y, z)
+	fadeCamera(source, true)
+end
+</pre>
+<p>Lancez maintenant votre gamemode avec la commande suivante via la console:
+</p><p><b>gamemode myserver mymap</b>
+</p>
+<h2><span class="mw-headline" id="Utilisation">Utilisation</span></h2>
+<p>Pour utiliser le map manager, vos ressources doivent d'abord être reconnues en tant que gamemodes ou maps.
+</p><p>Vous devez remplir quelques informations pour votre fichier de configuration du <b>gamemode resource</b>&#160;:
+</p>
+<pre class="prettyprint lang-xml">&lt;info description="Votre Gamemode" type="gamemode" /&gt;</pre>
+<p><b>Map resources</b> Les maps ont aussi besoin d'information dans le meta.xml, <i>type="map"</i> et un ou plusieurs <i>gamemodes</i>. Une map peut en effet être compatible avec plusieurs mode de jeu pour se faire il faudra séparer les modes par une virgule <i>sans espaces</i>.
+</p>
+<pre class="prettyprint lang-xml">&lt;info description="A gamemode map" type="map" gamemodes="ctv,koth" /&gt;</pre>
+<p>Il ne peut y avoir qu’un mode de jeu 'Gamemode' Actif ou une map chargée à la fois.
+</p>
+<h2><span class="mw-headline" id="Param.C3.A8tres_Suppl.C3.A9mentaires">Paramètres Supplémentaires</span></h2>
+<p>Ces paramètres sont aussi à ajouter dans meta.xml.
+</p><p><b>name:</b> Entrez ici un message sympa qui sera afficher lors du démarrage de la ressource. C'est en quelques sorte un alias au cas ou le nom de votre ressource ne vous correspond pas.
+</p>
+<h2><span class="mw-headline" id="Commandes">Commandes</span></h2>
+<p><b>changemap newmap [gamemode]</b> (changer le 'Gamemode' d'une map)
+</p><p><b>changemode newgamemode [map]</b> (lancer un mode de jeu 'Gamemode' et démarrez une map)
+</p><p><b>gamemode newgamemode [map]</b> (idem que la précédente)
+</p><p><b>stopmode</b> (Arrête le mode de jeu et la map en cours)
+</p><p><b>stopmap</b> (Arrête la map en cours)
+</p><p><b>maps [gamemode]</b> (liste toutes les maps sur le serveurs, ajoutez en option le mode pour lequel vous voulez connaître les maps)
+</p><p><b>gamemodes</b> (Liste tout les mode de jeu)
+</p>
+<h2><span class="mw-headline" id="Param.C3.A8tres">Paramètres</span></h2>
+<p><b>*mapmanager.color</b> [string couleur hex] (change la couleur de sortie des message du mapmanager) (Par défaut&#160;: #E1AA5A)
+</p><p><b>*mapmanager.messages</b> [boolean] (si les changements de map/gm sont activés) (Par défaut&#160;: true)
+</p><p><b>*mapmanager.ASE</b> [boolean] (si le manager doit charger en mode ASE) (Par défaut&#160;: true)
+</p>
+<h2><span class="mw-headline" id="Autres_fonctions">Autres fonctions</span></h2>
+<pre class="prettyprint lang-lua">bool changeGamemode ( resource newGamemode, [ resource mapToLoadWith ] )</pre>
+<p>Changement de mode de jeu, on peut aussi lui donner une map initial à charger.
+</p>
+<pre class="prettyprint lang-lua">bool changeGamemodeMap ( resource newMap, [ resource gamemodeToChangeTo ] )</pre>
+<p>Change le mode de jeu d'une map pour un nouveau, on peut choisir un mode de jeu à charger une fois cette map rechargée.
+</p>
+<pre class="prettyprint lang-lua">table getGamemodes ( )</pre>
+<p>Renvoie une table des tout les modes de jeu et leur pointeurs.
+</p>
+<pre class="prettyprint lang-lua">table getGamemodesCompatibleWithMap ( resource theMap )</pre>
+<p>Retourne une table de tout les modes de jeu compatibles.
+</p>
+<pre class="prettyprint lang-lua">table getMaps ( )</pre>
+<p>Reourne une table de toutes les ressources en rapport avec la map.
+</p>
+<pre class="prettyprint lang-lua">table getMapsCompatibleWithGamemode ( [ resource theGamemode ] )</pre>
+<p>Retourne une table de tout les modes de jeu compatibles. Si l'argument "theGamemode" est inexistant, ça retourne toutes les maps qui n'ont aucun mode de jeu compatible..
+</p>
+<pre class="prettyprint lang-lua">resource getRunningGamemode ( )</pre>
+<p>Renvoie le mode de jeu actif.
+</p>
+<pre class="prettyprint lang-lua">resource getRunningGamemodeMap ( )</pre>
+<p>Renvoie le mode de jeu de la map en cours.
+</p>
+<pre class="prettyprint lang-lua">bool isGamemode ( resource theGamemode )</pre>
+<p>Déterminie si une ressources est un mode de jeu ou pas.
+</p>
+<pre class="prettyprint lang-lua">bool isGamemodeCompatibleWithMap ( resource theGamemode, resource theMap )</pre>
+<p>Déterminie si une map est compatible avec un mode de jeu ou pas.
+</p>
+<pre class="prettyprint lang-lua">bool isMap ( resource theMap )</pre>
+<p>Détermine si ressources est une map ou pas.
+</p>
+<pre class="prettyprint lang-lua">bool isMapCompatibleWithGamemode ( resource theMap, resource theGamemode )</pre>
+<p>Déterminie si une map est compatible avec un gamemode ou pas.
+</p>
+<pre class="prettyprint lang-lua">bool stopGamemode ( )</pre>
+<p>Arrêter le mode de jeux actif ainsi que la map chargée.
+</p>
+<pre class="prettyprint lang-lua">bool stopGamemodeMap ( )</pre>
+<p>Arrêter la map active.
+</p>
+<h2><span class="mw-headline" id="Ev.C3.AAnement_Appel.C3.A9s">Evênement Appelés</span></h2>
+<p><i>(Pour tous ces évênements, "source" est la ressource racine des élément.)</i>
+</p>
+<pre class="prettyprint lang-lua">onGamemodeStart ( resource startedGamemode )</pre>
+<p>Appelé lors du démarrage d'un mode de jeu.
+</p>
+<pre class="prettyprint lang-lua">onGamemodeStop ( resource stoppedGamemode )</pre>
+<p>Appelé quand on arrête un mode de jeu.
+</p>
+<pre class="prettyprint lang-lua">onGamemodeMapStart ( resource startedMap )</pre>
+<p>Appelé quand la map d'un mode de jeu démarre.
+</p>
+<pre class="prettyprint lang-lua">onGamemodeMapStop ( resource stoppedMap )</pre>
+<p>Appelé quand la map de mode de jeu est stoppée.
+</p>
+<h2><span class="mw-headline" id="Param.C3.A8tres_d.27une_Map">Paramètres d'une Map</span></h2>
+<p>Les paramètres suivants <a href="../Settings_system.html" title="Settings system">registry</a> sont appliqué par le "Map Manager" quand une map est démarée&#160;:
+<br /><b>gamespeed</b> [nombre]: la vitesse du jeu sur la map.
+<br /><b>gravity</b> [nombre]: la gravité de la map.
+<br /><b>time</b> [Sous la forme suivante <b>hh:mm</b>]: l'heure du jeu avec cette map.
+<br /><b>weather</b> [nombre]: la météo de la map.
+<br /><b>waveheight</b> [nombre]: la hauteur de l'eau pour cette map.
+<br /><b>locked_time</b> [boolean]: décide si le temps est verouillé ou non.
+<br /><b>minplayers</b> [nombre]: décide du nombre minimum de joueurs pour démarrer la map.
+<br /><b>maxplayers</b> [nombre]: décide du nombre maximum de joueurs que peut accepter la map.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190625165415
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.006 seconds
+Real time usage: 0.007 seconds
+Preprocessor visited node count: 247/1000000
+Preprocessor generated node count: 516/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 - -total
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:6170-0!*!0!!en!*!* and timestamp 20190625165415 and revision id 49974
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=FR/A_propos_des_Map&amp;oldid=49974">https://wiki.multitheftauto.com/index.php?title=FR/A_propos_des_Map&amp;oldid=49974</a>"</div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="A_propos_des_Map.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:FR/A_propos_des_Map&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=FR/A_propos_des_Map&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=FR/A_propos_des_Map&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=FR%2FA+propos+des+Map" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=FR%2FA+propos+des+Map" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/FR/A_propos_des_Map.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/FR/A_propos_des_Map.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=FR/A_propos_des_Map&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=FR/A_propos_des_Map&amp;oldid=49974" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=FR/A_propos_des_Map&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-it"><a href="http://wiki.multitheftauto.com/index.php?title=IT/Map_manager" title="Map manager – italiano" lang="it" hreflang="it">Italiano</a></li>
+													<li class="interlanguage-link interwiki-ru"><a href="http://wiki.multitheftauto.com/index.php?title=RU/Resource:Mapmanager" title="Resource:Mapmanager – русский" lang="ru" hreflang="ru">Русский</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 30 December 2016, at 13:54.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":39});});</script></body></html>

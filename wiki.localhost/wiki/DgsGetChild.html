@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>DgsGetChild - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"DgsGetChild","wgTitle":"DgsGetChild","wgCurRevisionId":53815,"wgRevisionId":53815,"wgArticleId":9534,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Client functions"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"DgsGetChild","wgRelevantArticleId":9534,"wgRequestId":"13fe093d621f7efe392ba55c","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta name='headingclass' content='' data-class='client' data-subcaption='Client-only function'>
+<meta name='lowercasetitle' content=''>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-DgsGetChild rootpage-DgsGetChild skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">DgsGetChild</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
+<!--LC-->
+This function returns one of the child dgs elements of a given parent dgs element. The child dgs element is selected by its index (0 for the first child, 1 for the second and so on).
+</p>
+<h2><span class="mw-headline" id="Syntax">Syntax</span></h2>
+<pre class="prettyprint lang-lua">
+element dgsGetChild ( element dgsParent, int index ) 
+</pre>
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>dgsParent:</b> the dgs element above the one to be returned in the hierarchy.</li>
+<li><b>index:</b> the dgs element's index (1 for the first element, 2 for the second, etc).</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>Returns the requested dgs element if it exists, or <i>false</i> if it doesn't.
+</p>
+<h2><span class="mw-headline" id="Example">Example</span></h2>
+<pre class="prettyprint lang-lua">
+DGS = exports.dgs
+
+parent = DGS:dgsCreateWindow(200,100,400,400,"DGS Parent Window",false)	--Create a window
+child1 = DGS:dgsCreateLabel(10,0,380,20,"",false,parent)	--Create child 1
+child2 = DGS:dgsCreateLabel(10,20,380,20,"",false,parent)	--Create child 2
+child3 = DGS:dgsCreateLabel(10,40,380,20,"",false,parent)	--Create child 3
+child4 = DGS:dgsCreateLabel(10,60,380,20,"",false,parent)	--Create child 4
+
+--Set a random number to a random child.
+setTimer(function()
+	local child = DGS:dgsGetChild(parent,math.random(1,4))
+	if isElement(child) then
+		DGS:dgsSetText(child,math.random(1,100))
+	end
+end,1000,0)
+</pre>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<ul><li><a href="DgsGetPosition.html" title="DgsGetPosition">dgsGetPosition</a></li>
+<li><a href="DgsSetPosition.html" title="DgsSetPosition">dgsSetPosition</a></li>
+<li><a href="DgsSetParent.html" title="DgsSetParent">dgsSetParent</a></li>
+<li><a href="DgsGetParent.html" title="DgsGetParent">dgsGetParent</a></li>
+<li><strong class="selflink">dgsGetChild</strong></li>
+<li><a href="DgsGetChildren.html" title="DgsGetChildren">dgsGetChildren</a></li>
+<li><a href="DgsGetSize.html" title="DgsGetSize">dgsGetSize</a></li>
+<li><a href="DgsSetSize.html" title="DgsSetSize">dgsSetSize</a></li>
+<li><a href="DgsGetType.html" title="DgsGetType">dgsGetType</a></li>
+<li><a href="DgsSetLayer.html" title="DgsSetLayer">dgsSetLayer</a></li>
+<li><a href="DgsGetLayer.html" title="DgsGetLayer">dgsGetLayer</a></li>
+<li><a href="DgsSetCurrentLayerIndex.html" title="DgsSetCurrentLayerIndex">dgsSetCurrentLayerIndex</a></li>
+<li><a href="DgsGetCurrentLayerIndex.html" title="DgsGetCurrentLayerIndex">dgsGetCurrentLayerIndex</a></li>
+<li><a href="DgsGetLayerElements.html" title="DgsGetLayerElements">dgsGetLayerElements</a></li>
+<li><a href="DgsGetProperty.html" title="DgsGetProperty">dgsGetProperty</a></li>
+<li><a href="DgsSetProperty.html" title="DgsSetProperty">dgsSetProperty</a></li>
+<li><a href="DgsSetPropertyInherit.html" title="DgsSetPropertyInherit">dgsSetPropertyInherit</a></li>
+<li><a href="DgsGetProperties.html" title="DgsGetProperties">dgsGetProperties</a></li>
+<li><a href="DgsSetProperties.html" title="DgsSetProperties">dgsSetProperties</a></li>
+<li><a href="DgsGetVisible.html" title="DgsGetVisible">dgsGetVisible</a></li>
+<li><a href="DgsSetVisible.html" title="DgsSetVisible">dgsSetVisible</a></li>
+<li><a href="DgsGetEnabled.html" title="DgsGetEnabled">dgsGetEnabled</a></li>
+<li><a href="DgsSetEnabled.html" title="DgsSetEnabled">dgsSetEnabled</a></li>
+<li><a href="DgsGetSide.html" title="DgsGetSide">dgsGetSide</a></li>
+<li><a href="DgsSetSide.html" title="DgsSetSide">dgsSetSide</a></li>
+<li><a href="DgsGetAlpha.html" title="DgsGetAlpha">dgsGetAlpha</a></li>
+<li><a href="DgsSetAlpha.html" title="DgsSetAlpha">dgsSetAlpha</a></li>
+<li><a href="DgsGetFont.html" title="DgsGetFont">dgsGetFont</a></li>
+<li><a href="DgsSetFont.html" title="DgsSetFont">dgsSetFont</a></li>
+<li><a href="DgsGetText.html" title="DgsGetText">dgsGetText</a></li>
+<li><a href="DgsSetText.html" title="DgsSetText">dgsSetText</a></li>
+<li><a href="DgsCreateFont.html" title="DgsCreateFont">dgsCreateFont</a></li>
+<li><a href="DgsBringToFront.html" title="DgsBringToFront">dgsBringToFront</a></li>
+<li><a href="DgsGetMouseEnterGUI.html" title="DgsGetMouseEnterGUI">dgsGetMouseEnterGUI</a></li>
+<li><a href="DgsGetMouseLeaveGUI.html" title="DgsGetMouseLeaveGUI">dgsGetMouseLeaveGUI</a></li>
+<li><a href="DgsSetSystemFont.html" title="DgsSetSystemFont">dgsSetSystemFont</a></li>
+<li><a href="DgsGetSystemFont.html" title="DgsGetSystemFont">dgsGetSystemFont</a></li>
+<li><a href="DgsGetDxGUINoParent.html" title="DgsGetDxGUINoParent">dgsGetDxGUINoParent</a></li>
+<li><a href="DgsGetDxGUIFromResource.html" title="DgsGetDxGUIFromResource">dgsGetDxGUIFromResource</a></li>
+<li><a href="DgsGetFocusedGUI.html" title="DgsGetFocusedGUI">dgsGetFocusedGUI</a></li>
+<li><a href="DgsGetExportedFunctionName.html" title="DgsGetExportedFunctionName">dgsGetExportedFunctionName</a></li>
+<li><a href="DgsImportFunction.html" title="DgsImportFunction">dgsImportFunction</a></li>
+<li><a href="DgsImportOOPClass.html" title="DgsImportOOPClass">dgsImportOOPClass</a></li>
+<li><a href="DgsSetRenderSetting.html" title="DgsSetRenderSetting">dgsSetRenderSetting</a></li>
+<li><a href="DgsGetRenderSetting.html" title="DgsGetRenderSetting">dgsGetRenderSetting</a></li>
+<li><a href="DgsSimulateClick.html" title="DgsSimulateClick">dgsSimulateClick</a></li>
+<li><a href="DgsGetRootElement.html" title="DgsGetRootElement">dgsGetRootElement</a></li>
+<li><a href="DgsAddMoveHandler.html" title="DgsAddMoveHandler">dgsAddMoveHandler</a></li>
+<li><a href="DgsRemoveMoveHandler.html" title="DgsRemoveMoveHandler">dgsRemoveMoveHandler</a></li>
+<li><a href="DgsIsMoveHandled.html" title="DgsIsMoveHandled">dgsIsMoveHandled</a></li>
+<li><a href="DgsAddSizeHandler.html" title="DgsAddSizeHandler">dgsAddSizeHandler</a></li>
+<li><a href="DgsRemoveSizeHandler.html" title="DgsRemoveSizeHandler">dgsRemoveSizeHandler</a></li>
+<li><a href="DgsIsSizeHandled.html" title="DgsIsSizeHandled">dgsIsSizeHandled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsAttachElemetns&amp;action=edit&amp;redlink=1" class="new" title="DgsAttachElemetns (page does not exist)">dgsAttachElemetns</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsDetachElements&amp;action=edit&amp;redlink=1" class="new" title="DgsDetachElements (page does not exist)">dgsDetachElements</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsElementIsAttached&amp;action=edit&amp;redlink=1" class="new" title="DgsElementIsAttached (page does not exist)">dgsElementIsAttached</a></li></ul>
+<h2><span class="mw-headline" id="Multi_Language_Supports">Multi Language Supports</span></h2>
+<ul><li><a href="DgsTranslationTableExists.html" title="DgsTranslationTableExists">dgsTranslationTableExists</a></li>
+<li><a href="DgsSetTranslationTable.html" title="DgsSetTranslationTable">dgsSetTranslationTable</a></li>
+<li><a href="DgsAttachToTranslation.html" title="DgsAttachToTranslation">dgsAttachToTranslation</a></li>
+<li><a href="DgsDetachFromTranslation.html" title="DgsDetachFromTranslation">dgsDetachFromTranslation</a></li>
+<li><a href="DgsSetAttachTranslation.html" title="DgsSetAttachTranslation">dgsSetAttachTranslation</a></li>
+<li><a href="DgsGetTranslationName.html" title="DgsGetTranslationName">dgsGetTranslationName</a></li></ul>
+<h2><span class="mw-headline" id="Animation">Animation</span></h2>
+<ul><li><a href="DgsAnimTo.html" title="DgsAnimTo">dgsAnimTo</a></li>
+<li><a href="DgsIsAniming.html" title="DgsIsAniming">dgsIsAniming</a></li>
+<li><a href="DgsStopAniming.html" title="DgsStopAniming">dgsStopAniming</a></li>
+<li><a href="DgsMoveTo.html" title="DgsMoveTo">dgsMoveTo</a></li>
+<li><a href="DgsIsMoving.html" title="DgsIsMoving">dgsIsMoving</a></li>
+<li><a href="DgsStopMoving.html" title="DgsStopMoving">dgsStopMoving</a></li>
+<li><a href="DgsSizeTo.html" title="DgsSizeTo">dgsSizeTo</a></li>
+<li><a href="DgsIsSizing.html" title="DgsIsSizing">dgsIsSizing</a></li>
+<li><a href="DgsStopSizing.html" title="DgsStopSizing">dgsStopSizing</a></li>
+<li><a href="DgsAlphaTo.html" title="DgsAlphaTo">dgsAlphaTo</a></li>
+<li><a href="DgsIsAlphaing.html" title="DgsIsAlphaing">dgsIsAlphaing</a></li>
+<li><a href="DgsStopAlphaing.html" title="DgsStopAlphaing">dgsStopAlphaing</a></li>
+<li><a href="DgsAddEasingFunction.html" title="DgsAddEasingFunction">dgsAddEasingFunction</a></li>
+<li><a href="DgsRemoveEasingFunction.html" title="DgsRemoveEasingFunction">dgsRemoveEasingFunction</a></li>
+<li><a href="DgsEasingFunctionExists.html" title="DgsEasingFunctionExists">dgsEasingFunctionExists</a></li></ul>
+<h2><span class="mw-headline" id="3D_Interface">3D Interface</span></h2>
+<ul><li><a href="DgsCreate3DInterface.html" title="DgsCreate3DInterface">dgsCreate3DInterface</a></li>
+<li><a href="Dgs3DInterfaceGetBlendMode.html" title="Dgs3DInterfaceGetBlendMode">dgs3DInterfaceGetBlendMode</a></li>
+<li><a href="Dgs3DInterfaceSetBlendMode.html" title="Dgs3DInterfaceSetBlendMode">dgs3DInterfaceSetBlendMode</a></li>
+<li><a href="Dgs3DInterfaceGetPosition.html" title="Dgs3DInterfaceGetPosition">dgs3DInterfaceGetPosition</a></li>
+<li><a href="Dgs3DInterfaceSetPosition.html" title="Dgs3DInterfaceSetPosition">dgs3DInterfaceSetPosition</a></li>
+<li><a href="Dgs3DInterfaceGetSize.html" title="Dgs3DInterfaceGetSize">dgs3DInterfaceGetSize</a></li>
+<li><a href="Dgs3DInterfaceSetSize.html" title="Dgs3DInterfaceSetSize">dgs3DInterfaceSetSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=Dgs3DInterfaceGetResolution&amp;action=edit&amp;redlink=1" class="new" title="Dgs3DInterfaceGetResolution (page does not exist)">dgs3DInterfaceGetResolution</a></li>
+<li><a href="http://wiki.localhost/index.php?title=Dgs3DInterfaceSetResolution&amp;action=edit&amp;redlink=1" class="new" title="Dgs3DInterfaceSetResolution (page does not exist)">dgs3DInterfaceSetResolution</a></li>
+<li><a href="http://wiki.localhost/index.php?title=Dgs3DInterfaceAttachToElement&amp;action=edit&amp;redlink=1" class="new" title="Dgs3DInterfaceAttachToElement (page does not exist)">dgs3DInterfaceAttachToElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=Dgs3DInterfaceIsAttached&amp;action=edit&amp;redlink=1" class="new" title="Dgs3DInterfaceIsAttached (page does not exist)">dgs3DInterfaceIsAttached</a></li>
+<li><a href="http://wiki.localhost/index.php?title=Dgs3DInterfaceDetachFromElement&amp;action=edit&amp;redlink=1" class="new" title="Dgs3DInterfaceDetachFromElement (page does not exist)">dgs3DInterfaceDetachFromElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=Dgs3DInterfaceSetAttachedOffsets&amp;action=edit&amp;redlink=1" class="new" title="Dgs3DInterfaceSetAttachedOffsets (page does not exist)">dgs3DInterfaceSetAttachedOffsets</a></li>
+<li><a href="http://wiki.localhost/index.php?title=Dgs3DInterfaceGetAttachedOffsets&amp;action=edit&amp;redlink=1" class="new" title="Dgs3DInterfaceGetAttachedOffsets (page does not exist)">dgs3DInterfaceGetAttachedOffsets</a></li>
+<li><a href="http://wiki.localhost/index.php?title=Dgs3DInterfaceSetRotation&amp;action=edit&amp;redlink=1" class="new" title="Dgs3DInterfaceSetRotation (page does not exist)">dgs3DInterfaceSetRotation</a></li>
+<li><a href="http://wiki.localhost/index.php?title=Dgs3DInterfaceGetRotation&amp;action=edit&amp;redlink=1" class="new" title="Dgs3DInterfaceGetRotation (page does not exist)">dgs3DInterfaceGetRotation</a></li></ul>
+<h2><span class="mw-headline" id="3D_Text">3D Text</span></h2>
+<ul><li><a href="DgsCreate3DText.html" title="DgsCreate3DText">dgsCreate3DText</a></li>
+<li><a href="Dgs3DTextGetDimension.html" title="Dgs3DTextGetDimension">dgs3DTextGetDimension</a></li>
+<li><a href="Dgs3DTextSetDimension.html" title="Dgs3DTextSetDimension">dgs3DTextSetDimension</a></li>
+<li><a href="Dgs3DTextGetInterior.html" title="Dgs3DTextGetInterior">dgs3DTextGetInterior</a></li>
+<li><a href="Dgs3DTextSetInterior.html" title="Dgs3DTextSetInterior">dgs3DTextSetInterior</a></li>
+<li><a href="Dgs3DTextAttachToElement.html" title="Dgs3DTextAttachToElement">dgs3DTextAttachToElement</a></li>
+<li><a href="Dgs3DTextIsAttached.html" title="Dgs3DTextIsAttached">dgs3DTextIsAttached</a></li>
+<li><a href="Dgs3DTextDetachFromElement.html" title="Dgs3DTextDetachFromElement">dgs3DTextDetachFromElement</a></li>
+<li><a href="Dgs3DTextSetAttachedOffsets.html" title="Dgs3DTextSetAttachedOffsets">dgs3DTextSetAttachedOffsets</a></li>
+<li><a href="Dgs3DTextGetAttachedOffsets.html" title="Dgs3DTextGetAttachedOffsets">dgs3DTextGetAttachedOffsets</a></li></ul>
+<h2><span class="mw-headline" id="Arrow_List">Arrow List</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=DgsCreateArrowList&amp;action=edit&amp;redlink=1" class="new" title="DgsCreateArrowList (page does not exist)">dgsCreateArrowList</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsArrowListAddItem&amp;action=edit&amp;redlink=1" class="new" title="DgsArrowListAddItem (page does not exist)">dgsArrowListAddItem</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsArrowListRemoveItem&amp;action=edit&amp;redlink=1" class="new" title="DgsArrowListRemoveItem (page does not exist)">dgsArrowListRemoveItem</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsArrowListSetItemText&amp;action=edit&amp;redlink=1" class="new" title="DgsArrowListSetItemText (page does not exist)">dgsArrowListSetItemText</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsArrowListGetItemText&amp;action=edit&amp;redlink=1" class="new" title="DgsArrowListGetItemText (page does not exist)">dgsArrowListGetItemText</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsArrowListSetItemValue&amp;action=edit&amp;redlink=1" class="new" title="DgsArrowListSetItemValue (page does not exist)">dgsArrowListSetItemValue</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsArrowListGetItemValue&amp;action=edit&amp;redlink=1" class="new" title="DgsArrowListGetItemValue (page does not exist)">dgsArrowListGetItemValue</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsArrowListSetItemRange&amp;action=edit&amp;redlink=1" class="new" title="DgsArrowListSetItemRange (page does not exist)">dgsArrowListSetItemRange</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsArrowListGetItemRange&amp;action=edit&amp;redlink=1" class="new" title="DgsArrowListGetItemRange (page does not exist)">dgsArrowListGetItemRange</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsArrowListSetItemTranslationTable&amp;action=edit&amp;redlink=1" class="new" title="DgsArrowListSetItemTranslationTable (page does not exist)">dgsArrowListSetItemTranslationTable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsArrowListGetItemTranslationTable&amp;action=edit&amp;redlink=1" class="new" title="DgsArrowListGetItemTranslationTable (page does not exist)">dgsArrowListGetItemTranslationTable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsArrowListSetItemStep&amp;action=edit&amp;redlink=1" class="new" title="DgsArrowListSetItemStep (page does not exist)">dgsArrowListSetItemStep</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsArrowListGetItemStep&amp;action=edit&amp;redlink=1" class="new" title="DgsArrowListGetItemStep (page does not exist)">dgsArrowListGetItemStep</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsArrowListGetItemTranslatedValue&amp;action=edit&amp;redlink=1" class="new" title="DgsArrowListGetItemTranslatedValue (page does not exist)">dgsArrowListGetItemTranslatedValue</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsArrowListClear&amp;action=edit&amp;redlink=1" class="new" title="DgsArrowListClear (page does not exist)">dgsArrowListClear</a></li></ul>
+<h2><span class="mw-headline" id="Browser">Browser</span></h2>
+<ul><li><a href="DgsCreateBrowser.html" title="DgsCreateBrowser">dgsCreateBrowser</a></li></ul>
+<h2><span class="mw-headline" id="Button">Button</span></h2>
+<ul><li><a href="DgsCreateButton.html" title="DgsCreateButton">dgsCreateButton</a></li></ul>
+<h2><span class="mw-headline" id="Check_Box">Check Box</span></h2>
+<ul><li><a href="DgsCreateCheckBox.html" title="DgsCreateCheckBox">dgsCreateCheckBox</a></li>
+<li><a href="DgsCheckBoxGetSelected.html" title="DgsCheckBoxGetSelected">dgsCheckBoxGetSelected</a></li>
+<li><a href="DgsCheckBoxSetSelected.html" title="DgsCheckBoxSetSelected">dgsCheckBoxSetSelected</a></li></ul>
+<h2><span class="mw-headline" id="Combo_Box">Combo Box</span></h2>
+<ul><li><a href="DgsCreateComboBox.html" title="DgsCreateComboBox">dgsCreateComboBox</a></li>
+<li><a href="DgsComboBoxAddItem.html" title="DgsComboBoxAddItem">dgsComboBoxAddItem</a></li>
+<li><a href="DgsComboBoxRemoveItem.html" title="DgsComboBoxRemoveItem">dgsComboBoxRemoveItem</a></li>
+<li><a href="DgsComboBoxSetItemText.html" title="DgsComboBoxSetItemText">dgsComboBoxSetItemText</a></li>
+<li><a href="DgsComboBoxGetItemText.html" title="DgsComboBoxGetItemText">dgsComboBoxGetItemText</a></li>
+<li><a href="DgsComboBoxGetItemCount.html" title="DgsComboBoxGetItemCount">dgsComboBoxGetItemCount</a></li>
+<li><a href="DgsComboBoxClear.html" title="DgsComboBoxClear">dgsComboBoxClear</a></li>
+<li><a href="DgsComboBoxSetSelectedItem.html" title="DgsComboBoxSetSelectedItem">dgsComboBoxSetSelectedItem</a></li>
+<li><a href="DgsComboBoxGetSelectedItem.html" title="DgsComboBoxGetSelectedItem">dgsComboBoxGetSelectedItem</a></li>
+<li><a href="DgsComboBoxSetItemColor.html" title="DgsComboBoxSetItemColor">dgsComboBoxSetItemColor</a></li>
+<li><a href="DgsComboBoxGetItemColor.html" title="DgsComboBoxGetItemColor">dgsComboBoxGetItemColor</a></li>
+<li><a href="DgsComboBoxGetState.html" title="DgsComboBoxGetState">dgsComboBoxGetState</a></li>
+<li><a href="DgsComboBoxSetState.html" title="DgsComboBoxSetState">dgsComboBoxSetState</a></li>
+<li><a href="DgsComboBoxGetBoxHeight.html" title="DgsComboBoxGetBoxHeight">dgsComboBoxGetBoxHeight</a></li>
+<li><a href="DgsComboBoxSetBoxHeight.html" title="DgsComboBoxSetBoxHeight">dgsComboBoxSetBoxHeight</a></li>
+<li><a href="DgsComboBoxGetScrollBar.html" title="DgsComboBoxGetScrollBar">dgsComboBoxGetScrollBar</a></li>
+<li><a href="DgsComboBoxSetScrollPosition.html" title="DgsComboBoxSetScrollPosition">dgsComboBoxSetScrollPosition</a></li>
+<li><a href="DgsComboBoxGetScrollPosition.html" title="DgsComboBoxGetScrollPosition">dgsComboBoxGetScrollPosition</a></li>
+<li><a href="DgsComboBoxSetCaptionText.html" title="DgsComboBoxSetCaptionText">dgsComboBoxSetCaptionText</a></li>
+<li><a href="DgsComboBoxGetCaptionText.html" title="DgsComboBoxGetCaptionText">dgsComboBoxGetCaptionText</a></li></ul>
+<h2><span class="mw-headline" id="Edit">Edit</span></h2>
+<ul><li><a href="DgsCreateEdit.html" title="DgsCreateEdit">dgsCreateEdit</a></li>
+<li><a href="DgsEditMoveCaret.html" title="DgsEditMoveCaret">dgsEditMoveCaret</a></li>
+<li><a href="DgsEditGetCaretPosition.html" title="DgsEditGetCaretPosition">dgsEditGetCaretPosition</a></li>
+<li><a href="DgsEditSetCaretPosition.html" title="DgsEditSetCaretPosition">dgsEditSetCaretPosition</a></li>
+<li><a href="DgsEditSetCaretStyle.html" title="DgsEditSetCaretStyle">dgsEditSetCaretStyle</a></li>
+<li><a href="DgsEditGetCaretStyle.html" title="DgsEditGetCaretStyle">dgsEditGetCaretStyle</a></li>
+<li><a href="DgsEditSetWhiteList.html" title="DgsEditSetWhiteList">dgsEditSetWhiteList</a></li>
+<li><a href="DgsEditGetMaxLength.html" title="DgsEditGetMaxLength">dgsEditGetMaxLength</a></li>
+<li><a href="DgsEditSetMaxLength.html" title="DgsEditSetMaxLength">dgsEditSetMaxLength</a></li>
+<li><a href="DgsEditSetReadOnly.html" title="DgsEditSetReadOnly">dgsEditSetReadOnly</a></li>
+<li><a href="DgsEditGetReadOnly.html" title="DgsEditGetReadOnly">dgsEditGetReadOnly</a></li>
+<li><a href="DgsEditSetMasked.html" title="DgsEditSetMasked">dgsEditSetMasked</a></li>
+<li><a href="DgsEditGetMasked.html" title="DgsEditGetMasked">dgsEditGetMasked</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsEditSetUnderlined&amp;action=edit&amp;redlink=1" class="new" title="DgsEditSetUnderlined (page does not exist)">dgsEditSetUnderlined</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsEditGetUnderlined&amp;action=edit&amp;redlink=1" class="new" title="DgsEditGetUnderlined (page does not exist)">dgsEditGetUnderlined</a></li>
+<li><a href="DgsEditSetHorizontalAlign.html" title="DgsEditSetHorizontalAlign">dgsEditSetHorizontalAlign</a></li>
+<li><a href="DgsEditSetVerticalAlign.html" title="DgsEditSetVerticalAlign">dgsEditSetVerticalAlign</a></li>
+<li><a href="DgsEditGetHorizontalAlign.html" title="DgsEditGetHorizontalAlign">dgsEditGetHorizontalAlign</a></li>
+<li><a href="DgsEditGetVerticalAlign.html" title="DgsEditGetVerticalAlign">dgsEditGetVerticalAlign</a></li>
+<li><a href="DgsEditSetAlignment.html" title="DgsEditSetAlignment">dgsEditSetAlignment</a></li>
+<li><a href="DgsEditGetAlignment.html" title="DgsEditGetAlignment">dgsEditGetAlignment</a></li>
+<li><a href="DgsEditInsertText.html" title="DgsEditInsertText">dgsEditInsertText</a></li>
+<li><a href="DgsEditDeleteText.html" title="DgsEditDeleteText">dgsEditDeleteText</a></li>
+<li><a href="DgsEditGetPartOfText.html" title="DgsEditGetPartOfText">dgsEditGetPartOfText</a></li>
+<li><a href="DgsEditClearText.html" title="DgsEditClearText">dgsEditClearText</a></li>
+<li><a href="DgsEditReplaceText.html" title="DgsEditReplaceText">dgsEditReplaceText</a></li>
+<li><a href="DgsEditSetTypingSound.html" title="DgsEditSetTypingSound">dgsEditSetTypingSound</a></li>
+<li><a href="DgsEditGetTypingSound.html" title="DgsEditGetTypingSound">dgsEditGetTypingSound</a></li>
+<li><a href="DgsEditSetPlaceHolder.html" title="DgsEditSetPlaceHolder">dgsEditSetPlaceHolder</a></li>
+<li><a href="DgsEditGetPlaceHolder.html" title="DgsEditGetPlaceHolder">dgsEditGetPlaceHolder</a></li></ul>
+<h2><span class="mw-headline" id="Ellipse_Detect_Area">Ellipse Detect Area</span></h2>
+<ul><li><a href="DgsCreateEDA.html" title="DgsCreateEDA">dgsCreateEDA</a></li>
+<li><a href="DgsEDASetDebugModeEnabled.html" title="DgsEDASetDebugModeEnabled">dgsEDASetDebugModeEnabled</a></li>
+<li><a href="DgsEDAGetDebugModeEnabled.html" title="DgsEDAGetDebugModeEnabled">dgsEDAGetDebugModeEnabled</a></li></ul>
+<h2><span class="mw-headline" id="Detect_Area">Detect Area</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=DgsCreateDetectArea&amp;action=edit&amp;redlink=1" class="new" title="DgsCreateDetectArea (page does not exist)">dgsCreateDetectArea</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsDetectAreaSetFunction&amp;action=edit&amp;redlink=1" class="new" title="DgsDetectAreaSetFunction (page does not exist)">dgsDetectAreaSetFunction</a></li></ul>
+<h2><span class="mw-headline" id="Grid_List">Grid List</span></h2>
+<ul><li><a href="DgsCreateGridList.html" title="DgsCreateGridList">dgsCreateGridList</a></li>
+<li><a href="DgsGridListGetScrollBar.html" title="DgsGridListGetScrollBar">dgsGridListGetScrollBar</a></li>
+<li><a href="DgsGridListSetScrollPosition.html" title="DgsGridListSetScrollPosition">dgsGridListSetScrollPosition</a></li>
+<li><a href="DgsGridListGetScrollPosition.html" title="DgsGridListGetScrollPosition">dgsGridListGetScrollPosition</a></li>
+<li><a href="DgsGridListResetScrollBarPosition.html" title="DgsGridListResetScrollBarPosition">dgsGridListResetScrollBarPosition</a></li>
+<li><a href="DgsGridListSetColumnRelative.html" title="DgsGridListSetColumnRelative">dgsGridListSetColumnRelative</a></li>
+<li><a href="DgsGridListGetColumnRelative.html" title="DgsGridListGetColumnRelative">dgsGridListGetColumnRelative</a></li>
+<li><a href="DgsGridListAddColumn.html" title="DgsGridListAddColumn">dgsGridListAddColumn</a></li>
+<li><a href="DgsGridListGetColumnCount.html" title="DgsGridListGetColumnCount">dgsGridListGetColumnCount</a></li>
+<li><a href="DgsGridListRemoveColumn.html" title="DgsGridListRemoveColumn">dgsGridListRemoveColumn</a></li>
+<li><a href="DgsGridListGetColumnAllWidth.html" title="DgsGridListGetColumnAllWidth">dgsGridListGetColumnAllWidth</a></li>
+<li><a href="DgsGridListGetColumnWidth.html" title="DgsGridListGetColumnWidth">dgsGridListGetColumnWidth</a></li>
+<li><a href="DgsGridListSetColumnWidth.html" title="DgsGridListSetColumnWidth">dgsGridListSetColumnWidth</a></li>
+<li><a href="DgsGridListGetColumnTitle.html" title="DgsGridListGetColumnTitle">dgsGridListGetColumnTitle</a></li>
+<li><a href="DgsGridListSetColumnTitle.html" title="DgsGridListSetColumnTitle">dgsGridListSetColumnTitle</a></li>
+<li><a href="DgsGridListGetColumnFont.html" title="DgsGridListGetColumnFont">dgsGridListGetColumnFont</a></li>
+<li><a href="DgsGridListSetColumnFont.html" title="DgsGridListSetColumnFont">dgsGridListSetColumnFont</a></li>
+<li><a href="DgsGridListAddRow.html" title="DgsGridListAddRow">dgsGridListAddRow</a></li>
+<li><a href="DgsGridListRemoveRow.html" title="DgsGridListRemoveRow">dgsGridListRemoveRow</a></li>
+<li><a href="DgsGridListClearRow.html" title="DgsGridListClearRow">dgsGridListClearRow</a></li>
+<li><a href="DgsGridListClearColumn.html" title="DgsGridListClearColumn">dgsGridListClearColumn</a></li>
+<li><a href="DgsGridListClear.html" title="DgsGridListClear">dgsGridListClear</a></li>
+<li><a href="DgsGridListGetRowCount.html" title="DgsGridListGetRowCount">dgsGridListGetRowCount</a></li>
+<li><a href="DgsGridListSetItemText.html" title="DgsGridListSetItemText">dgsGridListSetItemText</a></li>
+<li><a href="DgsGridListGetItemText.html" title="DgsGridListGetItemText">dgsGridListGetItemText</a></li>
+<li><a href="DgsGridListGetSelectedItem.html" title="DgsGridListGetSelectedItem">dgsGridListGetSelectedItem</a></li>
+<li><a href="DgsGridListSetSelectedItem.html" title="DgsGridListSetSelectedItem">dgsGridListSetSelectedItem</a></li>
+<li><a href="DgsGridListSetItemColor.html" title="DgsGridListSetItemColor">dgsGridListSetItemColor</a></li>
+<li><a href="DgsGridListGetItemColor.html" title="DgsGridListGetItemColor">dgsGridListGetItemColor</a></li>
+<li><a href="DgsGridListSetItemData.html" title="DgsGridListSetItemData">dgsGridListSetItemData</a></li>
+<li><a href="DgsGridListGetItemData.html" title="DgsGridListGetItemData">dgsGridListGetItemData</a></li>
+<li><a href="DgsGridListSetItemImage.html" title="DgsGridListSetItemImage">dgsGridListSetItemImage</a></li>
+<li><a href="DgsGridListGetItemImage.html" title="DgsGridListGetItemImage">dgsGridListGetItemImage</a></li>
+<li><a href="DgsGridListRemoveItemImage.html" title="DgsGridListRemoveItemImage">dgsGridListRemoveItemImage</a></li>
+<li><a href="DgsGridListGetRowBackGroundImage.html" title="DgsGridListGetRowBackGroundImage">dgsGridListGetRowBackGroundImage</a></li>
+<li><a href="DgsGridListSetRowBackGroundImage.html" title="DgsGridListSetRowBackGroundImage">dgsGridListSetRowBackGroundImage</a></li>
+<li><a href="DgsGridListSetRowBackGroundColor.html" title="DgsGridListSetRowBackGroundColor">dgsGridListSetRowBackGroundColor</a></li>
+<li><a href="DgsGridListGetRowBackGroundColor.html" title="DgsGridListGetRowBackGroundColor">dgsGridListGetRowBackGroundColor</a></li>
+<li><a href="DgsGridListSetRowAsSection.html" title="DgsGridListSetRowAsSection">dgsGridListSetRowAsSection</a></li>
+<li><a href="DgsGridListSelectItem.html" title="DgsGridListSelectItem">dgsGridListSelectItem</a></li>
+<li><a href="DgsGridListItemIsSelected.html" title="DgsGridListItemIsSelected">dgsGridListItemIsSelected</a></li>
+<li><a href="DgsGridListSetMultiSelectionEnabled.html" title="DgsGridListSetMultiSelectionEnabled">dgsGridListSetMultiSelectionEnabled</a></li>
+<li><a href="DgsGridListGetMultiSelectionEnabled.html" title="DgsGridListGetMultiSelectionEnabled">dgsGridListGetMultiSelectionEnabled</a></li>
+<li><a href="DgsGridListSetSelectionMode.html" title="DgsGridListSetSelectionMode">dgsGridListSetSelectionMode</a></li>
+<li><a href="DgsGridListGetSelectionMode.html" title="DgsGridListGetSelectionMode">dgsGridListGetSelectionMode</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsGridListGetSelectedItems&amp;action=edit&amp;redlink=1" class="new" title="DgsGridListGetSelectedItems (page does not exist)">dgsGridListGetSelectedItems</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsGridListSetSelectedItems&amp;action=edit&amp;redlink=1" class="new" title="DgsGridListSetSelectedItems (page does not exist)">dgsGridListSetSelectedItems</a></li>
+<li><a href="DgsGridListSetSortFunction.html" title="DgsGridListSetSortFunction">dgsGridListSetSortFunction</a></li>
+<li><a href="DgsGridListSetAutoSortEnabled.html" title="DgsGridListSetAutoSortEnabled">dgsGridListSetAutoSortEnabled</a></li>
+<li><a href="DgsGridListGetAutoSortEnabled.html" title="DgsGridListGetAutoSortEnabled">dgsGridListGetAutoSortEnabled</a></li>
+<li><a href="DgsGridListSetSortEnabled.html" title="DgsGridListSetSortEnabled">dgsGridListSetSortEnabled</a></li>
+<li><a href="DgsGridListGetSortEnabled.html" title="DgsGridListGetSortEnabled">dgsGridListGetSortEnabled</a></li>
+<li><a href="DgsGridListSetSortColumn.html" title="DgsGridListSetSortColumn">dgsGridListSetSortColumn</a></li>
+<li><a href="DgsGridListGetSortColumn.html" title="DgsGridListGetSortColumn">dgsGridListGetSortColumn</a></li>
+<li><a href="DgsGridListGetEnterColumn.html" title="DgsGridListGetEnterColumn">dgsGridListGetEnterColumn</a></li>
+<li><a href="DgsGridListSort.html" title="DgsGridListSort">dgsGridListSort</a></li>
+<li><a href="DgsGridListSetNavigationEnabled.html" title="DgsGridListSetNavigationEnabled">dgsGridListSetNavigationEnabled</a></li>
+<li><a href="DgsGridListGetNavigationEnabled.html" title="DgsGridListGetNavigationEnabled">dgsGridListGetNavigationEnabled</a></li></ul>
+<h2><span class="mw-headline" id="Image">Image</span></h2>
+<ul><li><a href="DgsCreateImage.html" title="DgsCreateImage">dgsCreateImage</a></li>
+<li><a href="DgsImageSetImage.html" title="DgsImageSetImage">dgsImageSetImage</a></li>
+<li><a href="DgsImageGetImage.html" title="DgsImageGetImage">dgsImageGetImage</a></li>
+<li><a href="DgsImageSetUVSize.html" title="DgsImageSetUVSize">dgsImageSetUVSize</a></li>
+<li><a href="DgsImageGetUVSize.html" title="DgsImageGetUVSize">dgsImageGetUVSize</a></li>
+<li><a href="DgsImageSetUVPosition.html" title="DgsImageSetUVPosition">dgsImageSetUVPosition</a></li>
+<li><a href="DgsImageGetUVPosition.html" title="DgsImageGetUVPosition">dgsImageGetUVPosition</a></li></ul>
+<h2><span class="mw-headline" id="Memo">Memo</span></h2>
+<ul><li><a href="DgsCreateMemo.html" title="DgsCreateMemo">dgsCreateMemo</a></li>
+<li><a href="DgsMemoMoveCaret.html" title="DgsMemoMoveCaret">dgsMemoMoveCaret</a></li>
+<li><a href="DgsMemoSeekPosition.html" title="DgsMemoSeekPosition">dgsMemoSeekPosition</a></li>
+<li><a href="DgsMemoGetScrollBar.html" title="DgsMemoGetScrollBar">dgsMemoGetScrollBar</a></li>
+<li><a href="DgsMemoSetScrollPosition.html" title="DgsMemoSetScrollPosition">dgsMemoSetScrollPosition</a></li>
+<li><a href="DgsMemoGetScrollPosition.html" title="DgsMemoGetScrollPosition">dgsMemoGetScrollPosition</a></li>
+<li><a href="DgsMemoSetCaretPosition.html" title="DgsMemoSetCaretPosition">dgsMemoSetCaretPosition</a></li>
+<li><a href="DgsMemoGetCaretPosition.html" title="DgsMemoGetCaretPosition">dgsMemoGetCaretPosition</a></li>
+<li><a href="DgsMemoSetCaretStyle.html" title="DgsMemoSetCaretStyle">dgsMemoSetCaretStyle</a></li>
+<li><a href="DgsMemoGetCaretStyle.html" title="DgsMemoGetCaretStyle">dgsMemoGetCaretStyle</a></li>
+<li><a href="DgsMemoSetReadOnly.html" title="DgsMemoSetReadOnly">dgsMemoSetReadOnly</a></li>
+<li><a href="DgsMemoGetReadOnly.html" title="DgsMemoGetReadOnly">dgsMemoGetReadOnly</a></li>
+<li><a href="DgsMemoGetPartOfText.html" title="DgsMemoGetPartOfText">dgsMemoGetPartOfText</a></li>
+<li><a href="DgsMemoDeleteText.html" title="DgsMemoDeleteText">dgsMemoDeleteText</a></li>
+<li><a href="DgsMemoInsertText.html" title="DgsMemoInsertText">dgsMemoInsertText</a></li>
+<li><a href="DgsMemoClearText.html" title="DgsMemoClearText">dgsMemoClearText</a></li>
+<li><a href="DgsMemoSetTypingSound.html" title="DgsMemoSetTypingSound">dgsMemoSetTypingSound</a></li>
+<li><a href="DgsMemoGetTypingSound.html" title="DgsMemoGetTypingSound">dgsMemoGetTypingSound</a></li>
+<li><a href="DgsMemoGetLineCount.html" title="DgsMemoGetLineCount">dgsMemoGetLineCount</a></li>
+<li><a href="DgsMemoSetWordWarpState.html" title="DgsMemoSetWordWarpState">dgsMemoSetWordWarpState</a></li>
+<li><a href="DgsMemoGetWordWarpState.html" title="DgsMemoGetWordWarpState">dgsMemoGetWordWarpState</a></li>
+<li><a href="DgsMemoSetScrollBarState.html" title="DgsMemoSetScrollBarState">dgsMemoSetScrollBarState</a></li>
+<li><a href="DgsMemoGetScrollBarState.html" title="DgsMemoGetScrollBarState">dgsMemoGetScrollBarState</a></li></ul>
+<h2><span class="mw-headline" id="Label">Label</span></h2>
+<ul><li><a href="DgsCreateLabel.html" title="DgsCreateLabel">dgsCreateLabel</a></li>
+<li><a href="DgsLabelSetColor.html" title="DgsLabelSetColor">dgsLabelSetColor</a></li>
+<li><a href="DgsLabelGetColor.html" title="DgsLabelGetColor">dgsLabelGetColor</a></li>
+<li><a href="DgsLabelSetHorizontalAlign.html" title="DgsLabelSetHorizontalAlign">dgsLabelSetHorizontalAlign</a></li>
+<li><a href="DgsLabelGetHorizontalAlign.html" title="DgsLabelGetHorizontalAlign">dgsLabelGetHorizontalAlign</a></li>
+<li><a href="DgsLabelSetVerticalAlign.html" title="DgsLabelSetVerticalAlign">dgsLabelSetVerticalAlign</a></li>
+<li><a href="DgsLabelGetVerticalAlign.html" title="DgsLabelGetVerticalAlign">dgsLabelGetVerticalAlign</a></li></ul>
+<h2><span class="mw-headline" id="Progress_Bar">Progress Bar</span></h2>
+<ul><li><a href="DgsCreateProgressBar.html" title="DgsCreateProgressBar">dgsCreateProgressBar</a></li>
+<li><a href="DgsProgressBarGetProgress.html" title="DgsProgressBarGetProgress">dgsProgressBarGetProgress</a></li>
+<li><a href="DgsProgressBarSetProgress.html" title="DgsProgressBarSetProgress">dgsProgressBarSetProgress</a></li>
+<li><a href="DgsProgressBarGetMode.html" title="DgsProgressBarGetMode">dgsProgressBarGetMode</a></li>
+<li><a href="DgsProgressBarSetMode.html" title="DgsProgressBarSetMode">dgsProgressBarSetMode</a></li></ul>
+<h2><span class="mw-headline" id="Radio_Button">Radio Button</span></h2>
+<ul><li><a href="DgsCreateRadioButton.html" title="DgsCreateRadioButton">dgsCreateRadioButton</a></li>
+<li><a href="DgsRadioButtonGetSelected.html" title="DgsRadioButtonGetSelected">dgsRadioButtonGetSelected</a></li>
+<li><a href="DgsRadioButtonSetSelected.html" title="DgsRadioButtonSetSelected">dgsRadioButtonSetSelected</a></li></ul>
+<h2><span class="mw-headline" id="Scroll_Bar">Scroll Bar</span></h2>
+<ul><li><a href="DgsCreateScrollBar.html" title="DgsCreateScrollBar">dgsCreateScrollBar</a></li>
+<li><a href="DgsScrollBarSetScrollPosition.html" title="DgsScrollBarSetScrollPosition">dgsScrollBarSetScrollPosition</a></li>
+<li><a href="DgsScrollBarGetScrollPosition.html" title="DgsScrollBarGetScrollPosition">dgsScrollBarGetScrollPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsScrollBarSetScrollSize&amp;action=edit&amp;redlink=1" class="new" title="DgsScrollBarSetScrollSize (page does not exist)">dgsScrollBarSetScrollSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsScrollBarGetScrollSize&amp;action=edit&amp;redlink=1" class="new" title="DgsScrollBarGetScrollSize (page does not exist)">dgsScrollBarGetScrollSize</a></li>
+<li><a href="DgsScrollBarSetLocked.html" title="DgsScrollBarSetLocked">dgsScrollBarSetLocked</a></li>
+<li><a href="DgsScrollBarGetLocked.html" title="DgsScrollBarGetLocked">dgsScrollBarGetLocked</a></li></ul>
+<h2><span class="mw-headline" id="Scroll_Pane">Scroll Pane</span></h2>
+<ul><li><a href="DgsCreateScrollPane.html" title="DgsCreateScrollPane">dgsCreateScrollPane</a></li>
+<li><a href="DgsScrollPaneGetScrollBar.html" title="DgsScrollPaneGetScrollBar">dgsScrollPaneGetScrollBar</a></li>
+<li><a href="DgsScrollPaneSetScrollPosition.html" title="DgsScrollPaneSetScrollPosition">dgsScrollPaneSetScrollPosition</a></li>
+<li><a href="DgsScrollPaneGetScrollPosition.html" title="DgsScrollPaneGetScrollPosition">dgsScrollPaneGetScrollPosition</a></li>
+<li><a href="DgsScrollPaneSetScrollBarState.html" title="DgsScrollPaneSetScrollBarState">dgsScrollPaneSetScrollBarState</a></li>
+<li><a href="DgsScrollPaneGetScrollBarState.html" title="DgsScrollPaneGetScrollBarState">dgsScrollPaneGetScrollBarState</a></li></ul>
+<h2><span class="mw-headline" id="Switch_Button">Switch Button</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=DgsCreateSwitchButton&amp;action=edit&amp;redlink=1" class="new" title="DgsCreateSwitchButton (page does not exist)">dgsCreateSwitchButton</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsSwitchButtonGetState&amp;action=edit&amp;redlink=1" class="new" title="DgsSwitchButtonGetState (page does not exist)">dgsSwitchButtonGetState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsSwitchButtonSetState&amp;action=edit&amp;redlink=1" class="new" title="DgsSwitchButtonSetState (page does not exist)">dgsSwitchButtonSetState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsSwitchButtonSetText&amp;action=edit&amp;redlink=1" class="new" title="DgsSwitchButtonSetText (page does not exist)">dgsSwitchButtonSetText</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsSwitchButtonGetText&amp;action=edit&amp;redlink=1" class="new" title="DgsSwitchButtonGetText (page does not exist)">dgsSwitchButtonGetText</a></li></ul>
+<h2><span class="mw-headline" id="Tab_Panel">Tab Panel</span></h2>
+<ul><li><a href="DgsCreateTabPanel.html" title="DgsCreateTabPanel">dgsCreateTabPanel</a></li>
+<li><a href="DgsCreateTab.html" title="DgsCreateTab">dgsCreateTab</a></li>
+<li><a href="DgsGetSelectedTab.html" title="DgsGetSelectedTab">dgsGetSelectedTab</a></li>
+<li><a href="DgsSetSelectedTab.html" title="DgsSetSelectedTab">dgsSetSelectedTab</a></li>
+<li><a href="DgsTabPanelGetTabFromID.html" title="DgsTabPanelGetTabFromID">dgsTabPanelGetTabFromID</a></li>
+<li><a href="DgsTabPanelMoveTab.html" title="DgsTabPanelMoveTab">dgsTabPanelMoveTab</a></li>
+<li><a href="DgsTabPanelGetTabID.html" title="DgsTabPanelGetTabID">dgsTabPanelGetTabID</a></li>
+<li><a href="DgsDeleteTab.html" title="DgsDeleteTab">dgsDeleteTab</a></li></ul>
+<h2><span class="mw-headline" id="Window">Window</span></h2>
+<ul><li><a href="DgsCreateWindow.html" title="DgsCreateWindow">dgsCreateWindow</a></li>
+<li><a href="DgsWindowSetSizable.html" title="DgsWindowSetSizable">dgsWindowSetSizable</a></li>
+<li><a href="DgsWindowSetMovable.html" title="DgsWindowSetMovable">dgsWindowSetMovable</a></li>
+<li><a href="DgsCloseWindow.html" title="DgsCloseWindow">dgsCloseWindow</a></li>
+<li><a href="DgsWindowSetCloseButtonEnabled.html" title="DgsWindowSetCloseButtonEnabled">dgsWindowSetCloseButtonEnabled</a></li>
+<li><a href="DgsWindowGetCloseButtonEnabled.html" title="DgsWindowGetCloseButtonEnabled">dgsWindowGetCloseButtonEnabled</a></li>
+<li><a href="DgsWindowGetCloseButton.html" title="DgsWindowGetCloseButton">dgsWindowGetCloseButton</a></li></ul>
+<h2><span class="mw-headline" id="Plugin">Plugin</span></h2>
+<h3><span class="mw-headline" id="Media_Browser">Media Browser</span></h3>
+<ul><li><a href="DgsCreateMediaBrowser.html" title="DgsCreateMediaBrowser">dgsCreateMediaBrowser</a></li>
+<li><a href="DgsMediaLoadMedia.html" title="DgsMediaLoadMedia">dgsMediaLoadMedia</a></li>
+<li><a href="DgsMediaGetMediaPath.html" title="DgsMediaGetMediaPath">dgsMediaGetMediaPath</a></li>
+<li><a href="DgsMediaClearMedia.html" title="DgsMediaClearMedia">dgsMediaClearMedia</a></li>
+<li><a href="DgsMediaIsStreamMedia.html" title="DgsMediaIsStreamMedia">dgsMediaIsStreamMedia</a></li>
+<li><a href="DgsMediaPlay.html" title="DgsMediaPlay">dgsMediaPlay</a></li>
+<li><a href="DgsMediaPause.html" title="DgsMediaPause">dgsMediaPause</a></li>
+<li><a href="DgsMediaStop.html" title="DgsMediaStop">dgsMediaStop</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsMediaSetSize&amp;action=edit&amp;redlink=1" class="new" title="DgsMediaSetSize (page does not exist)">dgsMediaSetSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsMediaSetFilled&amp;action=edit&amp;redlink=1" class="new" title="DgsMediaSetFilled (page does not exist)">dgsMediaSetFilled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsMediaGetFilled&amp;action=edit&amp;redlink=1" class="new" title="DgsMediaGetFilled (page does not exist)">dgsMediaGetFilled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsMediaSetFullScreen&amp;action=edit&amp;redlink=1" class="new" title="DgsMediaSetFullScreen (page does not exist)">dgsMediaSetFullScreen</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsMediaGetDuration&amp;action=edit&amp;redlink=1" class="new" title="DgsMediaGetDuration (page does not exist)">dgsMediaGetDuration</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsMediaGetCurrentPosition&amp;action=edit&amp;redlink=1" class="new" title="DgsMediaGetCurrentPosition (page does not exist)">dgsMediaGetCurrentPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DgsMediaSetCurrentPosition&amp;action=edit&amp;redlink=1" class="new" title="DgsMediaSetCurrentPosition (page does not exist)">dgsMediaSetCurrentPosition</a></li>
+<li><a href="DgsMediaGetLooped.html" title="DgsMediaGetLooped">dgsMediaGetLooped</a></li>
+<li><a href="DgsMediaSetLooped.html" title="DgsMediaSetLooped">dgsMediaSetLooped</a></li></ul>
+<h3><span class="mw-headline" id="Rounded_Rectangle">Rounded Rectangle</span></h3>
+<ul><li><a href="DgsCreateRoundRect.html" title="DgsCreateRoundRect">dgsCreateRoundRect</a></li>
+<li><a href="DgsRoundRectSetTexture.html" title="DgsRoundRectSetTexture">dgsRoundRectSetTexture</a></li>
+<li><a href="DgsRoundRectSetRadius.html" title="DgsRoundRectSetRadius">dgsRoundRectSetRadius</a></li>
+<li><a href="DgsRoundRectGetRadius.html" title="DgsRoundRectGetRadius">dgsRoundRectGetRadius</a></li>
+<li><a href="DgsRoundRectSetColor.html" title="DgsRoundRectSetColor">dgsRoundRectSetColor</a></li>
+<li><a href="DgsRoundRectGetColor.html" title="DgsRoundRectGetColor">dgsRoundRectGetColor</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625164531
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.023 seconds
+Real time usage: 0.028 seconds
+Preprocessor visited node count: 75/1000000
+Preprocessor generated node count: 160/1000000
+Post‐expand include size: 10148/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    1.774      1 - -total
+ 49.83%    0.884      1 - Template:DGSFUNCTIONS
+ 35.40%    0.628      1 - Template:Client_function
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:9534-0!*!0!!*!*!* and timestamp 20190625164531 and revision id 53815
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=DgsGetChild&amp;oldid=53815">https://wiki.multitheftauto.com/index.php?title=DgsGetChild&amp;oldid=53815</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_Client_functions.html" title="Category:Client functions">Client functions</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="DgsGetChild.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:DgsGetChild&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=DgsGetChild&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=DgsGetChild&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=DgsGetChild" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=DgsGetChild" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/DgsGetChild.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/DgsGetChild.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=DgsGetChild&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=DgsGetChild&amp;oldid=53815" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=DgsGetChild&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+			</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 21 January 2018, at 03:52.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":54});});</script></body></html>

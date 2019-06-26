@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>RU/Server Scripting Functions - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"RU/Server_Scripting_Functions","wgTitle":"RU/Server Scripting Functions","wgCurRevisionId":58804,"wgRevisionId":58804,"wgArticleId":3553,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"RU/Server_Scripting_Functions","wgRelevantArticleId":3553,"wgRequestId":"822da168c2cd8f5cb2f61c21","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta name='headingclass' content='' data-class='server' data-subcaption=''>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-RU_Server_Scripting_Functions rootpage-RU_Server_Scripting_Functions skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">RU/Server Scripting Functions</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
+На этой странице располагается список всех серверных функций скриптинга, которые когда-либо были внедрены и теперь являются встроенными. Чтобы запросить новую функцию или событие, напишите об этом <a href="../Requested_Functions_and_Events.html" title="Requested Functions and Events">сюда</a> или на <a rel="nofollow" class="external free" href="https://bugs.mtasa.com/">https://bugs.mtasa.com</a>.
+</p><p>Обратите внимание, что функции скриптинга также можно расширить благодаря подгрузке динамических модулей с ними. Они предоставляют новый функционал, как утилитарные функции. Эти функции скриптинга не являются встроенными и требуют подгрузки модуля для того, чтобы с ними можно было работать.
+</p><p>Отправляйтесь на страницу с <a href="Modules.html" title="RU/Modules" class="mw-redirect">модулями</a>, если хотите получить список доступных невстроенных серверных функций и модулей.
+</p><p>Если вам захочется узнать о других функциях, посетите <a href="Useful_Functions.html" title="RU/Useful Functions">страницу с полезными функциями</a>.
+</p><p>Клиентские функции скриптинга можно найти <a href="Client_Scripting_Functions.html" title="RU/Client Scripting Functions">здесь</a>.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B0.D0.BA.D0.BA.D0.B0.D1.83.D0.BD.D1.82.D0.B0"><span class="tocnumber">1</span> <span class="toctext">Функции аккаунта</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#ACL-.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8"><span class="tocnumber">2</span> <span class="toctext">ACL-функции</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B0.D0.B4.D0.BC.D0.B8.D0.BD.D0.B8.D1.81.D1.82.D1.80.D0.B0.D1.82.D0.BE.D1.80.D0.B0"><span class="tocnumber">3</span> <span class="toctext">Функции администратора</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B7.D0.B2.D1.83.D0.BA.D0.B0"><span class="tocnumber">4</span> <span class="toctext">Функции звука</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BE.D0.B1.D1.8A.D1.8F.D0.B2.D0.BB.D0.B5.D0.BD.D0.B8.D1.8F"><span class="tocnumber">5</span> <span class="toctext">Функции объявления</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BC.D0.B5.D1.82.D0.BA.D0.B8_.D0.BD.D0.B0_.D1.80.D0.B0.D0.B4.D0.B0.D1.80.D0.B5"><span class="tocnumber">6</span> <span class="toctext">Функции метки на радаре</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BA.D0.B0.D0.BC.D0.B5.D1.80.D1.8B"><span class="tocnumber">7</span> <span class="toctext">Функции камеры</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.82.D0.B5.D0.BB.D0.B0_.D0.B8_.D0.BE.D0.B4.D0.B5.D0.B6.D0.B4.D1.8B"><span class="tocnumber">8</span> <span class="toctext">Функции тела и одежды</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BA.D0.BE.D0.BB.D0.BB.D0.B8.D0.B7.D0.B8.D0.B8"><span class="tocnumber">9</span> <span class="toctext">Функции коллизии</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BA.D1.83.D1.80.D1.81.D0.BE.D1.80.D0.B0"><span class="tocnumber">10</span> <span class="toctext">Функции курсора</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.8D.D0.BB.D0.B5.D0.BC.D0.B5.D0.BD.D1.82.D0.B0"><span class="tocnumber">11</span> <span class="toctext">Функции элемента</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.81.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F"><span class="tocnumber">12</span> <span class="toctext">Функции события</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B2.D0.B7.D1.80.D1.8B.D0.B2.D0.B0"><span class="tocnumber">13</span> <span class="toctext">Функции взрыва</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#.D0.A4.D0.B0.D0.B9.D0.BB.D0.BE.D0.B2.D1.8B.D0.B5_.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8"><span class="tocnumber">14</span> <span class="toctext">Файловые функции</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#HTTP-.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8"><span class="tocnumber">15</span> <span class="toctext">HTTP-функции</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B2.D0.B2.D0.BE.D0.B4.D0.B0"><span class="tocnumber">16</span> <span class="toctext">Функции ввода</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BA.D0.B0.D1.80.D1.82.D1.8B"><span class="tocnumber">17</span> <span class="toctext">Функции карты</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BC.D0.B0.D1.80.D0.BA.D0.B5.D1.80.D0.B0"><span class="tocnumber">18</span> <span class="toctext">Функции маркера</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BC.D0.B0.D1.82.D1.80.D0.B8.D1.86.D1.8B"><span class="tocnumber">19</span> <span class="toctext">Функции матрицы</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BC.D0.BE.D0.B4.D1.83.D0.BB.D1.8F"><span class="tocnumber">20</span> <span class="toctext">Функции модуля</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BE.D0.B1.D1.8A.D0.B5.D0.BA.D1.82.D0.B0"><span class="tocnumber">21</span> <span class="toctext">Функции объекта</span></a></li>
+<li class="toclevel-1 tocsection-22"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_NPC"><span class="tocnumber">22</span> <span class="toctext">Функции NPC</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BF.D0.B8.D0.BA.D0.B0.D0.BF.D0.B0"><span class="tocnumber">23</span> <span class="toctext">Функции пикапа</span></a></li>
+<li class="toclevel-1 tocsection-24"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B8.D0.B3.D1.80.D0.BE.D0.BA.D0.B0"><span class="tocnumber">24</span> <span class="toctext">Функции игрока</span></a></li>
+<li class="toclevel-1 tocsection-25"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.81.D0.BD.D0.B0.D1.80.D1.8F.D0.B4.D0.B0"><span class="tocnumber">25</span> <span class="toctext">Функции снаряда</span></a></li>
+<li class="toclevel-1 tocsection-26"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.82.D0.B5.D1.80.D1.80.D0.B8.D1.82.D0.BE.D1.80.D0.B8.D0.B8_.D1.80.D0.B0.D0.B4.D0.B0.D1.80.D0.B0"><span class="tocnumber">26</span> <span class="toctext">Функции территории радара</span></a></li>
+<li class="toclevel-1 tocsection-27"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.80.D0.B5.D1.81.D1.83.D1.80.D1.81.D0.B0"><span class="tocnumber">27</span> <span class="toctext">Функции ресурса</span></a></li>
+<li class="toclevel-1 tocsection-28"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.81.D0.B5.D1.80.D0.B2.D0.B5.D1.80.D0.B0"><span class="tocnumber">28</span> <span class="toctext">Функции сервера</span></a></li>
+<li class="toclevel-1 tocsection-29"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BD.D0.B0.D1.81.D1.82.D1.80.D0.BE.D0.B9.D0.BA.D0.B8_.D1.80.D0.B5.D0.B5.D1.81.D1.82.D1.80.D0.B0"><span class="tocnumber">29</span> <span class="toctext">Функции настройки реестра</span></a></li>
+<li class="toclevel-1 tocsection-30"><a href="#SQL-.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8"><span class="tocnumber">30</span> <span class="toctext">SQL-функции</span></a></li>
+<li class="toclevel-1 tocsection-31"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BA.D0.BE.D0.BC.D0.B0.D0.BD.D0.B4.D1.8B"><span class="tocnumber">31</span> <span class="toctext">Функции команды</span></a></li>
+<li class="toclevel-1 tocsection-32"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.82.D0.B5.D0.BA.D1.81.D1.82.D0.B0"><span class="tocnumber">32</span> <span class="toctext">Функции текста</span></a></li>
+<li class="toclevel-1 tocsection-33"><a href="#.D0.A3.D1.82.D0.B8.D0.BB.D0.B8.D1.82.D0.B0.D1.80.D0.BD.D1.8B.D0.B5_.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8"><span class="tocnumber">33</span> <span class="toctext">Утилитарные функции</span></a></li>
+<li class="toclevel-1 tocsection-34"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_UTF-8"><span class="tocnumber">34</span> <span class="toctext">Функции UTF-8</span></a></li>
+<li class="toclevel-1 tocsection-35"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.82.D1.80.D0.B0.D0.BD.D1.81.D0.BF.D0.BE.D1.80.D1.82.D0.B0"><span class="tocnumber">35</span> <span class="toctext">Функции транспорта</span></a></li>
+<li class="toclevel-1 tocsection-36"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B2.D0.BE.D0.B4.D1.8B"><span class="tocnumber">36</span> <span class="toctext">Функции воды</span></a></li>
+<li class="toclevel-1 tocsection-37"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BE.D1.80.D1.83.D0.B6.D0.B8.D1.8F"><span class="tocnumber">37</span> <span class="toctext">Функции оружия</span></a></li>
+<li class="toclevel-1 tocsection-38"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BC.D0.B8.D1.80.D0.B0"><span class="tocnumber">38</span> <span class="toctext">Функции мира</span></a></li>
+<li class="toclevel-1 tocsection-39"><a href="#XML-.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8"><span class="tocnumber">39</span> <span class="toctext">XML-функции</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B0.D0.BA.D0.BA.D0.B0.D1.83.D0.BD.D1.82.D0.B0">Функции аккаунта</span></h2>
+<ul><li><a href="addAccount.html" title="RU/addAccount">addAccount</a></li>
+<li><a href="copyAccountData.html" title="RU/copyAccountData">copyAccountData</a></li>
+<li><a href="getAccountData.html" title="RU/getAccountData">getAccountData</a></li>
+<li><a href="getAccountName.html" title="RU/getAccountName">getAccountName</a></li>
+<li><a href="getAccountPlayer.html" title="RU/getAccountPlayer">getAccountPlayer</a></li>
+<li><a href="getAccountsBySerial.html" title="RU/getAccountsBySerial">getAccountsBySerial</a></li>
+<li><a href="getAccountSerial.html" title="RU/getAccountSerial">getAccountSerial</a></li>
+<li><a href="getAccounts.html" title="RU/getAccounts">getAccounts</a></li>
+<li><a href="getAccount.html" title="RU/getAccount">getAccount</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getAllAccountData&amp;action=edit&amp;redlink=1" class="new" title="RU/getAllAccountData (page does not exist)">getAllAccountData</a></li>
+<li><a href="getPlayerAccount.html" title="RU/getPlayerAccount">getPlayerAccount</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isGuestAccount&amp;action=edit&amp;redlink=1" class="new" title="RU/isGuestAccount (page does not exist)">isGuestAccount</a></li>
+<li><a href="logIn.html" title="RU/logIn">logIn</a></li>
+<li><a href="logOut.html" title="RU/logOut">logOut</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/removeAccount&amp;action=edit&amp;redlink=1" class="new" title="RU/removeAccount (page does not exist)">removeAccount</a></li>
+<li><a href="setAccountData.html" title="RU/setAccountData">setAccountData</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setAccountPassword&amp;action=edit&amp;redlink=1" class="new" title="RU/setAccountPassword (page does not exist)">setAccountPassword</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="ACL-.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8">ACL-функции</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/aclReload&amp;action=edit&amp;redlink=1" class="new" title="RU/aclReload (page does not exist)">aclReload</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/aclSave&amp;action=edit&amp;redlink=1" class="new" title="RU/aclSave (page does not exist)">aclSave</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/aclList&amp;action=edit&amp;redlink=1" class="new" title="RU/aclList (page does not exist)">aclList</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/aclGet&amp;action=edit&amp;redlink=1" class="new" title="RU/aclGet (page does not exist)">aclGet</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/aclCreate&amp;action=edit&amp;redlink=1" class="new" title="RU/aclCreate (page does not exist)">aclCreate</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/aclDestroy&amp;action=edit&amp;redlink=1" class="new" title="RU/aclDestroy (page does not exist)">aclDestroy</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/aclGetName&amp;action=edit&amp;redlink=1" class="new" title="RU/aclGetName (page does not exist)">aclGetName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/aclGetRight&amp;action=edit&amp;redlink=1" class="new" title="RU/aclGetRight (page does not exist)">aclGetRight</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/aclSetRight&amp;action=edit&amp;redlink=1" class="new" title="RU/aclSetRight (page does not exist)">aclSetRight</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/aclListRights&amp;action=edit&amp;redlink=1" class="new" title="RU/aclListRights (page does not exist)">aclListRights</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/aclRemoveRight&amp;action=edit&amp;redlink=1" class="new" title="RU/aclRemoveRight (page does not exist)">aclRemoveRight</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/aclGetGroup&amp;action=edit&amp;redlink=1" class="new" title="RU/aclGetGroup (page does not exist)">aclGetGroup</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/aclCreateGroup&amp;action=edit&amp;redlink=1" class="new" title="RU/aclCreateGroup (page does not exist)">aclCreateGroup</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/aclDestroyGroup&amp;action=edit&amp;redlink=1" class="new" title="RU/aclDestroyGroup (page does not exist)">aclDestroyGroup</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/aclGroupList&amp;action=edit&amp;redlink=1" class="new" title="RU/aclGroupList (page does not exist)">aclGroupList</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/aclGroupAddACL&amp;action=edit&amp;redlink=1" class="new" title="RU/aclGroupAddACL (page does not exist)">aclGroupAddACL</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/aclGroupAddObject&amp;action=edit&amp;redlink=1" class="new" title="RU/aclGroupAddObject (page does not exist)">aclGroupAddObject</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/aclGroupGetName&amp;action=edit&amp;redlink=1" class="new" title="RU/aclGroupGetName (page does not exist)">aclGroupGetName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/aclGroupListACL&amp;action=edit&amp;redlink=1" class="new" title="RU/aclGroupListACL (page does not exist)">aclGroupListACL</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/aclGroupListObjects&amp;action=edit&amp;redlink=1" class="new" title="RU/aclGroupListObjects (page does not exist)">aclGroupListObjects</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/aclGroupRemoveACL&amp;action=edit&amp;redlink=1" class="new" title="RU/aclGroupRemoveACL (page does not exist)">aclGroupRemoveACL</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/aclGroupRemoveObject&amp;action=edit&amp;redlink=1" class="new" title="RU/aclGroupRemoveObject (page does not exist)">aclGroupRemoveObject</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/hasObjectPermissionTo&amp;action=edit&amp;redlink=1" class="new" title="RU/hasObjectPermissionTo (page does not exist)">hasObjectPermissionTo</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/isObjectInACLGroup&amp;action=edit&amp;redlink=1" class="new" title="RU/isObjectInACLGroup (page does not exist)">isObjectInACLGroup</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B0.D0.B4.D0.BC.D0.B8.D0.BD.D0.B8.D1.81.D1.82.D1.80.D0.B0.D1.82.D0.BE.D1.80.D0.B0">Функции администратора</span></h2>
+<ul><li><a href="addBan.html" title="RU/addBan">addBan</a></li>
+<li><a href="banPlayer.html" title="RU/banPlayer">banPlayer</a></li>
+<li><a href="getBanAdmin.html" title="RU/getBanAdmin">getBanAdmin</a></li>
+<li><a href="getBanIP.html" title="RU/getBanIP">getBanIP</a></li>
+<li><a href="getBanNick.html" title="RU/getBanNick">getBanNick</a></li>
+<li><a href="getBanReason.html" title="RU/getBanReason">getBanReason</a></li>
+<li><a href="getBans.html" title="RU/getBans">getBans</a></li>
+<li><a href="getBanSerial.html" title="RU/getBanSerial">getBanSerial</a></li>
+<li><a href="getBanTime.html" title="RU/getBanTime">getBanTime</a></li>
+<li><a href="getBanUsername.html" title="RU/getBanUsername">getBanUsername</a></li>
+<li><a href="getUnbanTime.html" title="RU/getUnbanTime">getUnbanTime</a></li>
+<li><a href="isBan.html" title="RU/isBan">isBan</a></li>
+<li><a href="kickPlayer.html" title="RU/kickPlayer">kickPlayer</a></li>
+<li><a href="setBanAdmin.html" title="RU/setBanAdmin">setBanAdmin</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setBanNick&amp;action=edit&amp;redlink=1" class="new" title="RU/setBanNick (page does not exist)">setBanNick</a></li>
+<li><a href="setBanReason.html" title="RU/setBanReason">setBanReason</a></li>
+<li><a href="setUnbanTime.html" title="RU/setUnbanTime">setUnbanTime</a></li>
+<li><a href="removeBan.html" title="RU/removeBan">removeBan</a></li>
+<li><a href="reloadBans.html" title="RU/reloadBans">reloadBans</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B7.D0.B2.D1.83.D0.BA.D0.B0">Функции звука</span></h2>
+<ul><li><a href="playSoundFrontEnd.html" title="RU/playSoundFrontEnd">playSoundFrontEnd</a></li></ul>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BE.D0.B1.D1.8A.D1.8F.D0.B2.D0.BB.D0.B5.D0.BD.D0.B8.D1.8F">Функции объявления</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/getGameType&amp;action=edit&amp;redlink=1" class="new" title="RU/getGameType (page does not exist)">getGameType</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getMapName&amp;action=edit&amp;redlink=1" class="new" title="RU/getMapName (page does not exist)">getMapName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getRuleValue&amp;action=edit&amp;redlink=1" class="new" title="RU/getRuleValue (page does not exist)">getRuleValue</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/removeRuleValue&amp;action=edit&amp;redlink=1" class="new" title="RU/removeRuleValue (page does not exist)">removeRuleValue</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setGameType&amp;action=edit&amp;redlink=1" class="new" title="RU/setGameType (page does not exist)">setGameType</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setMapName&amp;action=edit&amp;redlink=1" class="new" title="RU/setMapName (page does not exist)">setMapName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setRuleValue&amp;action=edit&amp;redlink=1" class="new" title="RU/setRuleValue (page does not exist)">setRuleValue</a></li></ul>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BC.D0.B5.D1.82.D0.BA.D0.B8_.D0.BD.D0.B0_.D1.80.D0.B0.D0.B4.D0.B0.D1.80.D0.B5">Функции метки на радаре</span></h2>
+<ul><li><a href="createBlip.html" title="RU/createBlip">createBlip</a></li>
+<li><a href="createBlipAttachedTo.html" title="RU/createBlipAttachedTo">createBlipAttachedTo</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getBlipColor&amp;action=edit&amp;redlink=1" class="new" title="RU/getBlipColor (page does not exist)">getBlipColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getBlipIcon&amp;action=edit&amp;redlink=1" class="new" title="RU/getBlipIcon (page does not exist)">getBlipIcon</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getBlipSize&amp;action=edit&amp;redlink=1" class="new" title="RU/getBlipSize (page does not exist)">getBlipSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setBlipColor&amp;action=edit&amp;redlink=1" class="new" title="RU/setBlipColor (page does not exist)">setBlipColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setBlipIcon&amp;action=edit&amp;redlink=1" class="new" title="RU/setBlipIcon (page does not exist)">setBlipIcon</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setBlipSize&amp;action=edit&amp;redlink=1" class="new" title="RU/setBlipSize (page does not exist)">setBlipSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getBlipOrdering&amp;action=edit&amp;redlink=1" class="new" title="RU/getBlipOrdering (page does not exist)">getBlipOrdering</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setBlipOrdering&amp;action=edit&amp;redlink=1" class="new" title="RU/setBlipOrdering (page does not exist)">setBlipOrdering</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/getBlipVisibleDistance&amp;action=edit&amp;redlink=1" class="new" title="RU/getBlipVisibleDistance (page does not exist)">getBlipVisibleDistance</a></li>
+<li><a href="setBlipVisibleDistance.html" title="RU/setBlipVisibleDistance">setBlipVisibleDistance</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BA.D0.B0.D0.BC.D0.B5.D1.80.D1.8B">Функции камеры</span></h2>
+<ul><li> <a href="fadeCamera.html" title="RU/fadeCamera">fadeCamera</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/getCameraInterior&amp;action=edit&amp;redlink=1" class="new" title="RU/getCameraInterior (page does not exist)">getCameraInterior</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/getCameraMatrix&amp;action=edit&amp;redlink=1" class="new" title="RU/getCameraMatrix (page does not exist)">getCameraMatrix</a></li>
+<li> <a href="getCameraTarget.html" title="RU/getCameraTarget">getCameraTarget</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/setCameraInterior&amp;action=edit&amp;redlink=1" class="new" title="RU/setCameraInterior (page does not exist)">setCameraInterior</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/setCameraMatrix&amp;action=edit&amp;redlink=1" class="new" title="RU/setCameraMatrix (page does not exist)">setCameraMatrix</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/setCameraTarget&amp;action=edit&amp;redlink=1" class="new" title="RU/setCameraTarget (page does not exist)">setCameraTarget</a></li></ul>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.82.D0.B5.D0.BB.D0.B0_.D0.B8_.D0.BE.D0.B4.D0.B5.D0.B6.D0.B4.D1.8B">Функции тела и одежды</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/getBodyPartName&amp;action=edit&amp;redlink=1" class="new" title="RU/getBodyPartName (page does not exist)">getBodyPartName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getClothesByTypeIndex&amp;action=edit&amp;redlink=1" class="new" title="RU/getClothesByTypeIndex (page does not exist)">getClothesByTypeIndex</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getClothesTypeName&amp;action=edit&amp;redlink=1" class="new" title="RU/getClothesTypeName (page does not exist)">getClothesTypeName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getTypeIndexFromClothes&amp;action=edit&amp;redlink=1" class="new" title="RU/getTypeIndexFromClothes (page does not exist)">getTypeIndexFromClothes</a></li></ul>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BA.D0.BE.D0.BB.D0.BB.D0.B8.D0.B7.D0.B8.D0.B8">Функции коллизии</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/createColCircle&amp;action=edit&amp;redlink=1" class="new" title="RU/createColCircle (page does not exist)">createColCircle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/createColCuboid&amp;action=edit&amp;redlink=1" class="new" title="RU/createColCuboid (page does not exist)">createColCuboid</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/createColRectangle&amp;action=edit&amp;redlink=1" class="new" title="RU/createColRectangle (page does not exist)">createColRectangle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/createColSphere&amp;action=edit&amp;redlink=1" class="new" title="RU/createColSphere (page does not exist)">createColSphere</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/createColTube&amp;action=edit&amp;redlink=1" class="new" title="RU/createColTube (page does not exist)">createColTube</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/createColPolygon&amp;action=edit&amp;redlink=1" class="new" title="RU/createColPolygon (page does not exist)">createColPolygon</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isElementWithinColShape&amp;action=edit&amp;redlink=1" class="new" title="RU/isElementWithinColShape (page does not exist)">isElementWithinColShape</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getElementsWithinColShape&amp;action=edit&amp;redlink=1" class="new" title="RU/getElementsWithinColShape (page does not exist)">getElementsWithinColShape</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getElementColShape&amp;action=edit&amp;redlink=1" class="new" title="RU/getElementColShape (page does not exist)">getElementColShape</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BA.D1.83.D1.80.D1.81.D0.BE.D1.80.D0.B0">Функции курсора</span></h2>
+<ul><li><a href="isCursorShowing.html" title="RU/isCursorShowing">isCursorShowing</a></li>
+<li><a href="showCursor.html" title="RU/showCursor">showCursor</a></li></ul>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.8D.D0.BB.D0.B5.D0.BC.D0.B5.D0.BD.D1.82.D0.B0">Функции элемента</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/clearElementVisibleTo&amp;action=edit&amp;redlink=1" class="new" title="RU/clearElementVisibleTo (page does not exist)">clearElementVisibleTo</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/cloneElement&amp;action=edit&amp;redlink=1" class="new" title="RU/cloneElement (page does not exist)">cloneElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/createElement&amp;action=edit&amp;redlink=1" class="new" title="RU/createElement (page does not exist)">createElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/destroyElement&amp;action=edit&amp;redlink=1" class="new" title="RU/destroyElement (page does not exist)">destroyElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getAllElementData&amp;action=edit&amp;redlink=1" class="new" title="RU/getAllElementData (page does not exist)">getAllElementData</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getAttachedElements&amp;action=edit&amp;redlink=1" class="new" title="RU/getAttachedElements (page does not exist)">getAttachedElements</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getElementAlpha&amp;action=edit&amp;redlink=1" class="new" title="RU/getElementAlpha (page does not exist)">getElementAlpha</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getElementAttachedOffsets&amp;action=edit&amp;redlink=1" class="new" title="RU/getElementAttachedOffsets (page does not exist)">getElementAttachedOffsets</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getElementCollisionsEnabled&amp;action=edit&amp;redlink=1" class="new" title="RU/getElementCollisionsEnabled (page does not exist)">getElementCollisionsEnabled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getElementAttachedTo&amp;action=edit&amp;redlink=1" class="new" title="RU/getElementAttachedTo (page does not exist)">getElementAttachedTo</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getElementByID&amp;action=edit&amp;redlink=1" class="new" title="RU/getElementByID (page does not exist)">getElementByID</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getElementByIndex&amp;action=edit&amp;redlink=1" class="new" title="RU/getElementByIndex (page does not exist)">getElementByIndex</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getElementChild&amp;action=edit&amp;redlink=1" class="new" title="RU/getElementChild (page does not exist)">getElementChild</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getElementChildren&amp;action=edit&amp;redlink=1" class="new" title="RU/getElementChildren (page does not exist)">getElementChildren</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getElementChildrenCount&amp;action=edit&amp;redlink=1" class="new" title="RU/getElementChildrenCount (page does not exist)">getElementChildrenCount</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getElementColShape&amp;action=edit&amp;redlink=1" class="new" title="RU/getElementColShape (page does not exist)">getElementColShape</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getElementData&amp;action=edit&amp;redlink=1" class="new" title="RU/getElementData (page does not exist)">getElementData</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getElementDimension&amp;action=edit&amp;redlink=1" class="new" title="RU/getElementDimension (page does not exist)">getElementDimension</a></li>
+<li><a href="getElementHealth.html" title="RU/getElementHealth">getElementHealth</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getElementID&amp;action=edit&amp;redlink=1" class="new" title="RU/getElementID (page does not exist)">getElementID</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getElementInterior&amp;action=edit&amp;redlink=1" class="new" title="RU/getElementInterior (page does not exist)">getElementInterior</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getElementMatrix&amp;action=edit&amp;redlink=1" class="new" title="RU/getElementMatrix (page does not exist)">getElementMatrix</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getElementParent&amp;action=edit&amp;redlink=1" class="new" title="RU/getElementParent (page does not exist)">getElementParent</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getElementPosition&amp;action=edit&amp;redlink=1" class="new" title="RU/getElementPosition (page does not exist)">getElementPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getElementRotation&amp;action=edit&amp;redlink=1" class="new" title="RU/getElementRotation (page does not exist)">getElementRotation</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getElementsByType&amp;action=edit&amp;redlink=1" class="new" title="RU/getElementsByType (page does not exist)">getElementsByType</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getElementsWithinColShape&amp;action=edit&amp;redlink=1" class="new" title="RU/getElementsWithinColShape (page does not exist)">getElementsWithinColShape</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getElementType&amp;action=edit&amp;redlink=1" class="new" title="RU/getElementType (page does not exist)">getElementType</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getElementVelocity&amp;action=edit&amp;redlink=1" class="new" title="RU/getElementVelocity (page does not exist)">getElementVelocity</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getElementZoneName&amp;action=edit&amp;redlink=1" class="new" title="RU/getElementZoneName (page does not exist)">getElementZoneName</a></li>
+<li><a href="getRootElement.html" title="RU/getRootElement">getRootElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isElement&amp;action=edit&amp;redlink=1" class="new" title="RU/isElement (page does not exist)">isElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isElementAttached&amp;action=edit&amp;redlink=1" class="new" title="RU/isElementAttached (page does not exist)">isElementAttached</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isElementCallPropagationEnabled&amp;action=edit&amp;redlink=1" class="new" title="RU/isElementCallPropagationEnabled (page does not exist)">isElementCallPropagationEnabled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isElementDoubleSided&amp;action=edit&amp;redlink=1" class="new" title="RU/isElementDoubleSided (page does not exist)">isElementDoubleSided</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isElementFrozen&amp;action=edit&amp;redlink=1" class="new" title="RU/isElementFrozen (page does not exist)">isElementFrozen</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isElementVisibleTo&amp;action=edit&amp;redlink=1" class="new" title="RU/isElementVisibleTo (page does not exist)">isElementVisibleTo</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isElementWaitingForGroundToLoad&amp;action=edit&amp;redlink=1" class="new" title="RU/isElementWaitingForGroundToLoad (page does not exist)">isElementWaitingForGroundToLoad</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isElementWithinColShape&amp;action=edit&amp;redlink=1" class="new" title="RU/isElementWithinColShape (page does not exist)">isElementWithinColShape</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/removeElementData&amp;action=edit&amp;redlink=1" class="new" title="RU/removeElementData (page does not exist)">removeElementData</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setElementAlpha&amp;action=edit&amp;redlink=1" class="new" title="RU/setElementAlpha (page does not exist)">setElementAlpha</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setElementCallPropagationEnabled&amp;action=edit&amp;redlink=1" class="new" title="RU/setElementCallPropagationEnabled (page does not exist)">setElementCallPropagationEnabled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setElementCollisionsEnabled&amp;action=edit&amp;redlink=1" class="new" title="RU/setElementCollisionsEnabled (page does not exist)">setElementCollisionsEnabled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setElementData&amp;action=edit&amp;redlink=1" class="new" title="RU/setElementData (page does not exist)">setElementData</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setElementDoubleSided&amp;action=edit&amp;redlink=1" class="new" title="RU/setElementDoubleSided (page does not exist)">setElementDoubleSided</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setElementDimension&amp;action=edit&amp;redlink=1" class="new" title="RU/setElementDimension (page does not exist)">setElementDimension</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setElementFrozen&amp;action=edit&amp;redlink=1" class="new" title="RU/setElementFrozen (page does not exist)">setElementFrozen</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setElementHealth&amp;action=edit&amp;redlink=1" class="new" title="RU/setElementHealth (page does not exist)">setElementHealth</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setElementID&amp;action=edit&amp;redlink=1" class="new" title="RU/setElementID (page does not exist)">setElementID</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setElementInterior&amp;action=edit&amp;redlink=1" class="new" title="RU/setElementInterior (page does not exist)">setElementInterior</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setElementParent&amp;action=edit&amp;redlink=1" class="new" title="RU/setElementParent (page does not exist)">setElementParent</a></li>
+<li><a href="setElementPosition.html" title="RU/setElementPosition">setElementPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setElementSyncer&amp;action=edit&amp;redlink=1" class="new" title="RU/setElementSyncer (page does not exist)">setElementSyncer</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setElementRotation&amp;action=edit&amp;redlink=1" class="new" title="RU/setElementRotation (page does not exist)">setElementRotation</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setElementVelocity&amp;action=edit&amp;redlink=1" class="new" title="RU/setElementVelocity (page does not exist)">setElementVelocity</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setElementVisibleTo&amp;action=edit&amp;redlink=1" class="new" title="RU/setElementVisibleTo (page does not exist)">setElementVisibleTo</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/attachElements&amp;action=edit&amp;redlink=1" class="new" title="RU/attachElements (page does not exist)">attachElements</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/detachElements&amp;action=edit&amp;redlink=1" class="new" title="RU/detachElements (page does not exist)">detachElements</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getElementModel&amp;action=edit&amp;redlink=1" class="new" title="RU/getElementModel (page does not exist)">getElementModel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getElementSyncer&amp;action=edit&amp;redlink=1" class="new" title="RU/getElementSyncer (page does not exist)">getElementSyncer</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isElementInWater&amp;action=edit&amp;redlink=1" class="new" title="RU/isElementInWater (page does not exist)">isElementInWater</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setElementAttachedOffsets&amp;action=edit&amp;redlink=1" class="new" title="RU/setElementAttachedOffsets (page does not exist)">setElementAttachedOffsets</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setElementModel&amp;action=edit&amp;redlink=1" class="new" title="RU/setElementModel (page does not exist)">setElementModel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setLowLODElement&amp;action=edit&amp;redlink=1" class="new" title="RU/setLowLODElement (page does not exist)">setLowLODElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getLowLODElement&amp;action=edit&amp;redlink=1" class="new" title="RU/getLowLODElement (page does not exist)">getLowLODElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isElementLowLOD&amp;action=edit&amp;redlink=1" class="new" title="RU/isElementLowLOD (page does not exist)">isElementLowLOD</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.81.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F">Функции события</span></h2>
+<ul><li><a href="addEvent-2.html" title="RU/addEvent">addEvent</a></li>
+<li><a href="addEventHandler.html" title="RU/addEventHandler">addEventHandler</a></li></ul>
+<ul><li> <a href="http://wiki.localhost/index.php?title=RU/getEventHandlers&amp;action=edit&amp;redlink=1" class="new" title="RU/getEventHandlers (page does not exist)">getEventHandlers</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/cancelEvent&amp;action=edit&amp;redlink=1" class="new" title="RU/cancelEvent (page does not exist)">cancelEvent</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getCancelReason&amp;action=edit&amp;redlink=1" class="new" title="RU/getCancelReason (page does not exist)">getCancelReason</a></li>
+<li><a href="removeEventHandler.html" title="RU/removeEventHandler">removeEventHandler</a></li>
+<li><a href="triggerClientEvent.html" title="RU/triggerClientEvent">triggerClientEvent</a></li>
+<li><a href="triggerEvent.html" title="RU/triggerEvent">triggerEvent</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/wasEventCancelled&amp;action=edit&amp;redlink=1" class="new" title="RU/wasEventCancelled (page does not exist)">wasEventCancelled</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/triggerLatentClientEvent&amp;action=edit&amp;redlink=1" class="new" title="RU/triggerLatentClientEvent (page does not exist)">triggerLatentClientEvent</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getLatentEventHandles&amp;action=edit&amp;redlink=1" class="new" title="RU/getLatentEventHandles (page does not exist)">getLatentEventHandles</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getLatentEventStatus&amp;action=edit&amp;redlink=1" class="new" title="RU/getLatentEventStatus (page does not exist)">getLatentEventStatus</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/cancelLatentEvent&amp;action=edit&amp;redlink=1" class="new" title="RU/cancelLatentEvent (page does not exist)">cancelLatentEvent</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B2.D0.B7.D1.80.D1.8B.D0.B2.D0.B0">Функции взрыва</span></h2>
+<ul><li><a href="createExplosion.html" title="RU/createExplosion">createExplosion</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D0.B0.D0.B9.D0.BB.D0.BE.D0.B2.D1.8B.D0.B5_.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8">Файловые функции</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/fileClose&amp;action=edit&amp;redlink=1" class="new" title="RU/fileClose (page does not exist)">fileClose</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/fileCopy&amp;action=edit&amp;redlink=1" class="new" title="RU/fileCopy (page does not exist)">fileCopy</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/fileCreate&amp;action=edit&amp;redlink=1" class="new" title="RU/fileCreate (page does not exist)">fileCreate</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/fileDelete&amp;action=edit&amp;redlink=1" class="new" title="RU/fileDelete (page does not exist)">fileDelete</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/fileExists&amp;action=edit&amp;redlink=1" class="new" title="RU/fileExists (page does not exist)">fileExists</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/fileFlush&amp;action=edit&amp;redlink=1" class="new" title="RU/fileFlush (page does not exist)">fileFlush</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/fileGetPath&amp;action=edit&amp;redlink=1" class="new" title="RU/fileGetPath (page does not exist)">fileGetPath</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/fileGetPos&amp;action=edit&amp;redlink=1" class="new" title="RU/fileGetPos (page does not exist)">fileGetPos</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/fileGetSize&amp;action=edit&amp;redlink=1" class="new" title="RU/fileGetSize (page does not exist)">fileGetSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/fileIsEOF&amp;action=edit&amp;redlink=1" class="new" title="RU/fileIsEOF (page does not exist)">fileIsEOF</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/fileOpen&amp;action=edit&amp;redlink=1" class="new" title="RU/fileOpen (page does not exist)">fileOpen</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/fileRead&amp;action=edit&amp;redlink=1" class="new" title="RU/fileRead (page does not exist)">fileRead</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/fileRename&amp;action=edit&amp;redlink=1" class="new" title="RU/fileRename (page does not exist)">fileRename</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/fileSetPos&amp;action=edit&amp;redlink=1" class="new" title="RU/fileSetPos (page does not exist)">fileSetPos</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/fileWrite&amp;action=edit&amp;redlink=1" class="new" title="RU/fileWrite (page does not exist)">fileWrite</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="HTTP-.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8">HTTP-функции</span></h2>
+<p><i>Эти функции могут использоваться только из lua-блоков в HTML-страницах, размещённых на сервере</i>
+</p>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/httpClear&amp;action=edit&amp;redlink=1" class="new" title="RU/httpClear (page does not exist)">httpClear</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/httpRequestLogin&amp;action=edit&amp;redlink=1" class="new" title="RU/httpRequestLogin (page does not exist)">httpRequestLogin</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/httpSetResponseCode&amp;action=edit&amp;redlink=1" class="new" title="RU/httpSetResponseCode (page does not exist)">httpSetResponseCode</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/httpSetResponseCookie&amp;action=edit&amp;redlink=1" class="new" title="RU/httpSetResponseCookie (page does not exist)">httpSetResponseCookie</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/httpSetResponseHeader&amp;action=edit&amp;redlink=1" class="new" title="RU/httpSetResponseHeader (page does not exist)">httpSetResponseHeader</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/httpWrite&amp;action=edit&amp;redlink=1" class="new" title="RU/httpWrite (page does not exist)">httpWrite</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B2.D0.B2.D0.BE.D0.B4.D0.B0">Функции ввода</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/bindKey&amp;action=edit&amp;redlink=1" class="new" title="RU/bindKey (page does not exist)">bindKey</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getControlState&amp;action=edit&amp;redlink=1" class="new" title="RU/getControlState (page does not exist)">getControlState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getFunctionsBoundToKey&amp;action=edit&amp;redlink=1" class="new" title="RU/getFunctionsBoundToKey (page does not exist)">getFunctionsBoundToKey</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getKeyBoundToFunction&amp;action=edit&amp;redlink=1" class="new" title="RU/getKeyBoundToFunction (page does not exist)">getKeyBoundToFunction</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isControlEnabled&amp;action=edit&amp;redlink=1" class="new" title="RU/isControlEnabled (page does not exist)">isControlEnabled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isKeyBound&amp;action=edit&amp;redlink=1" class="new" title="RU/isKeyBound (page does not exist)">isKeyBound</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setControlState&amp;action=edit&amp;redlink=1" class="new" title="RU/setControlState (page does not exist)">setControlState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/toggleAllControls&amp;action=edit&amp;redlink=1" class="new" title="RU/toggleAllControls (page does not exist)">toggleAllControls</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/toggleControl&amp;action=edit&amp;redlink=1" class="new" title="RU/toggleControl (page does not exist)">toggleControl</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/unbindKey&amp;action=edit&amp;redlink=1" class="new" title="RU/unbindKey (page does not exist)">unbindKey</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BA.D0.B0.D1.80.D1.82.D1.8B">Функции карты</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/loadMapData&amp;action=edit&amp;redlink=1" class="new" title="RU/loadMapData (page does not exist)">loadMapData</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/resetMapInfo&amp;action=edit&amp;redlink=1" class="new" title="RU/resetMapInfo (page does not exist)">resetMapInfo</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/saveMapData&amp;action=edit&amp;redlink=1" class="new" title="RU/saveMapData (page does not exist)">saveMapData</a></li></ul>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BC.D0.B0.D1.80.D0.BA.D0.B5.D1.80.D0.B0">Функции маркера</span></h2>
+<ul><li><a href="createMarker.html" title="RU/createMarker">createMarker</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getMarkerColor&amp;action=edit&amp;redlink=1" class="new" title="RU/getMarkerColor (page does not exist)">getMarkerColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getMarkerCount&amp;action=edit&amp;redlink=1" class="new" title="RU/getMarkerCount (page does not exist)">getMarkerCount</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getMarkerIcon&amp;action=edit&amp;redlink=1" class="new" title="RU/getMarkerIcon (page does not exist)">getMarkerIcon</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getMarkerSize&amp;action=edit&amp;redlink=1" class="new" title="RU/getMarkerSize (page does not exist)">getMarkerSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getMarkerTarget&amp;action=edit&amp;redlink=1" class="new" title="RU/getMarkerTarget (page does not exist)">getMarkerTarget</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getMarkerType&amp;action=edit&amp;redlink=1" class="new" title="RU/getMarkerType (page does not exist)">getMarkerType</a></li>
+<li><a href="isElementWithinMarker.html" title="RU/isElementWithinMarker">isElementWithinMarker</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setMarkerColor&amp;action=edit&amp;redlink=1" class="new" title="RU/setMarkerColor (page does not exist)">setMarkerColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setMarkerIcon&amp;action=edit&amp;redlink=1" class="new" title="RU/setMarkerIcon (page does not exist)">setMarkerIcon</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setMarkerSize&amp;action=edit&amp;redlink=1" class="new" title="RU/setMarkerSize (page does not exist)">setMarkerSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setMarkerTarget&amp;action=edit&amp;redlink=1" class="new" title="RU/setMarkerTarget (page does not exist)">setMarkerTarget</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setMarkerType&amp;action=edit&amp;redlink=1" class="new" title="RU/setMarkerType (page does not exist)">setMarkerType</a></li></ul>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BC.D0.B0.D1.82.D1.80.D0.B8.D1.86.D1.8B">Функции матрицы</span></h2>
+<ul><li><a href="Matrix.html" title="RU/Matrix">Matrix</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/Vector/Vector2&amp;action=edit&amp;redlink=1" class="new" title="RU/Vector/Vector2 (page does not exist)">Vector/Vector2</a></li>
+<li><a href="Vector/Vector3.html" title="RU/Vector/Vector3">Vector/Vector3</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/Vector/Vector4&amp;action=edit&amp;redlink=1" class="new" title="RU/Vector/Vector4 (page does not exist)">Vector/Vector4</a></li></ul>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BC.D0.BE.D0.B4.D1.83.D0.BB.D1.8F">Функции модуля</span></h2>
+<ul><li><a href="getLoadedModules.html" title="RU/getLoadedModules">getLoadedModules</a></li>
+<li><a href="getModuleInfo.html" title="RU/getModuleInfo">getModuleInfo</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BE.D0.B1.D1.8A.D0.B5.D0.BA.D1.82.D0.B0">Функции объекта</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/createObject&amp;action=edit&amp;redlink=1" class="new" title="RU/createObject (page does not exist)">createObject</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/moveObject&amp;action=edit&amp;redlink=1" class="new" title="RU/moveObject (page does not exist)">moveObject</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/stopObject&amp;action=edit&amp;redlink=1" class="new" title="RU/stopObject (page does not exist)">stopObject</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/getObjectScale&amp;action=edit&amp;redlink=1" class="new" title="RU/getObjectScale (page does not exist)">getObjectScale</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setObjectScale&amp;action=edit&amp;redlink=1" class="new" title="RU/setObjectScale (page does not exist)">setObjectScale</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_NPC">Функции NPC</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/addPedClothes&amp;action=edit&amp;redlink=1" class="new" title="RU/addPedClothes (page does not exist)">addPedClothes</a></li>
+<li><a href="createPed.html" title="RU/createPed">createPed</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/doesPedHaveJetPack&amp;action=edit&amp;redlink=1" class="new" title="RU/doesPedHaveJetPack (page does not exist)">doesPedHaveJetPack</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPedAmmoInClip&amp;action=edit&amp;redlink=1" class="new" title="RU/getPedAmmoInClip (page does not exist)">getPedAmmoInClip</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPedArmor&amp;action=edit&amp;redlink=1" class="new" title="RU/getPedArmor (page does not exist)">getPedArmor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPedClothes&amp;action=edit&amp;redlink=1" class="new" title="RU/getPedClothes (page does not exist)">getPedClothes</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPedContactElement&amp;action=edit&amp;redlink=1" class="new" title="RU/getPedContactElement (page does not exist)">getPedContactElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPedFightingStyle&amp;action=edit&amp;redlink=1" class="new" title="RU/getPedFightingStyle (page does not exist)">getPedFightingStyle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPedGravity&amp;action=edit&amp;redlink=1" class="new" title="RU/getPedGravity (page does not exist)">getPedGravity</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPedOccupiedVehicle&amp;action=edit&amp;redlink=1" class="new" title="RU/getPedOccupiedVehicle (page does not exist)">getPedOccupiedVehicle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPedOccupiedVehicleSeat&amp;action=edit&amp;redlink=1" class="new" title="RU/getPedOccupiedVehicleSeat (page does not exist)">getPedOccupiedVehicleSeat</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPedStat&amp;action=edit&amp;redlink=1" class="new" title="RU/getPedStat (page does not exist)">getPedStat</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPedTarget&amp;action=edit&amp;redlink=1" class="new" title="RU/getPedTarget (page does not exist)">getPedTarget</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPedTotalAmmo&amp;action=edit&amp;redlink=1" class="new" title="RU/getPedTotalAmmo (page does not exist)">getPedTotalAmmo</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPedWalkingStyle&amp;action=edit&amp;redlink=1" class="new" title="RU/getPedWalkingStyle (page does not exist)">getPedWalkingStyle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPedWeapon&amp;action=edit&amp;redlink=1" class="new" title="RU/getPedWeapon (page does not exist)">getPedWeapon</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPedWeaponSlot&amp;action=edit&amp;redlink=1" class="new" title="RU/getPedWeaponSlot (page does not exist)">getPedWeaponSlot</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getValidPedModels&amp;action=edit&amp;redlink=1" class="new" title="RU/getValidPedModels (page does not exist)">getValidPedModels</a></li>
+<li><a href="givePedJetPack.html" title="RU/givePedJetPack">givePedJetPack</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isPedChoking&amp;action=edit&amp;redlink=1" class="new" title="RU/isPedChoking (page does not exist)">isPedChoking</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isPedDead&amp;action=edit&amp;redlink=1" class="new" title="RU/isPedDead (page does not exist)">isPedDead</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isPedDoingGangDriveby&amp;action=edit&amp;redlink=1" class="new" title="RU/isPedDoingGangDriveby (page does not exist)">isPedDoingGangDriveby</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isPedDucked&amp;action=edit&amp;redlink=1" class="new" title="RU/isPedDucked (page does not exist)">isPedDucked</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isPedFrozen&amp;action=edit&amp;redlink=1" class="new" title="RU/isPedFrozen (page does not exist)">isPedFrozen</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isPedHeadless&amp;action=edit&amp;redlink=1" class="new" title="RU/isPedHeadless (page does not exist)">isPedHeadless</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isPedInVehicle&amp;action=edit&amp;redlink=1" class="new" title="RU/isPedInVehicle (page does not exist)">isPedInVehicle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isPedInWater&amp;action=edit&amp;redlink=1" class="new" title="RU/isPedInWater (page does not exist)">isPedInWater</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isPedOnFire&amp;action=edit&amp;redlink=1" class="new" title="RU/isPedOnFire (page does not exist)">isPedOnFire</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isPedOnGround&amp;action=edit&amp;redlink=1" class="new" title="RU/isPedOnGround (page does not exist)">isPedOnGround</a></li>
+<li><a href="killPed.html" title="RU/killPed">killPed</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/reloadPedWeapon&amp;action=edit&amp;redlink=1" class="new" title="RU/reloadPedWeapon (page does not exist)">reloadPedWeapon</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/removePedClothes&amp;action=edit&amp;redlink=1" class="new" title="RU/removePedClothes (page does not exist)">removePedClothes</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/removePedFromVehicle&amp;action=edit&amp;redlink=1" class="new" title="RU/removePedFromVehicle (page does not exist)">removePedFromVehicle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/removePedJetPack&amp;action=edit&amp;redlink=1" class="new" title="RU/removePedJetPack (page does not exist)">removePedJetPack</a></li>
+<li><a href="setPedAnimation.html" title="RU/setPedAnimation">setPedAnimation</a></li>
+<li><a href="setPedAnimationProgress.html" title="RU/setPedAnimationProgress">setPedAnimationProgress</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setPedAnalogControlState&amp;action=edit&amp;redlink=1" class="new" title="RU/setPedAnalogControlState (page does not exist)">setPedAnalogControlState</a></li>
+<li><a href="setPedArmor.html" title="RU/setPedArmor">setPedArmor</a></li>
+<li><a href="setPedChoking.html" title="RU/setPedChoking">setPedChoking</a></li>
+<li><a href="setPedDoingGangDriveby.html" title="RU/setPedDoingGangDriveby">setPedDoingGangDriveby</a></li>
+<li><a href="setPedFightingStyle.html" title="RU/setPedFightingStyle">setPedFightingStyle</a></li>
+<li><a href="setPedFrozen.html" title="RU/setPedFrozen">setPedFrozen</a></li>
+<li><a href="setPedGravity.html" title="RU/setPedGravity">setPedGravity</a></li>
+<li><a href="setPedHeadless.html" title="RU/setPedHeadless">setPedHeadless</a></li>
+<li><a href="setPedOnFire.html" title="RU/setPedOnFire">setPedOnFire</a></li>
+<li><a href="setPedStat.html" title="RU/setPedStat">setPedStat</a></li>
+<li><a href="setPedWeaponSlot.html" title="RU/setPedWeaponSlot">setPedWeaponSlot</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/setPedWalkingStyle&amp;action=edit&amp;redlink=1" class="new" title="RU/setPedWalkingStyle (page does not exist)">setPedWalkingStyle</a></li>
+<li><a href="warpPedIntoVehicle.html" title="RU/warpPedIntoVehicle">warpPedIntoVehicle</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BF.D0.B8.D0.BA.D0.B0.D0.BF.D0.B0">Функции пикапа</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/createPickup&amp;action=edit&amp;redlink=1" class="new" title="RU/createPickup (page does not exist)">createPickup</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPickupAmmo&amp;action=edit&amp;redlink=1" class="new" title="RU/getPickupAmmo (page does not exist)">getPickupAmmo</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPickupAmount&amp;action=edit&amp;redlink=1" class="new" title="RU/getPickupAmount (page does not exist)">getPickupAmount</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPickupType&amp;action=edit&amp;redlink=1" class="new" title="RU/getPickupType (page does not exist)">getPickupType</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPickupWeapon&amp;action=edit&amp;redlink=1" class="new" title="RU/getPickupWeapon (page does not exist)">getPickupWeapon</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setPickupType&amp;action=edit&amp;redlink=1" class="new" title="RU/setPickupType (page does not exist)">setPickupType</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/getPickupRespawnInterval&amp;action=edit&amp;redlink=1" class="new" title="RU/getPickupRespawnInterval (page does not exist)">getPickupRespawnInterval</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isPickupSpawned&amp;action=edit&amp;redlink=1" class="new" title="RU/isPickupSpawned (page does not exist)">isPickupSpawned</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setPickupRespawnInterval&amp;action=edit&amp;redlink=1" class="new" title="RU/setPickupRespawnInterval (page does not exist)">setPickupRespawnInterval</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/usePickup&amp;action=edit&amp;redlink=1" class="new" title="RU/usePickup (page does not exist)">usePickup</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B8.D0.B3.D1.80.D0.BE.D0.BA.D0.B0">Функции игрока</span></h2>
+<ul><li> <a href="forcePlayerMap.html" title="RU/forcePlayerMap">forcePlayerMap</a></li>
+<li> <a href="getAlivePlayers.html" title="RU/getAlivePlayers">getAlivePlayers</a></li>
+<li> <a href="getDeadPlayers.html" title="RU/getDeadPlayers">getDeadPlayers</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/getPlayerACInfo&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerACInfo (page does not exist)">getPlayerACInfo</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/getPlayerAnnounceValue&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerAnnounceValue (page does not exist)">getPlayerAnnounceValue</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/getPlayerBlurLevel&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerBlurLevel (page does not exist)">getPlayerBlurLevel</a></li>
+<li> <a href="getPlayerCount.html" title="RU/getPlayerCount">getPlayerCount</a></li>
+<li> <a href="getPlayerFromName.html" title="RU/getPlayerFromName">getPlayerFromName</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/getPlayerIdleTime&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerIdleTime (page does not exist)">getPlayerIdleTime</a></li>
+<li> <a href="getPlayerIP.html" title="RU/getPlayerIP">getPlayerIP</a></li>
+<li> <a href="getPlayerMoney.html" title="RU/getPlayerMoney">getPlayerMoney</a></li>
+<li> <a href="getPlayerName.html" title="RU/getPlayerName">getPlayerName</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/getPlayerNametagColor&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerNametagColor (page does not exist)">getPlayerNametagColor</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/getPlayerNametagText&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerNametagText (page does not exist)">getPlayerNametagText</a></li>
+<li> <a href="getPlayerPing.html" title="RU/getPlayerPing">getPlayerPing</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/getPlayerSerial&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerSerial (page does not exist)">getPlayerSerial</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/getPlayerTeam&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerTeam (page does not exist)">getPlayerTeam</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/getPlayerVersion&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerVersion (page does not exist)">getPlayerVersion</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/getPlayerWantedLevel&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerWantedLevel (page does not exist)">getPlayerWantedLevel</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/getRandomPlayer&amp;action=edit&amp;redlink=1" class="new" title="RU/getRandomPlayer (page does not exist)">getRandomPlayer</a></li>
+<li> <a href="givePlayerMoney.html" title="RU/givePlayerMoney">givePlayerMoney</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/isPlayerMapForced&amp;action=edit&amp;redlink=1" class="new" title="RU/isPlayerMapForced (page does not exist)">isPlayerMapForced</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/isPlayerMuted&amp;action=edit&amp;redlink=1" class="new" title="RU/isPlayerMuted (page does not exist)">isPlayerMuted</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/isPlayerNametagShowing&amp;action=edit&amp;redlink=1" class="new" title="RU/isPlayerNametagShowing (page does not exist)">isPlayerNametagShowing</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/isVoiceEnabled&amp;action=edit&amp;redlink=1" class="new" title="RU/isVoiceEnabled (page does not exist)">isVoiceEnabled</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/redirectPlayer&amp;action=edit&amp;redlink=1" class="new" title="RU/redirectPlayer (page does not exist)">redirectPlayer</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/resendPlayerACInfo&amp;action=edit&amp;redlink=1" class="new" title="RU/resendPlayerACInfo (page does not exist)">resendPlayerACInfo</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/resendPlayerModInfo&amp;action=edit&amp;redlink=1" class="new" title="RU/resendPlayerModInfo (page does not exist)">resendPlayerModInfo</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/setPlayerAnnounceValue&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerAnnounceValue (page does not exist)">setPlayerAnnounceValue</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/setPlayerBlurLevel&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerBlurLevel (page does not exist)">setPlayerBlurLevel</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/setPlayerHudComponentVisible&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerHudComponentVisible (page does not exist)">setPlayerHudComponentVisible</a></li>
+<li> <a href="setPlayerMoney.html" title="RU/setPlayerMoney">setPlayerMoney</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/setPlayerMuted&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerMuted (page does not exist)">setPlayerMuted</a></li>
+<li> <a href="setPlayerName.html" title="RU/setPlayerName">setPlayerName</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/setPlayerNametagColor&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerNametagColor (page does not exist)">setPlayerNametagColor</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/setPlayerNametagShowing&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerNametagShowing (page does not exist)">setPlayerNametagShowing</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/setPlayerNametagText&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerNametagText (page does not exist)">setPlayerNametagText</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/setPlayerTeam&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerTeam (page does not exist)">setPlayerTeam</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/setPlayerVoiceBroadcastTo&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerVoiceBroadcastTo (page does not exist)">setPlayerVoiceBroadcastTo</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/setPlayerVoiceIgnoreFrom&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerVoiceIgnoreFrom (page does not exist)">setPlayerVoiceIgnoreFrom</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/setPlayerWantedLevel&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerWantedLevel (page does not exist)">setPlayerWantedLevel</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/showPlayerHudComponent&amp;action=edit&amp;redlink=1" class="new" title="RU/showPlayerHudComponent (page does not exist)">showPlayerHudComponent</a></li>
+<li> <a href="spawnPlayer.html" title="RU/spawnPlayer">spawnPlayer</a></li>
+<li> <a href="takePlayerMoney.html" title="RU/takePlayerMoney">takePlayerMoney</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/takePlayerScreenShot&amp;action=edit&amp;redlink=1" class="new" title="RU/takePlayerScreenShot (page does not exist)">takePlayerScreenShot</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.81.D0.BD.D0.B0.D1.80.D1.8F.D0.B4.D0.B0">Функции снаряда</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/detonateSatchels&amp;action=edit&amp;redlink=1" class="new" title="RU/detonateSatchels (page does not exist)">detonateSatchels</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.82.D0.B5.D1.80.D1.80.D0.B8.D1.82.D0.BE.D1.80.D0.B8.D0.B8_.D1.80.D0.B0.D0.B4.D0.B0.D1.80.D0.B0">Функции территории радара</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/createRadarArea&amp;action=edit&amp;redlink=1" class="new" title="RU/createRadarArea (page does not exist)">createRadarArea</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getRadarAreaColor&amp;action=edit&amp;redlink=1" class="new" title="RU/getRadarAreaColor (page does not exist)">getRadarAreaColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getRadarAreaSize&amp;action=edit&amp;redlink=1" class="new" title="RU/getRadarAreaSize (page does not exist)">getRadarAreaSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isInsideRadarArea&amp;action=edit&amp;redlink=1" class="new" title="RU/isInsideRadarArea (page does not exist)">isInsideRadarArea</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isRadarAreaFlashing&amp;action=edit&amp;redlink=1" class="new" title="RU/isRadarAreaFlashing (page does not exist)">isRadarAreaFlashing</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setRadarAreaColor&amp;action=edit&amp;redlink=1" class="new" title="RU/setRadarAreaColor (page does not exist)">setRadarAreaColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setRadarAreaFlashing&amp;action=edit&amp;redlink=1" class="new" title="RU/setRadarAreaFlashing (page does not exist)">setRadarAreaFlashing</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setRadarAreaSize&amp;action=edit&amp;redlink=1" class="new" title="RU/setRadarAreaSize (page does not exist)">setRadarAreaSize</a></li></ul>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.80.D0.B5.D1.81.D1.83.D1.80.D1.81.D0.B0">Функции ресурса</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/addResourceConfig&amp;action=edit&amp;redlink=1" class="new" title="RU/addResourceConfig (page does not exist)">addResourceConfig</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/addResourceMap&amp;action=edit&amp;redlink=1" class="new" title="RU/addResourceMap (page does not exist)">addResourceMap</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/call&amp;action=edit&amp;redlink=1" class="new" title="RU/call (page does not exist)">call</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/callRemote&amp;action=edit&amp;redlink=1" class="new" title="RU/callRemote (page does not exist)">callRemote</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/copyResource&amp;action=edit&amp;redlink=1" class="new" title="RU/copyResource (page does not exist)">copyResource</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/createResource&amp;action=edit&amp;redlink=1" class="new" title="RU/createResource (page does not exist)">createResource</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/deleteResource&amp;action=edit&amp;redlink=1" class="new" title="RU/deleteResource (page does not exist)">deleteResource</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/fetchRemote&amp;action=edit&amp;redlink=1" class="new" title="RU/fetchRemote (page does not exist)">fetchRemote</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getResourceACLRequests&amp;action=edit&amp;redlink=1" class="new" title="RU/getResourceACLRequests (page does not exist)">getResourceACLRequests</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getResourceConfig&amp;action=edit&amp;redlink=1" class="new" title="RU/getResourceConfig (page does not exist)">getResourceConfig</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getResourceDynamicElementRoot&amp;action=edit&amp;redlink=1" class="new" title="RU/getResourceDynamicElementRoot (page does not exist)">getResourceDynamicElementRoot</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getResourceExportedFunctions&amp;action=edit&amp;redlink=1" class="new" title="RU/getResourceExportedFunctions (page does not exist)">getResourceExportedFunctions</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getResourceFromName&amp;action=edit&amp;redlink=1" class="new" title="RU/getResourceFromName (page does not exist)">getResourceFromName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getResourceInfo&amp;action=edit&amp;redlink=1" class="new" title="RU/getResourceInfo (page does not exist)">getResourceInfo</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getResourceLastStartTime&amp;action=edit&amp;redlink=1" class="new" title="RU/getResourceLastStartTime (page does not exist)">getResourceLastStartTime</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getResourceLoadFailureReason&amp;action=edit&amp;redlink=1" class="new" title="RU/getResourceLoadFailureReason (page does not exist)">getResourceLoadFailureReason</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getResourceLoadTime&amp;action=edit&amp;redlink=1" class="new" title="RU/getResourceLoadTime (page does not exist)">getResourceLoadTime</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getResourceMapRootElement&amp;action=edit&amp;redlink=1" class="new" title="RU/getResourceMapRootElement (page does not exist)">getResourceMapRootElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getResourceName&amp;action=edit&amp;redlink=1" class="new" title="RU/getResourceName (page does not exist)">getResourceName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getResourceOrganizationalPath&amp;action=edit&amp;redlink=1" class="new" title="RU/getResourceOrganizationalPath (page does not exist)">getResourceOrganizationalPath</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getResourceRootElement&amp;action=edit&amp;redlink=1" class="new" title="RU/getResourceRootElement (page does not exist)">getResourceRootElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getResourceState&amp;action=edit&amp;redlink=1" class="new" title="RU/getResourceState (page does not exist)">getResourceState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getResources&amp;action=edit&amp;redlink=1" class="new" title="RU/getResources (page does not exist)">getResources</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getThisResource&amp;action=edit&amp;redlink=1" class="new" title="RU/getThisResource (page does not exist)">getThisResource</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/isResourceArchived&amp;action=edit&amp;redlink=1" class="new" title="RU/isResourceArchived (page does not exist)">isResourceArchived</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/refreshResources&amp;action=edit&amp;redlink=1" class="new" title="RU/refreshResources (page does not exist)">refreshResources</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/removeResourceFile&amp;action=edit&amp;redlink=1" class="new" title="RU/removeResourceFile (page does not exist)">removeResourceFile</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/renameResource&amp;action=edit&amp;redlink=1" class="new" title="RU/renameResource (page does not exist)">renameResource</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/restartResource&amp;action=edit&amp;redlink=1" class="new" title="RU/restartResource (page does not exist)">restartResource</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setResourceInfo&amp;action=edit&amp;redlink=1" class="new" title="RU/setResourceInfo (page does not exist)">setResourceInfo</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/startResource&amp;action=edit&amp;redlink=1" class="new" title="RU/startResource (page does not exist)">startResource</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/stopResource&amp;action=edit&amp;redlink=1" class="new" title="RU/stopResource (page does not exist)">stopResource</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/updateResourceACLRequest&amp;action=edit&amp;redlink=1" class="new" title="RU/updateResourceACLRequest (page does not exist)">updateResourceACLRequest</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.81.D0.B5.D1.80.D0.B2.D0.B5.D1.80.D0.B0">Функции сервера</span></h2>
+<ul><li><a href="addCommandHandler.html" title="RU/addCommandHandler">addCommandHandler</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/executeCommandHandler&amp;action=edit&amp;redlink=1" class="new" title="RU/executeCommandHandler (page does not exist)">executeCommandHandler</a></li>
+<li><a href="fromJSON.html" title="RU/fromJSON">fromJSON</a></li>
+<li><a href="getFPSLimit.html" title="RU/getFPSLimit">getFPSLimit</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getMaxPlayers&amp;action=edit&amp;redlink=1" class="new" title="RU/getMaxPlayers (page does not exist)">getMaxPlayers</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getServerHttpPort&amp;action=edit&amp;redlink=1" class="new" title="RU/getServerHttpPort (page does not exist)">getServerHttpPort</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getServerName&amp;action=edit&amp;redlink=1" class="new" title="RU/getServerName (page does not exist)">getServerName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getServerPassword&amp;action=edit&amp;redlink=1" class="new" title="RU/getServerPassword (page does not exist)">getServerPassword</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getServerPort&amp;action=edit&amp;redlink=1" class="new" title="RU/getServerPort (page does not exist)">getServerPort</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVersion&amp;action=edit&amp;redlink=1" class="new" title="RU/getVersion (page does not exist)">getVersion</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/getCommandHandlers&amp;action=edit&amp;redlink=1" class="new" title="RU/getCommandHandlers (page does not exist)">getCommandHandlers</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isGlitchEnabled&amp;action=edit&amp;redlink=1" class="new" title="RU/isGlitchEnabled (page does not exist)">isGlitchEnabled</a></li>
+<li><a href="outputChatBox.html" title="RU/outputChatBox">outputChatBox</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/outputConsole&amp;action=edit&amp;redlink=1" class="new" title="RU/outputConsole (page does not exist)">outputConsole</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/outputDebugString&amp;action=edit&amp;redlink=1" class="new" title="RU/outputDebugString (page does not exist)">outputDebugString</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/outputServerLog&amp;action=edit&amp;redlink=1" class="new" title="RU/outputServerLog (page does not exist)">outputServerLog</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/removeCommandHandler&amp;action=edit&amp;redlink=1" class="new" title="RU/removeCommandHandler (page does not exist)">removeCommandHandler</a></li>
+<li><a href="setFPSLimit.html" title="RU/setFPSLimit">setFPSLimit</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setGlitchEnabled&amp;action=edit&amp;redlink=1" class="new" title="RU/setGlitchEnabled (page does not exist)">setGlitchEnabled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setMaxPlayers&amp;action=edit&amp;redlink=1" class="new" title="RU/setMaxPlayers (page does not exist)">setMaxPlayers</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setServerPassword&amp;action=edit&amp;redlink=1" class="new" title="RU/setServerPassword (page does not exist)">setServerPassword</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/showChat&amp;action=edit&amp;redlink=1" class="new" title="RU/showChat (page does not exist)">showChat</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/shutdown&amp;action=edit&amp;redlink=1" class="new" title="RU/shutdown (page does not exist)">shutdown</a></li>
+<li><a href="toJSON.html" title="RU/toJSON">toJSON</a></li></ul>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BD.D0.B0.D1.81.D1.82.D1.80.D0.BE.D0.B9.D0.BA.D0.B8_.D1.80.D0.B5.D0.B5.D1.81.D1.82.D1.80.D0.B0">Функции настройки реестра</span></h2>
+<ul><li> <a href="get.html" title="RU/get">get</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/set&amp;action=edit&amp;redlink=1" class="new" title="RU/set (page does not exist)">set</a></li></ul>
+<h2><span class="mw-headline" id="SQL-.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8">SQL-функции</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/executeSQLQuery&amp;action=edit&amp;redlink=1" class="new" title="RU/executeSQLQuery (page does not exist)">executeSQLQuery</a></li></ul>
+<ul><li><a href="dbConnect.html" title="RU/dbConnect">dbConnect</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/dbExec&amp;action=edit&amp;redlink=1" class="new" title="RU/dbExec (page does not exist)">dbExec</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/dbQuery&amp;action=edit&amp;redlink=1" class="new" title="RU/dbQuery (page does not exist)">dbQuery</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/dbPoll&amp;action=edit&amp;redlink=1" class="new" title="RU/dbPoll (page does not exist)">dbPoll</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/dbFree&amp;action=edit&amp;redlink=1" class="new" title="RU/dbFree (page does not exist)">dbFree</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/dbPrepareString&amp;action=edit&amp;redlink=1" class="new" title="RU/dbPrepareString (page does not exist)">dbPrepareString</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BA.D0.BE.D0.BC.D0.B0.D0.BD.D0.B4.D1.8B">Функции команды</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/countPlayersInTeam&amp;action=edit&amp;redlink=1" class="new" title="RU/countPlayersInTeam (page does not exist)">countPlayersInTeam</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/createTeam&amp;action=edit&amp;redlink=1" class="new" title="RU/createTeam (page does not exist)">createTeam</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPlayersInTeam&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayersInTeam (page does not exist)">getPlayersInTeam</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPlayerTeam&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerTeam (page does not exist)">getPlayerTeam</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getTeamColor&amp;action=edit&amp;redlink=1" class="new" title="RU/getTeamColor (page does not exist)">getTeamColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getTeamFriendlyFire&amp;action=edit&amp;redlink=1" class="new" title="RU/getTeamFriendlyFire (page does not exist)">getTeamFriendlyFire</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getTeamFromName&amp;action=edit&amp;redlink=1" class="new" title="RU/getTeamFromName (page does not exist)">getTeamFromName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getTeamName&amp;action=edit&amp;redlink=1" class="new" title="RU/getTeamName (page does not exist)">getTeamName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setPlayerTeam&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerTeam (page does not exist)">setPlayerTeam</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setTeamColor&amp;action=edit&amp;redlink=1" class="new" title="RU/setTeamColor (page does not exist)">setTeamColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setTeamFriendlyFire&amp;action=edit&amp;redlink=1" class="new" title="RU/setTeamFriendlyFire (page does not exist)">setTeamFriendlyFire</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setTeamName&amp;action=edit&amp;redlink=1" class="new" title="RU/setTeamName (page does not exist)">setTeamName</a></li></ul>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.82.D0.B5.D0.BA.D1.81.D1.82.D0.B0">Функции текста</span></h2>
+<ul><li><a href="../TextCreateTextItem.html" title="TextCreateTextItem">textCreateTextItem</a></li>
+<li><a href="../TextDestroyTextItem.html" title="TextDestroyTextItem">textDestroyTextItem</a></li>
+<li><a href="../TextItemGetColor.html" title="TextItemGetColor">textItemGetColor</a></li>
+<li><a href="../TextItemGetPosition.html" title="TextItemGetPosition">textItemGetPosition</a></li>
+<li><a href="../TextItemGetPriority.html" title="TextItemGetPriority">textItemGetPriority</a></li>
+<li><a href="../TextItemGetScale.html" title="TextItemGetScale">textItemGetScale</a></li>
+<li><a href="../TextItemGetText.html" title="TextItemGetText">textItemGetText</a></li>
+<li><a href="../TextItemSetColor.html" title="TextItemSetColor">textItemSetColor</a></li>
+<li><a href="../TextItemSetPosition.html" title="TextItemSetPosition">textItemSetPosition</a></li>
+<li><a href="../TextItemSetPriority.html" title="TextItemSetPriority">textItemSetPriority</a></li>
+<li><a href="../TextItemSetScale.html" title="TextItemSetScale">textItemSetScale</a></li>
+<li><a href="../TextItemSetText.html" title="TextItemSetText">textItemSetText</a></li>
+<li><a href="../TextCreateDisplay.html" title="TextCreateDisplay">textCreateDisplay</a></li>
+<li><a href="../TextDestroyDisplay.html" title="TextDestroyDisplay">textDestroyDisplay</a></li>
+<li><a href="../TextDisplayAddObserver.html" title="TextDisplayAddObserver">textDisplayAddObserver</a></li>
+<li><a href="../TextDisplayAddText.html" title="TextDisplayAddText">textDisplayAddText</a></li>
+<li><a href="../TextDisplayRemoveObserver.html" title="TextDisplayRemoveObserver">textDisplayRemoveObserver</a></li>
+<li><a href="../TextDisplayRemoveText.html" title="TextDisplayRemoveText">textDisplayRemoveText</a></li></ul>
+<ul><li><a href="../TextDisplayGetObservers.html" title="TextDisplayGetObservers">textDisplayGetObservers</a></li>
+<li><a href="../TextDisplayIsObserver.html" title="TextDisplayIsObserver">textDisplayIsObserver</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A3.D1.82.D0.B8.D0.BB.D0.B8.D1.82.D0.B0.D1.80.D0.BD.D1.8B.D0.B5_.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8">Утилитарные функции</span></h2>
+<ul><li><a href="../Iprint.html" title="Iprint">iprint</a></li>
+<li><a href="../Inspect.html" title="Inspect">inspect</a></li>
+<li><a href="../GetColorFromString.html" title="GetColorFromString">getColorFromString</a></li>
+<li><a href="../GetDistanceBetweenPoints2D.html" title="GetDistanceBetweenPoints2D">getDistanceBetweenPoints2D</a></li>
+<li><a href="../GetDistanceBetweenPoints3D.html" title="GetDistanceBetweenPoints3D">getDistanceBetweenPoints3D</a></li>
+<li><a href="../GetEasingValue.html" title="GetEasingValue">getEasingValue</a></li>
+<li><a href="../InterpolateBetween.html" title="InterpolateBetween">interpolateBetween</a></li>
+<li><a href="../GetPerformanceStats.html" title="GetPerformanceStats">getPerformanceStats</a></li>
+<li><a href="../GetNetworkStats.html" title="GetNetworkStats">getNetworkStats</a></li>
+<li><a href="../GetNetworkUsageData.html" title="GetNetworkUsageData">getNetworkUsageData</a></li>
+<li><a href="../GetServerConfigSetting.html" title="GetServerConfigSetting">getServerConfigSetting</a></li>
+<li><a href="../SetServerConfigSetting.html" title="SetServerConfigSetting">setServerConfigSetting</a></li>
+<li><a href="../GetRealTime.html" title="GetRealTime">getRealTime</a></li>
+<li><a href="../GetTickCount.html" title="GetTickCount">getTickCount</a></li>
+<li><a href="../GetTimerDetails.html" title="GetTimerDetails">getTimerDetails</a></li>
+<li><a href="../GetTimers.html" title="GetTimers">getTimers</a></li>
+<li><a href="../Gettok.html" title="Gettok">gettok</a></li></ul>
+<ul><li><a href="../GetUserdataType.html" title="GetUserdataType">getUserdataType</a></li></ul>
+<ul><li><a href="../Hash.html" title="Hash">hash</a></li>
+<li><a href="../KillTimer.html" title="KillTimer">killTimer</a></li>
+<li><a href="../ResetTimer.html" title="ResetTimer">resetTimer</a></li>
+<li><a href="../SetTimer.html" title="SetTimer">setTimer</a></li>
+<li><a href="../Split.html" title="Split">split</a></li></ul>
+<ul><li><a href="../IsOOPEnabled.html" title="IsOOPEnabled">isOOPEnabled</a></li>
+<li><a href="../IsTimer.html" title="IsTimer">isTimer</a></li>
+<li><a href="../Md5.html" title="Md5">md5</a></li>
+<li><a href="../Sha256.html" title="Sha256">sha256</a></li>
+<li><a href="../TeaEncode.html" title="TeaEncode">teaEncode</a></li>
+<li><a href="../TeaDecode.html" title="TeaDecode">teaDecode</a></li>
+<li><a href="../Base64Encode.html" title="Base64Encode">base64Encode</a></li>
+<li><a href="../Base64Decode.html" title="Base64Decode">base64Decode</a></li></ul>
+<ul><li> <a href="../UtfChar.html" title="UtfChar">utfChar</a></li>
+<li> <a href="../UtfCode.html" title="UtfCode">utfCode</a></li>
+<li> <a href="../UtfLen.html" title="UtfLen">utfLen</a></li>
+<li> <a href="../UtfSeek.html" title="UtfSeek">utfSeek</a></li>
+<li> <a href="../UtfSub.html" title="UtfSub">utfSub</a></li></ul>
+<ul><li> <a href="../PasswordHash.html" title="PasswordHash">passwordHash</a></li>
+<li> <a href="../PasswordVerify.html" title="PasswordVerify">passwordVerify</a></li></ul>
+<ul><li> <a href="../PregFind.html" title="PregFind">pregFind</a></li>
+<li> <a href="../PregReplace.html" title="PregReplace">pregReplace</a></li>
+<li> <a href="../PregMatch.html" title="PregMatch">pregMatch</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/bitAnd&amp;action=edit&amp;redlink=1" class="new" title="RU/bitAnd (page does not exist)">bitAnd</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/bitNot&amp;action=edit&amp;redlink=1" class="new" title="RU/bitNot (page does not exist)">bitNot</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/bitOr&amp;action=edit&amp;redlink=1" class="new" title="RU/bitOr (page does not exist)">bitOr</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/bitXor&amp;action=edit&amp;redlink=1" class="new" title="RU/bitXor (page does not exist)">bitXor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/bitTest&amp;action=edit&amp;redlink=1" class="new" title="RU/bitTest (page does not exist)">bitTest</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/bitLRotate&amp;action=edit&amp;redlink=1" class="new" title="RU/bitLRotate (page does not exist)">bitLRotate</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/bitRRotate&amp;action=edit&amp;redlink=1" class="new" title="RU/bitRRotate (page does not exist)">bitRRotate</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/bitLShift&amp;action=edit&amp;redlink=1" class="new" title="RU/bitLShift (page does not exist)">bitLShift</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/bitRShift&amp;action=edit&amp;redlink=1" class="new" title="RU/bitRShift (page does not exist)">bitRShift</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/bitArShift&amp;action=edit&amp;redlink=1" class="new" title="RU/bitArShift (page does not exist)">bitArShift</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/bitExtract&amp;action=edit&amp;redlink=1" class="new" title="RU/bitExtract (page does not exist)">bitExtract</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/bitReplace&amp;action=edit&amp;redlink=1" class="new" title="RU/bitReplace (page does not exist)">bitReplace</a></li></ul>
+<ul><li> <a href="../AddDebugHook.html" title="AddDebugHook">addDebugHook</a></li>
+<li> <a href="../RemoveDebugHook.html" title="RemoveDebugHook">removeDebugHook</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_UTF-8">Функции UTF-8</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/utf8.byte&amp;action=edit&amp;redlink=1" class="new" title="RU/utf8.byte (page does not exist)">utf8.byte</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/utf8.char&amp;action=edit&amp;redlink=1" class="new" title="RU/utf8.char (page does not exist)">utf8.char</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/utf8.charpos&amp;action=edit&amp;redlink=1" class="new" title="RU/utf8.charpos (page does not exist)">utf8.charpos</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/utf8.escape&amp;action=edit&amp;redlink=1" class="new" title="RU/utf8.escape (page does not exist)">utf8.escape</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/utf8.find&amp;action=edit&amp;redlink=1" class="new" title="RU/utf8.find (page does not exist)">utf8.find</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/utf8.fold&amp;action=edit&amp;redlink=1" class="new" title="RU/utf8.fold (page does not exist)">utf8.fold</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/utf8.gmatch&amp;action=edit&amp;redlink=1" class="new" title="RU/utf8.gmatch (page does not exist)">utf8.gmatch</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/utf8.gsub&amp;action=edit&amp;redlink=1" class="new" title="RU/utf8.gsub (page does not exist)">utf8.gsub</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/utf8.insert&amp;action=edit&amp;redlink=1" class="new" title="RU/utf8.insert (page does not exist)">utf8.insert</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/utf8.len&amp;action=edit&amp;redlink=1" class="new" title="RU/utf8.len (page does not exist)">utf8.len</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/utf8.lower&amp;action=edit&amp;redlink=1" class="new" title="RU/utf8.lower (page does not exist)">utf8.lower</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/utf8.match&amp;action=edit&amp;redlink=1" class="new" title="RU/utf8.match (page does not exist)">utf8.match</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/utf8.ncasecmp&amp;action=edit&amp;redlink=1" class="new" title="RU/utf8.ncasecmp (page does not exist)">utf8.ncasecmp</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/utf8.next&amp;action=edit&amp;redlink=1" class="new" title="RU/utf8.next (page does not exist)">utf8.next</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/utf8.remove&amp;action=edit&amp;redlink=1" class="new" title="RU/utf8.remove (page does not exist)">utf8.remove</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/utf8.reverse&amp;action=edit&amp;redlink=1" class="new" title="RU/utf8.reverse (page does not exist)">utf8.reverse</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/utf8.sub&amp;action=edit&amp;redlink=1" class="new" title="RU/utf8.sub (page does not exist)">utf8.sub</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/utf8.title&amp;action=edit&amp;redlink=1" class="new" title="RU/utf8.title (page does not exist)">utf8.title</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/utf8.upper&amp;action=edit&amp;redlink=1" class="new" title="RU/utf8.upper (page does not exist)">utf8.upper</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/utf8.width&amp;action=edit&amp;redlink=1" class="new" title="RU/utf8.width (page does not exist)">utf8.width</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/utf8.widthindex&amp;action=edit&amp;redlink=1" class="new" title="RU/utf8.widthindex (page does not exist)">utf8.widthindex</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.82.D1.80.D0.B0.D0.BD.D1.81.D0.BF.D0.BE.D1.80.D1.82.D0.B0">Функции транспорта</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/createVehicle&amp;action=edit&amp;redlink=1" class="new" title="RU/createVehicle (page does not exist)">createVehicle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/addVehicleSirens&amp;action=edit&amp;redlink=1" class="new" title="RU/addVehicleSirens (page does not exist)">addVehicleSirens</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/removeVehicleSirens&amp;action=edit&amp;redlink=1" class="new" title="RU/removeVehicleSirens (page does not exist)">removeVehicleSirens</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/removeVehicleUpgrade&amp;action=edit&amp;redlink=1" class="new" title="RU/removeVehicleUpgrade (page does not exist)">removeVehicleUpgrade</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/addVehicleUpgrade&amp;action=edit&amp;redlink=1" class="new" title="RU/addVehicleUpgrade (page does not exist)">addVehicleUpgrade</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/attachTrailerToVehicle&amp;action=edit&amp;redlink=1" class="new" title="RU/attachTrailerToVehicle (page does not exist)">attachTrailerToVehicle</a></li>
+<li><a href="blowVehicle.html" title="RU/blowVehicle">blowVehicle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/detachTrailerFromVehicle&amp;action=edit&amp;redlink=1" class="new" title="RU/detachTrailerFromVehicle (page does not exist)">detachTrailerFromVehicle</a></li>
+<li><a href="fixVehicle.html" title="RU/fixVehicle">fixVehicle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/resetVehicleExplosionTime&amp;action=edit&amp;redlink=1" class="new" title="RU/resetVehicleExplosionTime (page does not exist)">resetVehicleExplosionTime</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/resetVehicleIdleTime&amp;action=edit&amp;redlink=1" class="new" title="RU/resetVehicleIdleTime (page does not exist)">resetVehicleIdleTime</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/respawnVehicle&amp;action=edit&amp;redlink=1" class="new" title="RU/respawnVehicle (page does not exist)">respawnVehicle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/spawnVehicle&amp;action=edit&amp;redlink=1" class="new" title="RU/spawnVehicle (page does not exist)">spawnVehicle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/toggleVehicleRespawn&amp;action=edit&amp;redlink=1" class="new" title="RU/toggleVehicleRespawn (page does not exist)">toggleVehicleRespawn</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isTrainChainEngine&amp;action=edit&amp;redlink=1" class="new" title="RU/isTrainChainEngine (page does not exist)">isTrainChainEngine</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isTrainDerailable&amp;action=edit&amp;redlink=1" class="new" title="RU/isTrainDerailable (page does not exist)">isTrainDerailable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isTrainDerailed&amp;action=edit&amp;redlink=1" class="new" title="RU/isTrainDerailed (page does not exist)">isTrainDerailed</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isVehicleBlown&amp;action=edit&amp;redlink=1" class="new" title="RU/isVehicleBlown (page does not exist)">isVehicleBlown</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isVehicleTaxiLightOn&amp;action=edit&amp;redlink=1" class="new" title="RU/isVehicleTaxiLightOn (page does not exist)">isVehicleTaxiLightOn</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isVehicleDamageProof&amp;action=edit&amp;redlink=1" class="new" title="RU/isVehicleDamageProof (page does not exist)">isVehicleDamageProof</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isVehicleFuelTankExplodable&amp;action=edit&amp;redlink=1" class="new" title="RU/isVehicleFuelTankExplodable (page does not exist)">isVehicleFuelTankExplodable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isVehicleLocked&amp;action=edit&amp;redlink=1" class="new" title="RU/isVehicleLocked (page does not exist)">isVehicleLocked</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isVehicleOnGround&amp;action=edit&amp;redlink=1" class="new" title="RU/isVehicleOnGround (page does not exist)">isVehicleOnGround</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getTrainDirection&amp;action=edit&amp;redlink=1" class="new" title="RU/getTrainDirection (page does not exist)">getTrainDirection</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getTrainSpeed&amp;action=edit&amp;redlink=1" class="new" title="RU/getTrainSpeed (page does not exist)">getTrainSpeed</a></li></ul>
+<div style="font-weight: bold;background:black;color:white;padding:2px; padding-left:8px;">С версии 1.6 <a rel="nofollow" class="external text" href="https://buildinfo.mtasa.com/?Author=&amp;Branch=&amp;Revision=7485"><span style="color: #FFFFFF;">r7485</span></a> и выше</div><div style="border: 2px solid black;padding: 3px;">
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/getTrainTrack&amp;action=edit&amp;redlink=1" class="new" title="RU/getTrainTrack (page does not exist)">getTrainTrack</a></li></ul>
+ </div>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/getTrainPosition&amp;action=edit&amp;redlink=1" class="new" title="RU/getTrainPosition (page does not exist)">getTrainPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehicleColor&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehicleColor (page does not exist)">getVehicleColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehicleCompatibleUpgrades&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehicleCompatibleUpgrades (page does not exist)">getVehicleCompatibleUpgrades</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehicleController&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehicleController (page does not exist)">getVehicleController</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehicleDoorState&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehicleDoorState (page does not exist)">getVehicleDoorState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehicleEngineState&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehicleEngineState (page does not exist)">getVehicleEngineState</a></li>
+<li><a href="getVehicleLandingGearDown.html" title="RU/getVehicleLandingGearDown">getVehicleLandingGearDown</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehicleLightState&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehicleLightState (page does not exist)">getVehicleLightState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehicleMaxPassengers&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehicleMaxPassengers (page does not exist)">getVehicleMaxPassengers</a></li>
+<li><a href="getVehicleName.html" title="RU/getVehicleName">getVehicleName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehicleOccupant&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehicleOccupant (page does not exist)">getVehicleOccupant</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehicleOccupants&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehicleOccupants (page does not exist)">getVehicleOccupants</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehicleOverrideLights&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehicleOverrideLights (page does not exist)">getVehicleOverrideLights</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehiclePaintjob&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehiclePaintjob (page does not exist)">getVehiclePaintjob</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehiclePanelState&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehiclePanelState (page does not exist)">getVehiclePanelState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehiclePlateText&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehiclePlateText (page does not exist)">getVehiclePlateText</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehicleSirensOn&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehicleSirensOn (page does not exist)">getVehicleSirensOn</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehiclesOfType&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehiclesOfType (page does not exist)">getVehiclesOfType</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehicleTowedByVehicle&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehicleTowedByVehicle (page does not exist)">getVehicleTowedByVehicle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehicleTowingVehicle&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehicleTowingVehicle (page does not exist)">getVehicleTowingVehicle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehicleTurnVelocity&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehicleTurnVelocity (page does not exist)">getVehicleTurnVelocity</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehicleTurretPosition&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehicleTurretPosition (page does not exist)">getVehicleTurretPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehicleType&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehicleType (page does not exist)">getVehicleType</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehicleUpgradeOnSlot&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehicleUpgradeOnSlot (page does not exist)">getVehicleUpgradeOnSlot</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehicleUpgrades&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehicleUpgrades (page does not exist)">getVehicleUpgrades</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehicleUpgradeSlotName&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehicleUpgradeSlotName (page does not exist)">getVehicleUpgradeSlotName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehicleWheelStates&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehicleWheelStates (page does not exist)">getVehicleWheelStates</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehicleDoorOpenRatio&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehicleDoorOpenRatio (page does not exist)">getVehicleDoorOpenRatio</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehicleHandling&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehicleHandling (page does not exist)">getVehicleHandling</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getModelHandling&amp;action=edit&amp;redlink=1" class="new" title="RU/getModelHandling (page does not exist)">getModelHandling</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getOriginalHandling&amp;action=edit&amp;redlink=1" class="new" title="RU/getOriginalHandling (page does not exist)">getOriginalHandling</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehicleHeadLightColor&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehicleHeadLightColor (page does not exist)">getVehicleHeadLightColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehicleModelFromName&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehicleModelFromName (page does not exist)">getVehicleModelFromName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehicleNameFromModel&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehicleNameFromModel (page does not exist)">getVehicleNameFromModel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehicleVariant&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehicleVariant (page does not exist)">getVehicleVariant</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehicleSirenParams&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehicleSirenParams (page does not exist)">getVehicleSirenParams</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehicleSirens&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehicleSirens (page does not exist)">getVehicleSirens</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setModelHandling&amp;action=edit&amp;redlink=1" class="new" title="RU/setModelHandling (page does not exist)">setModelHandling</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setTrainDerailable&amp;action=edit&amp;redlink=1" class="new" title="RU/setTrainDerailable (page does not exist)">setTrainDerailable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setTrainDerailed&amp;action=edit&amp;redlink=1" class="new" title="RU/setTrainDerailed (page does not exist)">setTrainDerailed</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setTrainDirection&amp;action=edit&amp;redlink=1" class="new" title="RU/setTrainDirection (page does not exist)">setTrainDirection</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setTrainSpeed&amp;action=edit&amp;redlink=1" class="new" title="RU/setTrainSpeed (page does not exist)">setTrainSpeed</a></li></ul>
+<div style="font-weight: bold;background:black;color:white;padding:2px; padding-left:8px;">С версии 1.6 <a rel="nofollow" class="external text" href="https://buildinfo.mtasa.com/?Author=&amp;Branch=&amp;Revision=7485"><span style="color: #FFFFFF;">r7485</span></a> и выше</div><div style="border: 2px solid black;padding: 3px;">
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/setTrainTrack&amp;action=edit&amp;redlink=1" class="new" title="RU/setTrainTrack (page does not exist)">setTrainTrack</a></li></ul>
+ </div>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/setTrainPosition&amp;action=edit&amp;redlink=1" class="new" title="RU/setTrainPosition (page does not exist)">setTrainPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setVehicleColor&amp;action=edit&amp;redlink=1" class="new" title="RU/setVehicleColor (page does not exist)">setVehicleColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setVehicleDamageProof&amp;action=edit&amp;redlink=1" class="new" title="RU/setVehicleDamageProof (page does not exist)">setVehicleDamageProof</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setVehicleDoorState&amp;action=edit&amp;redlink=1" class="new" title="RU/setVehicleDoorState (page does not exist)">setVehicleDoorState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setVehicleDoorsUndamageable&amp;action=edit&amp;redlink=1" class="new" title="RU/setVehicleDoorsUndamageable (page does not exist)">setVehicleDoorsUndamageable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setVehicleEngineState&amp;action=edit&amp;redlink=1" class="new" title="RU/setVehicleEngineState (page does not exist)">setVehicleEngineState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setVehicleFuelTankExplodable&amp;action=edit&amp;redlink=1" class="new" title="RU/setVehicleFuelTankExplodable (page does not exist)">setVehicleFuelTankExplodable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setVehicleIdleRespawnDelay&amp;action=edit&amp;redlink=1" class="new" title="RU/setVehicleIdleRespawnDelay (page does not exist)">setVehicleIdleRespawnDelay</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setVehicleLandingGearDown&amp;action=edit&amp;redlink=1" class="new" title="RU/setVehicleLandingGearDown (page does not exist)">setVehicleLandingGearDown</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setVehicleLightState&amp;action=edit&amp;redlink=1" class="new" title="RU/setVehicleLightState (page does not exist)">setVehicleLightState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setVehicleLocked&amp;action=edit&amp;redlink=1" class="new" title="RU/setVehicleLocked (page does not exist)">setVehicleLocked</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setVehicleOverrideLights&amp;action=edit&amp;redlink=1" class="new" title="RU/setVehicleOverrideLights (page does not exist)">setVehicleOverrideLights</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setVehiclePaintjob&amp;action=edit&amp;redlink=1" class="new" title="RU/setVehiclePaintjob (page does not exist)">setVehiclePaintjob</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setVehiclePanelState&amp;action=edit&amp;redlink=1" class="new" title="RU/setVehiclePanelState (page does not exist)">setVehiclePanelState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setVehiclePlateText&amp;action=edit&amp;redlink=1" class="new" title="RU/setVehiclePlateText (page does not exist)">setVehiclePlateText</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setVehicleRespawnDelay&amp;action=edit&amp;redlink=1" class="new" title="RU/setVehicleRespawnDelay (page does not exist)">setVehicleRespawnDelay</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setVehicleRespawnPosition&amp;action=edit&amp;redlink=1" class="new" title="RU/setVehicleRespawnPosition (page does not exist)">setVehicleRespawnPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setVehicleSirensOn&amp;action=edit&amp;redlink=1" class="new" title="RU/setVehicleSirensOn (page does not exist)">setVehicleSirensOn</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setVehicleTurretPosition&amp;action=edit&amp;redlink=1" class="new" title="RU/setVehicleTurretPosition (page does not exist)">setVehicleTurretPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setVehicleDoorOpenRatio&amp;action=edit&amp;redlink=1" class="new" title="RU/setVehicleDoorOpenRatio (page does not exist)">setVehicleDoorOpenRatio</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setVehicleHandling&amp;action=edit&amp;redlink=1" class="new" title="RU/setVehicleHandling (page does not exist)">setVehicleHandling</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setVehicleTurnVelocity&amp;action=edit&amp;redlink=1" class="new" title="RU/setVehicleTurnVelocity (page does not exist)">setVehicleTurnVelocity</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setVehicleWheelStates&amp;action=edit&amp;redlink=1" class="new" title="RU/setVehicleWheelStates (page does not exist)">setVehicleWheelStates</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setVehicleHeadLightColor&amp;action=edit&amp;redlink=1" class="new" title="RU/setVehicleHeadLightColor (page does not exist)">setVehicleHeadLightColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setVehicleTaxiLightOn&amp;action=edit&amp;redlink=1" class="new" title="RU/setVehicleTaxiLightOn (page does not exist)">setVehicleTaxiLightOn</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setVehicleVariant&amp;action=edit&amp;redlink=1" class="new" title="RU/setVehicleVariant (page does not exist)">setVehicleVariant</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setVehicleSirens&amp;action=edit&amp;redlink=1" class="new" title="RU/setVehicleSirens (page does not exist)">setVehicleSirens</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B2.D0.BE.D0.B4.D1.8B">Функции воды</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/createWater&amp;action=edit&amp;redlink=1" class="new" title="RU/createWater (page does not exist)">createWater</a></li></ul>
+<ul><li> <a href="http://wiki.localhost/index.php?title=RU/getWaterColor&amp;action=edit&amp;redlink=1" class="new" title="RU/getWaterColor (page does not exist)">getWaterColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getWaterVertexPosition&amp;action=edit&amp;redlink=1" class="new" title="RU/getWaterVertexPosition (page does not exist)">getWaterVertexPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getWaveHeight&amp;action=edit&amp;redlink=1" class="new" title="RU/getWaveHeight (page does not exist)">getWaveHeight</a></li></ul>
+<ul><li> <a href="http://wiki.localhost/index.php?title=RU/resetWaterColor&amp;action=edit&amp;redlink=1" class="new" title="RU/resetWaterColor (page does not exist)">resetWaterColor</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/setWaterColor&amp;action=edit&amp;redlink=1" class="new" title="RU/setWaterColor (page does not exist)">setWaterColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setWaterLevel&amp;action=edit&amp;redlink=1" class="new" title="RU/setWaterLevel (page does not exist)">setWaterLevel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setWaterVertexPosition&amp;action=edit&amp;redlink=1" class="new" title="RU/setWaterVertexPosition (page does not exist)">setWaterVertexPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setWaveHeight&amp;action=edit&amp;redlink=1" class="new" title="RU/setWaveHeight (page does not exist)">setWaveHeight</a></li></ul>
+<ul><li> <a href="http://wiki.localhost/index.php?title=RU/resetWaterLevel&amp;action=edit&amp;redlink=1" class="new" title="RU/resetWaterLevel (page does not exist)">resetWaterLevel</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BE.D1.80.D1.83.D0.B6.D0.B8.D1.8F">Функции оружия</span></h2>
+<ul><li><a href="getSlotFromWeapon.html" title="RU/getSlotFromWeapon">getSlotFromWeapon</a></li>
+<li><a href="getWeaponIDFromName.html" title="RU/getWeaponIDFromName">getWeaponIDFromName</a></li>
+<li><a href="getWeaponNameFromID.html" title="RU/getWeaponNameFromID">getWeaponNameFromID</a></li>
+<li><a href="giveWeapon.html" title="RU/giveWeapon">giveWeapon</a></li>
+<li><a href="setWeaponAmmo.html" title="RU/setWeaponAmmo">setWeaponAmmo</a></li>
+<li><a href="takeAllWeapons.html" title="RU/takeAllWeapons">takeAllWeapons</a></li>
+<li><a href="takeWeapon.html" title="RU/takeWeapon">takeWeapon</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getOriginalWeaponProperty&amp;action=edit&amp;redlink=1" class="new" title="RU/getOriginalWeaponProperty (page does not exist)">getOriginalWeaponProperty</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getWeaponProperty&amp;action=edit&amp;redlink=1" class="new" title="RU/getWeaponProperty (page does not exist)">getWeaponProperty</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setWeaponProperty&amp;action=edit&amp;redlink=1" class="new" title="RU/setWeaponProperty (page does not exist)">setWeaponProperty</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BC.D0.B8.D1.80.D0.B0">Функции мира</span></h2>
+<ul><li><a href="areTrafficLightsLocked.html" title="RU/areTrafficLightsLocked">areTrafficLightsLocked</a></li>
+<li><a href="getCloudsEnabled.html" title="RU/getCloudsEnabled">getCloudsEnabled</a></li>
+<li><a href="getGameSpeed.html" title="RU/getGameSpeed">getGameSpeed</a></li>
+<li><a href="getGravity.html" title="RU/getGravity">getGravity</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getHeatHaze&amp;action=edit&amp;redlink=1" class="new" title="RU/getHeatHaze (page does not exist)">getHeatHaze</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getJetpackMaxHeight&amp;action=edit&amp;redlink=1" class="new" title="RU/getJetpackMaxHeight (page does not exist)">getJetpackMaxHeight</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getMinuteDuration&amp;action=edit&amp;redlink=1" class="new" title="RU/getMinuteDuration (page does not exist)">getMinuteDuration</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getSkyGradient&amp;action=edit&amp;redlink=1" class="new" title="RU/getSkyGradient (page does not exist)">getSkyGradient</a></li>
+<li><a href="getTime-2.html" title="RU/getTime">getTime</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getTrafficLightState&amp;action=edit&amp;redlink=1" class="new" title="RU/getTrafficLightState (page does not exist)">getTrafficLightState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getVehiclesLODDistance&amp;action=edit&amp;redlink=1" class="new" title="RU/getVehiclesLODDistance (page does not exist)">getVehiclesLODDistance</a></li>
+<li><a href="getWeather.html" title="RU/getWeather">getWeather</a></li>
+<li><a href="getZoneName.html" title="RU/getZoneName">getZoneName</a></li>
+<li><a href="isGarageOpen.html" title="RU/isGarageOpen">isGarageOpen</a></li>
+<li><a href="resetSkyGradient.html" title="RU/resetSkyGradient">resetSkyGradient</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/resetHeatHaze&amp;action=edit&amp;redlink=1" class="new" title="RU/resetHeatHaze (page does not exist)">resetHeatHaze</a></li>
+<li><a href="setCloudsEnabled.html" title="RU/setCloudsEnabled">setCloudsEnabled</a></li>
+<li><a href="setGameSpeed.html" title="RU/setGameSpeed">setGameSpeed</a></li>
+<li><a href="setGarageOpen.html" title="RU/setGarageOpen">setGarageOpen</a></li>
+<li><a href="setGravity.html" title="RU/setGravity">setGravity</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setHeatHaze&amp;action=edit&amp;redlink=1" class="new" title="RU/setHeatHaze (page does not exist)">setHeatHaze</a></li>
+<li><a href="setMinuteDuration.html" title="RU/setMinuteDuration">setMinuteDuration</a></li>
+<li><a href="setSkyGradient.html" title="RU/setSkyGradient">setSkyGradient</a></li>
+<li><a href="setTime.html" title="RU/setTime">setTime</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setTrafficLightState&amp;action=edit&amp;redlink=1" class="new" title="RU/setTrafficLightState (page does not exist)">setTrafficLightState</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setTrafficLightsLocked&amp;action=edit&amp;redlink=1" class="new" title="RU/setTrafficLightsLocked (page does not exist)">setTrafficLightsLocked</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setVehiclesLODDistance&amp;action=edit&amp;redlink=1" class="new" title="RU/setVehiclesLODDistance (page does not exist)">setVehiclesLODDistance</a></li>
+<li><a href="setWeather.html" title="RU/setWeather">setWeather</a></li>
+<li><a href="setWeatherBlended.html" title="RU/setWeatherBlended">setWeatherBlended</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setInteriorSoundsEnabled&amp;action=edit&amp;redlink=1" class="new" title="RU/setInteriorSoundsEnabled (page does not exist)">setInteriorSoundsEnabled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getInteriorSoundsEnabled&amp;action=edit&amp;redlink=1" class="new" title="RU/getInteriorSoundsEnabled (page does not exist)">getInteriorSoundsEnabled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setRainLevel&amp;action=edit&amp;redlink=1" class="new" title="RU/setRainLevel (page does not exist)">setRainLevel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getRainLevel&amp;action=edit&amp;redlink=1" class="new" title="RU/getRainLevel (page does not exist)">getRainLevel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/resetRainLevel&amp;action=edit&amp;redlink=1" class="new" title="RU/resetRainLevel (page does not exist)">resetRainLevel</a></li>
+<li><a href="setSunSize.html" title="RU/setSunSize">setSunSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getSunSize&amp;action=edit&amp;redlink=1" class="new" title="RU/getSunSize (page does not exist)">getSunSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/resetSunSize&amp;action=edit&amp;redlink=1" class="new" title="RU/resetSunSize (page does not exist)">resetSunSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setSunColor&amp;action=edit&amp;redlink=1" class="new" title="RU/setSunColor (page does not exist)">setSunColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getSunColor&amp;action=edit&amp;redlink=1" class="new" title="RU/getSunColor (page does not exist)">getSunColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/resetSunColor&amp;action=edit&amp;redlink=1" class="new" title="RU/resetSunColor (page does not exist)">resetSunColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setWindVelocity&amp;action=edit&amp;redlink=1" class="new" title="RU/setWindVelocity (page does not exist)">setWindVelocity</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getWindVelocity&amp;action=edit&amp;redlink=1" class="new" title="RU/getWindVelocity (page does not exist)">getWindVelocity</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/resetWindVelocity&amp;action=edit&amp;redlink=1" class="new" title="RU/resetWindVelocity (page does not exist)">resetWindVelocity</a></li>
+<li><a href="setFarClipDistance.html" title="RU/setFarClipDistance">setFarClipDistance</a></li>
+<li><a href="getFarClipDistance.html" title="RU/getFarClipDistance">getFarClipDistance</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/resetFarClipDistance&amp;action=edit&amp;redlink=1" class="new" title="RU/resetFarClipDistance (page does not exist)">resetFarClipDistance</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setFogDistance&amp;action=edit&amp;redlink=1" class="new" title="RU/setFogDistance (page does not exist)">setFogDistance</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getFogDistance&amp;action=edit&amp;redlink=1" class="new" title="RU/getFogDistance (page does not exist)">getFogDistance</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/resetFogDistance&amp;action=edit&amp;redlink=1" class="new" title="RU/resetFogDistance (page does not exist)">resetFogDistance</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/removeWorldModel&amp;action=edit&amp;redlink=1" class="new" title="RU/removeWorldModel (page does not exist)">removeWorldModel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/restoreWorldModel&amp;action=edit&amp;redlink=1" class="new" title="RU/restoreWorldModel (page does not exist)">restoreWorldModel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/restoreAllWorldModels&amp;action=edit&amp;redlink=1" class="new" title="RU/restoreAllWorldModels (page does not exist)">restoreAllWorldModels</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setOcclusionsEnabled&amp;action=edit&amp;redlink=1" class="new" title="RU/setOcclusionsEnabled (page does not exist)">setOcclusionsEnabled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getOcclusionsEnabled&amp;action=edit&amp;redlink=1" class="new" title="RU/getOcclusionsEnabled (page does not exist)">getOcclusionsEnabled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setJetpackWeaponEnabled&amp;action=edit&amp;redlink=1" class="new" title="RU/setJetpackWeaponEnabled (page does not exist)">setJetpackWeaponEnabled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getJetpackWeaponEnabled&amp;action=edit&amp;redlink=1" class="new" title="RU/getJetpackWeaponEnabled (page does not exist)">getJetpackWeaponEnabled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setAircraftMaxVelocity&amp;action=edit&amp;redlink=1" class="new" title="RU/setAircraftMaxVelocity (page does not exist)">setAircraftMaxVelocity</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getAircraftMaxVelocity&amp;action=edit&amp;redlink=1" class="new" title="RU/getAircraftMaxVelocity (page does not exist)">getAircraftMaxVelocity</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setMoonSize&amp;action=edit&amp;redlink=1" class="new" title="RU/setMoonSize (page does not exist)">setMoonSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getMoonSize&amp;action=edit&amp;redlink=1" class="new" title="RU/getMoonSize (page does not exist)">getMoonSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/resetMoonSize&amp;action=edit&amp;redlink=1" class="new" title="RU/resetMoonSize (page does not exist)">resetMoonSize</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="XML-.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8">XML-функции</span></h2>
+<ul><li><a href="xmlCopyFile.html" title="RU/xmlCopyFile">xmlCopyFile</a></li>
+<li><a href="xmlCreateFile.html" title="RU/xmlCreateFile">xmlCreateFile</a></li>
+<li><a href="xmlDestroyNode.html" title="RU/xmlDestroyNode">xmlDestroyNode</a></li>
+<li><a href="xmlLoadFile.html" title="RU/xmlLoadFile">xmlLoadFile</a></li>
+<li><a href="xmlNodeGetAttribute.html" title="RU/xmlNodeGetAttribute">xmlNodeGetAttribute</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/xmlNodeGetValue&amp;action=edit&amp;redlink=1" class="new" title="RU/xmlNodeGetValue (page does not exist)">xmlNodeGetValue</a></li>
+<li><a href="xmlNodeSetAttribute.html" title="RU/xmlNodeSetAttribute">xmlNodeSetAttribute</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/xmlNodeSetValue&amp;action=edit&amp;redlink=1" class="new" title="RU/xmlNodeSetValue (page does not exist)">xmlNodeSetValue</a></li>
+<li><a href="xmlSaveFile.html" title="RU/xmlSaveFile">xmlSaveFile</a></li>
+<li><a href="xmlUnloadFile.html" title="RU/xmlUnloadFile">xmlUnloadFile</a></li></ul>
+<ul><li><a href="xmlCreateChild.html" title="RU/xmlCreateChild">xmlCreateChild</a></li>
+<li><a href="xmlFindChild.html" title="RU/xmlFindChild">xmlFindChild</a></li>
+<li><a href="xmlNodeGetAttributes.html" title="RU/xmlNodeGetAttributes">xmlNodeGetAttributes</a></li>
+<li><a href="xmlNodeGetChildren.html" title="RU/xmlNodeGetChildren">xmlNodeGetChildren</a></li>
+<li><a href="xmlNodeGetName.html" title="RU/xmlNodeGetName">xmlNodeGetName</a></li>
+<li><a href="xmlNodeGetParent.html" title="RU/xmlNodeGetParent">xmlNodeGetParent</a></li>
+<li><a href="xmlNodeSetName.html" title="RU/xmlNodeSetName">xmlNodeSetName</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625165350
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.104 seconds
+Real time usage: 0.126 seconds
+Preprocessor visited node count: 1287/1000000
+Preprocessor generated node count: 1770/1000000
+Post‐expand include size: 38261/2097152 bytes
+Template argument size: 2904/2097152 bytes
+Highest expansion depth: 10/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   71.913      1 - -total
+ 26.75%   19.236     25 - Template:New_items
+ 21.59%   15.522     36 - Template:Current_Version
+ 12.67%    9.112      1 - Template:RU/Utility_functions
+ 10.70%    7.697      9 - Template:RU/New_items
+  7.91%    5.689      1 - Template:RU/Vehicle_functions
+  5.40%    3.881      1 - Template:RU/ACL_functions
+  4.25%    3.056      1 - Template:RU/Water_functions
+  3.82%    2.746      1 - Template:RU/Resource_functions
+  3.58%    2.577      1 - Template:RU/Pickup_functions
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:3553-0!*!0!!en!*!* and timestamp 20190625165350 and revision id 58804
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=RU/Server_Scripting_Functions&amp;oldid=58804">https://wiki.multitheftauto.com/index.php?title=RU/Server_Scripting_Functions&amp;oldid=58804</a>"</div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Server_Scripting_Functions.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:RU/Server_Scripting_Functions&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=RU/Server_Scripting_Functions&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=RU/Server_Scripting_Functions&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=RU%2FServer+Scripting+Functions" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=RU%2FServer+Scripting+Functions" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/RU/Server_Scripting_Functions.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/RU/Server_Scripting_Functions.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=RU/Server_Scripting_Functions&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=RU/Server_Scripting_Functions&amp;oldid=58804" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=RU/Server_Scripting_Functions&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-ar"><a href="http://wiki.multitheftauto.com/index.php?title=AR/Server_Scripting_Functions" title="Server Scripting Functions – العربية" lang="ar" hreflang="ar">العربية</a></li>
+													<li class="interlanguage-link interwiki-de"><a href="http://wiki.multitheftauto.com/index.php?title=DE/Server-Seitige_Scripting_Funktionen" title="Server-Seitige Scripting Funktionen – Deutsch" lang="de" hreflang="de">Deutsch</a></li>
+													<li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=Server_Scripting_Functions" title="Server Scripting Functions – English" lang="en" hreflang="en">English</a></li>
+													<li class="interlanguage-link interwiki-es"><a href="http://wiki.multitheftauto.com/index.php?title=ES/Funciones_del_Server" title="Funciones del Server – español" lang="es" hreflang="es">Español</a></li>
+													<li class="interlanguage-link interwiki-pl"><a href="http://wiki.multitheftauto.com/index.php?title=PL/Server_Scripting_Functions" title="Server Scripting Functions – polski" lang="pl" hreflang="pl">Polski</a></li>
+													<li class="interlanguage-link interwiki-pt-br"><a href="http://wiki.multitheftauto.com/index.php?title=PT-BR/Fun%C3%A7%C3%B5es_de_Scripting_do_Servidor" title="Funções de Scripting do Servidor – português do Brasil" lang="pt-BR" hreflang="pt-BR">Português do Brasil</a></li>
+													<li class="interlanguage-link interwiki-tr"><a href="http://wiki.multitheftauto.com/index.php?title=TR/Server_Scripting_Functions" title="Server Scripting Functions – Türkçe" lang="tr" hreflang="tr">Türkçe</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 2 September 2018, at 00:56.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":152});});</script></body></html>

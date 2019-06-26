@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>DE/Lua Tutorial - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"DE/Lua_Tutorial","wgTitle":"DE/Lua Tutorial","wgCurRevisionId":29398,"wgRevisionId":29398,"wgArticleId":4224,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"DE/Lua_Tutorial","wgRelevantArticleId":4224,"wgRequestId":"6ab5f4b2c5839a4586619f19","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-DE_Lua_Tutorial rootpage-DE_Lua_Tutorial skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">DE/Lua Tutorial</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Vorwort"><span class="tocnumber">1</span> <span class="toctext">Vorwort</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Grundlagen"><span class="tocnumber">2</span> <span class="toctext">Grundlagen</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Lua.2C_eine_Skriptsprache"><span class="tocnumber">2.1</span> <span class="toctext">Lua, eine Skriptsprache</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Materialien"><span class="tocnumber">2.2</span> <span class="toctext">Materialien</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Kommentare"><span class="tocnumber">3</span> <span class="toctext">Kommentare</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Einzeilig"><span class="tocnumber">3.1</span> <span class="toctext">Einzeilig</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Mehrzeilig"><span class="tocnumber">3.2</span> <span class="toctext">Mehrzeilig</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Variablen"><span class="tocnumber">4</span> <span class="toctext">Variablen</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Einf.C3.BChrung"><span class="tocnumber">4.1</span> <span class="toctext">Einführung</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Typen"><span class="tocnumber">4.2</span> <span class="toctext">Typen</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Definition"><span class="tocnumber">4.3</span> <span class="toctext">Definition</span></a>
+<ul>
+<li class="toclevel-3 tocsection-12"><a href="#Einzeln"><span class="tocnumber">4.3.1</span> <span class="toctext">Einzeln</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="#Mehrere"><span class="tocnumber">4.3.2</span> <span class="toctext">Mehrere</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="#Operatoren"><span class="tocnumber">5</span> <span class="toctext">Operatoren</span></a>
+<ul>
+<li class="toclevel-2 tocsection-15"><a href="#Arithmetische"><span class="tocnumber">5.1</span> <span class="toctext">Arithmetische</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Logische"><span class="tocnumber">5.2</span> <span class="toctext">Logische</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Sonstige"><span class="tocnumber">5.3</span> <span class="toctext">Sonstige</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-18"><a href="#Bedingungen"><span class="tocnumber">6</span> <span class="toctext">Bedingungen</span></a>
+<ul>
+<li class="toclevel-2 tocsection-19"><a href="#Einf.C3.BChrung_2"><span class="tocnumber">6.1</span> <span class="toctext">Einführung</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#Syntax"><span class="tocnumber">6.2</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#Else-Statement"><span class="tocnumber">6.3</span> <span class="toctext">Else-Statement</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#Elseif-Statement"><span class="tocnumber">6.4</span> <span class="toctext">Elseif-Statement</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#Bedingungen_formulieren"><span class="tocnumber">6.5</span> <span class="toctext">Bedingungen formulieren</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#Beispiele"><span class="tocnumber">6.6</span> <span class="toctext">Beispiele</span></a>
+<ul>
+<li class="toclevel-3 tocsection-25"><a href="#50-50-Chance"><span class="tocnumber">6.6.1</span> <span class="toctext">50-50-Chance</span></a></li>
+<li class="toclevel-3 tocsection-26"><a href="#Der_Nutzen_von_elseif"><span class="tocnumber">6.6.2</span> <span class="toctext">Der Nutzen von elseif</span></a></li>
+<li class="toclevel-3 tocsection-27"><a href="#Eingebettetes_Pseudo-if-Statement"><span class="tocnumber">6.6.3</span> <span class="toctext">Eingebettetes Pseudo-if-Statement</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-28"><a href="#Tabellen"><span class="tocnumber">7</span> <span class="toctext">Tabellen</span></a>
+<ul>
+<li class="toclevel-2 tocsection-29"><a href="#Einf.C3.BChrung_3"><span class="tocnumber">7.1</span> <span class="toctext">Einführung</span></a></li>
+<li class="toclevel-2 tocsection-30"><a href="#Definition_2"><span class="tocnumber">7.2</span> <span class="toctext">Definition</span></a></li>
+<li class="toclevel-2 tocsection-31"><a href="#Ganzzahlige_Indizes"><span class="tocnumber">7.3</span> <span class="toctext">Ganzzahlige Indizes</span></a></li>
+<li class="toclevel-2 tocsection-32"><a href="#Zeichenketten_als_Indizes"><span class="tocnumber">7.4</span> <span class="toctext">Zeichenketten als Indizes</span></a></li>
+<li class="toclevel-2 tocsection-33"><a href="#Beliebige_Indizes"><span class="tocnumber">7.5</span> <span class="toctext">Beliebige Indizes</span></a></li>
+<li class="toclevel-2 tocsection-34"><a href="#Einzelzuweisungen"><span class="tocnumber">7.6</span> <span class="toctext">Einzelzuweisungen</span></a></li>
+<li class="toclevel-2 tocsection-35"><a href="#Verlinkungen"><span class="tocnumber">7.7</span> <span class="toctext">Verlinkungen</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-36"><a href="#Schleifen"><span class="tocnumber">8</span> <span class="toctext">Schleifen</span></a>
+<ul>
+<li class="toclevel-2 tocsection-37"><a href="#Einf.C3.BChrung_4"><span class="tocnumber">8.1</span> <span class="toctext">Einführung</span></a></li>
+<li class="toclevel-2 tocsection-38"><a href="#While-Schleife"><span class="tocnumber">8.2</span> <span class="toctext">While-Schleife</span></a></li>
+<li class="toclevel-2 tocsection-39"><a href="#Repeat-Until-Schleife"><span class="tocnumber">8.3</span> <span class="toctext">Repeat-Until-Schleife</span></a></li>
+<li class="toclevel-2 tocsection-40"><a href="#For-Schleife"><span class="tocnumber">8.4</span> <span class="toctext">For-Schleife</span></a>
+<ul>
+<li class="toclevel-3 tocsection-41"><a href="#Numerisch"><span class="tocnumber">8.4.1</span> <span class="toctext">Numerisch</span></a></li>
+<li class="toclevel-3 tocsection-42"><a href="#Generisch"><span class="tocnumber">8.4.2</span> <span class="toctext">Generisch</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-43"><a href="#Schleifenabbruch"><span class="tocnumber">8.5</span> <span class="toctext">Schleifenabbruch</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-44"><a href="#Funktionen"><span class="tocnumber">9</span> <span class="toctext">Funktionen</span></a>
+<ul>
+<li class="toclevel-2 tocsection-45"><a href="#Einf.C3.BChrung_5"><span class="tocnumber">9.1</span> <span class="toctext">Einführung</span></a></li>
+<li class="toclevel-2 tocsection-46"><a href="#Definition_3"><span class="tocnumber">9.2</span> <span class="toctext">Definition</span></a></li>
+<li class="toclevel-2 tocsection-47"><a href="#R.C3.BCckgabewerte"><span class="tocnumber">9.3</span> <span class="toctext">Rückgabewerte</span></a></li>
+<li class="toclevel-2 tocsection-48"><a href="#Lua_Standardfunktionen"><span class="tocnumber">9.4</span> <span class="toctext">Lua Standardfunktionen</span></a></li>
+<li class="toclevel-2 tocsection-49"><a href="#Rekursive_Funktionen"><span class="tocnumber">9.5</span> <span class="toctext">Rekursive Funktionen</span></a></li>
+<li class="toclevel-2 tocsection-50"><a href="#Variable_Parameterzahl"><span class="tocnumber">9.6</span> <span class="toctext">Variable Parameterzahl</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-51"><a href="#Fragen.2C_Anregungen.2C_Kritik"><span class="tocnumber">10</span> <span class="toctext">Fragen, Anregungen, Kritik</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Vorwort">Vorwort</span></h2>
+<p>Da es bis auf einige knappe und teils unprofessionelle Tutorials kein deutsches Lua Tutorial gibt, habe ich beschlossen, nun ein eigenes zu schreiben, welches alle für MTA notwendigen Grundlagen einfach und übersichtlich erklärt.
+Weiterführende Möglichkeiten und Funktionen können der <a rel="nofollow" class="external text" href="http://www.lua.org/manual/5.1/">Offiziellen Lua Dokumentation</a> entnommen werden, die es jedoch nicht auf Deutsch gibt.
+</p><p>Ein weiterer Grund ist, dass ich schon von einigen gehört habe und auch so schon den Verdacht hatte, dass MTA einfach so wenige deutsche Spieler und vor allem Server hat (gibt es überhaupt <b>einen</b> deutschen?), weil die meisten Probleme mit den englischen Dokumentationen haben oder der Meinung sind, dass für MTA ja sowieso kein deutscher Support vorhanden ist.
+</p><p>Soviel nun dazu, wie es zu der Idee des deutschen Lua Tutorials kam.
+Fangen wir an mit dem Erlernen einer neuen Sprache!
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Grundlagen">Grundlagen</span></h2>
+<h3><span class="mw-headline" id="Lua.2C_eine_Skriptsprache">Lua, eine Skriptsprache</span></h3>
+<p>Lua (portugiesisch für Mond) ist eine Skriptsprache zum Einbinden in Programme, um diese leichter weiterentwickeln und warten zu können. Insbesondere die geringe Größe des Interpreters von 120 KB und die hohe Geschwindigkeit verglichen mit anderen Skriptsprachen überzeugen viele Entwickler davon, Lua einzusetzen.
+</p><p>Die Syntax lehnt sich an die von Pascal an, was besonders Anfängern den Einstieg in Lua erleichtert. Im Gegensatz zu von Pascal abgeleiteten Sprachen nutzt Lua jedoch „==“ und nicht „=“ als Vergleichsoperator.
+</p><p>(Quelle: <a rel="nofollow" class="external text" href="http://de.wikipedia.org/wiki/Lua">Wikipedia</a>)
+</p><p>Einige werden sich bei dieser Einführung vielleicht gefragt haben, was der Unterschied zwischen Skript- und Programmiersprache ist und was ein Interpreter sein soll. Im folgenden will ich diese beiden Fragen so kurz und einfach wie möglich klären.
+</p><p>Eine <b>Programmiersprache</b> (z.B. C, C++, Pascal, Delphi) wird - wie der Name schon sagt - verwendet, um Programme zu schreiben. Ein Programm liegt bekannterweise in Form einer Executable (*.exe) vor. Diese kann weitgehend unabhängig von irgendwelchen Betriebssystemen oder der Umgebung selbstständig ausgeführt werden (z.B. durch Doppelklick). Weitgehend deswegen, da einige Programme aufgrund von Speicherersparnissen sogenannte Programmbibliotheken (original Dynamic Link Library, kurz dll) benötigen, um zu funktionieren. Erklärungen dazu findet ihr <a rel="nofollow" class="external text" href="http://de.wikipedia.org/wiki/Dynamic_Link_Library">hier</a>.<br />
+Um einen Programmquellcode, d.h. einen Text, der in einer Programmiersprache geschrieben wurde, aus dem Textdokumentformat in eine Anwendung (original Executable, kurz exe) umzuwandeln, benötigt man nun einen Compiler (zu Deutsch Kompilierer oder Übersetzer), der die Programmiersprache aus der menschenlesbaren Form in die maschinenlesbare Form umwandelt. Neben dieser Hauptaufgabe übernimmt der Compiler natürlich noch weitere Aufgaben, auf die ich jetzt aber nicht genauer eingehen werde. Infos dazu findet ihr <a rel="nofollow" class="external text" href="http://de.wikipedia.org/wiki/Compiler">hier</a>.<br />
+Die maschinenlesbare Form ist für Menschen unlesbar.
+</p><p>Eine <b>Skriptsprache</b> (z.B. JavaScript, DOS-Batch(Win) bzw. Shell-Scripts(UNIX)) hingegen liegt standardmäßig in der menschenlesbaren Form vor. Skriptsprachen werden - wie im ersten Satz bereits erwähnt - vor allem von Programmen benutzt, um benutzerdefinierte Abläufe verwenden zu können. Zur Ausführung von Scripts wird ein sogenannter Interpreter benötigt, der das Skript liest und es Schritt für Schritt in die Maschinensprache umwandelt und ausführt. Manche Skriptsprachen kann man mit einem Precompiler (zu Deutsch Vorkompilierer oder Vorübersetzer) vorkompilieren. Diesen könnte man auch den Vorkauer vom Interpreter nennen, da er das Script schon zum Teil in die Maschinensprache umwandelt, jedoch nicht so extrem wie der Compiler der Programmiersprachen. Das Ergebnis davon ist logischerweise die schnellere Ausführung des Skripts.
+</p><p>Genug der langweiligen Definitionen. Klären wir lieber, was man denn alles braucht, um ein Lua Script zu schreiben.
+</p>
+<h3><span class="mw-headline" id="Materialien">Materialien</span></h3>
+<p>Lua Skripte werden üblicherweise als Textdateien mit der Endung .lua gespeichert. Die Endung ist jedoch nicht von belang. Es kann jede beliebige Endung gewählt werden.
+</p><p>Wie jede normale Textdatei kann man also auch Lua Skripte mit dem standard Texteditor des vorhandenen Betriebssystems schreiben, editieren und lesen. Ich persönlich empfehle jedoch das Programm Notepad++, welches <a rel="nofollow" class="external text" href="http://notepad-plus.sourceforge.net/de/site.htm">hier</a> heruntergeladen werden kann. Das Programm ist Freeware und wird regelmäßig aktualisiert und erweitert. Der Vorteil daran ist, dass es ein professionelles Syntax-Highlighting eingebaut hat, welches Schlagwörter und Standardfunktionen farblich oder anderweitig hervorhebt und somit die Übersichtlichkeit erheblich verbessert.<br />
+Standardmäßig wird die Sprache Lua automatisch an der Dateiendung .lua erkannt, solltest Du eine andere Endung verwenden und trotzdem das Lua Syntax-Highlighting verwenden wollen, kannst Du es oben im Menü „Sprachen“ einstellen.
+</p><p>Wer ohne MTA seine kleinen Lua Skripte testen oder ausführen möchte, kann sich <a rel="nofollow" class="external text" href="http://luabinaries.luaforge.net/download.html">hier</a> einen kostenlosen standalone Interpreter herunterladen. Wenn Du Dir nicht sicher bist, welche Windows Edition Du hast, dann hast Du wahrscheinlich eine 32 Bit Version, welche auf dieser Seite der „Windows x86 Executables“ entspricht. Die aktuelle Version (Win 32 Bit) dafür gibt es bei einem Klick auf <a rel="nofollow" class="external text" href="http://luaforge.net/frs/download.php/3134/lua5_1_3_Win32_bin.zip">lua5_1_3_Win32_bin.zip</a>.<br />
+Nach dem Download kann der Standalone Interpreter mit einem Doppelklick auf die „lua5.1.exe“ gestartet werden. Dort kann man dann direkt Lua Befehle eingeben oder ein Script laden. Dies geht wie folgt:
+</p>
+<pre class="prettyprint lang-lua">dofile("dateiname.lua")</pre>
+<h2><span class="mw-headline" id="Kommentare">Kommentare</span></h2>
+<p>Um sein Skript übersichtlicher zu gestalten, kann man mit Kommentaren bestimmte Zeilen eräutern, Bereiche abgrenzen, alten Code deaktivieren, ohne ihn zu entfernen und generell das Skript übersichtlicher gestalten.<br />
+Kommentare werden vom Interpreter vollkommen ignoriert und sind nur für den Menschen lesbar und von Belang.
+</p>
+<h3><span class="mw-headline" id="Einzeilig">Einzeilig</span></h3>
+<pre class="prettyprint lang-lua">-- Dies ist ein einzeiliger Kommentar. Er gilt von -- bis zum Ende dieser Zeile.
+-- Automatische Zeilenumbrüche, die eingefügt werden, wenn die Zeilenlänge überschritten wurde, zählen nicht.</pre>
+<h3><span class="mw-headline" id="Mehrzeilig">Mehrzeilig</span></h3>
+<pre class="prettyprint lang-lua">--[[ Dieser Kommentar
+     geht über beliebig viele Zeilen
+     und endet mit ]]</pre>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Variablen">Variablen</span></h2>
+<h3><span class="mw-headline" id="Einf.C3.BChrung">Einführung</span></h3>
+<p>Eine Variable kann man sich wie eine kleine Kiste vorstellen, auf der außen ein Bezeichner (oder Name) steht und die einen Wert enthält. Während der Bezeichner immer gleich ist, kann der Inhalt variieren.
+Jede Variable hat einen Variablentypen, der bei Programmiersprachen normalerweise zu Beginn des Programmes fest definiert wird und sich nicht ändern kann. Da Lua aber ja keine Programmiersprache ist, muss der Variablentyp zu Beginn und auch sonst nie festgelegt werden und kann sich beliebig oft verändern. Der Interpreter erkennt Variablentypen automatisch und nimmt dem Skripter somit eine Menge Arbeit (vor allem bzgl. der Planung) ab.
+</p>
+<h3><span class="mw-headline" id="Typen">Typen</span></h3>
+<p>Im Folgenden will ich die wichtigsten Variablentypen auflisten und kurz beschreiben.
+</p>
+<dl><dt>Integer (ganze Zahlen)</dt>
+<dd>Umfasst alle Ganzzahlen, sowohl negative als auch positive.</dd>
+<dd>Beispiele: -8, 0, 12, 2</dd>
+<dt>Float (Komma- bzw. gebrochene Zahlen)</dt>
+<dd>Umfasst alle Fließkommazahlen, sowohl negative als auch positive. Wichtig dabei ist, dass anstelle des Kommas (,) ein Dezimalpunkt (.) zum Trennen des ganzen vom gebrochenen Teil verwendet werden muss.</dd>
+<dd>Beispiele: -77.2, 0.0, 3.14159, 9.81</dd>
+<dt>String (Zeichenkette)</dt>
+<dd>Kann jedes beliebige Zeichen enthalten. Eine maximale Länge ist mir nicht bekannt. Strings müssen immer in Anführungszeichen(" oder ') eingschlossen werden.</dd>
+<dd>Beispiele: "hallo", 'Lua ist toll!', "", "&#160;:D "</dd>
+<dt>Boolean (Schalter)</dt>
+<dd>Kann zwei verschiedene Werte enthalten: <i>true</i> (dt. wahr bzw. an) oder <i>false</i> (dt. falsch bzw. aus). <i>true</i> entspricht dabei nicht dem Wert 1 und <i>false</i> nicht dem Wert 0.</dd>
+<dd>Beispiele: <i>true</i>, <i>false</i></dd>
+<dt>Nil (Leer oder Nichts)</dt>
+<dd><i>nil</i> ist sowohl ein Wert als auch ein Typ. Eine Variable vom Typ <i>nil</i> enthält automatisch den Wert <i>nil</i>. <i>nil</i> bedeutet ganz einfach nichts. Wenn eine Variable <i>nil</i> ist, existiert sie nicht. <i>nil</i> entspricht weder dem Wert 0 noch dem Wert <i>false</i> noch dem Wert ""!</dd>
+<dd>Beispiele: <i>nil</i></dd></dl>
+<p>Ich werde auf jeden Variablentypen noch detaillierter eingehen. Außerdem wurden hier die Variablentypen <b>function</b> und <b>table</b> nicht aufgeführt, da diese jeweils ein eigenes Kapitel bekommen. Zwei weitere Typen, die diese Liste vervollständigen, sind <b>userdata</b> und <b>thread</b>, auf die ich jedoch in diesem Tutorial nicht weiter eingehen werde, da vor allem letzteres vollkommen irrelevant für MTA ist.
+</p>
+<h3><span class="mw-headline" id="Definition">Definition</span></h3>
+<p>Eine Variable definieren bedeutet im Grunde genommen eine Variable anlegen. In Lua muss einer Variable bei der Definition ein Wert zugewiesen werden. <i>nil</i> ist dabei als Wert auch möglich, macht jedoch wenig Sinn, da jede beliebige Variablenbezeichnung automatisch den Wert <i>nil</i> enthält.
+</p><p>Man unterscheidet zwischen <b>lokalen</b> und <b>globalen</b> Variablen. Um eine Variable als lokal zu definieren muss das Schlüsselwort <i>local</i> davor geschrieben werden. Lokal bedeutet für uns im Moment noch ganz einfach, dass die Variable nur im aktuellen Script verfügbar ist. Sollten also z.B. von einem Programm zwei verschiedene Lua Skripte geladen sein und benutzt werden, können diese untereinander auf die globalen Variablen des jeweils anderen Skripts zugreifen, auf die lokalen jedoch nicht. Generell empfiehlt es sich, immer lokale Variablen zu nehmen, falls man nicht explizit eine globale benötigt, da so vermieden wird, dass mehrere parallel laufende Skripte aufgrund von gleichen Variablenbezeichnern durcheinander kommen.
+</p>
+<h4><span class="mw-headline" id="Einzeln">Einzeln</span></h4>
+<p>Definieren wir uns also nun unsere erste lokale Variable und geben ihr einen ganzzahligen Inhalt:
+</p>
+<pre class="prettyprint lang-lua">local zahl = 7 -- weist der lokalen Variable zahl den Wert 7 zu</pre>
+<p>Eine globale Variable erhält man, indem man einfach das <i>local</i> weglässt:
+</p>
+<pre class="prettyprint lang-lua">gZahl = 13 -- weist der globalen Variable gZahl den Wert 13 zu</pre>
+<p>Das selbe geht natürlich nun auch mit allen anderen Variablentypen:
+</p>
+<pre class="prettyprint lang-lua">local ganzzahl = -5
+local kommazahl = 0.008
+local zeichenkette = "Hello World"
+local schalter = true
+local nichts = nil -- diese Zeile kann man sich im Grunde genommen sparen, da jede nicht definierte Variable automatisch den Wert nil hat</pre>
+<p>Längere Strings mit mehreren Zeilenumbrüchen können in einer vereinfachten Weise zugewiesen werden. Dies funktioniert so ähnlich wie bei Kommentaren. Anstelle von Anführungszeichen verwendet man [[ als Anfangs- und ]] als Endmarkierung des Strings.
+</p>
+<pre class="prettyprint lang-lua">local text = [[Willkommen auf unserem Server.
+Bitte halte Dich an die Regeln.
+MfG die Administration]]</pre>
+<p>Alternativ kann in einem String, der in doppelten Anführungszeichen (") eingeschlossen ist, folgende Steuerzeichen enthalten:
+</p>
+<dl><dt>\n</dt>
+<dd>Entspricht einem Zeilenumbruch.</dd>
+<dt>\t</dt>
+<dd>Entspricht einem Tabulator.</dd>
+<dt>\"</dt>
+<dd>Wird verwendet, um doppelte Anführungszeichen in einem String, der von doppelten Anführungszeichen eingeschlossen ist, darzustellen, ohne dass der Interpreter diese fälschlicherweise als Stringende auffasst.</dd>
+<dt>\'</dt>
+<dd>Wie \", nur gilt dies in Strings, die von einfachen Anführungszeichen eingeschlossen sind.</dd>
+<dt>\\</dt>
+<dd>Entspricht einem Backslash (\)</dd></dl>
+<h4><span class="mw-headline" id="Mehrere">Mehrere</span></h4>
+<p>Man kann in einer Zeile mehrere Variablen definieren, indem man sie mit Kommas voneinander trennt. Die Variablentypen können dabei alle unterschiedlich sein. Hier mal ein Beispiel:
+</p>
+<pre class="prettyprint lang-lua">local frucht, anzahl, reif = "apfel", 4, true</pre>
+<p><i>local</i> darf dabei nur einmal am Zeilenanfang stehen und bewirkt, dass alle dahinter aufgelisteten Variablen lokal werden.<br />
+Sollten links neben dem Gleichheitszeichen mehr Variablenbezeichner stehen als rechts Werte, so bleiben die überschüssigen Variablen <i>nil</i>. Im umgekehrten Fall werden überschüssige Werte rechts einfach ignoriert.
+</p>
+<h2><span class="mw-headline" id="Operatoren">Operatoren</span></h2>
+<h3><span class="mw-headline" id="Arithmetische">Arithmetische</span></h3>
+<p>Arithmetische Operatoren werden verwendet, um Berechnungen durchzuführen. Somit kann man entweder mit Variablen, festen Zahlen oder einer Mischung neue Werte berechnen oder verändern.<br />
+Bei Berechnungen gilt stets: <b>Punkt- vor Strichrechnung</b>.
+<br /><br />
+</p>
+<dl><dt>Plus (+)</dt>
+<dd>Addiert zwei Werte miteinander.</dd></dl>
+<pre class="prettyprint lang-lua">local a, b = 3, 8
+local c = a + b -- a + b entspricht hier der Rechnung 3 + 8, c erhält nun also den Wert 11</pre>
+<dl><dt>Minus (-)</dt>
+<dd>Subtrahiert den zweiten vom ersten Wert.</dd></dl>
+<pre class="prettyprint lang-lua">local a, b = 3, 8
+local c = a - b -- a - b entspricht hier der Rechnung 3 - 8, c erhält nun also den Wert -5</pre>
+<dl><dt>Mal (*)</dt>
+<dd>Multipliziert zwei Werte miteinander.</dd></dl>
+<pre class="prettyprint lang-lua">local a, b = 3, 8
+local c = a * b -- a * b entspricht hier der Rechnung 3 * 8, c erhält nun also den Wert 24</pre>
+<dl><dt>Geteilt (/)</dt>
+<dd>Dividiert den ersten durch den zweiten Wert. Hierbei entsteht in den meisten Fällen eine Kommazahl!</dd></dl>
+<pre class="prettyprint lang-lua">local a, b = 3, 8
+local c = a / b -- a / b entspricht hier der Rechnung 3 / 8, c erhält nun also den Wert 0.375</pre>
+<p><br />
+</p>
+<dl><dt>Modulo (%)</dt>
+<dd>Ermittelt den Rest, der übrig bleibt, wenn man die erste Zahl durch die zweite teilt.</dd>
+<dd>Der Modulo-Operator gehört zur Punktrechnung.</dd></dl>
+<pre class="prettyprint lang-lua">local a, b = 14, 3
+local c = a&#160;% b -- a&#160;% b entspricht hier der Rechnung 14&#160;% 3, c erhält nun also den Wert 2, da 14 / 3 = 4 REST 2</pre>
+<dl><dt>Minus (-) (als Vorzeichen)</dt>
+<dd>Dient zur Darstellung einer negativen Zahl, also einer Zahl unter 0.</dd></dl>
+<pre class="prettyprint lang-lua">local a = -3 -- entspricht der Rechnung a = 0 - 3</pre>
+<dl><dt>Hoch (^)</dt>
+<dd>Potenziert die erste Zahl mit der zweiten.</dd>
+<dd>Potenzen werden noch <b>vor</b> der Punktrechnung ausgerechnet.</dd></dl>
+<pre class="prettyprint lang-lua">local a, b = 3, 8
+local c = a ^ b -- a ^ b entspricht hier der Rechnung 3 ^ 8 (3&lt;sup&gt;8&lt;/sup&gt;), c erhält nun also den Wert 6561</pre>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Logische">Logische</span></h3>
+<p>Logische Operatoren werden Benutzt, um Werte miteinander zu vergleichen und mehrere Bedingungen zu verknüpfen. Wir werden genauer auf sie zurückkommen, wenn es um Bedingungen geht. Bis dahin reicht es, wenn man sich merkt, dass ein logischer Vergleich entweder <i>true</i> (wenn die Aussage wahr ist) oder <i>false</i> (wenn die Aussage falsch ist) ergibt.
+<br /><br />
+</p>
+<dl><dt>Gleich (==)</dt>
+<dd>Prüft, ob zwei Werte gleich sind.</dd></dl>
+<pre class="prettyprint lang-lua">local a = (5 == 5) -- a ist true, da die Aussage wahr ist
+local b = (5 == 8) -- b ist false, da die Aussage falsch ist</pre>
+<dl><dt>Ungleich (~=)</dt>
+<dd>Prüft, ob zwei Werte ungleich sind.</dd></dl>
+<pre class="prettyprint lang-lua">local a = (5 ~= 5) -- a ist false, da die Aussage falsch ist
+local b = (5 ~= 8) -- b ist true, da die Aussage wahr ist</pre>
+<dl><dt>Größer als (&gt;)</dt>
+<dd>Prüft, ob der erste Wert größer als der zweite ist.</dd></dl>
+<pre class="prettyprint lang-lua">local a = (5 &gt; 5) -- a ist false, da die Aussage falsch ist
+local b = (5 &gt; 8) -- b ist false, da die Aussage falsch ist
+local c = (8 &gt; 5) -- c ist true, da die Aussage wahr ist</pre>
+<dl><dt>Größer als oder gleich (&gt;=)</dt>
+<dd>Prüft, ob der erste Wert größer als der zweite ist oder dem zweiten gleicht.</dd></dl>
+<pre class="prettyprint lang-lua">local a = (5 &gt;= 5) -- a ist true, da die Aussage wahr ist
+local b = (5 &gt;= 8) -- b ist false, da die Aussage falsch ist
+local c = (8 &gt;= 5) -- c ist true, da die Aussage wahr ist</pre>
+<dl><dt>Kleiner als (&lt;)</dt>
+<dd>Prüft, ob der erste Wert kleiner als der zweite ist.</dd></dl>
+<pre class="prettyprint lang-lua">local a = (5 &lt; 5) -- a ist false, da die Aussage falsch ist
+local b = (5 &lt; 8) -- b ist true, da die Aussage wahr ist
+local c = (8 &lt; 5) -- c ist false, da die Aussage falsch ist</pre>
+<dl><dt>Kleiner als oder gleich (&lt;=)</dt>
+<dd>Prüft, ob der erste Wert kleiner als der zweite ist oder dem zweiten gleicht.</dd></dl>
+<pre class="prettyprint lang-lua">local a = (5 &lt;= 5) -- a ist true, da die Aussage wahr ist
+local b = (5 &lt;= 8) -- b ist true, da die Aussage wahr ist
+local c = (8 &lt;= 5) -- c ist false, da die Aussage falsch ist</pre>
+<p><br />
+</p>
+<dl><dt>Und (and)</dt>
+<dd>Verknüpft zwei Bedingungen miteinander.</dd></dl>
+<pre class="prettyprint lang-lua">local a = (true and false) -- a ist false, da nicht beide Aussagen wahr sind
+local b = (5 &lt; 8) and (7 == 7) -- b ist true, da beide Aussagen wahr sind
+local c = (8 &gt; 5) and (1 ~= 2) and (0 &lt;= -7) -- c ist false, da die dritte Aussage falsch ist</pre>
+<dl><dt>Oder (or)</dt>
+<dd>Verknüpft zwei Bedingungen miteinander.</dd></dl>
+<pre class="prettyprint lang-lua">local a = (true or false) -- a ist true, da die erste Aussage wahr ist
+local b = (5 &lt; 8) or (7 == 7) -- b ist true, da mindestens eine der Aussagen wahr ist
+local c = (8 &gt; 5) or (1 ~= 2) or (0 &lt;= -7) -- c ist true, da mindestens eine der Aussagen wahr ist</pre>
+<dl><dt>Nicht (not)</dt>
+<dd>Kehrt einen Booleanwert um.</dd></dl>
+<pre class="prettyprint lang-lua">local a = not true -- a ist false
+local b = not false -- b ist true
+local c = not (0 == 8) -- c ist true, da die Aussage falsch ist</pre>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Sonstige">Sonstige</span></h3>
+<p>Lua hat noch zwei weitere Operatoren, die sich jedoch nicht in die oberen Gruppen eingliedern lassen.
+<br />
+</p>
+<dl><dt>Länge (#)</dt>
+<dd>Steht für die Länge eines Strings oder einer Table.</dd></dl>
+<pre class="prettyprint lang-lua">local sprache = "deutsch"
+local laenge = #sprache -- laenge wird hier auf 7 gesetzt, da das Wort "deutsch" 7 Buchstaben hat</pre>
+<dl><dt>Verknüpfung (..)</dt>
+<dd>Verknüpft zwei Strings miteinander.</dd></dl>
+<pre class="prettyprint lang-lua">local geschlecht, alter = "männlich", "18"
+local satz = "Ich bin "..geschlecht.." und "..alter.." Jahre alt." -- weist satz den Wert "Ich bin männlich und 18 Jahre alt." zu</pre>
+<p><br /><br />
+Natürlich können auch alle anderen Variablentypen mit- und untereinander verglichen werden.<br />
+Der Längenoperator (#) sowie der Verknüpfungsoperator (..) sind nur für Strings gedacht, wobei der erste später noch bei Tables eine Rolle spielen wird und der zweite es nicht so genau nimmt mit den Variablentypen. Bei Booleans und <i>nil</i> jedoch führt er in jedem Fall zu einem Fehler. Wir kommen später noch darauf zu sprechen, wie man soetwas umgeht.<br />
+Für Integer und Floats sind alle Vergleichsoperatoren und die arithmetischen verfügbar. Strings unterstützen nur die Vergleichsoperatoren, wobei man mit den größer/kleiner Operatoren zwei Strings nach dem Alphabet ordnen kann.
+</p>
+<pre class="prettyprint lang-lua">"a" &lt; "b" -- ergibt true, da a vor b im Alphabet kommt</pre>
+<p>Strings, Booleans und <i>nil</i> kann man nur untereinander vergleichen, nicht miteinander. Miteinander führt in jedem Fall zu <i>false</i>.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Bedingungen">Bedingungen</span></h2>
+<h3><span class="mw-headline" id="Einf.C3.BChrung_2">Einführung</span></h3>
+<p>Bedingungen sind dazu da, um bestimmte Anweisungen nur auszuführen, wenn ein bestimmter Sachverhalt gegeben ist.
+Ein Beispiel wäre, wenn ein Spieler einem anderen Spieler eine private Nachricht senden möchte. Dann kann er das natürlich nur tun, wenn der adressierte Spieler auch online ist.
+Also soll die Nachricht in einem solchen Fall gesendet werden, andernfalls dem Sender jedoch eine Fehlermeldung ausgegeben werden.
+</p>
+<h3><span class="mw-headline" id="Syntax">Syntax</span></h3>
+<p>Die Syntax einer Bedingung, die man übrigens auch „if-Statement“ (if = engl. für wenn) oder im Englischen „condition“ nennt, ist recht simpel.
+</p>
+<pre class="prettyprint lang-lua">if &lt;bedingung&gt; then
+    -- Anweisung(en), die ausgeführt werden soll(en), wenn die Bedingung wahr (=true) ist
+end</pre>
+<p>Für &lt;bedingung&gt; darf hier jeder Audruck eingesetzt werden, der letztendlich irgendeinen Wert ergibt.
+Sollte &lt;bedingung&gt; <i>nil</i> oder <i>false</i> sein, so wird die Anweisung zwischen then und end nicht ausgeführt, andernfalls wird sie ausgeführt.
+</p>
+<h3><span class="mw-headline" id="Else-Statement">Else-Statement</span></h3>
+<p>Auf jedes if-Statement darf ein else-Statement (else = engl. für sonst) folgen. Dieses benötigt kein then und auch keine Bedingung, sondern wird ausgeführt, wenn die Bedingung des if-Statements <i>nil</i> oder <i>false</i> ist. Das else-Statement ist optional!
+</p>
+<pre class="prettyprint lang-lua">if &lt;bedingung&gt; then
+    -- Anweisung(en), die ausgeführt werden soll(en), wenn die Bedingung erfüllt wird
+else
+    -- Anweisung(en), die ausgeführt werden soll(en), wenn die Bedingung nicht erfüllt wird
+end</pre>
+<h3><span class="mw-headline" id="Elseif-Statement">Elseif-Statement</span></h3>
+<p>Das elseif-Statement ist ein spezielles Statement, was es erlaubt, einer unübersichtlichen Verschachtelung zu entgehen, indem es die Möglichkeit bietet, einem else-Statement auch eine Bedingung zu geben. Ein if-Statement darf beliebig viele elseif-Statements enthalten. Diese müssen jedoch zwischen dem if- und dem else-Statement (falls vorhanden) stehen. Für die Bedingung gilt hier das selbe, wie für das if-Statement. Wichtig ist, dass demnach auch hier ein then erforderlich ist. Genauso wie das else-Statement ist jedoch auch das elseif-Statement optional!
+</p>
+<pre class="prettyprint lang-lua">if &lt;bedingung1&gt; then
+    -- Anweisung(en), die ausgeführt werden soll(en), wenn die Bedingung 1 erfüllt wird
+elseif &lt;bedingung2&gt; then
+    -- Anweisung(en), die ausgeführt werden soll(en), wenn die Bedingung 2 erfüllt wird
+else
+    -- Anweisung(en), die ausgeführt werden soll(en), wenn weder Bedingung 1 noch Bedingung 2 erfüllt werden
+end</pre>
+<h3><span class="mw-headline" id="Bedingungen_formulieren">Bedingungen formulieren</span></h3>
+<p>Bei der Bedingung eines if-Statements muss nicht zwangsläufig ein Boolean herauskommen. Wie bereits erwähnt, ist die Bedingung immer dann wahr, wenn sie weder <i>nil</i> noch <i>false</i> ist.
+D.h., dass auch Werte wie 0, "Hallo" und 3.14159 als „wahr“ gelten. Natürlich ist das auch bei <i>true</i> der Fall.
+</p><p>Um komplexere Bedingungen zu formulieren, werden auf jeden Fall die bereits aufgelisteten logischen Operatoren benötigt.
+Mit diesen kann man für jeden nur erdenklichen Fall eine Bedingung formulieren.
+</p><p>Wenn logische (Vergleichs-)Operatoren (==, ~=, &lt;, &gt;, &lt;=, &gt;=) angewandt werden, kommt dabei immer ein Boolean raus, wie man auch schon an den gegebenen Beispielen erkennen kann.
+Verknüfungen (and, or) sind dazu gedacht, um z.B. zu überprüfen, ob mehrere oder wenigstens eine Bedingung von vielen erfüllt werden oder nicht. Der not-Operator ermöglicht es, zu überprüfen, ob eine Bedingung nicht erfüllt wird.
+</p><p>Zu dem and- und dem or-Operator möchte ich an dieser Stelle noch etwas ergänzen. Der and-Operator wird zunächst einmal dazu verwendet, um herauszufinden, ob zwei Bedingungen gleichzeitig erfüllt sind. Der or-Operator wird dazu benutzt, um herauszufinden, ob eine von zweien oder beide Bedingungen erfüllt sind.
+</p><p>Weder der and- noch der or-Operator geben aber zwangsläufig einen Boolean zurück.
+</p>
+<pre class="prettyprint lang-lua">local foo = wert1 and wert2</pre>
+<p>Sollte wert1 <i>nil</i> oder <i>false</i> sein, so entspricht dieser Ausdruck dem folgenden:
+</p>
+<pre class="prettyprint lang-lua">local foo = wert1</pre>
+<p>Ist wert1 weder <i>nil</i> noch <i>false</i>, so entspricht der Ausdruck dem hier:
+</p>
+<pre class="prettyprint lang-lua">local foo = wert2</pre>
+<p><br />
+Bei or ist es ähnlich, nur umgekehrt.
+</p>
+<pre class="prettyprint lang-lua">local foo = wert1 or wert2</pre>
+<p>Sollte wert1 <i>nil</i> oder <i>false</i> sein, so entspricht dieser Ausdruck dem folgenden:
+</p>
+<pre class="prettyprint lang-lua">local foo = wert2</pre>
+<p>Ist wert1 weder <i>nil</i> noch <i>false</i>, so entspricht der Ausdruck dem hier:
+</p>
+<pre class="prettyprint lang-lua">local foo = wert1</pre>
+<h3><span class="mw-headline" id="Beispiele">Beispiele</span></h3>
+<h4><span class="mw-headline" id="50-50-Chance">50-50-Chance</span></h4>
+<p>Dieses Beispiel simuliert einen Münzwurf. math.random() und print() sind standard Lua-Funktionen. Zum Thema Funktionen komme ich später. Für dieses Beispiel reicht es, wenn ihr wisst, dass math.random() eine Zufallszahl (float) zwischen 0 und 1 zurückgibt und print("text") den in den Klammern eingeschlossenen String in die Konsole ausgibt.
+</p>
+<pre class="prettyprint lang-lua">local zufall = math.random()
+if (zufall &lt; 0.5) then
+    print("Kopf")
+else
+    print("Zahl")
+end</pre>
+<h4><span class="mw-headline" id="Der_Nutzen_von_elseif">Der Nutzen von elseif</span></h4>
+<p>Im Folgenden wollen wir herausfinden, ob eine Zahl positiv, negativ oder 0 ist. Dazu möchte ich zuerst ein Beispiel ohne und danach eines mit elseif zeigen, um meine Aussage, dass elseif Verschachtelungen spart, zu verifizieren.
+</p>
+<pre class="prettyprint lang-lua">local zahl = 14
+
+--ohne elseif
+if (zahl &lt; 0) then
+    print("Die Zahl ist negativ.")
+else
+    if (zahl == 0) then
+        print("Die Zahl entspricht 0.")
+    else
+        print("Die Zahl ist positiv.")
+    end
+end
+
+--mit elseif
+if (zahl &lt; 0) then
+    print("Die Zahl ist negativ.")
+elseif (zahl == 0) then
+    print("Die Zahl entspricht 0.")
+else
+    print("Die Zahl ist positiv.")
+end</pre>
+<p>Je komplexer das ganze if-Statement, desto nützlicher wird elseif sein.
+</p>
+<h4><span class="mw-headline" id="Eingebettetes_Pseudo-if-Statement">Eingebettetes Pseudo-if-Statement</span></h4>
+<p>In vielen Script- und Programmiersprachen gibt es ein gekürztes if-Statement. In Javascript z.B. geht das wie folgt:
+</p>
+<pre class="prettyprint lang-lua">var nachricht = "Du benutzt zurzeit " + (ie&#160;? "den Internet Explorer"&#160;: "einen guten Browser") + ".";</pre>
+<p>Wir gehen dabei davon aus, dass in der Variable ie ein Boolean gespeichert ist, der <i>true</i> ist, wenn der Benutzer den Internet Explorer benutzt, ansonsten <i>false</i>.
+Diese Art von eingebetteten if-Statements gibt es noch in vielen anderen Sprachen, unter anderen in PHP, Java und C(++). In meinem Beispiel kann man sich das&#160;? als then und den&#160;: als else vorstellen. Dann sollte es eigentlich nicht allzu schwer sein, diese Art von if-Statement zu verstehen.
+</p><p>So direkt gibt es das bei Lua nicht, aber mit and und or kann man sich ein Konstrukt bauen, welches auf die gleiche Weise funktioniert. Dazu werde ich einfach mal das obere Beispiel in Lua umwandeln, auch, wenn Lua eigentlich nicht viel mit Browsern am Hut hat.
+</p>
+<pre class="prettyprint lang-lua">local nachricht = "Du benutzt zurzeit "..(ie and "den Internet Explorer" or "einen guten Browser").."."</pre>
+<p>Zuerst ist das and an der Reihe. Es schmeißt den String "den Internet Explorer" raus, wenn ie <i>false</i> (oder <i>nil</i>) ist und zurück bleibt auf jeden Fall <i>false</i> (oder <i>nil</i>). Das wird dann vom or rausgeschmissen und zurück bleibt "einen guten Browser".
+Wenn ie weder <i>false</i> noch <i>nil</i> ist, schmeißt and die Variable ie raus und zurück bleibt "den Internet Explorer". Da dieser String weder <i>false</i> noch <i>nil</i> ist, wird er vom or beibelassen und "einen guten Browser" rausgeschmissen.
+Entschuldigt meine Ausdrucksweise mit dem rausschmeißen, aber das schien mir die beste Möglichkeit, diese Methode verständlich zu erklären.
+</p>
+<h2><span class="mw-headline" id="Tabellen">Tabellen</span></h2>
+<h3><span class="mw-headline" id="Einf.C3.BChrung_3">Einführung</span></h3>
+<p>Tabellen sind spezielle Variablen, die mehrere Werte enthalten können.
+Damit wir Tabellen verwenden können, führe ich nun erst einmal den Variablentyp „table“ ein. Mit einer table-Variable kann man ersteinmal kaum Operationen durchführen. Dazu benötigt man Funktionen, zu denen wir aber erst später kommen.
+</p>
+<h3><span class="mw-headline" id="Definition_2">Definition</span></h3>
+<p>Um eine Variable als (leere) table zu definieren, benutzt man diesen Ausdruck:
+</p>
+<pre class="prettyprint lang-lua">local tabelle = {}</pre>
+<p>Ohne Funktionen macht das noch recht wenig Sinn. Um einer Tabelle direkt mehrere Werte zuzuweisen, schreibt man diese einfach durch Kommata getrennt zwischen die geschweiften Klammern.
+</p>
+<pre class="prettyprint lang-lua">local tabelle1 = { "Apfel", 14, 3.14159, true }</pre>
+<p>Eine table kann alle möglichen Typen von Variablen enthalten. So zum Beispiel auch andere Tabellen.
+</p>
+<pre class="prettyprint lang-lua">local tabelle2 = { 1, { 1.25, 1.5, 1.75 }, 2, { 2.25, 2.5, 2.75 } }</pre>
+<p>Um nun auf die Elemente einer table zugreifen zu können, benutzt man Indizes (Indizes ist der Plural von Index). Jedes Element in einer table hat einen Index. Wenn man die Tabellen so definiert, wie ich es gemacht habe, so wird jedem Element ein integer als Index zugewiesen, wobei das erste Element die 1 als Index bekommt, das zweite die 2 usw.
+Der ungefähre Wert von Pi (3.14159) in der oberen Tabelle hat den Index 3. Um anhand eines Indizes ein Element einer Tabelle abzufragen, schreibt man den Index einfach in eckigen Klammern hinter den Tabellennamen.
+tabelle1[3] entspricht also dem Wert 3.14159.
+Wenn das Element der Tabelle selbst noch eine Tabelle ist, wie z.B. das Element mit dem index 2 aus tabelle2, dann setzt man die Indizes einfach hintereinander. Der Wert 2.25 ist demnach in tabelle2[4][1] gespeichert.
+</p>
+<h3><span class="mw-headline" id="Ganzzahlige_Indizes">Ganzzahlige Indizes</span></h3>
+<p>Um gezielt bestimmten Indizes einen Wert zuzuweisen, kann man folgende Schreibweise verwenden:
+</p>
+<pre class="prettyprint lang-lua">local auskunft = { [11] = "elf", [88] = "achtundachtzig", [0] = "null" }</pre>
+<p>Dabei spielt es keine Rolle, in welcher Reihenfolge die Indizes einen Wert zugewiesen bekommen und es spiel auch keine Rolle, ob die Indizes positiv oder negativ sind.
+Es muss jedoch beachtet werden, dass etwas wie { [1] = "eins", "zwei" } dem Index 1 den Wert "zwei" zuweisen würde, da Lua immer bei 1 anfängt zu zählen, egal, ob der Scripter den Index 1 bereits definiert hat.
+</p>
+<h3><span class="mw-headline" id="Zeichenketten_als_Indizes">Zeichenketten als Indizes</span></h3>
+<p>Ein Index kann auch ein String sein. Dazu verwendet man folgende Schreibweise:
+</p>
+<pre class="prettyprint lang-lua">local konstanten = { ["pi"] = 3.14159, ["e"] = 2.71828 }</pre>
+<p>Ansprechen kann man diese Werte genauso wie bei integer-Indizes. konstanten["pi"] ist also 3.14159.
+</p><p>Eine Besonderheit bei Zeichenketten als Index ist, dass es eine vereinfachte Schreibweise gibt. Sowohl bei der Definition als auch bei der Abfrage der Elemente. Das obige Beispiel kann auch so realisiert werden:
+</p>
+<pre class="prettyprint lang-lua">local konstanten = { pi = 3.14159, e = 2.71828 }</pre>
+<p>Zum Abfragen der Elemente kann man die Schreibweise konstanten.pi bzw. konstanten.e verwenden.
+Man sollte aber bedenken, dass Schlüsselwörter wie z.B. if oder local als Indizes besser mit ["if"] und ["local"] definiert werden.
+</p>
+<h3><span class="mw-headline" id="Beliebige_Indizes">Beliebige Indizes</span></h3>
+<p>Ein Index muss nicht unbedingt ein integer oder ein string sein. Genauer gesagt kann ein Index ein beliebiger Wert (außer <i>nil</i>) sein.
+Somit wäre z.B. auch das möglich:
+</p>
+<pre class="prettyprint lang-lua">local tabelle = { [true] = "wahr", [3.14159] = "pi", [0] = 1, 123 }</pre>
+<p>Die Zahl 123 hätte hier übrigens den Index 1.
+</p>
+<h3><span class="mw-headline" id="Einzelzuweisungen">Einzelzuweisungen</span></h3>
+<p>Man muss nicht immer alle Werte einer table auf einmal definieren. Jedes Tabellenelement lässt sich wie eine normale Variable behandeln.
+</p>
+<pre class="prettyprint lang-lua">local tabelle = {}
+tabelle[true] = "wahr"
+tabelle.pi = 3.14159
+tabelle[2] = { 1, 2, 3 }
+tabelle[2][0] = 0</pre>
+<p>Jedes undefinierte Element hat - genauso wie jede undefinierte Variable - den Wert <i>nil</i>.
+</p>
+<h3><span class="mw-headline" id="Verlinkungen">Verlinkungen</span></h3>
+<pre class="prettyprint lang-lua">local tabelle1 = { 1, 2, 3 }
+local tabelle2 = tabelle1
+tabelle1[1] = 4</pre>
+<p>In der zweiten Zeile dieses Beispiels wird die tabelle1 nicht in die Variable tabelle2 kopiert, sondern tabelle2 verweist ab sofort auf tabelle1. Am Ende des Codes wäre also tabelle2[1] auch 4, obwohl es nicht explizit zugewiesen wurde.
+</p><p>Um eine Tabelle zu kopieren, könnt ihr euch die Useful Function <a href="../Table-2.html" title="Table.copy">table.copy</a> aus der Wiki kopieren und diese dazu verwenden.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Schleifen">Schleifen</span></h2>
+<h3><span class="mw-headline" id="Einf.C3.BChrung_4">Einführung</span></h3>
+<p>Schleifen verwendet man immer dann, wenn man eine oder mehrere Anweisungen mehr als einmal direkt hintereinander ausführen möchte oder wenn man eine oder mehrere Anweisungen für jedes Element einer table ausführen möchte.
+Es gibt drei verschiedene Arten von Schleifen. Diese werde ich jetzt hier einzeln vorstellen.
+</p>
+<h3><span class="mw-headline" id="While-Schleife">While-Schleife</span></h3>
+<p>Die while-Schleife wiederholt eine oder mehrere Anweisungen solange, bis eine bestimmte Bedingung nicht mehr erfüllt wird.
+Die Syntax ist die folgende:
+</p>
+<pre class="prettyprint lang-lua">while [bedingung] do
+    -- Anweisung(en)
+end</pre>
+<p>Beispiel:
+</p>
+<pre class="prettyprint lang-lua">local zahl = 10
+while (zahl &gt;= 0) do
+    print(zahl)
+    zahl = zahl - 1
+end</pre>
+<p>Das Beispiel gibt nacheinander alle Zahlen von 10 bis 0 aus. Nach der Schleife hat zahl dann den Wert -1.
+</p>
+<h3><span class="mw-headline" id="Repeat-Until-Schleife">Repeat-Until-Schleife</span></h3>
+<p>Die repeat-until-Schleife wiederholt eine oder mehrere Anweisungen solange, bis eine bestimmte Bedingung erfüllt ist. Sie führt diese Anweisung(en) aber in jedem Fall einmal aus.
+Die Syntax lautet:
+</p>
+<pre class="prettyprint lang-lua">repeat
+    -- Anweisung(en)
+until [bedingung]</pre>
+<p>Das obere Beispiel lässt sich hiermit wie folgt realisieren:
+</p>
+<pre class="prettyprint lang-lua">local zahl = 10
+repeat
+    print(zahl)
+    zahl = zahl - 1
+until (zahl &lt; 0)</pre>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="For-Schleife">For-Schleife</span></h3>
+<p>Es gibt zwei verschiedene for-Schleifen. Einmal die einfache numerische for-Schleife und zum Anderen die generische for-Schleife, mit der man u.a. alle Elemente einer tabelle durchlaufen kann. Mit der generischen for-Schleife kann man noch ganz andere wesentlich komplexere Operationen durchführen, die ich hier aber nicht erklären werde, da sie auch - zumindest beim Scripten für MTA - nicht wirklich benötigt werden.
+</p>
+<h4><span class="mw-headline" id="Numerisch">Numerisch</span></h4>
+<p>Syntax:
+</p>
+<pre class="prettyprint lang-lua">for [laufvariable], [maximum], [schrittweite] do
+    -- Anweisung(en)
+end</pre>
+<p>Die Laufvariable wird nach jedem Durchlauf der Schleife um die Schrittweite erhöht, bis sie größer als das Maximum ist. Alle drei Werte müssen numerisch sein, d.h. ein integer oder ein float. Die Schrittweite kann auch weggelassen werden. Sie ist dann automatisch 1.
+Unser Beispiel von oben sähe mit einer for-Schleife so aus:
+</p>
+<pre class="prettyprint lang-lua">for i=10, 0, -1 do
+    print(i)
+end</pre>
+<p>Die Variable i ist nur innerhalb der Schleife verfügbar. Damit sie auch nach der Schleife noch verfügbar ist, muss man sie schon vor der Schleife deklarieren.
+</p>
+<h4><span class="mw-headline" id="Generisch">Generisch</span></h4>
+<p>Die generische for-Schleife wird hauptsächlich dazu verwendet, um tables zu durchlaufen. Ich werde sie daher auch nur in diesem Zusammenhang erläutern.
+Die Syntax für den Fall, dass man eine table durchlaufen will, ist:
+</p>
+<pre class="prettyprint lang-lua">for [index], [wert] in pairs([tabelle]) do
+    -- Anweisung(en)
+end</pre>
+<p>Diese Schleife geht durch alle Elemente der Tabelle und führt die Anweisungen somit für alle Elemente der Tabelle aus, wobei Index jedes Mal dem aktuellen Index des Tabellenelements und Wert jedes Mal dem aktuellen Wert des Tabellenelements entspricht.
+Anstelle von pairs() kann man auch ipairs() nehmen, wenn man nur alle ganzzahligen Indizes durchlaufen möchte.
+Hier mal ein Beispiel:
+</p>
+<pre class="prettyprint lang-lua">local tabelle = { eins = 1, "hallo", pi = 3.14159 }
+
+-- mit pairs
+for index, wert in pairs(tabelle) do
+  print(tostring(index).."="..tostring(wert)..", ")
+end
+-- Ausgabe: "eins=1, 1=hallo, pi=3.14159, "
+
+-- mit ipairs
+for index, wert in ipairs(tabelle) do
+  print(tostring(index).."="..tostring(wert)..", ")
+end
+-- Ausgabe: "1=hallo, "</pre>
+<p>tostring() ist übrigens eine Funktion, die eine beliebige Variable in einen string umwandelt. Wenn man Variablen mit einem string verknüpfen will und sich nicht sicher ist, ob diese Variablen string sind oder nicht, sollte man auf jeden Fall diese Funktion verwenden, da ansonsten Fehler auftreten können. (Lua gibt einen Error aus, wenn man z.B. soetwas versucht: "Hallo "..nil..".")
+</p>
+<h3><span class="mw-headline" id="Schleifenabbruch">Schleifenabbruch</span></h3>
+<p>Mit dem Schlüsselwort break kann man eine Schleife sofort abbrechen.
+Hier ein kurzes Beispiel dazu:
+</p>
+<pre class="prettyprint lang-lua">local zahl = 10
+while (true) do
+    print(zahl)
+    zahl = zahl - 1
+    if (zahl &lt; 0) then
+        break
+    end
+end</pre>
+<p>Diese Schleife würde auch alle Zahlen von 10 bis 0 nacheinander ausgeben, nur dass der Abbruch manuell erfolgt, wenn zahl negativ wird. Ohne diese Bedingung würde die Schleife endlos laufen.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Funktionen">Funktionen</span></h2>
+<h3><span class="mw-headline" id="Einf.C3.BChrung_5">Einführung</span></h3>
+<p>Funktionen sind im Grunde genommen Anweisungsblöcke, die - meist in Abhängigkeit von übergebenen Werten - mehrmals an unterschiedlichen Orten im Script bzw. zu unterschiedlichen Zeiten ausgeführt werden sollen.
+Da eine Funktion - sofern sie mehr als einmal ausgeführt werden soll bzw. mehr als einmal benötigt wird - auch in einer Variable gespeichert werden kann, kann man den Variablentyp function einführen, der in Lua auch tatsächlich existiert.
+Funktionen können Werte übergeben bekommen und auch Werte zurückgeben.
+</p>
+<h3><span class="mw-headline" id="Definition_3">Definition</span></h3>
+<p>Die allgemeine Syntax für das Definieren einer Funktion ist die folgende:
+</p>
+<pre class="prettyprint lang-lua">function [funktionsname]([parameterliste])
+    -- Anweisung(en)
+end</pre>
+<p>Ein Beispiel für eine Funktion, die das Quadrat einer Zahl zurückgibt, wäre:
+</p>
+<pre class="prettyprint lang-lua">function quadrat(zahl)
+    return zahl * zahl
+end</pre>
+<p>Alternativ kann eine Funktion übrigens auch so einer Variable zugewiesen werden:
+</p>
+<pre class="prettyprint lang-lua">quadrat = function (zahl) return zahl * zahl end</pre>
+<h3><span class="mw-headline" id="R.C3.BCckgabewerte">Rückgabewerte</span></h3>
+<p>return wird verwendet, um die Funktion einen Wert zurückgeben zu lassen. Nach einem return-Befehl bricht die Funktion alle Tätigkeiten ab und ist beendet.
+Um einen Rückgabewert verwenden zu können, müssen wir aber ersteinmal wissen, wie man eine Funktion dazu bringt, die Anweisungen, die sie enthält, auszuführen.
+Das geht allgemein mit funktionsname(parameterliste).
+Als Beispiel für unsere quadrat-Funktion:
+</p>
+<pre class="prettyprint lang-lua">local vier = quadrat(2)</pre>
+<p>Wenn wir quadrat(2) ausführen, dann wird der obrige Code ausgeführt, wobei die Variable zahl den Wert 2 zugewiesen bekommt. zahl ist dabei jedoch nur innerhalb der Funktion definiert.
+Die Variable vier bekommt nun den Wert 2 * 2, also 4 zugewiesen.
+</p>
+<pre class="prettyprint lang-lua">local vier = quadrat</pre>
+<p>würde die Funktion quadrat in die Variable vier kopieren. Man könnte nun also auch vier(2) aufrufen, um 4 zu bekommen.
+</p><p>Eine Funktion kann auch mehrere Funktionswerte zurückgeben. Das ist vor allem dann sinnvoll, wenn es sich um Positionen handelt, was bei MTA ja nicht selten vorkommt.
+Beispiel:
+</p>
+<pre class="prettyprint lang-lua">function berechnungen(zahl1, zahl2)
+    return zahl1 + zahl2, zahl1 - zahl2, zahl1 * zahl2, zahl1 / zahl2
+end
+
+local summe, differenz, produkt, quotient = berechnungen(5, 10)</pre>
+<p>Damit wird summe = 15, differenz = -5, produkt = 50 und quotient = 0.5.
+</p>
+<h3><span class="mw-headline" id="Lua_Standardfunktionen">Lua Standardfunktionen</span></h3>
+<p>Funktionen wie tostring, print und math.random sind Standardfunktionen von Lua. Eine komplette Liste aller Lua Standardfunktionen bekommt ihr auf der <a rel="nofollow" class="external text" href="http://www.lua.org/manual/5.1/#index">offiziellen Lua Webseite</a> (Englisch).
+</p><p>Die Standard-string-Funktionen erlauben eine besondere Syntax, die ich hier kurz erläutern möchte, da sie von vielen erfahrenen Scriptern genutzt wird und es hilfreich ist, wenn man etwas damit anfangen kann.
+</p>
+<pre class="prettyprint lang-lua">local name = "Firzen Polas"
+local laenge = string.len(name)</pre>
+<p>Dieser Code weist der Variable laenge die Länge des strings "Firzen Polas", also 12, zu.
+Alternativ kann man auch den folgenden Code verwenden:
+</p>
+<pre class="prettyprint lang-lua">local name = "Firzen Polas"
+local laenge = name:len()</pre>
+<p>Vorraussetzung ist, dass die Variable vor dem Doppelpunkt ein string ist. Bei den math- und table-Funktionen funktioniert dies nicht.
+</p>
+<h3><span class="mw-headline" id="Rekursive_Funktionen">Rekursive Funktionen</span></h3>
+<p>Rekursive Funktionen sind eine effektive Alternative zu Schleifen - zumindest in manchen seltenen Fällen. Das berühmteste Beispiel ist das Berechnen einer Fakultät.
+Zur Information: n! (sprich: n Fakultät) bezeichnet das Produkt aller Ganzzahlen von n bis 1, also quasi 1*2*3*4*...*n.
+Beispiel: 3! = 1 * 2 * 3 = 6
+</p>
+<pre class="prettyprint lang-lua">function fakultaet(zahl)
+    if (zahl &gt; 0) then
+        return zahl * fakultaet(zahl - 1)
+    else
+        return 1
+    end
+end</pre>
+<p>Mit Schleife sähe das so aus:
+</p>
+<pre class="prettyprint lang-lua">function fakultaet(zahl)
+    if (zahl == 0) then
+        return 1
+    end
+    for i=zahl-1, 1, -1 do
+        zahl = zahl * i
+    end
+    return zahl
+end</pre>
+<h3><span class="mw-headline" id="Variable_Parameterzahl">Variable Parameterzahl</span></h3>
+<p>Manchmal benötigt eine Funktion nicht zwingend eine bestimmte Anzahl von Parametern oder soll eine variable Anzahl an Parametern akzeptieren.
+Dies lässt sich realisieren mit drei Punkten am Ende der Parameterliste.
+</p>
+<pre class="prettyprint lang-lua">function aufsummieren(...)
+    local parameter = {...}
+    local summe = 0
+    for _, zahl in pairs(parameter)
+        summe = summe + tonumber(zahl)
+    end
+    return summe
+end</pre>
+<p>... entspricht dabei innerhalb der Funktion der Parameterliste als normale Liste.
+D.h., wenn man aufsummieren(1, 2, 3, 4) aufruft, dann wird parameter = {1, 2, 3, 4}.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Fragen.2C_Anregungen.2C_Kritik">Fragen, Anregungen, Kritik</span></h2>
+<p>Sollten noch irgendwelche Fragen offen sein, so könnt ihr jederzeit in unserem <a rel="nofollow" class="external text" href="irc://irc.gtanet.com/#mta.german">IRC Channel</a> oder in unserem <a rel="nofollow" class="external text" href="http://sebihunter.de/wbb/">Forum</a> vorbeischauen und eure Fragen dort loswerden.
+Außerdem haben wir in unserem IRC Channel einen Lua Bot, an dem ihr Funktionen, die auf den standard Lua Funktionen basieren, ausprobieren könnt.
+</p><p>Anregungen und Kritik nehme ich dort auch entgegen. Alternativ könnt ihr diese hier in die Diskussion schreiben.
+Falls ihr Fehler findet, behebt diese bitte oder gebt mir Bescheid.
+</p><p>Ich hoffe, das Tutorial konnte euch weiterhelfen. Wenn ihr nun Hilfe braucht bei eurem ersten Gamemode in MTA, dann solltet ihr euch die <a href="MTA_Scripting_Grundlagen.html" title="DE/MTA Scripting Grundlagen">MTA Scripting Grundlagen</a> durchlesen. Viel Erfolg.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190625165300
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.021 seconds
+Real time usage: 0.022 seconds
+Preprocessor visited node count: 833/1000000
+Preprocessor generated node count: 1608/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 - -total
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:4224-0!*!0!!en!*!* and timestamp 20190625165300 and revision id 29398
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=DE/Lua_Tutorial&amp;oldid=29398">https://wiki.multitheftauto.com/index.php?title=DE/Lua_Tutorial&amp;oldid=29398</a>"</div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Lua_Tutorial.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:DE/Lua_Tutorial&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=DE/Lua_Tutorial&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=DE/Lua_Tutorial&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=DE%2FLua+Tutorial" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=DE%2FLua+Tutorial" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/DE/Lua_Tutorial.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/DE/Lua_Tutorial.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=DE/Lua_Tutorial&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=DE/Lua_Tutorial&amp;oldid=29398" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=DE/Lua_Tutorial&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+			</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 13 February 2012, at 11:23.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":55});});</script></body></html>

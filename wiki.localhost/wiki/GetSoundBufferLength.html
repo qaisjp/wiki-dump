@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>GetSoundBufferLength - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"GetSoundBufferLength","wgTitle":"GetSoundBufferLength","wgCurRevisionId":61857,"wgRevisionId":61857,"wgArticleId":11157,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Client functions","Changes in 1.5.6"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"GetSoundBufferLength","wgRelevantArticleId":11157,"wgRequestId":"dc112398cc04d2528a109d9a","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta name='headingclass' content='' data-class='client' data-subcaption='Client-only function'>
+<meta name='lowercasetitle' content=''>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-GetSoundBufferLength rootpage-GetSoundBufferLength skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">GetSoundBufferLength</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
+<!--LC-->
+</p>
+<div style="font-weight: bold;background:black;color:white;padding:2px; padding-left:8px;">FROM VERSION 1.5.6 <a rel="nofollow" class="external text" href="https://buildinfo.mtasa.com/?Author=&amp;Branch=&amp;Revision=16216"><span style="color: #FFFFFF;">r16216</span></a> ONWARDS</div><div style="border: 2px solid black;padding: 3px;">This function gets the buffer playback length of the specified <a href="Sound.html" title="Sound" class="mw-redirect">sound</a>. Works only with streams. </div>
+<h2><span class="mw-headline" id="Syntax">Syntax</span></h2>
+<pre class="prettyprint lang-lua">float getSoundBufferLength ( element theSound )</pre> 
+<p><u><b>OOP Syntax</b></u> <small><a href="OOP_Introduction.html" title="OOP Introduction">Help! I don't understand this!</a></small>
+</p>
+<dl><dd> <b>Method</b>: <i><a href="Sound.html" title="Sound" class="mw-redirect">sound</a>:getBufferLength(...)</i></dd>
+<dd> <b>Variable</b>: <i>.bufferLength</i></dd></dl>
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>theSound:</b> the <a href="Sound.html" title="Sound" class="mw-redirect">sound</a> element which buffer length you want to get.</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<ul><li> An <a href="Float.html" title="Float">float</a> value indicating the buffer playback length of the <a href="Sound.html" title="Sound" class="mw-redirect">sound</a> in seconds.</li>
+<li> <i>false</i> if the sound is not a stream.</li>
+<li> <i>nil</i> if the sound is invalid.</li></ul>
+<h2><span class="mw-headline" id="Example">Example</span></h2>
+<p>This example draws a simple player that shows the length of the downloaded part of the song.
+</p>
+<pre class="prettyprint lang-lua">
+local screenSize = Vector2(guiGetScreenSize())
+local BOX_SIZE = Vector2(300, 100)
+local LINE_SIZE = Vector2(BOX_SIZE.x, 10)
+local BOX_POSITION = screenSize / 2 - BOX_SIZE / 2
+local TITLE_POSITION = BOX_POSITION + Vector2(8, 8)
+local ARTIST_POSITION = BOX_POSITION + Vector2(8, 32)
+
+local sound
+
+addCommandHandler("playsound", function ()
+    if isElement(sound) then
+        destroyElement(sound)
+    end
+    sound = playSound("https://example.com/song.mp3")
+end)
+
+addCommandHandler("stopsound", function ()
+    if isElement(sound) then
+        destroyElement(sound)
+    end
+end)
+
+addEventHandler("onClientRender", root, function ()
+    if isElement(sound) then
+        local soundLength = getSoundLength(sound)
+        local soundPosition = getSoundPosition(sound)
+        local soundBufferLength = getSoundBufferLength(sound)
+
+        local meta = getSoundMetaTags(sound)
+
+        dxDrawRectangle(BOX_POSITION, BOX_SIZE, tocolor(20, 20, 20, 255), false, false)
+
+        if meta.title then
+            dxDrawText(meta.title, TITLE_POSITION, 0, 0, tocolor(255, 255, 255, 255), 1.5, 1.5, "clear")
+        end
+        if meta.artist then
+            dxDrawText(meta.artist, ARTIST_POSITION, 0, 0, tocolor(255, 255, 255, 255), 1.0, 1.0, "clear")
+        end
+
+        dxDrawText(("%d:%02d"):format(soundPosition / 60, soundPosition&#160;% 60), BOX_POSITION + Vector2(8, BOX_SIZE.y - 32), BOX_POSITION + BOX_SIZE - Vector2(8, 0), tocolor(255, 255, 255, 255), 1.0, 1.0, "clear", "left", "top")
+        dxDrawText(("%d:%02d"):format(soundLength / 60, soundLength&#160;% 60), BOX_POSITION + Vector2(8, BOX_SIZE.y - 32), BOX_POSITION + BOX_SIZE - Vector2(8, 0), tocolor(255, 255, 255, 255), 1.0, 1.0, "clear", "right", "top")
+        
+        -- draw seek bar
+        local linePosition = Vector2(BOX_POSITION.x, BOX_POSITION.y + BOX_SIZE.y - LINE_SIZE.y)
+        dxDrawRectangle(linePosition, LINE_SIZE, tocolor(255, 255, 255, 128), false, false)
+
+        -- draw buffer length
+        if soundBufferLength then
+            dxDrawRectangle(linePosition, Vector2(LINE_SIZE.x * (soundBufferLength / soundLength), LINE_SIZE.y), tocolor(255, 255, 255, 96), false, false)
+        end
+        -- draw current position
+        dxDrawRectangle(linePosition, Vector2(LINE_SIZE.x * (soundPosition / soundLength), LINE_SIZE.y), tocolor(255, 255, 255, 255), false, false)
+    end
+end)
+</pre>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<ul><li><a href="GetRadioChannel.html" title="GetRadioChannel">getRadioChannel</a></li>
+<li><a href="GetRadioChannelName.html" title="GetRadioChannelName">getRadioChannelName</a></li>
+<li><a href="GetSFXStatus.html" title="GetSFXStatus">getSFXStatus</a></li>
+<li><a href="GetSoundBPM.html" title="GetSoundBPM">getSoundBPM</a></li></ul>
+<div style="font-weight: bold;background:black;color:white;padding:2px; padding-left:8px;">FROM VERSION 1.5.6 <a rel="nofollow" class="external text" href="https://buildinfo.mtasa.com/?Author=&amp;Branch=&amp;Revision=16216"><span style="color: #FFFFFF;">r16216</span></a> ONWARDS</div><div style="border: 2px solid black;padding: 3px;">
+<ul><li><strong class="selflink">getSoundBufferLength</strong></li></ul>
+ </div>
+<ul><li><a href="GetSoundEffects.html" title="GetSoundEffects">getSoundEffects</a></li>
+<li><a href="GetSoundFFTData.html" title="GetSoundFFTData">getSoundFFTData</a></li>
+<li><a href="GetSoundLength.html" title="GetSoundLength">getSoundLength</a></li>
+<li><a href="GetSoundLevelData.html" title="GetSoundLevelData">getSoundLevelData</a></li>
+<li><a href="GetSoundMaxDistance.html" title="GetSoundMaxDistance">getSoundMaxDistance</a></li>
+<li><a href="GetSoundMetaTags.html" title="GetSoundMetaTags">getSoundMetaTags</a></li>
+<li><a href="GetSoundMinDistance.html" title="GetSoundMinDistance">getSoundMinDistance</a></li>
+<li><a href="GetSoundPan.html" title="GetSoundPan">getSoundPan</a></li>
+<li><a href="GetSoundPosition.html" title="GetSoundPosition">getSoundPosition</a></li>
+<li><a href="GetSoundProperties.html" title="GetSoundProperties">getSoundProperties</a></li>
+<li><a href="GetSoundSpeed.html" title="GetSoundSpeed">getSoundSpeed</a></li>
+<li><a href="GetSoundVolume.html" title="GetSoundVolume">getSoundVolume</a></li>
+<li><a href="GetSoundWaveData.html" title="GetSoundWaveData">getSoundWaveData</a></li>
+<li><a href="IsSoundPanningEnabled.html" title="IsSoundPanningEnabled">isSoundPanningEnabled</a></li>
+<li><a href="IsSoundPaused.html" title="IsSoundPaused">isSoundPaused</a></li>
+<li><a href="PlaySFX.html" title="PlaySFX">playSFX</a></li>
+<li><a href="PlaySFX3D.html" title="PlaySFX3D">playSFX3D</a></li>
+<li><a href="PlaySound.html" title="PlaySound">playSound</a></li>
+<li><a href="PlaySound3D.html" title="PlaySound3D">playSound3D</a></li>
+<li><a href="PlaySoundFrontEnd.html" title="PlaySoundFrontEnd">playSoundFrontEnd</a></li>
+<li><a href="SetRadioChannel.html" title="SetRadioChannel">setRadioChannel</a></li>
+<li><a href="SetSoundEffectEnabled.html" title="SetSoundEffectEnabled">setSoundEffectEnabled</a></li>
+<li><a href="SetSoundMaxDistance.html" title="SetSoundMaxDistance">setSoundMaxDistance</a></li>
+<li><a href="SetSoundMinDistance.html" title="SetSoundMinDistance">setSoundMinDistance</a></li>
+<li><a href="SetSoundPan.html" title="SetSoundPan">setSoundPan</a></li>
+<li><a href="SetSoundPanningEnabled.html" title="SetSoundPanningEnabled">setSoundPanningEnabled</a></li>
+<li><a href="SetSoundPaused.html" title="SetSoundPaused">setSoundPaused</a></li>
+<li><a href="SetSoundPosition.html" title="SetSoundPosition">setSoundPosition</a></li>
+<li><a href="SetSoundProperties.html" title="SetSoundProperties">setSoundProperties</a></li>
+<li><a href="SetSoundSpeed.html" title="SetSoundSpeed">setSoundSpeed</a></li>
+<li><a href="SetSoundVolume.html" title="SetSoundVolume">setSoundVolume</a></li>
+<li><a href="StopSound.html" title="StopSound">stopSound</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625164329
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.012 seconds
+Real time usage: 0.013 seconds
+Preprocessor visited node count: 161/1000000
+Preprocessor generated node count: 674/1000000
+Post‐expand include size: 3459/2097152 bytes
+Template argument size: 276/2097152 bytes
+Highest expansion depth: 9/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    7.325      1 - -total
+ 37.61%    2.755      1 - Template:New_feature/item
+ 35.44%    2.596      1 - Template:Client_audio_functions
+ 21.76%    1.594      1 - Template:New_items
+ 18.54%    1.358      2 - Template:Current_Version
+ 12.60%    0.923      1 - Template:OOP
+ 12.19%    0.893      2 - Template:R
+  8.64%    0.633      1 - Template:Client_function
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:11157-0!*!0!!*!*!* and timestamp 20190625164329 and revision id 61857
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=GetSoundBufferLength&amp;oldid=61857">https://wiki.multitheftauto.com/index.php?title=GetSoundBufferLength&amp;oldid=61857</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Categories</a>: <ul><li><a href="Category_Client_functions.html" title="Category:Client functions">Client functions</a></li><li><a href="Category_Changes_in_1.5-2.html" title="Category:Changes in 1.5.6">Changes in 1.5.6</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="GetSoundBufferLength.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:GetSoundBufferLength&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=GetSoundBufferLength&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=GetSoundBufferLength&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=GetSoundBufferLength" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=GetSoundBufferLength" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/GetSoundBufferLength.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/GetSoundBufferLength.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=GetSoundBufferLength&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=GetSoundBufferLength&amp;oldid=61857" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=GetSoundBufferLength&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+			</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 7 January 2019, at 00:58.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":40});});</script></body></html>

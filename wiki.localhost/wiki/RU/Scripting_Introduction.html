@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Введение в скриптинг - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Введение_в_скриптинг","wgTitle":"Введение в скриптинг","wgCurRevisionId":62695,"wgRevisionId":62695,"wgArticleId":3535,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Введение_в_скриптинг","wgRelevantArticleId":3535,"wgRequestId":"e46b2475aa7142e394bc62ae","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"RU/Scripting_Introduction","wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false},"wgInternalRedirectTargetUrl":"/wiki/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2_%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%B8%D0%BD%D0%B3"});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.action.view.redirect","mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://wiki.multitheftauto.com/wiki/Введение_в_скриптинг"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Введение_в_скриптинг rootpage-Введение_в_скриптинг skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Введение в скриптинг</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"><span class="mw-redirectedfrom">(Redirected from <a href="http://wiki.localhost/index.php?title=RU/Scripting_Introduction&amp;redirect=no" title="RU/Scripting Introduction">RU/Scripting Introduction</a>)</span></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>Ресурсы являются ключевой частью MTA. Ресурс - это папка или zip-архив, содержащий набор файлов, а также meta-файл, который описывает серверу как нужно загружать ресурс и из каких файлов он состоит. Ресурс играет практически ту же роль, что и программа в операционной системе - он может быть запущен и остановлен, при этом несколько ресурсов могут быть запущены одновременно. 
+</p><p>Все, связанное со скриптингом, находится в ресурсах. Назначение ресурса и определяет, является ли он модом, картой или чем-либо еще. MTA поставляется с ресурсами, которые вы можете выборочно использовать в своих модах, например, maplimits, позволяющий удерживать игроков в рамках указанных границ карты, или deathpickups, создающий пикапы с оружием.
+</p>
+<table cellspacing="0" style="padding: 5px; width: 80%; margin: 2px auto 2px auto; border: 1px solid #81C687; background: #E2FFE5; border-left: 10px solid #81C687;">
+<tr>
+<td style="width: 32px; vertical-align:top; display: none;" rowspan="2"> [[{{{image}}}|link=]]
+</td>
+<td style=""> <b>Tip:</b> Первым шагом в изучении Lua-скриптинга должен быть выбор Lua-редактора. Это намного упрощает скриптинг. Мы рекомендуем <a rel="nofollow" class="external text" href="http://notepad-plus.sourceforge.net/uk/site.htm">Notepad++</a> или <a rel="nofollow" class="external text" href="http://luaedit.sourceforge.net/">LuaEdit</a>. Также имеется неофициальный <a href="MTASE.html" title="RU/MTASE">MTA Script Editor</a> (на стадии разработки), который вы можете испытать.
+</td></tr>
+<tr>
+<td rowspan="1" style="padding-left: 10px;">
+</td></tr></table>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_.D1.80.D0.B0.D0.B1.D0.BE.D1.82.D0.B0.D1.8E.D1.89.D0.B5.D0.B3.D0.BE_.D1.81.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D0.B0"><span class="tocnumber">1</span> <span class="toctext">Создание работающего скрипта</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#.D0.93.D0.B4.D0.B5_.D0.BD.D0.B0.D1.85.D0.BE.D0.B4.D1.8F.D1.82.D1.81.D1.8F_.D0.B2.D1.81.D0.B5_.D1.81.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D1.8B.3F"><span class="tocnumber">1.1</span> <span class="toctext">Где находятся все скрипты?</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#.D0.98.D0.B4.D0.B5.D0.BD.D1.82.D0.B8.D1.84.D0.B8.D0.BA.D0.B0.D1.86.D0.B8.D1.8F_.D0.B2.D0.B0.D1.88.D0.B5.D0.B3.D0.BE_.D1.80.D0.B5.D1.81.D1.83.D1.80.D1.81.D0.B0"><span class="tocnumber">1.2</span> <span class="toctext">Идентификация вашего ресурса</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#.D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_.D0.BF.D1.80.D0.BE.D1.81.D1.82.D0.BE.D0.B3.D0.BE_.D1.81.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D0.B0"><span class="tocnumber">1.3</span> <span class="toctext">Создание простого скрипта</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#.D0.97.D0.B0.D0.BF.D1.83.D1.81.D0.BA_.D1.81.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D0.B0"><span class="tocnumber">1.4</span> <span class="toctext">Запуск скрипта</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#.D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_.D0.BF.D1.80.D0.BE.D1.81.D1.82.D0.BE.D0.B9_.D0.BA.D0.BE.D0.BC.D0.B0.D0.BD.D0.B4.D1.8B"><span class="tocnumber">2</span> <span class="toctext">Создание простой команды</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#.D0.9F.D1.80.D0.BE_.D0.BE.D0.B1.D1.80.D0.B0.D0.B1.D0.BE.D1.82.D1.87.D0.B8.D0.BA.D0.B8_.D0.BA.D0.BE.D0.BC.D0.B0.D0.BD.D0.B4"><span class="tocnumber">2.1</span> <span class="toctext">Про обработчики команд</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#.D0.9D.D0.B0.D0.BF.D0.B8.D1.81.D0.B0.D0.BD.D0.B8.D0.B5_.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8"><span class="tocnumber">2.2</span> <span class="toctext">Написание функции</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#.D0.A7.D1.82.D0.BE_.D0.B2.D0.B0.D0.BC_.D1.81.D0.BB.D0.B5.D0.B4.D1.83.D0.B5.D1.82_.D0.B7.D0.BD.D0.B0.D1.82.D1.8C"><span class="tocnumber">3</span> <span class="toctext">Что вам следует знать</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#.D0.9A.D0.BB.D0.B8.D0.B5.D0.BD.D1.82.D1.81.D0.BA.D0.B8.D0.B5_.D0.B8_.D1.81.D0.B5.D1.80.D0.B2.D0.B5.D1.80.D0.BD.D1.8B.D0.B5_.D1.81.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D1.8B"><span class="tocnumber">3.1</span> <span class="toctext">Клиентские и серверные скрипты</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#.D0.91.D0.BE.D0.BB.D0.B5.D0.B5_.D1.81.D0.BB.D0.BE.D0.B6.D0.BD.D1.8B.D0.B5_.D1.80.D0.B5.D1.81.D1.83.D1.80.D1.81.D1.8B"><span class="tocnumber">3.2</span> <span class="toctext">Более сложные ресурсы</span></a>
+<ul>
+<li class="toclevel-3 tocsection-12"><a href="#.D0.9F.D0.B5.D1.80.D0.B2.D1.8B.D0.B9_.D0.BF.D1.80.D0.B8.D0.BC.D0.B5.D1.80_-_.D0.92.D1.81.D0.BF.D0.BE.D0.BC.D0.BE.D0.B3.D0.B0.D1.82.D0.B5.D0.BB.D1.8C.D0.BD.D1.8B.D0.B9_.D1.81.D0.BA.D1.80.D0.B8.D0.BF.D1.82"><span class="tocnumber">3.2.1</span> <span class="toctext">Первый пример - Вспомогательный скрипт</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="#.D0.92.D1.82.D0.BE.D1.80.D0.BE.D0.B9_.D0.BF.D1.80.D0.B8.D0.BC.D0.B5.D1.80_-_.D0.9C.D0.BE.D0.B4"><span class="tocnumber">3.2.2</span> <span class="toctext">Второй пример - Мод</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="#.D0.A2.D1.80.D0.B5.D1.82.D0.B8.D0.B9_.D0.BF.D1.80.D0.B8.D0.BC.D0.B5.D1.80_-_.D0.9A.D0.B0.D1.80.D1.82.D0.B0"><span class="tocnumber">3.2.3</span> <span class="toctext">Третий пример - Карта</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-15"><a href="#.D0.A1.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F"><span class="tocnumber">3.3</span> <span class="toctext">События</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="#.D0.A7.D1.82.D0.BE_.D0.B4.D0.B5.D0.BB.D0.B0.D1.82.D1.8C_.D1.82.D0.B5.D0.BF.D0.B5.D1.80.D1.8C"><span class="tocnumber">4</span> <span class="toctext">Что делать теперь</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_.D1.80.D0.B0.D0.B1.D0.BE.D1.82.D0.B0.D1.8E.D1.89.D0.B5.D0.B3.D0.BE_.D1.81.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D0.B0">Создание работающего скрипта</span></h2>
+<p>Для начала мы узнаем, как пошагово сделать простой скрипт, который позволит игроку прогуливаться по городу.
+</p>
+<h3><span class="mw-headline" id=".D0.93.D0.B4.D0.B5_.D0.BD.D0.B0.D1.85.D0.BE.D0.B4.D1.8F.D1.82.D1.81.D1.8F_.D0.B2.D1.81.D0.B5_.D1.81.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D1.8B.3F">Где находятся все скрипты?</span></h3>
+<p>Давайте взглянем на файловую структуру скрипта. Зайдите в папку сервера MTA и пройдите по следующему пути:
+</p><p>	/server/mods/deathmatch/resources/
+</p><p>Вы увидите множество .zip-архивов, являющихся упакованными пробными скриптами, поставляемыми с MTA DM. Каждый файл - это "ресурс", все они будут распакованы и загружены сервером при его старте. Чтобы создать свой собственный ресурс, просто создайте папку и назовите ее так, как хотите. В нашем случае мы назовем ее "myserver".
+</p><p>Теперь вам нужно зайти в эту папку: 
+</p><p>	/server/mods/deathmatch/resources/myserver/
+</p>
+<h3><span class="mw-headline" id=".D0.98.D0.B4.D0.B5.D0.BD.D1.82.D0.B8.D1.84.D0.B8.D0.BA.D0.B0.D1.86.D0.B8.D1.8F_.D0.B2.D0.B0.D1.88.D0.B5.D0.B3.D0.BE_.D1.80.D0.B5.D1.81.D1.83.D1.80.D1.81.D0.B0">Идентификация вашего ресурса</span></h3>
+<p>Чтобы сервер мог узнать о содержимом того или иного ресурса, в нем должен быть создан файл <i>meta.xml</i>, перечисляющий его содержимое. Этот файл должен быть расположен в корневой директории ресурса, в нашем случае - это папка "myserver". Просто создайте текстовый файл, назовите его "meta.xml" и откройте с помощью Блокнота (notepad).
+</p><p>В файл <i>meta.xml</i> введите следующий код:
+</p>
+<pre class="prettyprint lang-xml">
+&lt;meta&gt;
+     &lt;info author="YourName" type="gamemode" name="Kontol memek" description="My Mta Sa" /&gt;
+     &lt;script src="script.lua" type="server"/&gt;
+&lt;/meta&gt;
+</pre>
+<p>В теге <i>&lt;info /&gt;</i> есть поле "type", которое говорит о том, что данный ресурс - <i>gamemode</i> ("мод", игровой режим), а не обычный include или <i>map</i> (карта), о которых мы поговорим чуть позже. Gamemode - то, что вам нужно, чтобы создать независимый сервер. 
+</p><p>Тег <i>&lt;script /&gt;</i> оговаривает сценарии (скрипты), которые содержит ресурс, о них мы сейчас и поговорим.
+Поле "type" говорит о том, что данный скрипт "script.lua" будет выполняться на стороне сервера.
+</p>
+<h3><span class="mw-headline" id=".D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_.D0.BF.D1.80.D0.BE.D1.81.D1.82.D0.BE.D0.B3.D0.BE_.D1.81.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D0.B0">Создание простого скрипта</span></h3>
+<p>Заметьте, что в теге <i>&lt;script /&gt; 'script.lua' - файл не находится в какой-либо вложенной директории. Следовательно, мы создадим файл в той же папке, что и meta.xml. Теперь можно скопировать и вставить в script.lua следующий код:</i>
+</p>
+<pre class="prettyprint lang-lua">
+local spawnX, spawnY, spawnZ = 1959.55, -1714.46, 10
+function joinHandler()
+	spawnPlayer(source, spawnX, spawnY, spawnZ)
+	fadeCamera(source, true)
+	setCameraTarget(source, source)
+	outputChatBox("Welcome to My Server", source)
+end
+addEventHandler("onPlayerJoin", getRootElement(), joinHandler)
+</pre>
+<p>Этот скрипт заспавнит вас по координатам (x, y, z), указанным выше, когда вы зайдете на сервер. Обратите внимание, что функция <i>fadeCamera</i> обязательно должна быть, иначе экран будет черным. К тому же, в релизах новее DP2 вам нужно установить цель для камеры (иначе все, что увидит игрок - синее небо).
+</p><p>Переменная <b>source</b> указывает на того, кто вызвал срабатывание события. Так как данный код срабатывает при заходе какого-либо игрока, эта переменная используется для установления того, кто зашел. Так что спавнить будет именно этого игрока, а не всех сразу или кого-нибудь случайно.
+</p><p>Если присмотреться к <a href="../AddEventHandler.html" title="AddEventHandler">addEventHandler</a>, вы заметите три вещи: 'onPlayerJoin', указывающий на то, когда (почему) произойдет срабатывание; getRootElement(), который показывет благодаря кому/чему может произойти срабатывание (getRootElement() - это все/всё) и joinHandler, который отвечает за функцию, на которую произойдет переключение при срабывании события. Остальные подробности будут изложены позже и на отдельном примере, а теперь давайте просто запустим сервер и попрактикуемся!
+</p>
+<h3><span class="mw-headline" id=".D0.97.D0.B0.D0.BF.D1.83.D1.81.D0.BA_.D1.81.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D0.B0">Запуск скрипта</span></h3>
+<p>Чтобы запустить сервер, просто запустите исполняемый файл (на Windows - .exe) по адресу <i>MTA San Andreas x.x/server</i>, где x.x - номер версии MTA. Сначала будут показаны данные сервера; запомните номер порта (server port), который понадобится вам при подключении. Затем сервер загрузит все ресурсы в папку mods/deathmatch/resources/ и позже будет "ready to accept connections!", то есть готов принимать игроков.
+</p><p>Перед тем, как вы подключитесь к серверу, нужно обязательно запустить мод (gamemode). Введите "start myserver" и нажмите Enter. Сервер запустит мод, который вы только что создали, а также начнет отображать различные ошибки и предупреждения, если таковые будут. Теперь можно запустить клиент MTA DM и подключиться через "Quick Connect", воспользовавшись IP-адресом вашего сервера и номером порта, на который мы ранее обратили ваше внимание. Если все пройдет по плану, через несколько секунд ваш персонаж сможет пройтись по улицам Los Santos'а.
+</p><p>Затем мы добавим в скрипт команду, которую игроки смогут использовать для того, чтобы спавнить рядом с собой транспортное средство. Вы можете это пропустить и взглянуть на статью про более продвинутый скриптинг с использованием <a href="Map_manager.html" title="RU/Map manager" class="mw-redirect">Map Manager</a>, которая продолжит это руководство. Еще одним ответвлением данного руководства является <a href="../%d0%92%d0%b2%d0%b5%d0%b4%d0%b5%d0%bd%d0%b8%d0%b5_%d0%b2_%d1%81%d0%ba%d1%80%d0%b8%d0%bf%d1%82%d0%b8%d0%bd%d0%b3_GUI.html" title="Введение в скриптинг GUI">Введение в скриптинг GUI</a>: прочитав его, вы узнаете, как рисуется и программируется Graphical User Interface в MTA:DM.
+</p>
+<h2><span class="mw-headline" id=".D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_.D0.BF.D1.80.D0.BE.D1.81.D1.82.D0.BE.D0.B9_.D0.BA.D0.BE.D0.BC.D0.B0.D0.BD.D0.B4.D1.8B">Создание простой команды</span></h2>
+<p>Давайте вернемся к содержимому файла <i>script.lua</i>. Как уже было сказано, мы хотим предоставить команду для создания трансортного средства рядом с вашей текущей позицией в игре. Во-первых, нам понадобится создать функцию, которую мы будем вызывать, и обработчик команды, который сделает команду доступной для выбора игроком посредством ввода ее в консоли.
+</p>
+<pre class="prettyprint lang-lua">
+-- создаем функцию, вызываемую обработчиком команды, с аргументами: thePlayer, command, vehicleModel
+function createVehicleForPlayer(thePlayer, command, vehicleModel)
+   -- создаем транспортное средство и другое
+end
+
+-- создаем обработчик команды
+addCommandHandler("createvehicle", createVehicleForPlayer)
+</pre>
+<p><i>Заметка: Клик по названию функции в образце кода перенаправит на соответствующую страницу с ее описанием.</i>
+</p>
+<h4><span class="mw-headline" id=".D0.9F.D1.80.D0.BE_.D0.BE.D0.B1.D1.80.D0.B0.D0.B1.D0.BE.D1.82.D1.87.D0.B8.D0.BA.D0.B8_.D0.BA.D0.BE.D0.BC.D0.B0.D0.BD.D0.B4">Про обработчики команд</span></h4>
+<p>Первый аргумент <a href="../AddCommandHandler.html" title="AddCommandHandler">addCommandHandler</a> - имя команды, которая будет доступна игроку, второй аргумент - функция, на которую произойдет переключение, в данном случае - это <i>createVehicleForPlayer</i>.
+</p><p>Если у вас уже есть опыт в скриптинге, вы знаете, что функции вызываются примерно следующим образом:
+</p>
+<pre class="prettyprint lang-lua">
+functionName(argument1, argument2, argument3, ..)
+</pre>
+<pre class="prettyprint lang-lua">
+functionName(thePlayer, commandName, argument3, ..)
+</pre>
+<p>Присмотревшись ко второму образцу (выше), мы увидим, что argument1 - thePlayer, а argument2 - commandName. thePlayer - тот, кто набрал команду, так что как бы вы ее не вводили, переменная будет содержать игрока, который ее активировал. commandName - команда, которую ввели. Так что при вводе "/greet", этот аргумент будет содержать "greet". Argument 3 - еще что-то, введенное игроком после, об этом вы узнаете чуть позже из данного руководства. Никогда не забывайте, что первые 2 аргумента являются стандартными, но назвать вы их можете по своему усмотрению. То есть важен порядок, а не название.
+</p><p>Мы уже вызывали таким образом функцию <a href="../AddCommandHandler.html" title="AddCommandHandler">addCommandHandler</a>, и так как <i>createVehicleForPlayer</i> - также функция, ее тоже можно так вызвать. Но мы для этого используем обработчик команд, который вызывает ее схожим образом, только внутренне.
+</p><p>Например: Кто-то вводит "createvehicle 468" в игровой консоли, чтобы заспавнить Sanchez, обработчик команд вызывает функцию createVehicleForPlayer, как <b>если бы</b> мы имели в скрипте следующую строку кода:
+</p>
+<pre class="prettyprint lang-lua">
+createVehicleForPlayer(thePlayer,"createvehicle","468") -- thePlayer - элемент типа player игрока, который ввел команду
+</pre>
+<p>Как можно заметить, предоставляются несколько параметров: игрок, который вызвал команду, сама команда, которую он ввел, и какой-нибудь текст, который он после нее ввел, в данном случае - "468" в качестве id трансопртного средства, отвчечающего за Sanchez. Первые два параметра одинаковы для всех обработчиков команд, о них вы можете почитать на странице <a href="../AddCommandHandler.html" title="AddCommandHandler">addCommandHandler</a>. Фактически, вам всегда придется определять как минимум эти два параметра, чтобы смочь использовать какие-нибудь другие, идущие после них (например, для обработки текста, введенного после команды, как id модели транспортного средства в нашем случае).
+</p><p><i>Заметка: Обработчик команды надо добавлять именно ПОСЛЕ функции, на которую он сошлется, иначе она не будет найдена. Порядок имеет значение!</i>
+</p>
+<h4><span class="mw-headline" id=".D0.9D.D0.B0.D0.BF.D0.B8.D1.81.D0.B0.D0.BD.D0.B8.D0.B5_.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8">Написание функции</span></h4>
+<p>Чтобы заполнить созданную нами функцию, нам следует подумать, что нам предстоит сделать:
+</p>
+<ul><li> Получить позицию игрока, чтобы знать, где спавнить ТС (мы хотим, чтобы оно появлялось прямо рядом с игроком)</li>
+<li> Вычислить позицию, на которой мы хотим заспавнить ТС (мы же не хотим его появления на голове у игрока)</li>
+<li> Собственно, заспавнить ТС</li>
+<li> Проверить, заспавнилось ли оно успешно, в противном случае - вывести сообщение в чат</li></ul>
+<p>Чтобы разрешить все поставленные задчаи, нам понадобится задействовать несколько функций. А чтобы найти нужные нам функции, нужно перейти ко <a href="Server_Scripting_Functions.html" title="RU/Server Scripting Functions">списку серверных функций</a>. Для начала нам понадобится функция, которая получит координаты игрока. Так как все игроки являются элементами, мы сразу выбираем <b>Element functions</b>, где и находим функцию <a href="../GetElementPosition.html" title="GetElementPosition">getElementPosition</a>. Кликнув по имени функции из списка, вы получите ее описание. Там можно увидеть синтаксис, что она возвращает и, как правило, пример использования. Синтаксис сообщает какие аргументы мы можем или должны ей передать.
+</p><p>Для <a href="../GetElementPosition.html" title="GetElementPosition">getElementPosition</a> синтаксис таков:
+</p>
+<pre class="prettyprint lang-lua">
+float, float, float getElementPosition ( element theElement )
+</pre>
+<p>Три <i>float</i> перед именем функции и есть типы значений, которые она возвращает. В данном случае это значит, что функция возвращает три числа с плавающей точкой (x, y и z). Внутри круглых скобок указаны аргументы, которые ей необходимо передать. В данном случае это только элемент, чью позицию вы хотите получить, у нас он представлен игроком.
+</p>
+<pre class="prettyprint lang-lua">
+function createVehicleForPlayer(thePlayer, command, vehicleModel)
+	-- get the position and put it in the x,y,z variables
+	-- (local означает, что переменные существуют только здесь, в этой области, внутри этой функции)
+	local x,y,z = getElementPosition(thePlayer)
+end
+</pre>
+<p>Затем нам надо сделать так, чтобы ТС не спавнилось прямо внутри игрока, поэтому мы прибавим небольшое число к переменной <i>x</i>, что повлечет за собой спавн ТС чуть восточнее самого игрока.
+</p>
+<pre class="prettyprint lang-lua">
+function createVehicleForPlayer(thePlayer, command, vehicleModel)
+	local x,y,z = getElementPosition(thePlayer) -- получаем позицию игрока
+	x = x + 5 -- прибавляем число 5 к позиции по оси x
+end
+</pre>
+<p>Теперь нам понадобится другая функция, чтобы непосредственно заспавнить транспортное средство. Мы снова ищем ее в <a href="Server_Scripting_Functions.html" title="RU/Server Scripting Functions">списке серверных функций</a>, на этот раз, так как мы говорим о транспорте - в разделе <b>Vehicle functions</b>, где выберем <a href="../CreateVehicle.html" title="CreateVehicle">createVehicle</a>. В синтаксисе этой функции указано только одно возвращаемое значение (что встречается наиболее часто) - элемент типа vehicle, представляющий только что созданное ТС. Также мы видим, что часть аргументов заключена в [ ], следовательно, они необязательны.
+</p><p>Внутри нашей функции у нас уже есть все аргументы, которые нужны функции <a href="../CreateVehicle.html" title="CreateVehicle">createVehicle</a>: Только что вычисленная позиция в переменных <i>x,y,z</i> и id модели, который мы получили через команду ("createvehicle 468"), он доступен внутри функции в качестве переменной <i>vehicleModel</i>.
+</p>
+<pre class="prettyprint lang-lua">
+function createVehicleForPlayer(thePlayer, command, vehicleModel)
+	local x,y,z = getElementPosition(thePlayer) -- получаем позицию игрока
+	x = x + 5 -- прибавляем число 5 к позиции по оси x
+	-- создаем ТС и сохраняем возвращенный элемент типа vehicle в переменной ''createdVehicle''
+	local createdVehicle = createVehicle(tonumber(vehicleModel),x,y,z)
+end
+</pre>
+<p>Этот код, конечно же, можно усовершенствовать различными путями, но как минимум мы добавим проверку на то, было ли ТС успешно создано. Как можно прочитать на странице <a href="../CreateVehicle.html" title="CreateVehicle">createVehicle</a> под <b>Returns</b>, функция возвращает <i>false</i>, если ТС создать не получилось. Стало быть, мы проверяем значение переменной <i>createVehicle</i>.
+</p><p>Теперь у нас есть готовый скрипт:
+</p>
+<pre class="prettyprint lang-lua">
+function createVehicleForPlayer(thePlayer, command, vehicleModel)
+	local x,y,z = getElementPosition(thePlayer) -- получаем позицию игрока
+	x = x + 5 -- прибавляем число 5 к позиции по оси x
+	local createdVehicle = createVehicle(tonumber(vehicleModel),x,y,z)
+	-- проверяем, является ли возвращаемое значение ''false''
+	if (createdVehicle == false) then
+		-- если да, то выводим сообщение в чат, но только для игрока, который спавнил ТС.
+		outputChatBox("Failed to create vehicle.",thePlayer)
+	end
+end
+addCommandHandler("createvehicle", createVehicleForPlayer)
+</pre>
+<p>Как вы уже, наверное, заметили, вашему взору предстала новая функция - <a href="../OutputChatBox.html" title="OutputChatBox">outputChatBox</a>. Теперь вы самостоятельно можете изучить содержимое ее страницы-документации. Чтобы узнать больше о продвинутом скриптинге, почитайте про <a href="Map_manager.html" title="RU/Map manager" class="mw-redirect">Map Manager</a>.
+</p>
+<h2><span class="mw-headline" id=".D0.A7.D1.82.D0.BE_.D0.B2.D0.B0.D0.BC_.D1.81.D0.BB.D0.B5.D0.B4.D1.83.D0.B5.D1.82_.D0.B7.D0.BD.D0.B0.D1.82.D1.8C">Что вам следует знать</span></h2>
+<p>Вы уже кое-что прочитали о ресурсах, обработчиках команд и поиске функций в документации в первом разделе, но многое еще предстоит узнать. Этот раздел проведет довольно краткий обзор о некоторых из этих вещей, по возможности ссылаясь на соответствующие страницы.
+</p>
+<h3><span class="mw-headline" id=".D0.9A.D0.BB.D0.B8.D0.B5.D0.BD.D1.82.D1.81.D0.BA.D0.B8.D0.B5_.D0.B8_.D1.81.D0.B5.D1.80.D0.B2.D0.B5.D1.80.D0.BD.D1.8B.D0.B5_.D1.81.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D1.8B">Клиентские и серверные скрипты</span></h3>
+<p>Может быть, вы уже заметили эти или схожие термины (сервер/клиент) где-либо на данной вики, наиболее вероятно, вкупе с функциями. MTA не только поддерживает работающие на сервере скрипты, предоставляет команды (типа как мы писали выше) и другие возможности, но также и скрипты, выполняющиеся на клиенте MTA, который игроки используют для подключения к серверу. Причиной этому служит то, что некоторые предоставляемые MTA функции не могут быть серверными (например, GUI - Graphical User Interface, т.е. графический интерфейс пользователя), другие там просто работают лучше, но другим все же лучше быть серверными или попросту не работать на клиентской стороне.
+</p><p>Большинство сделанных вами скриптов (модов, карт), вероятно, будут серверными, как и та, которую мы написали в первом разделе. Если вы столкнетесь с чем-то, что не может быть реализовано на серверной стороне, возможно, вы сможете реализовать это на клиентской. Для написания клиентского скрипта, создайте обычный файл-скрипт (например, названный <i>client.lua</i>) и укажите его в meta.xml так:
+</p>
+<pre class="prettyprint lang-xml">
+&lt;script src="client.lua" type="client" /&gt;
+</pre>
+<p>Атрибут <i>type</i> по умолчанию установлен на 'server', так что надобность указывать его существует только для клиентских скриптов. После этого, клиентский скрипт будет загружаться на компьютеры игроков при заходе. Подробнее о <a href="Client_side_scripts.html" title="RU/Client side scripts">клиентских скриптах</a>.
+</p>
+<h3><span class="mw-headline" id=".D0.91.D0.BE.D0.BB.D0.B5.D0.B5_.D1.81.D0.BB.D0.BE.D0.B6.D0.BD.D1.8B.D0.B5_.D1.80.D0.B5.D1.81.D1.83.D1.80.D1.81.D1.8B">Более сложные ресурсы</span></h3>
+<p>Предыдущий раздел вкратце изложил, как добавлять в ресурс клиентские скрипты, но возможностей на самом деле намного больше. Как написано в самом начале статьи, ресурсы могут быть чем угодно. Их назначение определяется тем, что они делают. Давайте теоретически вообразим некоторые ресурсы, глядя на их файлы-содержимое, <i>meta.xml</i> и подумаем, что они могут делать:
+</p>
+<h4><span class="mw-headline" id=".D0.9F.D0.B5.D1.80.D0.B2.D1.8B.D0.B9_.D0.BF.D1.80.D0.B8.D0.BC.D0.B5.D1.80_-_.D0.92.D1.81.D0.BF.D0.BE.D0.BC.D0.BE.D0.B3.D0.B0.D1.82.D0.B5.D0.BB.D1.8C.D0.BD.D1.8B.D0.B9_.D1.81.D0.BA.D1.80.D0.B8.D0.BF.D1.82">Первый пример - Вспомогательный скрипт</span></h4>
+<pre class="prettyprint lang-xml">
+/admin_commands
+	/meta.xml
+	/commands.lua
+	/client.lua
+</pre>
+<pre class="prettyprint lang-xml">
+&lt;meta&gt;
+	&lt;info author="Someguy" description="admin commands" /&gt;
+	&lt;script src="commands.lua" /&gt;
+	&lt;script src="client.lua" type="client" /&gt;
+&lt;/meta&gt;
+</pre>
+<ul><li> <i>commands.lua</i> предоставляет некоторые администраторские команды, такие как бан и заглушение игроков или еще что-нибудь, что может быть доступно для администраторов сервера</li>
+<li> <i>client.lua</i> предоставляет GUI, чтобы возможно было с легкостью выполнять вышеуказанные действия</li></ul>
+<p>Этот пример может выполняться все время (даже автозапускаться со стартом сервера), так как является полезным на протяжении всего игрового процесса и не конфликтует с ним, если администратор, конечно, сам этого не захочет.
+</p>
+<h4><span class="mw-headline" id=".D0.92.D1.82.D0.BE.D1.80.D0.BE.D0.B9_.D0.BF.D1.80.D0.B8.D0.BC.D0.B5.D1.80_-_.D0.9C.D0.BE.D0.B4">Второй пример - Мод</span></h4>
+<pre class="prettyprint lang-xml">
+/counterstrike
+	/meta.xml
+	/counterstrike.lua
+	/buymenu.lua
+</pre>
+<pre class="prettyprint lang-xml">
+&lt;meta&gt;
+	&lt;info author="Someguy" description="Counterstrike remake" type="gamemode" /&gt;
+	&lt;script src="counterstrike.lua" /&gt;
+	&lt;script src="buymenu.lua" type="client" /&gt;
+&lt;/meta&gt;
+</pre>
+<ul><li> <i>counterstrike.lua</i> содержит схожие с нижеперечисленными функции:
+<ul><li> Позволить игрокам выбирать свою команду и спавниться</li>
+<li> Обеспечить их оружием, целями и инструкциями (возможно, взятыми из игровой карты, см. ниже)</li>
+<li> Определить правила игры, напр., когда кончается раунд, что происходит при смерти игрока</li>
+<li> .. и, может быть, что-то еще</li></ul></li>
+<li> <i>buymenu.lua</i> - клиентский скрипт, создающий меню для покупки оружия</li></ul>
+<p>Этот образец может быть назван модом, так как не только влияет на игровой процесс, но, по сути, и задает его рамки. Атрибут <i>type</i> говорит о том, что этот пример работает с <a href="Map_manager.html" title="RU/Map manager" class="mw-redirect">Map Manager</a>, уже другим ресурсом, написанным QA Team для управлениями модами и подгрузки карт. Очень рекомендуется основывать свои моды на предоставляемом им функционале.
+</p><p>Это также означает, что мод, возможно, не запустится без карты. Моды всегда должны пользоваться общим функционалом настолько широко, насколько это возможно. Образец карты - в следующем примере.
+</p>
+<h4><span class="mw-headline" id=".D0.A2.D1.80.D0.B5.D1.82.D0.B8.D0.B9_.D0.BF.D1.80.D0.B8.D0.BC.D0.B5.D1.80_-_.D0.9A.D0.B0.D1.80.D1.82.D0.B0">Третий пример - Карта</span></h4>
+<pre class="prettyprint lang-xml">
+/cs-airport
+	/meta.xml
+	/airport.map
+	/airport.lua
+</pre>
+<pre class="prettyprint lang-xml">
+&lt;meta&gt;
+	&lt;info author="Someguy" description="Counterstrike airport map" type="map" gamemodes="counterstrike" /&gt;
+	&lt;map src="airport.map" /&gt;
+	&lt;script src="airport.lua" /&gt;
+&lt;/meta&gt;
+</pre>
+<ul><li> <i>airport.map</i> - XML-файл, предоставляющий моду информацию о карте, что включает в себя:
+<ul><li> Где игроки должны спавниться, с каким оружием, какие имеются команды</li>
+<li> Какие имеются цели</li>
+<li> Погода, время, ограничение по времени</li>
+<li> Предоставляемый транспорт</li></ul></li>
+<li> <i>airport.lua</i> может содержать присущий данной карте функционал, что включает в себя:
+<ul><li> Открытие каких-либо дверей, подрыв чего-нибудь при определенных условиях</li>
+<li> Создание или передвижение определенных игровых объектов, или управление теми, что были созданы через .map-файл</li>
+<li> .. все что еще угодно, связанное с картами</li></ul></li></ul>
+<p>Как вы уже заметили, атрибут <i>type</i> поменялся на 'map', сообщая <a href="Map_manager.html" title="RU/Map manager" class="mw-redirect">Map Manager</a>, что этот ресурс - карта, в то время как атрибут <i>gamemodes</i> говорит, с какими модами эта карта совместима, в данном случае - это мод из примера выше.
+Сюрпризом может показаться то, что в ресурс-карту также входит и скрипт. Конечно, это совсем не обязательно для карты, но открывает широкий спектр возможностей для их создателей, позволяя создавать собственный мир с правилами мода, на котором он основывается.
+</p><p>Файл <i>airport.map</i> может выглядеть примерно так:
+</p>
+<pre class="prettyprint lang-xml">
+&lt;map mode="deathmatch" version="1.0"&gt;
+	&lt;terrorists&gt;
+		&lt;spawnpoint posX="2332.23" posY="-12232.33" posZ="4.42223" skins="23-40" /&gt;
+	&lt;/terrorists&gt;
+	&lt;counterterrorists&gt;
+		&lt;spawnpoint posX="2334.23443" posY="-12300.233" posZ="10.2344" skins="40-50" /&gt;
+	&lt;/counterterrorists&gt;
+
+	&lt;bomb posX="23342.23" posY="" posZ="" /&gt;
+	
+	&lt;vehicle posX="" posY="" posZ="" model="602" /&gt;	
+	&lt;vehicle posX="" posY="" posZ="" model="603" /&gt;	
+&lt;/map&gt;
+</pre>
+<p>Когда мод запускается с картой, ресурс-карта автоматически запускается mapmanager'ом, и информация, которую он содержит, может быть прочитана ресурсом-модом. При смене карты, текущий ресурс-карта останавливается, а следующий - запускается. Для более детального разъяснения и образцов того, как ресурсы-карты используются основным скриптом, посетите страницу <a href="Writing_Gamemodes.html" title="RU/Writing Gamemodes">RU/Writing Gamemodes</a>.
+</p>
+<h3><span class="mw-headline" id=".D0.A1.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F">События</span></h3>
+<p>События - способ MTA сообщать скриптам о происходящем. Например, при смерти игрока, срабатывает событие <a href="../OnPlayerWasted.html" title="OnPlayerWasted">onPlayerWasted</a>. Чтобы при смерти игрока что-то происходило, вам придется проделать действия, схожие с добавлением обработчика команд, как об этом рассказано в <a href="#.D0.A1.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D0.B5_.D0.BF.D1.80.D0.BE.D1.81.D1.82.D0.BE.D0.B3.D0.BE_.D1.81.D0.BA.D1.80.D0.B8.D0.BF.D1.82.D0.B0">первом разделе</a>.
+</p><p>Этот пример будет выводить сообщение с именем игрока, который умер:
+</p>
+<pre class="prettyprint lang-lua">
+function playerDied(totalAmmo, killer, killerWeapon, bodypart)
+	outputChatBox(getPlayerName(source).." умер!")
+end
+addEventHandler("onPlayerWasted",getRootElement(),playerDied)
+</pre>
+<p>Вместо того, чтобы сначала вывести список требуемых аргументов, страница документации для событий отображает, какие параметры передаются функции-обработчику, так же, как делает <a href="#.D0.9F.D1.80.D0.BE_.D0.BE.D0.B1.D1.80.D0.B0.D0.B1.D0.BE.D1.82.D1.87.D0.B8.D0.BA.D0.B8_.D0.BA.D0.BE.D0.BC.D0.B0.D0.BD.D0.B4">обработчик команд</a>, просто это разнится от события к событию. Другим важным моментом является существующая в функциях-обработчиках переменная <i>source</i>. Ее необязательно добавлять в список параметров функции, но она, тем не менее, существует. Ее значение меняется от события к событию, для событий, связанных с игроком (как в образце выше), это - элемент типа player. В качестве другого образца служит базовый скрипт для респавна игрока в первом разделе, на его примере можно понять, как используется <i>source</i>.
+</p>
+<h2><span class="mw-headline" id=".D0.A7.D1.82.D0.BE_.D0.B4.D0.B5.D0.BB.D0.B0.D1.82.D1.8C_.D1.82.D0.B5.D0.BF.D0.B5.D1.80.D1.8C">Что делать теперь</span></h2>
+<p>Теперь вы знакомы с наиболее базовыми аспектами скриптинга в MTA, а также чуть-чуть с документацией. <a href="../%d0%93%d0%bb%d0%b0%d0%b2%d0%bd%d0%b0%d1%8f_%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b8%d1%86%d0%b0.html" title="Главная страница">Главная страница</a> обеспечит вас ссылками на множество различной информации, руководства и указания, которые позволят глубже взглянуть на интересующие вас темы.
+</p>
+<table cellspacing="0" style="padding: 5px; width: 80%; margin: 2px auto 2px auto; border: 1px solid #BFBFFF; background: #E0E0FF; border-left: 10px solid #BFBFFF;">
+<tr>
+<td style="width: 32px; vertical-align:top; display: none;" rowspan="2"> [[{{{image}}}|link=]]
+</td>
+<td style=""> <b>Note:</b> Теперь мы рекомендуем вам прочитать руководство по <a href="Debugging.html" title="RU/Debugging">отладке</a>. Умение хорошо отлаживать - абсолютная необходимость при написании скриптов. Мы также рекомендуем вам пользоваться <a href="Predefined_variables_list.html" title="RU/Predefined variables list">списком предписанных переменных</a>, который поможет вам в выполнении определенных задач, а писать скрипты станет намного легче и быстрее.
+</td></tr>
+<tr>
+<td rowspan="1" style="padding-left: 10px;">
+</td></tr></table>
+<p><b>Также смотрите:</b>
+</p>
+<ul><li> <a href="../Advanced_Topics.html" title="Advanced Topics">Продвинутый функционал</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625165300
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.015 seconds
+Real time usage: 0.016 seconds
+Preprocessor visited node count: 327/1000000
+Preprocessor generated node count: 801/1000000
+Post‐expand include size: 4823/2097152 bytes
+Template argument size: 3478/2097152 bytes
+Highest expansion depth: 5/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    5.172      1 - -total
+ 48.72%    2.520      2 - Template:MessageBox
+ 42.34%    2.190      1 - Template:Tip
+ 31.56%    1.632      1 - Template:Note
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:3535-0!*!0!!en!*!* and timestamp 20190625165300 and revision id 62695
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=%d0%92%d0%b2%d0%b5%d0%b4%d0%b5%d0%bd%d0%b8%d0%b5_%d0%b2_%d1%81%d0%ba%d1%80%d0%b8%d0%bf%d1%82%d0%b8%d0%bd%d0%b3&amp;oldid=62695">https://wiki.multitheftauto.com/index.php?title=Введение_в_скриптинг&amp;oldid=62695</a>"</div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="../%d0%92%d0%b2%d0%b5%d0%b4%d0%b5%d0%bd%d0%b8%d0%b5_%d0%b2_%d1%81%d0%ba%d1%80%d0%b8%d0%bf%d1%82%d0%b8%d0%bd%d0%b3.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2_%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%B8%D0%BD%D0%B3&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2_%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%B8%D0%BD%D0%B3&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2_%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%B8%D0%BD%D0%B3&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5+%D0%B2+%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%B8%D0%BD%D0%B3" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5+%D0%B2+%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%B8%D0%BD%D0%B3" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/%d0%92%d0%b2%d0%b5%d0%b4%d0%b5%d0%bd%d0%b8%d0%b5_%d0%b2_%d1%81%d0%ba%d1%80%d0%b8%d0%bf%d1%82%d0%b8%d0%bd%d0%b3.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/%d0%92%d0%b2%d0%b5%d0%b4%d0%b5%d0%bd%d0%b8%d0%b5_%d0%b2_%d1%81%d0%ba%d1%80%d0%b8%d0%bf%d1%82%d0%b8%d0%bd%d0%b3.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2_%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%B8%D0%BD%D0%B3&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2_%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%B8%D0%BD%D0%B3&amp;oldid=62695" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2_%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%B8%D0%BD%D0%B3&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=Scripting_Introduction" title="Scripting Introduction – English" lang="en" hreflang="en">English</a></li>
+													<li class="interlanguage-link interwiki-es"><a href="http://wiki.multitheftauto.com/index.php?title=ES/Introducci%C3%B3n_a_la_Programaci%C3%B3n" title="Introducción a la Programación – español" lang="es" hreflang="es">Español</a></li>
+													<li class="interlanguage-link interwiki-it"><a href="http://wiki.multitheftauto.com/index.php?title=IT/Introduzione_allo_scripting" title="Introduzione allo scripting – italiano" lang="it" hreflang="it">Italiano</a></li>
+													<li class="interlanguage-link interwiki-pt-br"><a href="http://wiki.multitheftauto.com/index.php?title=PT-BR/Introdu%C3%A7%C3%A3o_ao_Scripting" title="Introdução ao Scripting – português do Brasil" lang="pt-BR" hreflang="pt-BR">Português do Brasil</a></li>
+													<li class="interlanguage-link interwiki-nl"><a href="http://wiki.multitheftauto.com/index.php?title=NL/Scripting_introductie" title="Scripting introductie – Nederlands" lang="nl" hreflang="nl">Nederlands</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 19 May 2019, at 17:12.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":33});});</script></body></html>

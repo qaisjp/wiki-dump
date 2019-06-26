@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>EngineResetSurfaceProperties - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"EngineResetSurfaceProperties","wgTitle":"EngineResetSurfaceProperties","wgCurRevisionId":62220,"wgRevisionId":62220,"wgArticleId":11224,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Client functions","Changes in 1.5.6","Needs Example"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"EngineResetSurfaceProperties","wgRelevantArticleId":11224,"wgRequestId":"19b59eb2862f068fadaa5788","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta name='headingclass' content='' data-class='client' data-subcaption='Client-only function'>
+<meta name='lowercasetitle' content=''>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-EngineResetSurfaceProperties rootpage-EngineResetSurfaceProperties skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">EngineResetSurfaceProperties</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
+<!--LC-->
+</p>
+<div style="font-weight: bold;background:black;color:white;padding:2px; padding-left:8px;">FROM VERSION 1.5.6 <a rel="nofollow" class="external text" href="https://buildinfo.mtasa.com/?Author=&amp;Branch=&amp;Revision=16365"><span style="color: #FFFFFF;">r16365</span></a> ONWARDS</div><div style="border: 2px solid black;padding: 3px;">This function resets a surface property to its default value. If no ID is provided, it will reset all surfaces' properties to their original values. </div>
+<h2><span class="mw-headline" id="Syntax">Syntax</span></h2>
+<pre class="prettyprint lang-lua">
+mixed engineResetSurfaceProperties ( [ int surfaceID ] )
+</pre> 
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>surfaceID:</b> <a href="Material_IDs.html" title="Material IDs">Material ID</a> from 0 to 178</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>Returns <i>true</i> if the function executed succesfully, <i>false</i> otherwise.
+</p>
+<h2><span class="mw-headline" id="Properties">Properties</span></h2>
+<h3><span class="mw-headline" id="Materials.2C_surfaces_properties">Materials, surfaces properties</span></h3>
+<table class="wikitable sortable">
+
+<tr>
+<th> Property </th>
+<th> Accepted values </th>
+<th> Effect </th>
+<th class="unsortable"> Picture
+</th></tr>
+<tr>
+<td> glass </td>
+<td> true, false </td>
+<td> Unknown </td>
+<td align="center"> -
+</td></tr>
+<tr>
+<td> stairs </td>
+<td> true, false </td>
+<td> Unknown </td>
+<td align="center"> -
+</td></tr>
+<tr>
+<td> stepwatersplash </td>
+<td> true, false </td>
+<td> Water effect on step </td>
+<td align="center"> -
+</td></tr>
+<tr>
+<td> softlanding </td>
+<td> true, false </td>
+<td> Probably makes landing cause less damage </td>
+<td align="center"> -
+</td></tr>
+<tr>
+<td> steepslope </td>
+<td> true, false </td>
+<td> Makes climbing up impossible </td>
+<td align="center"> -
+</td></tr>
+<tr>
+<td> footeffect </td>
+<td> true, false </td>
+<td> Create footprints on the surface </td>
+<td align="center"> -
+</td></tr>
+<tr>
+<td> seethrough </td>
+<td> true, false </td>
+<td> Connected with <a href="ProcessLineOfSight.html" title="ProcessLineOfSight">processLineOfSight</a> function </td>
+<td align="center"> -
+</td></tr>
+<tr>
+<td> shootthrough </td>
+<td> true, false </td>
+<td> Same as <i>seethrough</i>, but toggles ability to shoot through surfaces, objects.<br />Some fences have this ability. </td>
+<td align="center"> -
+</td></tr>
+<tr>
+<td> audio </td>
+<td> "concrete", "grass", "sand", "gravel", "wood",<br />"water", "metal" </td>
+<td> Noise when walking </td>
+<td align="center"> -
+</td></tr>
+<tr>
+<td> bulleteffect </td>
+<td> "metal", "concrete", "sand", "wood", "disabled" </td>
+<td> Effect when hit by a bullet </td>
+<td align="center"> -
+</td></tr>
+<tr>
+<td> tyregrip </td>
+<td> 0–255 </td>
+<td> Change tyre grip </td>
+<td align="center"> -
+</td></tr>
+<tr>
+<td> wetgrip </td>
+<td> 0–255 </td>
+<td> Change tyre grip when raining </td>
+<td align="center"> -
+</td></tr>
+<tr>
+<td> canclimb </td>
+<td> true, false </td>
+<td> Whether can be grabbed/climbed over </td>
+<td align="center"> -
+</td></tr>
+<tr>
+<td> adhesiongroup </td>
+<td> "rubber", "hard", "road", "loose", "sand", "wet" </td>
+<td> Change tyre grip between various surfaces.<br />If both surfaces (vehicle tyre and ground) are set to <i>rubber</i>,<br />makes vehicle rarely create skid marks and vehicle won't slip. </td>
+<td align="center"> -
+</td></tr>
+<tr>
+<td> roughness </td>
+<td> 0–3 </td>
+<td> Unknown </td>
+<td align="center"> -
+</td></tr>
+<tr>
+<td> fractioneffect </td>
+<td> 0–7 </td>
+<td> Unknown, probably makes wheels vibrate on rail track </td>
+<td align="center"> -
+</td></tr>
+<tr>
+<td> wheeleffect </td>
+<td> "grass", "gravel", "mud", "sand", "dust",<br />"disabled" </td>
+<td> Particle effect while driving </td>
+<td align="center"> -
+</td></tr>
+<tr>
+<td> skidmarktype </td>
+<td> "asphalt", "dirt", "dust", "disabled" </td>
+<td> Skid mark type </td>
+<td align="center"> -
+</td></tr></table>
+<h2><span class="mw-headline" id="Example">Example</span></h2>
+<table cellspacing="0" style="padding: 5px; width: 80%; margin: 2px auto 2px auto; border: 1px dotted #000000; background: #EFEFEF; border-left: 10px solid #000000;">
+<tr>
+<td style="width: 32px; vertical-align:top;" rowspan="2"> <img alt="Accessories-text-editor.png" src="http://wiki.localhost/images/0/06/Accessories-text-editor.png" width="32" height="32" />
+</td>
+<td style="padding-left: 10px;"><b>Script Example Missing</b> Function EngineResetSurfaceProperties  needs a script example, help out by writing one.
+</td></tr>
+<tr>
+<td rowspan="1" style="padding-left: 10px;"><hr style="background: #000000;" /><span style="font-size: 85%;"><i>Before submitting check out <a href="Help_Editing_Guidelines.html#Script_Examples" title="Help:Editing Guidelines">Editing Guidelines Script Examples</a>.</i></span>
+</td></tr></table>
+<pre class="prettyprint lang-lua">
+-- TODO
+</pre>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<ul><li> <a href="EngineApplyShaderToWorldTexture.html" title="EngineApplyShaderToWorldTexture">engineApplyShaderToWorldTexture</a></li>
+<li> <a href="EngineGetModelIDFromName.html" title="EngineGetModelIDFromName">engineGetModelIDFromName</a></li>
+<li> <a href="EngineGetModelLODDistance.html" title="EngineGetModelLODDistance">engineGetModelLODDistance</a></li>
+<li> <a href="EngineGetModelNameFromID.html" title="EngineGetModelNameFromID">engineGetModelNameFromID</a></li>
+<li> <a href="EngineGetModelTextureNames.html" title="EngineGetModelTextureNames">engineGetModelTextureNames</a></li>
+<li> <a href="EngineGetVisibleTextureNames.html" title="EngineGetVisibleTextureNames">engineGetVisibleTextureNames</a></li>
+<li> <a href="EngineImportTXD.html" title="EngineImportTXD">engineImportTXD</a></li>
+<li> <a href="EngineLoadCOL.html" title="EngineLoadCOL">engineLoadCOL</a></li>
+<li> <a href="EngineLoadDFF.html" title="EngineLoadDFF">engineLoadDFF</a></li></ul>
+<ul><li> <a href="EngineLoadIFP.html" title="EngineLoadIFP">engineLoadIFP</a></li>
+<li> <a href="EngineLoadTXD.html" title="EngineLoadTXD">engineLoadTXD</a></li>
+<li> <a href="EngineRemoveShaderFromWorldTexture.html" title="EngineRemoveShaderFromWorldTexture">engineRemoveShaderFromWorldTexture</a></li></ul>
+<ul><li> <a href="EngineReplaceAnimation.html" title="EngineReplaceAnimation">engineReplaceAnimation</a></li>
+<li> <a href="EngineReplaceCOL.html" title="EngineReplaceCOL">engineReplaceCOL</a></li>
+<li> <a href="EngineReplaceModel.html" title="EngineReplaceModel">engineReplaceModel</a></li></ul>
+<ul><li> <a href="EngineRestoreAnimation.html" title="EngineRestoreAnimation">engineRestoreAnimation</a></li>
+<li> <a href="EngineRestoreCOL.html" title="EngineRestoreCOL">engineRestoreCOL</a></li>
+<li> <a href="EngineRestoreModel.html" title="EngineRestoreModel">engineRestoreModel</a></li>
+<li> <a href="EngineSetAsynchronousLoading.html" title="EngineSetAsynchronousLoading">engineSetAsynchronousLoading</a></li>
+<li> <a href="EngineSetModelLODDistance.html" title="EngineSetModelLODDistance">engineSetModelLODDistance</a></li></ul>
+<div style="font-weight: bold;background:black;color:white;padding:2px; padding-left:8px;">FROM VERSION 1.5.6 <a rel="nofollow" class="external text" href="https://buildinfo.mtasa.com/?Author=&amp;Branch=&amp;Revision=16365"><span style="color: #FFFFFF;">r16365</span></a> ONWARDS</div><div style="border: 2px solid black;padding: 3px;">
+<ul><li> <a href="EngineSetSurfaceProperties.html" title="EngineSetSurfaceProperties">engineSetSurfaceProperties</a></li>
+<li> <a href="EngineGetSurfaceProperties.html" title="EngineGetSurfaceProperties">engineGetSurfaceProperties</a></li>
+<li> <strong class="selflink">engineResetSurfaceProperties</strong></li></ul>
+ </div>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625164303
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.030 seconds
+Real time usage: 0.032 seconds
+Preprocessor visited node count: 293/1000000
+Preprocessor generated node count: 989/1000000
+Post‐expand include size: 8196/2097152 bytes
+Template argument size: 1090/2097152 bytes
+Highest expansion depth: 9/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   19.412      1 - -total
+ 42.23%    8.197      1 - Template:Engine_functions
+ 31.84%    6.181      4 - Template:New_items
+ 26.34%    5.113      1 - Template:Example
+ 21.66%    4.205      1 - Template:Needs_Example
+ 19.14%    3.716      1 - Template:New_feature/item
+ 18.96%    3.680      5 - Template:Current_Version
+ 16.60%    3.222      1 - Template:MessageBox
+  8.75%    1.699      2 - Template:R
+  4.27%    0.828      1 - Template:Material_Properties
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:11224-0!*!0!!*!5!* and timestamp 20190625164303 and revision id 62220
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=EngineResetSurfaceProperties&amp;oldid=62220">https://wiki.multitheftauto.com/index.php?title=EngineResetSurfaceProperties&amp;oldid=62220</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Categories</a>: <ul><li><a href="Category_Client_functions.html" title="Category:Client functions">Client functions</a></li><li><a href="Category_Changes_in_1.5-2.html" title="Category:Changes in 1.5.6">Changes in 1.5.6</a></li><li><a href="Category_Needs_Example.html" title="Category:Needs Example">Needs Example</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="EngineResetSurfaceProperties.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:EngineResetSurfaceProperties&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=EngineResetSurfaceProperties&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=EngineResetSurfaceProperties&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=EngineResetSurfaceProperties" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=EngineResetSurfaceProperties" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/EngineResetSurfaceProperties.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/EngineResetSurfaceProperties.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=EngineResetSurfaceProperties&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=EngineResetSurfaceProperties&amp;oldid=62220" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=EngineResetSurfaceProperties&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+			</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 16 February 2019, at 12:25.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":64});});</script></body></html>

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>CustomLoading:getProgress - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"CustomLoading:getProgress","wgTitle":"CustomLoading:getProgress","wgCurRevisionId":57006,"wgRevisionId":57006,"wgArticleId":10467,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Client functions"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"CustomLoading:getProgress","wgRelevantArticleId":10467,"wgRequestId":"a88360d54d56db151171658d","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta name='headingclass' content='' data-class='client' data-subcaption='Client-only function'>
+<meta name='lowercasetitle' content=''>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-CustomLoading_getProgress rootpage-CustomLoading_getProgress skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">CustomLoading:getProgress</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
+<!--LC-->
+This function gets Custom Loading Widget progress level (in percents).
+</p>
+<h2><span class="mw-headline" id="Syntax">Syntax</span></h2>
+<pre class="prettyprint lang-lua">
+float CustomLoading:getProgress()
+</pre>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>Returns progress Level of Loading Widget in percents
+</p>
+<h2><span class="mw-headline" id="Example">Example</span></h2>
+<p>This example creates window with Loading Widget, what changing by NumberScroller, and prints it's progress:
+</p>
+<pre class="prettyprint lang-lua">
+local Window = CustomWindow.create(50, 50, 130, 60, "Example")
+
+local Scroller = CustomNumberScroller.create(5, 25, 85, 30, false, Window)
+local Loading = CustomLoading.create(95, 25, false, Window)
+
+Scroller:setMinimal(0)
+Scroller:setMaximal(50)
+Scroller:setStepSize(2)
+
+Scroller:addEvent("onClientGUIChanged", function()
+	Loading:setProgress( tonumber( Scroller:getText() )*2 )
+	outputChatBox(Loading:getProgress())
+end)
+
+Window:setColorScheme(Themes.Dark.Red)
+</pre>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<p>Resource Wiki with <i>content</i> located here: <a href="Resource_CustomWidgets.html" title="Resource:CustomWidgets">Resource:CustomWidgets</a>
+</p>
+<h3><span class="mw-headline" id="Custom_Widgets"><b>Custom Widgets</b></span></h3>
+<p>This methods working for all elements except <i>CustomDialogs</i> and <i>CustomTooltips</i>
+</p>
+<h4><span class="mw-headline" id="Set_Functions">Set Functions</span></h4>
+<ul><li><a href="CustomWidget_setPosition.html" title="CustomWidget:setPosition">CustomWidget:setPosition</a></li>
+<li><a href="CustomWidget_setSize.html" title="CustomWidget:setSize">CustomWidget:setSize</a></li>
+<li><a href="CustomWidget_setVisible.html" title="CustomWidget:setVisible">CustomWidget:setVisible</a></li>
+<li><a href="CustomWidget_setEnabled.html" title="CustomWidget:setEnabled">CustomWidget:setEnabled</a></li>
+<li><a href="CustomWidget_setColorScheme.html" title="CustomWidget:setColorScheme">CustomWidget:setColorScheme</a></li>
+<li><a href="CustomWidget_setFont.html" title="CustomWidget:setFont">CustomWidget:setFont</a></li>
+<li><a href="CustomWidget_setFontSize.html" title="CustomWidget:setFontSize">CustomWidget:setFontSize</a></li>
+<li><a href="CustomWidget_setSystemFont.html" title="CustomWidget:setSystemFont">CustomWidget:setSystemFont</a></li></ul>
+<h4><span class="mw-headline" id="Get_Functions">Get Functions</span></h4>
+<ul><li><a href="CustomWidget_getPosition.html" title="CustomWidget:getPosition">CustomWidget:getPosition</a></li>
+<li><a href="CustomWidget_getSize.html" title="CustomWidget:getSize">CustomWidget:getSize</a></li>
+<li><a href="CustomWidget_getRealSize.html" title="CustomWidget:getRealSize">CustomWidget:getRealSize</a></li>
+<li><a href="CustomWidget_getVisible.html" title="CustomWidget:getVisible">CustomWidget:getVisible</a></li>
+<li><a href="CustomWidget_getEnabled.html" title="CustomWidget:getEnabled">CustomWidget:getEnabled</a></li>
+<li><a href="CustomWidget_getColorScheme.html" title="CustomWidget:getColorScheme">CustomWidget:getColorScheme</a></li>
+<li><a href="CustomWidget_getFont.html" title="CustomWidget:getFont">CustomWidget:getFont</a></li>
+<li><a href="CustomWidget_getFontSize.html" title="CustomWidget:getFontSize">CustomWidget:getFontSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=GetCWType&amp;action=edit&amp;redlink=1" class="new" title="GetCWType (page does not exist)">getCWType</a></li></ul>
+<h4><span class="mw-headline" id="Event_Functions">Event Functions</span></h4>
+<ul><li><a href="CustomWidget_bringToFront.html" title="CustomWidget:bringToFront">CustomWidget:bringToFront</a></li>
+<li><a href="CustomWidget_moveToBack.html" title="CustomWidget:moveToBack">CustomWidget:moveToBack</a></li>
+<li><a href="CustomWidget_addEvent.html" title="CustomWidget:addEvent">CustomWidget:addEvent</a></li>
+<li><a href="CustomWidget_removeEvent.html" title="CustomWidget:removeEvent">CustomWidget:removeEvent</a></li>
+<li><a href="CustomWidget_destroy.html" title="CustomWidget:destroy">CustomWidget:destroy</a></li>
+<li><a href="ProceedColor.html" title="ProceedColor">proceedColor</a></li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Custom_Windows"><b>Custom Windows</b></span></h3>
+<h4><span class="mw-headline" id="Create_Function">Create Function</span></h4>
+<ul><li><a href="CustomWindow.html" title="CustomWindow.create">CustomWindow.create</a></li></ul>
+<h4><span class="mw-headline" id="Set_Functions_2">Set Functions</span></h4>
+<ul><li><a href="CustomWindow_setTitle.html" title="CustomWindow:setTitle">CustomWindow:setTitle</a></li>
+<li><a href="CustomWindow_setText.html" title="CustomWindow:setText">CustomWindow:setText</a></li>
+<li><a href="CustomWindow_setMovable.html" title="CustomWindow:setMovable">CustomWindow:setMovable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomWindow:setSizable&amp;action=edit&amp;redlink=1" class="new" title="CustomWindow:setSizable (page does not exist)">CustomWindow:setSizable</a></li>
+<li><a href="CustomWindow_setCloseEnabled.html" title="CustomWindow:setCloseEnabled">CustomWindow:setCloseEnabled</a></li>
+<li><a href="CustomWindow_setSideBarLength.html" title="CustomWindow:setSideBarLength">CustomWindow:setSideBarLength</a></li>
+<li><a href="CustomWindow_setSideBarPosition.html" title="CustomWindow:setSideBarPosition">CustomWindow:setSideBarPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomWindow:setMinimalWidth&amp;action=edit&amp;redlink=1" class="new" title="CustomWindow:setMinimalWidth (page does not exist)">CustomWindow:setMinimalWidth</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomWindow:setMinimalHeight&amp;action=edit&amp;redlink=1" class="new" title="CustomWindow:setMinimalHeight (page does not exist)">CustomWindow:setMinimalHeight</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomWindow:setMinimalSize&amp;action=edit&amp;redlink=1" class="new" title="CustomWindow:setMinimalSize (page does not exist)">CustomWindow:setMinimalSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomWindow:setMaximalWidth&amp;action=edit&amp;redlink=1" class="new" title="CustomWindow:setMaximalWidth (page does not exist)">CustomWindow:setMaximalWidth</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomWindow:setMaximalHeight&amp;action=edit&amp;redlink=1" class="new" title="CustomWindow:setMaximalHeight (page does not exist)">CustomWindow:setMaximalHeight</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomWindow:setMaximalSize&amp;action=edit&amp;redlink=1" class="new" title="CustomWindow:setMaximalSize (page does not exist)">CustomWindow:setMaximalSize</a></li></ul>
+<h4><span class="mw-headline" id="Get_Functions_2">Get Functions</span></h4>
+<ul><li><a href="CustomWindow_getTitle.html" title="CustomWindow:getTitle">CustomWindow:getTitle</a></li>
+<li><a href="CustomWindow_getText.html" title="CustomWindow:getText">CustomWindow:getText</a></li>
+<li><a href="CustomWindow_getMovable.html" title="CustomWindow:getMovable">CustomWindow:getMovable</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomWindow:getSizable&amp;action=edit&amp;redlink=1" class="new" title="CustomWindow:getSizable (page does not exist)">CustomWindow:getSizable</a></li>
+<li><a href="CustomWindow_getCloseEnabled.html" title="CustomWindow:getCloseEnabled">CustomWindow:getCloseEnabled</a></li>
+<li><a href="CustomWindow_getSideBarLength.html" title="CustomWindow:getSideBarLength">CustomWindow:getSideBarLength</a></li>
+<li><a href="CustomWindow_getSideBarPosition.html" title="CustomWindow:getSideBarPosition">CustomWindow:getSideBarPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomWindow:getMinimalWidth&amp;action=edit&amp;redlink=1" class="new" title="CustomWindow:getMinimalWidth (page does not exist)">CustomWindow:getMinimalWidth</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomWindow:getMinimalHeight&amp;action=edit&amp;redlink=1" class="new" title="CustomWindow:getMinimalHeight (page does not exist)">CustomWindow:getMinimalHeight</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomWindow:getMinimalSize&amp;action=edit&amp;redlink=1" class="new" title="CustomWindow:getMinimalSize (page does not exist)">CustomWindow:getMinimalSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomWindow:getMaximalWidth&amp;action=edit&amp;redlink=1" class="new" title="CustomWindow:getMaximalWidth (page does not exist)">CustomWindow:getMaximalWidth</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomWindow:getMaximalHeight&amp;action=edit&amp;redlink=1" class="new" title="CustomWindow:getMaximalHeight (page does not exist)">CustomWindow:getMaximalHeight</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomWindow:getMaximalSize&amp;action=edit&amp;redlink=1" class="new" title="CustomWindow:getMaximalSize (page does not exist)">CustomWindow:getMaximalSize</a></li></ul>
+<h4><span class="mw-headline" id="Event_Functions_2">Event Functions</span></h4>
+<ul><li><a href="CustomWindow_open.html" title="CustomWindow:open">CustomWindow:open</a></li>
+<li><a href="CustomWindow_close.html" title="CustomWindow:close">CustomWindow:close</a></li>
+<li><a href="CustomWindow_addElement.html" title="CustomWindow:addElement">CustomWindow:addElement</a></li>
+<li><a href="CustomWindow_addElements.html" title="CustomWindow:addElements">CustomWindow:addElements</a></li>
+<li><a href="CustomWindow_showDialog.html" title="CustomWindow:showDialog">CustomWindow:showDialog</a></li>
+<li><a href="CustomWindow_showBar.html" title="CustomWindow:showBar">CustomWindow:showBar</a></li>
+<li><a href="CustomWindow_getMainElement.html" title="CustomWindow:getMainElement">CustomWindow:getMainElement</a></li>
+<li><a href="CustomWindow_getHeader.html" title="CustomWindow:getHeader">CustomWindow:getHeader</a></li>
+<li><a href="CustomWindow_getDialog.html" title="CustomWindow:getDialog">CustomWindow:getDialog</a></li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Custom_Buttons"><b>Custom Buttons</b></span></h3>
+<h4><span class="mw-headline" id="Create_Function_2">Create Function</span></h4>
+<ul><li><a href="CustomButton.html" title="CustomButton.create">CustomButton.create</a></li></ul>
+<h4><span class="mw-headline" id="Set_Functions_3">Set Functions</span></h4>
+<ul><li><a href="CustomButton_setText.html" title="CustomButton:setText">CustomButton:setText</a></li>
+<li><a href="CustomButton_setImage.html" title="CustomButton:setImage">CustomButton:setImage</a></li></ul>
+<h4><span class="mw-headline" id="Get_Functions_3">Get Functions</span></h4>
+<ul><li><a href="CustomButton_getText.html" title="CustomButton:getText">CustomButton:getText</a></li>
+<li><a href="CustomButton_getImage.html" title="CustomButton:getImage">CustomButton:getImage</a></li></ul>
+<h4><span class="mw-headline" id="Event_Functions_3">Event Functions</span></h4>
+<ul><li><a href="CustomButton_getMainElement.html" title="CustomButton:getMainElement">CustomButton:getMainElement</a></li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Custom_Progress_Bars"><b>Custom Progress Bars</b></span></h3>
+<h4><span class="mw-headline" id="Create_Function_3">Create Function</span></h4>
+<ul><li><a href="CustomProgressBar.html" title="CustomProgressBar.create">CustomProgressBar.create</a></li></ul>
+<h4><span class="mw-headline" id="Set_Functions_4">Set Functions</span></h4>
+<ul><li><a href="CustomProgressBar_setProgress.html" title="CustomProgressBar:setProgress">CustomProgressBar:setProgress</a></li></ul>
+<h4><span class="mw-headline" id="Get_Functions_4">Get Functions</span></h4>
+<ul><li><a href="CustomProgressBar_getProgress.html" title="CustomProgressBar:getProgress">CustomProgressBar:getProgress</a></li></ul>
+<h4><span class="mw-headline" id="Event_Functions_4">Event Functions</span></h4>
+<ul><li><a href="CustomProgressBar_getMainElement.html" title="CustomProgressBar:getMainElement">CustomProgressBar:getMainElement</a></li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Custom_Scroll_Bars"><b>Custom Scroll Bars</b></span></h3>
+<h4><span class="mw-headline" id="Create_Function_4">Create Function</span></h4>
+<ul><li><a href="CustomScrollBar.html" title="CustomScrollBar.create">CustomScrollBar.create</a></li></ul>
+<h4><span class="mw-headline" id="Set_Functions_5">Set Functions</span></h4>
+<ul><li><a href="CustomScrollBar_setScrollPosition.html" title="CustomScrollBar:setScrollPosition">CustomScrollBar:setScrollPosition</a></li>
+<li><a href="CustomScrollBar_setScrollLength.html" title="CustomScrollBar:setScrollLength">CustomScrollBar:setScrollLength</a></li>
+<li><a href="CustomScrollBar_setScrollSpeed.html" title="CustomScrollBar:setScrollSpeed">CustomScrollBar:setScrollSpeed</a></li></ul>
+<h4><span class="mw-headline" id="Get_Functions_5">Get Functions</span></h4>
+<ul><li><a href="CustomScrollBar_getScrollPosition.html" title="CustomScrollBar:getScrollPosition">CustomScrollBar:getScrollPosition</a></li>
+<li><a href="CustomScrollBar_getScrollLength.html" title="CustomScrollBar:getScrollLength">CustomScrollBar:getScrollLength</a></li>
+<li><a href="CustomScrollBar_getScrollSpeed.html" title="CustomScrollBar:getScrollSpeed">CustomScrollBar:getScrollSpeed</a></li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Custom_Edit_Boxes"><b>Custom Edit Boxes</b></span></h3>
+<p>All functions, what has mark <i>CustomEditBox</i> available for <i>CustomEdit</i>, <i>CustomMemo</i> and <i>CustomSpinner</i>.
+</p>
+<h4><span class="mw-headline" id="Create_Functions">Create Functions</span></h4>
+<ul><li><a href="CustomEdit.html" title="CustomEdit.create">CustomEdit.create</a></li>
+<li><a href="CustomMemo.html" title="CustomMemo.create">CustomMemo.create</a></li>
+<li><a href="CustomSpinner.html" title="CustomSpinner.create">CustomSpinner.create</a></li></ul>
+<h4><span class="mw-headline" id="Set_Functions_6">Set Functions</span></h4>
+<ul><li><a href="CustomEditBox_setReadOnly.html" title="CustomEditBox:setReadOnly">CustomEditBox:setReadOnly</a></li>
+<li><a href="CustomEditBox_setText.html" title="CustomEditBox:setText">CustomEditBox:setText</a></li>
+<li><a href="CustomEditBox_setCaretIndex.html" title="CustomEditBox:setCaretIndex">CustomEditBox:setCaretIndex</a></li>
+<li><a href="CustomEditBox_setSidesColor.html" title="CustomEditBox:setSidesColor">CustomEditBox:setSidesColor</a></li></ul>
+<ul><li><a href="CustomEdit_setMasked.html" title="CustomEdit:setMasked">CustomEdit:setMasked</a></li>
+<li><a href="CustomEdit_setMaxLength.html" title="CustomEdit:setMaxLength">CustomEdit:setMaxLength</a></li></ul>
+<ul><li><a href="CustomSpinner_setMinimal.html" title="CustomSpinner:setMinimal">CustomSpinner:setMinimal</a></li>
+<li><a href="CustomSpinner_setMaximal.html" title="CustomSpinner:setMaximal">CustomSpinner:setMaximal</a></li>
+<li><a href="CustomSpinner_setStepSize.html" title="CustomSpinner:setStepSize">CustomSpinner:setStepSize</a></li></ul>
+<h4><span class="mw-headline" id="Get_Functions_6">Get Functions</span></h4>
+<ul><li><a href="CustomEditBox_getReadOnly.html" title="CustomEditBox:getReadOnly">CustomEditBox:getReadOnly</a></li>
+<li><a href="CustomEditBox_getText.html" title="CustomEditBox:getText">CustomEditBox:getText</a></li>
+<li><a href="CustomEditBox_getCaretIndex.html" title="CustomEditBox:getCaretIndex">CustomEditBox:getCaretIndex</a></li>
+<li><a href="CustomEditBox_isOnSide.html" title="CustomEditBox:isOnSide">CustomEditBox:isOnSide</a></li>
+<li><a href="CustomEditBox_getSidesColor.html" title="CustomEditBox:getSidesColor">CustomEditBox:getSidesColor</a></li></ul>
+<ul><li><a href="CustomEdit_getMasked.html" title="CustomEdit:getMasked">CustomEdit:getMasked</a></li>
+<li><a href="CustomEdit_getMaxLength.html" title="CustomEdit:getMaxLength">CustomEdit:getMaxLength</a></li></ul>
+<ul><li><a href="CustomSpinner_getMinimal.html" title="CustomSpinner:getMinimal">CustomSpinner:getMinimal</a></li>
+<li><a href="CustomSpinner_getMaximal.html" title="CustomSpinner:getMaximal">CustomSpinner:getMaximal</a></li>
+<li><a href="CustomSpinner_getStepSize.html" title="CustomSpinner:getStepSize">CustomSpinner:getStepSize</a></li></ul>
+<h4><span class="mw-headline" id="Event_Functions_5">Event Functions</span></h4>
+<ul><li><a href="CustomEditBox_putOnSide.html" title="CustomEditBox:putOnSide">CustomEditBox:putOnSide</a></li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Custom_Check_Boxes"><b>Custom Check Boxes</b></span></h3>
+<h4><span class="mw-headline" id="Create_Function_5">Create Function</span></h4>
+<ul><li><a href="CustomCheckBox.html" title="CustomCheckBox.create">CustomCheckBox.create</a></li></ul>
+<h4><span class="mw-headline" id="Set_Functions_7">Set Functions</span></h4>
+<ul><li><a href="CustomCheckBox_setText.html" title="CustomCheckBox:setText">CustomCheckBox:setText</a></li>
+<li><a href="CustomCheckBox_setChecked.html" title="CustomCheckBox:setChecked">CustomCheckBox:setChecked</a></li></ul>
+<h4><span class="mw-headline" id="Get_Functions_7">Get Functions</span></h4>
+<ul><li><a href="CustomCheckBox_getText.html" title="CustomCheckBox:getText">CustomCheckBox:getText</a></li>
+<li><a href="CustomCheckBox_getChecked.html" title="CustomCheckBox:getChecked">CustomCheckBox:getChecked</a></li></ul>
+<h4><span class="mw-headline" id="Event_Functions_6">Event Functions</span></h4>
+<ul><li><a href="CustomCheckBox_getMainElement.html" title="CustomCheckBox:getMainElement">CustomCheckBox:getMainElement</a></li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Custom_Combo_Boxes"><b>Custom Combo Boxes</b></span></h3>
+<h4><span class="mw-headline" id="Create_Function_6">Create Function</span></h4>
+<ul><li><a href="CustomComboBox.html" title="CustomComboBox.create">CustomComboBox.create</a></li></ul>
+<h4><span class="mw-headline" id="Set_Functions_8">Set Functions</span></h4>
+<ul><li><a href="CustomComboBox_setSelectedItem.html" title="CustomComboBox:setSelectedItem">CustomComboBox:setSelectedItem</a></li>
+<li><a href="CustomComboBox_setItemText.html" title="CustomComboBox:setItemText">CustomComboBox:setItemText</a></li>
+<li><a href="CustomComboBox_setMaxHeight.html" title="CustomComboBox:setMaxHeight">CustomComboBox:setMaxHeight</a></li></ul>
+<h4><span class="mw-headline" id="Get_Functions_8">Get Functions</span></h4>
+<ul><li><a href="CustomComboBox_getSelectedItem.html" title="CustomComboBox:getSelectedItem">CustomComboBox:getSelectedItem</a></li>
+<li><a href="CustomComboBox_getItemText.html" title="CustomComboBox:getItemText">CustomComboBox:getItemText</a></li>
+<li><a href="CustomComboBox_getMaxHeight.html" title="CustomComboBox:getMaxHeight">CustomComboBox:getMaxHeight</a></li>
+<li><a href="CustomComboBox_getItemsCount.html" title="CustomComboBox:getItemsCount">CustomComboBox:getItemsCount</a></li>
+<li><a href="CustomComboBox_getItems.html" title="CustomComboBox:getItems">CustomComboBox:getItems</a></li></ul>
+<h4><span class="mw-headline" id="Event_Functions_7">Event Functions</span></h4>
+<ul><li><a href="CustomComboBox_addItem.html" title="CustomComboBox:addItem">CustomComboBox:addItem</a></li>
+<li><a href="CustomComboBox_removeItem.html" title="CustomComboBox:removeItem">CustomComboBox:removeItem</a></li>
+<li><a href="CustomComboBox_clear.html" title="CustomComboBox:clear">CustomComboBox:clear</a></li>
+<li><a href="CustomComboBox_getMainElement.html" title="CustomComboBox:getMainElement">CustomComboBox:getMainElement</a></li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Custom_Tabbed_Panels"><b>Custom Tabbed Panels</b></span></h3>
+<h4><span class="mw-headline" id="Create_Function_7">Create Function</span></h4>
+<ul><li><a href="CustomTabPanel.html" title="CustomTabPanel.create">CustomTabPanel.create</a></li></ul>
+<h4><span class="mw-headline" id="Set_Functions_9">Set Functions</span></h4>
+<ul><li><a href="CustomTabPanel_setTabVisible.html" title="CustomTabPanel:setTabVisible">CustomTabPanel:setTabVisible</a></li>
+<li><a href="CustomTabPanel_setTabEnabled.html" title="CustomTabPanel:setTabEnabled">CustomTabPanel:setTabEnabled</a></li>
+<li><a href="CustomTabPanel_setTabText.html" title="CustomTabPanel:setTabText">CustomTabPanel:setTabText</a></li>
+<li><a href="CustomTabPanel_setSelectedTab.html" title="CustomTabPanel:setSelectedTab">CustomTabPanel:setSelectedTab</a></li>
+<li><a href="CustomTabPanel_setTabsMinLength.html" title="CustomTabPanel:setTabsMinLength">CustomTabPanel:setTabsMinLength</a></li></ul>
+<h4><span class="mw-headline" id="Get_Functions_9">Get Functions</span></h4>
+<ul><li><a href="CustomTabPanel_getTabVisible.html" title="CustomTabPanel:getTabVisible">CustomTabPanel:getTabVisible</a></li>
+<li><a href="CustomTabPanel_getTabEnabled.html" title="CustomTabPanel:getTabEnabled">CustomTabPanel:getTabEnabled</a></li>
+<li><a href="CustomTabPanel_getTabText.html" title="CustomTabPanel:getTabText">CustomTabPanel:getTabText</a></li>
+<li><a href="CustomTabPanel_getTabFromText.html" title="CustomTabPanel:getTabFromText">CustomTabPanel:getTabFromText</a></li>
+<li><a href="CustomTabPanel_getSelectedTab.html" title="CustomTabPanel:getSelectedTab">CustomTabPanel:getSelectedTab</a></li>
+<li><a href="CustomTabPanel_getTabsMinLength.html" title="CustomTabPanel:getTabsMinLength">CustomTabPanel:getTabsMinLength</a></li>
+<li><a href="CustomTabPanel_getTabHeader.html" title="CustomTabPanel:getTabHeader">CustomTabPanel:getTabHeader</a></li></ul>
+<h4><span class="mw-headline" id="Event_Functions_8">Event Functions</span></h4>
+<ul><li><a href="CustomTabPanel_addTab.html" title="CustomTabPanel:addTab">CustomTabPanel:addTab</a></li>
+<li><a href="CustomTabPanel_removeTab.html" title="CustomTabPanel:removeTab">CustomTabPanel:removeTab</a></li>
+<li><a href="CustomTabPanel_clearTabs.html" title="CustomTabPanel:clearTabs">CustomTabPanel:clearTabs</a></li>
+<li><a href="CustomTabPanel_getMainElement.html" title="CustomTabPanel:getMainElement">CustomTabPanel:getMainElement</a></li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Custom_Labels"><b>Custom Labels</b></span></h3>
+<h4><span class="mw-headline" id="Create_Function_8">Create Function</span></h4>
+<ul><li><a href="CustomLabel.html" title="CustomLabel.create">CustomLabel.create</a></li></ul>
+<h4><span class="mw-headline" id="Set_Functions_10">Set Functions</span></h4>
+<ul><li><a href="CustomLabel_setText.html" title="CustomLabel:setText">CustomLabel:setText</a></li>
+<li><a href="CustomLabel_setColor.html" title="CustomLabel:setColor">CustomLabel:setColor</a></li>
+<li><a href="CustomLabel_setSchematicalColor.html" title="CustomLabel:setSchematicalColor">CustomLabel:setSchematicalColor</a></li>
+<li><a href="CustomLabel_setHoverable.html" title="CustomLabel:setHoverable">CustomLabel:setHoverable</a></li>
+<li><a href="CustomLabel_setVerticalAlign.html" title="CustomLabel:setVerticalAlign">CustomLabel:setVerticalAlign</a></li>
+<li><a href="CustomLabel_setHorizontalAlign.html" title="CustomLabel:setHorizontalAlign">CustomLabel:setHorizontalAlign</a></li>
+<li><a href="CustomLabel_setAlign.html" title="CustomLabel:setAlign">CustomLabel:setAlign</a></li></ul>
+<h4><span class="mw-headline" id="Get_Functions_10">Get Functions</span></h4>
+<ul><li><a href="CustomLabel_getText.html" title="CustomLabel:getText">CustomLabel:getText</a></li>
+<li><a href="CustomLabel_getColor.html" title="CustomLabel:getColor">CustomLabel:getColor</a></li>
+<li><a href="CustomLabel_getVerticalAlign.html" title="CustomLabel:getVerticalAlign">CustomLabel:getVerticalAlign</a></li>
+<li><a href="CustomLabel_getHorizontalAlign.html" title="CustomLabel:getHorizontalAlign">CustomLabel:getHorizontalAlign</a></li>
+<li><a href="CustomLabel_isSchematicalColor.html" title="CustomLabel:isSchematicalColor">CustomLabel:isSchematicalColor</a></li>
+<li><a href="CustomLabel_isHoverable.html" title="CustomLabel:isHoverable">CustomLabel:isHoverable</a></li></ul>
+<h4><span class="mw-headline" id="Event_Functions_9">Event Functions</span></h4>
+<ul><li><a href="CustomLabel_getMainElement.html" title="CustomLabel:getMainElement">CustomLabel:getMainElement</a></li>
+<li><a href="CustomLabel_addElement.html" title="CustomLabel:addElement">CustomLabel:addElement</a></li>
+<li><a href="CustomLabel_removeElement.html" title="CustomLabel:removeElement">CustomLabel:removeElement</a></li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Custom_Dialogs"><b>Custom Dialogs</b></span></h3>
+<h4><span class="mw-headline" id="Create_Function_9">Create Function</span></h4>
+<ul><li><a href="CustomDialog.html" title="CustomDialog.create">CustomDialog.create</a></li></ul>
+<h4><span class="mw-headline" id="Event_Functions_10">Event Functions</span></h4>
+<ul><li><a href="CustomDialog_open.html" title="CustomDialog:open">CustomDialog:open</a></li>
+<li><a href="CustomDialog_close.html" title="CustomDialog:close">CustomDialog:close</a></li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Custom_Tool_Tips"><b>Custom Tool Tips</b></span></h3>
+<h4><span class="mw-headline" id="Create_Function_10">Create Function</span></h4>
+<ul><li><a href="CustomTooltip.html" title="CustomTooltip.create">CustomTooltip.create</a></li></ul>
+<h4><span class="mw-headline" id="Set_Function">Set Function</span></h4>
+<ul><li><a href="http://wiki.localhost/index.php?title=CustomTooltip:setShowTime&amp;action=edit&amp;redlink=1" class="new" title="CustomTooltip:setShowTime (page does not exist)">CustomTooltip:setShowTime</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomTooltip:setText&amp;action=edit&amp;redlink=1" class="new" title="CustomTooltip:setText (page does not exist)">CustomTooltip:setText</a></li></ul>
+<h4><span class="mw-headline" id="Get_Function">Get Function</span></h4>
+<ul><li><a href="http://wiki.localhost/index.php?title=CustomTooltip:getShowTime&amp;action=edit&amp;redlink=1" class="new" title="CustomTooltip:getShowTime (page does not exist)">CustomTooltip:getShowTime</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomTooltip:getText&amp;action=edit&amp;redlink=1" class="new" title="CustomTooltip:getText (page does not exist)">CustomTooltip:getText</a></li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Custom_Loadings"><b>Custom Loadings</b></span></h3>
+<h4><span class="mw-headline" id="Create_Function_11">Create Function</span></h4>
+<ul><li><a href="CustomLoading.html" title="CustomLoading.create">CustomLoading.create</a></li></ul>
+<h4><span class="mw-headline" id="Set_Functions_11">Set Functions</span></h4>
+<ul><li><a href="CustomLoading_setProgress.html" title="CustomLoading:setProgress">CustomLoading:setProgress</a></li>
+<li><a href="CustomLoading_setAnimated.html" title="CustomLoading:setAnimated">CustomLoading:setAnimated</a></li></ul>
+<h4><span class="mw-headline" id="Get_Functions_11">Get Functions</span></h4>
+<ul><li><strong class="selflink">CustomLoading:getProgress</strong></li>
+<li><a href="CustomLoading_getAnimated.html" title="CustomLoading:getAnimated">CustomLoading:getAnimated</a></li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Custom_Scroll_Panes"><b>Custom Scroll Panes</b></span></h3>
+<h4><span class="mw-headline" id="Create_Function_12">Create Function</span></h4>
+<ul><li><a href="CustomScrollPane.html" title="CustomScrollPane.create">CustomScrollPane.create</a></li></ul>
+<h4><span class="mw-headline" id="Set_Functions_12">Set Functions</span></h4>
+<ul><li><a href="CustomScrollPane_setScrollSpeed.html" title="CustomScrollPane:setScrollSpeed">CustomScrollPane:setScrollSpeed</a></li>
+<li><a href="CustomScrollPane_setVerticalScrollPosition.html" title="CustomScrollPane:setVerticalScrollPosition">CustomScrollPane:setVerticalScrollPosition</a></li>
+<li><a href="CustomScrollPane_setHorizontalScrollPosition.html" title="CustomScrollPane:setHorizontalScrollPosition">CustomScrollPane:setHorizontalScrollPosition</a></li>
+<li><a href="CustomScrollPane_setVerticalScrollInversed.html" title="CustomScrollPane:setVerticalScrollInversed">CustomScrollPane:setVerticalScrollInversed</a></li>
+<li><a href="CustomScrollPane_setHorizontalScrollInversed.html" title="CustomScrollPane:setHorizontalScrollInversed">CustomScrollPane:setHorizontalScrollInversed</a></li>
+<li><a href="CustomScrollPane_setHorizontalScrolling.html" title="CustomScrollPane:setHorizontalScrolling">CustomScrollPane:setHorizontalScrolling</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomScrollPane:setScrollingWithCursor&amp;action=edit&amp;redlink=1" class="new" title="CustomScrollPane:setScrollingWithCursor (page does not exist)">CustomScrollPane:setScrollingWithCursor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomScrollPane:setScrollingWithWheel&amp;action=edit&amp;redlink=1" class="new" title="CustomScrollPane:setScrollingWithWheel (page does not exist)">CustomScrollPane:setScrollingWithWheel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomScrollPane:addVerticalPixelScrollPosition&amp;action=edit&amp;redlink=1" class="new" title="CustomScrollPane:addVerticalPixelScrollPosition (page does not exist)">CustomScrollPane:addVerticalPixelScrollPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomScrollPane:addHorizontalPixelScrollPosition&amp;action=edit&amp;redlink=1" class="new" title="CustomScrollPane:addHorizontalPixelScrollPosition (page does not exist)">CustomScrollPane:addHorizontalPixelScrollPosition</a></li></ul>
+<h4><span class="mw-headline" id="Get_Functions_12">Get Functions</span></h4>
+<ul><li><a href="CustomScrollPane_getScrollSpeed.html" title="CustomScrollPane:getScrollSpeed">CustomScrollPane:getScrollSpeed</a></li>
+<li><a href="CustomScrollPane_getVerticalScrollPosition.html" title="CustomScrollPane:getVerticalScrollPosition">CustomScrollPane:getVerticalScrollPosition</a></li>
+<li><a href="CustomScrollPane_getHorizontalScrollPosition.html" title="CustomScrollPane:getHorizontalScrollPosition">CustomScrollPane:getHorizontalScrollPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomScrollPane:isVerticalScrollInversed&amp;action=edit&amp;redlink=1" class="new" title="CustomScrollPane:isVerticalScrollInversed (page does not exist)">CustomScrollPane:isVerticalScrollInversed</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomScrollPane:isHorizontalScrollInversed&amp;action=edit&amp;redlink=1" class="new" title="CustomScrollPane:isHorizontalScrollInversed (page does not exist)">CustomScrollPane:isHorizontalScrollInversed</a></li>
+<li><a href="CustomScrollPane_isHorizontalScrolling.html" title="CustomScrollPane:isHorizontalScrolling">CustomScrollPane:isHorizontalScrolling</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomScrollPane:getScrollingWithCursor&amp;action=edit&amp;redlink=1" class="new" title="CustomScrollPane:getScrollingWithCursor (page does not exist)">CustomScrollPane:getScrollingWithCursor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomScrollPane:getScrollingWithWheel&amp;action=edit&amp;redlink=1" class="new" title="CustomScrollPane:getScrollingWithWheel (page does not exist)">CustomScrollPane:getScrollingWithWheel</a></li></ul>
+<h4><span class="mw-headline" id="Event_Functions_11">Event Functions</span></h4>
+<ul><li><a href="CustomScrollPane_getMainElement.html" title="CustomScrollPane:getMainElement">CustomScrollPane:getMainElement</a></li>
+<li><a href="CustomScrollPane_addElement.html" title="CustomScrollPane:addElement">CustomScrollPane:addElement</a></li>
+<li><a href="CustomScrollPane_removeElement.html" title="CustomScrollPane:removeElement">CustomScrollPane:removeElement</a></li>
+<li><a href="CustomScrollPane_update.html" title="CustomScrollPane:update">CustomScrollPane:update</a></li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Custom_Table_Views"><b>Custom Table Views</b></span></h3>
+<h4><span class="mw-headline" id="Create_Function_13">Create Function</span></h4>
+<ul><li><a href="CustomTableView.html" title="CustomTableView.create">CustomTableView.create</a></li></ul>
+<h4><span class="mw-headline" id="Set_Functions_13">Set Functions</span></h4>
+<ul><li><a href="CustomTableView_setSelectedLine.html" title="CustomTableView:setSelectedLine">CustomTableView:setSelectedLine</a></li>
+<li><a href="CustomTableView_setIndentation.html" title="CustomTableView:setIndentation">CustomTableView:setIndentation</a></li>
+<li><a href="CustomTableView_setTitleBarVisible.html" title="CustomTableView:setTitleBarVisible">CustomTableView:setTitleBarVisible</a></li>
+<li><a href="CustomTableView_setLineHeight.html" title="CustomTableView:setLineHeight">CustomTableView:setLineHeight</a></li>
+<li><a href="CustomTableView_setColumnWidth.html" title="CustomTableView:setColumnWidth">CustomTableView:setColumnWidth</a></li>
+<li><a href="CustomTableView_setColumnTitle.html" title="CustomTableView:setColumnTitle">CustomTableView:setColumnTitle</a></li>
+<li><a href="CustomTableView_setCellText.html" title="CustomTableView:setCellText">CustomTableView:setCellText</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomTableView:setShadowsEnabled&amp;action=edit&amp;redlink=1" class="new" title="CustomTableView:setShadowsEnabled (page does not exist)">CustomTableView:setShadowsEnabled</a></li></ul>
+<h4><span class="mw-headline" id="Get_Functions_13">Get Functions</span></h4>
+<ul><li><a href="CustomTableView_getSelectedLine.html" title="CustomTableView:getSelectedLine">CustomTableView:getSelectedLine</a></li>
+<li><a href="CustomTableView_getIndentation.html" title="CustomTableView:getIndentation">CustomTableView:getIndentation</a></li>
+<li><a href="CustomTableView_getTitleBarVisible.html" title="CustomTableView:getTitleBarVisible">CustomTableView:getTitleBarVisible</a></li>
+<li><a href="CustomTableView_getLineHeight.html" title="CustomTableView:getLineHeight">CustomTableView:getLineHeight</a></li>
+<li><a href="CustomTableView_getColumnWidth.html" title="CustomTableView:getColumnWidth">CustomTableView:getColumnWidth</a></li>
+<li><a href="CustomTableView_getColumnTitle.html" title="CustomTableView:getColumnTitle">CustomTableView:getColumnTitle</a></li>
+<li><a href="CustomTableView_getCellText.html" title="CustomTableView:getCellText">CustomTableView:getCellText</a></li>
+<li><a href="CustomTableView_getCell.html" title="CustomTableView:getCell">CustomTableView:getCell</a></li>
+<li><a href="CustomTableView_getLinesCount.html" title="CustomTableView:getLinesCount">CustomTableView:getLinesCount</a></li>
+<li><a href="CustomTableView_getColumnsCount.html" title="CustomTableView:getColumnsCount">CustomTableView:getColumnsCount</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomTableView:getShadowsEnabled&amp;action=edit&amp;redlink=1" class="new" title="CustomTableView:getShadowsEnabled (page does not exist)">CustomTableView:getShadowsEnabled</a></li></ul>
+<h4><span class="mw-headline" id="Event_Functions_12">Event Functions</span></h4>
+<ul><li><a href="CustomTableView_addLine.html" title="CustomTableView:addLine">CustomTableView:addLine</a></li>
+<li><a href="CustomTableView_removeLine.html" title="CustomTableView:removeLine">CustomTableView:removeLine</a></li>
+<li><a href="CustomTableView_clearLines.html" title="CustomTableView:clearLines">CustomTableView:clearLines</a></li>
+<li><a href="CustomTableView_addColumn.html" title="CustomTableView:addColumn">CustomTableView:addColumn</a></li>
+<li><a href="CustomTableView_removeColumn.html" title="CustomTableView:removeColumn">CustomTableView:removeColumn</a></li>
+<li><a href="CustomTableView_update.html" title="CustomTableView:update">CustomTableView:update</a></li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Custom_Static_Images"><b>Custom Static Images</b></span></h3>
+<h4><span class="mw-headline" id="Create_Function_14">Create Function</span></h4>
+<ul><li><a href="http://wiki.localhost/index.php?title=CustomStaticImage.create&amp;action=edit&amp;redlink=1" class="new" title="CustomStaticImage.create (page does not exist)">CustomStaticImage.create</a></li></ul>
+<h4><span class="mw-headline" id="Set_Function_2">Set Function</span></h4>
+<ul><li><a href="http://wiki.localhost/index.php?title=CustomStaticImage:setColor&amp;action=edit&amp;redlink=1" class="new" title="CustomStaticImage:setColor (page does not exist)">CustomStaticImage:setColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomStaticImage:setImage&amp;action=edit&amp;redlink=1" class="new" title="CustomStaticImage:setImage (page does not exist)">CustomStaticImage:setImage</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomStaticImage:setSchematicalColor&amp;action=edit&amp;redlink=1" class="new" title="CustomStaticImage:setSchematicalColor (page does not exist)">CustomStaticImage:setSchematicalColor</a></li></ul>
+<h4><span class="mw-headline" id="Get_Function_2">Get Function</span></h4>
+<ul><li><a href="http://wiki.localhost/index.php?title=CustomStaticImage:getColor&amp;action=edit&amp;redlink=1" class="new" title="CustomStaticImage:getColor (page does not exist)">CustomStaticImage:getColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomStaticImage:getImage&amp;action=edit&amp;redlink=1" class="new" title="CustomStaticImage:getImage (page does not exist)">CustomStaticImage:getImage</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomStaticImage:getNativeSize&amp;action=edit&amp;redlink=1" class="new" title="CustomStaticImage:getNativeSize (page does not exist)">CustomStaticImage:getNativeSize</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomStaticImage:isSchematicalColor&amp;action=edit&amp;redlink=1" class="new" title="CustomStaticImage:isSchematicalColor (page does not exist)">CustomStaticImage:isSchematicalColor</a></li></ul>
+<h4><span class="mw-headline" id="Event_Functions_13">Event Functions</span></h4>
+<ul><li><a href="CustomStaticImage_getMainElement.html" title="CustomStaticImage:getMainElement">CustomStaticImage:getMainElement</a></li>
+<li><a href="CustomStaticImage_addElement.html" title="CustomStaticImage:addElement">CustomStaticImage:addElement</a></li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Custom_Text_Boxes"><b>Custom Text Boxes</b></span></h3>
+<h4><span class="mw-headline" id="Create_Function_15">Create Function</span></h4>
+<ul><li><a href="http://wiki.localhost/index.php?title=CustomTextBox.create&amp;action=edit&amp;redlink=1" class="new" title="CustomTextBox.create (page does not exist)">CustomTextBox.create</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomMemoBox.create&amp;action=edit&amp;redlink=1" class="new" title="CustomMemoBox.create (page does not exist)">CustomMemoBox.create</a></li></ul>
+<h4><span class="mw-headline" id="Set_Function_3">Set Function</span></h4>
+<ul><li><a href="http://wiki.localhost/index.php?title=CustomTextBox:setText&amp;action=edit&amp;redlink=1" class="new" title="CustomTextBox:setText (page does not exist)">CustomTextBox:setText</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomTextBox:setColor&amp;action=edit&amp;redlink=1" class="new" title="CustomTextBox:setColor (page does not exist)">CustomTextBox:setColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomTextBox:setCaretIndex&amp;action=edit&amp;redlink=1" class="new" title="CustomTextBox:setCaretIndex (page does not exist)">CustomTextBox:setCaretIndex</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomTextBox:setReadOnly&amp;action=edit&amp;redlink=1" class="new" title="CustomTextBox:setReadOnly (page does not exist)">CustomTextBox:setReadOnly</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomTextBox:setMasked&amp;action=edit&amp;redlink=1" class="new" title="CustomTextBox:setMasked (page does not exist)">CustomTextBox:setMasked</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomTextBox:setBordersEnabled&amp;action=edit&amp;redlink=1" class="new" title="CustomTextBox:setBordersEnabled (page does not exist)">CustomTextBox:setBordersEnabled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomTextBox:setBackgroundEnabled&amp;action=edit&amp;redlink=1" class="new" title="CustomTextBox:setBackgroundEnabled (page does not exist)">CustomTextBox:setBackgroundEnabled</a></li></ul>
+<h4><span class="mw-headline" id="Get_Function_3">Get Function</span></h4>
+<ul><li><a href="http://wiki.localhost/index.php?title=CustomTextBox:getText&amp;action=edit&amp;redlink=1" class="new" title="CustomTextBox:getText (page does not exist)">CustomTextBox:getText</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomTextBox:getColor&amp;action=edit&amp;redlink=1" class="new" title="CustomTextBox:getColor (page does not exist)">CustomTextBox:getColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomTextBox:getCaretIndex&amp;action=edit&amp;redlink=1" class="new" title="CustomTextBox:getCaretIndex (page does not exist)">CustomTextBox:getCaretIndex</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomTextBox:getCaretSelectionStart&amp;action=edit&amp;redlink=1" class="new" title="CustomTextBox:getCaretSelectionStart (page does not exist)">CustomTextBox:getCaretSelectionStart</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomTextBox:getCaretSelectionEnd&amp;action=edit&amp;redlink=1" class="new" title="CustomTextBox:getCaretSelectionEnd (page does not exist)">CustomTextBox:getCaretSelectionEnd</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomTextBox:getCaretSelectionLength&amp;action=edit&amp;redlink=1" class="new" title="CustomTextBox:getCaretSelectionLength (page does not exist)">CustomTextBox:getCaretSelectionLength</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomTextBox:isReadOnly&amp;action=edit&amp;redlink=1" class="new" title="CustomTextBox:isReadOnly (page does not exist)">CustomTextBox:isReadOnly</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomTextBox:isMasked&amp;action=edit&amp;redlink=1" class="new" title="CustomTextBox:isMasked (page does not exist)">CustomTextBox:isMasked</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomTextBox:isBordersEnabled&amp;action=edit&amp;redlink=1" class="new" title="CustomTextBox:isBordersEnabled (page does not exist)">CustomTextBox:isBordersEnabled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomTextBox:isBackgroundEnabled&amp;action=edit&amp;redlink=1" class="new" title="CustomTextBox:isBackgroundEnabled (page does not exist)">CustomTextBox:isBackgroundEnabled</a></li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Custom_Events"><b>Custom Events</b></span></h3>
+<ul><li><a href="http://wiki.localhost/index.php?title=OnCustomScrollPaneScrolled&amp;action=edit&amp;redlink=1" class="new" title="OnCustomScrollPaneScrolled (page does not exist)">onCustomScrollPaneScrolled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=OnCustomScrollBarScrolled&amp;action=edit&amp;redlink=1" class="new" title="OnCustomScrollBarScrolled (page does not exist)">onCustomScrollBarScrolled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=OnCustomDialogClick&amp;action=edit&amp;redlink=1" class="new" title="OnCustomDialogClick (page does not exist)">onCustomDialogClick</a></li>
+<li><a href="http://wiki.localhost/index.php?title=OnCustomWindowClose&amp;action=edit&amp;redlink=1" class="new" title="OnCustomWindowClose (page does not exist)">onCustomWindowClose</a></li>
+<li><a href="http://wiki.localhost/index.php?title=OnCustomCheckBoxChecked&amp;action=edit&amp;redlink=1" class="new" title="OnCustomCheckBoxChecked (page does not exist)">onCustomCheckBoxChecked</a></li>
+<li><a href="http://wiki.localhost/index.php?title=OnCustomComboBoxSelectItem&amp;action=edit&amp;redlink=1" class="new" title="OnCustomComboBoxSelectItem (page does not exist)">onCustomComboBoxSelectItem</a></li>
+<li><a href="http://wiki.localhost/index.php?title=OnCustomTabPanelChangeTab&amp;action=edit&amp;redlink=1" class="new" title="OnCustomTabPanelChangeTab (page does not exist)">onCustomTabPanelChangeTab</a></li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Other_about_Custom_Widgets"><b>Other about Custom Widgets</b></span></h3>
+<ul><li><a href="CustomWidgets.html" title="CustomWidgets.Variables">CustomWidgets.Variables</a></li>
+<li><a href="CustomWidgets-2.html" title="CustomWidgets.Examples">CustomWidgets.Examples</a></li>
+<li><a href="http://wiki.localhost/index.php?title=CustomWidgets.DemoWidgets&amp;action=edit&amp;redlink=1" class="new" title="CustomWidgets.DemoWidgets (page does not exist)">CustomWidgets.DemoWidgets</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625164743
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.022 seconds
+Real time usage: 0.025 seconds
+Preprocessor visited node count: 125/1000000
+Preprocessor generated node count: 264/1000000
+Post‐expand include size: 12707/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    2.684      1 - -total
+ 63.68%    1.709      1 - Template:CWSFUNCS
+ 23.66%    0.635      1 - Template:Client_function
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:10467-0!*!0!!*!*!* and timestamp 20190625164743 and revision id 57006
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=CustomLoading:getProgress&amp;oldid=57006">https://wiki.multitheftauto.com/index.php?title=CustomLoading:getProgress&amp;oldid=57006</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_Client_functions.html" title="Category:Client functions">Client functions</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="CustomLoading_getProgress.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:CustomLoading:getProgress&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=CustomLoading:getProgress&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=CustomLoading:getProgress&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=CustomLoading%3AgetProgress" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=CustomLoading%3AgetProgress" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/CustomLoading_getProgress.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/CustomLoading_getProgress.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=CustomLoading:getProgress&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=CustomLoading:getProgress&amp;oldid=57006" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=CustomLoading:getProgress&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+			</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 25 July 2018, at 16:10.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":53});});</script></body></html>

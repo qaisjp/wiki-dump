@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>OnPlayerMarkerLeave - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"OnPlayerMarkerLeave","wgTitle":"OnPlayerMarkerLeave","wgCurRevisionId":59490,"wgRevisionId":59490,"wgArticleId":3309,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Server Events"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"OnPlayerMarkerLeave","wgRelevantArticleId":3309,"wgRequestId":"b86a3cd52e64c1ec669db4e4","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta name='headingclass' content='' data-class='server' data-subcaption='Serverside event'>
+<meta name='lowercasetitle' content=''>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-OnPlayerMarkerLeave rootpage-OnPlayerMarkerLeave skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">OnPlayerMarkerLeave</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
+<!--LC-->
+This event is triggered when a <a href="Player.html" title="Player" class="mw-redirect">player</a> leaves the area of a <a href="Marker.html" title="Marker" class="mw-redirect">marker</a>.
+</p>
+<h2><span class="mw-headline" id="Parameters">Parameters</span></h2>
+<pre class="prettyprint lang-lua">
+marker markerLeft, bool matchingDimension
+</pre> 
+<ul><li><b>markerLeft</b>: the <a href="Marker.html" title="Marker" class="mw-redirect">marker</a> the <a href="Player.html" title="Player" class="mw-redirect">player</a> left.</li>
+<li><b>matchingDimension</b>: a <a href="Boolean.html" title="Boolean">boolean</a> representing whether the <a href="Player.html" title="Player" class="mw-redirect">player</a> and the left <a href="Marker.html" title="Marker" class="mw-redirect">marker</a> are in the same <a href="Dimension.html" title="Dimension">dimension</a>.</li></ul>
+<h2><span class="mw-headline" id="Source">Source</span></h2>
+<p>The <a href="Event_system.html#Event_source" title="Event system">source</a> of this event is the <a href="Player.html" title="Player" class="mw-redirect">player</a> that left the marker.
+</p>
+<h2><span class="mw-headline" id="Example">Example</span></h2>
+<p>This example will output the name of the player that has left a specific marker to the chatbox.
+</p>
+<pre class="prettyprint lang-lua">
+-- Create our marker
+marker = createMarker(1248,2012,123,"corona",7,255,255,255,255)
+
+function someoneLeftMarker(markerLeft,matchingDimension)
+   -- Output our message
+   outputChatBox(getPlayerName(source).." has left the marker!",getRootElement(),255,0,0)
+end
+-- Add an event handler to trigger our function
+addEventHandler("onPlayerMarkerLeave",marker,someoneLeftMarker)
+</pre>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<h3><span class="mw-headline" id="Player_events">Player events</span></h3>
+<ul><li><a href="OnPlayerACInfo.html" title="OnPlayerACInfo">onPlayerACInfo</a></li>
+<li><a href="OnPlayerBan.html" title="OnPlayerBan">onPlayerBan</a></li>
+<li><a href="OnPlayerChangeNick.html" title="OnPlayerChangeNick">onPlayerChangeNick</a></li>
+<li><a href="OnPlayerChat.html" title="OnPlayerChat">onPlayerChat</a></li>
+<li><a href="OnPlayerClick.html" title="OnPlayerClick">onPlayerClick</a></li>
+<li><a href="OnPlayerCommand.html" title="OnPlayerCommand">onPlayerCommand</a></li>
+<li><a href="OnPlayerConnect.html" title="OnPlayerConnect">onPlayerConnect</a></li>
+<li><a href="OnPlayerContact.html" title="OnPlayerContact">onPlayerContact</a></li>
+<li><a href="OnPlayerDamage.html" title="OnPlayerDamage">onPlayerDamage</a></li>
+<li><a href="OnPlayerJoin.html" title="OnPlayerJoin">onPlayerJoin</a></li>
+<li><a href="OnPlayerLogin.html" title="OnPlayerLogin">onPlayerLogin</a></li>
+<li><a href="OnPlayerLogout.html" title="OnPlayerLogout">onPlayerLogout</a></li>
+<li><a href="OnPlayerMarkerHit.html" title="OnPlayerMarkerHit">onPlayerMarkerHit</a></li>
+<li><strong class="selflink">onPlayerMarkerLeave</strong></li>
+<li><a href="OnPlayerModInfo.html" title="OnPlayerModInfo">onPlayerModInfo</a></li>
+<li><a href="OnPlayerMute.html" title="OnPlayerMute">onPlayerMute</a></li>
+<li><a href="OnPlayerNetworkStatus.html" title="OnPlayerNetworkStatus">onPlayerNetworkStatus</a></li>
+<li><a href="OnPlayerPickupHit.html" title="OnPlayerPickupHit">onPlayerPickupHit</a></li></ul>
+<ul><li><a href="OnPlayerPickupLeave.html" title="OnPlayerPickupLeave">onPlayerPickupLeave</a></li>
+<li><a href="OnPlayerPickupUse.html" title="OnPlayerPickupUse">onPlayerPickupUse</a></li>
+<li><a href="OnPlayerPrivateMessage.html" title="OnPlayerPrivateMessage">onPlayerPrivateMessage</a></li>
+<li><a href="OnPlayerQuit.html" title="OnPlayerQuit">onPlayerQuit</a></li>
+<li><a href="OnPlayerScreenShot.html" title="OnPlayerScreenShot">onPlayerScreenShot</a></li>
+<li><a href="OnPlayerSpawn.html" title="OnPlayerSpawn">onPlayerSpawn</a></li>
+<li><a href="OnPlayerStealthKill.html" title="OnPlayerStealthKill">onPlayerStealthKill</a></li>
+<li><a href="OnPlayerTarget.html" title="OnPlayerTarget">onPlayerTarget</a></li>
+<li><a href="OnPlayerUnmute.html" title="OnPlayerUnmute">onPlayerUnmute</a></li>
+<li><a href="OnPlayerVehicleEnter.html" title="OnPlayerVehicleEnter">onPlayerVehicleEnter</a></li>
+<li><a href="OnPlayerVehicleExit.html" title="OnPlayerVehicleExit">onPlayerVehicleExit</a></li>
+<li><a href="OnPlayerVoiceStart.html" title="OnPlayerVoiceStart">onPlayerVoiceStart</a></li>
+<li><a href="OnPlayerVoiceStop.html" title="OnPlayerVoiceStop">onPlayerVoiceStop</a></li>
+<li><a href="OnPlayerWasted.html" title="OnPlayerWasted">onPlayerWasted</a></li>
+<li><a href="OnPlayerWeaponFire.html" title="OnPlayerWeaponFire">onPlayerWeaponFire</a></li>
+<li><a href="OnPlayerWeaponSwitch.html" title="OnPlayerWeaponSwitch">onPlayerWeaponSwitch</a></li></ul>
+<h3><span class="mw-headline" id="Event_functions">Event functions</span></h3>
+<ul><li><a href="AddEvent.html" title="AddEvent">addEvent</a></li>
+<li><a href="AddEventHandler.html" title="AddEventHandler">addEventHandler</a></li>
+<li><a href="CancelEvent.html" title="CancelEvent">cancelEvent</a></li>
+<li><a href="CancelLatentEvent.html" title="CancelLatentEvent">cancelLatentEvent</a></li>
+<li><a href="GetCancelReason.html" title="GetCancelReason">getCancelReason</a></li>
+<li><a href="GetEventHandlers.html" title="GetEventHandlers">getEventHandlers</a></li>
+<li><a href="GetLatentEventHandles.html" title="GetLatentEventHandles">getLatentEventHandles</a></li>
+<li><a href="GetLatentEventStatus.html" title="GetLatentEventStatus">getLatentEventStatus</a></li>
+<li><a href="RemoveEventHandler.html" title="RemoveEventHandler">removeEventHandler</a></li>
+<li><a href="TriggerEvent.html" title="TriggerEvent">triggerEvent</a></li>
+<li><a href="TriggerClientEvent.html" title="TriggerClientEvent">triggerClientEvent</a></li>
+<li><a href="TriggerLatentClientEvent.html" title="TriggerLatentClientEvent">triggerLatentClientEvent</a></li>
+<li><a href="WasEventCancelled.html" title="WasEventCancelled">wasEventCancelled</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625164352
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.010 seconds
+Real time usage: 0.012 seconds
+Preprocessor visited node count: 71/1000000
+Preprocessor generated node count: 362/1000000
+Post‐expand include size: 2384/2097152 bytes
+Template argument size: 58/2097152 bytes
+Highest expansion depth: 10/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    5.303      1 - -total
+ 80.31%    4.259      1 - Template:See_also/Server_event
+ 53.27%    2.825      1 - Template:Player_events
+ 37.36%    1.981      1 - Template:New_items
+ 19.57%    1.038      1 - Template:Current_Version
+ 13.60%    0.721      1 - Template:Server_event
+ 10.64%    0.564      1 - Template:Event_functions
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:3309-0!*!0!!*!*!* and timestamp 20190625164352 and revision id 59490
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=OnPlayerMarkerLeave&amp;oldid=59490">https://wiki.multitheftauto.com/index.php?title=OnPlayerMarkerLeave&amp;oldid=59490</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_Server_Events.html" title="Category:Server Events">Server Events</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="OnPlayerMarkerLeave.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:OnPlayerMarkerLeave&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=OnPlayerMarkerLeave&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=OnPlayerMarkerLeave&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=OnPlayerMarkerLeave" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=OnPlayerMarkerLeave" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/OnPlayerMarkerLeave.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/OnPlayerMarkerLeave.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=OnPlayerMarkerLeave&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=OnPlayerMarkerLeave&amp;oldid=59490" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=OnPlayerMarkerLeave&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+			</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 27 September 2018, at 03:01.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":43});});</script></body></html>

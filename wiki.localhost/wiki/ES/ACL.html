@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>ES/ACL - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ES/ACL","wgTitle":"ES/ACL","wgCurRevisionId":42290,"wgRevisionId":42290,"wgArticleId":7555,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Translated/Scripting Concepts"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"ES/ACL","wgRelevantArticleId":7555,"wgRequestId":"dfb66d2ae0a7c09072e81bdc","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-ES_ACL rootpage-ES_ACL skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">ES/ACL</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><i>Multi Theft Auto</i> incluye una completa y útil Lista de Control de Acceso (<i>ACL</i>) la que te permite asegurar y limitar el acceso a distintas funciones, recursos del servidor de múltiples maneras.
+</p><p>El concepto en <i>Multi Theft Auto</i> de <i>ACL</i> es el de dar a un objeto especifico una serie de derechos. En el caso de <i>Multi Theft Auto</i>, los objetos son una de dos cosas - recursos o usuarios. Hay numerosos derechos disponibles en <i>Multi Theft Auto</i> - estos están enfocados principalmente en las funciones del lado del servidor.
+</p><p>Lo que esto significa, esencialmente es que el <i>ACL</i> te permite escoger con exactitud a que funciones (un recurso o un usuario) pueden acceder. Esto, por ejemplo, puede prevenir que los jugadores de tu servidor sean capaces de <i>banearse</i> mutuamente o prevenir que errores en recursos aun no probados causen daños y problemas en tu servidor.
+</p><p>Por supuesto <i>un gran poder conlleva una gran responsabilidad</i> y es muy sencillo causar graves problemas con los recursos, por ejemplo, deshabilitar la función <a href="../SpawnPlayer.html" title="SpawnPlayer">spawnPlayer</a> para cada recurso causaría que los jugadores ya no puedan <i>spawnear</i>. Por supuesto, existen situaciones en las que se busca hacer esto. (Si deseas hacer que un solo recurso se encargue de <i>spawnear</i> a los jugadores, por ejemplo.)
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Entiendido_el_funcionamiento"><span class="tocnumber">1</span> <span class="toctext">Entiendido el funcionamiento</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Grupos_por_defecto"><span class="tocnumber">1.1</span> <span class="toctext">Grupos por defecto</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Grupos_de_recursos_y_ACLs"><span class="tocnumber">1.2</span> <span class="toctext">Grupos de recursos y ACLs</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Modificaci.C3.B3n_de_la_ACL"><span class="tocnumber">2</span> <span class="toctext">Modificación de la ACL</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Interfaz_HTTP"><span class="tocnumber">2.1</span> <span class="toctext">Interfaz HTTP</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Archivo_XML"><span class="tocnumber">2.2</span> <span class="toctext">Archivo XML</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Funciones_de_Scripting"><span class="tocnumber">2.3</span> <span class="toctext">Funciones de Scripting</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Vea_tambi.C3.A9n"><span class="tocnumber">3</span> <span class="toctext">Vea también</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Traductores"><span class="tocnumber">4</span> <span class="toctext">Traductores</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Entiendido_el_funcionamiento">Entiendido el funcionamiento</span></h2>
+<p>Existen dos grandes componentes en el <i>ACL</i>: grupos y listas <i>ACL</i>. Estos aparecen como <b>&lt;group name=""&gt;</b> y <b>&lt;acl name="" /&gt;</b>.
+Cuyo propósito es:<br />
+<b>1.</b> Garantizar a los usuarios el permiso de controlar el servidor y utilizar comandos. Ejemplos:<i><br /></i>
+</p>
+<ul><li>Permitir solo a los administradores utilizar la función <a href="../GiveWeapon.html" title="GiveWeapon">giveWeapon</a> en <i>freeroam</i>.</li>
+<li>Permitir a todos los jugadores iniciar un recurso.</li></ul>
+<p><b>2.</b> Garantizar a los recursos el permiso de utilizar una función o funciones de otros recursos. Ejemplos:<br />
+</p>
+<ul><li>Permitir a un recurso utilizar la funcion <a href="../RestartResource.html" title="RestartResource">restartResource</a>.</li>
+<li>Permitir a un recurso llamar funciones exportadas desde otro recurso.</li></ul>
+<h3><span class="mw-headline" id="Grupos_por_defecto">Grupos por defecto</span></h3>
+<p><i>Multi Theft Auto</i> trae por defecto algunos grupos con ciertos permisos. Estos son:
+</p>
+<ul><li><b>Everyone</b> - Toda cuenta registrada, por defecto, es añadida a este grupo.</li>
+<li><b>Moderator</b></li>
+<li><b>SuperModerator</b></li>
+<li><b>Admin</b></li>
+<li><b>Console</b> - Este grupo controla los permisos del usuario de la Consola <b>&lt;object name="user.Console" /&gt;</b></li>
+<li><b>RPC</b> - Procedimientos Remotos (En ingles, <i>Remote Procedure Call</i>). Garantiza el acceso a <a href="../CallRemote.html" title="CallRemote">callRemote</a>, para mas información revisa la información de la función.</li></ul>
+<p><br />
+</p><p>A modo de ejemplo, utilizare el grupo <i>Everyone</i>. Por defecto, este luce así:
+</p>
+<pre class="prettyprint lang-lua">    &lt;group name="Everyone"&gt;
+        &lt;acl name="Default" /&gt;
+        &lt;object name="user.*" /&gt;
+        &lt;object name="resource.*" /&gt;
+    &lt;/group&gt;
+</pre>
+<p><br />
+</p><p>Lo primero que deberías notar es el nombre <i>ACL</i> (<i>acl name</i>) asignado dentro del grupo. Esto define que permisos tiene el grupo en cuestión, usuarios y recursos en este grupo pueden acceder a los permisos especificados dentro de la lista <i>ACL</i> llamada "Default".
+<i>*Nota: Como notaras, este grupo en especial incluye a todos los usuarios y recursos gracias al uso del <b>*</b>.</i>
+</p><p>Ahora, desplácese al final de el ACL y verá la lista <b>&lt;acl name="Default" /&gt;</b>. Tenga en cuenta que he recortado drásticamente esta lista debido a su longitud.
+</p>
+<pre class="prettyprint lang-lua">    &lt;acl name="Default"&gt;
+        &lt;right name="command.start" access="false" /&gt;
+        &lt;right name="command.stop" access="false" /&gt;
+        &lt;right name="command.stopall" access="false" /&gt;
+        ...etc etc...
+        &lt;right name="function.executeCommandHandler" access="false" /&gt;
+        &lt;right name="function.setPlayerMuted" access="false" /&gt;
+        &lt;right name="function.restartResource" access="false" /&gt;
+        ...etc etc...
+        &lt;right name="general.adminpanel" access="false" /&gt;
+        &lt;right name="general.tab_players" access="false" /&gt;
+        &lt;right name="general.tab_resources" access="false" /&gt;
+        ...etc etc...
+        &lt;right name="command.freeze" access="false" /&gt;
+        &lt;right name="command.shout" access="false" /&gt;
+        &lt;right name="command.spectate" access="false" /&gt;
+        ...etc etc...
+    &lt;/acl&gt;
+</pre>
+<p><br />
+</p>
+<ul><li><b>Entradas de funcion</b> son funciones de scripting de MTA. Por ejemplo, si un recurso necesita utilizar restartResource  y fue se encuentra en el grupo 'Everyone' (con la lista 'Default'), se le negaría el acceso a restartResource y no funcionar correctamente.</li>
+<li><b>Comandos</b> se crean cuando un recurso utiliza <a href="../AddCommandHandler.html" title="AddCommandHandler">addCommandHandler</a>. Un ejemplo sería escribiendo <b>/ createvehicle [vehículo]</b> en la ventana de chat para el recurso Freeroam. Esto  si los usuarios del grupo utilizando este  ACL pueden utilizar el comando. <i>Nota: los comandos no tienen ningún efecto sobre los recursos dentro del grupo. Los comandos sólo están relacionados con los usuarios</i>.
+<ul><li><i>General es un grupo con derechos modificados creado por el recurso de administración pero trabaja en los mismos principios. El script funciona con ellos mediante el uso de <a href="../HasObjectPermissionTo.html" title="HasObjectPermissionTo">hasObjectPermissionTo</a></i></li></ul></li></ul>
+<p>&lt;br\&gt;
+</p><p>Te darás cuenta que algunos grupos, como <i>admin</i> tienen múltiples nodos de <b>&lt;acl name="" /&gt;</b> . Un ejemplo es el grupo de <i>administracion o Admin</i>:
+</p>
+<pre class="prettyprint lang-lua">
+    &lt;group name="Admin"&gt;
+        &lt;acl name="Moderator" /&gt;
+        &lt;acl name="SuperModerator" /&gt;
+        &lt;acl name="Admin" /&gt;
+        &lt;acl name="RPC" /&gt;
+        &lt;object name="resource.admin" /&gt;
+        &lt;object name="resource.webadmin" /&gt;
+        &lt;object name="user.Ransom" /&gt;
+    &lt;/group&gt;
+</pre>
+<p>&lt;br\&gt;
+</p><p>Esto le da a todos los permisos definidos en cada nodo <b>&lt;acl name="" /&gt;</b> por orden de lista. Así, por ejemplo, el grupo de administración asegura que todos los permisos se otorgan a los administradores mediante el uso de toda la lista. Si hay algún conflicto, la entrada más baja gana. Por ejemplo, pretenda que estos 2 ACL estaban en un grupo en el siguiente orden:
+&lt;br\&gt;
+<b>1.</b> <b>&lt;acl name="Default"&gt;</b> sets &lt;right name="general.ModifyOtherObjects" access="false" /&gt; &lt;br\&gt;
+<b>2.</b> <b>&lt;acl name="Admin"&gt;</b> sets &lt;right name="general.ModifyOtherObjects" access="true" /&gt; &lt;br\&gt;
+<b>3.</b> Para todos los usuarios y recursos en el grupo administrador "<i>Admin</i>": &lt;right name="general.ModifyOtherObjects" access="true" /&gt;&lt;br\&gt;
+&lt;br\&gt;
+</p>
+<h3><span class="mw-headline" id="Grupos_de_recursos_y_ACLs">Grupos de recursos y ACLs</span></h3>
+<p>Usted se dará cuenta que hay algunos otros grupos que vienen con MTA. Estos fueron definidos por los recursos que vienen con MTA. Si un recurso quiere designar algunos derechos de ACL específicos no previstos por los grupos de  MTA por defecto, puede crear su propio nombre y grupo en la ACL para usarlo. Voy a mostrar la entrada de AMX como ejemplo. AMX está diseñado para emular scripts de SA-MP y necesita un cierto conjunto de permisos que no se ajusta bien a los grupos predeterminados. Este se muestra a continuación:
+</p>
+<pre class="prettyprint lang-lua">
+    &lt;group name="AMX"&gt;
+        &lt;acl name="AMX" /&gt;
+        &lt;object name="resource.amx" /&gt;
+    &lt;/group&gt;
+
+    &lt;acl name="AMX"&gt;
+        &lt;right name="general.ModifyOtherObjects" access="true" /&gt;
+        &lt;right name="function.startResource" access="true" /&gt;
+        &lt;right name="function.stopResource" access="true" /&gt;
+        &lt;right name="general.adminpanel" access="false" /&gt;
+        ...etc etc...
+        &lt;right name="command.kick" access="false" /&gt;
+        &lt;right name="command.freeze" access="false" /&gt;
+        &lt;right name="command.mute" access="false" /&gt;
+        ...etc etc...
+    &lt;/acl&gt;
+</pre>
+<h2><span class="mw-headline" id="Modificaci.C3.B3n_de_la_ACL">Modificación de la ACL</span></h2>
+<p>Hay tres formas de modificar la ACL - La forma de hacerlo depende de quién eres. 
+</p>
+<h3><span class="mw-headline" id="Interfaz_HTTP">Interfaz HTTP</span></h3>
+<p>Usted puede utilizar la interfaz http <a href="../Resource/webadmin.html" title="Resource/webadmin" class="mw-redirect">webadmin</a> para modificar la ACL en su navegador web. Esta es por lejos la forma más fácil de hacerlo. Sólo asegúrese de que el recurso <i>webadmin</i> se encuentra iniciado en el servidor y visite <i>http://ServerIP:HttpPort/</i>. Usted puede utilizar las dos secciones - ACL y Grupos o "<i>Group</i>". ACL le permite crear sus listas de control de acceso - listas de derechos. Grupos o "<i>Group</i>" les permiten agrupar colecciones de usuarios y asignar las ACLs para ellos. Por ejemplo, la seccion ACLs le permite especificar que la ACL de administración o "<i>Admin</i>" tiene acceso a el comando <i>start</i> en la consola. Usted puede ir a la sección de Grupos y crear un <i>Group</i> de administración que tiene acceso a la administración de su <i>acl</i>. Entonces usted podrá añadir usuarios a su <i>Group</i> de Administración.
+</p>
+<h3><span class="mw-headline" id="Archivo_XML">Archivo XML</span></h3>
+<p>Usted puede modificar el archivo ACL.xml manualmente. Este tiene una sintaxis bastante sencilla, pero puede ser un poco confuso a veces. Si lo hace mientras el servidor está en ejecución, no se olvide de llamar a la función <a href="../AclReload.html" title="AclReload">aclReload</a> ("start runcode", "run aclReload()") así el nuevo ACL será cargado, o de lo contrario detener el servidor antes de realizar las modificaciones. Esto también evita que los cambios sean sobrescritos accidentalmente por el servidor.
+</p>
+<h3><span class="mw-headline" id="Funciones_de_Scripting">Funciones de Scripting</span></h3>
+<p>Usted puede utilizar un gran número de funciones de script de ACL para modificar la ACL en la marcha. Por supuesto, usted puede (y de verdad Debe!) limitar el acceso a las funciones de ACL con la ACL. Tenga en cuenta que el <b>admin resource</b> que viene con MTA se puede utilizar para administrar la ACL en la ficha recursos. Usted debe ser configurado como administrador para utilizar el panel de administración. <a rel="nofollow" class="external text" href="http://wiki.multitheftauto.com/wiki/Admin">Haga clic aquí para obtener instrucciones de configuración de administración</a>.
+</p>
+<h2><span class="mw-headline" id="Vea_tambi.C3.A9n">Vea también</span></h2>
+<ul><li><a href="../AclCreate.html" title="AclCreate">aclCreate</a></li>
+<li><a href="../AclCreateGroup.html" title="AclCreateGroup">aclCreateGroup</a></li>
+<li><a href="../AclDestroy.html" title="AclDestroy">aclDestroy</a></li>
+<li><a href="../AclDestroyGroup.html" title="AclDestroyGroup">aclDestroyGroup</a></li>
+<li><a href="../AclGet.html" title="AclGet">aclGet</a></li>
+<li><a href="../AclGetGroup.html" title="AclGetGroup">aclGetGroup</a></li>
+<li><a href="../AclGetName.html" title="AclGetName">aclGetName</a></li>
+<li><a href="../AclGetRight.html" title="AclGetRight">aclGetRight</a></li>
+<li><a href="../AclGroupAddACL.html" title="AclGroupAddACL">aclGroupAddACL</a></li>
+<li><a href="../AclGroupAddObject.html" title="AclGroupAddObject">aclGroupAddObject</a></li>
+<li><a href="../AclGroupGetName.html" title="AclGroupGetName">aclGroupGetName</a></li>
+<li><a href="../AclGroupList.html" title="AclGroupList">aclGroupList</a></li>
+<li><a href="../AclGroupListACL.html" title="AclGroupListACL">aclGroupListACL</a></li>
+<li><a href="../AclGroupListObjects.html" title="AclGroupListObjects">aclGroupListObjects</a></li>
+<li><a href="../AclGroupRemoveACL.html" title="AclGroupRemoveACL">aclGroupRemoveACL</a></li>
+<li><a href="../AclGroupRemoveObject.html" title="AclGroupRemoveObject">aclGroupRemoveObject</a></li>
+<li><a href="../AclList.html" title="AclList">aclList</a></li>
+<li><a href="../AclListRights.html" title="AclListRights">aclListRights</a></li>
+<li><a href="../AclReload.html" title="AclReload">aclReload</a></li>
+<li><a href="../AclRemoveRight.html" title="AclRemoveRight">aclRemoveRight</a></li>
+<li><a href="../AclSave.html" title="AclSave">aclSave</a></li>
+<li><a href="../AclSetRight.html" title="AclSetRight">aclSetRight</a></li>
+<li><a href="../HasObjectPermissionTo.html" title="HasObjectPermissionTo">hasObjectPermissionTo</a></li>
+<li><a href="../IsObjectInACLGroup.html" title="IsObjectInACLGroup">isObjectInACLGroup</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Traductores">Traductores</span></h2>
+<ul><li></li></ul>
+<ul><li>Rockero</li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625165414
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.010 seconds
+Real time usage: 0.011 seconds
+Preprocessor visited node count: 90/1000000
+Preprocessor generated node count: 164/1000000
+Post‐expand include size: 460/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.847      1 - Template:ACL_functions
+100.00%    0.847      1 - -total
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:7555-0!*!0!!en!*!* and timestamp 20190625165414 and revision id 42290
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=ES/ACL&amp;oldid=42290">https://wiki.multitheftauto.com/index.php?title=ES/ACL&amp;oldid=42290</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="../Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="../Category_Translated/Scripting_Concepts.html" title="Category:Translated/Scripting Concepts">Translated/Scripting Concepts</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="ACL.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:ES/ACL&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=ES/ACL&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=ES/ACL&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=ES%2FACL" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=ES%2FACL" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/ES/ACL.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/ES/ACL.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=ES/ACL&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=ES/ACL&amp;oldid=42290" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=ES/ACL&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-ru"><a href="http://wiki.multitheftauto.com/index.php?title=RU/Access_Control_List" title="Access Control List – русский" lang="ru" hreflang="ru">Русский</a></li>
+													<li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=Scripting_Introduction" title="Scripting Introduction – English" lang="en" hreflang="en">English</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 29 September 2014, at 12:03.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":42});});</script></body></html>

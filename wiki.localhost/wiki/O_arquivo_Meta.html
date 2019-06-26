@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>O arquivo Meta - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"O_arquivo_Meta","wgTitle":"O arquivo Meta","wgCurRevisionId":62929,"wgRevisionId":62929,"wgArticleId":6555,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Conceitos de Scripting"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"O_arquivo_Meta","wgRelevantArticleId":6555,"wgRequestId":"f634ed02b15a6348889d17f6","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-O_arquivo_Meta rootpage-O_arquivo_Meta skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">O arquivo Meta</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>O <i>meta.xml</i> é um arquivo de metadados que define ao MTA os conceitos iniciais de um recurso. Exemplos seriam seu nome, os scripts a serem usados e quais devem ser pré-carregados para serem transferidos ao cliente; junto a outros de sua natureza. Ele também transforma arquivos em elementos, a exemplo de sons, imagens e modelos. É escrito em XML, o qual é baseado em HTML e é pai do XHTML.
+</p><p><i>obs</i>: Metadados são dados sobre outros dados. O termo é estranho, mas o próprio nome já diz. No caso do MTA eles seriam metadados descritivos, pois se referem ao conteúdo do jogo.
+</p>
+<h1><span class="mw-headline" id="Tags">Tags</span></h1>
+<p>O XML é um formato de texto muito usado para representar dados, inclusive pelo MTA. As tags a seguir são todas as possibilidades: 
+</p>
+<ul><li><b>&lt;info /&gt;</b> Representa informações sobre o recurso que podem ser usados de forma opcional, e lidos pela função <a href="GetResourceInfo.html" title="GetResourceInfo">getResourceInfo</a>, caso necessário:
+<ul><li> <b>author:</b> O autor do recurso</li>
+<li> <b>version:</b> A versão do recurso</li>
+<li> <b>name:</b> O nome do recurso</li>
+<li> <b>description:</b> Uma breve descrição do recurso</li>
+<li> <b>type:</b> Qual é o tipo do recurso, pode ser um "gamemode", "script", "map", ou "misc".</li></ul></li>
+<li> <b>&lt;script /&gt;</b> O código fonte do recurso, os possíveis parâmetros são:
+<ul><li> <b>src:</b> O nome do arquivo do código fonte</li>
+<li> <b>type:</b> O tipo de código-fonte: "client", "server" ou "shared".</li>
+<li> <b>cache:</b> Quando o script é do tipo client, esse atributo diz se o arquivo será salvo ou não no disco rígido dele. O padrão é "true", se for usado o contrário, será apagado quando o recurso parar.</li>
+<li> <b>validate:</b> Se for definido como falso, o MTA não verificará se é compatível</li></ul></li>
+<li> <b>&lt;map /&gt;</b> Define mapa do gamemode, os possíveis atributos são:
+<ul><li> <b>src:</b> o nome do arquivo .map (pode também ser o diretório, ex: <i>maps/nome-do-mapa.map)</i></li>
+<li> <b>dimension:</b> Dimensão em que o mapa será carregado (opcional)</li></ul></li>
+<li> <b>&lt;File /&gt;</b> Um arquivo do lado do cliente. Geralmente são imagens, .txd, .col, .dff ou arquivos .xml. Eles vão ser baixado pelos clientes quando o recurso é iniciado (ou quando ele entrar no servidor)
+<ul><li> <b>src:</b> nome do arquivo do lado do cliente (pode ser outro caminho por exemplo, "images/imagem.png".)</li>
+<li> <b>download:</b> Vai ou não ser enviado para o cliente automaticamente(opcional). O padrão é "true". Usando "false" significa que eles não são enviados no início de recursos, mas poderia ser usado posteriormente por DownloadFile (a partir da versão 1.4)</li></ul></li>
+<li><b>&lt;include /&gt;</b> Inclui os recursos necessários a estarem rodando
+<ul><li><b>resource:</b> Nome do recurso que você quer iniciar junto com esse</li>
+<li><b>minversion:</b> A versão mínima desse recurso (opcional)</li>
+<li><b>maxversion:</b> A versão máxima desse recurso (opcional)</li></ul></li>
+<li><b>&lt;config /&gt;</b> O arquivo de configuração em XML a ser usado pelo recurso:
+<ul><li><b>src:</b> Seu nome</li>
+<li><b>type:</b> Seu tipo: "client" ou "server"</li></ul></li>
+<li><b>&lt;export /&gt;</b> Exporta uma função do seu recurso, para que outros possam usa-la com o <a href="Call.html" title="Call">call</a>
+<ul><li><b>function:</b> O nome da função</li>
+<li><b>type:</b> Diz se será exportado para o lado do cliente ou servidor (valores válidos são: "server" ou "client")</li>
+<li><b>http:</b> Indica se ele pode ser chamado via HTTP ("true" ou "false")</li></ul></li>
+<li><b>&lt;html /&gt;</b>
+<ul><li><b>src:</b> O nome do arquivo HTTP (pode ser um diretório)</li>
+<li><b>default:</b> Qual arquivo html a ser mostrado por padrão ao acessar o caminho <i>/nome-do-recurso/</i> no servidor. Somente um html pode ser definido, os outros são ignorados (true/false)</li>
+<li><b>raw:</b> O arquivo html não é interpretado pelo Lua e assim só passa como um dado binário. Deve ser usado para arquivos binários, como imagens principalmente (true/false)</li></ul></li>
+<li><b>&lt;settings&gt; &lt;setting name="" value=""/&gt; &lt;/settings&gt;:</b> Muitos gamemodes usam o <a href="PT-BR/Sistema_de_Configura%c3%a7%c3%b5es.html" title="PT-BR/Sistema de Configurações">sistema de configurações</a> para habilitar administradores do servidor configurá-los como desejarem. Um exemplo seria definir o tempo de duração da partida e usar o <a href="Get.html" title="Get">get</a> e <a href="Set.html" title="Set">set</a> para manipular o valor responsável por isso.</li>
+<li><b>&lt;min_mta_version /&gt;</b> Versão mínima do MTA para o recurso rodar sem problemas. Quando estiver terminando um recurso, a versão mínima deve a mesma da versão do MTA:SA que está usando (a qual no momento é 1.5.6). Veja o exemplo abaixo.
+<ul><li><b>client:</b> A versão mínima do cliente</li>
+<li><b>server:</b> A versão mínima do servidor</li></ul></li>
+<li><b>&lt;aclrequest /&gt;</b> Indica uma lista de permissões do <a href="Access_Control_List.html" title="Access Control List">ACL</a> a serem usados pelo recurso.</li>
+<li><b>&lt;sync_map_element_data /&gt;</b> Indica se os dados de elemento como "PosX" e "DoubleSided" são tranferidos para o cliente. Esses geralmente não são necessários por muitos gamemodes ou recursos, exceto <i>Map Editor</i> e <i>Interiors</i>; caso contrário, não funcionarão. Quando definido no recurso, se aplicará a todos os mapas carregados por ele.
+<ul><li><b>false:</b> Desabilita essa transferência para todos os recursos. Isso pode reduzir a demora de download consideravelmente.</li>
+<li><b>true:</b> Habilita essa tranferência. Se esses valores forem definidos de forma distinta entre os recursos, o que estiver configurado como "true" terá prioridade e todos os demais transferirão esse mesmo dado.</li></ul></li>
+<li><b>&lt;oop/&gt;</b> OOP - Veja mais informações na página: <a href="OOP.html" title="OOP">OOP</a>
+<ul><li><b>false:</b> Desabilita o OOP.</li>
+<li><b>true:</b> Habilita-o</li></ul></li>
+<li><b>&lt;download_priority_group/&gt;</b> O valor padrão do grupo de prioridade de download do recurso é 0. Se este for definido para um valor maior que 0, então o recurso será baixado e iniciado no cliente antes dos outros recursos. Se defindo para um valor menor que 0, o recurso será baixado e iniciado no cliente depois dos outros recursos.</li></ul>
+<h2><span class="mw-headline" id="Exemplo">Exemplo</span></h2>
+<p>Aqui está um exemplo de um arquivo meta usando algumas das tags mencionadas:
+</p>
+<pre class="prettyprint lang-xml">
+&lt;meta&gt;
+    &lt;info author="Slothman" type="gamemode" name="Stealth" /&gt;
+    &lt;config src="help.xml" type="client"/&gt;
+
+    &lt;download_priority_group&gt;0&lt;/download_priority_group&gt;
+    &lt;min_mta_version client="1.5.6" server="1.5.6" /&gt;
+
+    &lt;sync_map_element_data&gt;false&lt;/sync_map_element_data&gt;
+
+    &lt;script src="stealthmain_server.lua" /&gt;
+    &lt;script src="noiseblip.lua" /&gt;
+    &lt;script src="mission_timer.lua" /&gt;
+    &lt;script src="gadgets_server.lua" /&gt;
+    &lt;script src="gadgets_client.lua" type="client"/&gt;
+    &lt;script src="stealthmain_client.lua" type="client" validate="true"/&gt;
+    &lt;script src="noisebar.lua" type="client"/&gt;
+    &lt;script src="spycam.lua" type="client"/&gt;
+    &lt;script src="riemann_z_demonstration.lua" type="client" cache="false"/&gt;
+    &lt;map src="base.map" dimension="1"/&gt;
+
+    &lt;file src="riot_shield.txd" /&gt;
+    &lt;file src="riot_shield.dff" /&gt;
+    &lt;file src="riot_shield.col" /&gt;
+    &lt;file src="armor.png" download="true"/&gt;
+    &lt;file src="camera.png" download="false"/&gt;
+    &lt;file src="cloak.png" /&gt;
+    &lt;file src="goggles.png" /&gt;
+    &lt;file src="mine.png" /&gt;
+    &lt;file src="radar.png" /&gt;
+    &lt;file src="shield.png" /&gt;
+
+    &lt;include resource="scoreboard" /&gt;
+    &lt;include resource="killmessages" /&gt;
+    &lt;include resource="maplimits" /&gt;
+    
+    &lt;export function="exampleExport1" type="server" /&gt;
+    &lt;export function="exampleExport2" type="client" /&gt;
+    &lt;export function="exampleExport3" type="shared" /&gt;
+
+    &lt;settings&gt;
+         &lt;setting name="roundlimit" value="[6]" /&gt; 
+	 &lt;setting name="teamdamage" value="[1]" /&gt; 
+	 &lt;setting name="teambalance" value="[1]" /&gt; 
+	 &lt;setting name="spazammo" value="[25]" /&gt; 
+	 &lt;setting name="m4ammo" value="[100]" /&gt;
+	 &lt;setting name="shotgunammo" value="[25]" /&gt;
+	 &lt;setting name="sniperammo" value="[20]" /&gt;
+	 &lt;setting name="ak47ammo" value="[120]" /&gt;
+	 &lt;setting name="rifleammo" value="[40]" /&gt;
+	 &lt;setting name="deserteagleammo" value="[45]" /&gt;
+	 &lt;setting name="pistolammo" value="[132]" /&gt;
+	 &lt;setting name="uziammo" value="[150]" /&gt;
+	 &lt;setting name="tec9ammo" value="[150]" /&gt;
+	 &lt;setting name="silencedammo" value="[65]" /&gt;
+	 &lt;setting name="grenadeammo" value="[4]" /&gt;
+	 &lt;setting name="satchelammo" value="[4]" /&gt;
+	 &lt;setting name="teargasammo" value="[4]" /&gt;
+	 &lt;setting name="molatovammo" value="[4]" /&gt;
+	 &lt;setting name="isAllowedToShoot" value="true" /&gt;
+     &lt;/settings&gt;
+
+     &lt;aclrequest&gt;
+	 &lt;right name="function.startResource" access="true" /&gt;
+	 &lt;right name="function.stopResource" access="true" /&gt;
+	 &lt;right name="function.setPlayerMuted" access="true" /&gt;
+     &lt;/aclrequest&gt;
+&lt;/meta&gt;
+</pre>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625164830
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.007 seconds
+Real time usage: 0.008 seconds
+Preprocessor visited node count: 70/1000000
+Preprocessor generated node count: 228/1000000
+Post‐expand include size: 118/2097152 bytes
+Template argument size: 48/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    2.379      1 - -total
+ 89.86%    2.138      3 - Template:Current_Version
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:6555-0!*!0!!*!*!* and timestamp 20190625164830 and revision id 62929
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=O_arquivo_Meta&amp;oldid=62929">https://wiki.multitheftauto.com/index.php?title=O_arquivo_Meta&amp;oldid=62929</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_Conceitos_de_Scripting.html" title="Category:Conceitos de Scripting">Conceitos de Scripting</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="O_arquivo_Meta.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:O_arquivo_Meta&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=O_arquivo_Meta&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=O_arquivo_Meta&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=O+arquivo+Meta" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=O+arquivo+Meta" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/O_arquivo_Meta.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/O_arquivo_Meta.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=O_arquivo_Meta&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=O_arquivo_Meta&amp;oldid=62929" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=O_arquivo_Meta&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=Meta.xml" title="Meta.xml – English" lang="en" hreflang="en">English</a></li>
+													<li class="interlanguage-link interwiki-cs"><a href="http://wiki.multitheftauto.com/index.php?title=CS/Meta.xml" title="Meta.xml – čeština" lang="cs" hreflang="cs">Čeština</a></li>
+													<li class="interlanguage-link interwiki-de"><a href="http://wiki.multitheftauto.com/index.php?title=DE/Meta.xml" title="Meta.xml – Deutsch" lang="de" hreflang="de">Deutsch</a></li>
+													<li class="interlanguage-link interwiki-es"><a href="http://wiki.multitheftauto.com/index.php?title=ES/Sobre_el_archivo_%22meta.xml%22" title="Sobre el archivo &quot;meta.xml&quot; – español" lang="es" hreflang="es">Español</a></li>
+													<li class="interlanguage-link interwiki-it"><a href="http://wiki.multitheftauto.com/index.php?title=IT/Meta.xml" title="Meta.xml – italiano" lang="it" hreflang="it">Italiano</a></li>
+													<li class="interlanguage-link interwiki-pl"><a href="http://wiki.multitheftauto.com/index.php?title=PL/Meta.xml" title="Meta.xml – polski" lang="pl" hreflang="pl">Polski</a></li>
+													<li class="interlanguage-link interwiki-ru"><a href="http://wiki.multitheftauto.com/index.php?title=RU/Meta.xml" title="Meta.xml – русский" lang="ru" hreflang="ru">Русский</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 3 June 2019, at 23:58.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":58});});</script></body></html>

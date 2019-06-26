@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>RU/Client Scripting Functions - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"RU/Client_Scripting_Functions","wgTitle":"RU/Client Scripting Functions","wgCurRevisionId":58814,"wgRevisionId":58814,"wgArticleId":4663,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Changes in 1.3.5","Changes in 1.3.1"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"RU/Client_Scripting_Functions","wgRelevantArticleId":4663,"wgRequestId":"d71c98bfb4c6b91e20eaddec","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta name='headingclass' content='' data-class='client' data-subcaption=''>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-RU_Client_Scripting_Functions rootpage-RU_Client_Scripting_Functions skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">RU/Client Scripting Functions</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
+На этой странице располагается список всех <b>клиентских</b> функций скриптинга, которые когда-либо были внедрены и теперь являются встроенными, начиная с MTA 1.0. Чтобы запросить новую функцию или событие, напишите об этом <a href="../Requested_Functions_and_Events.html" title="Requested Functions and Events">сюда</a>. Если вам захочется узнать о других функциях, посетите <a href="Useful_Functions.html" title="RU/Useful Functions">страницу с полезными функциями</a>.
+</p><p><b>Серверные функции скриптинга можно найти <a href="Server_Scripting_Functions.html" title="RU/Server Scripting Functions">здесь</a>.</b>
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B7.D0.B2.D1.83.D0.BA.D0.B0"><span class="tocnumber">1</span> <span class="toctext">Функции звука</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BC.D0.B5.D1.82.D0.BA.D0.B8_.D0.BD.D0.B0_.D1.80.D0.B0.D0.B4.D0.B0.D1.80.D0.B5"><span class="tocnumber">2</span> <span class="toctext">Функции метки на радаре</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B1.D1.80.D0.B0.D1.83.D0.B7.D0.B5.D1.80.D0.B0"><span class="tocnumber">3</span> <span class="toctext">Функции браузера</span></a>
+<ul>
+<li class="toclevel-2"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B3.D1.80.D0.B0.D1.84.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.BE.D0.B3.D0.BE_.D0.B8.D0.BD.D1.82.D0.B5.D1.80.D1.84.D0.B5.D0.B9.D1.81.D0.B0_.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D1.82.D0.B5.D0.BB.D1.8F_.28GUI.29"><span class="tocnumber">3.1</span> <span class="toctext">Функции графического интерфейса пользователя (GUI)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BA.D0.B0.D0.BC.D0.B5.D1.80.D1.8B"><span class="tocnumber">4</span> <span class="toctext">Функции камеры</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.82.D0.B5.D0.BB.D0.B0_.D0.B8_.D0.BE.D0.B4.D0.B5.D0.B6.D0.B4.D1.8B"><span class="tocnumber">5</span> <span class="toctext">Функции тела и одежды</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BA.D0.BE.D0.BB.D0.BB.D0.B8.D0.B7.D0.B8.D0.BE.D0.BD.D0.BD.D0.BE.D0.B9_.D1.84.D0.BE.D1.80.D0.BC.D1.8B_.28colshape.29"><span class="tocnumber">6</span> <span class="toctext">Функции коллизионной формы (colshape)</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BA.D1.83.D1.80.D1.81.D0.BE.D1.80.D0.B0"><span class="tocnumber">7</span> <span class="toctext">Функции курсора</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BE.D1.82.D1.80.D0.B8.D1.81.D0.BE.D0.B2.D0.BA.D0.B8"><span class="tocnumber">8</span> <span class="toctext">Функции отрисовки</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.8D.D1.84.D1.84.D0.B5.D0.BA.D1.82.D0.B0"><span class="tocnumber">9</span> <span class="toctext">Функции эффекта</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.8D.D0.BB.D0.B5.D0.BC.D0.B5.D0.BD.D1.82.D0.B0"><span class="tocnumber">10</span> <span class="toctext">Функции элемента</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B4.D0.B2.D0.B8.D0.B6.D0.BA.D0.B0"><span class="tocnumber">11</span> <span class="toctext">Функции движка</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.81.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F"><span class="tocnumber">12</span> <span class="toctext">Функции события</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B2.D0.B7.D1.80.D1.8B.D0.B2.D0.B0"><span class="tocnumber">13</span> <span class="toctext">Функции взрыва</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.84.D0.B0.D0.B9.D0.BB.D0.B0"><span class="tocnumber">14</span> <span class="toctext">Функции файла</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BE.D0.B3.D0.BD.D1.8F"><span class="tocnumber">15</span> <span class="toctext">Функции огня</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B3.D1.80.D0.B0.D1.84.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.BE.D0.B3.D0.BE_.D0.B8.D0.BD.D1.82.D0.B5.D1.80.D1.84.D0.B5.D0.B9.D1.81.D0.B0_.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D1.82.D0.B5.D0.BB.D1.8F_.28GUI.29_2"><span class="tocnumber">16</span> <span class="toctext">Функции графического интерфейса пользователя (GUI)</span></a>
+<ul>
+<li class="toclevel-2"><a href="#.D0.9A.D0.BD.D0.BE.D0.BF.D0.BA.D0.B8"><span class="tocnumber">16.1</span> <span class="toctext">Кнопки</span></a></li>
+<li class="toclevel-2"><a href="#.D0.A4.D0.BB.D0.B0.D0.B6.D0.BA.D0.B8"><span class="tocnumber">16.2</span> <span class="toctext">Флажки</span></a></li>
+<li class="toclevel-2"><a href="#.D0.A1.D0.BF.D0.B8.D1.81.D0.BA.D0.B8"><span class="tocnumber">16.3</span> <span class="toctext">Списки</span></a></li>
+<li class="toclevel-2"><a href="#.D0.A0.D0.B5.D0.B4.D0.B0.D0.BA.D1.82.D0.B8.D1.80.D1.83.D0.B5.D0.BC.D1.8B.D0.B5_.D0.BF.D0.BE.D0.BB.D1.8F"><span class="tocnumber">16.4</span> <span class="toctext">Редактируемые поля</span></a></li>
+<li class="toclevel-2"><a href="#.D0.A2.D0.B0.D0.B1.D0.BB.D0.B8.D1.86.D1.8B"><span class="tocnumber">16.5</span> <span class="toctext">Таблицы</span></a></li>
+<li class="toclevel-2"><a href="#.D0.9F.D0.B0.D0.BC.D1.8F.D1.82.D0.BA.D0.B8"><span class="tocnumber">16.6</span> <span class="toctext">Памятки</span></a></li>
+<li class="toclevel-2"><a href="#.D0.9F.D1.80.D0.BE.D0.B3.D1.80.D0.B5.D1.81.D1.81_.D0.B1.D0.B0.D1.80.D1.8B"><span class="tocnumber">16.7</span> <span class="toctext">Прогресс бары</span></a></li>
+<li class="toclevel-2"><a href="#.D0.9F.D0.B5.D1.80.D0.B5.D0.BA.D0.BB.D1.8E.D1.87.D0.B0.D1.82.D0.B5.D0.BB.D0.B8"><span class="tocnumber">16.8</span> <span class="toctext">Переключатели</span></a></li>
+<li class="toclevel-2"><a href="#.D0.9F.D0.BE.D0.BB.D0.BE.D1.81.D1.8B_.D0.BF.D1.80.D0.BE.D0.BA.D1.80.D1.83.D1.82.D0.BA.D0.B8"><span class="tocnumber">16.9</span> <span class="toctext">Полосы прокрутки</span></a></li>
+<li class="toclevel-2"><a href="#.D0.9F.D0.B0.D0.BD.D0.B5.D0.BB.D0.B8_.D0.BF.D1.80.D0.BE.D0.BA.D1.80.D1.83.D1.82.D0.BA.D0.B8"><span class="tocnumber">16.10</span> <span class="toctext">Панели прокрутки</span></a></li>
+<li class="toclevel-2"><a href="#.D0.A1.D1.82.D0.B0.D1.82.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.B8.D0.B5_.D0.B8.D0.B7.D0.BE.D0.B1.D1.80.D0.B0.D0.B6.D0.B5.D0.BD.D0.B8.D1.8F"><span class="tocnumber">16.11</span> <span class="toctext">Статические изображения</span></a></li>
+<li class="toclevel-2"><a href="#.D0.9F.D0.B0.D0.BD.D0.B5.D0.BB.D0.B8_.D0.B2.D0.BA.D0.BB.D0.B0.D0.B4.D0.BE.D0.BA"><span class="tocnumber">16.12</span> <span class="toctext">Панели вкладок</span></a></li>
+<li class="toclevel-2"><a href="#.D0.92.D0.BA.D0.BB.D0.B0.D0.B4.D0.BA.D0.B8"><span class="tocnumber">16.13</span> <span class="toctext">Вкладки</span></a></li>
+<li class="toclevel-2"><a href="#.D0.A2.D0.B5.D0.BA.D1.81.D1.82.D0.BE.D0.B2.D1.8B.D0.B5_.D0.BC.D0.B5.D1.82.D0.BA.D0.B8"><span class="tocnumber">16.14</span> <span class="toctext">Текстовые метки</span></a></li>
+<li class="toclevel-2"><a href="#.D0.9E.D0.BA.D0.BD.D0.B0"><span class="tocnumber">16.15</span> <span class="toctext">Окна</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-17"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B2.D0.B2.D0.BE.D0.B4.D0.B0"><span class="tocnumber">17</span> <span class="toctext">Функции ввода</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BE.D1.81.D0.B2.D0.B5.D1.89.D0.B5.D0.BD.D0.B8.D1.8F"><span class="tocnumber">18</span> <span class="toctext">Функции освещения</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BC.D0.B0.D1.80.D0.BA.D0.B5.D1.80.D0.B0"><span class="tocnumber">19</span> <span class="toctext">Функции маркера</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="#.D0.9C.D0.B0.D1.82.D1.80.D0.B8.D1.87.D0.BD.D1.8B.D0.B5_.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8"><span class="tocnumber">20</span> <span class="toctext">Матричные функции</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BE.D0.B1.D1.8A.D0.B5.D0.BA.D1.82.D0.B0"><span class="tocnumber">21</span> <span class="toctext">Функции объекта</span></a></li>
+<li class="toclevel-1 tocsection-22"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B2.D1.8B.D0.B2.D0.BE.D0.B4.D0.B0"><span class="tocnumber">22</span> <span class="toctext">Функции вывода</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_NPC-.D0.BF.D0.B5.D1.80.D1.81.D0.BE.D0.BD.D0.B0.D0.B6.D0.B0_.28ped.29"><span class="tocnumber">23</span> <span class="toctext">Функции NPC-персонажа (ped)</span></a></li>
+<li class="toclevel-1 tocsection-24"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BF.D0.B8.D0.BA.D0.B0.D0.BF.D0.B0"><span class="tocnumber">24</span> <span class="toctext">Функции пикапа</span></a></li>
+<li class="toclevel-1 tocsection-25"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B8.D0.B3.D1.80.D0.BE.D0.BA.D0.B0"><span class="tocnumber">25</span> <span class="toctext">Функции игрока</span></a></li>
+<li class="toclevel-1 tocsection-26"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.81.D0.BD.D0.B0.D1.80.D1.8F.D0.B4.D0.B0"><span class="tocnumber">26</span> <span class="toctext">Функции снаряда</span></a></li>
+<li class="toclevel-1 tocsection-27"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.82.D0.B5.D1.80.D1.80.D0.B8.D1.82.D0.BE.D1.80.D0.B8.D0.B9_.D1.80.D0.B0.D0.B4.D0.B0.D1.80.D0.B0"><span class="tocnumber">27</span> <span class="toctext">Функции территорий радара</span></a></li>
+<li class="toclevel-1 tocsection-28"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.80.D0.B5.D1.81.D1.83.D1.80.D1.81.D0.BE.D0.B2"><span class="tocnumber">28</span> <span class="toctext">Функции ресурсов</span></a></li>
+<li class="toclevel-1 tocsection-29"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BF.D1.80.D0.BE.D0.B6.D0.B5.D0.BA.D1.82.D0.BE.D1.80.D0.BE.D0.B2"><span class="tocnumber">29</span> <span class="toctext">Функции прожекторов</span></a></li>
+<li class="toclevel-1 tocsection-30"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BA.D0.BE.D0.BC.D0.B0.D0.BD.D0.B4"><span class="tocnumber">30</span> <span class="toctext">Функции команд</span></a></li>
+<li class="toclevel-1 tocsection-31"><a href="#.D0.A3.D1.82.D0.B8.D0.BB.D0.B8.D1.82.D0.B0.D1.80.D0.BD.D1.8B.D0.B5_.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8"><span class="tocnumber">31</span> <span class="toctext">Утилитарные функции</span></a></li>
+<li class="toclevel-1 tocsection-32"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_UTF-8"><span class="tocnumber">32</span> <span class="toctext">Функции UTF-8</span></a></li>
+<li class="toclevel-1 tocsection-33"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.82.D1.80.D0.B0.D0.BD.D1.81.D0.BF.D0.BE.D1.80.D1.82.D0.B0"><span class="tocnumber">33</span> <span class="toctext">Функции транспорта</span></a></li>
+<li class="toclevel-1 tocsection-34"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B2.D0.BE.D0.B4.D1.8B"><span class="tocnumber">34</span> <span class="toctext">Функции воды</span></a></li>
+<li class="toclevel-1 tocsection-35"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BE.D1.80.D1.83.D0.B6.D0.B8.D1.8F"><span class="tocnumber">35</span> <span class="toctext">Функции оружия</span></a></li>
+<li class="toclevel-1 tocsection-36"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.81.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D1.8F_.D0.BE.D1.80.D1.83.D0.B6.D0.B8.D1.8F"><span class="tocnumber">36</span> <span class="toctext">Функции создания оружия</span></a></li>
+<li class="toclevel-1 tocsection-37"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BC.D0.B8.D1.80.D0.B0"><span class="tocnumber">37</span> <span class="toctext">Функции мира</span></a></li>
+<li class="toclevel-1 tocsection-38"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_XML"><span class="tocnumber">38</span> <span class="toctext">Функции XML</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B7.D0.B2.D1.83.D0.BA.D0.B0">Функции звука</span></h2>
+<ul><li><a href="../GetRadioChannel.html" title="GetRadioChannel">getRadioChannel</a></li>
+<li><a href="../GetRadioChannelName.html" title="GetRadioChannelName">getRadioChannelName</a></li>
+<li><a href="../GetSFXStatus.html" title="GetSFXStatus">getSFXStatus</a></li>
+<li><a href="../GetSoundBPM.html" title="GetSoundBPM">getSoundBPM</a></li></ul>
+<div style="font-weight: bold;background:black;color:white;padding:2px; padding-left:8px;">FROM VERSION 1.5.6 <a rel="nofollow" class="external text" href="https://buildinfo.mtasa.com/?Author=&amp;Branch=&amp;Revision=16216"><span style="color: #FFFFFF;">r16216</span></a> ONWARDS</div><div style="border: 2px solid black;padding: 3px;">
+<ul><li><a href="../GetSoundBufferLength.html" title="GetSoundBufferLength">getSoundBufferLength</a></li></ul>
+ </div>
+<ul><li><a href="../GetSoundEffects.html" title="GetSoundEffects">getSoundEffects</a></li>
+<li><a href="../GetSoundFFTData.html" title="GetSoundFFTData">getSoundFFTData</a></li>
+<li><a href="../GetSoundLength.html" title="GetSoundLength">getSoundLength</a></li>
+<li><a href="../GetSoundLevelData.html" title="GetSoundLevelData">getSoundLevelData</a></li>
+<li><a href="../GetSoundMaxDistance.html" title="GetSoundMaxDistance">getSoundMaxDistance</a></li>
+<li><a href="../GetSoundMetaTags.html" title="GetSoundMetaTags">getSoundMetaTags</a></li>
+<li><a href="../GetSoundMinDistance.html" title="GetSoundMinDistance">getSoundMinDistance</a></li>
+<li><a href="../GetSoundPan.html" title="GetSoundPan">getSoundPan</a></li>
+<li><a href="../GetSoundPosition.html" title="GetSoundPosition">getSoundPosition</a></li>
+<li><a href="../GetSoundProperties.html" title="GetSoundProperties">getSoundProperties</a></li>
+<li><a href="../GetSoundSpeed.html" title="GetSoundSpeed">getSoundSpeed</a></li>
+<li><a href="../GetSoundVolume.html" title="GetSoundVolume">getSoundVolume</a></li>
+<li><a href="../GetSoundWaveData.html" title="GetSoundWaveData">getSoundWaveData</a></li>
+<li><a href="../IsSoundPanningEnabled.html" title="IsSoundPanningEnabled">isSoundPanningEnabled</a></li>
+<li><a href="../IsSoundPaused.html" title="IsSoundPaused">isSoundPaused</a></li>
+<li><a href="../PlaySFX.html" title="PlaySFX">playSFX</a></li>
+<li><a href="../PlaySFX3D.html" title="PlaySFX3D">playSFX3D</a></li>
+<li><a href="../PlaySound.html" title="PlaySound">playSound</a></li>
+<li><a href="../PlaySound3D.html" title="PlaySound3D">playSound3D</a></li>
+<li><a href="../PlaySoundFrontEnd.html" title="PlaySoundFrontEnd">playSoundFrontEnd</a></li>
+<li><a href="../SetRadioChannel.html" title="SetRadioChannel">setRadioChannel</a></li>
+<li><a href="../SetSoundEffectEnabled.html" title="SetSoundEffectEnabled">setSoundEffectEnabled</a></li>
+<li><a href="../SetSoundMaxDistance.html" title="SetSoundMaxDistance">setSoundMaxDistance</a></li>
+<li><a href="../SetSoundMinDistance.html" title="SetSoundMinDistance">setSoundMinDistance</a></li>
+<li><a href="../SetSoundPan.html" title="SetSoundPan">setSoundPan</a></li>
+<li><a href="../SetSoundPanningEnabled.html" title="SetSoundPanningEnabled">setSoundPanningEnabled</a></li>
+<li><a href="../SetSoundPaused.html" title="SetSoundPaused">setSoundPaused</a></li>
+<li><a href="../SetSoundPosition.html" title="SetSoundPosition">setSoundPosition</a></li>
+<li><a href="../SetSoundProperties.html" title="SetSoundProperties">setSoundProperties</a></li>
+<li><a href="../SetSoundSpeed.html" title="SetSoundSpeed">setSoundSpeed</a></li>
+<li><a href="../SetSoundVolume.html" title="SetSoundVolume">setSoundVolume</a></li>
+<li><a href="../StopSound.html" title="StopSound">stopSound</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BC.D0.B5.D1.82.D0.BA.D0.B8_.D0.BD.D0.B0_.D1.80.D0.B0.D0.B4.D0.B0.D1.80.D0.B5">Функции метки на радаре</span></h2>
+<ul><li><a href="../CreateBlip.html" title="CreateBlip">createBlip</a></li>
+<li><a href="../CreateBlipAttachedTo.html" title="CreateBlipAttachedTo">createBlipAttachedTo</a></li>
+<li><a href="../GetBlipColor.html" title="GetBlipColor">getBlipColor</a></li>
+<li><a href="../GetBlipIcon.html" title="GetBlipIcon">getBlipIcon</a></li>
+<li><a href="../GetBlipOrdering.html" title="GetBlipOrdering">getBlipOrdering</a></li>
+<li><a href="../GetBlipSize.html" title="GetBlipSize">getBlipSize</a></li>
+<li><a href="../GetBlipVisibleDistance.html" title="GetBlipVisibleDistance">getBlipVisibleDistance</a></li>
+<li><a href="../SetBlipColor.html" title="SetBlipColor">setBlipColor</a></li>
+<li><a href="../SetBlipIcon.html" title="SetBlipIcon">setBlipIcon</a></li>
+<li><a href="../SetBlipOrdering.html" title="SetBlipOrdering">setBlipOrdering</a></li>
+<li><a href="../SetBlipSize.html" title="SetBlipSize">setBlipSize</a></li>
+<li><a href="../SetBlipVisibleDistance.html" title="SetBlipVisibleDistance">setBlipVisibleDistance</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B1.D1.80.D0.B0.D1.83.D0.B7.D0.B5.D1.80.D0.B0">Функции браузера</span></h2>
+<ul><li><a href="../CreateBrowser.html" title="CreateBrowser">createBrowser</a></li>
+<li><a href="../ExecuteBrowserJavascript.html" title="ExecuteBrowserJavascript">executeBrowserJavascript</a></li>
+<li><a href="../FocusBrowser.html" title="FocusBrowser">focusBrowser</a></li></ul>
+<ul><li><a href="../ResizeBrowser.html" title="ResizeBrowser">resizeBrowser</a></li>
+<li><a href="../IsBrowserDomainBlocked.html" title="IsBrowserDomainBlocked">isBrowserDomainBlocked</a></li>
+<li><a href="../IsBrowserFocused.html" title="IsBrowserFocused">isBrowserFocused</a></li>
+<li><a href="../IsBrowserLoading.html" title="IsBrowserLoading">isBrowserLoading</a></li>
+<li><a href="../GetBrowserProperty.html" title="GetBrowserProperty">getBrowserProperty</a></li>
+<li><a href="../GetBrowserSettings.html" title="GetBrowserSettings">getBrowserSettings</a></li>
+<li><a href="../GetBrowserTitle.html" title="GetBrowserTitle">getBrowserTitle</a></li>
+<li><a href="../GetBrowserURL.html" title="GetBrowserURL">getBrowserURL</a></li>
+<li><a href="../InjectBrowserMouseDown.html" title="InjectBrowserMouseDown">injectBrowserMouseDown</a></li>
+<li><a href="../InjectBrowserMouseMove.html" title="InjectBrowserMouseMove">injectBrowserMouseMove</a></li>
+<li><a href="../InjectBrowserMouseUp.html" title="InjectBrowserMouseUp">injectBrowserMouseUp</a></li>
+<li><a href="../InjectBrowserMouseWheel.html" title="InjectBrowserMouseWheel">injectBrowserMouseWheel</a></li>
+<li><a href="../LoadBrowserURL.html" title="LoadBrowserURL">loadBrowserURL</a></li>
+<li><a href="../CanBrowserNavigateBack.html" title="CanBrowserNavigateBack">canBrowserNavigateBack</a></li>
+<li><a href="../CanBrowserNavigateForward.html" title="CanBrowserNavigateForward">canBrowserNavigateForward</a></li>
+<li><a href="../NavigateBrowserBack.html" title="NavigateBrowserBack">navigateBrowserBack</a></li>
+<li><a href="../NavigateBrowserForward.html" title="NavigateBrowserForward">navigateBrowserForward</a></li>
+<li><a href="../ReloadBrowserPage.html" title="ReloadBrowserPage">reloadBrowserPage</a></li>
+<li><a href="../SetBrowserProperty.html" title="SetBrowserProperty">setBrowserProperty</a></li>
+<li><a href="../SetBrowserRenderingPaused.html" title="SetBrowserRenderingPaused">setBrowserRenderingPaused</a></li>
+<li><a href="../SetBrowserVolume.html" title="SetBrowserVolume">setBrowserVolume</a></li>
+<li><a href="../RequestBrowserDomains.html" title="RequestBrowserDomains">requestBrowserDomains</a></li></ul>
+<ul><li><a href="../SetBrowserAjaxHandler.html" title="SetBrowserAjaxHandler">setBrowserAjaxHandler</a></li>
+<li><a href="../GetBrowserSource.html" title="GetBrowserSource">getBrowserSource</a></li>
+<li><a href="../ToggleBrowserDevTools.html" title="ToggleBrowserDevTools">toggleBrowserDevTools</a></li></ul>
+<h3><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B3.D1.80.D0.B0.D1.84.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.BE.D0.B3.D0.BE_.D0.B8.D0.BD.D1.82.D0.B5.D1.80.D1.84.D0.B5.D0.B9.D1.81.D0.B0_.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D1.82.D0.B5.D0.BB.D1.8F_.28GUI.29">Функции графического интерфейса пользователя (GUI)</span></h3>
+<ul><li><a href="../GuiCreateBrowser.html" title="GuiCreateBrowser">guiCreateBrowser</a></li>
+<li><a href="../GuiGetBrowser.html" title="GuiGetBrowser">guiGetBrowser</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BA.D0.B0.D0.BC.D0.B5.D1.80.D1.8B">Функции камеры</span></h2>
+<ul><li><a href="../FadeCamera.html" title="FadeCamera">fadeCamera</a></li>
+<li><a href="../GetCamera.html" title="GetCamera">getCamera</a></li>
+<li><a href="../GetCameraClip.html" title="GetCameraClip">getCameraClip</a></li>
+<li><a href="../GetCameraFieldOfView.html" title="GetCameraFieldOfView">getCameraFieldOfView</a></li>
+<li><a href="../GetCameraGoggleEffect.html" title="GetCameraGoggleEffect">getCameraGoggleEffect</a></li>
+<li><a href="../GetCameraInterior.html" title="GetCameraInterior">getCameraInterior</a></li>
+<li><a href="../GetCameraMatrix.html" title="GetCameraMatrix">getCameraMatrix</a></li>
+<li><a href="../GetCameraShakeLevel.html" title="GetCameraShakeLevel">getCameraShakeLevel</a></li>
+<li><a href="../GetCameraTarget.html" title="GetCameraTarget">getCameraTarget</a></li>
+<li><a href="../GetCameraViewMode.html" title="GetCameraViewMode">getCameraViewMode</a></li>
+<li><a href="../SetCameraClip.html" title="SetCameraClip">setCameraClip</a></li>
+<li><a href="../SetCameraFieldOfView.html" title="SetCameraFieldOfView">setCameraFieldOfView</a></li>
+<li><a href="../SetCameraGoggleEffect.html" title="SetCameraGoggleEffect">setCameraGoggleEffect</a></li>
+<li><a href="../SetCameraInterior.html" title="SetCameraInterior">setCameraInterior</a></li>
+<li><a href="../SetCameraMatrix.html" title="SetCameraMatrix">setCameraMatrix</a></li>
+<li><a href="../SetCameraShakeLevel.html" title="SetCameraShakeLevel">setCameraShakeLevel</a></li>
+<li><a href="../SetCameraTarget.html" title="SetCameraTarget">setCameraTarget</a></li>
+<li><a href="../SetCameraViewMode.html" title="SetCameraViewMode">setCameraViewMode</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.82.D0.B5.D0.BB.D0.B0_.D0.B8_.D0.BE.D0.B4.D0.B5.D0.B6.D0.B4.D1.8B">Функции тела и одежды</span></h2>
+<ul><li><a href="../AddPedClothes.html" title="AddPedClothes">addPedClothes</a></li>
+<li><a href="../GetBodyPartName.html" title="GetBodyPartName">getBodyPartName</a></li>
+<li><a href="../GetClothesByTypeIndex.html" title="GetClothesByTypeIndex">getClothesByTypeIndex</a></li>
+<li><a href="../GetClothesTypeName.html" title="GetClothesTypeName">getClothesTypeName</a></li>
+<li><a href="../GetPedClothes.html" title="GetPedClothes">getPedClothes</a></li>
+<li><a href="../GetTypeIndexFromClothes.html" title="GetTypeIndexFromClothes">getTypeIndexFromClothes</a></li>
+<li><a href="../RemovePedClothes.html" title="RemovePedClothes">removePedClothes</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BA.D0.BE.D0.BB.D0.BB.D0.B8.D0.B7.D0.B8.D0.BE.D0.BD.D0.BD.D0.BE.D0.B9_.D1.84.D0.BE.D1.80.D0.BC.D1.8B_.28colshape.29">Функции коллизионной формы (colshape)</span></h2>
+<ul><li><a href="../CreateColCircle.html" title="CreateColCircle">createColCircle</a></li>
+<li><a href="../CreateColCuboid.html" title="CreateColCuboid">createColCuboid</a></li>
+<li><a href="../CreateColPolygon.html" title="CreateColPolygon">createColPolygon</a></li>
+<li><a href="../CreateColRectangle.html" title="CreateColRectangle">createColRectangle</a></li>
+<li><a href="../CreateColSphere.html" title="CreateColSphere">createColSphere</a></li>
+<li><a href="../CreateColTube.html" title="CreateColTube">createColTube</a></li></ul>
+<ul><li><a href="../GetColShapeType.html" title="GetColShapeType">getColShapeType</a></li>
+<li><a href="../GetElementColShape.html" title="GetElementColShape">getElementColShape</a></li>
+<li><a href="../GetElementsWithinColShape.html" title="GetElementsWithinColShape">getElementsWithinColShape</a></li>
+<li><a href="../IsElementWithinColShape.html" title="IsElementWithinColShape">isElementWithinColShape</a></li></ul>
+<ul><li><a href="../IsInsideColShape.html" title="IsInsideColShape">isInsideColShape</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BA.D1.83.D1.80.D1.81.D0.BE.D1.80.D0.B0">Функции курсора</span></h2>
+<ul><li><a href="../GetCursorAlpha.html" title="GetCursorAlpha">getCursorAlpha</a></li>
+<li><a href="../GetCursorPosition.html" title="GetCursorPosition">getCursorPosition</a></li>
+<li><a href="../IsCursorShowing.html" title="IsCursorShowing">isCursorShowing</a></li>
+<li><a href="../SetCursorAlpha.html" title="SetCursorAlpha">setCursorAlpha</a></li>
+<li><a href="../SetCursorPosition.html" title="SetCursorPosition">setCursorPosition</a></li>
+<li><a href="../ShowCursor.html" title="ShowCursor">showCursor</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BE.D1.82.D1.80.D0.B8.D1.81.D0.BE.D0.B2.D0.BA.D0.B8">Функции отрисовки</span></h2>
+<ul><li><a href="../DxConvertPixels.html" title="DxConvertPixels">dxConvertPixels</a></li>
+<li><a href="../DxCreateFont.html" title="DxCreateFont">dxCreateFont</a></li>
+<li><a href="../DxCreateRenderTarget.html" title="DxCreateRenderTarget">dxCreateRenderTarget</a></li>
+<li><a href="../DxCreateScreenSource.html" title="DxCreateScreenSource">dxCreateScreenSource</a></li>
+<li><a href="../DxCreateShader.html" title="DxCreateShader">dxCreateShader</a></li>
+<li><a href="../DxCreateTexture.html" title="DxCreateTexture">dxCreateTexture</a></li></ul>
+<ul><li><a href="../DxDrawCircle.html" title="DxDrawCircle">dxDrawCircle</a></li>
+<li><a href="../DxDrawImage.html" title="DxDrawImage">dxDrawImage</a></li>
+<li><a href="../DxDrawImageSection.html" title="DxDrawImageSection">dxDrawImageSection</a></li>
+<li><a href="../DxDrawLine.html" title="DxDrawLine">dxDrawLine</a></li>
+<li><a href="../DxDrawLine3D.html" title="DxDrawLine3D">dxDrawLine3D</a></li>
+<li><a href="../DxDrawMaterialLine3D.html" title="DxDrawMaterialLine3D">dxDrawMaterialLine3D</a></li></ul>
+<div style="font-weight: bold;background:black;color:white;padding:2px; padding-left:8px;">FROM VERSION 1.5.6 <a rel="nofollow" class="external text" href="https://buildinfo.mtasa.com/?Author=&amp;Branch=&amp;Revision=14203"><span style="color: #FFFFFF;">r14203</span></a> ONWARDS</div><div style="border: 2px solid black;padding: 3px;">
+<ul><li><a href="../DxDrawMaterialPrimitive.html" title="DxDrawMaterialPrimitive">dxDrawMaterialPrimitive</a></li>
+<li><a href="../DxDrawPrimitive.html" title="DxDrawPrimitive">dxDrawPrimitive</a></li></ul>
+ </div>
+<ul><li><a href="../DxDrawMaterialSectionLine3D.html" title="DxDrawMaterialSectionLine3D">dxDrawMaterialSectionLine3D</a></li>
+<li><a href="../DxDrawRectangle.html" title="DxDrawRectangle">dxDrawRectangle</a></li>
+<li><a href="../DxDrawText.html" title="DxDrawText">dxDrawText</a></li>
+<li><a href="../DxGetBlendMode.html" title="DxGetBlendMode">dxGetBlendMode</a></li>
+<li><a href="../DxGetFontHeight.html" title="DxGetFontHeight">dxGetFontHeight</a></li>
+<li><a href="../DxGetMaterialSize.html" title="DxGetMaterialSize">dxGetMaterialSize</a></li>
+<li><a href="../DxGetPixelColor.html" title="DxGetPixelColor">dxGetPixelColor</a></li>
+<li><a href="../DxGetPixelsSize.html" title="DxGetPixelsSize">dxGetPixelsSize</a></li>
+<li><a href="../DxGetPixelsFormat.html" title="DxGetPixelsFormat">dxGetPixelsFormat</a></li>
+<li><a href="../DxGetStatus.html" title="DxGetStatus">dxGetStatus</a></li>
+<li><a href="../DxGetTextWidth.html" title="DxGetTextWidth">dxGetTextWidth</a></li>
+<li><a href="../DxGetTexturePixels.html" title="DxGetTexturePixels">dxGetTexturePixels</a></li>
+<li><a href="http://wiki.localhost/index.php?title=DxIsAspectRatioAdjustmentEnabled&amp;action=edit&amp;redlink=1" class="new" title="DxIsAspectRatioAdjustmentEnabled (page does not exist)">dxIsAspectRatioAdjustmentEnabled</a></li>
+<li><a href="../DxSetAspectRatioAdjustmentEnabled.html" title="DxSetAspectRatioAdjustmentEnabled">dxSetAspectRatioAdjustmentEnabled</a></li>
+<li><a href="../DxSetBlendMode.html" title="DxSetBlendMode">dxSetBlendMode</a></li>
+<li><a href="../DxSetPixelColor.html" title="DxSetPixelColor">dxSetPixelColor</a></li>
+<li><a href="../DxSetRenderTarget.html" title="DxSetRenderTarget">dxSetRenderTarget</a></li>
+<li><a href="../DxSetShaderValue.html" title="DxSetShaderValue">dxSetShaderValue</a></li>
+<li><a href="../DxSetShaderTessellation.html" title="DxSetShaderTessellation">dxSetShaderTessellation</a></li>
+<li><a href="../DxSetShaderTransform.html" title="DxSetShaderTransform">dxSetShaderTransform</a></li>
+<li><a href="../DxSetTestMode.html" title="DxSetTestMode">dxSetTestMode</a></li>
+<li><a href="../DxSetTextureEdge.html" title="DxSetTextureEdge">dxSetTextureEdge</a></li>
+<li><a href="../DxSetTexturePixels.html" title="DxSetTexturePixels">dxSetTexturePixels</a></li>
+<li><a href="../DxUpdateScreenSource.html" title="DxUpdateScreenSource">dxUpdateScreenSource</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.8D.D1.84.D1.84.D0.B5.D0.BA.D1.82.D0.B0">Функции эффекта</span></h2>
+<ul><li><a href="../CreateEffect.html" title="CreateEffect">createEffect</a></li>
+<li><a href="../FxAddBlood.html" title="FxAddBlood">fxAddBlood</a></li>
+<li><a href="../FxAddBulletImpact.html" title="FxAddBulletImpact">fxAddBulletImpact</a></li>
+<li><a href="../FxAddBulletSplash.html" title="FxAddBulletSplash">fxAddBulletSplash</a></li>
+<li><a href="../FxAddDebris.html" title="FxAddDebris">fxAddDebris</a></li>
+<li><a href="../FxAddFootSplash.html" title="FxAddFootSplash">fxAddFootSplash</a></li>
+<li><a href="../FxAddGlass.html" title="FxAddGlass">fxAddGlass</a></li>
+<li><a href="../FxAddGunshot.html" title="FxAddGunshot">fxAddGunshot</a></li>
+<li><a href="../FxAddPunchImpact.html" title="FxAddPunchImpact">fxAddPunchImpact</a></li>
+<li><a href="../FxAddSparks.html" title="FxAddSparks">fxAddSparks</a></li>
+<li><a href="../FxAddTankFire.html" title="FxAddTankFire">fxAddTankFire</a></li>
+<li><a href="../FxAddTyreBurst.html" title="FxAddTyreBurst">fxAddTyreBurst</a></li>
+<li><a href="../FxAddWaterHydrant.html" title="FxAddWaterHydrant">fxAddWaterHydrant</a></li>
+<li><a href="../FxAddWaterSplash.html" title="FxAddWaterSplash">fxAddWaterSplash</a></li>
+<li><a href="../FxAddWood.html" title="FxAddWood">fxAddWood</a></li>
+<li><a href="../GetEffectDensity.html" title="GetEffectDensity">getEffectDensity</a></li>
+<li><a href="../GetEffectSpeed.html" title="GetEffectSpeed">getEffectSpeed</a></li>
+<li><a href="../SetEffectDensity.html" title="SetEffectDensity">setEffectDensity</a></li>
+<li><a href="../SetEffectSpeed.html" title="SetEffectSpeed">setEffectSpeed</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.8D.D0.BB.D0.B5.D0.BC.D0.B5.D0.BD.D1.82.D0.B0">Функции элемента</span></h2>
+<ul><li><a href="../AttachElements.html" title="AttachElements">attachElements</a></li>
+<li><a href="../CreateElement.html" title="CreateElement">createElement</a></li>
+<li><a href="../DestroyElement.html" title="DestroyElement">destroyElement</a></li>
+<li><a href="../DetachElements.html" title="DetachElements">detachElements</a></li>
+<li><a href="../GetAttachedElements.html" title="GetAttachedElements">getAttachedElements</a></li>
+<li><a href="../GetElementAlpha.html" title="GetElementAlpha">getElementAlpha</a></li>
+<li><a href="../GetElementAttachedOffsets.html" title="GetElementAttachedOffsets">getElementAttachedOffsets</a></li>
+<li><a href="../GetElementAttachedTo.html" title="GetElementAttachedTo">getElementAttachedTo</a></li>
+<li><a href="../GetElementBoundingBox.html" title="GetElementBoundingBox">getElementBoundingBox</a></li>
+<li><a href="../GetElementByID.html" title="GetElementByID">getElementByID</a></li>
+<li><a href="../GetElementChild.html" title="GetElementChild">getElementChild</a></li>
+<li><a href="../GetElementChildren.html" title="GetElementChildren">getElementChildren</a></li>
+<li><a href="../GetElementChildrenCount.html" title="GetElementChildrenCount">getElementChildrenCount</a></li>
+<li><a href="../GetElementColShape.html" title="GetElementColShape">getElementColShape</a></li>
+<li><a href="../GetElementCollisionsEnabled.html" title="GetElementCollisionsEnabled">getElementCollisionsEnabled</a></li>
+<li><a href="../GetElementData.html" title="GetElementData">getElementData</a></li>
+<li><a href="../GetElementDimension.html" title="GetElementDimension">getElementDimension</a></li>
+<li><a href="../GetElementDistanceFromCentreOfMassToBaseOfModel.html" title="GetElementDistanceFromCentreOfMassToBaseOfModel">getElementDistanceFromCentreOfMassToBaseOfModel</a></li>
+<li><a href="../GetElementHealth.html" title="GetElementHealth">getElementHealth</a></li>
+<li><a href="../GetElementID.html" title="GetElementID">getElementID</a></li>
+<li><a href="../GetElementInterior.html" title="GetElementInterior">getElementInterior</a></li>
+<li><a href="../GetElementMatrix.html" title="GetElementMatrix">getElementMatrix</a></li>
+<li><a href="../GetElementModel.html" title="GetElementModel">getElementModel</a></li>
+<li><a href="../GetElementParent.html" title="GetElementParent">getElementParent</a></li>
+<li><a href="../GetElementPosition.html" title="GetElementPosition">getElementPosition</a></li>
+<li><a href="../GetElementRadius.html" title="GetElementRadius">getElementRadius</a></li>
+<li><a href="../GetElementRotation.html" title="GetElementRotation">getElementRotation</a></li>
+<li><a href="../GetElementType.html" title="GetElementType">getElementType</a></li>
+<li><a href="../GetElementVelocity.html" title="GetElementVelocity">getElementVelocity</a></li>
+<li><a href="../GetElementsByType.html" title="GetElementsByType">getElementsByType</a></li>
+<li><a href="../GetElementsWithinColShape.html" title="GetElementsWithinColShape">getElementsWithinColShape</a></li></ul>
+<ul><li><a href="../GetElementsWithinRange.html" title="GetElementsWithinRange">getElementsWithinRange</a></li>
+<li><a href="../GetLowLODElement.html" title="GetLowLODElement">getLowLODElement</a></li>
+<li><a href="../GetRootElement.html" title="GetRootElement">getRootElement</a></li>
+<li><a href="../IsElement.html" title="IsElement">isElement</a></li>
+<li><a href="../IsElementAttached.html" title="IsElementAttached">isElementAttached</a></li>
+<li><a href="../IsElementCallPropagationEnabled.html" title="IsElementCallPropagationEnabled">isElementCallPropagationEnabled</a></li>
+<li><a href="../IsElementCollidableWith.html" title="IsElementCollidableWith">isElementCollidableWith</a></li>
+<li><a href="../IsElementDoubleSided.html" title="IsElementDoubleSided">isElementDoubleSided</a></li>
+<li><a href="../IsElementFrozen.html" title="IsElementFrozen">isElementFrozen</a></li>
+<li><a href="../IsElementInWater.html" title="IsElementInWater">isElementInWater</a></li>
+<li><a href="../IsElementLocal.html" title="IsElementLocal">isElementLocal</a></li>
+<li><a href="../IsElementLowLOD.html" title="IsElementLowLOD">isElementLowLOD</a></li>
+<li><a href="../IsElementOnScreen.html" title="IsElementOnScreen">isElementOnScreen</a></li>
+<li><a href="../IsElementStreamable.html" title="IsElementStreamable">isElementStreamable</a></li>
+<li><a href="../IsElementStreamedIn.html" title="IsElementStreamedIn">isElementStreamedIn</a></li>
+<li><a href="../IsElementSyncer.html" title="IsElementSyncer">isElementSyncer</a></li>
+<li><a href="../IsElementWaitingForGroundToLoad.html" title="IsElementWaitingForGroundToLoad">isElementWaitingForGroundToLoad</a></li>
+<li><a href="../IsElementWithinColShape.html" title="IsElementWithinColShape">isElementWithinColShape</a></li>
+<li><a href="../SetElementAlpha.html" title="SetElementAlpha">setElementAlpha</a></li></ul>
+<ul><li> <a href="../SetElementAngularVelocity.html" title="SetElementAngularVelocity">setElementAngularVelocity</a></li>
+<li> <a href="../GetElementAngularVelocity.html" title="GetElementAngularVelocity">getElementAngularVelocity</a></li>
+<li><a href="../SetElementAttachedOffsets.html" title="SetElementAttachedOffsets">setElementAttachedOffsets</a></li>
+<li><a href="../SetElementCallPropagationEnabled.html" title="SetElementCallPropagationEnabled">setElementCallPropagationEnabled</a></li>
+<li><a href="../SetElementCollidableWith.html" title="SetElementCollidableWith">setElementCollidableWith</a></li>
+<li><a href="../SetElementCollisionsEnabled.html" title="SetElementCollisionsEnabled">setElementCollisionsEnabled</a></li>
+<li><a href="../SetElementData.html" title="SetElementData">setElementData</a></li>
+<li><a href="../SetElementDimension.html" title="SetElementDimension">setElementDimension</a></li>
+<li><a href="../SetElementDoubleSided.html" title="SetElementDoubleSided">setElementDoubleSided</a></li>
+<li><a href="../SetElementFrozen.html" title="SetElementFrozen">setElementFrozen</a></li>
+<li><a href="../SetElementHealth.html" title="SetElementHealth">setElementHealth</a></li>
+<li><a href="../SetElementID.html" title="SetElementID">setElementID</a></li>
+<li><a href="../SetElementInterior.html" title="SetElementInterior">setElementInterior</a></li>
+<li><a href="../SetElementMatrix.html" title="SetElementMatrix">setElementMatrix</a></li>
+<li><a href="../SetElementModel.html" title="SetElementModel">setElementModel</a></li>
+<li><a href="../SetElementParent.html" title="SetElementParent">setElementParent</a></li>
+<li><a href="../SetElementPosition.html" title="SetElementPosition">setElementPosition</a></li>
+<li><a href="../SetElementRotation.html" title="SetElementRotation">setElementRotation</a></li>
+<li><a href="../SetElementStreamable.html" title="SetElementStreamable">setElementStreamable</a></li>
+<li><a href="../SetElementVelocity.html" title="SetElementVelocity">setElementVelocity</a></li>
+<li><a href="../SetLowLODElement.html" title="SetLowLODElement">setLowLODElement</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B4.D0.B2.D0.B8.D0.B6.D0.BA.D0.B0">Функции движка</span></h2>
+<ul><li> <a href="../EngineApplyShaderToWorldTexture.html" title="EngineApplyShaderToWorldTexture">engineApplyShaderToWorldTexture</a></li>
+<li> <a href="../EngineGetModelIDFromName.html" title="EngineGetModelIDFromName">engineGetModelIDFromName</a></li>
+<li> <a href="../EngineGetModelLODDistance.html" title="EngineGetModelLODDistance">engineGetModelLODDistance</a></li>
+<li> <a href="../EngineGetModelNameFromID.html" title="EngineGetModelNameFromID">engineGetModelNameFromID</a></li>
+<li> <a href="../EngineGetModelTextureNames.html" title="EngineGetModelTextureNames">engineGetModelTextureNames</a></li>
+<li> <a href="../EngineGetVisibleTextureNames.html" title="EngineGetVisibleTextureNames">engineGetVisibleTextureNames</a></li>
+<li> <a href="../EngineImportTXD.html" title="EngineImportTXD">engineImportTXD</a></li>
+<li> <a href="../EngineLoadCOL.html" title="EngineLoadCOL">engineLoadCOL</a></li>
+<li> <a href="../EngineLoadDFF.html" title="EngineLoadDFF">engineLoadDFF</a></li></ul>
+<ul><li> <a href="../EngineLoadIFP.html" title="EngineLoadIFP">engineLoadIFP</a></li>
+<li> <a href="../EngineLoadTXD.html" title="EngineLoadTXD">engineLoadTXD</a></li>
+<li> <a href="../EngineRemoveShaderFromWorldTexture.html" title="EngineRemoveShaderFromWorldTexture">engineRemoveShaderFromWorldTexture</a></li></ul>
+<ul><li> <a href="../EngineReplaceAnimation.html" title="EngineReplaceAnimation">engineReplaceAnimation</a></li>
+<li> <a href="../EngineReplaceCOL.html" title="EngineReplaceCOL">engineReplaceCOL</a></li>
+<li> <a href="../EngineReplaceModel.html" title="EngineReplaceModel">engineReplaceModel</a></li></ul>
+<ul><li> <a href="../EngineRestoreAnimation.html" title="EngineRestoreAnimation">engineRestoreAnimation</a></li>
+<li> <a href="../EngineRestoreCOL.html" title="EngineRestoreCOL">engineRestoreCOL</a></li>
+<li> <a href="../EngineRestoreModel.html" title="EngineRestoreModel">engineRestoreModel</a></li>
+<li> <a href="../EngineSetAsynchronousLoading.html" title="EngineSetAsynchronousLoading">engineSetAsynchronousLoading</a></li>
+<li> <a href="../EngineSetModelLODDistance.html" title="EngineSetModelLODDistance">engineSetModelLODDistance</a></li></ul>
+<div style="font-weight: bold;background:black;color:white;padding:2px; padding-left:8px;">FROM VERSION 1.5.6 <a rel="nofollow" class="external text" href="https://buildinfo.mtasa.com/?Author=&amp;Branch=&amp;Revision=16365"><span style="color: #FFFFFF;">r16365</span></a> ONWARDS</div><div style="border: 2px solid black;padding: 3px;">
+<ul><li> <a href="../EngineSetSurfaceProperties.html" title="EngineSetSurfaceProperties">engineSetSurfaceProperties</a></li>
+<li> <a href="../EngineGetSurfaceProperties.html" title="EngineGetSurfaceProperties">engineGetSurfaceProperties</a></li>
+<li> <a href="../EngineResetSurfaceProperties.html" title="EngineResetSurfaceProperties">engineResetSurfaceProperties</a></li></ul>
+ </div>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.81.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F">Функции события</span></h2>
+<ul><li><a href="../AddEvent.html" title="AddEvent">addEvent</a></li>
+<li><a href="../AddEventHandler.html" title="AddEventHandler">addEventHandler</a></li>
+<li><a href="../CancelEvent.html" title="CancelEvent">cancelEvent</a></li>
+<li><a href="../CancelLatentEvent.html" title="CancelLatentEvent">cancelLatentEvent</a></li>
+<li><a href="../GetEventHandlers.html" title="GetEventHandlers">getEventHandlers</a></li>
+<li><a href="../GetLatentEventHandles.html" title="GetLatentEventHandles">getLatentEventHandles</a></li>
+<li><a href="../GetLatentEventStatus.html" title="GetLatentEventStatus">getLatentEventStatus</a></li>
+<li><a href="../RemoveEventHandler.html" title="RemoveEventHandler">removeEventHandler</a></li>
+<li><a href="../TriggerEvent.html" title="TriggerEvent">triggerEvent</a></li>
+<li><a href="../TriggerLatentServerEvent.html" title="TriggerLatentServerEvent">triggerLatentServerEvent</a></li>
+<li><a href="../TriggerServerEvent.html" title="TriggerServerEvent">triggerServerEvent</a></li>
+<li><a href="../WasEventCancelled.html" title="WasEventCancelled">wasEventCancelled</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B2.D0.B7.D1.80.D1.8B.D0.B2.D0.B0">Функции взрыва</span></h2>
+<ul><li> <a href="../CreateExplosion.html" title="CreateExplosion">createExplosion</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.84.D0.B0.D0.B9.D0.BB.D0.B0">Функции файла</span></h2>
+<ul><li><a href="../FileClose.html" title="FileClose">fileClose</a></li>
+<li><a href="../FileCopy.html" title="FileCopy">fileCopy</a></li>
+<li><a href="../FileCreate.html" title="FileCreate">fileCreate</a></li>
+<li><a href="../FileDelete.html" title="FileDelete">fileDelete</a></li>
+<li><a href="../FileExists.html" title="FileExists">fileExists</a></li>
+<li><a href="../FileFlush.html" title="FileFlush">fileFlush</a></li></ul>
+<ul><li><a href="../FileGetPath.html" title="FileGetPath">fileGetPath</a></li>
+<li><a href="../FileGetPos.html" title="FileGetPos">fileGetPos</a></li>
+<li><a href="../FileGetSize.html" title="FileGetSize">fileGetSize</a></li>
+<li><a href="../FileIsEOF.html" title="FileIsEOF">fileIsEOF</a></li>
+<li><a href="../FileOpen.html" title="FileOpen">fileOpen</a></li>
+<li><a href="../FileRead.html" title="FileRead">fileRead</a></li>
+<li><a href="../FileRename.html" title="FileRename">fileRename</a></li>
+<li><a href="../FileSetPos.html" title="FileSetPos">fileSetPos</a></li>
+<li><a href="../FileWrite.html" title="FileWrite">fileWrite</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BE.D0.B3.D0.BD.D1.8F">Функции огня</span></h2>
+<ul><li><a href="../CreateFire.html" title="CreateFire">createFire</a></li></ul>
+<ul><li><a href="../ExtinguishFire.html" title="ExtinguishFire">extinguishFire</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B3.D1.80.D0.B0.D1.84.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.BE.D0.B3.D0.BE_.D0.B8.D0.BD.D1.82.D0.B5.D1.80.D1.84.D0.B5.D0.B9.D1.81.D0.B0_.D0.BF.D0.BE.D0.BB.D1.8C.D0.B7.D0.BE.D0.B2.D0.B0.D1.82.D0.B5.D0.BB.D1.8F_.28GUI.29_2">Функции графического интерфейса пользователя (GUI)</span></h2>
+<ul><li> <a href="../GetChatboxLayout.html" title="GetChatboxLayout">getChatboxLayout</a></li>
+<li> <a href="../GuiBringToFront.html" title="GuiBringToFront">guiBringToFront</a></li>
+<li> <a href="../GuiCreateFont.html" title="GuiCreateFont">guiCreateFont</a></li>
+<li> <a href="../GuiGetAlpha.html" title="GuiGetAlpha">guiGetAlpha</a></li>
+<li> <a href="../GuiGetEnabled.html" title="GuiGetEnabled">guiGetEnabled</a></li>
+<li> <a href="../GuiGetFont.html" title="GuiGetFont">guiGetFont</a></li>
+<li> <a href="../GuiGetInputEnabled.html" title="GuiGetInputEnabled">guiGetInputEnabled</a></li>
+<li> <a href="../GuiGetInputMode.html" title="GuiGetInputMode">guiGetInputMode</a></li>
+<li> <a href="../GuiGetPosition.html" title="GuiGetPosition">guiGetPosition</a></li>
+<li> <a href="../GuiGetProperties.html" title="GuiGetProperties">guiGetProperties</a></li>
+<li> <a href="../GuiGetProperty.html" title="GuiGetProperty">guiGetProperty</a></li>
+<li> <a href="../GuiGetScreenSize.html" title="GuiGetScreenSize">guiGetScreenSize</a></li>
+<li> <a href="../GuiGetSize.html" title="GuiGetSize">guiGetSize</a></li>
+<li> <a href="../GuiGetText.html" title="GuiGetText">guiGetText</a></li>
+<li> <a href="../GuiGetVisible.html" title="GuiGetVisible">guiGetVisible</a></li>
+<li> <a href="../GuiMoveToBack.html" title="GuiMoveToBack">guiMoveToBack</a></li>
+<li> <a href="../GuiSetAlpha.html" title="GuiSetAlpha">guiSetAlpha</a></li>
+<li> <a href="../GuiSetEnabled.html" title="GuiSetEnabled">guiSetEnabled</a></li>
+<li> <a href="../GuiSetFont.html" title="GuiSetFont">guiSetFont</a></li>
+<li> <a href="../GuiSetInputEnabled.html" title="GuiSetInputEnabled">guiSetInputEnabled</a></li>
+<li> <a href="../GuiSetInputMode.html" title="GuiSetInputMode">guiSetInputMode</a></li>
+<li> <a href="../GuiSetPosition.html" title="GuiSetPosition">guiSetPosition</a></li>
+<li> <a href="../GuiSetProperty.html" title="GuiSetProperty">guiSetProperty</a></li>
+<li> <a href="../GuiSetSize.html" title="GuiSetSize">guiSetSize</a></li>
+<li> <a href="../GuiSetText.html" title="GuiSetText">guiSetText</a></li>
+<li> <a href="../GuiSetVisible.html" title="GuiSetVisible">guiSetVisible</a></li>
+<li> <a href="../IsChatBoxInputActive.html" title="IsChatBoxInputActive">isChatBoxInputActive</a></li>
+<li> <a href="../IsConsoleActive.html" title="IsConsoleActive">isConsoleActive</a></li>
+<li> <a href="../IsDebugViewActive.html" title="IsDebugViewActive">isDebugViewActive</a></li>
+<li> <a href="../IsMainMenuActive.html" title="IsMainMenuActive">isMainMenuActive</a></li>
+<li> <a href="../IsMTAWindowActive.html" title="IsMTAWindowActive">isMTAWindowActive</a></li>
+<li> <a href="../IsTransferBoxActive.html" title="IsTransferBoxActive">isTransferBoxActive</a></li></ul>
+<h3><span class="mw-headline" id=".D0.9A.D0.BD.D0.BE.D0.BF.D0.BA.D0.B8">Кнопки</span></h3>
+<ul><li> <a href="guiCreateButton.html" title="RU/guiCreateButton">guiCreateButton</a></li></ul>
+<h3><span class="mw-headline" id=".D0.A4.D0.BB.D0.B0.D0.B6.D0.BA.D0.B8">Флажки</span></h3>
+<ul><li> <a href="../GuiCheckBoxGetSelected.html" title="GuiCheckBoxGetSelected">guiCheckBoxGetSelected</a></li>
+<li> <a href="../GuiCheckBoxSetSelected.html" title="GuiCheckBoxSetSelected">guiCheckBoxSetSelected</a></li>
+<li> <a href="../GuiCreateCheckBox.html" title="GuiCreateCheckBox">guiCreateCheckBox</a></li></ul>
+<h3><span class="mw-headline" id=".D0.A1.D0.BF.D0.B8.D1.81.D0.BA.D0.B8">Списки</span></h3>
+<ul><li> <a href="../GuiCreateComboBox.html" title="GuiCreateComboBox">guiCreateComboBox</a></li>
+<li> <a href="../GuiComboBoxAddItem.html" title="GuiComboBoxAddItem">guiComboBoxAddItem</a></li>
+<li> <a href="../GuiComboBoxClear.html" title="GuiComboBoxClear">guiComboBoxClear</a></li>
+<li> <a href="../GuiComboBoxGetItemText.html" title="GuiComboBoxGetItemText">guiComboBoxGetItemText</a></li>
+<li> <a href="../GuiComboBoxSetItemText.html" title="GuiComboBoxSetItemText">guiComboBoxSetItemText</a></li>
+<li> <a href="../GuiComboBoxRemoveItem.html" title="GuiComboBoxRemoveItem">guiComboBoxRemoveItem</a></li>
+<li> <a href="../GuiComboBoxGetSelected.html" title="GuiComboBoxGetSelected">guiComboBoxGetSelected</a></li>
+<li> <a href="../GuiComboBoxSetSelected.html" title="GuiComboBoxSetSelected">guiComboBoxSetSelected</a></li></ul>
+<h3><span class="mw-headline" id=".D0.A0.D0.B5.D0.B4.D0.B0.D0.BA.D1.82.D0.B8.D1.80.D1.83.D0.B5.D0.BC.D1.8B.D0.B5_.D0.BF.D0.BE.D0.BB.D1.8F">Редактируемые поля</span></h3>
+<ul><li> <a href="guiCreateEdit.html" title="RU/guiCreateEdit">guiCreateEdit</a></li>
+<li> <a href="guiEditSetMasked.html" title="RU/guiEditSetMasked">guiEditSetMasked</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/guiEditSetMaxLength&amp;action=edit&amp;redlink=1" class="new" title="RU/guiEditSetMaxLength (page does not exist)">guiEditSetMaxLength</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/guiEditSetReadOnly&amp;action=edit&amp;redlink=1" class="new" title="RU/guiEditSetReadOnly (page does not exist)">guiEditSetReadOnly</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/guiEditSetCaretIndex&amp;action=edit&amp;redlink=1" class="new" title="RU/guiEditSetCaretIndex (page does not exist)">guiEditSetCaretIndex</a></li></ul>
+<ul><li> <a href="http://wiki.localhost/index.php?title=RU/guiEditGetCaretIndex&amp;action=edit&amp;redlink=1" class="new" title="RU/guiEditGetCaretIndex (page does not exist)">guiEditGetCaretIndex</a></li></ul>
+<h3><span class="mw-headline" id=".D0.A2.D0.B0.D0.B1.D0.BB.D0.B8.D1.86.D1.8B">Таблицы</span></h3>
+<ul><li> <a href="../GuiCreateGridList.html" title="GuiCreateGridList">guiCreateGridList</a></li>
+<li> <a href="../GuiGridListAddColumn.html" title="GuiGridListAddColumn">guiGridListAddColumn</a></li>
+<li> <a href="../GuiGridListAddRow.html" title="GuiGridListAddRow">guiGridListAddRow</a></li>
+<li> <a href="../GuiGridListAutoSizeColumn.html" title="GuiGridListAutoSizeColumn">guiGridListAutoSizeColumn</a></li>
+<li> <a href="../GuiGridListClear.html" title="GuiGridListClear">guiGridListClear</a></li>
+<li> <a href="../GuiGridListGetItemData.html" title="GuiGridListGetItemData">guiGridListGetItemData</a></li>
+<li> <a href="../GuiGridListGetItemText.html" title="GuiGridListGetItemText">guiGridListGetItemText</a></li>
+<li> <a href="../GuiGridListGetRowCount.html" title="GuiGridListGetRowCount">guiGridListGetRowCount</a></li>
+<li> <a href="../GuiGridListGetSelectedItem.html" title="GuiGridListGetSelectedItem">guiGridListGetSelectedItem</a></li>
+<li> <a href="../GuiGridListInsertRowAfter.html" title="GuiGridListInsertRowAfter">guiGridListInsertRowAfter</a></li>
+<li> <a href="../GuiGridListRemoveColumn.html" title="GuiGridListRemoveColumn">guiGridListRemoveColumn</a></li>
+<li> <a href="../GuiGridListRemoveRow.html" title="GuiGridListRemoveRow">guiGridListRemoveRow</a></li>
+<li> <a href="../GuiGridListSetItemData.html" title="GuiGridListSetItemData">guiGridListSetItemData</a></li>
+<li> <a href="../GuiGridListSetItemText.html" title="GuiGridListSetItemText">guiGridListSetItemText</a></li>
+<li> <a href="../GuiGridListSetScrollBars.html" title="GuiGridListSetScrollBars">guiGridListSetScrollBars</a></li>
+<li> <a href="../GuiGridListSetSelectedItem.html" title="GuiGridListSetSelectedItem">guiGridListSetSelectedItem</a></li>
+<li> <a href="../GuiGridListSetSelectionMode.html" title="GuiGridListSetSelectionMode">guiGridListSetSelectionMode</a></li>
+<li> <a href="../GuiGridListSetSortingEnabled.html" title="GuiGridListSetSortingEnabled">guiGridListSetSortingEnabled</a></li>
+<li> <a href="../GuiGridListGetSelectedCount.html" title="GuiGridListGetSelectedCount">guiGridListGetSelectedCount</a></li>
+<li> <a href="../GuiGridListGetSelectedItems.html" title="GuiGridListGetSelectedItems">guiGridListGetSelectedItems</a></li>
+<li> <a href="../GuiGridListSetColumnWidth.html" title="GuiGridListSetColumnWidth">guiGridListSetColumnWidth</a></li>
+<li> <a href="../GuiGridListGetColumnCount.html" title="GuiGridListGetColumnCount">guiGridListGetColumnCount</a></li>
+<li> <a href="../GuiGridListGetItemColor.html" title="GuiGridListGetItemColor">guiGridListGetItemColor</a></li>
+<li> <a href="../GuiGridListSetItemColor.html" title="GuiGridListSetItemColor">guiGridListSetItemColor</a></li></ul>
+<ul><li> <a href="../GuiGridListGetColumnTitle.html" title="GuiGridListGetColumnTitle">guiGridListGetColumnTitle</a></li>
+<li> <a href="../GuiGridListSetColumnTitle.html" title="GuiGridListSetColumnTitle">guiGridListSetColumnTitle</a></li></ul>
+<ul><li> <a href="../GuiGridListGetHorizontalScrollPosition.html" title="GuiGridListGetHorizontalScrollPosition">guiGridListGetHorizontalScrollPosition</a></li>
+<li> <a href="../GuiGridListSetHorizontalScrollPosition.html" title="GuiGridListSetHorizontalScrollPosition">guiGridListSetHorizontalScrollPosition</a></li>
+<li> <a href="../GuiGridListGetVerticalScrollPosition.html" title="GuiGridListGetVerticalScrollPosition">guiGridListGetVerticalScrollPosition</a></li>
+<li> <a href="../GuiGridListSetVerticalScrollPosition.html" title="GuiGridListSetVerticalScrollPosition">guiGridListSetVerticalScrollPosition</a></li></ul>
+<h3><span class="mw-headline" id=".D0.9F.D0.B0.D0.BC.D1.8F.D1.82.D0.BA.D0.B8">Памятки</span></h3>
+<ul><li> <a href="http://wiki.localhost/index.php?title=RU/guiCreateMemo&amp;action=edit&amp;redlink=1" class="new" title="RU/guiCreateMemo (page does not exist)">RU/guiCreateMemo</a></li>
+<li> <a href="../GuiMemoSetReadOnly.html" title="GuiMemoSetReadOnly">guiMemoSetReadOnly</a></li>
+<li> <a href="../GuiMemoSetCaretIndex.html" title="GuiMemoSetCaretIndex">guiMemoSetCaretIndex</a></li></ul>
+<ul><li> <a href="../GuiMemoGetCaretIndex.html" title="GuiMemoGetCaretIndex">guiMemoGetCaretIndex</a></li></ul>
+<h3><span class="mw-headline" id=".D0.9F.D1.80.D0.BE.D0.B3.D1.80.D0.B5.D1.81.D1.81_.D0.B1.D0.B0.D1.80.D1.8B">Прогресс бары</span></h3>
+<ul><li> <a href="http://wiki.localhost/index.php?title=RU/guiCreateProgressBar&amp;action=edit&amp;redlink=1" class="new" title="RU/guiCreateProgressBar (page does not exist)">RU/guiCreateProgressBar</a></li>
+<li> <a href="../GuiProgressBarGetProgress.html" title="GuiProgressBarGetProgress">guiProgressBarGetProgress</a></li>
+<li> <a href="../GuiProgressBarSetProgress.html" title="GuiProgressBarSetProgress">guiProgressBarSetProgress</a></li></ul>
+<h3><span class="mw-headline" id=".D0.9F.D0.B5.D1.80.D0.B5.D0.BA.D0.BB.D1.8E.D1.87.D0.B0.D1.82.D0.B5.D0.BB.D0.B8">Переключатели</span></h3>
+<ul><li> <a href="http://wiki.localhost/index.php?title=RU/guiCreateRadioButton&amp;action=edit&amp;redlink=1" class="new" title="RU/guiCreateRadioButton (page does not exist)">RU/guiCreateRadioButton</a></li>
+<li> <a href="../GuiRadioButtonGetSelected.html" title="GuiRadioButtonGetSelected">guiRadioButtonGetSelected</a></li>
+<li> <a href="../GuiRadioButtonSetSelected.html" title="GuiRadioButtonSetSelected">guiRadioButtonSetSelected</a></li></ul>
+<h3><span class="mw-headline" id=".D0.9F.D0.BE.D0.BB.D0.BE.D1.81.D1.8B_.D0.BF.D1.80.D0.BE.D0.BA.D1.80.D1.83.D1.82.D0.BA.D0.B8">Полосы прокрутки</span></h3>
+<ul><li> <a href="http://wiki.localhost/index.php?title=RU/guiCreateScrollBar&amp;action=edit&amp;redlink=1" class="new" title="RU/guiCreateScrollBar (page does not exist)">guiCreateScrollBar</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/guiScrollBarGetScrollPosition&amp;action=edit&amp;redlink=1" class="new" title="RU/guiScrollBarGetScrollPosition (page does not exist)">guiScrollBarGetScrollPosition</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/guiScrollBarSetScrollPosition&amp;action=edit&amp;redlink=1" class="new" title="RU/guiScrollBarSetScrollPosition (page does not exist)">guiScrollBarSetScrollPosition</a></li></ul>
+<h3><span class="mw-headline" id=".D0.9F.D0.B0.D0.BD.D0.B5.D0.BB.D0.B8_.D0.BF.D1.80.D0.BE.D0.BA.D1.80.D1.83.D1.82.D0.BA.D0.B8">Панели прокрутки</span></h3>
+<ul><li> <a href="http://wiki.localhost/index.php?title=RU/guiCreateScrollPane&amp;action=edit&amp;redlink=1" class="new" title="RU/guiCreateScrollPane (page does not exist)">RU/guiCreateScrollPane</a></li>
+<li> <a href="../GuiScrollPaneGetHorizontalScrollPosition.html" title="GuiScrollPaneGetHorizontalScrollPosition">guiScrollPaneGetHorizontalScrollPosition</a></li>
+<li> <a href="../GuiScrollPaneGetVerticalScrollPosition.html" title="GuiScrollPaneGetVerticalScrollPosition">guiScrollPaneGetVerticalScrollPosition</a></li>
+<li> <a href="../GuiScrollPaneSetHorizontalScrollPosition.html" title="GuiScrollPaneSetHorizontalScrollPosition">guiScrollPaneSetHorizontalScrollPosition</a></li>
+<li> <a href="../GuiScrollPaneSetScrollBars.html" title="GuiScrollPaneSetScrollBars">guiScrollPaneSetScrollBars</a></li>
+<li> <a href="../GuiScrollPaneSetVerticalScrollPosition.html" title="GuiScrollPaneSetVerticalScrollPosition">guiScrollPaneSetVerticalScrollPosition</a></li></ul>
+<h3><span class="mw-headline" id=".D0.A1.D1.82.D0.B0.D1.82.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.B8.D0.B5_.D0.B8.D0.B7.D0.BE.D0.B1.D1.80.D0.B0.D0.B6.D0.B5.D0.BD.D0.B8.D1.8F">Статические изображения</span></h3>
+<ul><li> <a href="http://wiki.localhost/index.php?title=RU/guiCreateStaticImage&amp;action=edit&amp;redlink=1" class="new" title="RU/guiCreateStaticImage (page does not exist)">RU/guiCreateStaticImage</a></li>
+<li> <a href="../GuiStaticImageGetNativeSize.html" title="GuiStaticImageGetNativeSize">guiStaticImageGetNativeSize</a></li>
+<li> <a href="../GuiStaticImageLoadImage.html" title="GuiStaticImageLoadImage">guiStaticImageLoadImage</a></li></ul>
+<h3><span class="mw-headline" id=".D0.9F.D0.B0.D0.BD.D0.B5.D0.BB.D0.B8_.D0.B2.D0.BA.D0.BB.D0.B0.D0.B4.D0.BE.D0.BA">Панели вкладок</span></h3>
+<ul><li> <a href="http://wiki.localhost/index.php?title=RU/guiCreateTabPanel&amp;action=edit&amp;redlink=1" class="new" title="RU/guiCreateTabPanel (page does not exist)">RU/guiCreateTabPanel</a></li>
+<li> <a href="../GuiGetSelectedTab.html" title="GuiGetSelectedTab">guiGetSelectedTab</a></li>
+<li> <a href="../GuiSetSelectedTab.html" title="GuiSetSelectedTab">guiSetSelectedTab</a></li></ul>
+<h3><span class="mw-headline" id=".D0.92.D0.BA.D0.BB.D0.B0.D0.B4.D0.BA.D0.B8">Вкладки</span></h3>
+<ul><li> <a href="http://wiki.localhost/index.php?title=RU/guiCreateTab&amp;action=edit&amp;redlink=1" class="new" title="RU/guiCreateTab (page does not exist)">guiCreateTab</a></li>
+<li> <a href="../GuiDeleteTab.html" title="GuiDeleteTab">guiDeleteTab</a></li></ul>
+<h3><span class="mw-headline" id=".D0.A2.D0.B5.D0.BA.D1.81.D1.82.D0.BE.D0.B2.D1.8B.D0.B5_.D0.BC.D0.B5.D1.82.D0.BA.D0.B8">Текстовые метки</span></h3>
+<ul><li> <a href="guiCreateLabel.html" title="RU/guiCreateLabel">guiCreateLabel</a></li>
+<li> <a href="../GuiLabelGetFontHeight.html" title="GuiLabelGetFontHeight">guiLabelGetFontHeight</a></li>
+<li> <a href="../GuiLabelGetTextExtent.html" title="GuiLabelGetTextExtent">guiLabelGetTextExtent</a></li>
+<li> <a href="../GuiLabelSetColor.html" title="GuiLabelSetColor">guiLabelSetColor</a></li>
+<li> <a href="../GuiLabelSetHorizontalAlign.html" title="GuiLabelSetHorizontalAlign">guiLabelSetHorizontalAlign</a></li>
+<li> <a href="../GuiLabelSetVerticalAlign.html" title="GuiLabelSetVerticalAlign">guiLabelSetVerticalAlign</a></li></ul>
+<ul><li> <a href="../GuiLabelGetColor.html" title="GuiLabelGetColor">guiLabelGetColor</a></li></ul>
+<h3><span class="mw-headline" id=".D0.9E.D0.BA.D0.BD.D0.B0">Окна</span></h3>
+<ul><li> <a href="guiCreateWindow.html" title="RU/guiCreateWindow">guiCreateWindow</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/guiWindowSetMovable&amp;action=edit&amp;redlink=1" class="new" title="RU/guiWindowSetMovable (page does not exist)">guiWindowSetMovable</a></li>
+<li> <a href="http://wiki.localhost/index.php?title=RU/guiWindowSetSizable&amp;action=edit&amp;redlink=1" class="new" title="RU/guiWindowSetSizable (page does not exist)">guiWindowSetSizable</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B2.D0.B2.D0.BE.D0.B4.D0.B0">Функции ввода</span></h2>
+<ul><li><a href="../AddCommandHandler.html" title="AddCommandHandler">addCommandHandler</a></li>
+<li><a href="../BindKey.html" title="BindKey">bindKey</a></li>
+<li><a href="../ExecuteCommandHandler.html" title="ExecuteCommandHandler">executeCommandHandler</a></li>
+<li><a href="../GetAnalogControlState.html" title="GetAnalogControlState">getAnalogControlState</a></li>
+<li><a href="../GetBoundKeys.html" title="GetBoundKeys">getBoundKeys</a></li></ul>
+<div style="font-weight: bold;background:black;color:white;padding:2px; padding-left:8px;">FROM VERSION 1.5.6 <a rel="nofollow" class="external text" href="https://buildinfo.mtasa.com/?Author=&amp;Branch=&amp;Revision=16256"><span style="color: #FFFFFF;">r16256</span></a> ONWARDS</div><div style="border: 2px solid black;padding: 3px;">
+<ul><li><a href="../GetCommandHandlers.html" title="GetCommandHandlers">getCommandHandlers</a></li></ul>
+ </div>
+<ul><li><a href="../GetCommandsBoundToKey.html" title="GetCommandsBoundToKey">getCommandsBoundToKey</a></li>
+<li><a href="../GetFunctionsBoundToKey.html" title="GetFunctionsBoundToKey">getFunctionsBoundToKey</a></li>
+<li><a href="../GetKeyBoundToCommand.html" title="GetKeyBoundToCommand">getKeyBoundToCommand</a></li>
+<li><a href="../GetKeyBoundToFunction.html" title="GetKeyBoundToFunction">getKeyBoundToFunction</a></li>
+<li><a href="../GetKeyState.html" title="GetKeyState">getKeyState</a></li>
+<li><a href="../IsControlEnabled.html" title="IsControlEnabled">isControlEnabled</a></li>
+<li><a href="../RemoveCommandHandler.html" title="RemoveCommandHandler">removeCommandHandler</a></li>
+<li><a href="../ToggleAllControls.html" title="ToggleAllControls">toggleAllControls</a></li>
+<li><a href="../ToggleControl.html" title="ToggleControl">toggleControl</a></li>
+<li><a href="../UnbindKey.html" title="UnbindKey">unbindKey</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BE.D1.81.D0.B2.D0.B5.D1.89.D0.B5.D0.BD.D0.B8.D1.8F">Функции освещения</span></h2>
+<ul><li><a href="../CreateLight.html" title="CreateLight">createLight</a></li>
+<li><a href="../GetLightColor.html" title="GetLightColor">getLightColor</a></li>
+<li><a href="../GetLightDirection.html" title="GetLightDirection">getLightDirection</a></li>
+<li><a href="../GetLightRadius.html" title="GetLightRadius">getLightRadius</a></li>
+<li><a href="../GetLightType.html" title="GetLightType">getLightType</a></li>
+<li><a href="../SetLightColor.html" title="SetLightColor">setLightColor</a></li>
+<li><a href="../SetLightDirection.html" title="SetLightDirection">setLightDirection</a></li>
+<li><a href="../SetLightRadius.html" title="SetLightRadius">setLightRadius</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BC.D0.B0.D1.80.D0.BA.D0.B5.D1.80.D0.B0">Функции маркера</span></h2>
+<ul><li><a href="../CreateMarker.html" title="CreateMarker">createMarker</a></li>
+<li><a href="../GetMarkerColor.html" title="GetMarkerColor">getMarkerColor</a></li>
+<li><a href="../GetMarkerCount.html" title="GetMarkerCount">getMarkerCount</a></li>
+<li><a href="../GetMarkerIcon.html" title="GetMarkerIcon">getMarkerIcon</a></li>
+<li><a href="../GetMarkerSize.html" title="GetMarkerSize">getMarkerSize</a></li>
+<li><a href="../GetMarkerTarget.html" title="GetMarkerTarget">getMarkerTarget</a></li>
+<li><a href="../GetMarkerType.html" title="GetMarkerType">getMarkerType</a></li>
+<li><a href="../IsElementWithinMarker.html" title="IsElementWithinMarker">isElementWithinMarker</a></li>
+<li><a href="../SetMarkerColor.html" title="SetMarkerColor">setMarkerColor</a></li>
+<li><a href="../SetMarkerIcon.html" title="SetMarkerIcon">setMarkerIcon</a></li>
+<li><a href="../SetMarkerSize.html" title="SetMarkerSize">setMarkerSize</a></li>
+<li><a href="../SetMarkerTarget.html" title="SetMarkerTarget">setMarkerTarget</a></li>
+<li><a href="../SetMarkerType.html" title="SetMarkerType">setMarkerType</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.9C.D0.B0.D1.82.D1.80.D0.B8.D1.87.D0.BD.D1.8B.D0.B5_.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8">Матричные функции</span></h2>
+<ul><li><a href="../Matrix.html" title="Matrix">Matrix</a></li>
+<li><a href="../Vector/Vector2.html" title="Vector/Vector2">Vector/Vector2</a></li>
+<li><a href="../Vector/Vector3.html" title="Vector/Vector3">Vector/Vector3</a></li>
+<li><a href="../Vector/Vector4.html" title="Vector/Vector4">Vector/Vector4</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BE.D0.B1.D1.8A.D0.B5.D0.BA.D1.82.D0.B0">Функции объекта</span></h2>
+<ul><li><a href="../BreakObject.html" title="BreakObject">breakObject</a></li>
+<li><a href="../CreateObject.html" title="CreateObject">createObject</a></li>
+<li><a href="../GetObjectMass.html" title="GetObjectMass">getObjectMass</a></li>
+<li><a href="../GetObjectScale.html" title="GetObjectScale">getObjectScale</a></li>
+<li><a href="../IsObjectBreakable.html" title="IsObjectBreakable">isObjectBreakable</a></li>
+<li><a href="../MoveObject.html" title="MoveObject">moveObject</a></li>
+<li><a href="../RespawnObject.html" title="RespawnObject">respawnObject</a></li>
+<li><a href="../SetObjectBreakable.html" title="SetObjectBreakable">setObjectBreakable</a></li>
+<li><a href="../SetObjectMass.html" title="SetObjectMass">setObjectMass</a></li>
+<li><a href="../SetObjectScale.html" title="SetObjectScale">setObjectScale</a></li>
+<li><a href="../StopObject.html" title="StopObject">stopObject</a></li>
+<li><a href="../ToggleObjectRespawn.html" title="ToggleObjectRespawn">toggleObjectRespawn</a></li></ul>
+<div style="font-weight: bold;background:black;color:white;padding:2px; padding-left:8px;">FROM VERSION 1.5.6 <a rel="nofollow" class="external text" href="https://buildinfo.mtasa.com/?Author=&amp;Branch=&amp;Revision=14370"><span style="color: #FFFFFF;">r14370</span></a> ONWARDS</div><div style="border: 2px solid black;padding: 3px;">
+<ul><li><a href="../GetObjectProperty.html" title="GetObjectProperty">getObjectProperty</a></li>
+<li><a href="../SetObjectProperty.html" title="SetObjectProperty">setObjectProperty</a></li></ul>
+ </div>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B2.D1.8B.D0.B2.D0.BE.D0.B4.D0.B0">Функции вывода</span></h2>
+<ul><li> <a href="../ClearChatBox.html" title="ClearChatBox">clearChatBox</a></li>
+<li> <a href="../IsChatVisible.html" title="IsChatVisible">isChatVisible</a></li>
+<li> <a href="../OutputChatBox.html" title="OutputChatBox">outputChatBox</a></li>
+<li> <a href="../OutputConsole.html" title="OutputConsole">outputConsole</a></li>
+<li> <a href="../OutputDebugString.html" title="OutputDebugString">outputDebugString</a></li>
+<li> <a href="../ShowChat.html" title="ShowChat">showChat</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_NPC-.D0.BF.D0.B5.D1.80.D1.81.D0.BE.D0.BD.D0.B0.D0.B6.D0.B0_.28ped.29">Функции NPC-персонажа (ped)</span></h2>
+<ul><li><a href="../AddPedClothes.html" title="AddPedClothes">addPedClothes</a></li>
+<li><a href="../CanPedBeKnockedOffBike.html" title="CanPedBeKnockedOffBike">canPedBeKnockedOffBike</a></li>
+<li><a href="../CreatePed.html" title="CreatePed">createPed</a></li></ul>
+<ul><li><a href="../GetPedAmmoInClip.html" title="GetPedAmmoInClip">getPedAmmoInClip</a></li>
+<li><a href="../GetPedAnalogControlState.html" title="GetPedAnalogControlState">getPedAnalogControlState</a></li>
+<li><a href="../GetPedAnimation.html" title="GetPedAnimation">getPedAnimation</a></li>
+<li><a href="../GetPedArmor.html" title="GetPedArmor">getPedArmor</a></li>
+<li><a href="../GetPedBonePosition.html" title="GetPedBonePosition">getPedBonePosition</a></li>
+<li><a href="../GetPedCameraRotation.html" title="GetPedCameraRotation">getPedCameraRotation</a></li>
+<li><a href="../GetPedClothes.html" title="GetPedClothes">getPedClothes</a></li>
+<li><a href="../GetPedContactElement.html" title="GetPedContactElement">getPedContactElement</a></li>
+<li><a href="../GetPedControlState.html" title="GetPedControlState">getPedControlState</a></li></ul>
+<div style="font-weight: bold;background:black;color:white;padding:2px; padding-left:8px;">FROM VERSION 1.5.6 <a rel="nofollow" class="external text" href="https://buildinfo.mtasa.com/?Author=&amp;Branch=&amp;Revision=16362"><span style="color: #FFFFFF;">r16362</span></a> ONWARDS</div><div style="border: 2px solid black;padding: 3px;">
+<ul><li><a href="../GetPedFightingStyle.html" title="GetPedFightingStyle">getPedFightingStyle</a></li></ul>
+ </div>
+<ul><li><a href="../GetPedMoveState.html" title="GetPedMoveState">getPedMoveState</a></li>
+<li><a href="../GetPedOccupiedVehicle.html" title="GetPedOccupiedVehicle">getPedOccupiedVehicle</a></li>
+<li><a href="../GetPedOccupiedVehicleSeat.html" title="GetPedOccupiedVehicleSeat">getPedOccupiedVehicleSeat</a></li>
+<li><a href="../GetPedOxygenLevel.html" title="GetPedOxygenLevel">getPedOxygenLevel</a></li>
+<li><a href="../GetPedSimplestTask.html" title="GetPedSimplestTask">getPedSimplestTask</a></li>
+<li><a href="../GetPedStat.html" title="GetPedStat">getPedStat</a></li>
+<li><a href="../GetPedTarget.html" title="GetPedTarget">getPedTarget</a></li>
+<li><a href="../GetPedTargetCollision.html" title="GetPedTargetCollision">getPedTargetCollision</a></li>
+<li><a href="../GetPedTargetEnd.html" title="GetPedTargetEnd">getPedTargetEnd</a></li>
+<li><a href="../GetPedTargetStart.html" title="GetPedTargetStart">getPedTargetStart</a></li>
+<li><a href="../GetPedTask.html" title="GetPedTask">getPedTask</a></li>
+<li><a href="../GetPedTotalAmmo.html" title="GetPedTotalAmmo">getPedTotalAmmo</a></li>
+<li><a href="../GetPedVoice.html" title="GetPedVoice">getPedVoice</a></li>
+<li><a href="../GetPedWalkingStyle.html" title="GetPedWalkingStyle">getPedWalkingStyle</a></li>
+<li><a href="../GetPedWeapon.html" title="GetPedWeapon">getPedWeapon</a></li>
+<li><a href="../GetPedWeaponMuzzlePosition.html" title="GetPedWeaponMuzzlePosition">getPedWeaponMuzzlePosition</a></li>
+<li><a href="../GetPedWeaponSlot.html" title="GetPedWeaponSlot">getPedWeaponSlot</a></li>
+<li><a href="../GetValidPedModels.html" title="GetValidPedModels">getValidPedModels</a></li>
+<li><a href="../GivePedWeapon.html" title="GivePedWeapon">givePedWeapon</a></li>
+<li><a href="../IsPedChoking.html" title="IsPedChoking">isPedChoking</a></li>
+<li><a href="../IsPedDead.html" title="IsPedDead">isPedDead</a></li>
+<li><a href="../IsPedDoingGangDriveby.html" title="IsPedDoingGangDriveby">isPedDoingGangDriveby</a></li>
+<li><a href="../IsPedDoingTask.html" title="IsPedDoingTask">isPedDoingTask</a></li>
+<li><a href="../IsPedDucked.html" title="IsPedDucked">isPedDucked</a></li>
+<li><a href="../IsPedHeadless.html" title="IsPedHeadless">isPedHeadless</a></li>
+<li><a href="../IsPedInVehicle.html" title="IsPedInVehicle">isPedInVehicle</a></li>
+<li><a href="../IsPedOnFire.html" title="IsPedOnFire">isPedOnFire</a></li>
+<li><a href="../IsPedOnGround.html" title="IsPedOnGround">isPedOnGround</a></li></ul>
+<ul><li><a href="../IsPedReloadingWeapon.html" title="IsPedReloadingWeapon">isPedReloadingWeapon</a></li>
+<li><a href="../IsPedTargetingMarkerEnabled.html" title="IsPedTargetingMarkerEnabled">isPedTargetingMarkerEnabled</a></li></ul>
+<ul><li><a href="../IsPedWearingJetpack.html" title="IsPedWearingJetpack">isPedWearingJetpack</a></li>
+<li><a href="../KillPed.html" title="KillPed">killPed</a></li>
+<li><a href="../RemovePedClothes.html" title="RemovePedClothes">removePedClothes</a></li>
+<li><a href="../RemovePedFromVehicle.html" title="RemovePedFromVehicle">removePedFromVehicle</a></li>
+<li><a href="../SetAnalogControlState.html" title="SetAnalogControlState">setAnalogControlState</a></li>
+<li><a href="../SetPedAimTarget.html" title="SetPedAimTarget">setPedAimTarget</a></li>
+<li><a href="../SetPedAnalogControlState.html" title="SetPedAnalogControlState">setPedAnalogControlState</a></li>
+<li><a href="../SetPedAnimation.html" title="SetPedAnimation">setPedAnimation</a></li>
+<li><a href="../SetPedAnimationProgress.html" title="SetPedAnimationProgress">setPedAnimationProgress</a></li></ul>
+<ul><li><a href="../SetPedAnimationSpeed.html" title="SetPedAnimationSpeed">setPedAnimationSpeed</a></li>
+<li><a href="../SetPedCameraRotation.html" title="SetPedCameraRotation">setPedCameraRotation</a></li>
+<li><a href="../SetPedCanBeKnockedOffBike.html" title="SetPedCanBeKnockedOffBike">setPedCanBeKnockedOffBike</a></li>
+<li><a href="../SetPedControlState.html" title="SetPedControlState">setPedControlState</a></li>
+<li><a href="../SetPedDoingGangDriveby.html" title="SetPedDoingGangDriveby">setPedDoingGangDriveby</a></li>
+<li><a href="../SetPedFootBloodEnabled.html" title="SetPedFootBloodEnabled">setPedFootBloodEnabled</a></li>
+<li><a href="../SetPedHeadless.html" title="SetPedHeadless">setPedHeadless</a></li>
+<li><a href="../SetPedLookAt.html" title="SetPedLookAt">setPedLookAt</a></li>
+<li><a href="../SetPedOnFire.html" title="SetPedOnFire">setPedOnFire</a></li>
+<li><a href="../SetPedOxygenLevel.html" title="SetPedOxygenLevel">setPedOxygenLevel</a></li>
+<li><a href="../SetPedStat.html" title="SetPedStat">setPedStat</a></li>
+<li><a href="../SetPedTargetingMarkerEnabled.html" title="SetPedTargetingMarkerEnabled">setPedTargetingMarkerEnabled</a></li>
+<li><a href="../SetPedVoice.html" title="SetPedVoice">setPedVoice</a></li>
+<li><a href="../SetPedWalkingStyle.html" title="SetPedWalkingStyle">setPedWalkingStyle</a></li>
+<li><a href="../SetPedWeaponSlot.html" title="SetPedWeaponSlot">setPedWeaponSlot</a></li>
+<li><a href="../WarpPedIntoVehicle.html" title="WarpPedIntoVehicle">warpPedIntoVehicle</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BF.D0.B8.D0.BA.D0.B0.D0.BF.D0.B0">Функции пикапа</span></h2>
+<ul><li><a href="../CreatePickup.html" title="CreatePickup">createPickup</a></li>
+<li><a href="../GetPickupAmmo.html" title="GetPickupAmmo">getPickupAmmo</a></li>
+<li><a href="../GetPickupAmount.html" title="GetPickupAmount">getPickupAmount</a></li>
+<li><a href="../GetPickupType.html" title="GetPickupType">getPickupType</a></li>
+<li><a href="../GetPickupWeapon.html" title="GetPickupWeapon">getPickupWeapon</a></li>
+<li><a href="../SetPickupType.html" title="SetPickupType">setPickupType</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B8.D0.B3.D1.80.D0.BE.D0.BA.D0.B0">Функции игрока</span></h2>
+<ul><li> <a href="../ForcePlayerMap.html" title="ForcePlayerMap">forcePlayerMap</a></li>
+<li> <a href="../GetLocalPlayer.html" title="GetLocalPlayer">getLocalPlayer</a></li>
+<li> <a href="../GetPlayerBlurLevel.html" title="GetPlayerBlurLevel">getPlayerBlurLevel</a></li>
+<li> <a href="../GetPlayerFromName.html" title="GetPlayerFromName">getPlayerFromName</a></li>
+<li> <a href="../GetPlayerMapBoundingBox.html" title="GetPlayerMapBoundingBox">getPlayerMapBoundingBox</a></li>
+<li> <a href="../GetPlayerMoney.html" title="GetPlayerMoney">getPlayerMoney</a></li>
+<li> <a href="../GetPlayerName.html" title="GetPlayerName">getPlayerName</a></li>
+<li> <a href="../GetPlayerNametagColor.html" title="GetPlayerNametagColor">getPlayerNametagColor</a></li>
+<li> <a href="../GetPlayerNametagText.html" title="GetPlayerNametagText">getPlayerNametagText</a></li>
+<li> <a href="../GetPlayerPing.html" title="GetPlayerPing">getPlayerPing</a></li>
+<li> <a href="../GetPlayerTeam.html" title="GetPlayerTeam">getPlayerTeam</a></li>
+<li> <a href="../GetPlayerWantedLevel.html" title="GetPlayerWantedLevel">getPlayerWantedLevel</a></li>
+<li> <a href="../GivePlayerMoney.html" title="GivePlayerMoney">givePlayerMoney</a></li>
+<li> <a href="../IsPlayerHudComponentVisible.html" title="IsPlayerHudComponentVisible">isPlayerHudComponentVisible</a></li>
+<li> <a href="../IsPlayerMapForced.html" title="IsPlayerMapForced">isPlayerMapForced</a></li>
+<li> <a href="../IsPlayerMapVisible.html" title="IsPlayerMapVisible">isPlayerMapVisible</a></li>
+<li> <a href="../IsPlayerNametagShowing.html" title="IsPlayerNametagShowing">isPlayerNametagShowing</a></li>
+<li> <a href="../IsVoiceEnabled.html" title="IsVoiceEnabled">isVoiceEnabled</a></li>
+<li> <a href="../SetPlayerBlurLevel.html" title="SetPlayerBlurLevel">setPlayerBlurLevel</a></li>
+<li> <a href="../SetPlayerHudComponentVisible.html" title="SetPlayerHudComponentVisible">setPlayerHudComponentVisible</a></li>
+<li> <a href="../SetPlayerMoney.html" title="SetPlayerMoney">setPlayerMoney</a></li>
+<li> <a href="../SetPlayerNametagColor.html" title="SetPlayerNametagColor">setPlayerNametagColor</a></li>
+<li> <a href="../SetPlayerNametagShowing.html" title="SetPlayerNametagShowing">setPlayerNametagShowing</a></li>
+<li> <a href="../SetPlayerNametagText.html" title="SetPlayerNametagText">setPlayerNametagText</a></li>
+<li> <a href="../TakePlayerMoney.html" title="TakePlayerMoney">takePlayerMoney</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.81.D0.BD.D0.B0.D1.80.D1.8F.D0.B4.D0.B0">Функции снаряда</span></h2>
+<ul><li><a href="../CreateProjectile.html" title="CreateProjectile">createProjectile</a></li>
+<li><a href="../DetonateSatchels.html" title="DetonateSatchels">detonateSatchels</a></li>
+<li><a href="../GetProjectileCounter.html" title="GetProjectileCounter">getProjectileCounter</a></li>
+<li><a href="../GetProjectileCreator.html" title="GetProjectileCreator">getProjectileCreator</a></li>
+<li><a href="../GetProjectileForce.html" title="GetProjectileForce">getProjectileForce</a></li>
+<li><a href="../GetProjectileTarget.html" title="GetProjectileTarget">getProjectileTarget</a></li>
+<li><a href="../GetProjectileType.html" title="GetProjectileType">getProjectileType</a></li>
+<li><a href="../SetProjectileCounter.html" title="SetProjectileCounter">setProjectileCounter</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.82.D0.B5.D1.80.D1.80.D0.B8.D1.82.D0.BE.D1.80.D0.B8.D0.B9_.D1.80.D0.B0.D0.B4.D0.B0.D1.80.D0.B0">Функции территорий радара</span></h2>
+<ul><li><a href="../CreateRadarArea.html" title="CreateRadarArea">createRadarArea</a></li>
+<li><a href="../GetRadarAreaColor.html" title="GetRadarAreaColor">getRadarAreaColor</a></li>
+<li><a href="../GetRadarAreaSize.html" title="GetRadarAreaSize">getRadarAreaSize</a></li>
+<li><a href="../IsInsideRadarArea.html" title="IsInsideRadarArea">isInsideRadarArea</a></li>
+<li><a href="../IsRadarAreaFlashing.html" title="IsRadarAreaFlashing">isRadarAreaFlashing</a></li>
+<li><a href="../SetRadarAreaColor.html" title="SetRadarAreaColor">setRadarAreaColor</a></li>
+<li><a href="../SetRadarAreaFlashing.html" title="SetRadarAreaFlashing">setRadarAreaFlashing</a></li>
+<li><a href="../SetRadarAreaSize.html" title="SetRadarAreaSize">setRadarAreaSize</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.80.D0.B5.D1.81.D1.83.D1.80.D1.81.D0.BE.D0.B2">Функции ресурсов</span></h2>
+<ul><li><a href="../Call.html" title="Call">call</a></li>
+<li><a href="../FetchRemote.html" title="FetchRemote">fetchRemote</a></li>
+<li><a href="../GetResourceConfig.html" title="GetResourceConfig">getResourceConfig</a></li>
+<li><a href="../GetResourceDynamicElementRoot.html" title="GetResourceDynamicElementRoot">getResourceDynamicElementRoot</a></li>
+<li><a href="../GetResourceExportedFunctions.html" title="GetResourceExportedFunctions">getResourceExportedFunctions</a></li>
+<li><a href="../GetResourceFromName.html" title="GetResourceFromName">getResourceFromName</a></li>
+<li><a href="../GetResourceGUIElement.html" title="GetResourceGUIElement">getResourceGUIElement</a></li>
+<li><a href="../GetResourceName.html" title="GetResourceName">getResourceName</a></li>
+<li><a href="../GetResourceRootElement.html" title="GetResourceRootElement">getResourceRootElement</a></li>
+<li><a href="../GetResourceState.html" title="GetResourceState">getResourceState</a></li>
+<li><a href="../GetThisResource.html" title="GetThisResource">getThisResource</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BF.D1.80.D0.BE.D0.B6.D0.B5.D0.BA.D1.82.D0.BE.D1.80.D0.BE.D0.B2">Функции прожекторов</span></h2>
+<ul><li><a href="../GetPlayerUserName.html" title="GetPlayerUserName">getPlayerUserName</a></li></ul>
+<ul><li><a href="../GetPlayerSerial.html" title="GetPlayerSerial">getPlayerSerial</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BA.D0.BE.D0.BC.D0.B0.D0.BD.D0.B4">Функции команд</span></h2>
+<ul><li><a href="../CountPlayersInTeam.html" title="CountPlayersInTeam">countPlayersInTeam</a></li>
+<li><a href="../GetPlayerTeam.html" title="GetPlayerTeam">getPlayerTeam</a></li>
+<li><a href="../GetPlayersInTeam.html" title="GetPlayersInTeam">getPlayersInTeam</a></li>
+<li><a href="../GetTeamColor.html" title="GetTeamColor">getTeamColor</a></li>
+<li><a href="../GetTeamFriendlyFire.html" title="GetTeamFriendlyFire">getTeamFriendlyFire</a></li>
+<li><a href="../GetTeamFromName.html" title="GetTeamFromName">getTeamFromName</a></li>
+<li><a href="../GetTeamName.html" title="GetTeamName">getTeamName</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A3.D1.82.D0.B8.D0.BB.D0.B8.D1.82.D0.B0.D1.80.D0.BD.D1.8B.D0.B5_.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8">Утилитарные функции</span></h2>
+<ul><li><a href="../AddDebugHook.html" title="AddDebugHook">addDebugHook</a></li>
+<li><a href="../Base64Decode.html" title="Base64Decode">base64Decode</a></li>
+<li><a href="../Base64Encode.html" title="Base64Encode">base64Encode</a></li></ul>
+<ul><li><a href="../BitAnd.html" title="BitAnd">bitAnd</a></li>
+<li><a href="../BitNot.html" title="BitNot">bitNot</a></li>
+<li><a href="../BitOr.html" title="BitOr">bitOr</a></li>
+<li><a href="../BitXor.html" title="BitXor">bitXor</a></li>
+<li><a href="../BitTest.html" title="BitTest">bitTest</a></li>
+<li><a href="../BitLRotate.html" title="BitLRotate">bitLRotate</a></li>
+<li><a href="../BitRRotate.html" title="BitRRotate">bitRRotate</a></li>
+<li><a href="../BitLShift.html" title="BitLShift">bitLShift</a></li>
+<li><a href="../BitRShift.html" title="BitRShift">bitRShift</a></li>
+<li><a href="../BitArShift.html" title="BitArShift">bitArShift</a></li>
+<li><a href="../BitExtract.html" title="BitExtract">bitExtract</a></li>
+<li><a href="../BitReplace.html" title="BitReplace">bitReplace</a></li>
+<li><a href="../CreateTrayNotification.html" title="CreateTrayNotification">createTrayNotification</a></li>
+<li><a href="../DebugSleep.html" title="DebugSleep">debugSleep</a></li>
+<li><a href="../DownloadFile.html" title="DownloadFile">downloadFile</a></li></ul>
+<ul><li><a href="../DecodeString.html" title="DecodeString">decodeString</a></li>
+<li><a href="../EncodeString.html" title="EncodeString">encodeString</a></li>
+<li><a href="../FromJSON.html" title="FromJSON">fromJSON</a></li>
+<li><a href="../GetColorFromString.html" title="GetColorFromString">getColorFromString</a></li>
+<li><a href="../GetDevelopmentMode.html" title="GetDevelopmentMode">getDevelopmentMode</a></li>
+<li><a href="../GetDistanceBetweenPoints2D.html" title="GetDistanceBetweenPoints2D">getDistanceBetweenPoints2D</a></li>
+<li><a href="../GetDistanceBetweenPoints3D.html" title="GetDistanceBetweenPoints3D">getDistanceBetweenPoints3D</a></li>
+<li><a href="../GetEasingValue.html" title="GetEasingValue">getEasingValue</a></li>
+<li><a href="../GetFPSLimit.html" title="GetFPSLimit">getFPSLimit</a></li>
+<li><a href="../GetLocalization.html" title="GetLocalization">getLocalization</a></li>
+<li><a href="../GetNetworkStats.html" title="GetNetworkStats">getNetworkStats</a></li>
+<li><a href="../GetNetworkUsageData.html" title="GetNetworkUsageData">getNetworkUsageData</a></li>
+<li><a href="../GetPerformanceStats.html" title="GetPerformanceStats">getPerformanceStats</a></li>
+<li><a href="../GetRealTime.html" title="GetRealTime">getRealTime</a></li>
+<li><a href="../GetTickCount.html" title="GetTickCount">getTickCount</a></li>
+<li><a href="../GetTimers.html" title="GetTimers">getTimers</a></li>
+<li><a href="../GetTimerDetails.html" title="GetTimerDetails">getTimerDetails</a></li>
+<li><a href="../Gettok.html" title="Gettok">gettok</a></li>
+<li><a href="../GetUserdataType.html" title="GetUserdataType">getUserdataType</a></li>
+<li><a href="../GetVersion.html" title="GetVersion">getVersion</a></li>
+<li><a href="../Hash.html" title="Hash">hash</a></li>
+<li><a href="../Inspect.html" title="Inspect">inspect</a></li>
+<li><a href="../InterpolateBetween.html" title="InterpolateBetween">interpolateBetween</a></li>
+<li><a href="../Iprint.html" title="Iprint">iprint</a></li>
+<li><a href="../IsOOPEnabled.html" title="IsOOPEnabled">isOOPEnabled</a></li>
+<li><a href="../IsTimer.html" title="IsTimer">isTimer</a></li>
+<li><a href="../IsTrayNotificationEnabled.html" title="IsTrayNotificationEnabled">isTrayNotificationEnabled</a></li>
+<li><a href="../KillTimer.html" title="KillTimer">killTimer</a></li>
+<li><a href="../Md5.html" title="Md5">md5</a></li>
+<li><a href="../PasswordHash.html" title="PasswordHash">passwordHash</a></li>
+<li><a href="../PasswordVerify.html" title="PasswordVerify">passwordVerify</a></li>
+<li><a href="../PregFind.html" title="PregFind">pregFind</a></li>
+<li><a href="../PregMatch.html" title="PregMatch">pregMatch</a></li>
+<li><a href="../PregReplace.html" title="PregReplace">pregReplace</a></li>
+<li><a href="../RemoveDebugHook.html" title="RemoveDebugHook">removeDebugHook</a></li>
+<li><a href="../ResetTimer.html" title="ResetTimer">resetTimer</a></li>
+<li><a href="../SetClipboard.html" title="SetClipboard">setClipboard</a></li>
+<li><a href="../SetDevelopmentMode.html" title="SetDevelopmentMode">setDevelopmentMode</a></li>
+<li><a href="../SetFPSLimit.html" title="SetFPSLimit">setFPSLimit</a></li>
+<li><a href="../SetTimer.html" title="SetTimer">setTimer</a></li>
+<li><a href="../SetWindowFlashing.html" title="SetWindowFlashing">setWindowFlashing</a></li>
+<li><a href="../Sha256.html" title="Sha256">sha256</a></li>
+<li><a href="../Split.html" title="Split">split</a></li>
+<li><a href="../TeaDecode.html" title="TeaDecode">teaDecode</a></li>
+<li><a href="../TeaEncode.html" title="TeaEncode">teaEncode</a></li>
+<li><a href="../Tocolor.html" title="Tocolor">tocolor</a></li>
+<li><a href="../ToJSON.html" title="ToJSON">toJSON</a></li>
+<li><a href="../UtfChar.html" title="UtfChar">utfChar</a></li>
+<li><a href="../UtfCode.html" title="UtfCode">utfCode</a></li>
+<li><a href="../UtfLen.html" title="UtfLen">utfLen</a></li>
+<li><a href="../UtfSeek.html" title="UtfSeek">utfSeek</a></li>
+<li><a href="../UtfSub.html" title="UtfSub">utfSub</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_UTF-8">Функции UTF-8</span></h2>
+<ul><li><a href="../Utf8.html" title="Utf8.byte">utf8.byte</a></li>
+<li><a href="../Utf8-2.html" title="Utf8.char">utf8.char</a></li>
+<li><a href="../Utf8-3.html" title="Utf8.charpos">utf8.charpos</a></li>
+<li><a href="../Utf8-4.html" title="Utf8.escape">utf8.escape</a></li>
+<li><a href="../Utf8-5.html" title="Utf8.find">utf8.find</a></li>
+<li><a href="../Utf8-6.html" title="Utf8.fold">utf8.fold</a></li>
+<li><a href="../Utf8-7.html" title="Utf8.gmatch">utf8.gmatch</a></li>
+<li><a href="../Utf8-8.html" title="Utf8.gsub">utf8.gsub</a></li>
+<li><a href="../Utf8-9.html" title="Utf8.insert">utf8.insert</a></li>
+<li><a href="../Utf8-10.html" title="Utf8.len">utf8.len</a></li>
+<li><a href="../Utf8-11.html" title="Utf8.lower" class="mw-redirect">utf8.lower</a></li>
+<li><a href="../Utf8-12.html" title="Utf8.match">utf8.match</a></li>
+<li><a href="../Utf8-13.html" title="Utf8.ncasecmp">utf8.ncasecmp</a></li>
+<li><a href="../Utf8-14.html" title="Utf8.next">utf8.next</a></li>
+<li><a href="../Utf8-15.html" title="Utf8.remove">utf8.remove</a></li>
+<li><a href="../Utf8-16.html" title="Utf8.reverse">utf8.reverse</a></li>
+<li><a href="../Utf8-17.html" title="Utf8.sub">utf8.sub</a></li>
+<li><a href="../Utf8-18.html" title="Utf8.title">utf8.title</a></li>
+<li><a href="../Utf8-19.html" title="Utf8.upper" class="mw-redirect">utf8.upper</a></li>
+<li><a href="../Utf8-20.html" title="Utf8.width">utf8.width</a></li>
+<li><a href="../Utf8-21.html" title="Utf8.widthindex">utf8.widthindex</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.82.D1.80.D0.B0.D0.BD.D1.81.D0.BF.D0.BE.D1.80.D1.82.D0.B0">Функции транспорта</span></h2>
+<ul><li><a href="../AddVehicleUpgrade.html" title="AddVehicleUpgrade">addVehicleUpgrade</a></li>
+<li><a href="../AttachTrailerToVehicle.html" title="AttachTrailerToVehicle">attachTrailerToVehicle</a></li>
+<li><a href="../BlowVehicle.html" title="BlowVehicle">blowVehicle</a></li>
+<li><a href="../CreateVehicle.html" title="CreateVehicle">createVehicle</a></li>
+<li><a href="../DetachTrailerFromVehicle.html" title="DetachTrailerFromVehicle">detachTrailerFromVehicle</a></li>
+<li><a href="../FixVehicle.html" title="FixVehicle">fixVehicle</a></li>
+<li><a href="../GetHeliBladeCollisionsEnabled.html" title="GetHeliBladeCollisionsEnabled">getHeliBladeCollisionsEnabled</a></li>
+<li><a href="../GetHelicopterRotorSpeed.html" title="GetHelicopterRotorSpeed">getHelicopterRotorSpeed</a></li>
+<li><a href="../GetOriginalHandling.html" title="GetOriginalHandling">getOriginalHandling</a></li>
+<li><a href="../GetTrainDirection.html" title="GetTrainDirection">getTrainDirection</a></li>
+<li><a href="../GetTrainPosition.html" title="GetTrainPosition">getTrainPosition</a></li>
+<li><a href="../GetTrainSpeed.html" title="GetTrainSpeed">getTrainSpeed</a></li></ul>
+<div style="font-weight: bold;background:black;color:white;padding:2px; padding-left:8px;">FROM VERSION 1.6 <a rel="nofollow" class="external text" href="https://buildinfo.mtasa.com/?Author=&amp;Branch=&amp;Revision=7485"><span style="color: #FFFFFF;">r7485</span></a> ONWARDS</div><div style="border: 2px solid black;padding: 3px;">
+<ul><li><a href="../GetTrainTrack.html" title="GetTrainTrack">getTrainTrack</a></li></ul>
+ </div>
+<ul><li><a href="../GetVehicleAdjustableProperty.html" title="GetVehicleAdjustableProperty">getVehicleAdjustableProperty</a></li>
+<li><a href="../GetVehicleColor.html" title="GetVehicleColor">getVehicleColor</a></li>
+<li><a href="../GetVehicleCompatibleUpgrades.html" title="GetVehicleCompatibleUpgrades">getVehicleCompatibleUpgrades</a></li>
+<li><a href="../GetVehicleComponentPosition.html" title="GetVehicleComponentPosition">getVehicleComponentPosition</a></li>
+<li><a href="../GetVehicleComponentRotation.html" title="GetVehicleComponentRotation">getVehicleComponentRotation</a></li>
+<li><a href="../GetVehicleComponentVisible.html" title="GetVehicleComponentVisible">getVehicleComponentVisible</a></li>
+<li><a href="../GetVehicleComponents.html" title="GetVehicleComponents">getVehicleComponents</a></li>
+<li><a href="../GetVehicleController.html" title="GetVehicleController">getVehicleController</a></li>
+<li><a href="../GetVehicleCurrentGear.html" title="GetVehicleCurrentGear">getVehicleCurrentGear</a></li>
+<li><a href="../GetVehicleDoorOpenRatio.html" title="GetVehicleDoorOpenRatio">getVehicleDoorOpenRatio</a></li>
+<li><a href="../GetVehicleDoorState.html" title="GetVehicleDoorState">getVehicleDoorState</a></li>
+<li><a href="../GetVehicleEngineState.html" title="GetVehicleEngineState">getVehicleEngineState</a></li>
+<li><a href="../GetVehicleGravity.html" title="GetVehicleGravity">getVehicleGravity</a></li>
+<li><a href="../GetVehicleHandling.html" title="GetVehicleHandling">getVehicleHandling</a></li>
+<li><a href="../GetVehicleHeadLightColor.html" title="GetVehicleHeadLightColor">getVehicleHeadLightColor</a></li>
+<li><a href="../GetVehicleLandingGearDown.html" title="GetVehicleLandingGearDown">getVehicleLandingGearDown</a></li>
+<li><a href="../GetVehicleLightState.html" title="GetVehicleLightState">getVehicleLightState</a></li>
+<li><a href="../GetVehicleMaxPassengers.html" title="GetVehicleMaxPassengers">getVehicleMaxPassengers</a></li></ul>
+<div style="font-weight: bold;background:black;color:white;padding:2px; padding-left:8px;">FROM VERSION 1.5.6 <a rel="nofollow" class="external text" href="https://buildinfo.mtasa.com/?Author=&amp;Branch=&amp;Revision=14403"><span style="color: #FFFFFF;">r14403</span></a> ONWARDS</div><div style="border: 2px solid black;padding: 3px;">
+<ul><li><a href="../GetVehicleModelDummyPosition.html" title="GetVehicleModelDummyPosition">getVehicleModelDummyPosition</a></li></ul>
+ </div>
+<ul><li><a href="../GetVehicleModelExhaustFumesPosition.html" title="GetVehicleModelExhaustFumesPosition">getVehicleModelExhaustFumesPosition</a></li>
+<li><a href="../GetVehicleModelFromName.html" title="GetVehicleModelFromName">getVehicleModelFromName</a></li>
+<li><a href="../GetVehicleName.html" title="GetVehicleName">getVehicleName</a></li>
+<li><a href="../GetVehicleNameFromModel.html" title="GetVehicleNameFromModel">getVehicleNameFromModel</a></li>
+<li><a href="../GetVehicleNitroCount.html" title="GetVehicleNitroCount">getVehicleNitroCount</a></li>
+<li><a href="../GetVehicleNitroLevel.html" title="GetVehicleNitroLevel">getVehicleNitroLevel</a></li>
+<li><a href="../GetVehicleOccupant.html" title="GetVehicleOccupant">getVehicleOccupant</a></li>
+<li><a href="../GetVehicleOccupants.html" title="GetVehicleOccupants">getVehicleOccupants</a></li>
+<li><a href="../GetVehicleOverrideLights.html" title="GetVehicleOverrideLights">getVehicleOverrideLights</a></li>
+<li><a href="../GetVehiclePaintjob.html" title="GetVehiclePaintjob">getVehiclePaintjob</a></li>
+<li><a href="../GetVehiclePanelState.html" title="GetVehiclePanelState">getVehiclePanelState</a></li>
+<li><a href="../GetVehiclePlateText.html" title="GetVehiclePlateText">getVehiclePlateText</a></li>
+<li><a href="../GetVehicleSirens.html" title="GetVehicleSirens">getVehicleSirens</a></li>
+<li><a href="../GetVehicleSirensOn.html" title="GetVehicleSirensOn">getVehicleSirensOn</a></li>
+<li><a href="../GetVehicleSirenParams.html" title="GetVehicleSirenParams">getVehicleSirenParams</a></li>
+<li><a href="../GetVehicleTowedByVehicle.html" title="GetVehicleTowedByVehicle">getVehicleTowedByVehicle</a></li>
+<li><a href="../GetVehicleTowingVehicle.html" title="GetVehicleTowingVehicle">getVehicleTowingVehicle</a></li></ul>
+<ul><li><a href="../GetVehicleTurretPosition.html" title="GetVehicleTurretPosition">getVehicleTurretPosition</a></li>
+<li><a href="../GetVehicleType.html" title="GetVehicleType">getVehicleType</a></li>
+<li><a href="../GetVehicleUpgradeOnSlot.html" title="GetVehicleUpgradeOnSlot">getVehicleUpgradeOnSlot</a></li>
+<li><a href="../GetVehicleUpgradeSlotName.html" title="GetVehicleUpgradeSlotName">getVehicleUpgradeSlotName</a></li>
+<li><a href="../GetVehicleUpgrades.html" title="GetVehicleUpgrades">getVehicleUpgrades</a></li>
+<li><a href="../GetVehicleVariant.html" title="GetVehicleVariant">getVehicleVariant</a></li>
+<li><a href="../GetVehicleWheelStates.html" title="GetVehicleWheelStates">getVehicleWheelStates</a></li>
+<li><a href="../IsTrainChainEngine.html" title="IsTrainChainEngine">isTrainChainEngine</a></li>
+<li><a href="../IsTrainDerailable.html" title="IsTrainDerailable">isTrainDerailable</a></li>
+<li><a href="../IsTrainDerailed.html" title="IsTrainDerailed">isTrainDerailed</a></li>
+<li><a href="../IsVehicleBlown.html" title="IsVehicleBlown">isVehicleBlown</a></li>
+<li><a href="../IsVehicleDamageProof.html" title="IsVehicleDamageProof">isVehicleDamageProof</a></li>
+<li><a href="../IsVehicleFuelTankExplodable.html" title="IsVehicleFuelTankExplodable">isVehicleFuelTankExplodable</a></li>
+<li><a href="../IsVehicleLocked.html" title="IsVehicleLocked">isVehicleLocked</a></li>
+<li><a href="../IsVehicleNitroActivated.html" title="IsVehicleNitroActivated">isVehicleNitroActivated</a></li>
+<li><a href="../IsVehicleNitroRecharging.html" title="IsVehicleNitroRecharging">isVehicleNitroRecharging</a></li>
+<li><a href="../IsVehicleOnGround.html" title="IsVehicleOnGround">isVehicleOnGround</a></li>
+<li><a href="../IsVehicleTaxiLightOn.html" title="IsVehicleTaxiLightOn">isVehicleTaxiLightOn</a></li></ul>
+<ul><li><a href="../IsVehicleWheelOnGround.html" title="IsVehicleWheelOnGround">isVehicleWheelOnGround</a></li>
+<li><a href="../IsVehicleWindowOpen.html" title="IsVehicleWindowOpen">isVehicleWindowOpen</a></li>
+<li><a href="../RemoveVehicleUpgrade.html" title="RemoveVehicleUpgrade">removeVehicleUpgrade</a></li>
+<li><a href="../ResetVehicleComponentPosition.html" title="ResetVehicleComponentPosition">resetVehicleComponentPosition</a></li>
+<li><a href="../ResetVehicleComponentRotation.html" title="ResetVehicleComponentRotation">resetVehicleComponentRotation</a></li>
+<li><a href="../SetHeliBladeCollisionsEnabled.html" title="SetHeliBladeCollisionsEnabled">setHeliBladeCollisionsEnabled</a></li>
+<li><a href="../SetHelicopterRotorSpeed.html" title="SetHelicopterRotorSpeed">setHelicopterRotorSpeed</a></li>
+<li><a href="../SetTrainDerailable.html" title="SetTrainDerailable">setTrainDerailable</a></li>
+<li><a href="../SetTrainDerailed.html" title="SetTrainDerailed">setTrainDerailed</a></li>
+<li><a href="../SetTrainDirection.html" title="SetTrainDirection">setTrainDirection</a></li>
+<li><a href="../SetTrainPosition.html" title="SetTrainPosition">setTrainPosition</a></li>
+<li><a href="../SetTrainSpeed.html" title="SetTrainSpeed">setTrainSpeed</a></li></ul>
+<div style="font-weight: bold;background:black;color:white;padding:2px; padding-left:8px;">FROM VERSION 1.6 <a rel="nofollow" class="external text" href="https://buildinfo.mtasa.com/?Author=&amp;Branch=&amp;Revision=7485"><span style="color: #FFFFFF;">r7485</span></a> ONWARDS</div><div style="border: 2px solid black;padding: 3px;">
+<ul><li><a href="../SetTrainTrack.html" title="SetTrainTrack">setTrainTrack</a></li></ul>
+ </div>
+<ul><li><a href="../SetVehicleAdjustableProperty.html" title="SetVehicleAdjustableProperty">setVehicleAdjustableProperty</a></li>
+<li><a href="../SetVehicleColor.html" title="SetVehicleColor">setVehicleColor</a></li>
+<li><a href="../SetVehicleComponentPosition.html" title="SetVehicleComponentPosition">setVehicleComponentPosition</a></li>
+<li><a href="../SetVehicleComponentRotation.html" title="SetVehicleComponentRotation">setVehicleComponentRotation</a></li>
+<li><a href="../SetVehicleComponentVisible.html" title="SetVehicleComponentVisible">setVehicleComponentVisible</a></li>
+<li><a href="../SetVehicleDamageProof.html" title="SetVehicleDamageProof">setVehicleDamageProof</a></li>
+<li><a href="../SetVehicleDirtLevel.html" title="SetVehicleDirtLevel">setVehicleDirtLevel</a></li>
+<li><a href="../SetVehicleDoorOpenRatio.html" title="SetVehicleDoorOpenRatio">setVehicleDoorOpenRatio</a></li>
+<li><a href="../SetVehicleDoorState.html" title="SetVehicleDoorState">setVehicleDoorState</a></li>
+<li><a href="../SetVehicleDoorsUndamageable.html" title="SetVehicleDoorsUndamageable">setVehicleDoorsUndamageable</a></li>
+<li><a href="../SetVehicleEngineState.html" title="SetVehicleEngineState">setVehicleEngineState</a></li>
+<li><a href="../SetVehicleFuelTankExplodable.html" title="SetVehicleFuelTankExplodable">setVehicleFuelTankExplodable</a></li>
+<li><a href="../SetVehicleGravity.html" title="SetVehicleGravity">setVehicleGravity</a></li></ul>
+<ul><li><a href="../SetVehicleHandling.html" title="SetVehicleHandling">setVehicleHandling</a></li>
+<li><a href="../SetVehicleHeadLightColor.html" title="SetVehicleHeadLightColor">setVehicleHeadLightColor</a></li>
+<li><a href="../SetVehicleLandingGearDown.html" title="SetVehicleLandingGearDown">setVehicleLandingGearDown</a></li>
+<li><a href="../SetVehicleLightState.html" title="SetVehicleLightState">setVehicleLightState</a></li>
+<li><a href="../SetVehicleLocked.html" title="SetVehicleLocked">setVehicleLocked</a></li></ul>
+<div style="font-weight: bold;background:black;color:white;padding:2px; padding-left:8px;">FROM VERSION 1.5.6 <a rel="nofollow" class="external text" href="https://buildinfo.mtasa.com/?Author=&amp;Branch=&amp;Revision=14403"><span style="color: #FFFFFF;">r14403</span></a> ONWARDS</div><div style="border: 2px solid black;padding: 3px;">
+<ul><li><a href="../SetVehicleModelDummyPosition.html" title="SetVehicleModelDummyPosition">setVehicleModelDummyPosition</a></li></ul>
+ </div>
+<ul><li><a href="../SetVehicleModelExhaustFumesPosition.html" title="SetVehicleModelExhaustFumesPosition">setVehicleModelExhaustFumesPosition</a></li>
+<li><a href="../SetVehicleNitroActivated.html" title="SetVehicleNitroActivated">setVehicleNitroActivated</a></li>
+<li><a href="../SetVehicleNitroCount.html" title="SetVehicleNitroCount">setVehicleNitroCount</a></li>
+<li><a href="../SetVehicleNitroLevel.html" title="SetVehicleNitroLevel">setVehicleNitroLevel</a></li>
+<li><a href="../SetVehicleOverrideLights.html" title="SetVehicleOverrideLights">setVehicleOverrideLights</a></li>
+<li><a href="../SetVehiclePaintjob.html" title="SetVehiclePaintjob">setVehiclePaintjob</a></li>
+<li><a href="../SetVehiclePanelState.html" title="SetVehiclePanelState">setVehiclePanelState</a></li>
+<li><a href="../SetVehiclePlateText.html" title="SetVehiclePlateText">setVehiclePlateText</a></li>
+<li><a href="../SetVehicleSirens.html" title="SetVehicleSirens">setVehicleSirens</a></li>
+<li><a href="../SetVehicleSirensOn.html" title="SetVehicleSirensOn">setVehicleSirensOn</a></li>
+<li><a href="../SetVehicleTaxiLightOn.html" title="SetVehicleTaxiLightOn">setVehicleTaxiLightOn</a></li></ul>
+<ul><li><a href="../SetVehicleTurretPosition.html" title="SetVehicleTurretPosition">setVehicleTurretPosition</a></li>
+<li><a href="../SetVehicleWheelStates.html" title="SetVehicleWheelStates">setVehicleWheelStates</a></li>
+<li><a href="../SetVehicleWindowOpen.html" title="SetVehicleWindowOpen">setVehicleWindowOpen</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B2.D0.BE.D0.B4.D1.8B">Функции воды</span></h2>
+<ul><li><a href="../CreateWater.html" title="CreateWater">createWater</a></li>
+<li><a href="../GetWaterColor.html" title="GetWaterColor">getWaterColor</a></li>
+<li><a href="../GetWaterLevel.html" title="GetWaterLevel">getWaterLevel</a></li>
+<li><a href="../GetWaterVertexPosition.html" title="GetWaterVertexPosition">getWaterVertexPosition</a></li>
+<li><a href="../GetWaveHeight.html" title="GetWaveHeight">getWaveHeight</a></li>
+<li><a href="../IsWaterDrawnLast.html" title="IsWaterDrawnLast">isWaterDrawnLast</a></li>
+<li><a href="../ResetWaterColor.html" title="ResetWaterColor">resetWaterColor</a></li>
+<li><a href="../ResetWaterLevel.html" title="ResetWaterLevel">resetWaterLevel</a></li>
+<li><a href="../SetWaterColor.html" title="SetWaterColor">setWaterColor</a></li>
+<li><a href="../SetWaterDrawnLast.html" title="SetWaterDrawnLast">setWaterDrawnLast</a></li>
+<li><a href="../SetWaterLevel.html" title="SetWaterLevel">setWaterLevel</a></li>
+<li><a href="../SetWaterVertexPosition.html" title="SetWaterVertexPosition">setWaterVertexPosition</a></li>
+<li><a href="../SetWaveHeight.html" title="SetWaveHeight">setWaveHeight</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BE.D1.80.D1.83.D0.B6.D0.B8.D1.8F">Функции оружия</span></h2>
+<ul><li><a href="../GetOriginalWeaponProperty.html" title="GetOriginalWeaponProperty">getOriginalWeaponProperty</a></li>
+<li><a href="../GetSlotFromWeapon.html" title="GetSlotFromWeapon">getSlotFromWeapon</a></li>
+<li><a href="../GetWeaponIDFromName.html" title="GetWeaponIDFromName">getWeaponIDFromName</a></li>
+<li><a href="../GetWeaponNameFromID.html" title="GetWeaponNameFromID">getWeaponNameFromID</a></li>
+<li><a href="../GetWeaponProperty.html" title="GetWeaponProperty">getWeaponProperty</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.81.D0.BE.D0.B7.D0.B4.D0.B0.D0.BD.D0.B8.D1.8F_.D0.BE.D1.80.D1.83.D0.B6.D0.B8.D1.8F">Функции создания оружия</span></h2>
+<ul><li><a href="../CreateWeapon.html" title="CreateWeapon">createWeapon</a></li>
+<li><a href="../FireWeapon.html" title="FireWeapon">fireWeapon</a></li>
+<li><a href="../GetWeaponAmmo.html" title="GetWeaponAmmo">getWeaponAmmo</a></li>
+<li><a href="../GetWeaponClipAmmo.html" title="GetWeaponClipAmmo">getWeaponClipAmmo</a></li>
+<li><a href="../GetWeaponFiringRate.html" title="GetWeaponFiringRate">getWeaponFiringRate</a></li>
+<li><a href="../GetWeaponFlags.html" title="GetWeaponFlags">getWeaponFlags</a></li>
+<li><a href="../GetWeaponOwner.html" title="GetWeaponOwner">getWeaponOwner</a></li>
+<li><a href="../GetWeaponProperty.html" title="GetWeaponProperty">getWeaponProperty</a></li>
+<li><a href="../GetWeaponState.html" title="GetWeaponState">getWeaponState</a></li>
+<li><a href="../GetWeaponTarget.html" title="GetWeaponTarget">getWeaponTarget</a></li>
+<li><a href="../ResetWeaponFiringRate.html" title="ResetWeaponFiringRate">resetWeaponFiringRate</a></li>
+<li><a href="../SetWeaponAmmo.html" title="SetWeaponAmmo">setWeaponAmmo</a></li>
+<li><a href="../SetWeaponClipAmmo.html" title="SetWeaponClipAmmo">setWeaponClipAmmo</a></li>
+<li><a href="../SetWeaponFiringRate.html" title="SetWeaponFiringRate">setWeaponFiringRate</a></li>
+<li><a href="../SetWeaponFlags.html" title="SetWeaponFlags">setWeaponFlags</a></li>
+<li><a href="../SetWeaponProperty.html" title="SetWeaponProperty">setWeaponProperty</a></li>
+<li><a href="../SetWeaponState.html" title="SetWeaponState">setWeaponState</a></li>
+<li><a href="../SetWeaponTarget.html" title="SetWeaponTarget">setWeaponTarget</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BC.D0.B8.D1.80.D0.B0">Функции мира</span></h2>
+<ul><li> <a href="../AreTrafficLightsLocked.html" title="AreTrafficLightsLocked">areTrafficLightsLocked</a></li>
+<li> <a href="../CreateSWATRope.html" title="CreateSWATRope">createSWATRope</a></li>
+<li> <a href="../GetAircraftMaxHeight.html" title="GetAircraftMaxHeight">getAircraftMaxHeight</a></li>
+<li> <a href="../GetAircraftMaxVelocity.html" title="GetAircraftMaxVelocity">getAircraftMaxVelocity</a></li>
+<li> <a href="../GetBirdsEnabled.html" title="GetBirdsEnabled">getBirdsEnabled</a></li>
+<li> <a href="../GetCloudsEnabled.html" title="GetCloudsEnabled">getCloudsEnabled</a></li>
+<li> <a href="../GetFarClipDistance.html" title="GetFarClipDistance">getFarClipDistance</a></li>
+<li> <a href="../GetFogDistance.html" title="GetFogDistance">getFogDistance</a></li>
+<li> <a href="../GetGameSpeed.html" title="GetGameSpeed">getGameSpeed</a></li>
+<li> <a href="../GetGarageBoundingBox.html" title="GetGarageBoundingBox">getGarageBoundingBox</a></li>
+<li> <a href="../GetGaragePosition.html" title="GetGaragePosition">getGaragePosition</a></li>
+<li> <a href="../GetGarageSize.html" title="GetGarageSize">getGarageSize</a></li>
+<li> <a href="../GetGravity.html" title="GetGravity">getGravity</a></li>
+<li> <a href="../GetGroundPosition.html" title="GetGroundPosition">getGroundPosition</a></li>
+<li> <a href="../GetHeatHaze.html" title="GetHeatHaze">getHeatHaze</a></li>
+<li> <a href="../GetInteriorFurnitureEnabled.html" title="GetInteriorFurnitureEnabled">getInteriorFurnitureEnabled</a></li>
+<li> <a href="../GetInteriorSoundsEnabled.html" title="GetInteriorSoundsEnabled">getInteriorSoundsEnabled</a></li>
+<li> <a href="../GetJetpackMaxHeight.html" title="GetJetpackMaxHeight">getJetpackMaxHeight</a></li>
+<li> <a href="../GetMinuteDuration.html" title="GetMinuteDuration">getMinuteDuration</a></li>
+<li> <a href="../GetMoonSize.html" title="GetMoonSize">getMoonSize</a></li>
+<li> <a href="../GetNearClipDistance.html" title="GetNearClipDistance">getNearClipDistance</a></li>
+<li> <a href="../GetOcclusionsEnabled.html" title="GetOcclusionsEnabled">getOcclusionsEnabled</a></li></ul>
+<ul><li><a href="../GetPedsLODDistance.html" title="GetPedsLODDistance">getPedsLODDistance</a></li>
+<li><a href="../SetPedsLODDistance.html" title="SetPedsLODDistance">setPedsLODDistance</a></li>
+<li><a href="../ResetPedsLODDistance.html" title="ResetPedsLODDistance">resetPedsLODDistance</a></li>
+<li> <a href="../GetPlayerBlurLevel.html" title="GetPlayerBlurLevel">getPlayerBlurLevel</a></li>
+<li> <a href="../GetRainLevel.html" title="GetRainLevel">getRainLevel</a></li>
+<li> <a href="../GetScreenFromWorldPosition.html" title="GetScreenFromWorldPosition">getScreenFromWorldPosition</a></li>
+<li> <a href="../GetSunColor.html" title="GetSunColor">getSunColor</a></li>
+<li> <a href="../GetSunSize.html" title="GetSunSize">getSunSize</a></li>
+<li> <a href="../GetTime.html" title="GetTime">getTime</a></li>
+<li> <a href="../GetTrafficLightState.html" title="GetTrafficLightState">getTrafficLightState</a></li>
+<li> <a href="../GetVehiclesLODDistance.html" title="GetVehiclesLODDistance">getVehiclesLODDistance</a></li>
+<li> <a href="../GetWeather.html" title="GetWeather">getWeather</a></li>
+<li> <a href="../GetWindVelocity.html" title="GetWindVelocity">getWindVelocity</a></li>
+<li> <a href="../GetWorldFromScreenPosition.html" title="GetWorldFromScreenPosition">getWorldFromScreenPosition</a></li>
+<li> <a href="../GetZoneName.html" title="GetZoneName">getZoneName</a></li>
+<li> <a href="../IsAmbientSoundEnabled.html" title="IsAmbientSoundEnabled">isAmbientSoundEnabled</a></li>
+<li> <a href="../IsGarageOpen.html" title="IsGarageOpen">isGarageOpen</a></li>
+<li> <a href="../IsLineOfSightClear.html" title="IsLineOfSightClear">isLineOfSightClear</a></li>
+<li> <a href="../IsWorldSoundEnabled.html" title="IsWorldSoundEnabled">isWorldSoundEnabled</a></li>
+<li> <a href="../IsWorldSpecialPropertyEnabled.html" title="IsWorldSpecialPropertyEnabled">isWorldSpecialPropertyEnabled</a></li>
+<li> <a href="../ProcessLineOfSight.html" title="ProcessLineOfSight">processLineOfSight</a></li>
+<li> <a href="../RemoveWorldModel.html" title="RemoveWorldModel">removeWorldModel</a></li>
+<li> <a href="../ResetAmbientSounds.html" title="ResetAmbientSounds">resetAmbientSounds</a></li>
+<li> <a href="../ResetFarClipDistance.html" title="ResetFarClipDistance">resetFarClipDistance</a></li>
+<li> <a href="../ResetFogDistance.html" title="ResetFogDistance">resetFogDistance</a></li>
+<li> <a href="../ResetHeatHaze.html" title="ResetHeatHaze">resetHeatHaze</a></li>
+<li> <a href="../ResetMoonSize.html" title="ResetMoonSize">resetMoonSize</a></li>
+<li> <a href="../ResetRainLevel.html" title="ResetRainLevel">resetRainLevel</a></li>
+<li> <a href="../ResetSkyGradient.html" title="ResetSkyGradient">resetSkyGradient</a></li>
+<li> <a href="../ResetSunColor.html" title="ResetSunColor">resetSunColor</a></li>
+<li> <a href="../ResetSunSize.html" title="ResetSunSize">resetSunSize</a></li>
+<li> <a href="../ResetVehiclesLODDistance.html" title="ResetVehiclesLODDistance">resetVehiclesLODDistance</a></li>
+<li> <a href="../ResetWindVelocity.html" title="ResetWindVelocity">resetWindVelocity</a></li>
+<li> <a href="../ResetWorldSounds.html" title="ResetWorldSounds">resetWorldSounds</a></li>
+<li> <a href="../RestoreAllWorldModels.html" title="RestoreAllWorldModels">restoreAllWorldModels</a></li>
+<li> <a href="../RestoreWorldModel.html" title="RestoreWorldModel">restoreWorldModel</a></li>
+<li> <a href="../SetAircraftMaxHeight.html" title="SetAircraftMaxHeight">setAircraftMaxHeight</a></li>
+<li> <a href="../SetAircraftMaxVelocity.html" title="SetAircraftMaxVelocity">setAircraftMaxVelocity</a></li>
+<li> <a href="../SetAmbientSoundEnabled.html" title="SetAmbientSoundEnabled">setAmbientSoundEnabled</a></li>
+<li> <a href="../SetBirdsEnabled.html" title="SetBirdsEnabled">setBirdsEnabled</a></li>
+<li> <a href="../SetCloudsEnabled.html" title="SetCloudsEnabled">setCloudsEnabled</a></li>
+<li> <a href="../SetFarClipDistance.html" title="SetFarClipDistance">setFarClipDistance</a></li>
+<li> <a href="../SetFogDistance.html" title="SetFogDistance">setFogDistance</a></li>
+<li> <a href="../SetGameSpeed.html" title="SetGameSpeed">setGameSpeed</a></li>
+<li> <a href="../SetGarageOpen.html" title="SetGarageOpen">setGarageOpen</a></li>
+<li> <a href="../SetGravity.html" title="SetGravity">setGravity</a></li>
+<li> <a href="../SetHeatHaze.html" title="SetHeatHaze">setHeatHaze</a></li>
+<li> <a href="../SetInteriorFurnitureEnabled.html" title="SetInteriorFurnitureEnabled">setInteriorFurnitureEnabled</a></li>
+<li> <a href="../SetInteriorSoundsEnabled.html" title="SetInteriorSoundsEnabled">setInteriorSoundsEnabled</a></li>
+<li> <a href="../SetJetpackMaxHeight.html" title="SetJetpackMaxHeight">setJetpackMaxHeight</a></li>
+<li> <a href="../SetMinuteDuration.html" title="SetMinuteDuration">setMinuteDuration</a></li>
+<li> <a href="../SetMoonSize.html" title="SetMoonSize">setMoonSize</a></li>
+<li> <a href="../SetNearClipDistance.html" title="SetNearClipDistance">setNearClipDistance</a></li>
+<li> <a href="../SetOcclusionsEnabled.html" title="SetOcclusionsEnabled">setOcclusionsEnabled</a></li>
+<li> <a href="../SetPlayerBlurLevel.html" title="SetPlayerBlurLevel">setPlayerBlurLevel</a></li>
+<li> <a href="../SetRainLevel.html" title="SetRainLevel">setRainLevel</a></li>
+<li> <a href="../SetSkyGradient.html" title="SetSkyGradient">setSkyGradient</a></li>
+<li> <a href="../SetSunColor.html" title="SetSunColor">setSunColor</a></li>
+<li> <a href="../SetSunSize.html" title="SetSunSize">setSunSize</a></li>
+<li> <a href="../SetTime.html" title="SetTime">setTime</a></li>
+<li> <a href="../SetTrafficLightState.html" title="SetTrafficLightState">setTrafficLightState</a></li>
+<li> <a href="../SetTrafficLightsLocked.html" title="SetTrafficLightsLocked">setTrafficLightsLocked</a></li>
+<li> <a href="../SetVehiclesLODDistance.html" title="SetVehiclesLODDistance">setVehiclesLODDistance</a></li>
+<li> <a href="../SetWeather.html" title="SetWeather">setWeather</a></li>
+<li> <a href="../SetWeatherBlended.html" title="SetWeatherBlended">setWeatherBlended</a></li>
+<li> <a href="../SetWindVelocity.html" title="SetWindVelocity">setWindVelocity</a></li>
+<li> <a href="../SetWorldSoundEnabled.html" title="SetWorldSoundEnabled">setWorldSoundEnabled</a></li>
+<li> <a href="../SetWorldSpecialPropertyEnabled.html" title="SetWorldSpecialPropertyEnabled">setWorldSpecialPropertyEnabled</a></li>
+<li> <a href="../TestLineAgainstWater.html" title="TestLineAgainstWater">testLineAgainstWater</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_XML">Функции XML</span></h2>
+<ul><li><a href="xmlCopyFile.html" title="RU/xmlCopyFile">xmlCopyFile</a></li>
+<li><a href="xmlCreateFile.html" title="RU/xmlCreateFile">xmlCreateFile</a></li>
+<li><a href="xmlDestroyNode.html" title="RU/xmlDestroyNode">xmlDestroyNode</a></li>
+<li><a href="xmlLoadFile.html" title="RU/xmlLoadFile">xmlLoadFile</a></li>
+<li><a href="xmlNodeGetAttribute.html" title="RU/xmlNodeGetAttribute">xmlNodeGetAttribute</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/xmlNodeGetValue&amp;action=edit&amp;redlink=1" class="new" title="RU/xmlNodeGetValue (page does not exist)">xmlNodeGetValue</a></li>
+<li><a href="xmlNodeSetAttribute.html" title="RU/xmlNodeSetAttribute">xmlNodeSetAttribute</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/xmlNodeSetValue&amp;action=edit&amp;redlink=1" class="new" title="RU/xmlNodeSetValue (page does not exist)">xmlNodeSetValue</a></li>
+<li><a href="xmlSaveFile.html" title="RU/xmlSaveFile">xmlSaveFile</a></li>
+<li><a href="xmlUnloadFile.html" title="RU/xmlUnloadFile">xmlUnloadFile</a></li></ul>
+<ul><li><a href="xmlCreateChild.html" title="RU/xmlCreateChild">xmlCreateChild</a></li>
+<li><a href="xmlFindChild.html" title="RU/xmlFindChild">xmlFindChild</a></li>
+<li><a href="xmlNodeGetAttributes.html" title="RU/xmlNodeGetAttributes">xmlNodeGetAttributes</a></li>
+<li><a href="xmlNodeGetChildren.html" title="RU/xmlNodeGetChildren">xmlNodeGetChildren</a></li>
+<li><a href="xmlNodeGetName.html" title="RU/xmlNodeGetName">xmlNodeGetName</a></li>
+<li><a href="xmlNodeGetParent.html" title="RU/xmlNodeGetParent">xmlNodeGetParent</a></li>
+<li><a href="xmlNodeSetName.html" title="RU/xmlNodeSetName">xmlNodeSetName</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625165349
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.151 seconds
+Real time usage: 0.202 seconds
+Preprocessor visited node count: 1679/1000000
+Preprocessor generated node count: 2341/1000000
+Post‐expand include size: 42330/2097152 bytes
+Template argument size: 3215/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  113.369      1 - -total
+ 31.78%   36.031     35 - Template:New_items
+ 20.42%   23.148     45 - Template:Current_Version
+ 12.42%   14.077      1 - Template:Client_vehicle_functions
+ 12.11%   13.726      1 - Template:RU/Browser_functions
+ 11.83%   13.417      1 - Template:RU/GUI_functions
+  6.62%    7.510      1 - Template:Client_ped_functions
+  4.93%    5.591      1 - Template:RU/XML_functions
+  4.21%    4.777      1 - Template:Engine_functions
+  3.77%    4.275      5 - Template:New_feature/item
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:4663-0!*!0!!en!*!* and timestamp 20190625165349 and revision id 58814
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=RU/Client_Scripting_Functions&amp;oldid=58814">https://wiki.multitheftauto.com/index.php?title=RU/Client_Scripting_Functions&amp;oldid=58814</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="../Special_Categories.html" title="Special:Categories">Categories</a>: <ul><li><a href="http://wiki.localhost/index.php?title=Category:Changes_in_1.3.5&amp;action=edit&amp;redlink=1" class="new" title="Category:Changes in 1.3.5 (page does not exist)">Changes in 1.3.5</a></li><li><a href="http://wiki.localhost/index.php?title=Category:Changes_in_1.3.1&amp;action=edit&amp;redlink=1" class="new" title="Category:Changes in 1.3.1 (page does not exist)">Changes in 1.3.1</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Client_Scripting_Functions.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:RU/Client_Scripting_Functions&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=RU/Client_Scripting_Functions&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=RU/Client_Scripting_Functions&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=RU%2FClient+Scripting+Functions" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=RU%2FClient+Scripting+Functions" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/RU/Client_Scripting_Functions.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/RU/Client_Scripting_Functions.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=RU/Client_Scripting_Functions&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=RU/Client_Scripting_Functions&amp;oldid=58814" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=RU/Client_Scripting_Functions&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-ar"><a href="http://wiki.multitheftauto.com/index.php?title=AR/Client_Scripting_Functions" title="Client Scripting Functions – العربية" lang="ar" hreflang="ar">العربية</a></li>
+													<li class="interlanguage-link interwiki-pl"><a href="http://wiki.multitheftauto.com/index.php?title=PL/Funkcje_po_stronie_klienta" title="Funkcje po stronie klienta – polski" lang="pl" hreflang="pl">Polski</a></li>
+													<li class="interlanguage-link interwiki-it"><a href="http://wiki.multitheftauto.com/index.php?title=IT/Funzioni_Client-side" title="Funzioni Client-side – italiano" lang="it" hreflang="it">Italiano</a></li>
+													<li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=Client_Scripting_Functions" title="Client Scripting Functions – English" lang="en" hreflang="en">English</a></li>
+													<li class="interlanguage-link interwiki-es"><a href="http://wiki.multitheftauto.com/index.php?title=ES/Funciones_del_cliente" title="Funciones del cliente – español" lang="es" hreflang="es">Español</a></li>
+													<li class="interlanguage-link interwiki-de"><a href="http://wiki.multitheftauto.com/index.php?title=DE/Clientseitige_Funktionen" title="Clientseitige Funktionen – Deutsch" lang="de" hreflang="de">Deutsch</a></li>
+													<li class="interlanguage-link interwiki-tr"><a href="http://wiki.multitheftauto.com/index.php?title=TR/Client_Tarafl%C4%B1_Fonksiyonlar" title="Client Taraflı Fonksiyonlar – Türkçe" lang="tr" hreflang="tr">Türkçe</a></li>
+													<li class="interlanguage-link interwiki-zh-cn"><a href="http://wiki.multitheftauto.com/index.php?title=ZH-CN/%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%84%9A%E6%9C%AC%E5%87%BD%E6%95%B0" title="客户端脚本函数 – 中文（中国大陆）‎" lang="zh-CN" hreflang="zh-CN">中文（中国大陆）‎</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 2 September 2018, at 00:58.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":246});});</script></body></html>

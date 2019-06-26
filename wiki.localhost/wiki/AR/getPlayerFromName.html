@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>AR/getPlayerFromName - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"AR/getPlayerFromName","wgTitle":"AR/getPlayerFromName","wgCurRevisionId":45574,"wgRevisionId":45574,"wgArticleId":8397,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"AR/getPlayerFromName","wgRelevantArticleId":8397,"wgRequestId":"dd7c402d3aac1e549d067019","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-AR_getPlayerFromName rootpage-AR_getPlayerFromName skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">AR/getPlayerFromName</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.D8.AA.D9.83.D9.88.D9.8A.D9.86_.D8.A7.D9.84.D8.AC.D9.85.D9.84.D8.A9"><span class="tocnumber">1</span> <span class="toctext">تكوين الجملة</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#.D8.A7.D9.84.D8.A7.D8.B1.D9.82.D9.85.D9.86.D8.AA"><span class="tocnumber">1.1</span> <span class="toctext">الارقمنت</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#.D8.A5.D8.B1.D8.AC.D8.A7.D8.B9"><span class="tocnumber">1.2</span> <span class="toctext">إرجاع</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#.D9.85.D8.AB.D8.A7.D9.84"><span class="tocnumber">2</span> <span class="toctext">مثال</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#.D8.A2.D8.AE.D8.B1"><span class="tocnumber">3</span> <span class="toctext">آخر</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id=".D8.AA.D9.83.D9.88.D9.8A.D9.86_.D8.A7.D9.84.D8.AC.D9.85.D9.84.D8.A9">تكوين الجملة</span></h2>
+<pre class="prettyprint lang-lua">
+player getPlayerFromName ( string playerName )
+</pre>
+<p><u><b>OOP Syntax</b></u> <small><a href="../OOP_Introduction.html" title="OOP Introduction">Help! I don't understand this!</a></small>
+</p>
+<dl><dd> <b>Method</b>: <i><a href="http://wiki.localhost/index.php?title=%D8%A7%D9%84%D9%84%D8%A7%D8%B9%D8%A8&amp;action=edit&amp;redlink=1" class="new" title="اللاعب (page does not exist)">اللاعب</a>(...)</i></dd></dl>
+<h3><span class="mw-headline" id=".D8.A7.D9.84.D8.A7.D8.B1.D9.82.D9.85.D9.86.D8.AA">الارقمنت</span></h3>
+<ul><li> <b>playerName</b>: اسم اللاعب الذي تريد إحضاره</li></ul>
+<h3><span class="mw-headline" id=".D8.A5.D8.B1.D8.AC.D8.A7.D8.B9">إرجاع</span></h3>
+<ul><li>يقوم بإرجاع اللاعب الذي تم اختياره من قِبل اسمه</li></ul>
+<h2><span class="mw-headline" id=".D9.85.D8.AB.D8.A7.D9.84">مثال</span></h2>
+<p>على سبيل المثال، يقوم هذا الامر "إرسال" بأرسال رسالة خاصة للاعب المحدد من الأمر
+</p>
+<pre class="prettyprint lang-lua">
+function send( player,command, playerName, ... )
+    message = table.concat({...}, " ")
+    outputChatBox("(PM) "..getPlayerName(player)..": "..message.."",getPlayerFromName(playerName),255,255,0)
+end
+addCommandHandler("إرسال", send)
+</pre>
+<h2><span class="mw-headline" id=".D8.A2.D8.AE.D8.B1">آخر</span></h2>
+<ul><li> <a href="../ForcePlayerMap.html" title="ForcePlayerMap">forcePlayerMap</a></li>
+<li> <a href="../GetAlivePlayers.html" title="GetAlivePlayers">getAlivePlayers</a></li>
+<li> <a href="../GetDeadPlayers.html" title="GetDeadPlayers">getDeadPlayers</a></li>
+<li> <a href="../GetPlayerACInfo.html" title="GetPlayerACInfo">getPlayerACInfo</a></li>
+<li> <a href="../GetPlayerAnnounceValue.html" title="GetPlayerAnnounceValue">getPlayerAnnounceValue</a></li>
+<li> <a href="../GetPlayerBlurLevel.html" title="GetPlayerBlurLevel">getPlayerBlurLevel</a></li>
+<li> <a href="../GetPlayerCount.html" title="GetPlayerCount">getPlayerCount</a></li>
+<li> <a href="../GetPlayerFromName.html" title="GetPlayerFromName">getPlayerFromName</a></li>
+<li> <a href="../GetPlayerIdleTime.html" title="GetPlayerIdleTime">getPlayerIdleTime</a></li>
+<li> <a href="../GetPlayerIP.html" title="GetPlayerIP">getPlayerIP</a></li>
+<li> <a href="../GetPlayerMoney.html" title="GetPlayerMoney">getPlayerMoney</a></li>
+<li> <a href="../GetPlayerName.html" title="GetPlayerName">getPlayerName</a></li>
+<li> <a href="../GetPlayerNametagColor.html" title="GetPlayerNametagColor">getPlayerNametagColor</a></li>
+<li> <a href="../GetPlayerNametagText.html" title="GetPlayerNametagText">getPlayerNametagText</a></li>
+<li> <a href="../GetPlayerPing.html" title="GetPlayerPing">getPlayerPing</a></li>
+<li> <a href="../GetPlayerSerial.html" title="GetPlayerSerial">getPlayerSerial</a></li>
+<li> <a href="../GetPlayerTeam.html" title="GetPlayerTeam">getPlayerTeam</a></li>
+<li> <a href="../GetPlayerVersion.html" title="GetPlayerVersion">getPlayerVersion</a></li>
+<li> <a href="../GetPlayerWantedLevel.html" title="GetPlayerWantedLevel">getPlayerWantedLevel</a></li>
+<li> <a href="../GetRandomPlayer.html" title="GetRandomPlayer">getRandomPlayer</a></li>
+<li> <a href="../GivePlayerMoney.html" title="GivePlayerMoney">givePlayerMoney</a></li>
+<li> <a href="../IsPlayerMapForced.html" title="IsPlayerMapForced">isPlayerMapForced</a></li>
+<li> <a href="../IsPlayerMuted.html" title="IsPlayerMuted">isPlayerMuted</a></li>
+<li> <a href="../IsPlayerNametagShowing.html" title="IsPlayerNametagShowing">isPlayerNametagShowing</a></li>
+<li> <a href="../IsVoiceEnabled.html" title="IsVoiceEnabled">isVoiceEnabled</a></li>
+<li> <a href="../RedirectPlayer.html" title="RedirectPlayer">redirectPlayer</a></li></ul>
+<ul><li><a href="../ResendPlayerACInfo.html" title="ResendPlayerACInfo">resendPlayerACInfo</a></li>
+<li> <a href="../ResendPlayerModInfo.html" title="ResendPlayerModInfo">resendPlayerModInfo</a></li>
+<li> <a href="../SetPlayerAnnounceValue.html" title="SetPlayerAnnounceValue">setPlayerAnnounceValue</a></li>
+<li> <a href="../SetPlayerBlurLevel.html" title="SetPlayerBlurLevel">setPlayerBlurLevel</a></li>
+<li> <a href="../SetPlayerHudComponentVisible.html" title="SetPlayerHudComponentVisible">setPlayerHudComponentVisible</a></li>
+<li> <a href="../SetPlayerMoney.html" title="SetPlayerMoney">setPlayerMoney</a></li>
+<li> <a href="../SetPlayerMuted.html" title="SetPlayerMuted">setPlayerMuted</a></li>
+<li> <a href="../SetPlayerName.html" title="SetPlayerName">setPlayerName</a></li>
+<li> <a href="../SetPlayerNametagColor.html" title="SetPlayerNametagColor">setPlayerNametagColor</a></li>
+<li> <a href="../SetPlayerNametagShowing.html" title="SetPlayerNametagShowing">setPlayerNametagShowing</a></li>
+<li> <a href="../SetPlayerNametagText.html" title="SetPlayerNametagText">setPlayerNametagText</a></li>
+<li> <a href="../SetPlayerTeam.html" title="SetPlayerTeam">setPlayerTeam</a></li>
+<li> <a href="../SetPlayerVoiceBroadcastTo.html" title="SetPlayerVoiceBroadcastTo">setPlayerVoiceBroadcastTo</a></li>
+<li> <a href="../SetPlayerVoiceIgnoreFrom.html" title="SetPlayerVoiceIgnoreFrom">setPlayerVoiceIgnoreFrom</a></li>
+<li> <a href="../SetPlayerWantedLevel.html" title="SetPlayerWantedLevel">setPlayerWantedLevel</a></li>
+<li> <a href="../SpawnPlayer.html" title="SpawnPlayer">spawnPlayer</a></li>
+<li> <a href="../TakePlayerMoney.html" title="TakePlayerMoney">takePlayerMoney</a></li>
+<li> <a href="../TakePlayerScreenShot.html" title="TakePlayerScreenShot">takePlayerScreenShot</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625165313
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.010 seconds
+Real time usage: 0.011 seconds
+Preprocessor visited node count: 85/1000000
+Preprocessor generated node count: 457/1000000
+Post‐expand include size: 1312/2097152 bytes
+Template argument size: 63/2097152 bytes
+Highest expansion depth: 9/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    4.016      1 - -total
+ 67.75%    2.721      1 - Template:Player_functions
+ 53.91%    2.165      1 - Template:New_items
+ 29.56%    1.187      1 - Template:Current_Version
+ 27.46%    1.103      1 - Template:OOP
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:8397-0!*!0!!en!*!* and timestamp 20190625165313 and revision id 45574
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=AR/getPlayerFromName&amp;oldid=45574">https://wiki.multitheftauto.com/index.php?title=AR/getPlayerFromName&amp;oldid=45574</a>"</div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="getPlayerFromName.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:AR/getPlayerFromName&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=AR/getPlayerFromName&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=AR/getPlayerFromName&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=AR%2FgetPlayerFromName" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=AR%2FgetPlayerFromName" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/AR/getPlayerFromName.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/AR/getPlayerFromName.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=AR/getPlayerFromName&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=AR/getPlayerFromName&amp;oldid=45574" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=AR/getPlayerFromName&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-ru"><a href="http://wiki.multitheftauto.com/index.php?title=RU/getPlayerFromName" title="getPlayerFromName – русский" lang="ru" hreflang="ru">Русский</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 29 July 2015, at 15:14.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":56});});</script></body></html>

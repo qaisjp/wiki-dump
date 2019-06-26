@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Client Commands - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Client_Commands","wgTitle":"Client Commands","wgCurRevisionId":62931,"wgRevisionId":62931,"wgArticleId":5975,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Support"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Client_Commands","wgRelevantArticleId":5975,"wgRequestId":"e950f388a6ee3aa9e8e1c662","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Client_Commands rootpage-Client_Commands skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Client Commands</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>This page lists all built in commands that the client can process. These commands can be entered directly to the client console or via the chatbox by putting a / (forward slash) in front of them. Some <a href="Server_Commands.html" title="Server Commands">server commands</a> are also accessible from the client. Arguments inside [...] are optional.
+</p><p><br />
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Core_commands"><span class="tocnumber">1</span> <span class="toctext">Core commands</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#help"><span class="tocnumber">1.1</span> <span class="toctext">help</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#exit"><span class="tocnumber">1.2</span> <span class="toctext">exit</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#quit"><span class="tocnumber">1.3</span> <span class="toctext">quit</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#ver"><span class="tocnumber">1.4</span> <span class="toctext">ver</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#time"><span class="tocnumber">1.5</span> <span class="toctext">time</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#showhud"><span class="tocnumber">1.6</span> <span class="toctext">showhud</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#binds"><span class="tocnumber">1.7</span> <span class="toctext">binds</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#serial"><span class="tocnumber">1.8</span> <span class="toctext">serial</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#connect"><span class="tocnumber">1.9</span> <span class="toctext">connect</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#reconnect"><span class="tocnumber">1.10</span> <span class="toctext">reconnect</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#bind"><span class="tocnumber">1.11</span> <span class="toctext">bind</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#unbind"><span class="tocnumber">1.12</span> <span class="toctext">unbind</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#copygtacontrols"><span class="tocnumber">1.13</span> <span class="toctext">copygtacontrols</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#screenshot"><span class="tocnumber">1.14</span> <span class="toctext">screenshot</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#saveconfig"><span class="tocnumber">1.15</span> <span class="toctext">saveconfig</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-17"><a href="#Commands_when_connected_to_a_server"><span class="tocnumber">2</span> <span class="toctext">Commands when connected to a server</span></a>
+<ul>
+<li class="toclevel-2 tocsection-18"><a href="#fakelag"><span class="tocnumber">2.1</span> <span class="toctext">fakelag</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#sinfo"><span class="tocnumber">2.2</span> <span class="toctext">sinfo</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#disconnect"><span class="tocnumber">2.3</span> <span class="toctext">disconnect</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#shownametags"><span class="tocnumber">2.4</span> <span class="toctext">shownametags</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#showchat"><span class="tocnumber">2.5</span> <span class="toctext">showchat</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#shownetstat"><span class="tocnumber">2.6</span> <span class="toctext">shownetstat</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#showmemstat"><span class="tocnumber">2.7</span> <span class="toctext">showmemstat</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="#showframegraph"><span class="tocnumber">2.8</span> <span class="toctext">showframegraph</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="#chatbox"><span class="tocnumber">2.9</span> <span class="toctext">chatbox</span></a></li>
+<li class="toclevel-2 tocsection-27"><a href="#textscale"><span class="tocnumber">2.10</span> <span class="toctext">textscale</span></a></li>
+<li class="toclevel-2 tocsection-28"><a href="#showcol"><span class="tocnumber">2.11</span> <span class="toctext">showcol</span></a></li>
+<li class="toclevel-2 tocsection-29"><a href="#showsound"><span class="tocnumber">2.12</span> <span class="toctext">showsound</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-30"><a href="#Commands_for_key_binds"><span class="tocnumber">3</span> <span class="toctext">Commands for key binds</span></a>
+<ul>
+<li class="toclevel-2 tocsection-31"><a href="#cleardebug"><span class="tocnumber">3.1</span> <span class="toctext">cleardebug</span></a></li>
+<li class="toclevel-2 tocsection-32"><a href="#chatscrollup"><span class="tocnumber">3.2</span> <span class="toctext">chatscrollup</span></a></li>
+<li class="toclevel-2 tocsection-33"><a href="#chatscrolldown"><span class="tocnumber">3.3</span> <span class="toctext">chatscrolldown</span></a></li>
+<li class="toclevel-2 tocsection-34"><a href="#debugscrollup"><span class="tocnumber">3.4</span> <span class="toctext">debugscrollup</span></a></li>
+<li class="toclevel-2 tocsection-35"><a href="#debugscrolldown"><span class="tocnumber">3.5</span> <span class="toctext">debugscrolldown</span></a></li>
+<li class="toclevel-2 tocsection-36"><a href="#voiceptt"><span class="tocnumber">3.6</span> <span class="toctext">voiceptt</span></a></li>
+<li class="toclevel-2 tocsection-37"><a href="#enter_passenger"><span class="tocnumber">3.7</span> <span class="toctext">enter_passenger</span></a></li>
+<li class="toclevel-2 tocsection-38"><a href="#radio_next"><span class="tocnumber">3.8</span> <span class="toctext">radio_next</span></a></li>
+<li class="toclevel-2 tocsection-39"><a href="#radio_previous"><span class="tocnumber">3.9</span> <span class="toctext">radio_previous</span></a></li>
+<li class="toclevel-2 tocsection-40"><a href="#radar"><span class="tocnumber">3.10</span> <span class="toctext">radar</span></a></li>
+<li class="toclevel-2 tocsection-41"><a href="#radar_zoom_in"><span class="tocnumber">3.11</span> <span class="toctext">radar_zoom_in</span></a></li>
+<li class="toclevel-2 tocsection-42"><a href="#radar_zoom_out"><span class="tocnumber">3.12</span> <span class="toctext">radar_zoom_out</span></a></li>
+<li class="toclevel-2 tocsection-43"><a href="#radar_move_north"><span class="tocnumber">3.13</span> <span class="toctext">radar_move_north</span></a></li>
+<li class="toclevel-2 tocsection-44"><a href="#radar_move_south"><span class="tocnumber">3.14</span> <span class="toctext">radar_move_south</span></a></li>
+<li class="toclevel-2 tocsection-45"><a href="#radar_move_east"><span class="tocnumber">3.15</span> <span class="toctext">radar_move_east</span></a></li>
+<li class="toclevel-2 tocsection-46"><a href="#radar_move_west"><span class="tocnumber">3.16</span> <span class="toctext">radar_move_west</span></a></li>
+<li class="toclevel-2 tocsection-47"><a href="#radar_attach"><span class="tocnumber">3.17</span> <span class="toctext">radar_attach</span></a></li>
+<li class="toclevel-2 tocsection-48"><a href="#msg_target"><span class="tocnumber">3.18</span> <span class="toctext">msg_target</span></a></li>
+<li class="toclevel-2 tocsection-49"><a href="#vehicle_next_weapon"><span class="tocnumber">3.19</span> <span class="toctext">vehicle_next_weapon</span></a></li>
+<li class="toclevel-2 tocsection-50"><a href="#vehicle_previous_weapon"><span class="tocnumber">3.20</span> <span class="toctext">vehicle_previous_weapon</span></a></li>
+<li class="toclevel-2 tocsection-51"><a href="#radio_next_2"><span class="tocnumber">3.21</span> <span class="toctext">radio_next</span></a></li>
+<li class="toclevel-2 tocsection-52"><a href="#radio_previous_2"><span class="tocnumber">3.22</span> <span class="toctext">radio_previous</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Core_commands">Core commands</span></h2>
+<h4><span class="mw-headline" id="help">help</span></h4>
+<dl><dd>Displays these list of commands</dd></dl>
+<h4><span class="mw-headline" id="exit">exit</span></h4>
+<dl><dd>Exits the application</dd></dl>
+<h4><span class="mw-headline" id="quit">quit</span></h4>
+<dl><dd>Exits the application</dd></dl>
+<h4><span class="mw-headline" id="ver">ver</span></h4>
+<dl><dd>Outputs the MTA version in the client console</dd></dl>
+<h4><span class="mw-headline" id="time">time</span></h4>
+<dl><dd>Outputs the local time in the chatbox</dd></dl>
+<h4><span class="mw-headline" id="showhud">showhud</span></h4>
+<dl><dd>Usage: showhud [<i>&lt;</i>0-1<i>&gt;</i>]</dd>
+<dd>Shows the HUD</dd></dl>
+<h4><span class="mw-headline" id="binds">binds</span></h4>
+<dl><dd>Outputs all the binds in the client console</dd></dl>
+<h4><span class="mw-headline" id="serial">serial</span></h4>
+<dl><dd>Outputs your serial in the client console</dd></dl>
+<h4><span class="mw-headline" id="connect">connect</span></h4>
+<dl><dd>Usage: connect <i>&lt;host&gt;</i> [<i>&lt;port&gt; &lt;nick&gt; &lt;pass&gt;</i>]</dd>
+<dd>Connects to a server</dd></dl>
+<h4><span class="mw-headline" id="reconnect">reconnect</span></h4>
+<dl><dd>Connects to a previous server</dd></dl>
+<h4><span class="mw-headline" id="bind">bind</span></h4>
+<dl><dd>Usage: bind <i>&lt;defaults/key&gt;</i> [<i>&lt;up/down&gt;</i>] <i>&lt;command&gt;</i> [<i>&lt;arguments&gt;</i>]</dd>
+<dd>Binds a key
+<dl><dd>Example to bind X to hiding the HUD: <b>bind x down showhud 0</b></dd>
+<dd>Example to reset all binds: <b>bind defaults</b></dd></dl></dd></dl>
+<h4><span class="mw-headline" id="unbind">unbind</span></h4>
+<dl><dd>Usage: unbind <i>&lt;all/key&gt;</i> [<i>&lt;up/down&gt; &lt;command&gt;</i>]</dd>
+<dd>Unbinds a key
+<dl><dd>Example to unbind X to from hiding the HUD: <b>unbind x down showhud 0</b></dd>
+<dd>Example to unbind all commands from X: <b>unbind x</b></dd></dl></dd></dl>
+<h4><span class="mw-headline" id="copygtacontrols">copygtacontrols</span></h4>
+<dl><dd>Copies the default gta controls - This may require a restart to work properly</dd></dl>
+<h4><span class="mw-headline" id="screenshot">screenshot</span></h4>
+<dl><dd>Saves a screenshot</dd></dl>
+<h4><span class="mw-headline" id="saveconfig">saveconfig</span></h4>
+<dl><dd>Immediately saves the config</dd></dl>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Commands_when_connected_to_a_server">Commands when connected to a server</span></h2>
+<h4><span class="mw-headline" id="fakelag">fakelag</span></h4>
+<div class="rellink noprint relarticle mainarticle" style="font-style:italic; padding-left:2em;">Main article: <a href="Command_fakelag.html" title="Command fakelag">Command fakelag</a><i></div></i>
+<dl><dd>Usage: fakelag <i>&lt;packet loss&gt;</i> <i>&lt;extra ping&gt;</i> <i>&lt;ping variance&gt;</i> [<i>&lt;KBPS limit&gt;</i>]</dd>
+<dd><b>Only available if enabled by the server.</b></dd>
+<dd>Adds artificial packet loss, ping, jitter and bandwidth limits to the client-server connection.</dd></dl>
+<h4><span class="mw-headline" id="sinfo">sinfo</span></h4>
+<dl><dd>Prints information and settings for the current server into the client console</dd></dl>
+<h4><span class="mw-headline" id="disconnect">disconnect</span></h4>
+<dl><dd>Disconnect from the server and return to the main menu</dd></dl>
+<h4><span class="mw-headline" id="shownametags">shownametags</span></h4>
+<dl><dd>Usage: shownametags [<i>&lt;</i>0-1<i>&gt;</i>]</dd>
+<dd>Shows the nametags</dd></dl>
+<h4><span class="mw-headline" id="showchat">showchat</span></h4>
+<dl><dd>Usage: showchat [<i>&lt;</i>0-1<i>&gt;</i>]</dd>
+<dd>Shows the chatbox</dd></dl>
+<h4><span class="mw-headline" id="shownetstat">shownetstat</span></h4>
+<dl><dd>Usage: shownetstat [<i>&lt;</i>0-1<i>&gt;</i>]</dd>
+<dd>Shows the network statistics </dd></dl>
+<h4><span class="mw-headline" id="showmemstat">showmemstat</span></h4>
+<dl><dd>Usage: showmemstat [<i>&lt;</i>0-1<i>&gt;</i>]</dd>
+<dd>Shows the memory statistics </dd></dl>
+<h4><span class="mw-headline" id="showframegraph">showframegraph</span></h4>
+<dl><dd>Usage: showframegraph [<i>&lt;</i>0-1<i>&gt;</i>]</dd>
+<dd>Shows the frame rate history graph </dd>
+<dd>The values are defined as the following:
+<dl><dd>FrameEnd</dd>
+<dd>Limiter</dd>
+<dd>PostPresent</dd>
+<dd>Present</dd></dl></dd></dl>
+<h4><span class="mw-headline" id="chatbox">chatbox</span></h4>
+<dl><dd>Usage: chatbox <i>&lt;</i>0-255<i>&gt;</i> <i>&lt;</i>0-255<i>&gt;</i> <i>&lt;</i>0-255<i>&gt;</i></dd>
+<dd>Defines the chatbox color</dd></dl>
+<h4><span class="mw-headline" id="textscale">textscale</span></h4>
+<dl><dd>Usage: textscale <i>&lt;</i>0.8 to 3.0<i>&gt;</i></dd>
+<dd>Defines the scale multiplier of all text-displays</dd></dl>
+<h4><span class="mw-headline" id="showcol">showcol</span></h4>
+<dl><dd>Usage: showcol [<i>&lt;</i>0-1<i>&gt;</i>]</dd>
+<dd>Shows colshapes in wireframe for help when writing scripts</dd>
+<dd>Only works in development mode.</dd>
+<dd>More information: <a href="SetDevelopmentMode.html" title="SetDevelopmentMode">setDevelopmentMode</a></dd></dl>
+<h4><span class="mw-headline" id="showsound">showsound</span></h4>
+<dl><dd>Usage: showsound [<i>&lt;</i>0-1<i>&gt;</i>]</dd>
+<dd>Prints world sound ids in the debug output windows to help when writing scripts with <a href="SetWorldSoundEnabled.html" title="SetWorldSoundEnabled">setWorldSoundEnabled</a></dd>
+<dd>Only works in development mode.</dd>
+<dd>More information: <a href="SetDevelopmentMode.html" title="SetDevelopmentMode">setDevelopmentMode</a></dd></dl>
+<h2><span class="mw-headline" id="Commands_for_key_binds">Commands for key binds</span></h2>
+<h4><span class="mw-headline" id="cleardebug">cleardebug</span></h4>
+<dl><dd>Clears the debug view</dd></dl>
+<h4><span class="mw-headline" id="chatscrollup">chatscrollup</span></h4>
+<dl><dd>Usage: chatscrollup 1 </dd>
+<dd>Scrolls the chatbox upwards</dd></dl>
+<h4><span class="mw-headline" id="chatscrolldown">chatscrolldown</span></h4>
+<dl><dd>Usage: chatscrolldown -1 </dd>
+<dd>Scrolls the chatbox downwards</dd></dl>
+<h4><span class="mw-headline" id="debugscrollup">debugscrollup</span></h4>
+<dl><dd>Usage: debugscrollup 1 </dd>
+<dd>Scrolls the debug view upwards</dd></dl>
+<h4><span class="mw-headline" id="debugscrolldown">debugscrolldown</span></h4>
+<dl><dd>Usage: debugscrolldown -1 </dd>
+<dd>Scrolls the debug view downwards</dd></dl>
+<h4><span class="mw-headline" id="voiceptt">voiceptt</span></h4>
+<dl><dd>Usage: voiceptt &lt;0-1&gt;</dd>
+<dd>Enable voice input.</dd></dl>
+<h4><span class="mw-headline" id="enter_passenger">enter_passenger</span></h4>
+<dl><dd>Enters a car as passenger</dd></dl>
+<h4><span class="mw-headline" id="radio_next">radio_next</span></h4>
+<dl><dd>Next radio channel</dd></dl>
+<h4><span class="mw-headline" id="radio_previous">radio_previous</span></h4>
+<dl><dd>Previous radio channel</dd></dl>
+<h4><span class="mw-headline" id="radar">radar</span></h4>
+<dl><dd>Usage: radar [<i>&lt;</i>0-1<i>&gt;</i>] </dd>
+<dd>Shows the radar view</dd></dl>
+<h4><span class="mw-headline" id="radar_zoom_in">radar_zoom_in</span></h4>
+<dl><dd>Zooms the radar in</dd></dl>
+<h4><span class="mw-headline" id="radar_zoom_out">radar_zoom_out</span></h4>
+<dl><dd>Zooms the radar out</dd></dl>
+<h4><span class="mw-headline" id="radar_move_north">radar_move_north</span></h4>
+<dl><dd>Moves the radar north</dd></dl>
+<h4><span class="mw-headline" id="radar_move_south">radar_move_south</span></h4>
+<dl><dd>Moves the radar south</dd></dl>
+<h4><span class="mw-headline" id="radar_move_east">radar_move_east</span></h4>
+<dl><dd>Moves the radar east</dd></dl>
+<h4><span class="mw-headline" id="radar_move_west">radar_move_west</span></h4>
+<dl><dd>Moves the radar west</dd></dl>
+<h4><span class="mw-headline" id="radar_attach">radar_attach</span></h4>
+<dl><dd>Attaches the radar </dd></dl>
+<h4><span class="mw-headline" id="msg_target">msg_target</span></h4>
+<dl><dd>Usage: msg_target <i>&lt;text&gt;</i> </dd>
+<dd>Sends a message to the targeted player</dd></dl>
+<h4><span class="mw-headline" id="vehicle_next_weapon">vehicle_next_weapon</span></h4>
+<dl><dd>Changes to the next weapon whilst in a vehicle</dd></dl>
+<h4><span class="mw-headline" id="vehicle_previous_weapon">vehicle_previous_weapon</span></h4>
+<dl><dd>Changes to the previous weapon whilst in a vehicle</dd></dl>
+<h4><span class="mw-headline" id="radio_next_2">radio_next</span></h4>
+<dl><dd>Selects the next radio station</dd></dl>
+<h4><span class="mw-headline" id="radio_previous_2">radio_previous</span></h4>
+<dl><dd>Selects the previous radio station</dd></dl>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625163532
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.011 seconds
+Real time usage: 0.012 seconds
+Preprocessor visited node count: 251/1000000
+Preprocessor generated node count: 839/1000000
+Post‐expand include size: 438/2097152 bytes
+Template argument size: 141/2097152 bytes
+Highest expansion depth: 5/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    4.249      1 - -total
+100.00%    4.249      1 - Template:Main
+ 52.62%    2.236      1 - Template:Rellink
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:5975-0!*!0!!en!*!* and timestamp 20190625163532 and revision id 62931
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=Client_Commands&amp;oldid=62931">https://wiki.multitheftauto.com/index.php?title=Client_Commands&amp;oldid=62931</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_Support.html" title="Category:Support">Support</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Client_Commands.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:Client_Commands&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=Client_Commands&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=Client_Commands&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=Client+Commands" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=Client+Commands" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/Client_Commands.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/Client_Commands.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=Client_Commands&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=Client_Commands&amp;oldid=62931" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=Client_Commands&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-ru"><a href="http://wiki.multitheftauto.com/index.php?title=RU/Client_Commands" title="Client Commands – русский" lang="ru" hreflang="ru">Русский</a></li>
+													<li class="interlanguage-link interwiki-hu"><a href="http://wiki.multitheftauto.com/index.php?title=HU/Client_Commands" title="Client Commands – magyar" lang="hu" hreflang="hu">Magyar</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 4 June 2019, at 19:57.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":72});});</script></body></html>

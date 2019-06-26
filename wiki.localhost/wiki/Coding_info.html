@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Coding info - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Coding_info","wgTitle":"Coding info","wgCurRevisionId":57156,"wgRevisionId":57156,"wgArticleId":8107,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Development"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Coding_info","wgRelevantArticleId":8107,"wgRequestId":"1f4591da1dbd9232bf04fc83","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Coding_info rootpage-Coding_info skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Coding info</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Projects_explained"><span class="tocnumber">2</span> <span class="toctext">Projects explained</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Simplification_of_data_types"><span class="tocnumber">3</span> <span class="toctext">Simplification of data types</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Debug_Commands"><span class="tocnumber">4</span> <span class="toctext">Debug Commands</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Entity_types"><span class="tocnumber">5</span> <span class="toctext">Entity types</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Introduction">Introduction</span></h2>
+<p>This page has information which would be useful for anyone who is doing coding for MTA SA. <a href="Coding_guidelines.html" title="Coding guidelines">Coding guidelines</a> also has a lot of useful info.
+</p>
+<h2><span class="mw-headline" id="Projects_explained">Projects explained</span></h2>
+<ul><li> Client - Core: Typically UI elements like main menu etc and isn't ever unloaded.</li>
+<li> Client - Deathmatch: Where MTA makes all it's functions and events do stuff.</li>
+<li> Client - Game SA: Low level stuff which is mainly function calls to the game so each element will have a game_sa class like Vehicle, Ped, Object etc.</li>
+<li> Client - GUI: It's just wrappers to CEGUI, you need not touch.</li>
+<li> Client - Launch: Is the MTA executable which loads loader, you need not touch.</li>
+<li> Client - Loader: You need not touch the loader either.</li>
+<li> Client - Multiplayer SA: Hooks, code modification and that sort of low level things that lets us work.</li>
+<li> Server - Core: Cazomino05: "I genuinely don't really know why we have server core."</li>
+<li> Server - Dbconmy: Stuff to do with the db* functions, you need not touch.</li>
+<li> Server - Deathmatch: All the server logic and storage classes for elements as well as Lua stuff.</li>
+<li> Server - Launcher: Just an executable to load all the DLLs we need.</li>
+<li> Shared - XML Module: XML module is just tinyxml and some high level wrapper functions for stuff we need.</li>
+<li> Dependencies: Has a load of 3rd party code, modules like sqlite, curl, lua, ehs, etc.</li>
+<li> CEGUI: Crazy Eddie's GUI system is a graphical user interface C++ library.</li></ul>
+<p>Some of the code may be explained in detail in pages under the this category: <a href="Category_Classes_(Blue).html" title="Category:Classes (Blue)">Classes (Blue)</a>
+</p>
+<h2><span class="mw-headline" id="Simplification_of_data_types">Simplification of data types</span></h2>
+<p>MTA has some type definitions you can use (Can be found in Shared/sdk/SharedUtil.h)
+</p>
+<ul><li> ulong = unsigned long</li>
+<li> uint = unsigned int</li>
+<li> ushort = unsigned short</li>
+<li> uchar = unsigned char</li>
+<li> uint64 = unsigned long long</li>
+<li> uint32 = unsigned int</li>
+<li> uint16 = unsigned short</li>
+<li> uint8 = unsigned char</li>
+<li> int64 = signed long long</li>
+<li> int32 = signed int</li>
+<li> int16 = signed short</li>
+<li> int8 = signed char</li>
+<li> BYTE = unsigned char</li>
+<li> WORD = unsigned short</li>
+<li> DWORD = unsigned long</li>
+<li> FLOAT = float</li></ul>
+<h2><span class="mw-headline" id="Debug_Commands">Debug Commands</span></h2>
+<p>MTA has some commands which you can use if you're running debug mode
+</p>
+<ul><li> showsync - show sync data</li>
+<li> foo - debug command for devs</li>
+<li> showwepdata - shows the given player weapon data (nick)</li>
+<li> showtasks - shows the local player tasks (nick)</li>
+<li> showplayer - shows extended player information (nick)</li>
+<li> setmimic - enables player mimics (amount)</li>
+<li> setmimiclag - enables player mimic lag (amount)</li>
+<li> paintballs - enables paintball mode</li>
+<li> breakpoint - inserts breakpoint</li>
+<li> giveweapon - gives the player a weapon (id)</li>
+<li> showrpcs - shows the remote prodecure calls</li>
+<li> showinterpolation - shows information about the interpolation</li>
+<li> watch - enables wpm watch mode</li>
+<li> modules - enables wpm module</li>
+<li> debug - debug function 1</li>
+<li> debug2 - debug function 2</li>
+<li> debug3 - debug function 3</li>
+<li> debug4 - debug function 4</li></ul>
+<h2><span class="mw-headline" id="Entity_types">Entity types</span></h2>
+<ul><li> CCLIENTCAMERA - Camera</li>
+<li> CCLIENTPLAYER - Player</li>
+<li> CCLIENTVEHICLE - Vehicle</li>
+<li> CCLIENTRADARMARKER - Blip</li>
+<li> CCLIENTOBJECT - Object</li>
+<li> CCLIENTPICKUP - Pickup</li>
+<li> CCLIENTRADARAREA - RadarArea</li>
+<li> CCLIENTMARKER - Marker</li>
+<li> CCLIENTTEAM - Team</li>
+<li> CCLIENTPED - Ped</li>
+<li> CCLIENTPROJECTILE - Projectile</li>
+<li> CCLIENTIFP - EngineIFP</li>
+<li> CCLIENTGUI:</li>
+<li> CGUI_BUTTON - GuiButton</li>
+<li> CGUI_CHECKBOX - GuiCheckBox</li>
+<li> CGUI_EDIT - GuiEdit</li>
+<li> CGUI_GRIDLIST - GuiGridList</li>
+<li> CGUI_LABEL - GuiLabel</li>
+<li> CGUI_MEMO - GuiMemo</li>
+<li> CGUI_PROGRESSBAR - GuiProgressBar</li>
+<li> CGUI_RADIOBUTTON - GuiRadioButton</li>
+<li> CGUI_STATICIMAGE - GuiStaticImage</li>
+<li> CGUI_TAB - GuiTab</li>
+<li> CGUI_TABPANEL - GuiTabPanel</li>
+<li> CGUI_WINDOW - GuiWindow</li>
+<li> CGUI_SCROLLPANE - GuiScrollPane</li>
+<li> CGUI_SCROLLBAR - GuiScrollBar</li>
+<li> CGUI_COMBOBOX - GuiComboBox</li>
+<li> CCLIENTCOLSHAPE - ColShape</li>
+<li> SCRIPTFILE - File</li>
+<li> CCLIENTDFF - EngineDFF</li>
+<li> CCLIENTCOL - EngineCOL</li>
+<li> CCLIENTTXD - EngineTXD</li>
+<li> CCLIENTSOUND - Sound</li>
+<li> CCLIENTWATER - Water</li>
+<li> CCLIENTDXFONT - DxFont</li>
+<li> CCLIENTGUIFONT - GuiFont</li>
+<li> CCLIENTTEXTURE - DxTexture</li>
+<li> CCLIENTSHADER - DxShader</li>
+<li> CCLIENTWEAPON - Weapon</li>
+<li> CCLIENTEFFECT - Effect</li>
+<li> CCLIENTSCREENSOURCE - DxScreenSource</li>
+<li> CCLIENTRENDERTARGET - DxRenderTarget</li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625164300
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.003 seconds
+Real time usage: 0.003 seconds
+Preprocessor visited node count: 18/1000000
+Preprocessor generated node count: 24/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 - -total
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:8107-0!*!0!!en!*!* and timestamp 20190625164300 and revision id 57156
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=Coding_info&amp;oldid=57156">https://wiki.multitheftauto.com/index.php?title=Coding_info&amp;oldid=57156</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_Development.html" title="Category:Development">Development</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Coding_info.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:Coding_info&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=Coding_info&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=Coding_info&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=Coding+info" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=Coding+info" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/Coding_info.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/Coding_info.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=Coding_info&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=Coding_info&amp;oldid=57156" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=Coding_info&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+			</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 30 July 2018, at 08:19.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":38});});</script></body></html>

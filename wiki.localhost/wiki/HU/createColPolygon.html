@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>HU/createColPolygon - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"HU/createColPolygon","wgTitle":"HU/createColPolygon","wgCurRevisionId":62670,"wgRevisionId":62670,"wgArticleId":10875,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Server functions","Client functions","Functions and events with issues"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"HU/createColPolygon","wgRelevantArticleId":10875,"wgRequestId":"4e25d0630a8f71f1b8d70beb","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta name='headingclass' content='' data-class='both' data-subcaption='Megosztott függvény'>
+<meta name='lowercasetitle' content=''>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-HU_createColPolygon rootpage-HU_createColPolygon skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">HU/createColPolygon</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
+<!--LC-->
+</p>
+<div style="border: 1px solid #AFAFAF; border-right: 5px solid #AFAFAF; background: #FFFF99; float: right; width: 200px; padding: 5px; margin: 5px; margin-right: 0px;"><b>Megjegyzés:</b>
+A function megfelelő működése érdekében, állítsa be a kötött pontokat az óramutató járásával ellentétes irányba.</div>
+<p>Ez a function létrehoz egy collision sokszöget. Lásd <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Polygon">Wikipedia</a> a sokszög meghatározásához. The first set of X Y of this shape is not part of the colshape bounds, so can set anywhere in the game world, however for performance, place it as close to the centre of the polygon as you can. It should be noted this shape is <b>2D</b>. There should be at least 3 bound points set. 
+</p>
+<table cellspacing="0" style="padding: 5px; width: 80%; margin: 2px auto 2px auto; border: 1px solid #81C687; background: #E2FFE5; border-left: 10px solid #81C687;">
+<tr>
+<td style="width: 32px; vertical-align:top; display: none;" rowspan="2"> [[{{{image}}}|link=]]
+</td>
+<td style=""> <b>Tipp:</b> A szkriptek írása közben egy colshape megjelenítéséhez használja a <b><a href="Client_Commands.html#showcol" title="HU/Client Commands">showcol</a></b> parancsot
+</td></tr>
+<tr>
+<td rowspan="1" style="padding-left: 10px;">
+</td></tr></table>
+<h2><span class="mw-headline" id="Szintaxis">Szintaxis</span></h2>
+<pre class="prettyprint lang-lua">
+colshape createColPolygon ( float fCenterX, float fCenterY, float fX1, float fY1, float fX2, float fY2, float fX3, float fY3, ... )
+</pre> 
+<p><u><b>OOP Syntax</b></u> <small><a href="../OOP_Introduction.html" title="OOP Introduction">Help! I don't understand this!</a></small>
+</p>
+<dl><dd> <b>Method</b>: <i>ColShape.Polygon(...)</i></dd></dl>
+<h3><span class="mw-headline" id="K.C3.B6telez.C5.91_param.C3.A9terek">Kötelező paraméterek</span></h3>
+<ul><li><b>fX:</b> Az collision sokszög pozíciójának X pozíciója - the position that will be returned from <a href="../GetElementPosition.html" title="GetElementPosition">getElementPosition</a>.</li>
+<li><b>fY:</b> Az collision sokszög pozíciójának Y pozíciója - the position that will be returned from <a href="../GetElementPosition.html" title="GetElementPosition">getElementPosition</a>.</li>
+<li><b>fX1:</b> The 1st X position of the collision polygon's bound point</li>
+<li><b>fY1:</b> The 1st Y position of the collision polygon's bound point</li>
+<li><b>fX2:</b> The 2nd X position of the collision polygon's bound point</li>
+<li><b>fY2:</b> The 2nd Y position of the collision polygon's bound point</li>
+<li><b>fX3:</b> The 3rd X position of the collision polygon's bound point</li>
+<li><b>fY3:</b> The 3rd Y position of the collision polygon's bound point</li>
+<li><b>...</b> A 3. pozíciótól annyi pontot használhat, amennyit csak szeretne, hogy létrehozza a colshape-t.</li></ul>
+<h3><span class="mw-headline" id="Visszat.C3.A9r.C3.A9si_.C3.A9rt.C3.A9k">Visszatérési érték</span></h3>
+<p>Visszaad egy <a href="../Colshape.html" title="Colshape" class="mw-redirect">colshape</a> elemet, ha sikeres, false, ha érvénytelen paraméterek lettek megadva a funkcióhoz.
+</p>
+<h2><span class="mw-headline" id="P.C3.A9lda">Példa</span></h2>
+<!-- BEGIN SECTION |1|server|Server|--><div class='serverHeader' onclick='expandSection(1);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander1'>Click to collapse [-]</div>Server</div><div style='display:;' class='serverContent' id='section1'>
+<p>This example displays a chat message when any element hits the colshape and allows the colshape to be created using a console function <i>set_zone</i>.
+</p>
+<pre class="prettyprint lang-lua">
+local theZone = false
+
+function shapeHit( element )
+    local descriptor = "undefined"
+
+    if getElementType( element ) == "player" then
+        -- Use the player's name
+        descriptor = getPlayerName( element )
+    elseif getElementType( element ) == "vehicle" then
+        -- Use the vehicle's model name
+        descriptor = getVehicleName( element ) or descriptor
+    end
+
+    -- Output a message in the chat box for everyone on the server
+    outputChatBox( descriptor .. " is in the zone!" )
+end
+
+function createZoneCommandHandler( playerSource, commandName, fX, fY, fX1, fY1, fX2, fY2, fX3, fY3, ... )
+    -- Verify the player has given us the minimum amount of bound points
+    if not ( fY and fX and fX1 and fY1 and fX2 and fX3 and fY3 ) then
+        return outputChatBox( "Syntax: set_zone &lt;X&gt; &lt;Y&gt; &lt;X1&gt; &lt;Y1&gt; &lt;X2&gt; &lt;Y2&gt; &lt;X3&gt; &lt;Y3&gt; [&lt;Xn&gt; &lt;Yn&gt; ...]", playerSource, 255, 100, 100 )
+    end
+
+    -- Create the collision shape with the numbers from the arguments
+    local tempCol = createColPolygon( fX, fY, fX1, fY1, fX2, fY2, fX3, fY3, ... )
+
+    if not tempCol then
+        return outputChatBox( "Error: Couldn't create collision polygon", playerSource, 255, 100, 100 )
+    end
+
+    -- Destroy the previous collision polygon shape in case we already have one
+    if isElement( theZone ) then
+        destroyElement( theZone )
+    end
+
+    -- Use a variable out-of-scope to keep track of the most recently created collision shape element
+    theZone = tempCol
+
+    -- Attach an event handler to the element to get notified whenever an element hits our collision shape
+    addEventHandler( "onColShapeHit", tempCol, shapeHit, false )
+
+    outputChatBox( "Success: Collision shape has been created!", playerSource, 100, 255, 100 )
+end
+addCommandHandler( "set_zone", createZoneCommandHandler )
+</pre>
+</div><!-- END SECTION |1|-->
+<!-- BEGIN SECTION |2|server|Server|--><div class='serverHeader' onclick='expandSection(2);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander2'>Click to expand [+]</div>Server</div><div style='display:none;' class='serverContent' id='section2'>
+<p>This example displays a chat message when any element hits the colshape and allows the colshape to be created using a console function <i>set_wall</i>.
+</p>
+<pre class="prettyprint lang-lua">
+local theWall = false
+
+function shapeHit( element )
+    local descriptor = "undefined"
+
+    if getElementType( element ) == "player" then
+        -- Use the player's name
+        descriptor = getPlayerName( element )
+    elseif getElementType( element ) == "vehicle" then
+        -- Use the vehicle's model name
+        descriptor = getVehicleName( element ) or descriptor
+    end
+
+    -- Output a message in the chat box for everyone on the server
+    outputChatBox( descriptor .. " is in the zone!" )
+end
+
+function createWallCommandHandler( playerSource, commandName, fromX, fromY, toX, toY )
+    -- Verify the player has given us the minimum amount of bound points
+    if not ( fromX and fromY and  toX and toY ) then
+        return outputChatBox( "Syntax: set_wall &lt;fromX&gt; &lt;fromY&gt; &lt;toX&gt; &lt;toY&gt;", playerSource, 255, 100, 100 )
+    end
+
+    -- Calculate the 90° angle for the line between the two coordinates from the arguments
+    local radian90DegreeAngle = math.atan2(toY - fromY, toX - fromX) + math.pi / 2
+
+    -- Depth/width of the wall
+    local depth = 1
+
+    -- Pre-calculate the cosinus/sinus distances
+    local cosinusDepth = math.cos(radian90DegreeAngle) * depth / 2
+    local sinusDepth = math.sin(radian90DegreeAngle) * depth / 2
+
+    -- Calculate the points in the game world
+    local x1, y1 = fromX - cosinusDepth, fromY - sinusDepth
+    local x2, y2 = toX - cosinusDepth, toY - sinusDepth
+    local x3, y3 = toX + cosinusDepth, toY + sinusDepth
+    local x4, y4 = fromX + cosinusDepth, fromY + sinusDepth
+
+    -- Create the collision shape with the calculated numbers
+    local tempCol = createColPolygon( fromX + (toX - fromX) / 2, fromY + (toY - fromY) / 2, x1, y1, x2, y2, x3, y3, x4, y4 )
+
+    if not tempCol then
+        return outputChatBox( "Error: Couldn't create collision polygon", playerSource, 255, 100, 100 )
+    end
+
+    -- Destroy the previous collision polygon shape in case we already have one
+    if isElement( theWall ) then
+        destroyElement( theWall )
+    end
+
+    -- Use a variable out-of-scope to keep track of the most recently created collision shape element
+    theWall = tempCol
+
+    -- Attach an event handler to the element to get notified whenever an element hits our collision shape
+    addEventHandler( "onColShapeHit", tempCol, shapeHit, false )
+
+    outputChatBox( "Success: Collision shape has been created!", playerSource, 100, 255, 100 )
+end
+addCommandHandler( "set_wall", createWallCommandHandler )
+</pre>
+</div><!-- END SECTION |2|-->
+<h2><span class="mw-headline" id="Issues">Issues</span></h2>
+<table class="wikitable sortable" style="width: auto; table-layout: fixed;">
+
+<tr>
+<th> Issue ID
+</th>
+<th class="unsortable"> Description
+</th></tr>
+
+<tr>
+<td><a rel="nofollow" class="external text" href="https://bugs.mtasa.com/view.php?id=9742">#9742</a>
+</td>
+<td>[Fixed in 1.5.5-3.12343] Passing this function <a href="../Vector2.html" title="Vector2" class="mw-redirect">Vector2s</a> are not fully supported
+</td></tr>
+
+</table>
+<h2><span class="mw-headline" id="L.C3.A1sd_m.C3.A9g">Lásd még</span></h2>
+<ul><li><a href="createColCircle.html" title="HU/createColCircle">HU/createColCircle</a></li>
+<li><a href="createColCuboid.html" title="HU/createColCuboid">HU/createColCuboid</a></li>
+<li><strong class="selflink">HU/createColPolygon</strong></li>
+<li><a href="createColRectangle.html" title="HU/createColRectangle">HU/createColRectangle</a></li>
+<li><a href="createColSphere.html" title="HU/createColSphere">HU/createColSphere</a></li>
+<li><a href="createColTube.html" title="HU/createColTube">HU/createColTube</a></li></ul>
+<ul><li><a href="getColShapeType.html" title="HU/getColShapeType">HU/getColShapeType</a></li>
+<li><a href="getElementColShape.html" title="HU/getElementColShape">HU/getElementColShape</a></li>
+<li><a href="getElementsWithinColShape.html" title="HU/getElementsWithinColShape">HU/getElementsWithinColShape</a></li>
+<li><a href="isElementWithinColShape.html" title="HU/isElementWithinColShape">HU/isElementWithinColShape</a></li></ul>
+<ul><li><a href="isInsideColShape.html" title="HU/isInsideColShape">HU/isInsideColShape</a></li></ul>
+<h2><span class="mw-headline" id="Ford.C3.ADtotta">Fordította</span></h2>
+<ul><li> <i><b><a rel="nofollow" class="external text" href="https://wiki.multitheftauto.com/wiki/User:Surge">Surge</a></b></i></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625165450
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.018 seconds
+Real time usage: 0.020 seconds
+Preprocessor visited node count: 214/1000000
+Preprocessor generated node count: 982/1000000
+Post‐expand include size: 3181/2097152 bytes
+Template argument size: 960/2097152 bytes
+Highest expansion depth: 9/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   13.886      1 - -total
+ 29.49%    4.095      1 - Template:Collision_shape_functions_hu
+ 27.50%    3.819      1 - Template:VisualizeColshape_hu
+ 20.53%    2.851      2 - Template:New_items
+ 20.18%    2.802      1 - Template:Tip_hu
+ 13.03%    1.810      1 - Template:MessageBox
+ 11.50%    1.597      2 - Template:Current_Version
+  9.64%    1.339      1 - Template:Issues
+  7.76%    1.078      1 - Template:OOP
+  7.29%    1.012      1 - Template:Note_box_hu
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:10875-0!*!0!!*!*!* and timestamp 20190625165450 and revision id 62670
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=HU/createColPolygon&amp;oldid=62670">https://wiki.multitheftauto.com/index.php?title=HU/createColPolygon&amp;oldid=62670</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="../Special_Categories.html" title="Special:Categories">Categories</a>: <ul><li><a href="../Category_Server_functions.html" title="Category:Server functions">Server functions</a></li><li><a href="../Category_Client_functions.html" title="Category:Client functions">Client functions</a></li><li><a href="../Category_Functions_and_events_with_issues.html" title="Category:Functions and events with issues">Functions and events with issues</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="createColPolygon.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:HU/createColPolygon&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=HU/createColPolygon&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=HU/createColPolygon&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=HU%2FcreateColPolygon" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=HU%2FcreateColPolygon" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/HU/createColPolygon.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/HU/createColPolygon.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=HU/createColPolygon&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=HU/createColPolygon&amp;oldid=62670" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=HU/createColPolygon&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=createColPolygon" title="createColPolygon – English" lang="en" hreflang="en">English</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 16 May 2019, at 10:58.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":49});});</script></body></html>

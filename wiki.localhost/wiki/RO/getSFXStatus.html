@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>RO/getSFXStatus - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"RO/getSFXStatus","wgTitle":"RO/getSFXStatus","wgCurRevisionId":61235,"wgRevisionId":61235,"wgArticleId":11049,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Client functions"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"RO/getSFXStatus","wgRelevantArticleId":11049,"wgRequestId":"beef5057561f556f248f823b","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta name='headingclass' content='' data-class='client' data-subcaption='Funcție strict-client'>
+<meta name='lowercasetitle' content=''>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-RO_getSFXStatus rootpage-RO_getSFXStatus skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">RO/getSFXStatus</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
+<!--LC-->
+Această funcție verifică dacă o categorie de sunet este disponibilă pentru a fi utilizată.
+}}
+</p>
+<table cellspacing="0" style="padding: 5px; width: 80%; margin: 2px auto 2px auto; border: 1px solid #FFB2B2; background: #FFE5E5; border-left: 10px solid #FFB2B2;">
+<tr>
+<td style="width: 32px; vertical-align:top;" rowspan="2"> <img alt="Dialog-warning.png" src="http://wiki.localhost/images/1/1a/Dialog-warning.png" width="32" height="32" />
+</td>
+<td style="padding-left: 10px;"><b>Atenționare:</b> Mulți jucători folosesc versiuni de GTA:SA (în special versiuni piratate) ale căror fișiere audio sunt umplute cu zerouri (sunt goale) astfel încât să poată fi compresate mai bine în registrul <i>AUDIO\SFX\</i>.
+<p>În cazul acestor fișiere goale, funcția redă <i>false</i>.
+</p>
+</td></tr>
+<tr>
+<td rowspan="1" style="padding-left: 10px;">
+</td></tr></table>
+<h2><span class="mw-headline" id="Sintax.C4.83">Sintaxă</span></h2>
+<pre class="prettyprint lang-lua">bool getSFXStatus (string audioContainer)</pre>
+<h3><span class="mw-headline" id="Argumente_Necesare">Argumente Necesare</span></h3>
+<ul><li><b>audioContainer:</b> Numele categoriei de sunet. Valorile posibile sunt: "feet", "genrl", "pain_a", "script", "spc_ea", "spc_fa", "spc_ga", spc_na", "spc_pa"</li></ul>
+<h2><span class="mw-headline" id="Redare">Redare</span></h2>
+<p>Redă <i>true</i> dacă categoria de sunet este disponibilă și <i>false</i> în caz contrar.
+</p>
+<h2><span class="mw-headline" id="Exemplu">Exemplu</span></h2>
+<p>Acest exemplu trimite un mesaj în chat box jucătorului căruia îi lipsesc fișierele audio din categoria de sunet "spc_ea".
+</p>
+<pre class="prettyprint lang-lua">
+if not getSFXStatus("spc_ea") then
+   outputChatBox("Vă rugăm să instalați fișierele audio lipsă pentru a vă putea bucura de o experiență de joc completă!")
+end
+</pre>
+<h2><span class="mw-headline" id="Vizualiza.C8.9Bi_de_asemenea">Vizualizați de asemenea</span></h2>
+<ul><li><a href="getRadioChannel.html" title="RO/getRadioChannel">RO/getRadioChannel</a></li>
+<li><a href="getRadioChannelName.html" title="RO/getRadioChannelName">RO/getRadioChannelName</a></li>
+<li><strong class="selflink">RO/getSFXStatus</strong></li>
+<li><a href="getSoundBPM.html" title="RO/getSoundBPM">RO/getSoundBPM</a></li>
+<li><a href="getSoundEffects.html" title="RO/getSoundEffects">RO/getSoundEffects</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RO/getSoundFFTData&amp;action=edit&amp;redlink=1" class="new" title="RO/getSoundFFTData (page does not exist)">RO/getSoundFFTData</a></li>
+<li><a href="getSoundLength.html" title="RO/getSoundLength">RO/getSoundLength</a></li>
+<li><a href="getSoundLevelData.html" title="RO/getSoundLevelData">RO/getSoundLevelData</a></li>
+<li><a href="getSoundMaxDistance.html" title="RO/getSoundMaxDistance">RO/getSoundMaxDistance</a></li>
+<li><a href="getSoundMetaTags.html" title="RO/getSoundMetaTags">RO/getSoundMetaTags</a></li>
+<li><a href="getSoundMinDistance.html" title="RO/getSoundMinDistance">RO/getSoundMinDistance</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RO/getSoundPan&amp;action=edit&amp;redlink=1" class="new" title="RO/getSoundPan (page does not exist)">RO/getSoundPan</a></li>
+<li><a href="getSoundPosition.html" title="RO/getSoundPosition">RO/getSoundPosition</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RO/getSoundProperties&amp;action=edit&amp;redlink=1" class="new" title="RO/getSoundProperties (page does not exist)">RO/getSoundProperties</a></li>
+<li><a href="getSoundSpeed.html" title="RO/getSoundSpeed">RO/getSoundSpeed</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RO/getSoundVolume&amp;action=edit&amp;redlink=1" class="new" title="RO/getSoundVolume (page does not exist)">RO/getSoundVolume</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RO/getSoundWaveData&amp;action=edit&amp;redlink=1" class="new" title="RO/getSoundWaveData (page does not exist)">RO/getSoundWaveData</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RO/isSoundPanningEnabled&amp;action=edit&amp;redlink=1" class="new" title="RO/isSoundPanningEnabled (page does not exist)">RO/isSoundPanningEnabled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RO/isSoundPaused&amp;action=edit&amp;redlink=1" class="new" title="RO/isSoundPaused (page does not exist)">RO/isSoundPaused</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RO/playSFX&amp;action=edit&amp;redlink=1" class="new" title="RO/playSFX (page does not exist)">RO/playSFX</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RO/playSFX3D&amp;action=edit&amp;redlink=1" class="new" title="RO/playSFX3D (page does not exist)">RO/playSFX3D</a></li>
+<li><a href="playSound.html" title="RO/playSound">RO/playSound</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RO/playSound3D&amp;action=edit&amp;redlink=1" class="new" title="RO/playSound3D (page does not exist)">RO/playSound3D</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RO/playSoundFrontEnd&amp;action=edit&amp;redlink=1" class="new" title="RO/playSoundFrontEnd (page does not exist)">RO/playSoundFrontEnd</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RO/setRadioChannel&amp;action=edit&amp;redlink=1" class="new" title="RO/setRadioChannel (page does not exist)">RO/setRadioChannel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RO/setSoundEffectEnabled&amp;action=edit&amp;redlink=1" class="new" title="RO/setSoundEffectEnabled (page does not exist)">RO/setSoundEffectEnabled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RO/setSoundMaxDistance&amp;action=edit&amp;redlink=1" class="new" title="RO/setSoundMaxDistance (page does not exist)">RO/setSoundMaxDistance</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RO/setSoundMinDistance&amp;action=edit&amp;redlink=1" class="new" title="RO/setSoundMinDistance (page does not exist)">RO/setSoundMinDistance</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RO/setSoundPan&amp;action=edit&amp;redlink=1" class="new" title="RO/setSoundPan (page does not exist)">RO/setSoundPan</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RO/setSoundPanningEnabled&amp;action=edit&amp;redlink=1" class="new" title="RO/setSoundPanningEnabled (page does not exist)">RO/setSoundPanningEnabled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RO/setSoundPaused&amp;action=edit&amp;redlink=1" class="new" title="RO/setSoundPaused (page does not exist)">RO/setSoundPaused</a></li>
+<li><a href="setSoundPosition.html" title="RO/setSoundPosition">RO/setSoundPosition</a></li>
+<li><a href="setSoundProperties.html" title="RO/setSoundProperties">RO/setSoundProperties</a></li>
+<li><a href="setSoundSpeed.html" title="RO/setSoundSpeed">RO/setSoundSpeed</a></li>
+<li><a href="setSoundVolume.html" title="RO/setSoundVolume">RO/setSoundVolume</a></li>
+<li><a href="stopSound.html" title="RO/stopSound">RO/stopSound</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625165257
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.013 seconds
+Real time usage: 0.014 seconds
+Preprocessor visited node count: 103/1000000
+Preprocessor generated node count: 432/1000000
+Post‐expand include size: 2626/2097152 bytes
+Template argument size: 972/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    5.325      1 - -total
+ 63.21%    3.366      1 - Template:RO/Atenționare
+ 38.27%    2.038      1 - Template:MessageBox
+ 15.93%    0.848      1 - Template:RO/Funcție_client
+ 14.12%    0.752      1 - Template:RO/Funcții_audio_client
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:11049-0!*!0!!*!5!* and timestamp 20190625165257 and revision id 61235
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=RO/getSFXStatus&amp;oldid=61235">https://wiki.multitheftauto.com/index.php?title=RO/getSFXStatus&amp;oldid=61235</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="../Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="../Category_Client_functions.html" title="Category:Client functions">Client functions</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="getSFXStatus.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:RO/getSFXStatus&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=RO/getSFXStatus&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=RO/getSFXStatus&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=RO%2FgetSFXStatus" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=RO%2FgetSFXStatus" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/RO/getSFXStatus.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/RO/getSFXStatus.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=RO/getSFXStatus&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=RO/getSFXStatus&amp;oldid=61235" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=RO/getSFXStatus&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=getSFXStatus" title="getSFXStatus – English" lang="en" hreflang="en">English</a></li>
+													<li class="interlanguage-link interwiki-hu"><a href="http://wiki.multitheftauto.com/index.php?title=HU/getSFXStatus" title="getSFXStatus – magyar" lang="hu" hreflang="hu">Magyar</a></li>
+													<li class="interlanguage-link interwiki-ru"><a href="http://wiki.multitheftauto.com/index.php?title=RU/getSFXStatus" title="getSFXStatus – русский" lang="ru" hreflang="ru">Русский</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 8 December 2018, at 13:41.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":45});});</script></body></html>

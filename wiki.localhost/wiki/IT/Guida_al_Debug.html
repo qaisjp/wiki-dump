@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>IT/Guida al Debug - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"IT/Guida_al_Debug","wgTitle":"IT/Guida al Debug","wgCurRevisionId":21276,"wgRevisionId":21276,"wgArticleId":3681,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["IT/Pagine italiane","100%","IT/Concetti di scripting","IT/Guide e tutorial"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"IT/Guida_al_Debug","wgRelevantArticleId":3681,"wgRequestId":"7628b25a5d5b975d1dd5e568","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-IT_Guida_al_Debug rootpage-IT_Guida_al_Debug skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">IT/Guida al Debug</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div style="border:1px dashed blue;background-color:#E2E2E2;font-family:courier new, courier;padding-left:10px;margin-bottom:20px;"><strong style="color:blue;">«</strong> Torna alla <a href="Pagina_principale.html" title="IT/Pagina principale">Pagina principale italiana <span style="color:green;">▇</span><span style="color:white;">▇</span><span style="color:red;">▇</span></a>.</div>
+<p>Scriptando ti capiteranno presto problemi che non si notano subito. Questa pagina ha lo scopo di elencare qualche strategia di base per trovare l'errore.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Console_di_debug"><span class="tocnumber">1</span> <span class="toctext">Console di debug</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Esempio"><span class="tocnumber">1.1</span> <span class="toctext">Esempio</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Log_del_debug"><span class="tocnumber">2</span> <span class="toctext">Log del debug</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Strategie_di_debug"><span class="tocnumber">3</span> <span class="toctext">Strategie di debug</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Funzioni_utili"><span class="tocnumber">3.1</span> <span class="toctext">Funzioni utili</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Creare_messaggi_di_debug_per_verificare_se.2C_quando_o_quante_volte_.C3.A8_eseguita_una_parte_di_codice"><span class="tocnumber">3.2</span> <span class="toctext">Creare messaggi di debug per verificare <i>se</i>, <i>quando</i> o <i>quante volte</i> è eseguita una parte di codice</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Creare_messaggi_di_debug_per_verificare_il_valore_di_una_variabile"><span class="tocnumber">3.3</span> <span class="toctext">Creare messaggi di debug per verificare il <i>valore</i> di una variabile</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Esempio_2"><span class="tocnumber">4</span> <span class="toctext">Esempio</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Un_errore_ancora_meno_visibile"><span class="tocnumber">4.1</span> <span class="toctext">Un errore ancora meno visibile</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Console_di_debug">Console di debug</span></h2>
+<p>MTA possiede una console ingame per il debug. Puoi aprirla digitando <i>debugscript x</i> nella console, dove <i>x</i> è il livello di debug:
+</p>
+<ul><li> <b>1:</b> solo gli errori</li>
+<li> <b>2:</b> gli errori e i <i>warning</i></li>
+<li> <b>3:</b> gli errori, i <i>warning</i> e le info</li></ul>
+<p>Perciò, digitando <i>debugscript 3</i> tutti i messaggi saranno visibili, anche se il livello 2 è raccomandato per la maggior parte dei casi. Dovresti avere il <i>debugscript</i> attivato la maggior parte del tempo che scripti, ti aiuterà a trovare errori di digitazione, insieme ad altri piccoli problemi e a risolverli facilmente.
+</p>
+<h3><span class="mw-headline" id="Esempio">Esempio</span></h3>
+<p>Questo frammento di esempio ha due errori:
+</p>
+<pre class="prettyprint lang-lua">
+if (getPlayerName(player) == "Fedor")
+	outputChatbox("DISGRACE")
+end
+</pre>
+<p>Quando lo script tenterà di caricare questa parte di codice, nella console di debug dovrebbe apparire qualcosa del genere:
+</p>
+<div style="color:#009900;padding:2px;">INFO: Loading script failed: C:\&lt;server path&gt;\mods\deathmatch\resources\myResource\script.lua:15: 'then' expected near 'outputChatbox'</div>
+<p>Significa che c'è un errore di sintassi. Il <i>debugscript</i> mostra il percorso dello script che genera l'errore, in modo da conoscere la <i>resource</i> ('myResource' in questo caso) e ovviamente il nome dello script. Dopo il nome del file mostra la linea dell'errore e poi il tipo di errore. A questo punto è facile, abbiamo dimenticato il 'then':
+</p>
+<pre class="prettyprint lang-lua">
+if (getPlayerName(player) == "Fedor") then
+	outputChatbox("DISGRACE")
+end
+</pre>
+<p>Ora lo script caricherà senza errori e sembrerà funzionare bene, ma quando un player di nome 'Fedor' raggiungerà questa parte dello script, il <i>debugscript</i> darà questo errore:
+</p>
+<div style="color:#FF0000;padding:2px;">ERROR: C:\&lt;server path&gt;\mods\deathmatch\resources\d\script.lua:15: attempt to call global 'outputChatbox' (a nil value)</div>
+<p>Significa che la funzione chiamata non esiste: è facilmente spiegabile, visto che il nome esatto della funzione è <i>outputChatBox</i> (con la <i>B</i> maiuscola):
+</p>
+<pre class="prettyprint lang-lua">
+if (getPlayerName(player) == "Fedor") then
+	outputChatBox("DISGRACE")
+end
+</pre>
+<p>Ovviamente è solo un esempio, potrebbe esserci un'infinità di altre situazioni, ma dovreste esservi fatti un'idea.
+</p>
+<h2><span class="mw-headline" id="Log_del_debug">Log del debug</span></h2>
+<p>Puoi anche attivare la creazione di un file log del debug modificando il file <i>coreconfig.xml</i> nella tua cartella MTA all'interno di quella di GTA. Devi cercare la riga seguente:
+</p>
+<pre class="prettyprint lang-xml">&lt;debugfile/&gt;</pre>
+<p>E rimpiazzarla con questa, scegliendo la path che preferisci, relativa alla cartella di GTA:
+</p>
+<pre class="prettyprint lang-xml">&lt;debugfile&gt;MTA\debugscript.log&lt;/debugfile&gt;</pre>
+<p>Tutti i messaggi di debug da ora in poi verranno aggiunti al file log. Per bloccare questo processo, ripristina la riga precedente.
+</p>
+<h2><span class="mw-headline" id="Strategie_di_debug">Strategie di debug</span></h2>
+<p>Esistono svariate strategie per trovare gli errori, la maggior parte delle quali prevede l'uso dei messaggi di debug, con informazioni differenti a seconda della situazione.
+</p>
+<h3><span class="mw-headline" id="Funzioni_utili">Funzioni utili</span></h3>
+<p>Prima di tutto ecco alcune funzioni comode per il debug.
+</p>
+<ul><li> <a href="http://wiki.localhost/index.php?title=IT/outputDebugString&amp;action=edit&amp;redlink=1" class="new" title="IT/outputDebugString (page does not exist)">outputDebugString</a> o <a href="http://wiki.localhost/index.php?title=IT/outputChatBox&amp;action=edit&amp;redlink=1" class="new" title="IT/outputChatBox (page does not exist)">outputChatBox</a> per l'<i>output</i> di informazioni nella console di debug o in chatbox</li>
+<li> (in inglese) <a rel="nofollow" class="external text" href="http://www.lua.org/manual/5.1/manual.html#pdf-tostring">tostring()</a> su una variabile per trasformarla in una stringa (per esempio se è una <i>float</i>)</li>
+<li> <a href="http://wiki.localhost/index.php?title=IT/getElementType&amp;action=edit&amp;redlink=1" class="new" title="IT/getElementType (page does not exist)">getElementType</a> per verificare il tipo di un elemento di MTA</li></ul>
+<h3><span class="mw-headline" id="Creare_messaggi_di_debug_per_verificare_se.2C_quando_o_quante_volte_.C3.A8_eseguita_una_parte_di_codice">Creare messaggi di debug per verificare <i>se</i>, <i>quando</i> o <i>quante volte</i> è eseguita una parte di codice</span></h3>
+<p>Un esempio tipico potrebbe essere verificare se la sezione di codice dentro un <i>if</i> sia eseguita o meno. Per far questo, aggiungi un messaggio qualsiasi (che in seguito riconoscerai) nella sezione dentro l'<i>if</i>.
+</p>
+<pre class="prettyprint lang-lua">
+if (variabile1 == variabile2) then
+	outputDebugString("if eseguito")
+	-- fai qualsiasi cosa
+end
+</pre>
+<p>Un altro uso potrebbe essere verificare se il valore di una variabile è modficato. Prima cerca tutti i punti in cui questo valore è modificato e aggiungi un messaggio di debug proprio sotto di essi.
+</p>
+<h3><span class="mw-headline" id="Creare_messaggi_di_debug_per_verificare_il_valore_di_una_variabile">Creare messaggi di debug per verificare il <i>valore</i> di una variabile</span></h3>
+<p>Diciamo che vuoi creare un <i>marker</i>, ma non sembra essere nella posizione dove dovrebbe trovarsi. La prima cosa che potresti voler fare è controllare se la funzione <a href="http://wiki.localhost/index.php?title=IT/createMarker&amp;action=edit&amp;redlink=1" class="new" title="IT/createMarker (page does not exist)">createMarker</a> è eseguita. Ma nel fare ciò, puoi anche verificare le variabili usate nel <a href="http://wiki.localhost/index.php?title=IT/createMarker&amp;action=edit&amp;redlink=1" class="new" title="IT/createMarker (page does not exist)">createMarker</a> in un colpo solo.
+</p>
+<pre class="prettyprint lang-lua">
+outputChatBox(tostring(x).." "..tostring(y).." "..tostring(z))
+createMarker(x,y,z)
+</pre>
+<p>Questo mostrerà le 3 variabili usate come coordinate per creare il <i>marker</i>. Assumendo che tu le 'legga' da un file map, puoi controllare in questo modo il loro valore. La funzione <a rel="nofollow" class="external text" href="http://www.lua.org/manual/5.1/manual.html#pdf-tostring">tostring()</a> permette di unire con certezza i valori delle variabili in una stringa, anche se per esempio sono dei <i>booleani</i>.
+</p>
+<h2><span class="mw-headline" id="Esempio_2">Esempio</span></h2>
+<p>Immagina di creare una <a href="Elemento/Collision_shape.html" title="IT/Elemento/Collision shape">colshape</a> da qualche parte e di volere che un'azione accada dopo che un <a href="Elemento/Player.html" title="IT/Elemento/Player">player</a> rimanga 10 secondi dentro di essa.
+</p>
+<pre class="prettyprint lang-lua">
+function colShapeHit(player)
+	-- setta un timer per mostrare un messaggio (potrebbe ugualmente eseguire un'altra funzione)
+	-- settare l'id del timer in una tabella, con il player come ''index''
+	colshapeTimer[player] = setTimer(outputChatBox,10000,1,"Il player è rimasto 10 secondi nella colshape!")
+end
+addEventHandler("onColShapeHit",getRootElement(),colShapeHit)
+
+function colShapeLeave(player)
+	-- elimina il timer quando un player esce dalla colshape
+	killTimer(colshapeTimer[player])
+end
+addEventHandler("onColShapeLeave",getRootElement(),colShapeLeave)
+</pre>
+<p>Quando un player entra nella colshape, il debugscript mostra il questo messaggio:
+</p>
+<div style="color:#FF0000;padding:2px;">ERROR: ..[path]: attempt to index global 'colshapeTimer' (a nil value)</div>
+<p>Significa che hai tentato di settare un <i>index</i> (indice) di una tabella che non esiste. Nell'esempio di sopra, accade quando viene settato l'id del timer nell'<i>index</i> della tabella. Dobbiamo verificare se la tabella esiste e, se non esiste, crearla.
+</p>
+<pre class="prettyprint lang-lua">
+function colShapeHit(player)
+	if (colshapeTimer == nil) then
+		colshapeTimer = {}
+	end
+	-- setta un timer per mostrare un messaggio (potrebbe ugualmente eseguire un'altra funzione)
+	-- settare l'id del timer in una tabella, con il player come ''index''
+	colshapeTimer[player] = setTimer(outputChatBox,10000,1,"The player stayed 10 seconds in the colshape!")
+end
+addEventHandler("onColShapeHit",getRootElement(),colShapeHit)
+
+function colShapeLeave(player)
+	-- elimina il timer quando un player esce dalla colshape
+	killTimer(colshapeTimer[player])
+end
+addEventHandler("onColShapeLeave",getRootElement(),colShapeLeave)
+</pre>
+<p>Ora riceviamo un errore quando un player entra nella colshape, aspetta dieci secondi e poi la lascia:
+</p>
+<div style="color:#00FF00;padding:2px;">WARNING: [..]: Bad argument @ 'killTimer' Line: ..</div>
+<p>A parte questo (ne riparleremo più tardi) tutto sembra funzionare bene. Se un player entra nella colshape, il timer è avviato, se resta dentro 10 secondi il messaggio viene mostrato e se esce il timer viene eliminato.
+</p>
+<h3><span class="mw-headline" id="Un_errore_ancora_meno_visibile">Un errore ancora meno visibile</span></h3>
+<p>Ma per qualche ragione il messaggio viene mostrato due volte se entri nella <a href="Elemento/Collision_shape.html" title="IT/Elemento/Collision shape">colshape</a> mentre sei in un <a href="Elemento/Veicolo.html" title="IT/Elemento/Veicolo">veicolo</a>. Siccome sembra che una parte del codice sia eseguita due volte, aggiungiamo dei messaggi di debug per controllarlo.
+</p>
+<pre class="prettyprint lang-lua">
+function colShapeHit(player)
+	if (colshapeTimer == nil) then
+		colshapeTimer = {}
+	end
+	-- messaggio di debug
+	outputDebugString("colShapeHit")
+	-- setta un timer per mostrare un messaggio (potrebbe ugualmente eseguire un'altra funzione)
+	-- settare l'id del timer in una tabella, con il player come ''index''
+	colshapeTimer[player] = setTimer(outputChatBox,10000,1,"The player stayed 10 seconds in the colshape!")
+end
+addEventHandler("onColShapeHit",getRootElement(),colShapeHit)
+
+function colShapeLeave(player)
+	-- messaggio di debug
+	outputDebugString("colShapeLeave")
+	-- elimina il timer quando un player esce dalla colshape
+	killTimer(colshapeTimer[player])
+end
+addEventHandler("onColShapeLeave",getRootElement(),colShapeLeave)
+</pre>
+<p>Ora ci rendiamo conto che entrambe le funzioni vengono eseguite due volte se siamo in un veicolo, ma solo una volta se siamo a piedi. Sembrerebbe che anche il veicolo chiami gli eventi legati alla colshape. Per confermare questa teoria, controlliamo la variabile <i>player</i> che <b>dovrebbe</b> contenere un <a href="Elemento/Player.html" title="IT/Elemento/Player">elemento player</a>.
+</p>
+<pre class="prettyprint lang-lua">
+function colShapeHit(player)
+	if (colshapeTimer == nil) then
+		colshapeTimer = {}
+	end
+	-- messaggio di debug
+	outputDebugString("colShapeHit "..getElementType(player) )
+	-- setta un timer per mostrare un messaggio (potrebbe ugualmente eseguire un'altra funzione)
+	-- settare l'id del timer in una tabella, con il player come ''index''
+	colshapeTimer[player] = setTimer(outputChatBox,10000,1,"The player stayed 10 seconds in the colshape!")
+end
+addEventHandler("onColShapeHit",getRootElement(),colShapeHit)
+
+function colShapeLeave(player)
+	-- messaggio di debug
+	outputDebugString("colShapeLeave "..getElementType(player) )
+	-- elimina il timer quando un player esce dalla colshape
+	killTimer(colshapeTimer[player])
+end
+addEventHandler("onColShapeLeave",getRootElement(),colShapeLeave)
+</pre>
+<p>I messaggi di debug ci mostrano che un sola delle variabili <i>player</i> è davvero un elemento player, l'altra è un elemento veicolo. Visto che vogliamo che lo script reagisca solo quando un player entra nella colshape, aggiungiamo un <i>if</i> che bloccherà l'esecuzione della funzione se <i>player</i> <b>non</b> è un elemento player.
+</p>
+<pre class="prettyprint lang-lua">
+function colShapeHit(player)
+	if (colshapeTimer == nil) then
+		colshapeTimer = {}
+	end
+	-- controllo del ''type'' dell'elemento
+	if (getElementType(player) ~= "player") then return end
+	-- messaggio di debug
+	outputDebugString("colShapeHit "..getElementType(player))
+	-- setta un timer per mostrare un messaggio (potrebbe ugualmente eseguire un'altra funzione)
+	-- settare l'id del timer in una tabella, con il player come ''index''
+	colshapeTimer[player] = setTimer(outputChatBox,10000,1,"The player stayed 10 seconds in the colshape!")
+end
+addEventHandler("onColShapeHit",getRootElement(),colShapeHit)
+
+function colShapeLeave(player)
+	-- controllo del ''type'' dell'elemento
+	if (getElementType(player) ~= "player") then return end
+	-- messaggio di debug
+	outputDebugString("colShapeLeave "..getElementType(player))
+	-- elimina il timer quando un player esce dalla colshape
+	killTimer(colshapeTimer[player])
+end
+addEventHandler("onColShapeLeave",getRootElement(),colShapeLeave)
+</pre>
+<p>Ora lo script dovrebbe funzionare come si desidera, ma continuiamo a ricevere il <i>warning</i> di cui abbiamo parlato prima. Ciò accade perchè il timer che cerchiamo di eliminare dopo che un player è rimasto 10 secondi nella <a href="Elemento/Collision_shape.html" title="IT/Elemento/Collision shape">colshape</a> è già stato eseguito in precedenza e non esiste più. Ci sono diversi modi per risolvere questo <i>warning</i> (sapendo che il timer non esiste più e che dobbiamo eliminarlo solo se esiste ancora). Un modo sarebbe controllare se il timer riferito a quell'<i>index</i> della tabella esista realmente. Per farlo, abbiamo bisogno di una piccola funzione 'ausiliaria':
+</p>
+<pre class="prettyprint lang-lua">
+function isTimer(timer)
+	local timers = getTimers()
+	for k,v in ipairs(timers) do
+		if (v == timer) then
+			return true
+		end
+	end
+	return false
+end
+</pre>
+<p>Che useremo quando eliminiamo il timer:
+</p>
+<pre class="prettyprint lang-lua">
+if (isTimer(colshapeTimer[player])) then
+	killTimer(colshapeTimer[player])
+end
+</pre>
+<p>Perciò il codice completamente funzionante sarebbe:
+</p>
+<pre class="prettyprint lang-lua">
+function colShapeHit(player)
+	if (colshapeTimer == nil) then
+		colshapeTimer = {}
+	end
+	-- controllo del ''type'' dell'elemento
+	if (getElementType(player) ~= "player") then return end
+	-- messaggio di debug
+	outputDebugString("colShapeHit "..getElementType(player))
+	-- setta un timer per mostrare un messaggio (potrebbe ugualmente eseguire un'altra funzione)
+	-- settare l'id del timer in una tabella, con il player come ''index''
+	colshapeTimer[player] = setTimer(outputChatBox,10000,1,"The player stayed 10 seconds in the colshape!")
+end
+addEventHandler("onColShapeHit",getRootElement(),colShapeHit)
+
+function colShapeLeave(player)
+	-- controllo del ''type'' dell'elemento
+	if (getElementType(player) ~= "player") then return end
+	-- messaggio di debug
+	outputDebugString("colShapeLeave "..getElementType(player))
+	-- elimina il timer quando un player esce dalla colshape
+	if (isTimer(colshapeTimer[player])) then
+		killTimer(colshapeTimer[player])
+	end
+end
+addEventHandler("onColShapeLeave",getRootElement(),colShapeLeave)
+
+function isTimer(timer)
+	local timers = getTimers()
+	for k,v in ipairs(timers) do
+		if (v == timer) then
+			return true
+		end
+	end
+	return false
+end
+</pre>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625165348
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.010 seconds
+Real time usage: 0.011 seconds
+Preprocessor visited node count: 170/1000000
+Preprocessor generated node count: 460/1000000
+Post‐expand include size: 941/2097152 bytes
+Template argument size: 344/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    3.370      1 - -total
+ 18.88%    0.636      2 - Template:Debug_error
+ 17.54%    0.591      1 - Template:Debug_info
+ 15.79%    0.532      1 - Template:IT/MainP
+ 15.25%    0.514      1 - Template:Debug_warning
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:3681-0!*!0!!en!*!* and timestamp 20190625165348 and revision id 21276
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=IT/Guida_al_Debug&amp;oldid=21276">https://wiki.multitheftauto.com/index.php?title=IT/Guida_al_Debug&amp;oldid=21276</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="../Special_Categories.html" title="Special:Categories">Categories</a>: <ul><li><a href="../Category_IT/Pagine_italiane.html" title="Category:IT/Pagine italiane">IT/Pagine italiane</a></li><li><a href="../Category_100%25.html" title="Category:100%">100%</a></li><li><a href="../Category_IT/Concetti_di_scripting.html" title="Category:IT/Concetti di scripting">IT/Concetti di scripting</a></li><li><a href="../Category_IT/Guide_e_tutorial.html" title="Category:IT/Guide e tutorial">IT/Guide e tutorial</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Guida_al_Debug.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:IT/Guida_al_Debug&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=IT/Guida_al_Debug&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=IT/Guida_al_Debug&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=IT%2FGuida+al+Debug" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=IT%2FGuida+al+Debug" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/IT/Guida_al_Debug.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/IT/Guida_al_Debug.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=IT/Guida_al_Debug&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=IT/Guida_al_Debug&amp;oldid=21276" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=IT/Guida_al_Debug&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=Debugging" title="Debugging – English" lang="en" hreflang="en">English</a></li>
+													<li class="interlanguage-link interwiki-ru"><a href="http://wiki.multitheftauto.com/index.php?title=RU/Debugging" title="Debugging – русский" lang="ru" hreflang="ru">Русский</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 27 August 2009, at 12:08.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":39});});</script></body></html>

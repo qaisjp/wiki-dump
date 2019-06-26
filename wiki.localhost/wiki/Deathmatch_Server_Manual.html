@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Server Manual - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Server_Manual","wgTitle":"Server Manual","wgCurRevisionId":58200,"wgRevisionId":58200,"wgArticleId":3520,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Support"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Server_Manual","wgRelevantArticleId":3520,"wgRequestId":"077fdf61c70e373ad4415418","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Deathmatch_Server_Manual","wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false},"wgInternalRedirectTargetUrl":"/wiki/Server_Manual"});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.action.view.redirect","mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://wiki.multitheftauto.com/wiki/Server_Manual"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Server_Manual rootpage-Server_Manual skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Server Manual</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"><span class="mw-redirectedfrom">(Redirected from <a href="http://wiki.localhost/index.php?title=Deathmatch_Server_Manual&amp;redirect=no" title="Deathmatch Server Manual">Deathmatch Server Manual</a>)</span></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Getting_started"><span class="tocnumber">1</span> <span class="toctext">Getting started</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Installing_the_server"><span class="tocnumber">2</span> <span class="toctext">Installing the server</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Linux_installation"><span class="tocnumber">2.1</span> <span class="toctext">Linux installation</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#FreeBSD_installation"><span class="tocnumber">2.2</span> <span class="toctext">FreeBSD installation</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Windows_installation"><span class="tocnumber">2.3</span> <span class="toctext">Windows installation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Configuring_your_server"><span class="tocnumber">3</span> <span class="toctext">Configuring your server</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#General_configuration"><span class="tocnumber">3.1</span> <span class="toctext">General configuration</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Port_forwarding"><span class="tocnumber">3.2</span> <span class="toctext">Port forwarding</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Client_Checks"><span class="tocnumber">3.3</span> <span class="toctext">Client Checks</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Adding_administrators"><span class="tocnumber">3.4</span> <span class="toctext">Adding administrators</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Using_the_web_interface"><span class="tocnumber">3.5</span> <span class="toctext">Using the web interface</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Configuring_an_external_web_server"><span class="tocnumber">3.6</span> <span class="toctext">Configuring an external web server</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Starting_your_server"><span class="tocnumber">4</span> <span class="toctext">Starting your server</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#Installing.2FUpdating_resources_on_your_server"><span class="tocnumber">5</span> <span class="toctext">Installing/Updating resources on your server</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#Uninstalling_resources"><span class="tocnumber">6</span> <span class="toctext">Uninstalling resources</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#Administrating_your_server"><span class="tocnumber">7</span> <span class="toctext">Administrating your server</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#Starting_a_map.2Fgamemode"><span class="tocnumber">8</span> <span class="toctext">Starting a map/gamemode</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="#Useful_Notes"><span class="tocnumber">9</span> <span class="toctext">Useful Notes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-19"><a href="#Need_further_help.3F"><span class="tocnumber">9.1</span> <span class="toctext">Need further help?</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Getting_started">Getting started</span></h2>
+<p>It is much easier than it looks to get a server up and running for your internet or LAN buddies; follow this wiki article and you will hopefully be on your way to hosting your own MTA:SA server in no time!
+</p>
+<h2><span class="mw-headline" id="Installing_the_server">Installing the server</span></h2>
+<p>The dedicated server application is available in different flavours depending on the platform of the server.
+</p>
+<h3><span class="mw-headline" id="Linux_installation">Linux installation</span></h3>
+<p>There are different ways of getting a Linux server up and running:
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="https://linux.mtasa.com/">Getting a precompiled package</a></li>
+<li> <a href="Installing_and_Running_MTASA_Server_on_GNU_Linux.html" title="Installing and Running MTASA Server on GNU Linux">Installing and Running MTASA Server on GNU Linux</a></li>
+<li> <a href="Building_MTASA_Server_on_GNU_Linux.html" title="Building MTASA Server on GNU Linux">Building MTASA Server on GNU Linux</a></li></ul>
+<p><br />
+Should you have any problems with errors when starting the server some common problems and solutions are listed here:
+</p>
+<ul><li> <a href="Building_MTASA_Server_on_GNU_Linux.html#Troubleshooting" title="Building MTASA Server on GNU Linux">Building MTASA Server on GNU Linux#Troubleshooting</a></li></ul>
+<h3><span class="mw-headline" id="FreeBSD_installation">FreeBSD installation</span></h3>
+<p>You can run MTA:SA under FreeBSD using Linux emulation.
+</p>
+<ul><li> Enable <a rel="nofollow" class="external text" href="https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/linuxemu-lbc-install.html">Linux binary compatibility</a></li>
+<li> Install following packages or compile them from ports: hs-terminfo, linux_base-f10, linux-f10-sqlite3</li>
+<li> Install <a rel="nofollow" class="external text" href="https://linux.mtasa.com/">Linux precompiled package</a></li></ul>
+<h3><span class="mw-headline" id="Windows_installation">Windows installation</span></h3>
+<p>Installation of the MTA:SA server on Windows is easy as pie.
+</p>
+<ul><li>Go to the <a rel="nofollow" class="external text" href="https://mtasa.com/">download page</a> and download the installer.</li>
+<li>Once the installer is downloaded, open it.</li>
+<li>Select a folder where you want to install the server.</li>
+<li>Click Install.</li>
+<li>Done!</li></ul>
+<p><i>For a full explanation of acl.xml (access control list) read: <a href="Access_Control_List.html" title="Access Control List">Access Control List</a></i><br /><br />
+</p>
+<h2><span class="mw-headline" id="Configuring_your_server">Configuring your server</span></h2>
+<p>The Multi Theft Auto dedicated server is initially configurable through it's console window, from within the game, and from a webbrowser. In order to make use of the two last options, it is necessary to add at least one administrator user to your configuration file.
+</p>
+<h3><span class="mw-headline" id="General_configuration">General configuration</span></h3>
+<p>All general configuration options can be found in the 'mods/deathmatch/<a href="Server_mtaserver.html" title="Server mtaserver.conf"><b>mtaserver.conf</b></a>' file and can be opened by any regular text editor.
+</p><p>This file is fairly straightforward; every variable has a <a href="Server_mtaserver.html" title="Server mtaserver.conf">description of what to do with it and how to change it</a>.
+</p>
+<h3><span class="mw-headline" id="Port_forwarding">Port forwarding</span></h3>
+<p>If you run your server on your own private computer, and you have an router between the internet and your computer. You need to forward 3 ports.
+</p><p>First of all open the file 'mods/deathmatch/<a href="Server_mtaserver.html" title="Server mtaserver.conf"><b>mtaserver.conf</b></a>' and search for the next lines:
+</p>
+<pre class="prettyprint lang-xml">
+&lt;serverport&gt;22003&lt;/serverport&gt; 
+&lt;httpport&gt;22005&lt;/httpport&gt;
+</pre>
+<p>The ports are needed to setup the server correctly. We explain later how to set them, but first if you want your server to appear in the server browser there is another port we need, and that is the ASE port. 
+(quick example for how to turn ASE on or off):
+</p>
+<pre class="prettyprint lang-xml">
+&lt;ase&gt;1&lt;/ase&gt; &lt;!-- 0 = off, 1 = on --&gt;
+</pre>
+<p>Now we going to forward the ports in your router, which is not needed if you already have all ports open, or if you don't have a router with a firewall. If so, skip this part.
+</p><p>If you don't know how port forwarding works in your router, go to the <a rel="nofollow" class="external text" href="https://portforward.com/">Port Forward website</a>, find your router model there, and follow the instructions there.
+</p><p>In almost every router you can set the port type: UDP or TCP. The following list will explain which port type is needed for what:
+</p><p><br />
+Main server port: UDP
+</p><p>HTTP Port: TCP
+</p><p>ASE Port: UDP (this is needed if you want your server to appear in the server list)
+</p><p><br />
+The ASE port is also simple to get:
+</p><p>ASE port = Main server port + 123
+</p><p>So, if you have the main server port set to 22003, then the ASE port will be 22126.
+</p><p>Good luck!
+</p><p><i>In the latest version of the server, you can check the port status by using the server command <a href="Server_Commands.html#openports" title="Server Commands">openports</a>.</i>
+</p>
+<h3><span class="mw-headline" id="Client_Checks">Client Checks</span></h3>
+<p>The MTA server can be configured to disable the anti-cheat. It can also allow specific or all files to be modified (e.g. carmods.dat), and make sure clients are of a minimum version.
+</p><p>All of these settings are within the file 'mods/deathmatch/<a href="Server_mtaserver.html" title="Server mtaserver.conf"><b>mtaserver.conf</b></a>'. See the <a href="Anti-cheat_guide.html" title="Anti-cheat guide">Anti-cheat guide</a> for more details.<br />
+</p><p>If you want to force a minimum client version, search for the following line:
+</p>
+<pre class="prettyprint lang-xml">
+&lt;minclientversion&gt;&lt;/minclientversion&gt;
+</pre>
+<p>Accepted values look like: 1.1.1-9.02320
+</p>
+<h3><span class="mw-headline" id="Adding_administrators">Adding administrators</span></h3>
+<p>It is strongly recommended to add at least one administrator to your server in order to make use of the built-in webserver to easily maintain and configure your server. This administrator will then also be able to log-in from within the game and control the server.
+</p><p>To add an administrator to your server, follow these steps:<br />
+</p>
+<ol>
+<li>While the server is running, add a new account by typing <b><a href="Server_Commands.html#addaccount" title="Server Commands">addaccount name password</a></b> into the server window. For example, to add user BennyLava you could type:
+<div style="margin: 10px 10px 10px 10px;">
+<pre class="prettyprint lang-xml">
+addaccount BennyLava 123password
+</pre>
+</div>
+<div style="margin: 10px 10px 10px 20px;">
+<p><i>Note: If you do not have access to the server window, and the 'admin' resource is running, you can add  the example account by issuing the client console (F8) command <b>register BennyLava 123password</b></i>
+</p>
+</div>
+<li>The server should display a message confirming the account has been added.
+<li>Next, shutdown the server by typing <b>shutdown</b> into the server window.
+<li>Make sure your server is stopped; if your server is still running, the following changes you make will be overwritten</li>
+<li>Open the file 'mods/deathmatch/acl.xml' with any text editor</li>
+<li>Add the account to the <i>Admin</i> group by using the XML-syntax below
+<div style="padding: 10px">
+<pre class="prettyprint lang-xml">
+&lt;acl&gt;
+  ...
+  &lt;group name="Admin"&gt;
+    &lt;acl name="Admin"/&gt;
+    ...
+    &lt;object name="user.BennyLava" /&gt;
+  &lt;/group&gt;
+  ...
+&lt;/acl&gt;
+</pre>
+</div>
+<p>You're done! You can add as many administrators or users as you want this way, take a look at some of the other groups and ACLs for example. The ACL is also accessible through the <a href="Access_Control_List.html" title="Access Control List">Lua scripting engine</a>.<br />
+</p><p>It is recommended to take a look at the web interface, we will explain how to do this below.
+</p>
+</li>
+</ol>
+<p><b>Note</b>: There are also ways to add accounts and edit rights for the server while it's running. "<a href="Server_Commands.html#addaccount" title="Server Commands">addaccount &lt;user&gt; &lt;password&gt;</a>" is an internal command to add accounts, but you will have to use the web interface to add these accounts to specific groups/ACLs!<br />
+</p>
+<h3><span class="mw-headline" id="Using_the_web_interface">Using the web interface</span></h3>
+<p>The dedicated server comes with a few Lua <a href="Resources.html" title="Resources">resources</a> that provide a nice little web interface to your server. This can be used to easily maintain your server, as it allows you to add users, start/stop resources, and more.
+</p><p>The web interface resources are enabled by default and are served through the built-in HTTP web server. To make sure the built-in HTTP web server runs on a port you like (22005 by default), follow these steps:
+</p>
+<ol>
+<li>Make sure your server is stopped
+<li>Open the file 'mods/deathmatch/<a href="Server_mtaserver.html" title="Server mtaserver.conf"><b>mtaserver.conf</b></a>' with any text editor</li>
+<li>Verify that the HTTP server is enabled:
+<div style="padding: 10px">
+<pre class="prettyprint lang-xml">
+	&lt;httpserver&gt;1&lt;/httpserver&gt;
+</pre>
+</div>
+</li>
+<li>Change the HTTP server port to your liking:
+<div style="padding: 10px">
+<pre class="prettyprint lang-xml">
+	&lt;httpport&gt;22005&lt;/httpport&gt;
+</pre>
+</div>
+</li>
+<li>Save and close the configuration file</li>
+<li>Start your server</li>
+<li>If you happened to have changed the start-up resources in your configuration file, make sure the following resources are started:
+
+<ol><li> resourcebrowser</li>
+<li> resourcemanager</li>
+<li> webadmin</li>
+<li> webmap</li></ol>
+
+These are automatically started in the default configuration file, in case you just installed your server.
+</li>
+<li>Open a web browser (Internet Explorer 6 or 7 are NOT supported; use <a rel="nofollow" class="external text" href="https://www.mozilla.com/firefox">Mozilla Firefox</a>, <a rel="nofollow" class="external text" href="https://www.google.com/chrome">Google Chrome</a>, <a rel="nofollow" class="external text" href="https://www.apple.com/safari/download">Apple Safari</a>, <a rel="nofollow" class="external text" href="https://www.opera.com/">Opera</a> or others) and navigate to the HTTP server URL: <b><a rel="nofollow" class="external free" href="http://server:port/">http://server:port/</a></b>. For example, If you are running a local server on HTTP port 22005, use <b><a rel="nofollow" class="external free" href="http://127.0.0.1:22005/">http://127.0.0.1:22005/</a></b>.</li>
+<li>Enter the username and password of the administrator you added in the previous section.</li>
+</ol>
+<p><br />
+You should now be able to maintain your server from the web interface.
+</p>
+<h3><span class="mw-headline" id="Configuring_an_external_web_server">Configuring an external web server</span></h3>
+<p>The built-in web server is also used to serve files that are required by resources running on your server to any player that is connected to your server. For example, if you are running a game script with a scripted graphical user interface, or custom models, these need to be transferred to every connected player in order to function properly. This is done by either the built-in web server, or an external web server (that is usually a bit faster) but needs to be set up separately.
+</p><p>For performance or consistency reasons during the game, you could choose to make use of such an external web server if you have one set up. The external web server needs to be accessible for the public, so any client will be able to download the necessary client-side files in order to join and play on your server.
+</p><p>To enable downloading off an external web server, you should configure the <a href="Server_mtaserver.html#httpdownloadurl" title="Server mtaserver.conf">httpdownloadurl</a> tag in your server configuration:
+</p>
+<div style="padding: 10px">
+<pre class="prettyprint lang-xml">	
+&lt;httpdownloadurl&gt;http://www.myserver.tld/directory/here&lt;/httpdownloadurl&gt;
+</pre></div>
+<p>When you launch the server, the directory <b>&lt;SERVER&gt;/mods/deathmatch/resource-cache/http-client-files</b> will contain the correct client files for hosting on an external web server. If the web server is on the same machine, you can simply link the appropriate web server directory to <b>http-client-files</b>. If the web server is on a separate machine, ensure it has access to <b>http-client-files</b> via a network path, or maintain a remote copy using synchronization software.
+</p><p><b>Note 1</b>: Please try to avoid any special characters (e.g. ~,&#160;!) in your download URLs.<br />
+<b>Note 2</b>: Please do not use a trailing slash in your download URL (e.g. <i>http://www.myserver.tld/directory</i> rather than <i>http://www.myserver.tld/directory/</i>)<br />
+<b>Note 3</b>: The web server must use 'ContentType: application/octet-stream' for Lua files. Most web servers will do this by default, or you can add the following line to the .htaccess file:<br />
+</p>
+<div style="padding: 10px">
+<pre class="prettyprint lang-xml">AddType application/octet-stream .lua
+</pre></div>
+<p>Instructions on how to install and configure Nginx as an external web server for MTA is here: <a href="Installing_and_Configuring_Nginx_as_an_External_Web_Server.html" title="Installing and Configuring Nginx as an External Web Server">Installing and Configuring Nginx as an External Web Server</a>
+</p>
+<h2><span class="mw-headline" id="Starting_your_server">Starting your server</span></h2>
+<p>Begin by making sure that you have finished all configuration of your server, starting your server is the last stage so everything must be ready!
+</p><p>To start your server double click on MTA Server.exe, make sure you allow it through any firewalls and forward ports where necessary.
+</p>
+<h2><span class="mw-headline" id="Installing.2FUpdating_resources_on_your_server">Installing/Updating resources on your server</span></h2>
+<p>Resources can come in two formats, either a ZIP format or just a normal folder with the script files inside it. The MTA:SA server supports both these methods.
+</p>
+<ol><li> Move or copy the new resource to your &lt;SERVER&gt;\mods\deathmatch\resources folder.</li>
+<li> In the server window type in the command <a href="Server_Commands.html#refresh" title="Server Commands">refresh</a>, this will re-scan the resources folder and update the live resources where necessary.</li></ol>
+<h2><span class="mw-headline" id="Uninstalling_resources">Uninstalling resources</span></h2>
+<p>Resources can easily be removed from your server if you no longer want them.
+</p>
+<ol><li> Delete the ZIP file or the folder of the resource you wish to uninstall</li>
+<li> In the server window type in the command "refresh" (without the quotes), this will re-scan the resources folder and update the live resources where necessary.</li></ol>
+<h2><span class="mw-headline" id="Administrating_your_server">Administrating your server</span></h2>
+<p>You can start resources by typing the command "start resourcename" in the server console, or stop ones with "stop resourcename".
+</p><p>It's also possible to execute these and other admin commands from the in-game console (which you can bring up with the ` key or F8); for this to work, you first need to log in with the command "<a href="Server_Commands.html#login" title="Server Commands">login username password</a>". Additionally, you can press the p key to bring up the admin panel: this is a graphical interface which allows you to easily kick or ban misbehaving players, among others.
+</p><p>For further commands, type <a href="Server_Commands.html#help" title="Server Commands">help</a> in a console.
+</p>
+<h2><span class="mw-headline" id="Starting_a_map.2Fgamemode">Starting a map/gamemode</span></h2>
+<p>See the commands section of the documentation for <a href="Resource_Map_manager.html" title="Resource:Map manager" class="mw-redirect">mapmanager</a> for more information.
+</p>
+<h2><span class="mw-headline" id="Useful_Notes">Useful Notes</span></h2>
+<ol><li> You may also update the resources while in-game as long as you have the correct access levels by typing "refresh" in the clients console or "/refresh" in the chat window. This may cause a second of lag if you have many resources.</li>
+<li> In the above instructions, &lt;SERVER&gt; is the path to your server's main directory. In most cases this is C:\Program Files\MTA San Andreas\server</li>
+<li> You can choose a different config file for the server to use by passing it in the command line after a --config argument, e.g. mtaserver.exe --config anotherconfig.cfg.</li>
+<li> Do not be alarmed by the warning regarding the parsing of the settings.xml file. This happens because your server installation is still clean and unused.</li></ol>
+<h4><span class="mw-headline" id="Need_further_help.3F">Need further help?</span></h4>
+<p>Why not pop over to our <a rel="nofollow" class="external text" href="https://forum.mtasa.com/">Forums</a> or join us on <a rel="nofollow" class="external text" href="irc://irc.multitheftauto.com/mta">IRC</a> (irc.multitheftauto.com #mta - <a rel="nofollow" class="external text" href="https://www.mirc.com/">mIRC</a>)
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20190625164251
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.009 seconds
+Real time usage: 0.009 seconds
+Preprocessor visited node count: 186/1000000
+Preprocessor generated node count: 324/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 - -total
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:3520-0!*!0!!en!*!* and timestamp 20190625164251 and revision id 58200
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=Server_Manual&amp;oldid=58200">https://wiki.multitheftauto.com/index.php?title=Server_Manual&amp;oldid=58200</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_Support.html" title="Category:Support">Support</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="Server_Manual.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk"><a href="Talk_Server_Manual.html" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=Server_Manual&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=Server_Manual&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=Server+Manual" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=Server+Manual" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/Server_Manual.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/Server_Manual.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=Server_Manual&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=Server_Manual&amp;oldid=58200" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=Server_Manual&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-es"><a href="http://wiki.multitheftauto.com/index.php?title=ES/Manual_del_Servidor" title="Manual del Servidor – español" lang="es" hreflang="es">Español</a></li>
+													<li class="interlanguage-link interwiki-de"><a href="http://wiki.multitheftauto.com/index.php?title=DE/Server_Anleitung" title="Server Anleitung – Deutsch" lang="de" hreflang="de">Deutsch</a></li>
+													<li class="interlanguage-link interwiki-it"><a href="http://wiki.multitheftauto.com/index.php?title=IT/Manuale_del_Server" title="Manuale del Server – italiano" lang="it" hreflang="it">Italiano</a></li>
+													<li class="interlanguage-link interwiki-nl"><a href="http://wiki.multitheftauto.com/index.php?title=NL/Server_Manual" title="Server Manual – Nederlands" lang="nl" hreflang="nl">Nederlands</a></li>
+													<li class="interlanguage-link interwiki-ru"><a href="http://wiki.multitheftauto.com/index.php?title=RU/Server_Manual" title="Server Manual – русский" lang="ru" hreflang="ru">Русский</a></li>
+													<li class="interlanguage-link interwiki-pl"><a href="http://wiki.multitheftauto.com/index.php?title=PL/Server_Manual" title="Server Manual – polski" lang="pl" hreflang="pl">Polski</a></li>
+													<li class="interlanguage-link interwiki-pt-br"><a href="http://wiki.multitheftauto.com/index.php?title=PT-BR/Manual_do_Servidor" title="Manual do Servidor – português do Brasil" lang="pt-BR" hreflang="pt-BR">Português do Brasil</a></li>
+													<li class="interlanguage-link interwiki-hu"><a href="http://wiki.multitheftauto.com/index.php?title=HU/Server_Manual" title="Server Manual – magyar" lang="hu" hreflang="hu">Magyar</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 16 August 2018, at 12:44.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":39});});</script></body></html>

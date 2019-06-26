@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>CreateVehicle - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"CreateVehicle","wgTitle":"CreateVehicle","wgCurRevisionId":62689,"wgRevisionId":62689,"wgArticleId":1290,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Server functions","Client functions","Changes in 1.2"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"CreateVehicle","wgRelevantArticleId":1290,"wgRequestId":"321304917d787eab282e1dab","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta name='headingclass' content='' data-class='both' data-subcaption='Shared function'>
+<meta name='lowercasetitle' content=''>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-CreateVehicle rootpage-CreateVehicle skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">CreateVehicle</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
+<!--LC-->
+</p>
+<div style="border: 1px solid #AFAFAF; border-right: 5px solid #AFAFAF; background: #FFFF99; float: right; width: 200px; padding: 5px; margin: 5px; margin-right: 0px;"><b>Note:</b>
+Vehicles (and other elements) created client-side are only seen by the client that created them, aren't synced and players cannot enter them. They are essentially for display only.</div>
+<p>This function creates a vehicle at the specified location.
+</p><p>Its worth nothing that the position of the vehicle is the center point of the vehicle, not its base. As such, you need to ensure that the z value (vertical axis) is some height above the ground. You can find the exact height using the client side function <a href="GetElementDistanceFromCentreOfMassToBaseOfModel.html" title="GetElementDistanceFromCentreOfMassToBaseOfModel">getElementDistanceFromCentreOfMassToBaseOfModel</a>, or you can estimate it yourself and just spawn the vehicle so it drops to the ground.
+</p>
+<h2><span class="mw-headline" id="Syntax">Syntax</span></h2>
+<pre class="prettyprint lang-lua">
+vehicle createVehicle ( int model, float x, float y, float z [, float rx, float ry, float rz, string numberplate, bool bDirection, int variant1, int variant2 ] )
+</pre>
+<p><u><b>OOP Syntax</b></u> <small><a href="OOP_Introduction.html" title="OOP Introduction">Help! I don't understand this!</a></small>
+</p>
+<dl><dd> <b>Method</b>: <i><a href="Vehicle.html" title="Vehicle" class="mw-redirect">Vehicle</a>(...)</i></dd></dl>
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li> <b>model</b>: The <a href="Vehicle_IDs.html" title="Vehicle IDs">vehicle ID</a> of the vehicle being created.</li>
+<li> <b>x</b>: A floating point number representing the X coordinate on the map.</li>
+<li> <b>y</b>: A floating point number representing the Y coordinate on the map.</li>
+<li> <b>z</b>: A floating point number representing the Z coordinate on the map.</li></ul>
+<h3><span class="mw-headline" id="Optional_Arguments">Optional Arguments</span></h3>
+<p><i>NOTE:</i> When using optional arguments, you might need to supply all arguments before the one you wish to use. For more information on optional arguments, see <a href="Optional_arguments-2.html" title="Optional arguments" class="mw-redirect">optional arguments</a>.
+</p>
+<ul><li> <b>rx</b>: A floating point number representing the rotation about the X axis in degrees.</li>
+<li> <b>ry</b>: A floating point number representing the rotation about the Y axis in degrees.</li>
+<li> <b>rz</b>: A floating point number representing the rotation about the Z axis in degrees.</li>
+<li> <b>numberplate</b>: A string that will go on the number plate of the vehicle (max 8 characters).</li>
+<li> <b>bDirection</b> <i>(serverside only)</i>: Placeholder <a href="Boolean.html" title="Boolean">boolean</a> which provides backward compatibility with some scripts. It never had any effect, but it is read by the code. It is recommended to ignore this argument, passing <i>false</i> or the <i>variant1</i> argument in its place.</li></ul>
+<ul><li> <b>variant1</b>: An integer for the first vehicle variant. See <a href="Vehicle_variants.html" title="Vehicle variants">vehicle variants</a>.</li>
+<li> <b>variant2</b>: An integer for the second vehicle variant. See <a href="Vehicle_variants.html" title="Vehicle variants">vehicle variants</a>.</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>Returns the <a href="Vehicle.html" title="Vehicle" class="mw-redirect">vehicle</a> element that was created. Returns <i>false</i> if the arguments are incorrect, or if the vehicle limit of 65535 is exceeded.
+</p>
+<h2><span class="mw-headline" id="Using_trains">Using trains</span></h2>
+<p>Trains are created using the createVehicle function. They are placed at the nearest point of the GTASA train pathing (they usually are railroad tracks) from their spawning point.
+</p>
+<h2><span class="mw-headline" id="Example">Example</span></h2>
+<!-- BEGIN SECTION |1|server|Example 1: Server|--><div class='serverHeader' onclick='expandSection(1);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander1'>Click to collapse [-]</div>Example 1: Server</div><div style='display:;' class='serverContent' id='section1'>
+<p>This example creates a 'vehicle spawner' marker that gives the player a vehicle as soon they step into it.
+</p>
+<pre class="prettyprint lang-lua">
+local vehMark = createMarker(-2426.34106, -639.12714, 132.93631,"cylinder")
+
+function vehicleSpawner(hitElement,matchingDimension)
+	if getElementType(hitElement) == "player" then
+		if getPedOccupiedVehicle(hitElement) == false then
+		local x,y,z = getElementPosition(hitElement)
+			local veh = createVehicle(551, x,y,z)
+			warpPedIntoVehicle(hitElement,veh)
+		end
+	end 
+end 
+addEventHandler("onMarkerHit",vehMark,vehicleSpawner)
+</pre>
+</div><!-- END SECTION |1|-->
+<!-- BEGIN SECTION |2|server|Example 2: Server|--><div class='serverHeader' onclick='expandSection(2);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander2'>Click to collapse [-]</div>Example 2: Server</div><div style='display:;' class='serverContent' id='section2'>
+<p>This example creates a vehicle five units to the right of a player when they type <i>createvehicle</i> and its name in the console:
+</p>
+<pre class="prettyprint lang-lua">
+local distance = 5 --units
+
+-- define our handler (we'll take a variable number of parameters where the name goes, because there are vehicle names with more than one word)
+function consoleCreateVehicle ( sourcePlayer, commandName, ... )
+   -- if a player triggered it, not the admin,
+   if ( sourcePlayer ) then
+      -- calculate the position of the vehicle based on the player's position and rotation:
+      local x, y, z = getElementPosition ( sourcePlayer ) -- get the player's position
+      local rotZ = getElementRotation ( sourcePlayer ) -- get the player's rotation around the Z axis in degrees
+      x = x + ( ( math.cos ( math.rad ( rotZ ) ) ) * distance ) -- calculate the X position of the vehicle
+      y = y + ( ( math.sin ( math.rad ( rotZ ) ) ) * distance ) -- calculate the Y position of the vehicle
+
+      -- get the complete vehicle name by joining all passed parameters using Lua function table.concat
+      local vehicleName = table.concat({...}, " ")
+      -- get the vehicle's model ID from the name
+      local vehicleID = getVehicleModelFromName ( vehicleName )
+      -- if vehicle ID is valid,
+      if vehicleID then
+            -- create the vehicle using the information gathered above:
+            local newVehicle = createVehicle ( vehicleID, x, y, z, 0, 0, rotZ )
+            -- if vehicle creation failed, give the player a message
+            if not newVehicle then
+               outputConsole ( "Failed to create vehicle.", sourcePlayer )
+            end
+      end
+   end
+end
+
+-- Attach the 'consoleCreateVehicle' function to the "createvehicle" command
+addCommandHandler ( "createvehicle", consoleCreateVehicle )
+</pre>
+</div><!-- END SECTION |2|-->
+<!-- BEGIN SECTION |3|server|Example 3: Server|--><div class='serverHeader' onclick='expandSection(3);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander3'>Click to expand [+]</div>Example 3: Server</div><div style='display:none;' class='serverContent' id='section3'>
+<p>This script spawns a Rhino on top of one lucky individual.
+</p>
+<pre class="prettyprint lang-lua">
+function scriptCreateTank ( player, command )
+      local luckyBugger = getRandomPlayer() -- get a random player
+      local x, y, z = getElementPosition ( luckyBugger ) -- retrive the player's position
+      createVehicle ( 432, x, y, z + 10 ) -- create the tank 10 units above them
+      outputChatBox ( "You got Tank'd!", luckyBugger )
+end
+--Attach the 'scriptCreateTank' function to the "tank" command
+addCommandHandler ( "tank", scriptCreateTank )
+</pre>
+</div><!-- END SECTION |3|-->
+<!-- BEGIN SECTION |4|server|Example 4: Server|--><div class='serverHeader' onclick='expandSection(4);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander4'>Click to expand [+]</div>Example 4: Server</div><div style='display:none;' class='serverContent' id='section4'>
+<p>This example adds a <i>/spveh</i> command to spawn a car model in the provided coordinates. If any car created by this command gets blown up, it will respawn where it was created.
+</p>
+<pre class="prettyprint lang-lua">
+-- Do not allow the following IDs to be spawned
+local forbiddenCars = { [435] = true, [441] = true, [449] = true, [450] = true, [464] = true, [465] = true, [501] = true,
+                        [537] = true, [538] = true, [564] = true, [569] = true, [570] = true, [584] = true, [590] = true,
+                        [591] = true, [594] = true, [606] = true, [607] = true, [608] = true, [610] = true, [611] = true }
+
+local cmdVehRoot = createElement("commandVehicles") -- Dummy element containing the cars that this command has created
+addCommandHandler("spveh",
+    function(player, cmd, modelID, x, y, z, platetext)
+        -- Check whether arguments are correct
+        local modelID, x, y, z = tonumber(modelID), tonumber(x), tonumber(y), tonumber(z)
+        if modelID and x and y and z then
+            -- Do not continue if we shouldn't
+            if forbiddenCars[modelID] then
+                outputChatBox("The car model you provided is not allowed.", player, 255, 0, 0)
+                return
+            end
+            local platetext = type(platetext) == "string" and platetext or "PRIVATE"
+            -- Create the actual vehicle and set it as a children of our dummy element
+            setElementParent(createVehicle(modelID, x, y, z, 0, 0, 0, platetext), cmdVehRoot)
+            -- Inform the player about what we did
+            outputChatBox("You have created a " .. getVehicleNameFromModel(modelID) .. " (model ID: " .. modelID .. ") at " .. table.concat({ x, y, z }, ", ") .. " with numberplate " .. platetext .. " successfully.", player, 0, 255, 0)
+        else
+            outputChatBox("Syntax: /" .. cmd .. " (modelID) (x) (y) (z) [numberplate]", player, 255, 255, 255)
+        end
+    end
+)
+
+-- If a vehicle that has been created using the command blows up, respawn it where it was created
+addEventHandler("onVehicleExplode", cmdVehRoot,
+    function()
+        respawnVehicle(source)
+    end
+)
+</pre>
+</div><!-- END SECTION |4|-->
+<!-- BEGIN SECTION |5|client|Example 5: Client|--><div class='clientHeader' onclick='expandSection(5);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander5'>Click to collapse [-]</div>Example 5: Client</div><div style='display:;' class='clientContent' id='section5'>
+<p>This script spawns a Rhino on top of the local player.
+</p>
+<pre class="prettyprint lang-lua">
+function scriptCreateTank ( commandName )
+      local luckyBugger = getLocalPlayer() -- get the local player
+      local x, y, z = getElementPosition ( luckyBugger ) -- retrive the player's position
+      createVehicle ( 432, x, y, z + 10 ) -- create the tank 10 units above them
+      outputChatBox ( "You got Tank'd!", 255, 0, 0)
+end
+--Attach the 'scriptCreateTank' function to the "tank" command
+addCommandHandler ( "tank", scriptCreateTank )
+</pre>
+</div><!-- END SECTION |5|-->
+<p><br />
+</p>
+<div style="font-weight: bold;background:black;color:white;padding:2px; padding-left:8px;">FROM VERSION 1.4  ONWARDS</div><div style="border: 2px solid black;padding: 3px;">
+<p>This is an example of how this function is executed in an OOP environment.
+</p>
+<!-- BEGIN SECTION |6|server|OOP server|--><div class='serverHeader' onclick='expandSection(6);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander6'>Click to collapse [-]</div>OOP server</div><div style='display:;' class='serverContent' id='section6'>
+<p>This script will create an Infernus at the center (0, 0, 3) of San Andreas upon execution.
+</p>
+<pre class="prettyprint lang-lua">
+addEventHandler( "onResourceStart", resourceRoot,
+    function()
+        infernus = Vehicle(411, Vector3(0, 0, 3)); -- Create an Infernus and spawn it at the middle of SA.
+        infernus:setColor(0, 0, 0); -- Set its color to black.
+        infernus.damageProof = true; -- Make it damage proof
+    end
+)
+	
+addCommandHandler( "blowinfernus",
+    function(p)
+        if not infernus.blown then -- Check if the Infernus is blown up or not.
+            infernus:blow();
+        else -- Ouch, it's blown up, let's output an error to the player.
+            outputChatBox( "The Infernus has already been blown up by you.", p, 255, 0, 0, false );
+        end
+    end)
+</pre>
+</div><!-- END SECTION |6|-->
+ </div>
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<ul><li><a href="AddVehicleSirens.html" title="AddVehicleSirens">addVehicleSirens</a></li>
+<li><a href="AddVehicleUpgrade.html" title="AddVehicleUpgrade">addVehicleUpgrade</a></li>
+<li><a href="AttachTrailerToVehicle.html" title="AttachTrailerToVehicle">attachTrailerToVehicle</a></li>
+<li><a href="BlowVehicle.html" title="BlowVehicle">blowVehicle</a></li>
+<li><strong class="selflink">createVehicle</strong></li>
+<li><a href="DetachTrailerFromVehicle.html" title="DetachTrailerFromVehicle">detachTrailerFromVehicle</a></li>
+<li><a href="FixVehicle.html" title="FixVehicle">fixVehicle</a></li>
+<li><a href="GetModelHandling.html" title="GetModelHandling">getModelHandling</a></li>
+<li><a href="GetOriginalHandling.html" title="GetOriginalHandling">getOriginalHandling</a></li>
+<li><a href="GetTrainDirection.html" title="GetTrainDirection">getTrainDirection</a></li>
+<li><a href="GetTrainPosition.html" title="GetTrainPosition">getTrainPosition</a></li>
+<li><a href="GetTrainSpeed.html" title="GetTrainSpeed">getTrainSpeed</a></li></ul>
+<div style="font-weight: bold;background:black;color:white;padding:2px; padding-left:8px;">FROM VERSION 1.6 <a rel="nofollow" class="external text" href="https://buildinfo.mtasa.com/?Author=&amp;Branch=&amp;Revision=7485"><span style="color: #FFFFFF;">r7485</span></a> ONWARDS</div><div style="border: 2px solid black;padding: 3px;">
+<ul><li><a href="GetTrainTrack.html" title="GetTrainTrack">getTrainTrack</a></li></ul>
+ </div>
+<ul><li><a href="GetVehicleColor.html" title="GetVehicleColor">getVehicleColor</a></li>
+<li><a href="GetVehicleCompatibleUpgrades.html" title="GetVehicleCompatibleUpgrades">getVehicleCompatibleUpgrades</a></li>
+<li><a href="GetVehicleController.html" title="GetVehicleController">getVehicleController</a></li>
+<li><a href="GetVehicleDoorOpenRatio.html" title="GetVehicleDoorOpenRatio">getVehicleDoorOpenRatio</a></li>
+<li><a href="GetVehicleDoorState.html" title="GetVehicleDoorState">getVehicleDoorState</a></li>
+<li><a href="GetVehicleEngineState.html" title="GetVehicleEngineState">getVehicleEngineState</a></li>
+<li><a href="GetVehicleHandling.html" title="GetVehicleHandling">getVehicleHandling</a></li>
+<li><a href="GetVehicleHeadLightColor.html" title="GetVehicleHeadLightColor">getVehicleHeadLightColor</a></li>
+<li><a href="GetVehicleLandingGearDown.html" title="GetVehicleLandingGearDown">getVehicleLandingGearDown</a></li>
+<li><a href="GetVehicleLightState.html" title="GetVehicleLightState">getVehicleLightState</a></li>
+<li><a href="GetVehicleMaxPassengers.html" title="GetVehicleMaxPassengers">getVehicleMaxPassengers</a></li>
+<li><a href="GetVehicleModelFromName.html" title="GetVehicleModelFromName">getVehicleModelFromName</a></li>
+<li><a href="GetVehicleName.html" title="GetVehicleName">getVehicleName</a></li>
+<li><a href="GetVehicleNameFromModel.html" title="GetVehicleNameFromModel">getVehicleNameFromModel</a></li>
+<li><a href="GetVehicleOccupant.html" title="GetVehicleOccupant">getVehicleOccupant</a></li>
+<li><a href="GetVehicleOccupants.html" title="GetVehicleOccupants">getVehicleOccupants</a></li>
+<li><a href="GetVehicleOverrideLights.html" title="GetVehicleOverrideLights">getVehicleOverrideLights</a></li>
+<li><a href="GetVehiclePaintjob.html" title="GetVehiclePaintjob">getVehiclePaintjob</a></li>
+<li><a href="GetVehiclePanelState.html" title="GetVehiclePanelState">getVehiclePanelState</a></li>
+<li><a href="GetVehiclePlateText.html" title="GetVehiclePlateText">getVehiclePlateText</a></li></ul>
+<ul><li><a href="GetVehicleRespawnPosition.html" title="GetVehicleRespawnPosition">getVehicleRespawnPosition</a></li>
+<li><a href="GetVehicleRespawnRotation.html" title="GetVehicleRespawnRotation">getVehicleRespawnRotation</a></li>
+<li><a href="GetVehicleSirenParams.html" title="GetVehicleSirenParams">getVehicleSirenParams</a></li>
+<li><a href="GetVehicleSirens.html" title="GetVehicleSirens">getVehicleSirens</a></li>
+<li><a href="GetVehicleSirensOn.html" title="GetVehicleSirensOn">getVehicleSirensOn</a></li>
+<li><a href="GetVehicleTowedByVehicle.html" title="GetVehicleTowedByVehicle">getVehicleTowedByVehicle</a></li>
+<li><a href="GetVehicleTowingVehicle.html" title="GetVehicleTowingVehicle">getVehicleTowingVehicle</a></li></ul>
+<ul><li><a href="GetVehicleTurretPosition.html" title="GetVehicleTurretPosition">getVehicleTurretPosition</a></li>
+<li><a href="GetVehicleType.html" title="GetVehicleType">getVehicleType</a></li>
+<li><a href="GetVehicleUpgradeOnSlot.html" title="GetVehicleUpgradeOnSlot">getVehicleUpgradeOnSlot</a></li>
+<li><a href="GetVehicleUpgradeSlotName.html" title="GetVehicleUpgradeSlotName">getVehicleUpgradeSlotName</a></li>
+<li><a href="GetVehicleUpgrades.html" title="GetVehicleUpgrades">getVehicleUpgrades</a></li>
+<li><a href="GetVehicleVariant.html" title="GetVehicleVariant">getVehicleVariant</a></li>
+<li><a href="GetVehicleWheelStates.html" title="GetVehicleWheelStates">getVehicleWheelStates</a></li>
+<li><a href="GetVehiclesOfType.html" title="GetVehiclesOfType">getVehiclesOfType</a></li>
+<li><a href="IsTrainDerailable.html" title="IsTrainDerailable">isTrainDerailable</a></li>
+<li><a href="IsTrainDerailed.html" title="IsTrainDerailed">isTrainDerailed</a></li>
+<li><a href="IsVehicleBlown.html" title="IsVehicleBlown">isVehicleBlown</a></li>
+<li><a href="IsVehicleDamageProof.html" title="IsVehicleDamageProof">isVehicleDamageProof</a></li>
+<li><a href="IsVehicleFuelTankExplodable.html" title="IsVehicleFuelTankExplodable">isVehicleFuelTankExplodable</a></li>
+<li><a href="IsVehicleLocked.html" title="IsVehicleLocked">isVehicleLocked</a></li>
+<li><a href="IsVehicleOnGround.html" title="IsVehicleOnGround">isVehicleOnGround</a></li>
+<li><a href="IsVehicleTaxiLightOn.html" title="IsVehicleTaxiLightOn">isVehicleTaxiLightOn</a></li>
+<li><a href="RemoveVehicleSirens.html" title="RemoveVehicleSirens">removeVehicleSirens</a></li>
+<li><a href="RemoveVehicleUpgrade.html" title="RemoveVehicleUpgrade">removeVehicleUpgrade</a></li>
+<li><a href="ResetVehicleExplosionTime.html" title="ResetVehicleExplosionTime">resetVehicleExplosionTime</a></li>
+<li><a href="ResetVehicleIdleTime.html" title="ResetVehicleIdleTime">resetVehicleIdleTime</a></li>
+<li><a href="RespawnVehicle.html" title="RespawnVehicle">respawnVehicle</a></li>
+<li><a href="SetModelHandling.html" title="SetModelHandling">setModelHandling</a></li>
+<li><a href="SetTrainDerailable.html" title="SetTrainDerailable">setTrainDerailable</a></li>
+<li><a href="SetTrainDerailed.html" title="SetTrainDerailed">setTrainDerailed</a></li>
+<li><a href="SetTrainDirection.html" title="SetTrainDirection">setTrainDirection</a></li>
+<li><a href="SetTrainPosition.html" title="SetTrainPosition">setTrainPosition</a></li>
+<li><a href="SetTrainSpeed.html" title="SetTrainSpeed">setTrainSpeed</a></li></ul>
+<div style="font-weight: bold;background:black;color:white;padding:2px; padding-left:8px;">FROM VERSION 1.6 <a rel="nofollow" class="external text" href="https://buildinfo.mtasa.com/?Author=&amp;Branch=&amp;Revision=7485"><span style="color: #FFFFFF;">r7485</span></a> ONWARDS</div><div style="border: 2px solid black;padding: 3px;">
+<ul><li><a href="SetTrainTrack.html" title="SetTrainTrack">setTrainTrack</a></li></ul>
+ </div>
+<ul><li><a href="SetVehicleColor.html" title="SetVehicleColor">setVehicleColor</a></li>
+<li><a href="SetVehicleDamageProof.html" title="SetVehicleDamageProof">setVehicleDamageProof</a></li>
+<li><a href="SetVehicleDoorOpenRatio.html" title="SetVehicleDoorOpenRatio">setVehicleDoorOpenRatio</a></li>
+<li><a href="SetVehicleDoorState.html" title="SetVehicleDoorState">setVehicleDoorState</a></li>
+<li><a href="SetVehicleDoorsUndamageable.html" title="SetVehicleDoorsUndamageable">setVehicleDoorsUndamageable</a></li>
+<li><a href="SetVehicleEngineState.html" title="SetVehicleEngineState">setVehicleEngineState</a></li>
+<li><a href="SetVehicleFuelTankExplodable.html" title="SetVehicleFuelTankExplodable">setVehicleFuelTankExplodable</a></li>
+<li><a href="SetVehicleHandling.html" title="SetVehicleHandling">setVehicleHandling</a></li>
+<li><a href="SetVehicleHeadLightColor.html" title="SetVehicleHeadLightColor">setVehicleHeadLightColor</a></li>
+<li><a href="SetVehicleIdleRespawnDelay.html" title="SetVehicleIdleRespawnDelay">setVehicleIdleRespawnDelay</a></li>
+<li><a href="SetVehicleLandingGearDown.html" title="SetVehicleLandingGearDown">setVehicleLandingGearDown</a></li>
+<li><a href="SetVehicleLightState.html" title="SetVehicleLightState">setVehicleLightState</a></li>
+<li><a href="SetVehicleLocked.html" title="SetVehicleLocked">setVehicleLocked</a></li>
+<li><a href="SetVehicleOverrideLights.html" title="SetVehicleOverrideLights">setVehicleOverrideLights</a></li>
+<li><a href="SetVehiclePaintjob.html" title="SetVehiclePaintjob">setVehiclePaintjob</a></li>
+<li><a href="SetVehiclePanelState.html" title="SetVehiclePanelState">setVehiclePanelState</a></li>
+<li><a href="SetVehiclePlateText.html" title="SetVehiclePlateText">setVehiclePlateText</a></li>
+<li><a href="SetVehicleRespawnDelay.html" title="SetVehicleRespawnDelay">setVehicleRespawnDelay</a></li>
+<li><a href="SetVehicleRespawnPosition.html" title="SetVehicleRespawnPosition">setVehicleRespawnPosition</a></li></ul>
+<ul><li><a href="SetVehicleRespawnRotation.html" title="SetVehicleRespawnRotation">setVehicleRespawnRotation</a></li>
+<li><a href="SetVehicleSirens.html" title="SetVehicleSirens">setVehicleSirens</a></li>
+<li><a href="SetVehicleSirensOn.html" title="SetVehicleSirensOn">setVehicleSirensOn</a></li>
+<li><a href="SetVehicleTaxiLightOn.html" title="SetVehicleTaxiLightOn">setVehicleTaxiLightOn</a></li>
+<li><a href="SetVehicleTurretPosition.html" title="SetVehicleTurretPosition">setVehicleTurretPosition</a></li></ul>
+<ul><li><a href="SetVehicleVariant.html" title="SetVehicleVariant">setVehicleVariant</a></li>
+<li><a href="SetVehicleWheelStates.html" title="SetVehicleWheelStates">setVehicleWheelStates</a></li>
+<li><a href="SpawnVehicle.html" title="SpawnVehicle">spawnVehicle</a></li>
+<li><a href="ToggleVehicleRespawn.html" title="ToggleVehicleRespawn">toggleVehicleRespawn</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625164308
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.032 seconds
+Real time usage: 0.034 seconds
+Preprocessor visited node count: 409/1000000
+Preprocessor generated node count: 1204/1000000
+Post‐expand include size: 6988/2097152 bytes
+Template argument size: 724/2097152 bytes
+Highest expansion depth: 9/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   20.746      1 - -total
+ 36.27%    7.525      1 - Template:Vehicle_functions
+ 33.96%    7.046      5 - Template:New_items
+ 22.30%    4.627      8 - Template:Current_Version
+ 13.39%    2.778      1 - Template:New_feature/item
+  8.70%    1.805      2 - Template:Deprecated_items
+  6.70%    1.389      1 - Template:Server_client_function
+  6.34%    1.315      1 - Template:OOP
+  5.07%    1.053      2 - Template:R
+  3.44%    0.714      1 - Template:Note_box
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:1290-0!*!0!!*!*!* and timestamp 20190625164308 and revision id 62689
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=CreateVehicle&amp;oldid=62689">https://wiki.multitheftauto.com/index.php?title=CreateVehicle&amp;oldid=62689</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Categories</a>: <ul><li><a href="Category_Server_functions.html" title="Category:Server functions">Server functions</a></li><li><a href="Category_Client_functions.html" title="Category:Client functions">Client functions</a></li><li><a href="Category_Changes_in_1-3.html" title="Category:Changes in 1.2">Changes in 1.2</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="CreateVehicle.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:CreateVehicle&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=CreateVehicle&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=CreateVehicle&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=CreateVehicle" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=CreateVehicle" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/CreateVehicle.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/CreateVehicle.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=CreateVehicle&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=CreateVehicle&amp;oldid=62689" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=CreateVehicle&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-de"><a href="http://wiki.multitheftauto.com/index.php?title=DE/createVehicle" title="createVehicle – Deutsch" lang="de" hreflang="de">Deutsch</a></li>
+													<li class="interlanguage-link interwiki-pl"><a href="http://wiki.multitheftauto.com/index.php?title=PL/createVehicle" title="createVehicle – polski" lang="pl" hreflang="pl">Polski</a></li>
+													<li class="interlanguage-link interwiki-ru"><a href="http://wiki.multitheftauto.com/index.php?title=RU/CreateVehicle" title="CreateVehicle – русский" lang="ru" hreflang="ru">Русский</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 19 May 2019, at 09:23.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":66});});</script></body></html>

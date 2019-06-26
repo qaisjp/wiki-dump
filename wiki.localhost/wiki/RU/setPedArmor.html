@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>RU/setPedArmor - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"RU/setPedArmor","wgTitle":"RU/setPedArmor","wgCurRevisionId":46859,"wgRevisionId":46859,"wgArticleId":5320,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Функции сервера"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"RU/setPedArmor","wgRelevantArticleId":5320,"wgRequestId":"9ebe659383e83bf3082cc907","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta name='headingclass' content='' data-class='server' data-subcaption='Функция сервера'>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-RU_setPedArmor rootpage-RU_setPedArmor skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">RU/setPedArmor</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
+Эта функция позволяет изменить количество брони у <a href="../Ped.html" title="Ped" class="mw-redirect">педа</a>.
+</p>
+<h2><span class="mw-headline" id=".D0.A1.D0.B8.D0.BD.D1.82.D0.B0.D0.BA.D1.81.D0.B8.D1.81">Синтаксис</span></h2>
+<pre class="prettyprint lang-lua">
+bool setPedArmor ( ped thePed, float armor )
+</pre>
+<h3><span class="mw-headline" id=".D0.9E.D0.B1.D1.8F.D0.B7.D0.B0.D1.82.D0.B5.D0.BB.D1.8C.D0.BD.D1.8B.D0.B5_.D0.90.D1.82.D1.80.D0.B8.D0.B1.D1.83.D1.82.D1.8B">Обязательные Атрибуты</span></h3>
+<ul><li><b>thePed</b>: <a href="../Ped.html" title="Ped" class="mw-redirect">пед</a>, броню которого вы хотите изменить.</li>
+<li><b>armor</b>: количество брони, которое вы хотите установить у педа. Допустимые значения от 0 до 100.</li></ul>
+<h3><span class="mw-headline" id=".D0.92.D0.BE.D0.B7.D0.B2.D1.80.D0.B0.D1.89.D0.B5.D0.BD.D0.B8.D1.8F">Возвращения</span></h3>
+<p>Возвращает <i>true</i> если броня была успешно изменена. Взвращает <i>false</i> если был определен недопустимый пед или кол-во брони вне допустимого диапазона.
+</p>
+<h2><span class="mw-headline" id=".D0.9F.D1.80.D0.B8.D0.BC.D0.B5.D1.80.D1.8B">Примеры</span></h2>
+<p>Этот пример дает определённое кол-во брони.
+</p>
+<pre class="prettyprint lang-lua">
+function givePlayerArmorAmout ( player, command, amout ) -- вид команды 'givearmor [кол-во брони]' (без [ ])
+	setPedArmor ( player, amout )
+end
+addCommandHandler ( "givearmor", givePlayerArmorAmout )
+</pre>
+<p>Этот пример удаляет броню у игрока.
+</p>
+<pre class="prettyprint lang-lua">
+function removePlayerArmor ( player, command )
+	setPedArmor ( player, 0 )      -- установит броню игрока на 0 когда он наберет команду 'removearmor'
+end
+addCommandHandler ( "removearmor", removePlayerArmor )
+</pre>
+<p>Этот пример даёт 100 брони игроку.
+</p>
+<pre class="prettyprint lang-lua">
+function givePlayerArmor ( player, command )
+	setPedArmor ( player, 100 )    -- установит броню игрока на 100 когда он наберет команду 'addarmor'
+end
+addCommandHandler ( "addarmor", givePlayerArmor )
+</pre>
+<h2><span class="mw-headline" id=".D0.A1.D0.BC.D0.BE.D1.82.D1.80.D0.B8.D1.82.D0.B5_.D1.82.D0.B0.D0.BA.D0.B6.D0.B5">Смотрите также</span></h2>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/addPedClothes&amp;action=edit&amp;redlink=1" class="new" title="RU/addPedClothes (page does not exist)">addPedClothes</a></li>
+<li><a href="createPed.html" title="RU/createPed">createPed</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/doesPedHaveJetPack&amp;action=edit&amp;redlink=1" class="new" title="RU/doesPedHaveJetPack (page does not exist)">doesPedHaveJetPack</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPedAmmoInClip&amp;action=edit&amp;redlink=1" class="new" title="RU/getPedAmmoInClip (page does not exist)">getPedAmmoInClip</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPedArmor&amp;action=edit&amp;redlink=1" class="new" title="RU/getPedArmor (page does not exist)">getPedArmor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPedClothes&amp;action=edit&amp;redlink=1" class="new" title="RU/getPedClothes (page does not exist)">getPedClothes</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPedContactElement&amp;action=edit&amp;redlink=1" class="new" title="RU/getPedContactElement (page does not exist)">getPedContactElement</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPedFightingStyle&amp;action=edit&amp;redlink=1" class="new" title="RU/getPedFightingStyle (page does not exist)">getPedFightingStyle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPedGravity&amp;action=edit&amp;redlink=1" class="new" title="RU/getPedGravity (page does not exist)">getPedGravity</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPedOccupiedVehicle&amp;action=edit&amp;redlink=1" class="new" title="RU/getPedOccupiedVehicle (page does not exist)">getPedOccupiedVehicle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPedOccupiedVehicleSeat&amp;action=edit&amp;redlink=1" class="new" title="RU/getPedOccupiedVehicleSeat (page does not exist)">getPedOccupiedVehicleSeat</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPedStat&amp;action=edit&amp;redlink=1" class="new" title="RU/getPedStat (page does not exist)">getPedStat</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPedTarget&amp;action=edit&amp;redlink=1" class="new" title="RU/getPedTarget (page does not exist)">getPedTarget</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPedTotalAmmo&amp;action=edit&amp;redlink=1" class="new" title="RU/getPedTotalAmmo (page does not exist)">getPedTotalAmmo</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPedWalkingStyle&amp;action=edit&amp;redlink=1" class="new" title="RU/getPedWalkingStyle (page does not exist)">getPedWalkingStyle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPedWeapon&amp;action=edit&amp;redlink=1" class="new" title="RU/getPedWeapon (page does not exist)">getPedWeapon</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPedWeaponSlot&amp;action=edit&amp;redlink=1" class="new" title="RU/getPedWeaponSlot (page does not exist)">getPedWeaponSlot</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getValidPedModels&amp;action=edit&amp;redlink=1" class="new" title="RU/getValidPedModels (page does not exist)">getValidPedModels</a></li>
+<li><a href="givePedJetPack.html" title="RU/givePedJetPack">givePedJetPack</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isPedChoking&amp;action=edit&amp;redlink=1" class="new" title="RU/isPedChoking (page does not exist)">isPedChoking</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isPedDead&amp;action=edit&amp;redlink=1" class="new" title="RU/isPedDead (page does not exist)">isPedDead</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isPedDoingGangDriveby&amp;action=edit&amp;redlink=1" class="new" title="RU/isPedDoingGangDriveby (page does not exist)">isPedDoingGangDriveby</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isPedDucked&amp;action=edit&amp;redlink=1" class="new" title="RU/isPedDucked (page does not exist)">isPedDucked</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isPedFrozen&amp;action=edit&amp;redlink=1" class="new" title="RU/isPedFrozen (page does not exist)">isPedFrozen</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isPedHeadless&amp;action=edit&amp;redlink=1" class="new" title="RU/isPedHeadless (page does not exist)">isPedHeadless</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isPedInVehicle&amp;action=edit&amp;redlink=1" class="new" title="RU/isPedInVehicle (page does not exist)">isPedInVehicle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isPedInWater&amp;action=edit&amp;redlink=1" class="new" title="RU/isPedInWater (page does not exist)">isPedInWater</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isPedOnFire&amp;action=edit&amp;redlink=1" class="new" title="RU/isPedOnFire (page does not exist)">isPedOnFire</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isPedOnGround&amp;action=edit&amp;redlink=1" class="new" title="RU/isPedOnGround (page does not exist)">isPedOnGround</a></li>
+<li><a href="killPed.html" title="RU/killPed">killPed</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/reloadPedWeapon&amp;action=edit&amp;redlink=1" class="new" title="RU/reloadPedWeapon (page does not exist)">reloadPedWeapon</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/removePedClothes&amp;action=edit&amp;redlink=1" class="new" title="RU/removePedClothes (page does not exist)">removePedClothes</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/removePedFromVehicle&amp;action=edit&amp;redlink=1" class="new" title="RU/removePedFromVehicle (page does not exist)">removePedFromVehicle</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/removePedJetPack&amp;action=edit&amp;redlink=1" class="new" title="RU/removePedJetPack (page does not exist)">removePedJetPack</a></li>
+<li><a href="setPedAnimation.html" title="RU/setPedAnimation">setPedAnimation</a></li>
+<li><a href="setPedAnimationProgress.html" title="RU/setPedAnimationProgress">setPedAnimationProgress</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setPedAnalogControlState&amp;action=edit&amp;redlink=1" class="new" title="RU/setPedAnalogControlState (page does not exist)">setPedAnalogControlState</a></li>
+<li><strong class="selflink">setPedArmor</strong></li>
+<li><a href="setPedChoking.html" title="RU/setPedChoking">setPedChoking</a></li>
+<li><a href="setPedDoingGangDriveby.html" title="RU/setPedDoingGangDriveby">setPedDoingGangDriveby</a></li>
+<li><a href="setPedFightingStyle.html" title="RU/setPedFightingStyle">setPedFightingStyle</a></li>
+<li><a href="setPedFrozen.html" title="RU/setPedFrozen">setPedFrozen</a></li>
+<li><a href="setPedGravity.html" title="RU/setPedGravity">setPedGravity</a></li>
+<li><a href="setPedHeadless.html" title="RU/setPedHeadless">setPedHeadless</a></li>
+<li><a href="setPedOnFire.html" title="RU/setPedOnFire">setPedOnFire</a></li>
+<li><a href="setPedStat.html" title="RU/setPedStat">setPedStat</a></li>
+<li><a href="setPedWeaponSlot.html" title="RU/setPedWeaponSlot">setPedWeaponSlot</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/setPedWalkingStyle&amp;action=edit&amp;redlink=1" class="new" title="RU/setPedWalkingStyle (page does not exist)">setPedWalkingStyle</a></li>
+<li><a href="warpPedIntoVehicle.html" title="RU/warpPedIntoVehicle">warpPedIntoVehicle</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625165445
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.009 seconds
+Real time usage: 0.011 seconds
+Preprocessor visited node count: 90/1000000
+Preprocessor generated node count: 362/1000000
+Post‐expand include size: 2159/2097152 bytes
+Template argument size: 53/2097152 bytes
+Highest expansion depth: 9/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    3.695      1 - -total
+ 71.12%    2.628      1 - Template:RU/Ped_functions
+ 52.45%    1.938      1 - Template:New_items
+ 27.15%    1.003      1 - Template:Current_Version
+ 17.67%    0.653      1 - Template:RU/Server_function
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:5320-0!*!0!!*!*!* and timestamp 20190625165445 and revision id 46859
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=RU/setPedArmor&amp;oldid=46859">https://wiki.multitheftauto.com/index.php?title=RU/setPedArmor&amp;oldid=46859</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="../Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="../Category_%d0%a4%d1%83%d0%bd%d0%ba%d1%86%d0%b8%d0%b8_%d1%81%d0%b5%d1%80%d0%b2%d0%b5%d1%80%d0%b0.html" title="Category:Функции сервера">Функции сервера</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="setPedArmor.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:RU/setPedArmor&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=RU/setPedArmor&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=RU/setPedArmor&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=RU%2FsetPedArmor" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=RU%2FsetPedArmor" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/RU/setPedArmor.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/RU/setPedArmor.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=RU/setPedArmor&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=RU/setPedArmor&amp;oldid=46859" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=RU/setPedArmor&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=setPedArmor" title="setPedArmor – English" lang="en" hreflang="en">English</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 12 March 2016, at 20:48.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":41});});</script></body></html>

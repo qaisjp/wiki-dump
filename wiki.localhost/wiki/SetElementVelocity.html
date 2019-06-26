@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>SetElementVelocity - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"SetElementVelocity","wgTitle":"SetElementVelocity","wgCurRevisionId":62531,"wgRevisionId":62531,"wgArticleId":1730,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Server functions","Client functions","Changes in 1.4"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"SetElementVelocity","wgRelevantArticleId":1730,"wgRequestId":"6ed14546c44638c535a346bf","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<meta name="generator" content="MediaWiki 1.27.5"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta name='headingclass' content='' data-class='both' data-subcaption='Shared function'>
+<meta name='lowercasetitle' content=''>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-SetElementVelocity rootpage-SetElementVelocity skin-monobook action-view">
+<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">SetElementVelocity</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From Multi Theft Auto: Wiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
+<!--LC-->
+</p><p>This function sets the velocity (movement speeds) along each axis, for an element.
+</p><p>This is not compatible with all elements. Only the following elements are compatible:
+</p>
+<ul><li> <a href="Ped.html" title="Ped" class="mw-redirect">Peds</a>.</li>
+<li> <a href="Vehicle.html" title="Vehicle" class="mw-redirect">Vehicles</a>.</li>
+<li> <a href="Object.html" title="Object" class="mw-redirect">Objects</a>.</li>
+<li> <a href="Projectile.html" title="Projectile" class="mw-redirect">Projectiles</a>.</li></ul>
+<h2><span class="mw-headline" id="Syntax">Syntax</span></h2>
+<pre class="prettyprint lang-lua">bool setElementVelocity ( element theElement, float speedX, float speedY, float speedZ )</pre>
+<p><u><b>OOP Syntax</b></u> <small><a href="OOP_Introduction.html" title="OOP Introduction">Help! I don't understand this!</a></small>
+</p>
+<dl><dd> <b>Method</b>: <i><a href="Element.html" title="Element">element</a>:setVelocity(...)</i></dd>
+<dd> <b>Variable</b>: <i>.velocity</i></dd>
+<dd> <b>Counterpart</b>: <i><a href="GetElementVelocity.html" title="GetElementVelocity">getElementVelocity</a></i></dd></dl>
+<h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
+<ul><li><b>theElement:</b> The <a href="Element.html" title="Element">element</a> you wish to set the velocity of.</li>
+<li><b>speedX:</b> A floating point value determining the speed along the X axis.</li>
+<li><b>speedY:</b> A floating point value determining the speed along the Y axis.</li>
+<li><b>speedZ:</b> A floating point value determining the speed along the Z axis.</li></ul>
+<h3><span class="mw-headline" id="Returns">Returns</span></h3>
+<p>Returns <i>true</i> if the speed was set successfully, <i>false</i> if a bad element was specified or other bad arguments.
+</p>
+<h2><span class="mw-headline" id="Example">Example</span></h2>
+<!-- BEGIN SECTION |1|server|Server|--><div class='serverHeader' onclick='expandSection(1);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander1'>Click to collapse [-]</div>Server</div><div style='display:;' class='serverContent' id='section1'>
+<p>This example adds a function which copies the speed of a random player to another random player. If there are less than 2 players it returns <i>false</i>.
+</p>
+<pre class="prettyprint lang-lua">
+function equalTwoRandomPlayersVelocity()
+    if getPlayerCount() &lt; 2 then -- If there's only one player (or no players) this doesn't make sense
+        return false
+    end
+    local randomPlayer1, randomPlayer2 = getRandomPlayer(), getRandomPlayer() -- Get two random players
+    while randomPlayer1 == randomPlayer2 do -- Make sure the two players are different
+        randomPlayer2 = getRandomPlayer()
+    end
+    local speedx, speedy, speedz = getElementVelocity (randomPlayer1) -- Get the velocity of the first random player
+    setElementVelocity(randomPlayer2, speedx, speedy, speedz) -- Copy that velocity to the second random player
+    outputChatBox("Now " .. getPlayerName(randomPlayer2) .. " runs as fast as " .. getPlayerName(randomPlayer1) .. "!", root, 255, 128, 0)
+    return true
+end
+</pre>
+</div><!-- END SECTION |1|-->
+<!-- BEGIN SECTION |2|client|Client|--><div class='clientHeader' onclick='expandSection(2);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander2'>Click to collapse [-]</div>Client</div><div style='display:;' class='clientContent' id='section2'>
+<p>This example lets players jump their vehicle into the air (if they are the driver).
+</p>
+<pre class="prettyprint lang-lua">
+function initBind()
+	bindKey("lshift", "down", jumpKey)
+end
+addEventHandler("onClientResourceStart", resourceRoot, initBind)
+
+function jumpKey()
+	if not isPedInVehicle(localPlayer) then return end
+
+	local vehicle = getPedOccupiedVehicle(localPlayer)
+	if vehicle and getVehicleController(vehicle) == localPlayer then
+		local vehType = getVehicleType(vehicle)
+		if vehType == "Plane" or vehType == "Helicopter" then return end
+		local sx, sy, sz = getElementVelocity(vehicle)
+		setElementVelocity(vehicle, sx, sy, sz + 0.33) -- The jump effect is achieved by raising the Z axis (height) coordinate
+	end
+end
+</pre>
+</div><!-- END SECTION |2|-->
+<h2><span class="mw-headline" id="See_Also">See Also</span></h2>
+<ul><li><a href="AttachElements.html" title="AttachElements">attachElements</a></li>
+<li><a href="ClearElementVisibleTo.html" title="ClearElementVisibleTo">clearElementVisibleTo</a></li>
+<li><a href="CloneElement.html" title="CloneElement">cloneElement</a></li>
+<li><a href="CreateElement.html" title="CreateElement">createElement</a></li>
+<li><a href="DestroyElement.html" title="DestroyElement">destroyElement</a></li>
+<li><a href="DetachElements.html" title="DetachElements">detachElements</a></li>
+<li><a href="GetAllElementData.html" title="GetAllElementData">getAllElementData</a></li>
+<li><a href="GetAttachedElements.html" title="GetAttachedElements">getAttachedElements</a></li>
+<li><a href="GetElementAlpha.html" title="GetElementAlpha">getElementAlpha</a></li>
+<li><a href="GetElementAttachedOffsets.html" title="GetElementAttachedOffsets">getElementAttachedOffsets</a></li>
+<li><a href="GetElementAttachedTo.html" title="GetElementAttachedTo">getElementAttachedTo</a></li>
+<li><a href="GetElementCollisionsEnabled.html" title="GetElementCollisionsEnabled">getElementCollisionsEnabled</a></li>
+<li><a href="GetElementByID.html" title="GetElementByID">getElementByID</a></li>
+<li><a href="GetElementByIndex.html" title="GetElementByIndex">getElementByIndex</a></li>
+<li><a href="GetElementChild.html" title="GetElementChild">getElementChild</a></li>
+<li><a href="GetElementChildren.html" title="GetElementChildren">getElementChildren</a></li>
+<li><a href="GetElementChildrenCount.html" title="GetElementChildrenCount">getElementChildrenCount</a></li>
+<li><a href="GetElementColShape.html" title="GetElementColShape">getElementColShape</a></li>
+<li><a href="GetElementData.html" title="GetElementData">getElementData</a></li>
+<li><a href="GetElementDimension.html" title="GetElementDimension">getElementDimension</a></li>
+<li><a href="GetElementHealth.html" title="GetElementHealth">getElementHealth</a></li>
+<li><a href="GetElementID.html" title="GetElementID">getElementID</a></li>
+<li><a href="GetElementInterior.html" title="GetElementInterior">getElementInterior</a></li>
+<li><a href="GetElementMatrix.html" title="GetElementMatrix">getElementMatrix</a></li>
+<li><a href="GetElementModel.html" title="GetElementModel">getElementModel</a></li>
+<li><a href="GetElementParent.html" title="GetElementParent">getElementParent</a></li>
+<li><a href="GetElementPosition.html" title="GetElementPosition">getElementPosition</a></li>
+<li><a href="GetElementRotation.html" title="GetElementRotation">getElementRotation</a></li>
+<li><a href="GetElementSyncer.html" title="GetElementSyncer">getElementSyncer</a></li>
+<li><a href="GetElementType.html" title="GetElementType">getElementType</a></li>
+<li><a href="GetElementVelocity.html" title="GetElementVelocity">getElementVelocity</a></li>
+<li><a href="GetElementZoneName.html" title="GetElementZoneName">getElementZoneName</a></li>
+<li><a href="GetElementsByType.html" title="GetElementsByType">getElementsByType</a></li>
+<li><a href="GetElementsWithinColShape.html" title="GetElementsWithinColShape">getElementsWithinColShape</a></li>
+<li><a href="GetLowLODElement.html" title="GetLowLODElement">getLowLODElement</a></li>
+<li><a href="GetRootElement.html" title="GetRootElement">getRootElement</a></li>
+<li><a href="IsElement.html" title="IsElement">isElement</a></li>
+<li><a href="IsElementAttached.html" title="IsElementAttached">isElementAttached</a></li>
+<li><a href="IsElementCallPropagationEnabled.html" title="IsElementCallPropagationEnabled">isElementCallPropagationEnabled</a></li>
+<li><a href="IsElementDoubleSided.html" title="IsElementDoubleSided">isElementDoubleSided</a></li>
+<li><a href="IsElementFrozen.html" title="IsElementFrozen">isElementFrozen</a></li>
+<li><a href="IsElementInWater.html" title="IsElementInWater">isElementInWater</a></li>
+<li><a href="IsElementLowLOD.html" title="IsElementLowLOD">isElementLowLOD</a></li>
+<li><a href="IsElementVisibleTo.html" title="IsElementVisibleTo">isElementVisibleTo</a></li>
+<li><a href="IsElementWithinColShape.html" title="IsElementWithinColShape">isElementWithinColShape</a></li>
+<li><a href="IsElementWithinMarker.html" title="IsElementWithinMarker">isElementWithinMarker</a></li>
+<li><a href="RemoveElementData.html" title="RemoveElementData">removeElementData</a></li>
+<li><a href="SetElementAlpha.html" title="SetElementAlpha">setElementAlpha</a></li></ul>
+<ul><li> <a href="SetElementAngularVelocity.html" title="SetElementAngularVelocity">setElementAngularVelocity</a></li>
+<li> <a href="GetElementAngularVelocity.html" title="GetElementAngularVelocity">getElementAngularVelocity</a></li>
+<li><a href="SetElementAttachedOffsets.html" title="SetElementAttachedOffsets">setElementAttachedOffsets</a></li>
+<li><a href="SetElementCallPropagationEnabled.html" title="SetElementCallPropagationEnabled">setElementCallPropagationEnabled</a></li>
+<li><a href="SetElementCollisionsEnabled.html" title="SetElementCollisionsEnabled">setElementCollisionsEnabled</a></li>
+<li><a href="SetElementData.html" title="SetElementData">setElementData</a></li>
+<li><a href="SetElementDimension.html" title="SetElementDimension">setElementDimension</a></li>
+<li><a href="SetElementDoubleSided.html" title="SetElementDoubleSided">setElementDoubleSided</a></li>
+<li><a href="SetElementFrozen.html" title="SetElementFrozen">setElementFrozen</a></li>
+<li><a href="SetElementHealth.html" title="SetElementHealth">setElementHealth</a></li>
+<li><a href="SetElementID.html" title="SetElementID">setElementID</a></li>
+<li><a href="SetElementInterior.html" title="SetElementInterior">setElementInterior</a></li>
+<li><a href="SetElementModel.html" title="SetElementModel">setElementModel</a></li>
+<li><a href="SetElementParent.html" title="SetElementParent">setElementParent</a></li>
+<li><a href="SetElementPosition.html" title="SetElementPosition">setElementPosition</a></li>
+<li><a href="SetElementRotation.html" title="SetElementRotation">setElementRotation</a></li>
+<li><a href="SetElementSyncer.html" title="SetElementSyncer">setElementSyncer</a></li>
+<li><strong class="selflink">setElementVelocity</strong></li>
+<li><a href="SetElementVisibleTo.html" title="SetElementVisibleTo">setElementVisibleTo</a></li>
+<li><a href="SetLowLODElement.html" title="SetLowLODElement">setLowLODElement</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190625164339
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.013 seconds
+Real time usage: 0.015 seconds
+Preprocessor visited node count: 142/1000000
+Preprocessor generated node count: 650/1000000
+Post‐expand include size: 2333/2097152 bytes
+Template argument size: 178/2097152 bytes
+Highest expansion depth: 9/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    7.313      1 - -total
+ 27.99%    2.047      1 - Template:Element_functions
+ 25.72%    1.881      1 - Template:Deprecated_feature
+ 20.10%    1.470      2 - Template:Current_Version
+ 19.69%    1.440      1 - Template:New_items
+ 14.70%    1.075      1 - Template:Server_client_function
+ 13.35%    0.976      1 - Template:OOP
+-->
+
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:1730-0!*!0!!*!*!* and timestamp 20190625164339 and revision id 62531
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=SetElementVelocity&amp;oldid=62531">https://wiki.multitheftauto.com/index.php?title=SetElementVelocity&amp;oldid=62531</a>"</div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Categories</a>: <ul><li><a href="Category_Server_functions.html" title="Category:Server functions">Server functions</a></li><li><a href="Category_Client_functions.html" title="Category:Client functions">Client functions</a></li><li><a href="Category_Changes_in_1-5.html" title="Category:Changes in 1.4">Changes in 1.4</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="SetElementVelocity.html" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:SetElementVelocity&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=SetElementVelocity&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=SetElementVelocity&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=SetElementVelocity" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=SetElementVelocity" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
+											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
+											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
+		<h3>reference</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
+											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
+											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
+											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
+											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
+											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
+											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
+											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
+											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="http://wiki.localhost/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/SetElementVelocity.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/SetElementVelocity.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="http://wiki.localhost/index.php?title=SetElementVelocity&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=SetElementVelocity&amp;oldid=62531" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="http://wiki.localhost/index.php?title=SetElementVelocity&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+			</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<div id="f-copyrightico">
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+							</div>
+					<div id="f-poweredbyico">
+									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+							</div>
+					<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 30 April 2019, at 04:28.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
+									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":47});});</script></body></html>
