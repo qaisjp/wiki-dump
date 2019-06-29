@@ -5,7 +5,7 @@
 <meta charset="UTF-8"/>
 <title>Vehicle Components - Multi Theft Auto: Wiki</title>
 <script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
-<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Vehicle_Components","wgTitle":"Vehicle Components","wgCurRevisionId":59824,"wgRevisionId":59824,"wgArticleId":7672,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Vehicle_Components","wgRelevantArticleId":7672,"wgRequestId":"7b363d8658c941ab0e3e8f58","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Vehicle_Components","wgTitle":"Vehicle Components","wgCurRevisionId":59824,"wgRevisionId":59824,"wgArticleId":7672,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Vehicle_Components","wgRelevantArticleId":7672,"wgRequestId":"6a53053b4c7dca95d30ec268","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
 mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
 
 });mw.loader.load(["mediawiki.page.startup"]);});</script>
@@ -174,6 +174,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li><a href="GetVehicleCompatibleUpgrades.html" title="GetVehicleCompatibleUpgrades">getVehicleCompatibleUpgrades</a></li>
 <li><a href="GetVehicleComponentPosition.html" title="GetVehicleComponentPosition">getVehicleComponentPosition</a></li>
 <li><a href="GetVehicleComponentRotation.html" title="GetVehicleComponentRotation">getVehicleComponentRotation</a></li>
+<li><a href="GetVehicleComponentScale.html" title="GetVehicleComponentScale">getVehicleComponentScale</a></li>
 <li><a href="GetVehicleComponentVisible.html" title="GetVehicleComponentVisible">getVehicleComponentVisible</a></li>
 <li><a href="GetVehicleComponents.html" title="GetVehicleComponents">getVehicleComponents</a></li>
 <li><a href="GetVehicleController.html" title="GetVehicleController">getVehicleController</a></li>
@@ -230,6 +231,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li><a href="RemoveVehicleUpgrade.html" title="RemoveVehicleUpgrade">removeVehicleUpgrade</a></li>
 <li><a href="ResetVehicleComponentPosition.html" title="ResetVehicleComponentPosition">resetVehicleComponentPosition</a></li>
 <li><a href="ResetVehicleComponentRotation.html" title="ResetVehicleComponentRotation">resetVehicleComponentRotation</a></li>
+<li><a href="ResetVehicleComponentScale.html" title="ResetVehicleComponentScale">resetVehicleComponentScale</a></li>
 <li><a href="SetHeliBladeCollisionsEnabled.html" title="SetHeliBladeCollisionsEnabled">setHeliBladeCollisionsEnabled</a></li>
 <li><a href="SetHelicopterRotorSpeed.html" title="SetHelicopterRotorSpeed">setHelicopterRotorSpeed</a></li>
 <li><a href="SetTrainDerailable.html" title="SetTrainDerailable">setTrainDerailable</a></li>
@@ -244,6 +246,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li><a href="SetVehicleColor.html" title="SetVehicleColor">setVehicleColor</a></li>
 <li><a href="SetVehicleComponentPosition.html" title="SetVehicleComponentPosition">setVehicleComponentPosition</a></li>
 <li><a href="SetVehicleComponentRotation.html" title="SetVehicleComponentRotation">setVehicleComponentRotation</a></li>
+<li><a href="SetVehicleComponentScale.html" title="SetVehicleComponentScale">setVehicleComponentScale</a></li>
 <li><a href="SetVehicleComponentVisible.html" title="SetVehicleComponentVisible">setVehicleComponentVisible</a></li>
 <li><a href="SetVehicleDamageProof.html" title="SetVehicleDamageProof">setVehicleDamageProof</a></li>
 <li><a href="SetVehicleDirtLevel.html" title="SetVehicleDirtLevel">setVehicleDirtLevel</a></li>
@@ -279,14 +282,14 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 </p>
 <!-- 
 NewPP limit report
-Cached time: 20190625164357
+Cached time: 20190629062350
 Cache expiry: 86400
 Dynamic content: false
-CPU time usage: 0.022 seconds
-Real time usage: 0.024 seconds
+CPU time usage: 0.020 seconds
+Real time usage: 0.023 seconds
 Preprocessor visited node count: 281/1000000
 Preprocessor generated node count: 539/1000000
-Post‐expand include size: 8080/2097152 bytes
+Post‐expand include size: 8172/2097152 bytes
 Template argument size: 318/2097152 bytes
 Highest expansion depth: 9/40
 Expensive parser function count: 0/100
@@ -294,15 +297,15 @@ Expensive parser function count: 0/100
 
 <!-- 
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   12.003      1 - Template:Client_vehicle_functions
-100.00%   12.003      1 - -total
- 67.19%    8.065      6 - Template:New_items
- 35.38%    4.247      8 - Template:Current_Version
- 16.01%    1.922      2 - Template:Deprecated_items
- 12.54%    1.505      4 - Template:R
+100.00%   11.549      1 - Template:Client_vehicle_functions
+100.00%   11.549      1 - -total
+ 63.50%    7.333      6 - Template:New_items
+ 33.35%    3.852      8 - Template:Current_Version
+ 15.26%    1.762      2 - Template:Deprecated_items
+ 11.56%    1.335      4 - Template:R
 -->
 
-<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:7672-0!*!0!*!*!*!* and timestamp 20190625164357 and revision id 59824
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:7672-0!*!0!*!*!*!* and timestamp 20190629062350 and revision id 59824
  -->
 </div><div class="printfooter">
 Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=Vehicle_Components&amp;oldid=59824">https://wiki.multitheftauto.com/index.php?title=Vehicle_Components&amp;oldid=59824</a>"</div>
@@ -345,7 +348,7 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
 											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
 											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
-											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+											<li id="n-randompage"><a href="https://wiki.multitheftauto.com/wiki/OnDgsDestroy" title="Load a random page [x]" accesskey="x">Random page</a></li>
 									</ul>
 					</div>
 		</div>
@@ -396,10 +399,10 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 		<div class="visualClear"></div>
 					<div id="footer" role="contentinfo">
 						<div id="f-copyrightico">
-									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="../resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
 							</div>
 					<div id="f-poweredbyico">
-									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+									<a href="http://www.mediawiki.org/"><img src="../resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
 							</div>
 					<ul id="f-list">
 									<li id="lastmod"> This page was last modified on 12 October 2018, at 22:43.</li>
@@ -411,4 +414,4 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 		</div>
 		</div>
 		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
-<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":52});});</script></body></html>
+<script src="../extensions/_MTAThemeExtensions/main11b9.js?303"></script><script src="../extensions/_MTAThemeExtensions/topmenu11b9.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":47});});</script></body></html>

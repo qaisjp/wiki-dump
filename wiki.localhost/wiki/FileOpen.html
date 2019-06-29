@@ -5,7 +5,7 @@
 <meta charset="UTF-8"/>
 <title>FileOpen - Multi Theft Auto: Wiki</title>
 <script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
-<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"FileOpen","wgTitle":"FileOpen","wgCurRevisionId":54089,"wgRevisionId":54089,"wgArticleId":3395,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Server functions","Client functions","Changes in 1.5.6"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"FileOpen","wgRelevantArticleId":3395,"wgRequestId":"06b11080c846db8b3241c3a4","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"FileOpen","wgTitle":"FileOpen","wgCurRevisionId":54089,"wgRevisionId":54089,"wgArticleId":3395,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Server functions","Client functions","Changes in 1.5.6"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"FileOpen","wgRelevantArticleId":3395,"wgRequestId":"de27c3616d27461bac1db401","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
 mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
 
 });mw.loader.load(["mediawiki.page.startup"]);});</script>
@@ -63,7 +63,7 @@ Opens an existing file for reading and writing.
 </td></tr></table>
 <table cellspacing="0" style="padding: 5px; width: 80%; margin: 2px auto 2px auto; border: 1px solid #FFB2B2; background: #FFE5E5; border-left: 10px solid #FFB2B2;">
 <tr>
-<td style="width: 32px; vertical-align:top;" rowspan="2"> <img alt="Dialog-warning.png" src="http://wiki.localhost/images/1/1a/Dialog-warning.png" width="32" height="32" />
+<td style="width: 32px; vertical-align:top;" rowspan="2"> <img alt="Dialog-warning.png" src="../images/1/1a/Dialog-warning.png" width="32" height="32" />
 </td>
 <td style="padding-left: 10px;"><b>Warning:</b> As of 1.5.4 <a rel="nofollow" class="external text" href="https://buildinfo.mtasa.com/?Author=&amp;Branch=&amp;Revision=10413">r10413</a>, this function will fail when trying to access a script file of another resource, even with <i>general.ModifyOtherObjects</i> rights granted, which uses a <i>mysql</i> connection through <a href="DbConnect.html" title="DbConnect">dbConnect</a> when <a href="Server_mtaserver.html#database_credentials_protection" title="Server mtaserver.conf"><i>database_credentials_protection</i></a> is enabled in the server configuration. Additionally, meta.xml will be un-writable and will always open in read-only mode.
 </td></tr>
@@ -141,11 +141,11 @@ end
 
 <!-- 
 NewPP limit report
-Cached time: 20190625164341
+Cached time: 20190629062302
 Cache expiry: 86400
 Dynamic content: false
-CPU time usage: 0.020 seconds
-Real time usage: 0.022 seconds
+CPU time usage: 0.028 seconds
+Real time usage: 0.030 seconds
 Preprocessor visited node count: 307/1000000
 Preprocessor generated node count: 1115/1000000
 Post‐expand include size: 6322/2097152 bytes
@@ -156,19 +156,19 @@ Expensive parser function count: 0/100
 
 <!-- 
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   13.053      1 - -total
- 26.77%    3.495      1 - Template:New_feature/item
- 26.03%    3.398      3 - Template:MessageBox
- 16.95%    2.212      1 - Template:Note
- 15.09%    1.969      1 - Template:File_functions
- 12.65%    1.651      1 - Template:Tip
- 10.93%    1.427      2 - Template:Current_Version
- 10.68%    1.394      2 - Template:OOP
-  9.30%    1.214      1 - Template:New_items
-  8.56%    1.117      1 - Template:Server_client_function
+100.00%   19.183      1 - -total
+ 31.60%    6.062      3 - Template:MessageBox
+ 24.04%    4.611      1 - Template:New_feature/item
+ 17.79%    3.413      1 - Template:Note
+ 13.72%    2.631      1 - Template:Tip
+ 12.67%    2.431      1 - Template:File_functions
+ 11.52%    2.210      2 - Template:OOP
+  8.02%    1.539      1 - Template:Server_client_function
+  7.98%    1.531      2 - Template:Current_Version
+  7.95%    1.525      1 - Template:New_items
 -->
 
-<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:3395-0!*!0!!*!5!* and timestamp 20190625164341 and revision id 54089
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:3395-0!*!0!!*!5!* and timestamp 20190629062302 and revision id 54089
  -->
 </div><div class="printfooter">
 Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=FileOpen&amp;oldid=54089">https://wiki.multitheftauto.com/index.php?title=FileOpen&amp;oldid=54089</a>"</div>
@@ -211,7 +211,7 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
 											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
 											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
-											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+											<li id="n-randompage"><a href="https://wiki.multitheftauto.com/wiki/OnDgsDestroy" title="Load a random page [x]" accesskey="x">Random page</a></li>
 									</ul>
 					</div>
 		</div>
@@ -262,10 +262,10 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 		<div class="visualClear"></div>
 					<div id="footer" role="contentinfo">
 						<div id="f-copyrightico">
-									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="../resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
 							</div>
 					<div id="f-poweredbyico">
-									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+									<a href="http://www.mediawiki.org/"><img src="../resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
 							</div>
 					<ul id="f-list">
 									<li id="lastmod"> This page was last modified on 1 March 2018, at 13:32.</li>
@@ -277,4 +277,4 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 		</div>
 		</div>
 		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
-<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":48});});</script></body></html>
+<script src="../extensions/_MTAThemeExtensions/main11b9.js?303"></script><script src="../extensions/_MTAThemeExtensions/topmenu11b9.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":67});});</script></body></html>

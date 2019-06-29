@@ -5,7 +5,7 @@
 <meta charset="UTF-8"/>
 <title>SetVehicleModelDummyPosition - Multi Theft Auto: Wiki</title>
 <script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
-<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"SetVehicleModelDummyPosition","wgTitle":"SetVehicleModelDummyPosition","wgCurRevisionId":61915,"wgRevisionId":61915,"wgArticleId":11164,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Client functions","Changes in 1.5.6"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"SetVehicleModelDummyPosition","wgRelevantArticleId":11164,"wgRequestId":"e83649df264aa24f8075b3c6","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"SetVehicleModelDummyPosition","wgTitle":"SetVehicleModelDummyPosition","wgCurRevisionId":63105,"wgRevisionId":63105,"wgArticleId":11164,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Client functions","Changes in 1.5.6"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"SetVehicleModelDummyPosition","wgRelevantArticleId":11164,"wgRequestId":"5e542d0b7d0e175560a7f8af","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
 mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
 
 });mw.loader.load(["mediawiki.page.startup"]);});</script>
@@ -41,8 +41,11 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 					<!-- start content -->
 					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
 <!--LC-->
-</p><p>This function sets the position of the dummies contained in a vehicle model. Use <a href="SetVehicleComponentPosition.html" title="SetVehicleComponentPosition">setVehicleComponentPosition</a> to adjust the vehicle component positions.
 </p>
+<div style="font-weight: bold;background:black;color:white;padding:2px; padding-left:8px;">FROM VERSION 1.5.6 <a rel="nofollow" class="external text" href="https://buildinfo.mtasa.com/?Author=&amp;Branch=&amp;Revision=14403"><span style="color: #FFFFFF;">r14403</span></a> ONWARDS</div><div style="border: 2px solid black;padding: 3px;">
+<p>This function sets the position of the dummies contained in a vehicle model. Use <a href="SetVehicleComponentPosition.html" title="SetVehicleComponentPosition">setVehicleComponentPosition</a> to adjust the vehicle component positions.
+</p>
+ </div>
 <h2><span class="mw-headline" id="Syntax">Syntax</span></h2>
 <pre class="prettyprint lang-lua">
 bool setVehicleModelDummyPosition ( int modelID, vehicle-dummy dummy, float x, float y, float z )
@@ -140,6 +143,7 @@ end)
 <li><a href="GetVehicleCompatibleUpgrades.html" title="GetVehicleCompatibleUpgrades">getVehicleCompatibleUpgrades</a></li>
 <li><a href="GetVehicleComponentPosition.html" title="GetVehicleComponentPosition">getVehicleComponentPosition</a></li>
 <li><a href="GetVehicleComponentRotation.html" title="GetVehicleComponentRotation">getVehicleComponentRotation</a></li>
+<li><a href="GetVehicleComponentScale.html" title="GetVehicleComponentScale">getVehicleComponentScale</a></li>
 <li><a href="GetVehicleComponentVisible.html" title="GetVehicleComponentVisible">getVehicleComponentVisible</a></li>
 <li><a href="GetVehicleComponents.html" title="GetVehicleComponents">getVehicleComponents</a></li>
 <li><a href="GetVehicleController.html" title="GetVehicleController">getVehicleController</a></li>
@@ -196,6 +200,7 @@ end)
 <li><a href="RemoveVehicleUpgrade.html" title="RemoveVehicleUpgrade">removeVehicleUpgrade</a></li>
 <li><a href="ResetVehicleComponentPosition.html" title="ResetVehicleComponentPosition">resetVehicleComponentPosition</a></li>
 <li><a href="ResetVehicleComponentRotation.html" title="ResetVehicleComponentRotation">resetVehicleComponentRotation</a></li>
+<li><a href="ResetVehicleComponentScale.html" title="ResetVehicleComponentScale">resetVehicleComponentScale</a></li>
 <li><a href="SetHeliBladeCollisionsEnabled.html" title="SetHeliBladeCollisionsEnabled">setHeliBladeCollisionsEnabled</a></li>
 <li><a href="SetHelicopterRotorSpeed.html" title="SetHelicopterRotorSpeed">setHelicopterRotorSpeed</a></li>
 <li><a href="SetTrainDerailable.html" title="SetTrainDerailable">setTrainDerailable</a></li>
@@ -210,6 +215,7 @@ end)
 <li><a href="SetVehicleColor.html" title="SetVehicleColor">setVehicleColor</a></li>
 <li><a href="SetVehicleComponentPosition.html" title="SetVehicleComponentPosition">setVehicleComponentPosition</a></li>
 <li><a href="SetVehicleComponentRotation.html" title="SetVehicleComponentRotation">setVehicleComponentRotation</a></li>
+<li><a href="SetVehicleComponentScale.html" title="SetVehicleComponentScale">setVehicleComponentScale</a></li>
 <li><a href="SetVehicleComponentVisible.html" title="SetVehicleComponentVisible">setVehicleComponentVisible</a></li>
 <li><a href="SetVehicleDamageProof.html" title="SetVehicleDamageProof">setVehicleDamageProof</a></li>
 <li><a href="SetVehicleDirtLevel.html" title="SetVehicleDirtLevel">setVehicleDirtLevel</a></li>
@@ -245,36 +251,36 @@ end)
 </p>
 <!-- 
 NewPP limit report
-Cached time: 20190625164117
+Cached time: 20190629062327
 Cache expiry: 86400
 Dynamic content: false
 CPU time usage: 0.023 seconds
-Real time usage: 0.027 seconds
-Preprocessor visited node count: 380/1000000
-Preprocessor generated node count: 938/1000000
-Post‐expand include size: 8900/2097152 bytes
-Template argument size: 624/2097152 bytes
+Real time usage: 0.025 seconds
+Preprocessor visited node count: 397/1000000
+Preprocessor generated node count: 944/1000000
+Post‐expand include size: 9834/2097152 bytes
+Template argument size: 654/2097152 bytes
 Highest expansion depth: 9/40
 Expensive parser function count: 0/100
 -->
 
 <!-- 
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   13.876      1 - -total
- 68.59%    9.517      1 - Template:Client_vehicle_functions
- 47.83%    6.637      6 - Template:New_items
- 29.66%    4.116      9 - Template:Current_Version
- 14.67%    2.036      1 - Template:New_feature/item
- 12.70%    1.762      2 - Template:Deprecated_items
-  9.47%    1.314      4 - Template:R
-  6.77%    0.940      1 - Template:OOP
-  6.48%    0.899      1 - Template:Client_function
+100.00%   13.392      1 - -total
+ 65.34%    8.750      1 - Template:Client_vehicle_functions
+ 43.80%    5.866      6 - Template:New_items
+ 29.65%    3.971      9 - Template:Current_Version
+ 20.05%    2.685      1 - Template:New_feature/item
+ 13.13%    1.759      2 - Template:Deprecated_items
+ 10.98%    1.470      5 - Template:R
+  6.64%    0.889      1 - Template:OOP
+  4.72%    0.632      1 - Template:Client_function
 -->
 
-<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:11164-0!*!0!!*!*!* and timestamp 20190625164117 and revision id 61915
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:11164-0!*!0!!*!*!* and timestamp 20190629062327 and revision id 63105
  -->
 </div><div class="printfooter">
-Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=SetVehicleModelDummyPosition&amp;oldid=61915">https://wiki.multitheftauto.com/index.php?title=SetVehicleModelDummyPosition&amp;oldid=61915</a>"</div>
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=SetVehicleModelDummyPosition&amp;oldid=63105">https://wiki.multitheftauto.com/index.php?title=SetVehicleModelDummyPosition&amp;oldid=63105</a>"</div>
 					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Categories</a>: <ul><li><a href="Category_Client_functions.html" title="Category:Client functions">Client functions</a></li><li><a href="Category_Changes_in_1.5-2.html" title="Category:Changes in 1.5.6">Changes in 1.5.6</a></li></ul></div></div>					<!-- end content -->
 										<div class="visualClear"></div>
 				</div>
@@ -314,7 +320,7 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
 											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
 											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
-											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+											<li id="n-randompage"><a href="https://wiki.multitheftauto.com/wiki/OnDgsDestroy" title="Load a random page [x]" accesskey="x">Random page</a></li>
 									</ul>
 					</div>
 		</div>
@@ -356,7 +362,7 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/SetVehicleModelDummyPosition.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
 											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
 											<li id="t-print"><a href="http://wiki.localhost/index.php?title=SetVehicleModelDummyPosition&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
-											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=SetVehicleModelDummyPosition&amp;oldid=61915" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=SetVehicleModelDummyPosition&amp;oldid=63105" title="Permanent link to this revision of the page">Permanent link</a></li>
 											<li id="t-info"><a href="http://wiki.localhost/index.php?title=SetVehicleModelDummyPosition&amp;action=info" title="More information about this page">Page information</a></li>
 									</ul>
 							</div>
@@ -365,13 +371,13 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 		<div class="visualClear"></div>
 					<div id="footer" role="contentinfo">
 						<div id="f-copyrightico">
-									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="../resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
 							</div>
 					<div id="f-poweredbyico">
-									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+									<a href="http://www.mediawiki.org/"><img src="../resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
 							</div>
 					<ul id="f-list">
-									<li id="lastmod"> This page was last modified on 10 January 2019, at 16:25.</li>
+									<li id="lastmod"> This page was last modified on 27 June 2019, at 15:43.</li>
 									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
 									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
 									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
@@ -380,4 +386,4 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 		</div>
 		</div>
 		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
-<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":73});});</script></body></html>
+<script src="../extensions/_MTAThemeExtensions/main11b9.js?303"></script><script src="../extensions/_MTAThemeExtensions/topmenu11b9.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":49});});</script></body></html>

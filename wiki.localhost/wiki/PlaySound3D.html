@@ -5,7 +5,7 @@
 <meta charset="UTF-8"/>
 <title>PlaySound3D - Multi Theft Auto: Wiki</title>
 <script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
-<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"PlaySound3D","wgTitle":"PlaySound3D","wgCurRevisionId":62454,"wgRevisionId":62454,"wgArticleId":4278,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Client functions","Changes in 1.5"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"PlaySound3D","wgRelevantArticleId":4278,"wgRequestId":"e64342f0a947c98f91bf31ed","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"PlaySound3D","wgTitle":"PlaySound3D","wgCurRevisionId":63125,"wgRevisionId":63125,"wgArticleId":4278,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Client functions","Changes in 1.5"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"PlaySound3D","wgRelevantArticleId":4278,"wgRequestId":"be798f41c08dc01da7f18eb3","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
 mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
 
 });mw.loader.load(["mediawiki.page.startup"]);});</script>
@@ -62,7 +62,7 @@ Creates a <a href="Sound.html" title="Sound" class="mw-redirect">sound</a> <a hr
 </p>
 <dl><dd> <b>Method</b>: <i><a href="Sound.html" title="Sound" class="mw-redirect">Sound3D</a>(...)</i></dd></dl>
 <h3><span class="mw-headline" id="Required_Arguments">Required Arguments</span></h3>
-<ul><li><b>soundPath:</b> the <a href="Filepath.html" title="Filepath">filepath</a> to the sound file you want to play. (Sound file has to be predefined in the <a href="Meta.html" title="Meta.xml">meta.xml</a> file with &lt;file /&gt; tag. And also can use url instead of <a href="Filepath.html" title="Filepath">filepath</a> )</li>
+<ul><li><b>soundPath:</b> the <a href="Filepath.html" title="Filepath">filepath</a> to the sound file you want to play. (<b>Note:</b> Playing sound files from other resources requires the target resource to be in the running state)</li>
 <li><b>soundURL:</b> the URL. (In this version the file does not has to be predefined in the <a href="Meta.html" title="Meta.xml">meta.xml</a> )</li>
 <li><b>x:</b> a <a href="Float.html" title="Float">floating</a> point number representing the X coordinate on the map.</li>
 <li><b>y:</b> a <a href="Float.html" title="Float">floating</a> point number representing the Y coordinate on the map.</li>
@@ -141,11 +141,11 @@ addEventHandler( 'onClientResourceStart', resourceRoot,
 
 <!-- 
 NewPP limit report
-Cached time: 20190625164330
+Cached time: 20190629062249
 Cache expiry: 86400
 Dynamic content: false
-CPU time usage: 0.020 seconds
-Real time usage: 0.021 seconds
+CPU time usage: 0.018 seconds
+Real time usage: 0.019 seconds
 Preprocessor visited node count: 221/1000000
 Preprocessor generated node count: 1046/1000000
 Post‐expand include size: 4739/2097152 bytes
@@ -156,22 +156,22 @@ Expensive parser function count: 0/100
 
 <!-- 
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   12.907      1 - -total
- 26.72%    3.449      1 - Template:Client_audio_functions
- 20.24%    2.612      1 - Template:Note
- 19.49%    2.515      1 - Template:New_items
- 17.88%    2.308      1 - Template:New_feature/item
- 14.56%    1.879      1 - Template:MessageBox
- 12.77%    1.648      2 - Template:Current_Version
-  9.07%    1.171      1 - Template:OOP
-  6.03%    0.778      1 - Template:R
-  5.57%    0.719      1 - Template:Client_function
+100.00%   10.877      1 - -total
+ 28.16%    3.063      1 - Template:Client_audio_functions
+ 20.78%    2.260      1 - Template:New_items
+ 20.44%    2.223      1 - Template:Note
+ 17.50%    1.903      1 - Template:New_feature/item
+ 13.92%    1.514      2 - Template:Current_Version
+ 13.56%    1.475      1 - Template:MessageBox
+  7.98%    0.868      1 - Template:OOP
+  7.59%    0.825      1 - Template:Client_function
+  6.45%    0.701      1 - Template:R
 -->
 
-<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:4278-0!*!0!!*!*!* and timestamp 20190625164330 and revision id 62454
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:4278-0!*!0!!*!*!* and timestamp 20190629062249 and revision id 63125
  -->
 </div><div class="printfooter">
-Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=PlaySound3D&amp;oldid=62454">https://wiki.multitheftauto.com/index.php?title=PlaySound3D&amp;oldid=62454</a>"</div>
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=PlaySound3D&amp;oldid=63125">https://wiki.multitheftauto.com/index.php?title=PlaySound3D&amp;oldid=63125</a>"</div>
 					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Categories</a>: <ul><li><a href="Category_Client_functions.html" title="Category:Client functions">Client functions</a></li><li><a href="http://wiki.localhost/index.php?title=Category:Changes_in_1.5&amp;action=edit&amp;redlink=1" class="new" title="Category:Changes in 1.5 (page does not exist)">Changes in 1.5</a></li></ul></div></div>					<!-- end content -->
 										<div class="visualClear"></div>
 				</div>
@@ -211,7 +211,7 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
 											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
 											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
-											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+											<li id="n-randompage"><a href="https://wiki.multitheftauto.com/wiki/OnDgsDestroy" title="Load a random page [x]" accesskey="x">Random page</a></li>
 									</ul>
 					</div>
 		</div>
@@ -253,7 +253,7 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/PlaySound3D.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
 											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
 											<li id="t-print"><a href="http://wiki.localhost/index.php?title=PlaySound3D&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
-											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=PlaySound3D&amp;oldid=62454" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=PlaySound3D&amp;oldid=63125" title="Permanent link to this revision of the page">Permanent link</a></li>
 											<li id="t-info"><a href="http://wiki.localhost/index.php?title=PlaySound3D&amp;action=info" title="More information about this page">Page information</a></li>
 									</ul>
 							</div>
@@ -275,13 +275,13 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 		<div class="visualClear"></div>
 					<div id="footer" role="contentinfo">
 						<div id="f-copyrightico">
-									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="../resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
 							</div>
 					<div id="f-poweredbyico">
-									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+									<a href="http://www.mediawiki.org/"><img src="../resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
 							</div>
 					<ul id="f-list">
-									<li id="lastmod"> This page was last modified on 7 April 2019, at 05:40.</li>
+									<li id="lastmod"> This page was last modified on 29 June 2019, at 00:54.</li>
 									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
 									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
 									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
@@ -290,4 +290,4 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 		</div>
 		</div>
 		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
-<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":52});});</script></body></html>
+<script src="../extensions/_MTAThemeExtensions/main11b9.js?303"></script><script src="../extensions/_MTAThemeExtensions/topmenu11b9.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":917});});</script></body></html>

@@ -5,7 +5,7 @@
 <meta charset="UTF-8"/>
 <title>Anti-cheat guide - Multi Theft Auto: Wiki</title>
 <script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
-<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Anti-cheat_guide","wgTitle":"Anti-cheat guide","wgCurRevisionId":62980,"wgRevisionId":62980,"wgArticleId":6044,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Support"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Anti-cheat_guide","wgRelevantArticleId":6044,"wgRequestId":"c3d8264e6af4c69aa17dd8a0","wgIsProbablyEditable":false,"wgRestrictionEdit":["sysop"],"wgRestrictionMove":["sysop"],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Anti-cheat_guide","wgTitle":"Anti-cheat guide","wgCurRevisionId":63102,"wgRevisionId":63102,"wgArticleId":6044,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Support"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Anti-cheat_guide","wgRelevantArticleId":6044,"wgRequestId":"49a4d5d54e84e4cafb323de2","wgIsProbablyEditable":false,"wgRestrictionEdit":["sysop"],"wgRestrictionMove":["sysop"],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
 mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
 
 });mw.loader.load(["mediawiki.page.startup"]);});</script>
@@ -40,20 +40,30 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>This guide explains how you can fine-tune MTA's anti-cheat on your server using <a href="Server_mtaserver.html" title="Server mtaserver.conf"><b>mtaserver.conf</b></a>. It does not allow players to modify their own AC settings.
 </p><p>An anti-cheat helper resource, <b>acpanel</b>, is included as a default resource. This shows the current anti-cheat status of your server, along with an option to keep your clients up to date and a basic implementation of <a href="OnPlayerModInfo.html" title="OnPlayerModInfo">onPlayerModInfo</a> to block modified img files.
 </p><p>You may want to fine-tune AC to prevent certain players have from having an unfair advantage or to ensure competitive integrity. The settings you provide depends entirely on the kind of server you run. Here are some examples on what can be achieved:
+<br />
+<br />
 </p>
 <ul><li> <b>Problem:</b> Alice tries to ram the vehicle of Eve, and Alice can clearly see the collision, but Eve's vehicle is not really moving.</li></ul>
 <dl><dd> <b>Explanation:</b> Eve has changed their vehicle model to a much smaller vehicle, or a model with a tiny hitbox or (nearly absent) collisions.</dd>
 <dd> <b>Solution:</b> Disallow non-standard gta3.img</dd></dl>
+<p><br />
+</p>
 <ul><li> <b>Problem:</b> Eve seems to be using wallhacks! She even seems to even be shooting through them!</li></ul>
 <dl><dd>  <b>Explanation:</b> Eve has replaced buildings so that they are either invisible (textures) or tiny (models).</dd>
 <dd>  <b>Solution:</b> Disallow non-standard gta3.img</dd></dl>
+<p><br />
+</p>
 <ul><li> <b>Problem:</b> Mallory seems to be solving complex maths questions instantly! It should take at least a couple of seconds... for humans.</li></ul>
 <dl><dd>  <b>Explanation:</b> Mallory is injecting keyboard input via something like AutoHotkey</dd>
 <dd>  <b>Solution:</b> Enable SD #31 to prevent users from injecting keyboard input. You can use SD #32 for injected mouse input (e.g. for scripts that require natural skill from mouse input)</dd></dl>
+<p><br />
+</p>
 <ul><li> <b>Problem:</b> Mallory seems to be spamming my commands and GUI... and it lags my entire server!</li></ul>
 <dl><dd> <b>Explanation:</b> You are running expensive user-initiated code without rate limiting players.</dd>
 <dd> <b>Solution:</b> You should write code that prevents players from spamming certain actions.</dd>
 <dd> <b>Lazy Solution:</b> Enable SD #31/#32 to make it more difficult for players to spam certain actions.</dd></dl>
+<p><br />
+</p>
 <div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#.3Cdisableac.3E.3C.2Fdisableac.3E"><span class="tocnumber">1</span> <span class="toctext">&lt;disableac&gt;&lt;/disableac&gt;</span></a></li>
@@ -126,7 +136,7 @@ Basically, (the intent of) cheating on MTA or your server can never be proven by
 </td>
 <td style="background:#f0f0f0;">
 </td>
-<td style="background:#f0f0f0;"> Detects presence of trainer. Capital letters in the message are for tagging particular trainers
+<td style="background:#f0f0f0;"> Detects presence of trainer. This is the most common AC code for attempted cheating, mostly with cheats designed for MTA.
 </td></tr>
 <tr>
 <td scope="row" style="background:#e0e0e0;" align="center"><b>5</b>
@@ -386,7 +396,6 @@ Basically, (the intent of) cheating on MTA or your server can never be proven by
 </td>
 <td style="background:#f0f0f0;"> Disallow software of the category 'Net limiter' (ideal for lagswitching or causing structural lag, but may also be used for benign purposes)
 </td></tr>
-
 <tr>
 <td scope="row" style="background:#e0e0e0;" align="center"><b>34</b>
 </td>
@@ -397,6 +406,20 @@ Basically, (the intent of) cheating on MTA or your server can never be proven by
 <td style="background:#f0f0f0;" align="center">1.5.6
 </td>
 <td style="background:#f0f0f0;"> Disallow internet café users (<b>only</b> use as last resort to combat mass ban evasion using café PC's)
+</td></tr>
+<tr>
+<td scope="row" style="background:#e0e0e0;" align="center"><b>35</b>
+</td>
+<td style="background:#f0f0f0;" align="center">SD #35
+</td>
+<td style="background:#f0f0f0;" align="center">1.5.6
+</td>
+<td style="background:#f0f0f0;" align="center">1.5.6
+</td>
+<td style="background:#f0f0f0;"> <br />Disallow certain software with "FPS locking" capabilities, for example Fraps recorder.<br />
+<p>Particularly racing gamemodes are impacted by players that use FPS lock hotkey at times they need an unfair advantage (like, to drive through a loop faster) or a small speed boost. <br />
+<br /> <b>Note</b>: it would be better if you use this SD in a custom implementation only (using <a href="OnPlayerACInfo.html" title="OnPlayerACInfo">onPlayerACInfo</a>) instead of kick in mtaserver.conf. For example so that it would only kick when they approach a loop, or are playing a map sensitive to this abuse. Because you'll have to tread carefully, since Fraps is also a popular recording tool. <br />
+</p>
 </td></tr></table>
 <p><br />
 </p><p>We are constantly working on keeping the definitions for above SD (special detections) up-to-date, so as to ensure all violating software or circumstances that you opt-in to disable gets detected once used. While we are pro-actively checking if new or unknown software/tools are still being detected under the same signature, it's possible that something slips through the cracks. Therefore, you can help us if you come across anything that should be detectable using SD # but is not currently; send a forum PM to Dutchman101 or ccw with your report.
@@ -423,7 +446,7 @@ Basically, (the intent of) cheating on MTA or your server can never be proven by
 <li> "data/procobj.dat"</li>
 <li> "data/surface.dat"</li>
 <li> "data/surfinfo.dat"</li>
-<li> "data/timecyc.dat"</li>
+<li> "data/timecyc.dat" - minimum server version 1.5.6-9.18322</li>
 <li> "data/txdcut.ide"</li>
 <li> "data/vehicles.ide"</li>
 <li> "data/water1.dat"</li>
@@ -484,11 +507,11 @@ Allowed client files contains numbers to indicate which client files the server 
 </p>
 <!-- 
 NewPP limit report
-Cached time: 20190625164252
+Cached time: 20190629062136
 Cache expiry: 86400
 Dynamic content: false
-CPU time usage: 0.010 seconds
-Real time usage: 0.011 seconds
+CPU time usage: 0.009 seconds
+Real time usage: 0.009 seconds
 Preprocessor visited node count: 23/1000000
 Preprocessor generated node count: 28/1000000
 Post‐expand include size: 0/2097152 bytes
@@ -502,10 +525,10 @@ Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 - -total
 -->
 
-<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:6044-0!*!0!!en!*!* and timestamp 20190625164252 and revision id 62980
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:6044-0!*!0!!en!*!* and timestamp 20190629062136 and revision id 63102
  -->
 </div><div class="printfooter">
-Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=Anti-cheat_guide&amp;oldid=62980">https://wiki.multitheftauto.com/index.php?title=Anti-cheat_guide&amp;oldid=62980</a>"</div>
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=Anti-cheat_guide&amp;oldid=63102">https://wiki.multitheftauto.com/index.php?title=Anti-cheat_guide&amp;oldid=63102</a>"</div>
 					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_Support.html" title="Category:Support">Support</a></li></ul></div></div>					<!-- end content -->
 										<div class="visualClear"></div>
 				</div>
@@ -545,7 +568,7 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
 											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
 											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
-											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+											<li id="n-randompage"><a href="https://wiki.multitheftauto.com/wiki/OnDgsDestroy" title="Load a random page [x]" accesskey="x">Random page</a></li>
 									</ul>
 					</div>
 		</div>
@@ -587,7 +610,7 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/Anti-cheat_guide.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
 											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
 											<li id="t-print"><a href="http://wiki.localhost/index.php?title=Anti-cheat_guide&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
-											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=Anti-cheat_guide&amp;oldid=62980" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=Anti-cheat_guide&amp;oldid=63102" title="Permanent link to this revision of the page">Permanent link</a></li>
 											<li id="t-info"><a href="http://wiki.localhost/index.php?title=Anti-cheat_guide&amp;action=info" title="More information about this page">Page information</a></li>
 									</ul>
 							</div>
@@ -606,13 +629,13 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 		<div class="visualClear"></div>
 					<div id="footer" role="contentinfo">
 						<div id="f-copyrightico">
-									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="../resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
 							</div>
 					<div id="f-poweredbyico">
-									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+									<a href="http://www.mediawiki.org/"><img src="../resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
 							</div>
 					<ul id="f-list">
-									<li id="lastmod"> This page was last modified on 12 June 2019, at 04:38.</li>
+									<li id="lastmod"> This page was last modified on 27 June 2019, at 14:20.</li>
 									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
 									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
 									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
@@ -621,4 +644,4 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 		</div>
 		</div>
 		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
-<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":41});});</script></body></html>
+<script src="../extensions/_MTAThemeExtensions/main11b9.js?303"></script><script src="../extensions/_MTAThemeExtensions/topmenu11b9.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":23});});</script></body></html>

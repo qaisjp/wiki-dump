@@ -5,7 +5,7 @@
 <meta charset="UTF-8"/>
 <title>IT/Resource:Admin - Multi Theft Auto: Wiki</title>
 <script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
-<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"IT/Resource:Admin","wgTitle":"IT/Resource:Admin","wgCurRevisionId":49954,"wgRevisionId":49954,"wgArticleId":4050,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["IT/Risorse","IT/Concetti di scripting","IT/Pagine italiane"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"IT/Resource:Admin","wgRelevantArticleId":4050,"wgRequestId":"e3318caf6d9ebfd9106535e4","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"IT/Resource:Admin","wgTitle":"IT/Resource:Admin","wgCurRevisionId":49954,"wgRevisionId":49954,"wgArticleId":4050,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["IT/Risorse","IT/Concetti di scripting","IT/Pagine italiane"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"IT/Resource:Admin","wgRelevantArticleId":4050,"wgRequestId":"780578e9176a00509fff67f8","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
 mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
 
 });mw.loader.load(["mediawiki.page.startup"]);});</script>
@@ -58,26 +58,26 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <h2><span class="mw-headline" id="accounts.xml">accounts.xml</span></h2>
 <p>Per prima cosa apri il file <b>accounts.xml</b> dislocato in <b>&lt;SERVER&gt;\mods\deathmatch\</b> ed aggiungi un nodo con le informazioni del tuo account, come nell'esempio.
 </p>
-<div class="thumb tnone"><div class="thumbinner" style="width:422px;"><a href="../File_Admin_accounts.html" class="image"><img alt="" src="http://wiki.localhost/images/3/31/Admin_accounts.png" width="420" height="115" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="../File_Admin_accounts.html" class="internal" title="Enlarge"></a></div>Esempio 1: accounts.xml</div></div></div>
+<div class="thumb tnone"><div class="thumbinner" style="width:422px;"><a href="../File_Admin_accounts.html" class="image"><img alt="" src="../../images/3/31/Admin_accounts.png" width="420" height="115" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="../File_Admin_accounts.html" class="internal" title="Enlarge"></a></div>Esempio 1: accounts.xml</div></div></div>
 <h2><span class="mw-headline" id="acl.xml">acl.xml</span></h2>
 <p>Poi apri il file <b>acl.xml</b>, nella stessa cartella, e aggiungiti come oggetto al gruppo Admin usando la sintassi <i>user.*</i>, dove <i>*</i> è il tuo Nickname come nell'esempio.
 </p>
-<div class="thumb tnone"><div class="thumbinner" style="width:422px;"><a href="../File_Admin_acl.html" class="image"><img alt="" src="http://wiki.localhost/images/b/bf/Admin_acl.png" width="420" height="157" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="../File_Admin_acl.html" class="internal" title="Enlarge"></a></div>Esempio 2: acl.xml</div></div></div>
+<div class="thumb tnone"><div class="thumbinner" style="width:422px;"><a href="../File_Admin_acl.html" class="image"><img alt="" src="../../images/b/bf/Admin_acl.png" width="420" height="157" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="../File_Admin_acl.html" class="internal" title="Enlarge"></a></div>Esempio 2: acl.xml</div></div></div>
 <h2><span class="mw-headline" id="mtaserver.conf">mtaserver.conf</span></h2>
 <p>Adesso apri il file <b>mtaserver.conf</b> e vai fino in fondo, accertati che la resource <b>admin</b> sia presente nella lista di quelle che vengono avviate con il server.
 <b>Nota:</b> L'attributo <b>protected="1"</b> indica che la risorsa non può essere fermata.
 </p>
-<div class="thumb tnone"><div class="thumbinner" style="width:422px;"><a href="../File_Admin_mtaserver.html" class="image"><img alt="" src="http://wiki.localhost/images/f/f0/Admin_mtaserver.png" width="420" height="60" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="../File_Admin_mtaserver.html" class="internal" title="Enlarge"></a></div>Esempio 3: mtaserver.conf</div></div></div>
+<div class="thumb tnone"><div class="thumbinner" style="width:422px;"><a href="../File_Admin_mtaserver.html" class="image"><img alt="" src="../../images/f/f0/Admin_mtaserver.png" width="420" height="60" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="../File_Admin_mtaserver.html" class="internal" title="Enlarge"></a></div>Esempio 3: mtaserver.conf</div></div></div>
 <h2><span class="mw-headline" id="Login">Login</span></h2>
 Ora che haio finito con i file del server, puoi finalmente avviarlo. Connettiti al server ed esegui il login con i dati del tuo account usando il comando <pre class="prettyprint lang-lua">/login [username] &lt;password&gt;</pre> (rimuovi lo slash iniziale se esegui il comando da console). Se ti viene richiesto di premere il tasto <b>p</b> hai fatto tutto correttamente, congratulazioni!
 
 <!-- 
 NewPP limit report
-Cached time: 20190625170127
+Cached time: 20190629063913
 Cache expiry: 86400
 Dynamic content: false
-CPU time usage: 0.010 seconds
-Real time usage: 0.011 seconds
+CPU time usage: 0.008 seconds
+Real time usage: 0.008 seconds
 Preprocessor visited node count: 36/1000000
 Preprocessor generated node count: 92/1000000
 Post‐expand include size: 493/2097152 bytes
@@ -88,12 +88,12 @@ Expensive parser function count: 0/100
 
 <!-- 
 Transclusion expansion time report (%,ms,calls,template)
-100.00%    2.083      1 - -total
- 67.70%    1.410      1 - Template:IT/Risorsa
- 28.23%    0.588      1 - Template:IT/MainP
+100.00%    1.499      1 - -total
+ 61.71%    0.925      1 - Template:IT/Risorsa
+ 32.42%    0.486      1 - Template:IT/MainP
 -->
 
-<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:4050-0!*!0!!en!5!* and timestamp 20190625170127 and revision id 49954
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:4050-0!*!0!!en!5!* and timestamp 20190629063913 and revision id 49954
  -->
 </div><div class="printfooter">
 Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=IT/Resource:Admin&amp;oldid=49954">https://wiki.multitheftauto.com/index.php?title=IT/Resource:Admin&amp;oldid=49954</a>"</div>
@@ -136,7 +136,7 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
 											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
 											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
-											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+											<li id="n-randompage"><a href="https://wiki.multitheftauto.com/wiki/OnDgsDestroy" title="Load a random page [x]" accesskey="x">Random page</a></li>
 									</ul>
 					</div>
 		</div>
@@ -197,10 +197,10 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 		<div class="visualClear"></div>
 					<div id="footer" role="contentinfo">
 						<div id="f-copyrightico">
-									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="../../resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
 							</div>
 					<div id="f-poweredbyico">
-									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+									<a href="http://www.mediawiki.org/"><img src="../../resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
 							</div>
 					<ul id="f-list">
 									<li id="lastmod"> This page was last modified on 21 December 2016, at 21:23.</li>
@@ -212,4 +212,4 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 		</div>
 		</div>
 		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
-<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":48});});</script></body></html>
+<script src="../../extensions/_MTAThemeExtensions/main11b9.js?303"></script><script src="../../extensions/_MTAThemeExtensions/topmenu11b9.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":33});});</script></body></html>

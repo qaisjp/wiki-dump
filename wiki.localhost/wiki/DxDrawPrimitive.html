@@ -5,7 +5,7 @@
 <meta charset="UTF-8"/>
 <title>DxDrawPrimitive - Multi Theft Auto: Wiki</title>
 <script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
-<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"DxDrawPrimitive","wgTitle":"DxDrawPrimitive","wgCurRevisionId":60120,"wgRevisionId":60120,"wgArticleId":10763,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Client functions","Changes in 1.5.6"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"DxDrawPrimitive","wgRelevantArticleId":10763,"wgRequestId":"f729fa34157ac7af0f79255f","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"DxDrawPrimitive","wgTitle":"DxDrawPrimitive","wgCurRevisionId":63103,"wgRevisionId":63103,"wgArticleId":10763,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Client functions","Changes in 1.5.6"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"DxDrawPrimitive","wgRelevantArticleId":10763,"wgRequestId":"d6e2df9f9fddc124df649ce3","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
 mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
 
 });mw.loader.load(["mediawiki.page.startup"]);});</script>
@@ -42,7 +42,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
 <!--LC--> 
 </p>
-<div style="font-weight: bold;background:black;color:white;padding:2px; padding-left:8px;">FROM VERSION 1.5.6 <a rel="nofollow" class="external text" href="https://buildinfo.mtasa.com/?Author=&amp;Branch=&amp;Revision=14203"><span style="color: #FFFFFF;">r14203</span></a> ONWARDS</div><div style="border: 2px solid black;padding: 3px;">This function draws a 2D primitive shape across the screen - rendered for one frame. This should be used in conjunction with <a href="OnClientRender.html" title="OnClientRender">onClientRender</a> in order to display continuously. </div>
+<div style="font-weight: bold;background:black;color:white;padding:2px; padding-left:8px;">FROM VERSION 1.5.6 <a rel="nofollow" class="external text" href="https://buildinfo.mtasa.com/?Author=&amp;Branch=&amp;Revision=14370"><span style="color: #FFFFFF;">r14370</span></a> ONWARDS</div><div style="border: 2px solid black;padding: 3px;">This function draws a 2D primitive shape across the screen - rendered for one frame. This should be used in conjunction with <a href="OnClientRender.html" title="OnClientRender">onClientRender</a> in order to display continuously. </div>
 <h2><span class="mw-headline" id="Syntax">Syntax</span></h2>
 <pre class="prettyprint lang-lua">
 bool dxDrawPrimitive ( string pType, bool postGUI, table vertice1 [, table vertice2, ...] )
@@ -52,7 +52,7 @@ bool dxDrawPrimitive ( string pType, bool postGUI, table vertice1 [, table verti
 <li> <b>postGUI:</b> A bool representing whether the line should be drawn on top of or behind any ingame GUI (rendered by CEGUI).</li>
 <li> <b>vertices:</b> Tables representing each primitive vertice, required amount of them is determined by primitive type.</li></ul>
 <h2><span class="mw-headline" id="Allowed_types">Allowed types</span></h2>
-<div class="thumb tright"><div class="thumbinner" style="width:242px;"><a href="File_MTAsa_primitives.html" class="image"><img alt="" src="http://wiki.localhost/images/thumb/e/e2/MTAsa_primitives.png/240px-MTAsa_primitives.png" width="240" height="150" class="thumbimage" srcset="/images/thumb/e/e2/MTAsa_primitives.png/360px-MTAsa_primitives.png 1.5x, /images/thumb/e/e2/MTAsa_primitives.png/480px-MTAsa_primitives.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="File_MTAsa_primitives.html" class="internal" title="Enlarge"></a></div>Available primitive types.</div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:242px;"><a href="File_MTAsa_primitives.html" class="image"><img alt="" src="../images/thumb/e/e2/MTAsa_primitives.png/240px-MTAsa_primitives.png" width="240" height="150" class="thumbimage" srcset="/images/thumb/e/e2/MTAsa_primitives.png/360px-MTAsa_primitives.png 1.5x, /images/thumb/e/e2/MTAsa_primitives.png/480px-MTAsa_primitives.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="File_MTAsa_primitives.html" class="internal" title="Enlarge"></a></div>Available primitive types.</div></div></div>
 <p>More info on primitives may be found on <a rel="nofollow" class="external text" href="https://msdn.microsoft.com/en-us/library/windows/desktop/bb147291(v=vs.85).aspx">this MSDN site</a> 
 </p>
 <ul><li> <b>pointlist:</b> Renders the vertices as a collection of isolated points.</li>
@@ -130,11 +130,11 @@ addEventHandler("onClientPreRender", root, draw)
 
 <!-- 
 NewPP limit report
-Cached time: 20190625164335
+Cached time: 20190629062255
 Cache expiry: 86400
 Dynamic content: false
-CPU time usage: 0.016 seconds
-Real time usage: 0.017 seconds
+CPU time usage: 0.014 seconds
+Real time usage: 0.016 seconds
 Preprocessor visited node count: 174/1000000
 Preprocessor generated node count: 552/1000000
 Post‐expand include size: 3557/2097152 bytes
@@ -145,19 +145,19 @@ Expensive parser function count: 0/100
 
 <!-- 
 Transclusion expansion time report (%,ms,calls,template)
-100.00%    7.810      1 - -total
- 42.73%    3.337      1 - Template:New_feature/item
- 41.70%    3.257      1 - Template:Drawing_functions
- 29.55%    2.308      2 - Template:New_items
- 25.85%    2.019      3 - Template:Current_Version
- 13.36%    1.043      2 - Template:R
- 10.92%    0.853      1 - Template:Client_function
+100.00%    6.875      1 - -total
+ 45.53%    3.130      1 - Template:Drawing_functions
+ 39.79%    2.736      1 - Template:New_feature/item
+ 32.49%    2.234      2 - Template:New_items
+ 25.18%    1.731      3 - Template:Current_Version
+ 12.90%    0.887      2 - Template:R
+  9.06%    0.623      1 - Template:Client_function
 -->
 
-<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:10763-0!*!0!!*!5!* and timestamp 20190625164335 and revision id 60120
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:10763-0!*!0!!*!5!* and timestamp 20190629062255 and revision id 63103
  -->
 </div><div class="printfooter">
-Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=DxDrawPrimitive&amp;oldid=60120">https://wiki.multitheftauto.com/index.php?title=DxDrawPrimitive&amp;oldid=60120</a>"</div>
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=DxDrawPrimitive&amp;oldid=63103">https://wiki.multitheftauto.com/index.php?title=DxDrawPrimitive&amp;oldid=63103</a>"</div>
 					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Categories</a>: <ul><li><a href="Category_Client_functions.html" title="Category:Client functions">Client functions</a></li><li><a href="Category_Changes_in_1.5-2.html" title="Category:Changes in 1.5.6">Changes in 1.5.6</a></li></ul></div></div>					<!-- end content -->
 										<div class="visualClear"></div>
 				</div>
@@ -197,7 +197,7 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
 											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
 											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
-											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+											<li id="n-randompage"><a href="https://wiki.multitheftauto.com/wiki/OnDgsDestroy" title="Load a random page [x]" accesskey="x">Random page</a></li>
 									</ul>
 					</div>
 		</div>
@@ -239,7 +239,7 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/DxDrawPrimitive.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
 											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
 											<li id="t-print"><a href="http://wiki.localhost/index.php?title=DxDrawPrimitive&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
-											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=DxDrawPrimitive&amp;oldid=60120" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=DxDrawPrimitive&amp;oldid=63103" title="Permanent link to this revision of the page">Permanent link</a></li>
 											<li id="t-info"><a href="http://wiki.localhost/index.php?title=DxDrawPrimitive&amp;action=info" title="More information about this page">Page information</a></li>
 									</ul>
 							</div>
@@ -258,13 +258,13 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 		<div class="visualClear"></div>
 					<div id="footer" role="contentinfo">
 						<div id="f-copyrightico">
-									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="../resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
 							</div>
 					<div id="f-poweredbyico">
-									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+									<a href="http://www.mediawiki.org/"><img src="../resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
 							</div>
 					<ul id="f-list">
-									<li id="lastmod"> This page was last modified on 26 October 2018, at 17:11.</li>
+									<li id="lastmod"> This page was last modified on 27 June 2019, at 15:37.</li>
 									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
 									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
 									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
@@ -273,4 +273,4 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 		</div>
 		</div>
 		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
-<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":46});});</script></body></html>
+<script src="../extensions/_MTAThemeExtensions/main11b9.js?303"></script><script src="../extensions/_MTAThemeExtensions/topmenu11b9.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":41});});</script></body></html>

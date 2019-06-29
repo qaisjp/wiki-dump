@@ -5,7 +5,7 @@
 <meta charset="UTF-8"/>
 <title>RU/GTA:SA Streaming Garbage Collection - Multi Theft Auto: Wiki</title>
 <script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
-<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"RU/GTA:SA_Streaming_Garbage_Collection","wgTitle":"RU/GTA:SA Streaming Garbage Collection","wgCurRevisionId":39609,"wgRevisionId":39609,"wgArticleId":7674,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"RU/GTA:SA_Streaming_Garbage_Collection","wgRelevantArticleId":7674,"wgRequestId":"4d1311176b061f2ae239963e","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"RU/GTA:SA_Streaming_Garbage_Collection","wgTitle":"RU/GTA:SA Streaming Garbage Collection","wgCurRevisionId":39609,"wgRevisionId":39609,"wgArticleId":7674,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"RU/GTA:SA_Streaming_Garbage_Collection","wgRelevantArticleId":7674,"wgRequestId":"45d76eae45712f971b1e7614","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
 mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
 
 });mw.loader.load(["mediawiki.page.startup"]);});</script>
@@ -57,7 +57,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 </div>
 
 <h2><span class="mw-headline" id=".D0.90.D0.BA.D1.82.D0.B8.D0.B2.D0.BD.D1.8B.D0.B5_.D0.9F.D0.BE.D1.82.D0.BE.D0.BA.D0.BE.D0.B2.D1.8B.D0.B5_.D0.A1.D1.83.D1.89.D0.BD.D0.BE.D1.81.D1.82.D0.B8">Активные Потоковые Сущности</span></h2>
-<div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="../File_Chillahad_farclip.html" class="image"><img alt="" src="http://wiki.localhost/images/thumb/2/20/Chillahad_farclip.png/200px-Chillahad_farclip.png" width="200" height="113" class="thumbimage" srcset="/images/thumb/2/20/Chillahad_farclip.png/300px-Chillahad_farclip.png 1.5x, /images/thumb/2/20/Chillahad_farclip.png/400px-Chillahad_farclip.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="../File_Chillahad_farclip.html" class="internal" title="Enlarge"></a></div>Полный потенциал GTA:SA стриминга.</div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="../File_Chillahad_farclip.html" class="image"><img alt="" src="../../images/thumb/2/20/Chillahad_farclip.png/200px-Chillahad_farclip.png" width="200" height="113" class="thumbimage" srcset="/images/thumb/2/20/Chillahad_farclip.png/300px-Chillahad_farclip.png 1.5x, /images/thumb/2/20/Chillahad_farclip.png/400px-Chillahad_farclip.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="../File_Chillahad_farclip.html" class="internal" title="Enlarge"></a></div>Полный потенциал GTA:SA стриминга.</div></div></div>
 <p>Объекты, здания и даммисы которые имеют свои загруженные RenderWare ресурсы, будут добавлены в <b>активный сборщик мусора сущностей</b>. Как только он заработает, он начнет удалять RenderWare объекты всех зарегистрированных сущностей, которые находятся <b>вне поля зрения</b> или <b>далеко</b>. Если количество ссылок на модель достигло нуля, система освободит ресурс модели. Изначально, движок может <b>обрабатывать до 1000 сущностей</b> в его отсортированном контейнере (CRenderChainInterface &lt;streamingChainInfo&gt;). Если выделение узла контейнера не удалось, запрашивающая сущность уничтожит свои RenderWare данные. Следовательно, изначально только 1000 объектов, зданий или даммисов могут быть отрисованы в одно время. Неспособность выделить узлы контейнера часто была заметна на дальних дистанциях отрисовки (также известна как <b>blinking building bug</b>).
 </p><p>Разработчик MTA <a href="../User_Ccw.html" title="User:Ccw">ccw</a> это человек, который первый нашел blinking building bug.
 </p>
@@ -80,11 +80,11 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 
 <!-- 
 NewPP limit report
-Cached time: 20190625170339
+Cached time: 20190629064039
 Cache expiry: 86400
 Dynamic content: false
-CPU time usage: 0.007 seconds
-Real time usage: 0.008 seconds
+CPU time usage: 0.005 seconds
+Real time usage: 0.006 seconds
 Preprocessor visited node count: 23/1000000
 Preprocessor generated node count: 28/1000000
 Post‐expand include size: 0/2097152 bytes
@@ -98,7 +98,7 @@ Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 - -total
 -->
 
-<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:7674-0!*!0!!en!5!* and timestamp 20190625170339 and revision id 39609
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:7674-0!*!0!!en!5!* and timestamp 20190629064039 and revision id 39609
  -->
 </div><div class="printfooter">
 Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=RU/GTA:SA_Streaming_Garbage_Collection&amp;oldid=39609">https://wiki.multitheftauto.com/index.php?title=RU/GTA:SA_Streaming_Garbage_Collection&amp;oldid=39609</a>"</div>
@@ -141,7 +141,7 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
 											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
 											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
-											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+											<li id="n-randompage"><a href="https://wiki.multitheftauto.com/wiki/OnDgsDestroy" title="Load a random page [x]" accesskey="x">Random page</a></li>
 									</ul>
 					</div>
 		</div>
@@ -202,10 +202,10 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 		<div class="visualClear"></div>
 					<div id="footer" role="contentinfo">
 						<div id="f-copyrightico">
-									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="../../resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
 							</div>
 					<div id="f-poweredbyico">
-									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+									<a href="http://www.mediawiki.org/"><img src="../../resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
 							</div>
 					<ul id="f-list">
 									<li id="lastmod"> This page was last modified on 27 May 2014, at 11:35.</li>
@@ -217,4 +217,4 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 		</div>
 		</div>
 		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
-<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":45});});</script></body></html>
+<script src="../../extensions/_MTAThemeExtensions/main11b9.js?303"></script><script src="../../extensions/_MTAThemeExtensions/topmenu11b9.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":37});});</script></body></html>

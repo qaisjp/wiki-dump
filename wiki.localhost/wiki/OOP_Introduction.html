@@ -5,7 +5,7 @@
 <meta charset="UTF-8"/>
 <title>OOP Introduction - Multi Theft Auto: Wiki</title>
 <script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
-<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"OOP_Introduction","wgTitle":"OOP Introduction","wgCurRevisionId":61032,"wgRevisionId":61032,"wgArticleId":7694,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["OOP","Incomplete","Tutorials"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"OOP_Introduction","wgRelevantArticleId":7694,"wgRequestId":"322ddf9b3d9f12bca112c643","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"OOP_Introduction","wgTitle":"OOP Introduction","wgCurRevisionId":61032,"wgRevisionId":61032,"wgArticleId":7694,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["OOP","Incomplete","Tutorials"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"OOP_Introduction","wgRelevantArticleId":7694,"wgRequestId":"e2ae812195ad90913d7ebb21","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
 mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
 
 });mw.loader.load(["mediawiki.page.startup"]);});</script>
@@ -65,7 +65,7 @@ destroyElement(vehicle)
 <p>More often than not, you know what you're dealing with. The variable almost always links back to the type, you would name a vehicle that exploded as <b>explodedVehicle</b>, or at-least in context you would understand that <b>exploded</b> implies a vehicle when in the <b>onVehicleExplode</b> event. So you have to write a long function <i>and</i> refer to the vehicle manually when working procedurally. Painful. Object orientated programming is very different to this and works with each "object" individually. Instead of having to call a function and referencing it inside the call, you actually call the function INSIDE the class.
 </p><p>You probably think everything you can create and pass to functions are elements. A vehicle is an element. A player is an element. Anything that is an element is also a class. Connections create an instance of a class, but "<b>connection</b>" isn't an element, it's an instance - an object. Throughout the tutorial when I say <i>object</i>, I don't mean <a href="CreateObject.html" title="CreateObject">createObject</a> (unless I actually mention it), but to make things clearer I will avoid mentioning physical objects as I write this article. Here is a fancy venn diagram I created to show the simple organisation of classes and elements.
 </p>
-<div class="floatleft"><a href="File_Classes%2c_Elements_and_Problem_children.html" class="image" title="venn diagram"><img alt="venn diagram" src="http://wiki.localhost/images/thumb/9/9f/Classes%2C_Elements_and_Problem_children.png/500px-Classes%2C_Elements_and_Problem_children.png" width="500" height="455" srcset="/images/thumb/9/9f/Classes%2C_Elements_and_Problem_children.png/750px-Classes%2C_Elements_and_Problem_children.png 1.5x, /images/thumb/9/9f/Classes%2C_Elements_and_Problem_children.png/1000px-Classes%2C_Elements_and_Problem_children.png 2x" /></a></div>
+<div class="floatleft"><a href="File_Classes%2c_Elements_and_Problem_children.html" class="image" title="venn diagram"><img alt="venn diagram" src="../images/thumb/9/9f/Classes%2c_Elements_and_Problem_children.png/500px-Classes%2c_Elements_and_Problem_children.png" width="500" height="455" srcset="/images/thumb/9/9f/Classes%2C_Elements_and_Problem_children.png/750px-Classes%2C_Elements_and_Problem_children.png 1.5x, /images/thumb/9/9f/Classes%2C_Elements_and_Problem_children.png/1000px-Classes%2C_Elements_and_Problem_children.png 2x" /></a></div>
 <p>The functions on the left are sorted to show what kind of category the returned value rests in. We've got Classes, Elements and "Problem children".
 Problem children aren't real categories written in the code, just functions that break rules. Everything you can play with are classes: resources, vehicles, and teams.
 </p>
@@ -153,11 +153,11 @@ z = 2 - 0
 
 <!-- 
 NewPP limit report
-Cached time: 20190625164302
+Cached time: 20190629062144
 Cache expiry: 86400
 Dynamic content: false
-CPU time usage: 0.015 seconds
-Real time usage: 0.017 seconds
+CPU time usage: 0.011 seconds
+Real time usage: 0.012 seconds
 Preprocessor visited node count: 163/1000000
 Preprocessor generated node count: 663/1000000
 Post‐expand include size: 2095/2097152 bytes
@@ -168,14 +168,14 @@ Expensive parser function count: 0/100
 
 <!-- 
 Transclusion expansion time report (%,ms,calls,template)
-100.00%    6.680      1 - -total
- 41.56%    2.776      1 - Template:Tip
- 30.82%    2.059      1 - Template:MessageBox
- 25.54%    1.706      1 - Template:OOP
- 15.66%    1.046      1 - Template:Note_box
+100.00%    4.563      1 - -total
+ 44.97%    2.052      1 - Template:Tip
+ 32.00%    1.460      1 - Template:MessageBox
+ 20.36%    0.929      1 - Template:OOP
+ 18.58%    0.848      1 - Template:Note_box
 -->
 
-<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:7694-0!*!0!!en!5!* and timestamp 20190625164302 and revision id 61032
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:7694-0!*!0!!en!5!* and timestamp 20190629062144 and revision id 61032
  -->
 </div><div class="printfooter">
 Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=OOP_Introduction&amp;oldid=61032">https://wiki.multitheftauto.com/index.php?title=OOP_Introduction&amp;oldid=61032</a>"</div>
@@ -218,7 +218,7 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
 											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
 											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
-											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+											<li id="n-randompage"><a href="https://wiki.multitheftauto.com/wiki/OnDgsDestroy" title="Load a random page [x]" accesskey="x">Random page</a></li>
 									</ul>
 					</div>
 		</div>
@@ -279,10 +279,10 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 		<div class="visualClear"></div>
 					<div id="footer" role="contentinfo">
 						<div id="f-copyrightico">
-									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="../resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
 							</div>
 					<div id="f-poweredbyico">
-									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+									<a href="http://www.mediawiki.org/"><img src="../resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
 							</div>
 					<ul id="f-list">
 									<li id="lastmod"> This page was last modified on 3 December 2018, at 19:22.</li>
@@ -294,4 +294,4 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 		</div>
 		</div>
 		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
-<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":54});});</script></body></html>
+<script src="../extensions/_MTAThemeExtensions/main11b9.js?303"></script><script src="../extensions/_MTAThemeExtensions/topmenu11b9.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":24});});</script></body></html>

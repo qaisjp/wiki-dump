@@ -5,7 +5,7 @@
 <meta charset="UTF-8"/>
 <title>GetVehicleComponentPosition - Multi Theft Auto: Wiki</title>
 <script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
-<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"GetVehicleComponentPosition","wgTitle":"GetVehicleComponentPosition","wgCurRevisionId":57573,"wgRevisionId":57573,"wgArticleId":6791,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Client functions","Changes in 1.4.0"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"GetVehicleComponentPosition","wgRelevantArticleId":6791,"wgRequestId":"0bffb47706c90d6b6576b41e","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"GetVehicleComponentPosition","wgTitle":"GetVehicleComponentPosition","wgCurRevisionId":57573,"wgRevisionId":57573,"wgArticleId":6791,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Client functions","Changes in 1.4.0"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"GetVehicleComponentPosition","wgRelevantArticleId":6791,"wgRequestId":"c314ecc2ddb1f6865894d222","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
 mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
 
 });mw.loader.load(["mediawiki.page.startup"]);});</script>
@@ -142,6 +142,7 @@ addEventHandler("onClientRender", root,
 <li><a href="GetVehicleCompatibleUpgrades.html" title="GetVehicleCompatibleUpgrades">getVehicleCompatibleUpgrades</a></li>
 <li><strong class="selflink">getVehicleComponentPosition</strong></li>
 <li><a href="GetVehicleComponentRotation.html" title="GetVehicleComponentRotation">getVehicleComponentRotation</a></li>
+<li><a href="GetVehicleComponentScale.html" title="GetVehicleComponentScale">getVehicleComponentScale</a></li>
 <li><a href="GetVehicleComponentVisible.html" title="GetVehicleComponentVisible">getVehicleComponentVisible</a></li>
 <li><a href="GetVehicleComponents.html" title="GetVehicleComponents">getVehicleComponents</a></li>
 <li><a href="GetVehicleController.html" title="GetVehicleController">getVehicleController</a></li>
@@ -198,6 +199,7 @@ addEventHandler("onClientRender", root,
 <li><a href="RemoveVehicleUpgrade.html" title="RemoveVehicleUpgrade">removeVehicleUpgrade</a></li>
 <li><a href="ResetVehicleComponentPosition.html" title="ResetVehicleComponentPosition">resetVehicleComponentPosition</a></li>
 <li><a href="ResetVehicleComponentRotation.html" title="ResetVehicleComponentRotation">resetVehicleComponentRotation</a></li>
+<li><a href="ResetVehicleComponentScale.html" title="ResetVehicleComponentScale">resetVehicleComponentScale</a></li>
 <li><a href="SetHeliBladeCollisionsEnabled.html" title="SetHeliBladeCollisionsEnabled">setHeliBladeCollisionsEnabled</a></li>
 <li><a href="SetHelicopterRotorSpeed.html" title="SetHelicopterRotorSpeed">setHelicopterRotorSpeed</a></li>
 <li><a href="SetTrainDerailable.html" title="SetTrainDerailable">setTrainDerailable</a></li>
@@ -212,6 +214,7 @@ addEventHandler("onClientRender", root,
 <li><a href="SetVehicleColor.html" title="SetVehicleColor">setVehicleColor</a></li>
 <li><a href="SetVehicleComponentPosition.html" title="SetVehicleComponentPosition">setVehicleComponentPosition</a></li>
 <li><a href="SetVehicleComponentRotation.html" title="SetVehicleComponentRotation">setVehicleComponentRotation</a></li>
+<li><a href="SetVehicleComponentScale.html" title="SetVehicleComponentScale">setVehicleComponentScale</a></li>
 <li><a href="SetVehicleComponentVisible.html" title="SetVehicleComponentVisible">setVehicleComponentVisible</a></li>
 <li><a href="SetVehicleDamageProof.html" title="SetVehicleDamageProof">setVehicleDamageProof</a></li>
 <li><a href="SetVehicleDirtLevel.html" title="SetVehicleDirtLevel">setVehicleDirtLevel</a></li>
@@ -247,14 +250,14 @@ addEventHandler("onClientRender", root,
 </p>
 <!-- 
 NewPP limit report
-Cached time: 20190625164101
+Cached time: 20190629062323
 Cache expiry: 86400
 Dynamic content: false
-CPU time usage: 0.039 seconds
-Real time usage: 0.044 seconds
+CPU time usage: 0.025 seconds
+Real time usage: 0.028 seconds
 Preprocessor visited node count: 414/1000000
 Preprocessor generated node count: 1058/1000000
-Post‐expand include size: 10006/2097152 bytes
+Post‐expand include size: 10098/2097152 bytes
 Template argument size: 780/2097152 bytes
 Highest expansion depth: 9/40
 Expensive parser function count: 0/100
@@ -262,19 +265,19 @@ Expensive parser function count: 0/100
 
 <!-- 
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   24.077      1 - -total
- 73.43%   17.679      1 - Template:Client_vehicle_functions
- 49.13%   11.830      6 - Template:New_items
- 27.86%    6.709      9 - Template:Current_Version
- 13.89%    3.345      2 - Template:Deprecated_items
- 10.02%    2.412      4 - Template:R
-  8.07%    1.944      1 - Template:New_feature/item
-  4.14%    0.996      1 - Template:OOP
-  3.39%    0.816      1 - Template:Client_function
-  2.40%    0.578      1 - Template:ChangelogItem
+100.00%   15.758      1 - -total
+ 61.01%    9.614      1 - Template:Client_vehicle_functions
+ 42.46%    6.690      6 - Template:New_items
+ 26.55%    4.184      9 - Template:Current_Version
+ 12.15%    1.914      1 - Template:New_feature/item
+ 11.32%    1.784      2 - Template:Deprecated_items
+  8.56%    1.349      4 - Template:R
+  6.21%    0.979      1 - Template:OOP
+  4.00%    0.631      1 - Template:Client_function
+  3.67%    0.579      1 - Template:ChangelogHeader
 -->
 
-<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:6791-0!*!0!!*!*!* and timestamp 20190625164101 and revision id 57573
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:6791-0!*!0!!*!*!* and timestamp 20190629062323 and revision id 57573
  -->
 </div><div class="printfooter">
 Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=GetVehicleComponentPosition&amp;oldid=57573">https://wiki.multitheftauto.com/index.php?title=GetVehicleComponentPosition&amp;oldid=57573</a>"</div>
@@ -317,7 +320,7 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
 											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
 											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
-											<li id="n-randompage"><a href="Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+											<li id="n-randompage"><a href="https://wiki.multitheftauto.com/wiki/OnDgsDestroy" title="Load a random page [x]" accesskey="x">Random page</a></li>
 									</ul>
 					</div>
 		</div>
@@ -368,10 +371,10 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 		<div class="visualClear"></div>
 					<div id="footer" role="contentinfo">
 						<div id="f-copyrightico">
-									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="../resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
 							</div>
 					<div id="f-poweredbyico">
-									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+									<a href="http://www.mediawiki.org/"><img src="../resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
 							</div>
 					<ul id="f-list">
 									<li id="lastmod"> This page was last modified on 9 August 2018, at 23:43.</li>
@@ -383,4 +386,4 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 		</div>
 		</div>
 		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
-<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":416});});</script></body></html>
+<script src="../extensions/_MTAThemeExtensions/main11b9.js?303"></script><script src="../extensions/_MTAThemeExtensions/topmenu11b9.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":55});});</script></body></html>

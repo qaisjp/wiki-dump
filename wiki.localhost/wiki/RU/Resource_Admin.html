@@ -5,7 +5,7 @@
 <meta charset="UTF-8"/>
 <title>RU/Resource:Admin - Multi Theft Auto: Wiki</title>
 <script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
-<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"RU/Resource:Admin","wgTitle":"RU/Resource:Admin","wgCurRevisionId":47189,"wgRevisionId":47189,"wgArticleId":4481,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["RU/Resource","Понятия скриптинга"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"RU/Resource:Admin","wgRelevantArticleId":4481,"wgRequestId":"e4e260dc1eb0a96d122d4754","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"RU/Resource:Admin","wgTitle":"RU/Resource:Admin","wgCurRevisionId":47189,"wgRevisionId":47189,"wgArticleId":4481,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["RU/Resource","Понятия скриптинга"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"RU/Resource:Admin","wgRelevantArticleId":4481,"wgRequestId":"b93fe36b486e7559ef3127cb","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
 mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
 
 });mw.loader.load(["mediawiki.page.startup"]);});</script>
@@ -46,7 +46,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <!-- BEGIN SECTION |1|server|MTA 1.0.0 и ниже|--><div class='serverHeader' onclick='expandSection(1);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander1'>Click to expand [+]</div>MTA 1.0.0 и ниже</div><div style='display:none;' class='serverContent' id='section1'>
 <p><b>Заметка:</b> Начиная с MTA 1.0.5, accounts.xml был убран и заменен sqlite.
 Вначале, откроем файл <b>accounts.xml</b>, расположенный по адресу <b>server\mods\deathmatch\</b> и добавим строчку с данными вашего аккаунта, как показано на рисунке ниже:
-</p><p><a href="../File_Admin_accounts.html" class="image"><img alt="Admin accounts.png" src="http://wiki.localhost/images/3/31/Admin_accounts.png" width="420" height="115" /></a>
+</p><p><a href="../File_Admin_accounts.html" class="image"><img alt="Admin accounts.png" src="../../images/3/31/Admin_accounts.png" width="420" height="115" /></a>
 </p>
 </div><!-- END SECTION |1|-->
 <p>Чтобы добавить аккаунт в <b>MTA 1.5</b>, воспользуйтесь следующей командой на сервере:
@@ -57,20 +57,20 @@ addaccount &lt;username&gt; &lt;password&gt;
 </pre>
 <p><b>Заметка:</b> Сервер должен быть выключен, когда вы будете редактирова acl файл ниже
 </p><p>Затем, откроем файл <b>acl.xml</b>, расположенный в той же самой директории, и добавим себя как объект в группу Admin, используя синтаксис 'user.*', где * (звездочка) - имя вашего аккаунта.
-</p><p><a href="../File_Admin_acl.html" class="image"><img alt="Admin acl.png" src="http://wiki.localhost/images/b/bf/Admin_acl.png" width="420" height="157" /></a>
+</p><p><a href="../File_Admin_acl.html" class="image"><img alt="Admin acl.png" src="../../images/b/bf/Admin_acl.png" width="420" height="157" /></a>
 </p><p><br />
 Теперь откроем файл <b>mtaserver.conf</b> и прокрутим колесиком мышки в самый низ файла. Убедитесь, что в нем находится строчка, указанная на рисунке ниже (заметка: protected="1" означает, что ресурс невозможно будет выключить). Также проверьте, есть ли ресурс (папка с файлами) admin в папке с ресурсами (resources).
-</p><p><a href="../File_Admin_mtaserver.html" class="image"><img alt="Admin mtaserver.png" src="http://wiki.localhost/images/f/f0/Admin_mtaserver.png" width="420" height="60" /></a>
+</p><p><a href="../File_Admin_mtaserver.html" class="image"><img alt="Admin mtaserver.png" src="../../images/f/f0/Admin_mtaserver.png" width="420" height="60" /></a>
 </p><p><br />
 С файлами севрера все готово, можно проверить ваш админ-статус на нем. Подключитесь к вашему серверу, войдите в свой аккаунт, используя команду /login [имя_пользователя] &lt;пароль&gt; (вводить без [] и &lt;&gt;). Если вы увидели надпись в чате о том, что нажатием кнопки 'P' откроет админ панель, ("Press 'p' to open your admin panel"), значит вы все сделали верно! Если нет, попробуйте пройти по всем шагам этого учебника еще раз.
 </p>
 <!-- 
 NewPP limit report
-Cached time: 20190625170045
+Cached time: 20190629063832
 Cache expiry: 86400
 Dynamic content: false
-CPU time usage: 0.012 seconds
-Real time usage: 0.029 seconds
+CPU time usage: 0.008 seconds
+Real time usage: 0.033 seconds
 Preprocessor visited node count: 38/1000000
 Preprocessor generated node count: 242/1000000
 Post‐expand include size: 138/2097152 bytes
@@ -81,12 +81,12 @@ Expensive parser function count: 0/100
 
 <!-- 
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   19.627      1 - -total
-  8.91%    1.749      1 - Template:Current_Version
-  5.40%    1.060      1 - Template:RU/Resource_page
+100.00%   22.607      1 - -total
+  5.00%    1.130      1 - Template:Current_Version
+  4.48%    1.012      1 - Template:RU/Resource_page
 -->
 
-<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:4481-0!*!*!*!*!5!* and timestamp 20190625170045 and revision id 47189
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:4481-0!*!*!*!*!5!* and timestamp 20190629063831 and revision id 47189
  -->
 </div><div class="printfooter">
 Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=RU/Resource:Admin&amp;oldid=47189">https://wiki.multitheftauto.com/index.php?title=RU/Resource:Admin&amp;oldid=47189</a>"</div>
@@ -129,7 +129,7 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
 											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
 											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
-											<li id="n-randompage"><a href="../Special_Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+											<li id="n-randompage"><a href="https://wiki.multitheftauto.com/wiki/OnDgsDestroy" title="Load a random page [x]" accesskey="x">Random page</a></li>
 									</ul>
 					</div>
 		</div>
@@ -191,10 +191,10 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 		<div class="visualClear"></div>
 					<div id="footer" role="contentinfo">
 						<div id="f-copyrightico">
-									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="http://wiki.localhost/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
+									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="../../resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
 							</div>
 					<div id="f-poweredbyico">
-									<a href="http://www.mediawiki.org/"><img src="http://wiki.localhost/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
+									<a href="http://www.mediawiki.org/"><img src="../../resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
 							</div>
 					<ul id="f-list">
 									<li id="lastmod"> This page was last modified on 1 April 2016, at 03:05.</li>
@@ -206,4 +206,4 @@ Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?tit
 		</div>
 		</div>
 		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
-<script src="http://wiki.localhost/extensions/_MTAThemeExtensions/main.js?303"></script><script src="http://wiki.localhost/extensions/_MTAThemeExtensions/topmenu.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":59});});</script></body></html>
+<script src="../../extensions/_MTAThemeExtensions/main11b9.js?303"></script><script src="../../extensions/_MTAThemeExtensions/topmenu11b9.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":59});});</script></body></html>
