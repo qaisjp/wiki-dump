@@ -7,3 +7,5 @@ Dumped using `httrack "http://wiki.localhost/wiki/Main_Page" "+http://wiki.local
 
 Configuration recommendations:
 - `git config core.preloadindex true`
+
+More information on my wiki page.
