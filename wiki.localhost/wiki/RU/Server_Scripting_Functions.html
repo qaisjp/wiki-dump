@@ -1,51 +1,36 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+<html class="client-nojs" lang="en" dir="ltr">
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <meta charset="UTF-8"/>
 <title>RU/Server Scripting Functions - Multi Theft Auto: Wiki</title>
 <script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
-<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"RU/Server_Scripting_Functions","wgTitle":"RU/Server Scripting Functions","wgCurRevisionId":58804,"wgRevisionId":58804,"wgArticleId":3553,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"RU/Server_Scripting_Functions","wgRelevantArticleId":3553,"wgRequestId":"bba9dc99141e5043b1ddc659","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
-mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
-
-});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"RU/Server_Scripting_Functions","wgTitle":"RU/Server Scripting Functions","wgCurRevisionId":58804,"wgRevisionId":58804,"wgArticleId":3553,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"RU/Server_Scripting_Functions","wgRelevantArticleId":3553,"wgRequestId":"b552654f5f53d823d79f58ec","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","mediawiki.skinning.content.externallinks":"ready","skins.monobook.styles":"ready"});mw.loader.implement("user.tokens@18hksfp",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
 <link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
-<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
 <script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
-<meta name="generator" content="MediaWiki 1.27.5"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/resources/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/resources/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.31.3"/>
 <link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
 <link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
 <link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
-<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="license" href="http://www.gnu.org/copyleft/fdl.html"/>
 <link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
 <meta name='headingclass' content='' data-class='server' data-subcaption=''>
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=MonoBook&amp;sync=1"></script><![endif]-->
 </head>
-<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-RU_Server_Scripting_Functions rootpage-RU_Server_Scripting_Functions skin-monobook action-view">
-<div id="globalWrapper">
-		<div id="column-content">
-			<div id="content" class="mw-body" role="main">
-				<a id="top"></a>
-				
-				<div class="mw-indicators">
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-RU_Server_Scripting_Functions rootpage-RU_Server_Scripting_Functions skin-monobook action-view"><div id="globalWrapper"><div id="column-content"><div id="content" class="mw-body" role="main"><a id="top"></a><div class="mw-indicators mw-body-content">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">RU/Server Scripting Functions</h1>
-				
-				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">From Multi Theft Auto: Wiki</div>
-					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
-
-					<!-- start content -->
-					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
+<h1 id="firstHeading" class="firstHeading" lang="en">RU/Server Scripting Functions</h1><div id="bodyContent" class="mw-body-content"><div id="siteSub">From Multi Theft Auto: Wiki</div><div id="contentSub" lang="en" dir="ltr"></div><div id="jump-to-nav" class="mw-jump">Jump to:<a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div><!-- start content --><div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><!--HC-->
 На этой странице располагается список всех серверных функций скриптинга, которые когда-либо были внедрены и теперь являются встроенными. Чтобы запросить новую функцию или событие, напишите об этом <a href="../Requested_Functions_and_Events.html" title="Requested Functions and Events">сюда</a> или на <a rel="nofollow" class="external free" href="https://bugs.mtasa.com/">https://bugs.mtasa.com</a>.
 </p><p>Обратите внимание, что функции скриптинга также можно расширить благодаря подгрузке динамических модулей с ними. Они предоставляют новый функционал, как утилитарные функции. Эти функции скриптинга не являются встроенными и требуют подгрузки модуля для того, чтобы с ними можно было работать.
-</p><p>Отправляйтесь на страницу с <a href="Modules.html" title="RU/Modules" class="mw-redirect">модулями</a>, если хотите получить список доступных невстроенных серверных функций и модулей.
+</p><p>Отправляйтесь на страницу с <a href="Modules.html" class="mw-redirect" title="RU/Modules">модулями</a>, если хотите получить список доступных невстроенных серверных функций и модулей.
 </p><p>Если вам захочется узнать о других функциях, посетите <a href="Useful_Functions.html" title="RU/Useful Functions">страницу с полезными функциями</a>.
 </p><p>Клиентские функции скриптинга можно найти <a href="Client_Scripting_Functions.html" title="RU/Client Scripting Functions">здесь</a>.
 </p>
-<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#.D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B0.D0.BA.D0.BA.D0.B0.D1.83.D0.BD.D1.82.D0.B0"><span class="tocnumber">1</span> <span class="toctext">Функции аккаунта</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#ACL-.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8"><span class="tocnumber">2</span> <span class="toctext">ACL-функции</span></a></li>
@@ -89,7 +74,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 </ul>
 </div>
 
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B0.D0.BA.D0.BA.D0.B0.D1.83.D0.BD.D1.82.D0.B0">Функции аккаунта</span></h2>
+<h2><span id="Функции_аккаунта"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B0.D0.BA.D0.BA.D0.B0.D1.83.D0.BD.D1.82.D0.B0">Функции аккаунта</span></h2>
 <ul><li><a href="addAccount.html" title="RU/addAccount">addAccount</a></li>
 <li><a href="copyAccountData.html" title="RU/copyAccountData">copyAccountData</a></li>
 <li><a href="getAccountData.html" title="RU/getAccountData">getAccountData</a></li>
@@ -109,7 +94,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li><a href="http://wiki.localhost/index.php?title=RU/setAccountPassword&amp;action=edit&amp;redlink=1" class="new" title="RU/setAccountPassword (page does not exist)">setAccountPassword</a></li></ul>
 <p><br />
 </p>
-<h2><span class="mw-headline" id="ACL-.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8">ACL-функции</span></h2>
+<h2><span id="ACL-функции"></span><span class="mw-headline" id="ACL-.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8">ACL-функции</span></h2>
 <ul><li><a href="http://wiki.localhost/index.php?title=RU/aclReload&amp;action=edit&amp;redlink=1" class="new" title="RU/aclReload (page does not exist)">aclReload</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/aclSave&amp;action=edit&amp;redlink=1" class="new" title="RU/aclSave (page does not exist)">aclSave</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/aclList&amp;action=edit&amp;redlink=1" class="new" title="RU/aclList (page does not exist)">aclList</a></li></ul>
@@ -136,7 +121,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <ul><li><a href="http://wiki.localhost/index.php?title=RU/isObjectInACLGroup&amp;action=edit&amp;redlink=1" class="new" title="RU/isObjectInACLGroup (page does not exist)">isObjectInACLGroup</a></li></ul>
 <p><br />
 </p>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B0.D0.B4.D0.BC.D0.B8.D0.BD.D0.B8.D1.81.D1.82.D1.80.D0.B0.D1.82.D0.BE.D1.80.D0.B0">Функции администратора</span></h2>
+<h2><span id="Функции_администратора"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B0.D0.B4.D0.BC.D0.B8.D0.BD.D0.B8.D1.81.D1.82.D1.80.D0.B0.D1.82.D0.BE.D1.80.D0.B0">Функции администратора</span></h2>
 <ul><li><a href="addBan.html" title="RU/addBan">addBan</a></li>
 <li><a href="banPlayer.html" title="RU/banPlayer">banPlayer</a></li>
 <li><a href="getBanAdmin.html" title="RU/getBanAdmin">getBanAdmin</a></li>
@@ -158,9 +143,9 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li><a href="reloadBans.html" title="RU/reloadBans">reloadBans</a></li></ul>
 <p><br />
 </p>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B7.D0.B2.D1.83.D0.BA.D0.B0">Функции звука</span></h2>
+<h2><span id="Функции_звука"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B7.D0.B2.D1.83.D0.BA.D0.B0">Функции звука</span></h2>
 <ul><li><a href="playSoundFrontEnd.html" title="RU/playSoundFrontEnd">playSoundFrontEnd</a></li></ul>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BE.D0.B1.D1.8A.D1.8F.D0.B2.D0.BB.D0.B5.D0.BD.D0.B8.D1.8F">Функции объявления</span></h2>
+<h2><span id="Функции_объявления"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BE.D0.B1.D1.8A.D1.8F.D0.B2.D0.BB.D0.B5.D0.BD.D0.B8.D1.8F">Функции объявления</span></h2>
 <ul><li><a href="http://wiki.localhost/index.php?title=RU/getGameType&amp;action=edit&amp;redlink=1" class="new" title="RU/getGameType (page does not exist)">getGameType</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/getMapName&amp;action=edit&amp;redlink=1" class="new" title="RU/getMapName (page does not exist)">getMapName</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/getRuleValue&amp;action=edit&amp;redlink=1" class="new" title="RU/getRuleValue (page does not exist)">getRuleValue</a></li>
@@ -168,7 +153,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li><a href="http://wiki.localhost/index.php?title=RU/setGameType&amp;action=edit&amp;redlink=1" class="new" title="RU/setGameType (page does not exist)">setGameType</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/setMapName&amp;action=edit&amp;redlink=1" class="new" title="RU/setMapName (page does not exist)">setMapName</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/setRuleValue&amp;action=edit&amp;redlink=1" class="new" title="RU/setRuleValue (page does not exist)">setRuleValue</a></li></ul>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BC.D0.B5.D1.82.D0.BA.D0.B8_.D0.BD.D0.B0_.D1.80.D0.B0.D0.B4.D0.B0.D1.80.D0.B5">Функции метки на радаре</span></h2>
+<h2><span id="Функции_метки_на_радаре"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BC.D0.B5.D1.82.D0.BA.D0.B8_.D0.BD.D0.B0_.D1.80.D0.B0.D0.B4.D0.B0.D1.80.D0.B5">Функции метки на радаре</span></h2>
 <ul><li><a href="createBlip.html" title="RU/createBlip">createBlip</a></li>
 <li><a href="createBlipAttachedTo.html" title="RU/createBlipAttachedTo">createBlipAttachedTo</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/getBlipColor&amp;action=edit&amp;redlink=1" class="new" title="RU/getBlipColor (page does not exist)">getBlipColor</a></li>
@@ -183,20 +168,20 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li><a href="setBlipVisibleDistance.html" title="RU/setBlipVisibleDistance">setBlipVisibleDistance</a></li></ul>
 <p><br />
 </p>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BA.D0.B0.D0.BC.D0.B5.D1.80.D1.8B">Функции камеры</span></h2>
-<ul><li> <a href="fadeCamera.html" title="RU/fadeCamera">fadeCamera</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/getCameraInterior&amp;action=edit&amp;redlink=1" class="new" title="RU/getCameraInterior (page does not exist)">getCameraInterior</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/getCameraMatrix&amp;action=edit&amp;redlink=1" class="new" title="RU/getCameraMatrix (page does not exist)">getCameraMatrix</a></li>
-<li> <a href="getCameraTarget.html" title="RU/getCameraTarget">getCameraTarget</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/setCameraInterior&amp;action=edit&amp;redlink=1" class="new" title="RU/setCameraInterior (page does not exist)">setCameraInterior</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/setCameraMatrix&amp;action=edit&amp;redlink=1" class="new" title="RU/setCameraMatrix (page does not exist)">setCameraMatrix</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/setCameraTarget&amp;action=edit&amp;redlink=1" class="new" title="RU/setCameraTarget (page does not exist)">setCameraTarget</a></li></ul>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.82.D0.B5.D0.BB.D0.B0_.D0.B8_.D0.BE.D0.B4.D0.B5.D0.B6.D0.B4.D1.8B">Функции тела и одежды</span></h2>
+<h2><span id="Функции_камеры"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BA.D0.B0.D0.BC.D0.B5.D1.80.D1.8B">Функции камеры</span></h2>
+<ul><li><a href="fadeCamera.html" title="RU/fadeCamera">fadeCamera</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getCameraInterior&amp;action=edit&amp;redlink=1" class="new" title="RU/getCameraInterior (page does not exist)">getCameraInterior</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getCameraMatrix&amp;action=edit&amp;redlink=1" class="new" title="RU/getCameraMatrix (page does not exist)">getCameraMatrix</a></li>
+<li><a href="getCameraTarget.html" title="RU/getCameraTarget">getCameraTarget</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setCameraInterior&amp;action=edit&amp;redlink=1" class="new" title="RU/setCameraInterior (page does not exist)">setCameraInterior</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setCameraMatrix&amp;action=edit&amp;redlink=1" class="new" title="RU/setCameraMatrix (page does not exist)">setCameraMatrix</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setCameraTarget&amp;action=edit&amp;redlink=1" class="new" title="RU/setCameraTarget (page does not exist)">setCameraTarget</a></li></ul>
+<h2><span id="Функции_тела_и_одежды"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.82.D0.B5.D0.BB.D0.B0_.D0.B8_.D0.BE.D0.B4.D0.B5.D0.B6.D0.B4.D1.8B">Функции тела и одежды</span></h2>
 <ul><li><a href="http://wiki.localhost/index.php?title=RU/getBodyPartName&amp;action=edit&amp;redlink=1" class="new" title="RU/getBodyPartName (page does not exist)">getBodyPartName</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/getClothesByTypeIndex&amp;action=edit&amp;redlink=1" class="new" title="RU/getClothesByTypeIndex (page does not exist)">getClothesByTypeIndex</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/getClothesTypeName&amp;action=edit&amp;redlink=1" class="new" title="RU/getClothesTypeName (page does not exist)">getClothesTypeName</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/getTypeIndexFromClothes&amp;action=edit&amp;redlink=1" class="new" title="RU/getTypeIndexFromClothes (page does not exist)">getTypeIndexFromClothes</a></li></ul>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BA.D0.BE.D0.BB.D0.BB.D0.B8.D0.B7.D0.B8.D0.B8">Функции коллизии</span></h2>
+<h2><span id="Функции_коллизии"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BA.D0.BE.D0.BB.D0.BB.D0.B8.D0.B7.D0.B8.D0.B8">Функции коллизии</span></h2>
 <ul><li><a href="http://wiki.localhost/index.php?title=RU/createColCircle&amp;action=edit&amp;redlink=1" class="new" title="RU/createColCircle (page does not exist)">createColCircle</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/createColCuboid&amp;action=edit&amp;redlink=1" class="new" title="RU/createColCuboid (page does not exist)">createColCuboid</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/createColRectangle&amp;action=edit&amp;redlink=1" class="new" title="RU/createColRectangle (page does not exist)">createColRectangle</a></li>
@@ -208,10 +193,10 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li><a href="http://wiki.localhost/index.php?title=RU/getElementColShape&amp;action=edit&amp;redlink=1" class="new" title="RU/getElementColShape (page does not exist)">getElementColShape</a></li></ul>
 <p><br />
 </p>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BA.D1.83.D1.80.D1.81.D0.BE.D1.80.D0.B0">Функции курсора</span></h2>
+<h2><span id="Функции_курсора"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BA.D1.83.D1.80.D1.81.D0.BE.D1.80.D0.B0">Функции курсора</span></h2>
 <ul><li><a href="isCursorShowing.html" title="RU/isCursorShowing">isCursorShowing</a></li>
 <li><a href="showCursor.html" title="RU/showCursor">showCursor</a></li></ul>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.8D.D0.BB.D0.B5.D0.BC.D0.B5.D0.BD.D1.82.D0.B0">Функции элемента</span></h2>
+<h2><span id="Функции_элемента"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.8D.D0.BB.D0.B5.D0.BC.D0.B5.D0.BD.D1.82.D0.B0">Функции элемента</span></h2>
 <ul><li><a href="http://wiki.localhost/index.php?title=RU/clearElementVisibleTo&amp;action=edit&amp;redlink=1" class="new" title="RU/clearElementVisibleTo (page does not exist)">clearElementVisibleTo</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/cloneElement&amp;action=edit&amp;redlink=1" class="new" title="RU/cloneElement (page does not exist)">cloneElement</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/createElement&amp;action=edit&amp;redlink=1" class="new" title="RU/createElement (page does not exist)">createElement</a></li>
@@ -280,10 +265,10 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li><a href="http://wiki.localhost/index.php?title=RU/isElementLowLOD&amp;action=edit&amp;redlink=1" class="new" title="RU/isElementLowLOD (page does not exist)">isElementLowLOD</a></li></ul>
 <p><br />
 </p>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.81.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F">Функции события</span></h2>
+<h2><span id="Функции_события"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.81.D0.BE.D0.B1.D1.8B.D1.82.D0.B8.D1.8F">Функции события</span></h2>
 <ul><li><a href="addEvent-2.html" title="RU/addEvent">addEvent</a></li>
 <li><a href="addEventHandler.html" title="RU/addEventHandler">addEventHandler</a></li></ul>
-<ul><li> <a href="http://wiki.localhost/index.php?title=RU/getEventHandlers&amp;action=edit&amp;redlink=1" class="new" title="RU/getEventHandlers (page does not exist)">getEventHandlers</a></li>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/getEventHandlers&amp;action=edit&amp;redlink=1" class="new" title="RU/getEventHandlers (page does not exist)">getEventHandlers</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/cancelEvent&amp;action=edit&amp;redlink=1" class="new" title="RU/cancelEvent (page does not exist)">cancelEvent</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/getCancelReason&amp;action=edit&amp;redlink=1" class="new" title="RU/getCancelReason (page does not exist)">getCancelReason</a></li>
 <li><a href="removeEventHandler.html" title="RU/removeEventHandler">removeEventHandler</a></li>
@@ -296,11 +281,11 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li><a href="http://wiki.localhost/index.php?title=RU/cancelLatentEvent&amp;action=edit&amp;redlink=1" class="new" title="RU/cancelLatentEvent (page does not exist)">cancelLatentEvent</a></li></ul>
 <p><br />
 </p>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B2.D0.B7.D1.80.D1.8B.D0.B2.D0.B0">Функции взрыва</span></h2>
+<h2><span id="Функции_взрыва"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B2.D0.B7.D1.80.D1.8B.D0.B2.D0.B0">Функции взрыва</span></h2>
 <ul><li><a href="createExplosion.html" title="RU/createExplosion">createExplosion</a></li></ul>
 <p><br />
 </p>
-<h2><span class="mw-headline" id=".D0.A4.D0.B0.D0.B9.D0.BB.D0.BE.D0.B2.D1.8B.D0.B5_.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8">Файловые функции</span></h2>
+<h2><span id="Файловые_функции"></span><span class="mw-headline" id=".D0.A4.D0.B0.D0.B9.D0.BB.D0.BE.D0.B2.D1.8B.D0.B5_.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8">Файловые функции</span></h2>
 <ul><li><a href="http://wiki.localhost/index.php?title=RU/fileClose&amp;action=edit&amp;redlink=1" class="new" title="RU/fileClose (page does not exist)">fileClose</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/fileCopy&amp;action=edit&amp;redlink=1" class="new" title="RU/fileCopy (page does not exist)">fileCopy</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/fileCreate&amp;action=edit&amp;redlink=1" class="new" title="RU/fileCreate (page does not exist)">fileCreate</a></li>
@@ -318,7 +303,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li><a href="http://wiki.localhost/index.php?title=RU/fileWrite&amp;action=edit&amp;redlink=1" class="new" title="RU/fileWrite (page does not exist)">fileWrite</a></li></ul>
 <p><br />
 </p>
-<h2><span class="mw-headline" id="HTTP-.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8">HTTP-функции</span></h2>
+<h2><span id="HTTP-функции"></span><span class="mw-headline" id="HTTP-.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8">HTTP-функции</span></h2>
 <p><i>Эти функции могут использоваться только из lua-блоков в HTML-страницах, размещённых на сервере</i>
 </p>
 <ul><li><a href="http://wiki.localhost/index.php?title=RU/httpClear&amp;action=edit&amp;redlink=1" class="new" title="RU/httpClear (page does not exist)">httpClear</a></li>
@@ -329,7 +314,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li><a href="http://wiki.localhost/index.php?title=RU/httpWrite&amp;action=edit&amp;redlink=1" class="new" title="RU/httpWrite (page does not exist)">httpWrite</a></li></ul>
 <p><br />
 </p>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B2.D0.B2.D0.BE.D0.B4.D0.B0">Функции ввода</span></h2>
+<h2><span id="Функции_ввода"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B2.D0.B2.D0.BE.D0.B4.D0.B0">Функции ввода</span></h2>
 <ul><li><a href="http://wiki.localhost/index.php?title=RU/bindKey&amp;action=edit&amp;redlink=1" class="new" title="RU/bindKey (page does not exist)">bindKey</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/getControlState&amp;action=edit&amp;redlink=1" class="new" title="RU/getControlState (page does not exist)">getControlState</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/getFunctionsBoundToKey&amp;action=edit&amp;redlink=1" class="new" title="RU/getFunctionsBoundToKey (page does not exist)">getFunctionsBoundToKey</a></li>
@@ -342,11 +327,11 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li><a href="http://wiki.localhost/index.php?title=RU/unbindKey&amp;action=edit&amp;redlink=1" class="new" title="RU/unbindKey (page does not exist)">unbindKey</a></li></ul>
 <p><br />
 </p>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BA.D0.B0.D1.80.D1.82.D1.8B">Функции карты</span></h2>
+<h2><span id="Функции_карты"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BA.D0.B0.D1.80.D1.82.D1.8B">Функции карты</span></h2>
 <ul><li><a href="http://wiki.localhost/index.php?title=RU/loadMapData&amp;action=edit&amp;redlink=1" class="new" title="RU/loadMapData (page does not exist)">loadMapData</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/resetMapInfo&amp;action=edit&amp;redlink=1" class="new" title="RU/resetMapInfo (page does not exist)">resetMapInfo</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/saveMapData&amp;action=edit&amp;redlink=1" class="new" title="RU/saveMapData (page does not exist)">saveMapData</a></li></ul>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BC.D0.B0.D1.80.D0.BA.D0.B5.D1.80.D0.B0">Функции маркера</span></h2>
+<h2><span id="Функции_маркера"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BC.D0.B0.D1.80.D0.BA.D0.B5.D1.80.D0.B0">Функции маркера</span></h2>
 <ul><li><a href="createMarker.html" title="RU/createMarker">createMarker</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/getMarkerColor&amp;action=edit&amp;redlink=1" class="new" title="RU/getMarkerColor (page does not exist)">getMarkerColor</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/getMarkerCount&amp;action=edit&amp;redlink=1" class="new" title="RU/getMarkerCount (page does not exist)">getMarkerCount</a></li>
@@ -360,17 +345,17 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li><a href="http://wiki.localhost/index.php?title=RU/setMarkerSize&amp;action=edit&amp;redlink=1" class="new" title="RU/setMarkerSize (page does not exist)">setMarkerSize</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/setMarkerTarget&amp;action=edit&amp;redlink=1" class="new" title="RU/setMarkerTarget (page does not exist)">setMarkerTarget</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/setMarkerType&amp;action=edit&amp;redlink=1" class="new" title="RU/setMarkerType (page does not exist)">setMarkerType</a></li></ul>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BC.D0.B0.D1.82.D1.80.D0.B8.D1.86.D1.8B">Функции матрицы</span></h2>
+<h2><span id="Функции_матрицы"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BC.D0.B0.D1.82.D1.80.D0.B8.D1.86.D1.8B">Функции матрицы</span></h2>
 <ul><li><a href="Matrix.html" title="RU/Matrix">Matrix</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/Vector/Vector2&amp;action=edit&amp;redlink=1" class="new" title="RU/Vector/Vector2 (page does not exist)">Vector/Vector2</a></li>
 <li><a href="Vector/Vector3.html" title="RU/Vector/Vector3">Vector/Vector3</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/Vector/Vector4&amp;action=edit&amp;redlink=1" class="new" title="RU/Vector/Vector4 (page does not exist)">Vector/Vector4</a></li></ul>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BC.D0.BE.D0.B4.D1.83.D0.BB.D1.8F">Функции модуля</span></h2>
+<h2><span id="Функции_модуля"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BC.D0.BE.D0.B4.D1.83.D0.BB.D1.8F">Функции модуля</span></h2>
 <ul><li><a href="getLoadedModules.html" title="RU/getLoadedModules">getLoadedModules</a></li>
 <li><a href="getModuleInfo.html" title="RU/getModuleInfo">getModuleInfo</a></li></ul>
 <p><br />
 </p>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BE.D0.B1.D1.8A.D0.B5.D0.BA.D1.82.D0.B0">Функции объекта</span></h2>
+<h2><span id="Функции_объекта"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BE.D0.B1.D1.8A.D0.B5.D0.BA.D1.82.D0.B0">Функции объекта</span></h2>
 <ul><li><a href="http://wiki.localhost/index.php?title=RU/createObject&amp;action=edit&amp;redlink=1" class="new" title="RU/createObject (page does not exist)">createObject</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/moveObject&amp;action=edit&amp;redlink=1" class="new" title="RU/moveObject (page does not exist)">moveObject</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/stopObject&amp;action=edit&amp;redlink=1" class="new" title="RU/stopObject (page does not exist)">stopObject</a></li></ul>
@@ -378,7 +363,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li><a href="http://wiki.localhost/index.php?title=RU/setObjectScale&amp;action=edit&amp;redlink=1" class="new" title="RU/setObjectScale (page does not exist)">setObjectScale</a></li></ul>
 <p><br />
 </p>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_NPC">Функции NPC</span></h2>
+<h2><span id="Функции_NPC"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_NPC">Функции NPC</span></h2>
 <ul><li><a href="http://wiki.localhost/index.php?title=RU/addPedClothes&amp;action=edit&amp;redlink=1" class="new" title="RU/addPedClothes (page does not exist)">addPedClothes</a></li>
 <li><a href="createPed.html" title="RU/createPed">createPed</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/doesPedHaveJetPack&amp;action=edit&amp;redlink=1" class="new" title="RU/doesPedHaveJetPack (page does not exist)">doesPedHaveJetPack</a></li>
@@ -430,7 +415,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li><a href="warpPedIntoVehicle.html" title="RU/warpPedIntoVehicle">warpPedIntoVehicle</a></li></ul>
 <p><br />
 </p>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BF.D0.B8.D0.BA.D0.B0.D0.BF.D0.B0">Функции пикапа</span></h2>
+<h2><span id="Функции_пикапа"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BF.D0.B8.D0.BA.D0.B0.D0.BF.D0.B0">Функции пикапа</span></h2>
 <ul><li><a href="http://wiki.localhost/index.php?title=RU/createPickup&amp;action=edit&amp;redlink=1" class="new" title="RU/createPickup (page does not exist)">createPickup</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/getPickupAmmo&amp;action=edit&amp;redlink=1" class="new" title="RU/getPickupAmmo (page does not exist)">getPickupAmmo</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/getPickupAmount&amp;action=edit&amp;redlink=1" class="new" title="RU/getPickupAmount (page does not exist)">getPickupAmount</a></li>
@@ -443,59 +428,59 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li><a href="http://wiki.localhost/index.php?title=RU/usePickup&amp;action=edit&amp;redlink=1" class="new" title="RU/usePickup (page does not exist)">usePickup</a></li></ul>
 <p><br />
 </p>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B8.D0.B3.D1.80.D0.BE.D0.BA.D0.B0">Функции игрока</span></h2>
-<ul><li> <a href="forcePlayerMap.html" title="RU/forcePlayerMap">forcePlayerMap</a></li>
-<li> <a href="getAlivePlayers.html" title="RU/getAlivePlayers">getAlivePlayers</a></li>
-<li> <a href="getDeadPlayers.html" title="RU/getDeadPlayers">getDeadPlayers</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/getPlayerACInfo&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerACInfo (page does not exist)">getPlayerACInfo</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/getPlayerAnnounceValue&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerAnnounceValue (page does not exist)">getPlayerAnnounceValue</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/getPlayerBlurLevel&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerBlurLevel (page does not exist)">getPlayerBlurLevel</a></li>
-<li> <a href="getPlayerCount.html" title="RU/getPlayerCount">getPlayerCount</a></li>
-<li> <a href="getPlayerFromName.html" title="RU/getPlayerFromName">getPlayerFromName</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/getPlayerIdleTime&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerIdleTime (page does not exist)">getPlayerIdleTime</a></li>
-<li> <a href="getPlayerIP.html" title="RU/getPlayerIP">getPlayerIP</a></li>
-<li> <a href="getPlayerMoney.html" title="RU/getPlayerMoney">getPlayerMoney</a></li>
-<li> <a href="getPlayerName.html" title="RU/getPlayerName">getPlayerName</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/getPlayerNametagColor&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerNametagColor (page does not exist)">getPlayerNametagColor</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/getPlayerNametagText&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerNametagText (page does not exist)">getPlayerNametagText</a></li>
-<li> <a href="getPlayerPing.html" title="RU/getPlayerPing">getPlayerPing</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/getPlayerSerial&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerSerial (page does not exist)">getPlayerSerial</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/getPlayerTeam&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerTeam (page does not exist)">getPlayerTeam</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/getPlayerVersion&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerVersion (page does not exist)">getPlayerVersion</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/getPlayerWantedLevel&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerWantedLevel (page does not exist)">getPlayerWantedLevel</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/getRandomPlayer&amp;action=edit&amp;redlink=1" class="new" title="RU/getRandomPlayer (page does not exist)">getRandomPlayer</a></li>
-<li> <a href="givePlayerMoney.html" title="RU/givePlayerMoney">givePlayerMoney</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/isPlayerMapForced&amp;action=edit&amp;redlink=1" class="new" title="RU/isPlayerMapForced (page does not exist)">isPlayerMapForced</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/isPlayerMuted&amp;action=edit&amp;redlink=1" class="new" title="RU/isPlayerMuted (page does not exist)">isPlayerMuted</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/isPlayerNametagShowing&amp;action=edit&amp;redlink=1" class="new" title="RU/isPlayerNametagShowing (page does not exist)">isPlayerNametagShowing</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/isVoiceEnabled&amp;action=edit&amp;redlink=1" class="new" title="RU/isVoiceEnabled (page does not exist)">isVoiceEnabled</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/redirectPlayer&amp;action=edit&amp;redlink=1" class="new" title="RU/redirectPlayer (page does not exist)">redirectPlayer</a></li></ul>
+<h2><span id="Функции_игрока"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B8.D0.B3.D1.80.D0.BE.D0.BA.D0.B0">Функции игрока</span></h2>
+<ul><li><a href="forcePlayerMap.html" title="RU/forcePlayerMap">forcePlayerMap</a></li>
+<li><a href="getAlivePlayers.html" title="RU/getAlivePlayers">getAlivePlayers</a></li>
+<li><a href="getDeadPlayers.html" title="RU/getDeadPlayers">getDeadPlayers</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPlayerACInfo&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerACInfo (page does not exist)">getPlayerACInfo</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPlayerAnnounceValue&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerAnnounceValue (page does not exist)">getPlayerAnnounceValue</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPlayerBlurLevel&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerBlurLevel (page does not exist)">getPlayerBlurLevel</a></li>
+<li><a href="getPlayerCount.html" title="RU/getPlayerCount">getPlayerCount</a></li>
+<li><a href="getPlayerFromName.html" title="RU/getPlayerFromName">getPlayerFromName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPlayerIdleTime&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerIdleTime (page does not exist)">getPlayerIdleTime</a></li>
+<li><a href="getPlayerIP.html" title="RU/getPlayerIP">getPlayerIP</a></li>
+<li><a href="getPlayerMoney.html" title="RU/getPlayerMoney">getPlayerMoney</a></li>
+<li><a href="getPlayerName.html" title="RU/getPlayerName">getPlayerName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPlayerNametagColor&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerNametagColor (page does not exist)">getPlayerNametagColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPlayerNametagText&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerNametagText (page does not exist)">getPlayerNametagText</a></li>
+<li><a href="getPlayerPing.html" title="RU/getPlayerPing">getPlayerPing</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPlayerSerial&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerSerial (page does not exist)">getPlayerSerial</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPlayerTeam&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerTeam (page does not exist)">getPlayerTeam</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPlayerVersion&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerVersion (page does not exist)">getPlayerVersion</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getPlayerWantedLevel&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayerWantedLevel (page does not exist)">getPlayerWantedLevel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/getRandomPlayer&amp;action=edit&amp;redlink=1" class="new" title="RU/getRandomPlayer (page does not exist)">getRandomPlayer</a></li>
+<li><a href="givePlayerMoney.html" title="RU/givePlayerMoney">givePlayerMoney</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isPlayerMapForced&amp;action=edit&amp;redlink=1" class="new" title="RU/isPlayerMapForced (page does not exist)">isPlayerMapForced</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isPlayerMuted&amp;action=edit&amp;redlink=1" class="new" title="RU/isPlayerMuted (page does not exist)">isPlayerMuted</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isPlayerNametagShowing&amp;action=edit&amp;redlink=1" class="new" title="RU/isPlayerNametagShowing (page does not exist)">isPlayerNametagShowing</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/isVoiceEnabled&amp;action=edit&amp;redlink=1" class="new" title="RU/isVoiceEnabled (page does not exist)">isVoiceEnabled</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/redirectPlayer&amp;action=edit&amp;redlink=1" class="new" title="RU/redirectPlayer (page does not exist)">redirectPlayer</a></li></ul>
 <ul><li><a href="http://wiki.localhost/index.php?title=RU/resendPlayerACInfo&amp;action=edit&amp;redlink=1" class="new" title="RU/resendPlayerACInfo (page does not exist)">resendPlayerACInfo</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/resendPlayerModInfo&amp;action=edit&amp;redlink=1" class="new" title="RU/resendPlayerModInfo (page does not exist)">resendPlayerModInfo</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/setPlayerAnnounceValue&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerAnnounceValue (page does not exist)">setPlayerAnnounceValue</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/setPlayerBlurLevel&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerBlurLevel (page does not exist)">setPlayerBlurLevel</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/setPlayerHudComponentVisible&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerHudComponentVisible (page does not exist)">setPlayerHudComponentVisible</a></li>
-<li> <a href="setPlayerMoney.html" title="RU/setPlayerMoney">setPlayerMoney</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/setPlayerMuted&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerMuted (page does not exist)">setPlayerMuted</a></li>
-<li> <a href="setPlayerName.html" title="RU/setPlayerName">setPlayerName</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/setPlayerNametagColor&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerNametagColor (page does not exist)">setPlayerNametagColor</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/setPlayerNametagShowing&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerNametagShowing (page does not exist)">setPlayerNametagShowing</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/setPlayerNametagText&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerNametagText (page does not exist)">setPlayerNametagText</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/setPlayerTeam&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerTeam (page does not exist)">setPlayerTeam</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/setPlayerVoiceBroadcastTo&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerVoiceBroadcastTo (page does not exist)">setPlayerVoiceBroadcastTo</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/setPlayerVoiceIgnoreFrom&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerVoiceIgnoreFrom (page does not exist)">setPlayerVoiceIgnoreFrom</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/setPlayerWantedLevel&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerWantedLevel (page does not exist)">setPlayerWantedLevel</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/showPlayerHudComponent&amp;action=edit&amp;redlink=1" class="new" title="RU/showPlayerHudComponent (page does not exist)">showPlayerHudComponent</a></li>
-<li> <a href="spawnPlayer.html" title="RU/spawnPlayer">spawnPlayer</a></li>
-<li> <a href="takePlayerMoney.html" title="RU/takePlayerMoney">takePlayerMoney</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/takePlayerScreenShot&amp;action=edit&amp;redlink=1" class="new" title="RU/takePlayerScreenShot (page does not exist)">takePlayerScreenShot</a></li></ul>
+<li><a href="http://wiki.localhost/index.php?title=RU/resendPlayerModInfo&amp;action=edit&amp;redlink=1" class="new" title="RU/resendPlayerModInfo (page does not exist)">resendPlayerModInfo</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setPlayerAnnounceValue&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerAnnounceValue (page does not exist)">setPlayerAnnounceValue</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setPlayerBlurLevel&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerBlurLevel (page does not exist)">setPlayerBlurLevel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setPlayerHudComponentVisible&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerHudComponentVisible (page does not exist)">setPlayerHudComponentVisible</a></li>
+<li><a href="setPlayerMoney.html" title="RU/setPlayerMoney">setPlayerMoney</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setPlayerMuted&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerMuted (page does not exist)">setPlayerMuted</a></li>
+<li><a href="setPlayerName.html" title="RU/setPlayerName">setPlayerName</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setPlayerNametagColor&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerNametagColor (page does not exist)">setPlayerNametagColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setPlayerNametagShowing&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerNametagShowing (page does not exist)">setPlayerNametagShowing</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setPlayerNametagText&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerNametagText (page does not exist)">setPlayerNametagText</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setPlayerTeam&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerTeam (page does not exist)">setPlayerTeam</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setPlayerVoiceBroadcastTo&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerVoiceBroadcastTo (page does not exist)">setPlayerVoiceBroadcastTo</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setPlayerVoiceIgnoreFrom&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerVoiceIgnoreFrom (page does not exist)">setPlayerVoiceIgnoreFrom</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setPlayerWantedLevel&amp;action=edit&amp;redlink=1" class="new" title="RU/setPlayerWantedLevel (page does not exist)">setPlayerWantedLevel</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/showPlayerHudComponent&amp;action=edit&amp;redlink=1" class="new" title="RU/showPlayerHudComponent (page does not exist)">showPlayerHudComponent</a></li>
+<li><a href="spawnPlayer.html" title="RU/spawnPlayer">spawnPlayer</a></li>
+<li><a href="takePlayerMoney.html" title="RU/takePlayerMoney">takePlayerMoney</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/takePlayerScreenShot&amp;action=edit&amp;redlink=1" class="new" title="RU/takePlayerScreenShot (page does not exist)">takePlayerScreenShot</a></li></ul>
 <p><br />
 </p>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.81.D0.BD.D0.B0.D1.80.D1.8F.D0.B4.D0.B0">Функции снаряда</span></h2>
+<h2><span id="Функции_снаряда"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.81.D0.BD.D0.B0.D1.80.D1.8F.D0.B4.D0.B0">Функции снаряда</span></h2>
 <ul><li><a href="http://wiki.localhost/index.php?title=RU/detonateSatchels&amp;action=edit&amp;redlink=1" class="new" title="RU/detonateSatchels (page does not exist)">detonateSatchels</a></li></ul>
 <p><br />
 </p>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.82.D0.B5.D1.80.D1.80.D0.B8.D1.82.D0.BE.D1.80.D0.B8.D0.B8_.D1.80.D0.B0.D0.B4.D0.B0.D1.80.D0.B0">Функции территории радара</span></h2>
+<h2><span id="Функции_территории_радара"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.82.D0.B5.D1.80.D1.80.D0.B8.D1.82.D0.BE.D1.80.D0.B8.D0.B8_.D1.80.D0.B0.D0.B4.D0.B0.D1.80.D0.B0">Функции территории радара</span></h2>
 <ul><li><a href="http://wiki.localhost/index.php?title=RU/createRadarArea&amp;action=edit&amp;redlink=1" class="new" title="RU/createRadarArea (page does not exist)">createRadarArea</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/getRadarAreaColor&amp;action=edit&amp;redlink=1" class="new" title="RU/getRadarAreaColor (page does not exist)">getRadarAreaColor</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/getRadarAreaSize&amp;action=edit&amp;redlink=1" class="new" title="RU/getRadarAreaSize (page does not exist)">getRadarAreaSize</a></li>
@@ -504,7 +489,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li><a href="http://wiki.localhost/index.php?title=RU/setRadarAreaColor&amp;action=edit&amp;redlink=1" class="new" title="RU/setRadarAreaColor (page does not exist)">setRadarAreaColor</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/setRadarAreaFlashing&amp;action=edit&amp;redlink=1" class="new" title="RU/setRadarAreaFlashing (page does not exist)">setRadarAreaFlashing</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/setRadarAreaSize&amp;action=edit&amp;redlink=1" class="new" title="RU/setRadarAreaSize (page does not exist)">setRadarAreaSize</a></li></ul>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.80.D0.B5.D1.81.D1.83.D1.80.D1.81.D0.B0">Функции ресурса</span></h2>
+<h2><span id="Функции_ресурса"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.80.D0.B5.D1.81.D1.83.D1.80.D1.81.D0.B0">Функции ресурса</span></h2>
 <ul><li><a href="http://wiki.localhost/index.php?title=RU/addResourceConfig&amp;action=edit&amp;redlink=1" class="new" title="RU/addResourceConfig (page does not exist)">addResourceConfig</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/addResourceMap&amp;action=edit&amp;redlink=1" class="new" title="RU/addResourceMap (page does not exist)">addResourceMap</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/call&amp;action=edit&amp;redlink=1" class="new" title="RU/call (page does not exist)">call</a></li>
@@ -540,7 +525,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li><a href="http://wiki.localhost/index.php?title=RU/updateResourceACLRequest&amp;action=edit&amp;redlink=1" class="new" title="RU/updateResourceACLRequest (page does not exist)">updateResourceACLRequest</a></li></ul>
 <p><br />
 </p>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.81.D0.B5.D1.80.D0.B2.D0.B5.D1.80.D0.B0">Функции сервера</span></h2>
+<h2><span id="Функции_сервера"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.81.D0.B5.D1.80.D0.B2.D0.B5.D1.80.D0.B0">Функции сервера</span></h2>
 <ul><li><a href="addCommandHandler.html" title="RU/addCommandHandler">addCommandHandler</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/executeCommandHandler&amp;action=edit&amp;redlink=1" class="new" title="RU/executeCommandHandler (page does not exist)">executeCommandHandler</a></li>
 <li><a href="fromJSON.html" title="RU/fromJSON">fromJSON</a></li>
@@ -565,10 +550,10 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li><a href="http://wiki.localhost/index.php?title=RU/showChat&amp;action=edit&amp;redlink=1" class="new" title="RU/showChat (page does not exist)">showChat</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/shutdown&amp;action=edit&amp;redlink=1" class="new" title="RU/shutdown (page does not exist)">shutdown</a></li>
 <li><a href="toJSON.html" title="RU/toJSON">toJSON</a></li></ul>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BD.D0.B0.D1.81.D1.82.D1.80.D0.BE.D0.B9.D0.BA.D0.B8_.D1.80.D0.B5.D0.B5.D1.81.D1.82.D1.80.D0.B0">Функции настройки реестра</span></h2>
-<ul><li> <a href="get.html" title="RU/get">get</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/set&amp;action=edit&amp;redlink=1" class="new" title="RU/set (page does not exist)">set</a></li></ul>
-<h2><span class="mw-headline" id="SQL-.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8">SQL-функции</span></h2>
+<h2><span id="Функции_настройки_реестра"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BD.D0.B0.D1.81.D1.82.D1.80.D0.BE.D0.B9.D0.BA.D0.B8_.D1.80.D0.B5.D0.B5.D1.81.D1.82.D1.80.D0.B0">Функции настройки реестра</span></h2>
+<ul><li><a href="get.html" title="RU/get">get</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/set&amp;action=edit&amp;redlink=1" class="new" title="RU/set (page does not exist)">set</a></li></ul>
+<h2><span id="SQL-функции"></span><span class="mw-headline" id="SQL-.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8">SQL-функции</span></h2>
 <ul><li><a href="http://wiki.localhost/index.php?title=RU/executeSQLQuery&amp;action=edit&amp;redlink=1" class="new" title="RU/executeSQLQuery (page does not exist)">executeSQLQuery</a></li></ul>
 <ul><li><a href="dbConnect.html" title="RU/dbConnect">dbConnect</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/dbExec&amp;action=edit&amp;redlink=1" class="new" title="RU/dbExec (page does not exist)">dbExec</a></li>
@@ -578,7 +563,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <ul><li><a href="http://wiki.localhost/index.php?title=RU/dbPrepareString&amp;action=edit&amp;redlink=1" class="new" title="RU/dbPrepareString (page does not exist)">dbPrepareString</a></li></ul>
 <p><br />
 </p>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BA.D0.BE.D0.BC.D0.B0.D0.BD.D0.B4.D1.8B">Функции команды</span></h2>
+<h2><span id="Функции_команды"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BA.D0.BE.D0.BC.D0.B0.D0.BD.D0.B4.D1.8B">Функции команды</span></h2>
 <ul><li><a href="http://wiki.localhost/index.php?title=RU/countPlayersInTeam&amp;action=edit&amp;redlink=1" class="new" title="RU/countPlayersInTeam (page does not exist)">countPlayersInTeam</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/createTeam&amp;action=edit&amp;redlink=1" class="new" title="RU/createTeam (page does not exist)">createTeam</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/getPlayersInTeam&amp;action=edit&amp;redlink=1" class="new" title="RU/getPlayersInTeam (page does not exist)">getPlayersInTeam</a></li>
@@ -591,7 +576,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li><a href="http://wiki.localhost/index.php?title=RU/setTeamColor&amp;action=edit&amp;redlink=1" class="new" title="RU/setTeamColor (page does not exist)">setTeamColor</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/setTeamFriendlyFire&amp;action=edit&amp;redlink=1" class="new" title="RU/setTeamFriendlyFire (page does not exist)">setTeamFriendlyFire</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/setTeamName&amp;action=edit&amp;redlink=1" class="new" title="RU/setTeamName (page does not exist)">setTeamName</a></li></ul>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.82.D0.B5.D0.BA.D1.81.D1.82.D0.B0">Функции текста</span></h2>
+<h2><span id="Функции_текста"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.82.D0.B5.D0.BA.D1.81.D1.82.D0.B0">Функции текста</span></h2>
 <ul><li><a href="../TextCreateTextItem.html" title="TextCreateTextItem">textCreateTextItem</a></li>
 <li><a href="../TextDestroyTextItem.html" title="TextDestroyTextItem">textDestroyTextItem</a></li>
 <li><a href="../TextItemGetColor.html" title="TextItemGetColor">textItemGetColor</a></li>
@@ -614,7 +599,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li><a href="../TextDisplayIsObserver.html" title="TextDisplayIsObserver">textDisplayIsObserver</a></li></ul>
 <p><br />
 </p>
-<h2><span class="mw-headline" id=".D0.A3.D1.82.D0.B8.D0.BB.D0.B8.D1.82.D0.B0.D1.80.D0.BD.D1.8B.D0.B5_.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8">Утилитарные функции</span></h2>
+<h2><span id="Утилитарные_функции"></span><span class="mw-headline" id=".D0.A3.D1.82.D0.B8.D0.BB.D0.B8.D1.82.D0.B0.D1.80.D0.BD.D1.8B.D0.B5_.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8">Утилитарные функции</span></h2>
 <ul><li><a href="../Iprint.html" title="Iprint">iprint</a></li>
 <li><a href="../Inspect.html" title="Inspect">inspect</a></li>
 <li><a href="../GetColorFromString.html" title="GetColorFromString">getColorFromString</a></li>
@@ -646,16 +631,16 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li><a href="../TeaDecode.html" title="TeaDecode">teaDecode</a></li>
 <li><a href="../Base64Encode.html" title="Base64Encode">base64Encode</a></li>
 <li><a href="../Base64Decode.html" title="Base64Decode">base64Decode</a></li></ul>
-<ul><li> <a href="../UtfChar.html" title="UtfChar">utfChar</a></li>
-<li> <a href="../UtfCode.html" title="UtfCode">utfCode</a></li>
-<li> <a href="../UtfLen.html" title="UtfLen">utfLen</a></li>
-<li> <a href="../UtfSeek.html" title="UtfSeek">utfSeek</a></li>
-<li> <a href="../UtfSub.html" title="UtfSub">utfSub</a></li></ul>
-<ul><li> <a href="../PasswordHash.html" title="PasswordHash">passwordHash</a></li>
-<li> <a href="../PasswordVerify.html" title="PasswordVerify">passwordVerify</a></li></ul>
-<ul><li> <a href="../PregFind.html" title="PregFind">pregFind</a></li>
-<li> <a href="../PregReplace.html" title="PregReplace">pregReplace</a></li>
-<li> <a href="../PregMatch.html" title="PregMatch">pregMatch</a></li></ul>
+<ul><li><a href="../UtfChar.html" title="UtfChar">utfChar</a></li>
+<li><a href="../UtfCode.html" title="UtfCode">utfCode</a></li>
+<li><a href="../UtfLen.html" title="UtfLen">utfLen</a></li>
+<li><a href="../UtfSeek.html" title="UtfSeek">utfSeek</a></li>
+<li><a href="../UtfSub.html" title="UtfSub">utfSub</a></li></ul>
+<ul><li><a href="../PasswordHash.html" title="PasswordHash">passwordHash</a></li>
+<li><a href="../PasswordVerify.html" title="PasswordVerify">passwordVerify</a></li></ul>
+<ul><li><a href="../PregFind.html" title="PregFind">pregFind</a></li>
+<li><a href="../PregReplace.html" title="PregReplace">pregReplace</a></li>
+<li><a href="../PregMatch.html" title="PregMatch">pregMatch</a></li></ul>
 <ul><li><a href="http://wiki.localhost/index.php?title=RU/bitAnd&amp;action=edit&amp;redlink=1" class="new" title="RU/bitAnd (page does not exist)">bitAnd</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/bitNot&amp;action=edit&amp;redlink=1" class="new" title="RU/bitNot (page does not exist)">bitNot</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/bitOr&amp;action=edit&amp;redlink=1" class="new" title="RU/bitOr (page does not exist)">bitOr</a></li>
@@ -668,11 +653,11 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li><a href="http://wiki.localhost/index.php?title=RU/bitArShift&amp;action=edit&amp;redlink=1" class="new" title="RU/bitArShift (page does not exist)">bitArShift</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/bitExtract&amp;action=edit&amp;redlink=1" class="new" title="RU/bitExtract (page does not exist)">bitExtract</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/bitReplace&amp;action=edit&amp;redlink=1" class="new" title="RU/bitReplace (page does not exist)">bitReplace</a></li></ul>
-<ul><li> <a href="../AddDebugHook.html" title="AddDebugHook">addDebugHook</a></li>
-<li> <a href="../RemoveDebugHook.html" title="RemoveDebugHook">removeDebugHook</a></li></ul>
+<ul><li><a href="../AddDebugHook.html" title="AddDebugHook">addDebugHook</a></li>
+<li><a href="../RemoveDebugHook.html" title="RemoveDebugHook">removeDebugHook</a></li></ul>
 <p><br />
 </p>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_UTF-8">Функции UTF-8</span></h2>
+<h2><span id="Функции_UTF-8"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_UTF-8">Функции UTF-8</span></h2>
 <ul><li><a href="http://wiki.localhost/index.php?title=RU/utf8.byte&amp;action=edit&amp;redlink=1" class="new" title="RU/utf8.byte (page does not exist)">utf8.byte</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/utf8.char&amp;action=edit&amp;redlink=1" class="new" title="RU/utf8.char (page does not exist)">utf8.char</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/utf8.charpos&amp;action=edit&amp;redlink=1" class="new" title="RU/utf8.charpos (page does not exist)">utf8.charpos</a></li>
@@ -696,7 +681,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li><a href="http://wiki.localhost/index.php?title=RU/utf8.widthindex&amp;action=edit&amp;redlink=1" class="new" title="RU/utf8.widthindex (page does not exist)">utf8.widthindex</a></li></ul>
 <p><br />
 </p>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.82.D1.80.D0.B0.D0.BD.D1.81.D0.BF.D0.BE.D1.80.D1.82.D0.B0">Функции транспорта</span></h2>
+<h2><span id="Функции_транспорта"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D1.82.D1.80.D0.B0.D0.BD.D1.81.D0.BF.D0.BE.D1.80.D1.82.D0.B0">Функции транспорта</span></h2>
 <ul><li><a href="http://wiki.localhost/index.php?title=RU/createVehicle&amp;action=edit&amp;redlink=1" class="new" title="RU/createVehicle (page does not exist)">createVehicle</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/addVehicleSirens&amp;action=edit&amp;redlink=1" class="new" title="RU/addVehicleSirens (page does not exist)">addVehicleSirens</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/removeVehicleSirens&amp;action=edit&amp;redlink=1" class="new" title="RU/removeVehicleSirens (page does not exist)">removeVehicleSirens</a></li>
@@ -799,20 +784,20 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li><a href="http://wiki.localhost/index.php?title=RU/setVehicleSirens&amp;action=edit&amp;redlink=1" class="new" title="RU/setVehicleSirens (page does not exist)">setVehicleSirens</a></li></ul>
 <p><br />
 </p>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B2.D0.BE.D0.B4.D1.8B">Функции воды</span></h2>
+<h2><span id="Функции_воды"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.B2.D0.BE.D0.B4.D1.8B">Функции воды</span></h2>
 <ul><li><a href="http://wiki.localhost/index.php?title=RU/createWater&amp;action=edit&amp;redlink=1" class="new" title="RU/createWater (page does not exist)">createWater</a></li></ul>
-<ul><li> <a href="http://wiki.localhost/index.php?title=RU/getWaterColor&amp;action=edit&amp;redlink=1" class="new" title="RU/getWaterColor (page does not exist)">getWaterColor</a></li>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/getWaterColor&amp;action=edit&amp;redlink=1" class="new" title="RU/getWaterColor (page does not exist)">getWaterColor</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/getWaterVertexPosition&amp;action=edit&amp;redlink=1" class="new" title="RU/getWaterVertexPosition (page does not exist)">getWaterVertexPosition</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/getWaveHeight&amp;action=edit&amp;redlink=1" class="new" title="RU/getWaveHeight (page does not exist)">getWaveHeight</a></li></ul>
-<ul><li> <a href="http://wiki.localhost/index.php?title=RU/resetWaterColor&amp;action=edit&amp;redlink=1" class="new" title="RU/resetWaterColor (page does not exist)">resetWaterColor</a></li>
-<li> <a href="http://wiki.localhost/index.php?title=RU/setWaterColor&amp;action=edit&amp;redlink=1" class="new" title="RU/setWaterColor (page does not exist)">setWaterColor</a></li>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/resetWaterColor&amp;action=edit&amp;redlink=1" class="new" title="RU/resetWaterColor (page does not exist)">resetWaterColor</a></li>
+<li><a href="http://wiki.localhost/index.php?title=RU/setWaterColor&amp;action=edit&amp;redlink=1" class="new" title="RU/setWaterColor (page does not exist)">setWaterColor</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/setWaterLevel&amp;action=edit&amp;redlink=1" class="new" title="RU/setWaterLevel (page does not exist)">setWaterLevel</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/setWaterVertexPosition&amp;action=edit&amp;redlink=1" class="new" title="RU/setWaterVertexPosition (page does not exist)">setWaterVertexPosition</a></li>
 <li><a href="http://wiki.localhost/index.php?title=RU/setWaveHeight&amp;action=edit&amp;redlink=1" class="new" title="RU/setWaveHeight (page does not exist)">setWaveHeight</a></li></ul>
-<ul><li> <a href="http://wiki.localhost/index.php?title=RU/resetWaterLevel&amp;action=edit&amp;redlink=1" class="new" title="RU/resetWaterLevel (page does not exist)">resetWaterLevel</a></li></ul>
+<ul><li><a href="http://wiki.localhost/index.php?title=RU/resetWaterLevel&amp;action=edit&amp;redlink=1" class="new" title="RU/resetWaterLevel (page does not exist)">resetWaterLevel</a></li></ul>
 <p><br />
 </p>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BE.D1.80.D1.83.D0.B6.D0.B8.D1.8F">Функции оружия</span></h2>
+<h2><span id="Функции_оружия"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BE.D1.80.D1.83.D0.B6.D0.B8.D1.8F">Функции оружия</span></h2>
 <ul><li><a href="getSlotFromWeapon.html" title="RU/getSlotFromWeapon">getSlotFromWeapon</a></li>
 <li><a href="getWeaponIDFromName.html" title="RU/getWeaponIDFromName">getWeaponIDFromName</a></li>
 <li><a href="getWeaponNameFromID.html" title="RU/getWeaponNameFromID">getWeaponNameFromID</a></li>
@@ -825,7 +810,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li><a href="http://wiki.localhost/index.php?title=RU/setWeaponProperty&amp;action=edit&amp;redlink=1" class="new" title="RU/setWeaponProperty (page does not exist)">setWeaponProperty</a></li></ul>
 <p><br />
 </p>
-<h2><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BC.D0.B8.D1.80.D0.B0">Функции мира</span></h2>
+<h2><span id="Функции_мира"></span><span class="mw-headline" id=".D0.A4.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8_.D0.BC.D0.B8.D1.80.D0.B0">Функции мира</span></h2>
 <ul><li><a href="areTrafficLightsLocked.html" title="RU/areTrafficLightsLocked">areTrafficLightsLocked</a></li>
 <li><a href="getCloudsEnabled.html" title="RU/getCloudsEnabled">getCloudsEnabled</a></li>
 <li><a href="getGameSpeed.html" title="RU/getGameSpeed">getGameSpeed</a></li>
@@ -889,7 +874,7 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <li><a href="http://wiki.localhost/index.php?title=RU/resetMoonSize&amp;action=edit&amp;redlink=1" class="new" title="RU/resetMoonSize (page does not exist)">resetMoonSize</a></li></ul>
 <p><br />
 </p>
-<h2><span class="mw-headline" id="XML-.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8">XML-функции</span></h2>
+<h2><span id="XML-функции"></span><span class="mw-headline" id="XML-.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8">XML-функции</span></h2>
 <ul><li><a href="xmlCopyFile.html" title="RU/xmlCopyFile">xmlCopyFile</a></li>
 <li><a href="xmlCreateFile.html" title="RU/xmlCreateFile">xmlCreateFile</a></li>
 <li><a href="xmlDestroyNode.html" title="RU/xmlDestroyNode">xmlDestroyNode</a></li>
@@ -910,156 +895,37 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 
 <!-- 
 NewPP limit report
-Cached time: 20190629062924
+Cached time: 20191016142325
 Cache expiry: 86400
 Dynamic content: false
-CPU time usage: 0.112 seconds
-Real time usage: 0.139 seconds
+CPU time usage: 0.232 seconds
+Real time usage: 0.259 seconds
 Preprocessor visited node count: 1287/1000000
 Preprocessor generated node count: 1770/1000000
 Post‐expand include size: 38261/2097152 bytes
 Template argument size: 2904/2097152 bytes
 Highest expansion depth: 10/40
 Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 9/5000000 bytes
 -->
-
-<!-- 
+<!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   78.758      1 - -total
- 25.64%   20.194     25 - Template:New_items
- 21.27%   16.750     36 - Template:Current_Version
- 13.05%   10.279      1 - Template:RU/Utility_functions
- 11.94%    9.407      9 - Template:RU/New_items
-  9.39%    7.394      1 - Template:RU/Vehicle_functions
-  5.46%    4.297      1 - Template:RU/ACL_functions
-  4.05%    3.191      1 - Template:RU/Water_functions
-  3.54%    2.789      1 - Template:RU/Resource_functions
-  3.37%    2.655      1 - Template:RU/Weapon_functions
+100.00%  121.557      1 -total
+ 22.37%   27.197     25 Template:New_items
+ 19.31%   23.469     36 Template:Current_Version
+ 12.47%   15.154      1 Template:RU/Utility_functions
+  9.56%   11.618      9 Template:RU/New_items
+  7.94%    9.650      1 Template:RU/Vehicle_functions
+  4.72%    5.736      1 Template:RU/Water_functions
+  3.21%    3.905      1 Template:RU/Ped_functions
+  3.20%    3.886      1 Template:RU/Player_functions
+  2.88%    3.502      1 Template:RU/ACL_functions
 -->
-
-<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:3553-0!*!0!!en!*!* and timestamp 20190629062924 and revision id 58804
+</div>
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:3553-0!canonical and timestamp 20191016142325 and revision id 58804
  -->
 </div><div class="printfooter">
 Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=RU/Server_Scripting_Functions&amp;oldid=58804">https://wiki.multitheftauto.com/index.php?title=RU/Server_Scripting_Functions&amp;oldid=58804</a>"</div>
-					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<!-- end content -->
-										<div class="visualClear"></div>
-				</div>
-			</div>
-		</div>
-		<div id="column-one">
-			<h2>Navigation menu</h2>
-					<div id="p-cactions" class="portlet" role="navigation">
-			<h3>Views</h3>
-
-			<div class="pBody">
-				<ul>
-				<li id="ca-nstab-main" class="selected"><a href="Server_Scripting_Functions.html" title="View the content page [c]" accesskey="c">Page</a></li>
-				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:RU/Server_Scripting_Functions&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
-				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=RU/Server_Scripting_Functions&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
-				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=RU/Server_Scripting_Functions&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
-				</ul>
-							</div>
-		</div>
-				<div class="portlet" id="p-personal" role="navigation">
-				<h3>Personal tools</h3>
-
-				<div class="pBody">
-					<ul>
-													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=RU%2FServer+Scripting+Functions" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
-													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=RU%2FServer+Scripting+Functions" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
-											</ul>
-				</div>
-			</div>
-			<div class="portlet" id="p-logo" role="banner">
-				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
-			</div>
-				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
-		<h3>Navigation</h3>
-		<div class='pBody'>
-							<ul>
-											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
-											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
-											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
-											<li id="n-randompage"><a href="https://wiki.multitheftauto.com/wiki/OnDgsDestroy" title="Load a random page [x]" accesskey="x">Random page</a></li>
-									</ul>
-					</div>
-		</div>
-		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
-		<h3>reference</h3>
-		<div class='pBody'>
-							<ul>
-											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
-											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
-											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
-											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
-											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
-											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
-											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
-											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
-											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
-									</ul>
-					</div>
-		</div>
-			<div id="p-search" class="portlet" role="search">
-			<h3><label for="searchInput">Search</label></h3>
-
-			<div id="searchBody" class="pBody">
-				<form action="http://wiki.localhost/index.php" id="searchform">
-					<input type='hidden' name="title" value="Special:Search"/>
-					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
-					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
-						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
-				</form>
-
-							</div>
-		</div>
-			<div class="portlet" id="p-tb" role="navigation">
-			<h3>Tools</h3>
-
-			<div class="pBody">
-				<ul>
-											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/RU/Server_Scripting_Functions.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
-											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/RU/Server_Scripting_Functions.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
-											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
-											<li id="t-print"><a href="http://wiki.localhost/index.php?title=RU/Server_Scripting_Functions&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
-											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=RU/Server_Scripting_Functions&amp;oldid=58804" title="Permanent link to this revision of the page">Permanent link</a></li>
-											<li id="t-info"><a href="http://wiki.localhost/index.php?title=RU/Server_Scripting_Functions&amp;action=info" title="More information about this page">Page information</a></li>
-									</ul>
-							</div>
-		</div>
-				<div id="p-lang" class="portlet" role="navigation">
-				<h3>In other languages</h3>
-
-				<div class="pBody">
-					<ul>
-													<li class="interlanguage-link interwiki-ar"><a href="http://wiki.multitheftauto.com/index.php?title=AR/Server_Scripting_Functions" title="Server Scripting Functions – العربية" lang="ar" hreflang="ar">العربية</a></li>
-													<li class="interlanguage-link interwiki-de"><a href="http://wiki.multitheftauto.com/index.php?title=DE/Server-Seitige_Scripting_Funktionen" title="Server-Seitige Scripting Funktionen – Deutsch" lang="de" hreflang="de">Deutsch</a></li>
-													<li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=Server_Scripting_Functions" title="Server Scripting Functions – English" lang="en" hreflang="en">English</a></li>
-													<li class="interlanguage-link interwiki-es"><a href="http://wiki.multitheftauto.com/index.php?title=ES/Funciones_del_Server" title="Funciones del Server – español" lang="es" hreflang="es">Español</a></li>
-													<li class="interlanguage-link interwiki-pl"><a href="http://wiki.multitheftauto.com/index.php?title=PL/Server_Scripting_Functions" title="Server Scripting Functions – polski" lang="pl" hreflang="pl">Polski</a></li>
-													<li class="interlanguage-link interwiki-pt-br"><a href="http://wiki.multitheftauto.com/index.php?title=PT-BR/Fun%C3%A7%C3%B5es_de_Scripting_do_Servidor" title="Funções de Scripting do Servidor – português do Brasil" lang="pt-BR" hreflang="pt-BR">Português do Brasil</a></li>
-													<li class="interlanguage-link interwiki-tr"><a href="http://wiki.multitheftauto.com/index.php?title=TR/Server_Scripting_Functions" title="Server Scripting Functions – Türkçe" lang="tr" hreflang="tr">Türkçe</a></li>
-											</ul>
-
-									</div>
-			</div>
-				</div><!-- end of the left (by default at least) column -->
-		<div class="visualClear"></div>
-					<div id="footer" role="contentinfo">
-						<div id="f-copyrightico">
-									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="../../resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
-							</div>
-					<div id="f-poweredbyico">
-									<a href="http://www.mediawiki.org/"><img src="../../resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
-							</div>
-					<ul id="f-list">
-									<li id="lastmod"> This page was last modified on 2 September 2018, at 00:56.</li>
-									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
-									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
-									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
-									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
-							</ul>
-		</div>
-		</div>
-		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
-<script src="../../extensions/_MTAThemeExtensions/main11b9.js?303"></script><script src="../../extensions/_MTAThemeExtensions/topmenu11b9.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":22});});</script></body></html>
+<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div><!-- end content --><div class="visualClear"></div></div></div></div><div id="column-one" lang="en" dir="ltr"><h2>Navigation menu</h2><div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label"><h3 id="p-cactions-label" lang="en" dir="ltr">Views</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="ca-nstab-main" class="selected"><a href="Server_Scripting_Functions.html" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:RU/Server_Scripting_Functions&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=RU/Server_Scripting_Functions&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="http://wiki.localhost/index.php?title=RU/Server_Scripting_Functions&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></div></div><div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label"><h3 id="p-personal-label" lang="en" dir="ltr">Personal tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=RU%2FServer+Scripting+Functions" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=RU%2FServer+Scripting+Functions" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li></ul></div></div><div class="portlet" id="p-logo" role="banner"><a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a></div><div role="navigation" class="portlet generated-sidebar" id="p-navigation" aria-labelledby="p-navigation-label"><h3 id="p-navigation-label" lang="en" dir="ltr">Navigation</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="n-Home"><a href="../Main_Page.html">Home</a></li><li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li><li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="https://wiki.multitheftauto.com/wiki/JavaSDK" title="Load a random page [x]" accesskey="x">Random page</a></li></ul></div></div><div role="navigation" class="portlet generated-sidebar" id="p-reference" aria-labelledby="p-reference-label"><h3 id="p-reference-label" lang="en" dir="ltr">reference</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li><li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li><li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li><li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li><li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li><li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li><li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li><li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li><li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li></ul></div></div><div role="search" class="portlet" id="p-search"><h3 id="p-search-label" lang="en" dir="ltr"><label for="searchInput">Search</label></h3><div class="pBody" id="searchBody"><form action="http://wiki.localhost/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"/><input type="search" name="search" placeholder="Search Multi Theft Auto: Wiki" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160; <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/></form></div></div><div role="navigation" class="portlet" id="p-tb" aria-labelledby="p-tb-label"><h3 id="p-tb-label" lang="en" dir="ltr">Tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/RU/Server_Scripting_Functions.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/RU/Server_Scripting_Functions.html" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="http://wiki.localhost/index.php?title=RU/Server_Scripting_Functions&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="http://wiki.localhost/index.php?title=RU/Server_Scripting_Functions&amp;oldid=58804" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="http://wiki.localhost/index.php?title=RU/Server_Scripting_Functions&amp;action=info" title="More information about this page">Page information</a></li></ul></div></div><div role="navigation" class="portlet" id="p-lang" aria-labelledby="p-lang-label"><h3 id="p-lang-label" lang="en" dir="ltr">In other languages</h3><div class="pBody"><ul lang="en" dir="ltr"><li class="interlanguage-link interwiki-ar"><a href="http://wiki.multitheftauto.com/index.php?title=AR/Server_Scripting_Functions" title="Server Scripting Functions – العربية" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-de"><a href="http://wiki.multitheftauto.com/index.php?title=DE/Server-Seitige_Scripting_Funktionen" title="Server-Seitige Scripting Funktionen – Deutsch" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=Server_Scripting_Functions" title="Server Scripting Functions – English" lang="en" hreflang="en" class="interlanguage-link-target">English</a></li><li class="interlanguage-link interwiki-es"><a href="http://wiki.multitheftauto.com/index.php?title=ES/Funciones_del_Server" title="Funciones del Server – español" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-pl"><a href="http://wiki.multitheftauto.com/index.php?title=PL/Server_Scripting_Functions" title="Server Scripting Functions – polski" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt-br"><a href="http://wiki.multitheftauto.com/index.php?title=PT-BR/Fun%C3%A7%C3%B5es_de_Scripting_do_Servidor" title="Funções de Scripting do Servidor – português do Brasil" lang="pt-BR" hreflang="pt-BR" class="interlanguage-link-target">Português do Brasil</a></li><li class="interlanguage-link interwiki-tr"><a href="http://wiki.multitheftauto.com/index.php?title=TR/Server_Scripting_Functions" title="Server Scripting Functions – Türkçe" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li></ul></div></div></div><!-- end of the left (by default at least) column --><div class="visualClear"></div><div id="footer" role="contentinfo" lang="en" dir="ltr"><div id="f-copyrightico" class="footer-icons"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="../../resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a></div><div id="f-poweredbyico" class="footer-icons"><a href="http://www.mediawiki.org/"><img src="../../resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a></div><ul id="f-list"><li id="lastmod"> This page was last edited on 2 September 2018, at 00:56.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li><li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li><li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li><li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li></ul></div></div><script src="../../extensions/_MTAThemeExtensions/main11b9.js?303"></script><script src="../../extensions/_MTAThemeExtensions/topmenu11b9.js?303"></script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.232","walltime":"0.259","ppvisitednodes":{"value":1287,"limit":1000000},"ppgeneratednodes":{"value":1770,"limit":1000000},"postexpandincludesize":{"value":38261,"limit":2097152},"templateargumentsize":{"value":2904,"limit":2097152},"expansiondepth":{"value":10,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":9,"limit":5000000},"timingprofile":["100.00%  121.557      1 -total"," 22.37%   27.197     25 Template:New_items"," 19.31%   23.469     36 Template:Current_Version"," 12.47%   15.154      1 Template:RU/Utility_functions","  9.56%   11.618      9 Template:RU/New_items","  7.94%    9.650      1 Template:RU/Vehicle_functions","  4.72%    5.736      1 Template:RU/Water_functions","  3.21%    3.905      1 Template:RU/Ped_functions","  3.20%    3.886      1 Template:RU/Player_functions","  2.88%    3.502      1 Template:RU/ACL_functions"]},"cachereport":{"timestamp":"20191016142325","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":300});});</script></body></html>

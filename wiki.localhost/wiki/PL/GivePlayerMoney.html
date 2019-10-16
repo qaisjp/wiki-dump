@@ -1,94 +1,77 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+<html class="client-nojs" lang="en" dir="ltr">
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <meta charset="UTF-8"/>
 <title>PL/givePlayerMoney - Multi Theft Auto: Wiki</title>
 <script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
-<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"PL/givePlayerMoney","wgTitle":"PL/givePlayerMoney","wgCurRevisionId":48249,"wgRevisionId":48249,"wgArticleId":7410,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Server functions","Client functions"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"PL/givePlayerMoney","wgRelevantArticleId":7410,"wgRequestId":"b56fb4723b1d4b09eb433c84","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"PL/GivePlayerMoney","wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false},"wgInternalRedirectTargetUrl":"/wiki/PL/givePlayerMoney"});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
-mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
-
-});mw.loader.load(["mediawiki.action.view.redirect","mediawiki.page.startup"]);});</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"PL/givePlayerMoney","wgTitle":"PL/givePlayerMoney","wgCurRevisionId":48249,"wgRevisionId":48249,"wgArticleId":7410,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Server functions","Client functions"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"PL/givePlayerMoney","wgRelevantArticleId":7410,"wgRequestId":"0edf5a6cf8d24a209ab36cc6","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"PL/GivePlayerMoney","wgWikiEditorEnabledModules":[],"wgInternalRedirectTargetUrl":"/wiki/PL/givePlayerMoney"});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","mediawiki.skinning.content.externallinks":"ready","skins.monobook.styles":"ready"});mw.loader.implement("user.tokens@18hksfp",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.view.redirect","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
 <link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
-<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
 <script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
-<meta name="generator" content="MediaWiki 1.27.5"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/resources/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/resources/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.31.3"/>
 <link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
 <link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
 <link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
-<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="license" href="http://www.gnu.org/copyleft/fdl.html"/>
 <link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
 <link rel="canonical" href="https://wiki.multitheftauto.com/wiki/PL/givePlayerMoney"/>
 <meta name='headingclass' content='' data-class='both' data-subcaption='Funkcja obustronna'>
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=MonoBook&amp;sync=1"></script><![endif]-->
 </head>
-<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-PL_givePlayerMoney rootpage-PL_givePlayerMoney skin-monobook action-view">
-<div id="globalWrapper">
-		<div id="column-content">
-			<div id="content" class="mw-body" role="main">
-				<a id="top"></a>
-				
-				<div class="mw-indicators">
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-PL_givePlayerMoney rootpage-PL_givePlayerMoney skin-monobook action-view"><div id="globalWrapper"><div id="column-content"><div id="content" class="mw-body" role="main"><a id="top"></a><div class="mw-indicators mw-body-content">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">PL/givePlayerMoney</h1>
-				
-				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">From Multi Theft Auto: Wiki</div>
-					<div id="contentSub"><span class="mw-redirectedfrom">(Redirected from <a href="http://wiki.localhost/index.php?title=PL/GivePlayerMoney&amp;redirect=no" title="PL/GivePlayerMoney">PL/GivePlayerMoney</a>)</span></div>
-										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
-
-					<!-- start content -->
-					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><!--HC-->
+<h1 id="firstHeading" class="firstHeading" lang="en">PL/givePlayerMoney</h1><div id="bodyContent" class="mw-body-content"><div id="siteSub">From Multi Theft Auto: Wiki</div><div id="contentSub" lang="en" dir="ltr"><span class="mw-redirectedfrom">(Redirected from <a href="http://wiki.localhost/index.php?title=PL/GivePlayerMoney&amp;redirect=no" class="mw-redirect" title="PL/GivePlayerMoney">PL/GivePlayerMoney</a>)</span></div><div id="jump-to-nav" class="mw-jump">Jump to:<a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div><!-- start content --><div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><!--HC-->
 Dzięki tej funkcji możemy <u>dodać</u> graczowi dowolną ilość pieniędzy, bez uprzedniego sprawdzania stanu jego konta. Do <u>zmieniania</u> ilości pieniędzy, korzysta się z funkcji <a href="../SetPlayerMoney.html" title="SetPlayerMoney">setPlayerMoney</a>.<br />
 </p>
 <table cellspacing="0" style="padding: 5px; width: 80%; margin: 2px auto 2px auto; border: 1px solid #BFBFFF; background: #E0E0FF; border-left: 10px solid #BFBFFF;">
-<tr>
-<td style="width: 32px; vertical-align:top; display: none;" rowspan="2"> [[{{{image}}}|link=]]
+<tbody><tr>
+<td style="width: 32px; vertical-align:top; display: none;" rowspan="2">[[{{{image}}}|link=]]
 </td>
-<td style=""> <b>Notatka:</b> Używanie tej funkcji po stronie klienta (niepolecane) nie wpłynie na stan konta gracza po stronie serwera.
+<td style=""><b>Notatka:</b> Używanie tej funkcji po stronie klienta (niepolecane) nie wpłynie na stan konta gracza po stronie serwera.
 </td></tr>
 <tr>
 <td rowspan="1" style="padding-left: 10px;">
-</td></tr></table>
-<h2><span class="mw-headline" id="Sk.C5.82adnia_.28syntax.29">Składnia (syntax)</span></h2>
-<!-- BEGIN SECTION |1|server|Serwer|--><div class='serverHeader' onclick='expandSection(1);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander1'>Click to collapse [-]</div>Serwer</div><div style='display:;' class='serverContent' id='section1'>
+</td></tr></tbody></table>
+<h2><span id="Składnia_(syntax)"></span><span class="mw-headline" id="Sk.C5.82adnia_.28syntax.29">Składnia (syntax)</span></h2>
+<!-- BEGIN SECTION |1|server|Serwer|--><div class="serverHeader" onclick="expandSection(1);" style="cursor:pointer;"><div style="float:right;font-size: 0.75em;" id="sectionExpander1">Click to collapse [-]</div>Serwer</div><div style="display:;" class="serverContent" id="section1">
 <pre class="prettyprint lang-lua">bool givePlayerMoney ( player thePlayer, int amount )</pre> 
 <p><u><b>OOP Syntax</b></u> <small><a href="../OOP_Introduction.html" title="OOP Introduction">Help! I don't understand this!</a></small>
 </p>
-<dl><dd> <b>Method</b>: <i><a href="../Player.html" title="Player" class="mw-redirect">player</a>:giveMoney(...)</i></dd>
-<dd> <b>Variable</b>: <i>.money</i></dd></dl>
+<dl><dd><b>Method</b>: <i><a href="../Player.html" class="mw-redirect" title="Player">player</a>:giveMoney(...)</i></dd>
+<dd><b>Variable</b>: <i>.money</i></dd></dl>
 <h3><span class="mw-headline" id="Wymagane_argumenty">Wymagane argumenty</span></h3>
-<ul><li><b>thePlayer:</b> element reprezentujący <a href="../Player.html" title="Player" class="mw-redirect">gracza</a>, który otrzyma pieniądze.</li>
+<ul><li><b>thePlayer:</b> element reprezentujący <a href="../Player.html" class="mw-redirect" title="Player">gracza</a>, który otrzyma pieniądze.</li>
 <li><b>amount:</b> dodatnia liczba całkowita, określająca ile pieniędzy otrzyma gracz.</li></ul>
 </div><!-- END SECTION |1|-->
-<!-- BEGIN SECTION |2|client|Klient|--><div class='clientHeader' onclick='expandSection(2);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander2'>Click to collapse [-]</div>Klient</div><div style='display:;' class='clientContent' id='section2'>
+<!-- BEGIN SECTION |2|client|Klient|--><div class="clientHeader" onclick="expandSection(2);" style="cursor:pointer;"><div style="float:right;font-size: 0.75em;" id="sectionExpander2">Click to collapse [-]</div>Klient</div><div style="display:;" class="clientContent" id="section2">
 <pre class="prettyprint lang-lua">bool givePlayerMoney ( int amount )</pre> 
 <p><u><b>OOP Syntax</b></u> <small><a href="../OOP_Introduction.html" title="OOP Introduction">Help! I don't understand this!</a></small>
 </p>
-<dl><dd> <b>Method</b>: <i><a href="../Player.html" title="Player" class="mw-redirect">Player</a>.giveMoney(...)</i></dd></dl>
+<dl><dd><b>Method</b>: <i><a href="../Player.html" class="mw-redirect" title="Player">Player</a>.giveMoney(...)</i></dd></dl>
 <h3><span class="mw-headline" id="Wymagane_argumenty">Wymagane argumenty</span></h3>
 <ul><li><b>amount:</b> dodatnia liczba całkowita, określająca ile pieniędzy otrzyma gracz.</li></ul>
 </div><!-- END SECTION |2|-->
 <h2><span class="mw-headline" id="Wynik">Wynik</span></h2>
 <p>Zwraca <i>true</i>, jeżeli pieniądze zostały pomyślnie dodane. Zwraca <i>false</i>, jeżeli któryś z argumentów jest nieprawidłowy.
 </p>
-<h2><span class="mw-headline" id="Przyk.C5.82ady">Przykłady</span></h2>
-<!-- BEGIN SECTION |3|server|Przykład nr 1: Serwer oraz klient|--><div class='serverHeader' onclick='expandSection(3);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander3'>Click to collapse [-]</div>Przykład nr 1: Serwer oraz klient</div><div style='display:;' class='serverContent' id='section3'>
+<h2><span id="Przykłady"></span><span class="mw-headline" id="Przyk.C5.82ady">Przykłady</span></h2>
+<!-- BEGIN SECTION |3|server|Przykład nr 1: Serwer oraz klient|--><div class="serverHeader" onclick="expandSection(3);" style="cursor:pointer;"><div style="float:right;font-size: 0.75em;" id="sectionExpander3">Click to collapse [-]</div>Przykład nr 1: Serwer oraz klient</div><div style="display:;" class="serverContent" id="section3">
 <p>Ten przykład tworzy komendę "pieniadze", dzięki której gracz może dać sobie dowolną ilość pieniędzy korzystając z niej, np. /pieniadze 100
 </p>
-<pre class="prettyprint lang-lua">
-function dajMiPieniadze ( thePlayer, command, amount ) -- tworzymy funkcję dającą pieniądze...
+<pre class="prettyprint lang-lua">function dajMiPieniadze ( thePlayer, command, amount ) -- tworzymy funkcję dającą pieniądze...
    givePlayerMoney ( thePlayer, amount ) -- ...dajemy graczowi tyle pieniądzy, ile sobie zażyczył...
 end
 addCommandHandler ( "pieniadze", dajMiPieniadze ) -- ...ale oczywiście nie zapominamy podłączyć funkcji pod commandHandler
 </pre>
 </div><!-- END SECTION |3|-->
-<!-- BEGIN SECTION |4|server|Przykład nr 2: Serwer|--><div class='serverHeader' onclick='expandSection(4);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander4'>Click to collapse [-]</div>Przykład nr 2: Serwer</div><div style='display:;' class='serverContent' id='section4'>
+<!-- BEGIN SECTION |4|server|Przykład nr 2: Serwer|--><div class="serverHeader" onclick="expandSection(4);" style="cursor:pointer;"><div style="float:right;font-size: 0.75em;" id="sectionExpander4">Click to collapse [-]</div>Przykład nr 2: Serwer</div><div style="display:;" class="serverContent" id="section4">
 <p>Ten przykład daje graczowi 1000$ po zabiciu innego gracza.
 </p>
-<pre class="prettyprint lang-lua">
-function nagrodaZaZabicie ( amunicja, zabojca )
+<pre class="prettyprint lang-lua">function nagrodaZaZabicie ( amunicja, zabojca )
    -- jeżeli znaleziono zabójcę i nie jest ona ofiarą...
    if ( zabojca ) and ( zabojca ~= source ) then
       givePlayerMoney ( zabojca, 1000 ) -- ...to dajemy mu pieniądze...
@@ -97,11 +80,10 @@ end
 addEventHandler ( "onPlayerWasted", getRootElement(), nagrodaZaZabicie ) -- ...i nie zapominamy podłączyć funkcji pod eventHandler
 </pre>
 </div><!-- END SECTION |4|-->
-<!-- BEGIN SECTION |5|server|Przykład nr 3: Serwer|--><div class='serverHeader' onclick='expandSection(5);' style='cursor:pointer;'><div style='float:right;font-size: 0.75em;' id='sectionExpander5'>Click to collapse [-]</div>Przykład nr 3: Serwer</div><div style='display:;' class='serverContent' id='section5'>
+<!-- BEGIN SECTION |5|server|Przykład nr 3: Serwer|--><div class="serverHeader" onclick="expandSection(5);" style="cursor:pointer;"><div style="float:right;font-size: 0.75em;" id="sectionExpander5">Click to collapse [-]</div>Przykład nr 3: Serwer</div><div style="display:;" class="serverContent" id="section5">
 <p>Ten przykład tworzy pickup o symbolu dolara, który daje graczowi 100$ po wejściu w niego.
 </p>
-<pre class="prettyprint lang-lua">
-local pickup = createPickup ( 1896.4000244141, -1950.9000244141, 13, 3, 1274, 10000 ) -- tworzymy pickup...
+<pre class="prettyprint lang-lua">local pickup = createPickup ( 1896.4000244141, -1950.9000244141, 13, 3, 1274, 10000 ) -- tworzymy pickup...
 function poWejsciuWPickup ( gracz )
    givePlayerMoney ( gracz, 100 ) -- ...oraz funkcję dającą graczowi pieniądze...
 end
@@ -111,197 +93,90 @@ addEventHandler ( "onPickupUse", pickup, poWejsciuWPickup ) -- ...a następnie p
 <i>Autor: <a href="../User_GabWas.html" title="User:GabWas">GabWas</a>; utworzono: 22:30, 20 Lip 2016 (CEST)</i>
 <br /><i>Author: <a href="../User_GabWas.html" title="User:GabWas">GabWas</a>; created: 20:30, 20 Jul 2016 (UTC)</i>
 </p>
-<h2><span class="mw-headline" id="Zobacz_tak.C5.BCe">Zobacz także</span></h2>
-<ul><li> <a href="../ForcePlayerMap.html" title="ForcePlayerMap">forcePlayerMap</a></li>
-<li> <a href="../GetAlivePlayers.html" title="GetAlivePlayers">getAlivePlayers</a></li>
-<li> <a href="../GetDeadPlayers.html" title="GetDeadPlayers">getDeadPlayers</a></li>
-<li> <a href="../GetPlayerACInfo.html" title="GetPlayerACInfo">getPlayerACInfo</a></li>
-<li> <a href="../GetPlayerAnnounceValue.html" title="GetPlayerAnnounceValue">getPlayerAnnounceValue</a></li>
-<li> <a href="../GetPlayerBlurLevel.html" title="GetPlayerBlurLevel">getPlayerBlurLevel</a></li>
-<li> <a href="../GetPlayerCount.html" title="GetPlayerCount">getPlayerCount</a></li>
-<li> <a href="../GetPlayerFromName.html" title="GetPlayerFromName">getPlayerFromName</a></li>
-<li> <a href="../GetPlayerIdleTime.html" title="GetPlayerIdleTime">getPlayerIdleTime</a></li>
-<li> <a href="../GetPlayerIP.html" title="GetPlayerIP">getPlayerIP</a></li>
-<li> <a href="../GetPlayerMoney.html" title="GetPlayerMoney">getPlayerMoney</a></li>
-<li> <a href="../GetPlayerName.html" title="GetPlayerName">getPlayerName</a></li>
-<li> <a href="../GetPlayerNametagColor.html" title="GetPlayerNametagColor">getPlayerNametagColor</a></li>
-<li> <a href="../GetPlayerNametagText.html" title="GetPlayerNametagText">getPlayerNametagText</a></li>
-<li> <a href="../GetPlayerPing.html" title="GetPlayerPing">getPlayerPing</a></li>
-<li> <a href="../GetPlayerSerial.html" title="GetPlayerSerial">getPlayerSerial</a></li>
-<li> <a href="../GetPlayerTeam.html" title="GetPlayerTeam">getPlayerTeam</a></li>
-<li> <a href="../GetPlayerVersion.html" title="GetPlayerVersion">getPlayerVersion</a></li>
-<li> <a href="../GetPlayerWantedLevel.html" title="GetPlayerWantedLevel">getPlayerWantedLevel</a></li>
-<li> <a href="../GetRandomPlayer.html" title="GetRandomPlayer">getRandomPlayer</a></li>
-<li> <a href="../GivePlayerMoney.html" title="GivePlayerMoney">givePlayerMoney</a></li>
-<li> <a href="../IsPlayerMapForced.html" title="IsPlayerMapForced">isPlayerMapForced</a></li>
-<li> <a href="../IsPlayerMuted.html" title="IsPlayerMuted">isPlayerMuted</a></li>
-<li> <a href="../IsPlayerNametagShowing.html" title="IsPlayerNametagShowing">isPlayerNametagShowing</a></li>
-<li> <a href="../IsVoiceEnabled.html" title="IsVoiceEnabled">isVoiceEnabled</a></li>
-<li> <a href="../RedirectPlayer.html" title="RedirectPlayer">redirectPlayer</a></li></ul>
+<h2><span id="Zobacz_także"></span><span class="mw-headline" id="Zobacz_tak.C5.BCe">Zobacz także</span></h2>
+<ul><li><a href="../ForcePlayerMap.html" title="ForcePlayerMap">forcePlayerMap</a></li>
+<li><a href="../GetAlivePlayers.html" title="GetAlivePlayers">getAlivePlayers</a></li>
+<li><a href="../GetDeadPlayers.html" title="GetDeadPlayers">getDeadPlayers</a></li>
+<li><a href="../GetPlayerACInfo.html" title="GetPlayerACInfo">getPlayerACInfo</a></li>
+<li><a href="../GetPlayerAnnounceValue.html" title="GetPlayerAnnounceValue">getPlayerAnnounceValue</a></li>
+<li><a href="../GetPlayerBlurLevel.html" title="GetPlayerBlurLevel">getPlayerBlurLevel</a></li>
+<li><a href="../GetPlayerCount.html" title="GetPlayerCount">getPlayerCount</a></li>
+<li><a href="../GetPlayerFromName.html" title="GetPlayerFromName">getPlayerFromName</a></li>
+<li><a href="../GetPlayerIdleTime.html" title="GetPlayerIdleTime">getPlayerIdleTime</a></li>
+<li><a href="../GetPlayerIP.html" title="GetPlayerIP">getPlayerIP</a></li>
+<li><a href="../GetPlayerMoney.html" title="GetPlayerMoney">getPlayerMoney</a></li>
+<li><a href="../GetPlayerName.html" title="GetPlayerName">getPlayerName</a></li>
+<li><a href="../GetPlayerNametagColor.html" title="GetPlayerNametagColor">getPlayerNametagColor</a></li>
+<li><a href="../GetPlayerNametagText.html" title="GetPlayerNametagText">getPlayerNametagText</a></li>
+<li><a href="../GetPlayerPing.html" title="GetPlayerPing">getPlayerPing</a></li></ul>
+<div style="font-weight: bold;background:black;color:white;padding:2px; padding-left:8px;">FROM VERSION 1.5.7 <a rel="nofollow" class="external text" href="https://buildinfo.mtasa.com/?Author=&amp;Branch=&amp;Revision=19626"><span style="color: #FFFFFF;">r19626</span></a> ONWARDS</div><div style="border: 2px solid black;padding: 3px;">
+<ul><li><a href="http://wiki.localhost/index.php?title=GetPlayerScriptDebugLevel&amp;action=edit&amp;redlink=1" class="new" title="GetPlayerScriptDebugLevel (page does not exist)">getPlayerScriptDebugLevel</a></li></ul>
+ </div>
+<ul><li><a href="../GetPlayerSerial.html" title="GetPlayerSerial">getPlayerSerial</a></li>
+<li><a href="../GetPlayerTeam.html" title="GetPlayerTeam">getPlayerTeam</a></li>
+<li><a href="../GetPlayerVersion.html" title="GetPlayerVersion">getPlayerVersion</a></li>
+<li><a href="../GetPlayerWantedLevel.html" title="GetPlayerWantedLevel">getPlayerWantedLevel</a></li>
+<li><a href="../GetRandomPlayer.html" title="GetRandomPlayer">getRandomPlayer</a></li>
+<li><a href="../GivePlayerMoney.html" title="GivePlayerMoney">givePlayerMoney</a></li>
+<li><a href="../IsPlayerMapForced.html" title="IsPlayerMapForced">isPlayerMapForced</a></li>
+<li><a href="../IsPlayerMuted.html" title="IsPlayerMuted">isPlayerMuted</a></li>
+<li><a href="../IsPlayerNametagShowing.html" title="IsPlayerNametagShowing">isPlayerNametagShowing</a></li>
+<li><a href="../IsVoiceEnabled.html" title="IsVoiceEnabled">isVoiceEnabled</a></li>
+<li><a href="../RedirectPlayer.html" title="RedirectPlayer">redirectPlayer</a></li></ul>
 <ul><li><a href="../ResendPlayerACInfo.html" title="ResendPlayerACInfo">resendPlayerACInfo</a></li>
-<li> <a href="../ResendPlayerModInfo.html" title="ResendPlayerModInfo">resendPlayerModInfo</a></li>
-<li> <a href="../SetPlayerAnnounceValue.html" title="SetPlayerAnnounceValue">setPlayerAnnounceValue</a></li>
-<li> <a href="../SetPlayerBlurLevel.html" title="SetPlayerBlurLevel">setPlayerBlurLevel</a></li>
-<li> <a href="../SetPlayerHudComponentVisible.html" title="SetPlayerHudComponentVisible">setPlayerHudComponentVisible</a></li>
-<li> <a href="../SetPlayerMoney.html" title="SetPlayerMoney">setPlayerMoney</a></li>
-<li> <a href="../SetPlayerMuted.html" title="SetPlayerMuted">setPlayerMuted</a></li>
-<li> <a href="../SetPlayerName.html" title="SetPlayerName">setPlayerName</a></li>
-<li> <a href="../SetPlayerNametagColor.html" title="SetPlayerNametagColor">setPlayerNametagColor</a></li>
-<li> <a href="../SetPlayerNametagShowing.html" title="SetPlayerNametagShowing">setPlayerNametagShowing</a></li>
-<li> <a href="../SetPlayerNametagText.html" title="SetPlayerNametagText">setPlayerNametagText</a></li>
-<li> <a href="../SetPlayerTeam.html" title="SetPlayerTeam">setPlayerTeam</a></li>
-<li> <a href="../SetPlayerVoiceBroadcastTo.html" title="SetPlayerVoiceBroadcastTo">setPlayerVoiceBroadcastTo</a></li>
-<li> <a href="../SetPlayerVoiceIgnoreFrom.html" title="SetPlayerVoiceIgnoreFrom">setPlayerVoiceIgnoreFrom</a></li>
-<li> <a href="../SetPlayerWantedLevel.html" title="SetPlayerWantedLevel">setPlayerWantedLevel</a></li>
-<li> <a href="../SpawnPlayer.html" title="SpawnPlayer">spawnPlayer</a></li>
-<li> <a href="../TakePlayerMoney.html" title="TakePlayerMoney">takePlayerMoney</a></li>
-<li> <a href="../TakePlayerScreenShot.html" title="TakePlayerScreenShot">takePlayerScreenShot</a></li></ul>
+<li><a href="../ResendPlayerModInfo.html" title="ResendPlayerModInfo">resendPlayerModInfo</a></li>
+<li><a href="../SetPlayerAnnounceValue.html" title="SetPlayerAnnounceValue">setPlayerAnnounceValue</a></li>
+<li><a href="../SetPlayerBlurLevel.html" title="SetPlayerBlurLevel">setPlayerBlurLevel</a></li>
+<li><a href="../SetPlayerHudComponentVisible.html" title="SetPlayerHudComponentVisible">setPlayerHudComponentVisible</a></li>
+<li><a href="../SetPlayerMoney.html" title="SetPlayerMoney">setPlayerMoney</a></li>
+<li><a href="../SetPlayerMuted.html" title="SetPlayerMuted">setPlayerMuted</a></li>
+<li><a href="../SetPlayerName.html" title="SetPlayerName">setPlayerName</a></li>
+<li><a href="../SetPlayerNametagColor.html" title="SetPlayerNametagColor">setPlayerNametagColor</a></li>
+<li><a href="../SetPlayerNametagShowing.html" title="SetPlayerNametagShowing">setPlayerNametagShowing</a></li>
+<li><a href="../SetPlayerNametagText.html" title="SetPlayerNametagText">setPlayerNametagText</a></li></ul>
+<div style="font-weight: bold;background:black;color:white;padding:2px; padding-left:8px;">FROM VERSION 1.5.7 <a rel="nofollow" class="external text" href="https://buildinfo.mtasa.com/?Author=&amp;Branch=&amp;Revision=19626"><span style="color: #FFFFFF;">r19626</span></a> ONWARDS</div><div style="border: 2px solid black;padding: 3px;">
+<ul><li><a href="http://wiki.localhost/index.php?title=SetPlayerScriptDebugLevel&amp;action=edit&amp;redlink=1" class="new" title="SetPlayerScriptDebugLevel (page does not exist)">setPlayerScriptDebugLevel</a></li></ul>
+ </div>
+<ul><li><a href="../SetPlayerTeam.html" title="SetPlayerTeam">setPlayerTeam</a></li>
+<li><a href="../SetPlayerVoiceBroadcastTo.html" title="SetPlayerVoiceBroadcastTo">setPlayerVoiceBroadcastTo</a></li>
+<li><a href="../SetPlayerVoiceIgnoreFrom.html" title="SetPlayerVoiceIgnoreFrom">setPlayerVoiceIgnoreFrom</a></li>
+<li><a href="../SetPlayerWantedLevel.html" title="SetPlayerWantedLevel">setPlayerWantedLevel</a></li>
+<li><a href="../SpawnPlayer.html" title="SpawnPlayer">spawnPlayer</a></li>
+<li><a href="../TakePlayerMoney.html" title="TakePlayerMoney">takePlayerMoney</a></li>
+<li><a href="../TakePlayerScreenShot.html" title="TakePlayerScreenShot">takePlayerScreenShot</a></li></ul>
 
 <!-- 
 NewPP limit report
-Cached time: 20190629063220
+Cached time: 20191016142506
 Cache expiry: 86400
 Dynamic content: false
-CPU time usage: 0.015 seconds
-Real time usage: 0.018 seconds
-Preprocessor visited node count: 214/1000000
-Preprocessor generated node count: 965/1000000
-Post‐expand include size: 2723/2097152 bytes
-Template argument size: 511/2097152 bytes
+CPU time usage: 0.033 seconds
+Real time usage: 0.035 seconds
+Preprocessor visited node count: 302/1000000
+Preprocessor generated node count: 1060/1000000
+Post‐expand include size: 5227/2097152 bytes
+Template argument size: 647/2097152 bytes
 Highest expansion depth: 9/40
 Expensive parser function count: 0/100
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 4434/5000000 bytes
 -->
-
-<!-- 
+<!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   11.083      1 - -total
- 24.65%    2.732      1 - Template:Player_functions
- 24.07%    2.668      1 - Template:PL/Note
- 18.85%    2.089      1 - Template:New_items
- 13.50%    1.496      1 - Template:MessageBox
- 12.78%    1.416      2 - Template:OOP
- 10.21%    1.131      1 - Template:Current_Version
-  6.95%    0.770      1 - Template:PL/Shared_function
+100.00%   11.508      1 -total
+ 39.03%    4.492      1 Template:Player_functions
+ 34.08%    3.922      3 Template:New_items
+ 15.25%    1.755      1 Template:PL/Note
+ 13.56%    1.560      3 Template:Current_Version
+ 11.31%    1.302      1 Template:MessageBox
+ 10.12%    1.165      2 Template:OOP
+  6.72%    0.773      2 Template:R
+  3.94%    0.453      1 Template:PL/Shared_function
 -->
-
-<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:7410-0!*!0!!*!*!* and timestamp 20190629063220 and revision id 48249
+</div>
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:7410-0!canonical and timestamp 20191016142506 and revision id 48249
  -->
 </div><div class="printfooter">
 Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=PL/givePlayerMoney&amp;oldid=48249">https://wiki.multitheftauto.com/index.php?title=PL/givePlayerMoney&amp;oldid=48249</a>"</div>
-					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="../Special_Categories.html" title="Special:Categories">Categories</a>: <ul><li><a href="../Category_Server_functions.html" title="Category:Server functions">Server functions</a></li><li><a href="../Category_Client_functions.html" title="Category:Client functions">Client functions</a></li></ul></div></div>					<!-- end content -->
-										<div class="visualClear"></div>
-				</div>
-			</div>
-		</div>
-		<div id="column-one">
-			<h2>Navigation menu</h2>
-					<div id="p-cactions" class="portlet" role="navigation">
-			<h3>Views</h3>
-
-			<div class="pBody">
-				<ul>
-				<li id="ca-nstab-main" class="selected"><a href="givePlayerMoney-2.html" title="View the content page [c]" accesskey="c">Page</a></li>
-				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:PL/givePlayerMoney&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
-				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=PL/givePlayerMoney&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
-				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=PL/givePlayerMoney&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
-				</ul>
-							</div>
-		</div>
-				<div class="portlet" id="p-personal" role="navigation">
-				<h3>Personal tools</h3>
-
-				<div class="pBody">
-					<ul>
-													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=PL%2FgivePlayerMoney" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
-													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=PL%2FgivePlayerMoney" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
-											</ul>
-				</div>
-			</div>
-			<div class="portlet" id="p-logo" role="banner">
-				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
-			</div>
-				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
-		<h3>Navigation</h3>
-		<div class='pBody'>
-							<ul>
-											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
-											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
-											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
-											<li id="n-randompage"><a href="https://wiki.multitheftauto.com/wiki/OnDgsDestroy" title="Load a random page [x]" accesskey="x">Random page</a></li>
-									</ul>
-					</div>
-		</div>
-		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
-		<h3>reference</h3>
-		<div class='pBody'>
-							<ul>
-											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
-											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
-											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
-											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
-											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
-											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
-											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
-											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
-											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
-									</ul>
-					</div>
-		</div>
-			<div id="p-search" class="portlet" role="search">
-			<h3><label for="searchInput">Search</label></h3>
-
-			<div id="searchBody" class="pBody">
-				<form action="http://wiki.localhost/index.php" id="searchform">
-					<input type='hidden' name="title" value="Special:Search"/>
-					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
-					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
-						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
-				</form>
-
-							</div>
-		</div>
-			<div class="portlet" id="p-tb" role="navigation">
-			<h3>Tools</h3>
-
-			<div class="pBody">
-				<ul>
-											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/PL/givePlayerMoney.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
-											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/PL/givePlayerMoney.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
-											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
-											<li id="t-print"><a href="http://wiki.localhost/index.php?title=PL/givePlayerMoney&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
-											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=PL/givePlayerMoney&amp;oldid=48249" title="Permanent link to this revision of the page">Permanent link</a></li>
-											<li id="t-info"><a href="http://wiki.localhost/index.php?title=PL/givePlayerMoney&amp;action=info" title="More information about this page">Page information</a></li>
-									</ul>
-							</div>
-		</div>
-				<div id="p-lang" class="portlet" role="navigation">
-				<h3>In other languages</h3>
-
-				<div class="pBody">
-					<ul>
-													<li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=givePlayerMoney" title="givePlayerMoney – English" lang="en" hreflang="en">English</a></li>
-													<li class="interlanguage-link interwiki-ru"><a href="http://wiki.multitheftauto.com/index.php?title=RU/GivePlayerMoney" title="GivePlayerMoney – русский" lang="ru" hreflang="ru">Русский</a></li>
-											</ul>
-
-									</div>
-			</div>
-				</div><!-- end of the left (by default at least) column -->
-		<div class="visualClear"></div>
-					<div id="footer" role="contentinfo">
-						<div id="f-copyrightico">
-									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="../../resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
-							</div>
-					<div id="f-poweredbyico">
-									<a href="http://www.mediawiki.org/"><img src="../../resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
-							</div>
-					<ul id="f-list">
-									<li id="lastmod"> This page was last modified on 20 July 2016, at 20:30.</li>
-									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
-									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
-									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
-									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
-							</ul>
-		</div>
-		</div>
-		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
-<script src="../../extensions/_MTAThemeExtensions/main11b9.js?303"></script><script src="../../extensions/_MTAThemeExtensions/topmenu11b9.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":48});});</script></body></html>
+<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="../Special_Categories.html" title="Special:Categories">Categories</a>: <ul><li><a href="../Category_Server_functions.html" title="Category:Server functions">Server functions</a></li><li><a href="../Category_Client_functions.html" title="Category:Client functions">Client functions</a></li></ul></div></div><!-- end content --><div class="visualClear"></div></div></div></div><div id="column-one" lang="en" dir="ltr"><h2>Navigation menu</h2><div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label"><h3 id="p-cactions-label" lang="en" dir="ltr">Views</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="ca-nstab-main" class="selected"><a href="givePlayerMoney-2.html" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:PL/givePlayerMoney&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=PL/givePlayerMoney&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="http://wiki.localhost/index.php?title=PL/givePlayerMoney&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></div></div><div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label"><h3 id="p-personal-label" lang="en" dir="ltr">Personal tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=PL%2FgivePlayerMoney" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=PL%2FgivePlayerMoney" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li></ul></div></div><div class="portlet" id="p-logo" role="banner"><a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a></div><div role="navigation" class="portlet generated-sidebar" id="p-navigation" aria-labelledby="p-navigation-label"><h3 id="p-navigation-label" lang="en" dir="ltr">Navigation</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="n-Home"><a href="../Main_Page.html">Home</a></li><li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li><li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="https://wiki.multitheftauto.com/wiki/JavaSDK" title="Load a random page [x]" accesskey="x">Random page</a></li></ul></div></div><div role="navigation" class="portlet generated-sidebar" id="p-reference" aria-labelledby="p-reference-label"><h3 id="p-reference-label" lang="en" dir="ltr">reference</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li><li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li><li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li><li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li><li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li><li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li><li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li><li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li><li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li></ul></div></div><div role="search" class="portlet" id="p-search"><h3 id="p-search-label" lang="en" dir="ltr"><label for="searchInput">Search</label></h3><div class="pBody" id="searchBody"><form action="http://wiki.localhost/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"/><input type="search" name="search" placeholder="Search Multi Theft Auto: Wiki" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160; <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/></form></div></div><div role="navigation" class="portlet" id="p-tb" aria-labelledby="p-tb-label"><h3 id="p-tb-label" lang="en" dir="ltr">Tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/PL/givePlayerMoney.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/PL/givePlayerMoney.html" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="http://wiki.localhost/index.php?title=PL/givePlayerMoney&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="http://wiki.localhost/index.php?title=PL/givePlayerMoney&amp;oldid=48249" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="http://wiki.localhost/index.php?title=PL/givePlayerMoney&amp;action=info" title="More information about this page">Page information</a></li></ul></div></div><div role="navigation" class="portlet" id="p-lang" aria-labelledby="p-lang-label"><h3 id="p-lang-label" lang="en" dir="ltr">In other languages</h3><div class="pBody"><ul lang="en" dir="ltr"><li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=givePlayerMoney" title="givePlayerMoney – English" lang="en" hreflang="en" class="interlanguage-link-target">English</a></li><li class="interlanguage-link interwiki-ru"><a href="http://wiki.multitheftauto.com/index.php?title=RU/GivePlayerMoney" title="GivePlayerMoney – русский" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li></ul></div></div></div><!-- end of the left (by default at least) column --><div class="visualClear"></div><div id="footer" role="contentinfo" lang="en" dir="ltr"><div id="f-copyrightico" class="footer-icons"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="../../resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a></div><div id="f-poweredbyico" class="footer-icons"><a href="http://www.mediawiki.org/"><img src="../../resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a></div><ul id="f-list"><li id="lastmod"> This page was last edited on 20 July 2016, at 20:30.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li><li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li><li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li><li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li></ul></div></div><script src="../../extensions/_MTAThemeExtensions/main11b9.js?303"></script><script src="../../extensions/_MTAThemeExtensions/topmenu11b9.js?303"></script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.033","walltime":"0.035","ppvisitednodes":{"value":302,"limit":1000000},"ppgeneratednodes":{"value":1060,"limit":1000000},"postexpandincludesize":{"value":5227,"limit":2097152},"templateargumentsize":{"value":647,"limit":2097152},"expansiondepth":{"value":9,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":4434,"limit":5000000},"timingprofile":["100.00%   11.508      1 -total"," 39.03%    4.492      1 Template:Player_functions"," 34.08%    3.922      3 Template:New_items"," 15.25%    1.755      1 Template:PL/Note"," 13.56%    1.560      3 Template:Current_Version"," 11.31%    1.302      1 Template:MessageBox"," 10.12%    1.165      2 Template:OOP","  6.72%    0.773      2 Template:R","  3.94%    0.453      1 Template:PL/Shared_function"]},"cachereport":{"timestamp":"20191016142506","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":79});});</script></body></html>

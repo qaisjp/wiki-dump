@@ -1,43 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+<html class="client-nojs" lang="en" dir="ltr">
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <meta charset="UTF-8"/>
 <title>OOP in Lua - Multi Theft Auto: Wiki</title>
 <script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
-<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"OOP_in_Lua","wgTitle":"OOP in Lua","wgCurRevisionId":51954,"wgRevisionId":51954,"wgArticleId":8161,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Tutorials"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"OOP_in_Lua","wgRelevantArticleId":8161,"wgRequestId":"991aefe3673a12529242271c","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
-mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
-
-});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"OOP_in_Lua","wgTitle":"OOP in Lua","wgCurRevisionId":51954,"wgRevisionId":51954,"wgArticleId":8161,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Tutorials"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"OOP_in_Lua","wgRelevantArticleId":8161,"wgRequestId":"532a06bf531f6dc048d996e6","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","mediawiki.skinning.content.externallinks":"ready","skins.monobook.styles":"ready"});mw.loader.implement("user.tokens@18hksfp",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
 <link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
-<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
 <script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
-<meta name="generator" content="MediaWiki 1.27.5"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/resources/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/resources/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.31.3"/>
 <link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
 <link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
 <link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
-<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="license" href="http://www.gnu.org/copyleft/fdl.html"/>
 <link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=MonoBook&amp;sync=1"></script><![endif]-->
 </head>
-<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-OOP_in_Lua rootpage-OOP_in_Lua skin-monobook action-view">
-<div id="globalWrapper">
-		<div id="column-content">
-			<div id="content" class="mw-body" role="main">
-				<a id="top"></a>
-				
-				<div class="mw-indicators">
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-OOP_in_Lua rootpage-OOP_in_Lua skin-monobook action-view"><div id="globalWrapper"><div id="column-content"><div id="content" class="mw-body" role="main"><a id="top"></a><div class="mw-indicators mw-body-content">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">OOP in Lua</h1>
-				
-				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">From Multi Theft Auto: Wiki</div>
-					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
-
-					<!-- start content -->
-					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<h1 id="firstHeading" class="firstHeading" lang="en">OOP in Lua</h1><div id="bodyContent" class="mw-body-content"><div id="siteSub">From Multi Theft Auto: Wiki</div><div id="contentSub" lang="en" dir="ltr"></div><div id="jump-to-nav" class="mw-jump">Jump to:<a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div><!-- start content --><div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Glossary"><span class="tocnumber">1</span> <span class="toctext">Glossary</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Initialising"><span class="tocnumber">2</span> <span class="toctext">Initialising</span></a>
@@ -65,14 +50,13 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <p>This is a scripting tutorial teaches you the basics about how to start using an Object-Oriented developing interface with Lua. Originally created by <a rel="nofollow" class="external text" href="http://forum.mtasa.com/memberlist.php?mode=viewprofile&amp;u=53356">novo</a> @adam.mta. - <a rel="nofollow" class="external text" href="http://forum.mtasa.com/viewtopic.php?f=148&amp;t=84365">Forum topic</a>.
 </p>
 <h2><span class="mw-headline" id="Glossary">Glossary</span></h2>
-<ul><li> environment: either a table or an array containing values.</li>
-<li> self: predefined variable referring to the environment within which we are executing the code.</li></ul>
+<ul><li>environment: either a table or an array containing values.</li>
+<li>self: predefined variable referring to the environment within which we are executing the code.</li></ul>
 <h2><span class="mw-headline" id="Initialising">Initialising</span></h2>
 <p>There is a basic and simple predefined variables we should recognize and know: <b><a href="#Glossary">self</a></b>.
 </p>
 <h3><span class="mw-headline" id="Our_first_environment">Our first environment</span></h3>
-<pre class="prettyprint lang-lua">
-local array = {}
+<pre class="prettyprint lang-lua">local array = {}
 function array:example (argument)
     return "Hello" .. argument
 end
@@ -84,8 +68,7 @@ end
 </pre>
 <p>What we do upon above is defining a <i>local</i> environment and then declaring the function <b>example</b> as part of it. So how do we call <i>example</i>? This is how:
 </p>
-<pre class="prettyprint lang-lua">
-array:example(", world!")
+<pre class="prettyprint lang-lua">array:example(", world!")
 
 -- The above is syntactic sugar for the
 -- following line of code. This makes it
@@ -95,8 +78,7 @@ array.example(array, ", world!")
 <p>We're able to call a function using two ways: "<b>:</b>" and "<b>.</b>". As you can see on the example above, if we use a dot we're directly accessing the function. We need to manually send the <i>self</i> value . But if use a colon, <i>self</i> will be the environment the function is under, i.e. <b>array</b>. We can send the self value in case we want a function to override the object, read ahead to <a href="#Advanced_examples">advanced examples</a> for more information about this.
 </p>
 <h3><span class="mw-headline" id="Variables">Variables</span></h3>
-<pre class="prettyprint lang-lua">
-local array = {text = "none"}
+<pre class="prettyprint lang-lua">local array = {text = "none"}
 function array:setKey (key, value)
     self[key] = value
 end
@@ -116,22 +98,19 @@ array:getKey("text") -- returns "something"
 <hr />
 <p>Knowledge of the usage of metatables will allow you to create much more powerful scripts. Every table can have a metatable attached to it. A metatable is a table that can change the behaviour of the table it's attached to. Let's see an example.
 </p>
-<pre class="prettyprint lang-lua">
-local t = {} -- our normal table
+<pre class="prettyprint lang-lua">local t = {} -- our normal table
 local mt = {} -- our metatable, which contains nothing right now
 setmetatable(t, mt) -- set the metatable of *t* to *mt*
 getmetatable(t) -- this will return mt
 </pre>
 <p>As you can see, <b>getmetatable</b> and <b>setmetatable</b> are the main functions here. This is pretty much self explanatory. A shortened version of this code is this:
 </p>
-<pre class="prettyprint lang-lua">
-local t = setmetatable({}, {})
+<pre class="prettyprint lang-lua">local t = setmetatable({}, {})
 </pre>
 <p>The function <b>setmetatable</b> returns its first argument, therefore we can use this shorter form.
 </p><p>Now, what do we put in these metatables? Metatables can contain anything, like a regular table, but certain keys that always start with __ (two underscores in a row), such as <b>__index</b> and <b>__newindex</b> help modify the behaviour of the <i>target table</i>. The values corresponding to these keys will usually be functions or other tables. Here's an example:
 </p>
-<pre class="prettyprint lang-lua">
-local t = setmetatable({}, {
+<pre class="prettyprint lang-lua">local t = setmetatable({}, {
     __index = function(tab, key)
         if key == "foo" then
             return 0
@@ -147,8 +126,7 @@ local t = setmetatable({}, {
 <p>The most used metatable key is most likely <b>__index</b>; it can contain either a function or table.
 </p><p>When you look up a table with a key, regardless of what the key is (t[4], t.foo, and t["foo"], for example), and a value hasn't been assigned for that key, Lua will look for an <b>__index</b> key in the table's metatable (if it has a metatable). If <b>__index</b> contains a table, Lua will look up the key originally used in the table belonging to <b>__index</b>. This probably sounds confusing, so here's an example:
 </p>
-<pre class="prettyprint lang-lua">
-other = { foo = 3 }
+<pre class="prettyprint lang-lua">other = { foo = 3 }
 t = setmetatable({hello = "world"}, { __index = other })
 t.foo -- 3
 t.bar -- nil
@@ -161,8 +139,7 @@ t.hello -- "world"
 <p>Next in line is <b>__newindex</b>, which is similar to <b>__index</b>. Like <b>__index</b>, it can contain either a function or table.
 </p><p>When you try to set a value in a table that is not already present, Lua will look for a <b>__newindex</b> key in the metatable. It's the same sort of situation as <b>__index</b>; if <b>__newindex</b> is a table, the key and value will be set in the table specified:
 </p>
-<pre class="prettyprint lang-lua">
-other = {}
+<pre class="prettyprint lang-lua">other = {}
 t = setmetatable({}, { __newindex = other })
 t.foo = 3
 other.foo -- 3
@@ -170,8 +147,7 @@ t.foo -- nil
 </pre>
 <p>As would be expected, if <b>__newindex</b> is a function, it will be called with the table, key, and value passed as parameters:
 </p>
-<pre class="prettyprint lang-lua">
-t = setmetatable({}, {
+<pre class="prettyprint lang-lua">t = setmetatable({}, {
     __newindex = function(t, key, value)
         if type(value) == "number" then
             rawset(t, key, value * value)
@@ -197,8 +173,7 @@ print(t.la) -- 100</pre>
 <h3><span class="mw-headline" id="Operators">Operators</span></h3>
 <p>Many of the metatable keys available have to do with operators (as in, <b>+</b>, <b>-</b>, etc.), allowing you to make tables support the use of operators on them. For example, say we wanted a table to support the multiplication operator (<b>*</b>), this is how we would do it:
 </p>
-<pre class="prettyprint lang-lua">
-t = setmetatable({}, {
+<pre class="prettyprint lang-lua">t = setmetatable({}, {
     __mul = function(t, other)
         new = {}
     
@@ -217,26 +192,25 @@ t = t * 2 -- { "M", "T", "A", 1.4, "M", "T", "A", 1.4 }
 </pre>
 <p>This allows us to create a new table with the original replicated a certain amount of times using the multiplication operator. The corresponding key for multiplication is <b>__mul</b>; unlike <b>__index</b> and <b>__newindex</b> the keys for operators can only contain functions. The first parameter these functions always receive is the target table, and then the value on the right hand side (except for the unary - which has the key of <b>__unm</b>). Here's a list of the supported operators:
 </p>
-<ul><li> __add: Addition (+)</li>
-<li> __sub: Subtraction (-)</li>
-<li> __mul: Multiplication (*)</li>
-<li> __div: Division (/)</li>
-<li> __mod: Modulos (%)</li>
-<li> __unm: Unary -, used for negation on numbers</li>
-<li> __concat: Concatenation (..)</li>
-<li> __eq: Equality (==)</li>
-<li> __lt: Less than (&lt;)</li>
-<li> __le: Less than or equal to (&lt;=)</li></ul>
+<ul><li>__add: Addition (+)</li>
+<li>__sub: Subtraction (-)</li>
+<li>__mul: Multiplication (*)</li>
+<li>__div: Division (/)</li>
+<li>__mod: Modulos (%)</li>
+<li>__unm: Unary -, used for negation on numbers</li>
+<li>__concat: Concatenation (..)</li>
+<li>__eq: Equality (==)</li>
+<li>__lt: Less than (&lt;)</li>
+<li>__le: Less than or equal to (&lt;=)</li></ul>
 <p>The operators <b>&gt;</b>, <b>&gt;=</b> and <b>~=</b> do not exist because these can be calculated by flipping the right values. Lua does this:
 </p>
-<ul><li> <b>&gt;</b>: More than - <b>not __le</b></li>
-<li> <b>~=</b>: Not equal to -- <b>not __eq</b></li>
-<li> <b>&gt;=</b>: More than or equal to - <b>not __lt</b></li></ul>
+<ul><li><b>&gt;</b>: More than - <b>not __le</b></li>
+<li><b>~=</b>: Not equal to -- <b>not __eq</b></li>
+<li><b>&gt;=</b>: More than or equal to - <b>not __lt</b></li></ul>
 <h3><span class="mw-headline" id="call">__call</span></h3>
 <p>Next comes the <b>__call</b> key, which allows you to call tables as functions. A code example:
 </p>
-<pre class="prettyprint lang-lua">
-t = setmetatable({}, {
+<pre class="prettyprint lang-lua">t = setmetatable({}, {
     __call = function(t, a, b, c, multiplier)
         return (a + b + c) * multiplier
     end
@@ -249,8 +223,7 @@ t(1, 2, 3, 4) -- 24
 <h3><span class="mw-headline" id="tostring">__tostring</span></h3>
 <p>Last of all is <b>__tostring</b>. If implemented, it's used by <a rel="nofollow" class="external text" href="http://www.lua.org/manual/5.1/manual.html#pdf-tostring">tostring</a> to convert a table into a string, most handy when using a function like <a rel="nofollow" class="external text" href="http://www.lua.org/manual/5.1/manual.html#pdf-print">print</a>. Normally, when you try to convert a table to a string, you something in the format of "table: 0x&lt;hex-code-here&gt;", but you can change that using <b>__tostring</b>. An example:
 </p>
-<pre class="prettyprint lang-lua">
-t = setmetatable({ 1, 2, 3 }, {
+<pre class="prettyprint lang-lua">t = setmetatable({ 1, 2, 3 }, {
     __tostring = function(t)
         sum = 0
         for _, v in pairs(t) do sum = sum + v end
@@ -262,59 +235,52 @@ print(t) -- prints out "Sum: 6"
 </pre>
 <h3><span class="mw-headline" id="Building_the_Vector_Class">Building the Vector Class</span></h3>
 <table cellspacing="0" style="padding: 5px; width: 80%; margin: 2px auto 2px auto; border: 1px solid #BFBFFF; background: #E0E0FF; border-left: 10px solid #BFBFFF;">
-<tr>
-<td style="width: 32px; vertical-align:top; display: none;" rowspan="2"> [[{{{image}}}|link=]]
+<tbody><tr>
+<td style="width: 32px; vertical-align:top; display: none;" rowspan="2">[[{{{image}}}|link=]]
 </td>
-<td style=""> <b>Note:</b> This section is just an example, use the official <a href="Vector.html" title="Vector">Vector</a> functions instead.
+<td style=""><b>Note:</b> This section is just an example, use the official <a href="Vector.html" title="Vector">Vector</a> functions instead.
 </td></tr>
 <tr>
 <td rowspan="1" style="padding-left: 10px;">
-</td></tr></table>
+</td></tr></tbody></table>
 <p>To wrap everything up, we'll write a class encapsulating a 2D vector. It's too large to put here, but you can see the full code at <a rel="nofollow" class="external text" href="https://gist.github.com/1055480">gist #1055480</a>. I've positioned all the stuff to do with metatables first in the file, as that's the most important stuff. (Be warned, this may be a bit confusing if you've never encountered Object-Oriented Programming before.)
 </p>
-<pre class="prettyprint lang-lua">
-Vector = {}
+<pre class="prettyprint lang-lua">Vector = {}
 Vector.__index = Vector
 </pre>
 <p>This code sets up the table for the <b>Vector</b> class, and sets the <b>__index</b> key to point back at itself. Now, what's going on here? You've probably noticed that we've put all the metatable methods inside the <b>Vector</b> class. What you're seeing is the simplest way to achieve OOP (Object-Oriented Programming) in Lua. The <b>Vector</b> table represents the class, which contains all the functions that instances can use. <b>Vector.new</b> (shown below) creates a new instance of this class.
 </p>
-<pre class="prettyprint lang-lua">
-function Vector.new(x, y)
+<pre class="prettyprint lang-lua">function Vector.new(x, y)
   return setmetatable({ x = x or 0, y = y or 0 }, Vector)
 end
 </pre>
 <p>It creates a new table with <b>x</b> and <b>y</b> properties, and then sets the metatable to the <b>Vector</b> class. As we know, <b>Vector</b> contains all the metamethods and especially the <b>__index</b> key. This means that we can use all the functions we define in <b>Vector</b> through this new table. We'll come back to this in a moment.
 </p><p>Another important thing is the last line:
 </p>
-<pre class="prettyprint lang-lua">
-setmetatable(Vector, { __call = function(_, ...) return Vector.new(...) end })
+<pre class="prettyprint lang-lua">setmetatable(Vector, { __call = function(_, ...) return Vector.new(...) end })
 </pre>
 <p>This means that we can create a new <b>Vector</b> instance by either calling <b>Vector.new</b> or just <b>Vector</b>.
 </p><p>The last important thing that you may not be aware of is the colon syntax. When we define a function with a colon, like this:
 </p>
-<pre class="prettyprint lang-lua">
-function t:method(a, b, c)
+<pre class="prettyprint lang-lua">function t:method(a, b, c)
   -- ...
 end
 </pre>
 <p>What we are really doing is defining this function:
 </p>
-<pre class="prettyprint lang-lua">
-function t.method(self, a, b, c)
+<pre class="prettyprint lang-lua">function t.method(self, a, b, c)
   -- ...
 end
 </pre>
 <p>This is syntactic sugar to help with OOP. We can then use the colon syntax when calling functions:
 </p>
-<pre class="prettyprint lang-lua">
--- these are the same
+<pre class="prettyprint lang-lua">-- these are the same
 t:method(1, 2, 3)
 t.method(t, 1, 2, 3)
 </pre>
 <p>Now, how do we use this <b>Vector</b> class? Here's a final example:
 </p>
-<pre class="prettyprint lang-lua">
-a = Vector.new(10, 10)
+<pre class="prettyprint lang-lua">a = Vector.new(10, 10)
 b = Vector(20, 11)
 c = a + b
 print(a:len()) -- 14.142135623731
@@ -328,8 +294,7 @@ print(a == b) -- false
 <h2><span class="mw-headline" id="Advanced_examples">Advanced examples</span></h2>
 <p>Overriding self's value:
 </p>
-<pre class="prettyprint lang-lua">
-local array = {text = "none"}
+<pre class="prettyprint lang-lua">local array = {text = "none"}
 local array2 = {text = "none2"}
 function array:setKey (key, value)
 	self[key] = value
@@ -345,8 +310,7 @@ array.getKey(array, "text") -- same as above
 </pre>
 <p>A simple backpacks example:
 </p>
-<pre class="prettyprint lang-lua">
-local backpack = {list = {}}
+<pre class="prettyprint lang-lua">local backpack = {list = {}}
 function backpack:create (owner, slots)
 	if self.list[owner] then return end -- return false in case this player already owns a backpack
 		local new = {
@@ -371,138 +335,35 @@ function backpack:addItem (player, item, value)
 end
 </pre>
 <h1><span class="mw-headline" id="Useful_links">Useful links</span></h1>
-<ul><li> <a href="OOP_Introduction.html" title="OOP Introduction">Official MTA OOP Introduction</a></li>
-<li> <a href="OOP.html" title="OOP">OOP</a></li></ul>
+<ul><li><a href="OOP_Introduction.html" title="OOP Introduction">Official MTA OOP Introduction</a></li>
+<li><a href="OOP.html" title="OOP">OOP</a></li></ul>
 
 <!-- 
 NewPP limit report
-Cached time: 20190629062655
+Cached time: 20191016135854
 Cache expiry: 86400
 Dynamic content: false
-CPU time usage: 0.010 seconds
-Real time usage: 0.010 seconds
+CPU time usage: 0.026 seconds
+Real time usage: 0.027 seconds
 Preprocessor visited node count: 287/1000000
 Preprocessor generated node count: 762/1000000
 Post‐expand include size: 970/2097152 bytes
 Template argument size: 297/2097152 bytes
 Highest expansion depth: 5/40
 Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 4794/5000000 bytes
 -->
-
-<!-- 
+<!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%    2.235      1 - -total
-100.00%    2.235      1 - Template:Note
- 67.16%    1.501      1 - Template:MessageBox
+100.00%    1.819      1 -total
+100.00%    1.819      1 Template:Note
+ 70.75%    1.287      1 Template:MessageBox
 -->
-
-<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:8161-0!*!0!!en!*!* and timestamp 20190629062655 and revision id 51954
+</div>
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:8161-0!canonical and timestamp 20191016135854 and revision id 51954
  -->
 </div><div class="printfooter">
 Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=OOP_in_Lua&amp;oldid=51954">https://wiki.multitheftauto.com/index.php?title=OOP_in_Lua&amp;oldid=51954</a>"</div>
-					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_Tutorials.html" title="Category:Tutorials">Tutorials</a></li></ul></div></div>					<!-- end content -->
-										<div class="visualClear"></div>
-				</div>
-			</div>
-		</div>
-		<div id="column-one">
-			<h2>Navigation menu</h2>
-					<div id="p-cactions" class="portlet" role="navigation">
-			<h3>Views</h3>
-
-			<div class="pBody">
-				<ul>
-				<li id="ca-nstab-main" class="selected"><a href="OOP_in_Lua.html" title="View the content page [c]" accesskey="c">Page</a></li>
-				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:OOP_in_Lua&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
-				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=OOP_in_Lua&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
-				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=OOP_in_Lua&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
-				</ul>
-							</div>
-		</div>
-				<div class="portlet" id="p-personal" role="navigation">
-				<h3>Personal tools</h3>
-
-				<div class="pBody">
-					<ul>
-													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=OOP+in+Lua" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
-													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=OOP+in+Lua" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
-											</ul>
-				</div>
-			</div>
-			<div class="portlet" id="p-logo" role="banner">
-				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
-			</div>
-				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
-		<h3>Navigation</h3>
-		<div class='pBody'>
-							<ul>
-											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
-											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
-											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
-											<li id="n-randompage"><a href="https://wiki.multitheftauto.com/wiki/OnDgsDestroy" title="Load a random page [x]" accesskey="x">Random page</a></li>
-									</ul>
-					</div>
-		</div>
-		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
-		<h3>reference</h3>
-		<div class='pBody'>
-							<ul>
-											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
-											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
-											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
-											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
-											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
-											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
-											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
-											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
-											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
-									</ul>
-					</div>
-		</div>
-			<div id="p-search" class="portlet" role="search">
-			<h3><label for="searchInput">Search</label></h3>
-
-			<div id="searchBody" class="pBody">
-				<form action="http://wiki.localhost/index.php" id="searchform">
-					<input type='hidden' name="title" value="Special:Search"/>
-					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
-					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
-						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
-				</form>
-
-							</div>
-		</div>
-			<div class="portlet" id="p-tb" role="navigation">
-			<h3>Tools</h3>
-
-			<div class="pBody">
-				<ul>
-											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/OOP_in_Lua.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
-											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/OOP_in_Lua.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
-											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
-											<li id="t-print"><a href="http://wiki.localhost/index.php?title=OOP_in_Lua&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
-											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=OOP_in_Lua&amp;oldid=51954" title="Permanent link to this revision of the page">Permanent link</a></li>
-											<li id="t-info"><a href="http://wiki.localhost/index.php?title=OOP_in_Lua&amp;action=info" title="More information about this page">Page information</a></li>
-									</ul>
-							</div>
-		</div>
-			</div><!-- end of the left (by default at least) column -->
-		<div class="visualClear"></div>
-					<div id="footer" role="contentinfo">
-						<div id="f-copyrightico">
-									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="../resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
-							</div>
-					<div id="f-poweredbyico">
-									<a href="http://www.mediawiki.org/"><img src="../resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
-							</div>
-					<ul id="f-list">
-									<li id="lastmod"> This page was last modified on 17 August 2017, at 12:46.</li>
-									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
-									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
-									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
-									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
-							</ul>
-		</div>
-		</div>
-		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
-<script src="../extensions/_MTAThemeExtensions/main11b9.js?303"></script><script src="../extensions/_MTAThemeExtensions/topmenu11b9.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":35});});</script></body></html>
+<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_Tutorials.html" title="Category:Tutorials">Tutorials</a></li></ul></div></div><!-- end content --><div class="visualClear"></div></div></div></div><div id="column-one" lang="en" dir="ltr"><h2>Navigation menu</h2><div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label"><h3 id="p-cactions-label" lang="en" dir="ltr">Views</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="ca-nstab-main" class="selected"><a href="OOP_in_Lua.html" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:OOP_in_Lua&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=OOP_in_Lua&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="http://wiki.localhost/index.php?title=OOP_in_Lua&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></div></div><div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label"><h3 id="p-personal-label" lang="en" dir="ltr">Personal tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=OOP+in+Lua" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=OOP+in+Lua" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li></ul></div></div><div class="portlet" id="p-logo" role="banner"><a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a></div><div role="navigation" class="portlet generated-sidebar" id="p-navigation" aria-labelledby="p-navigation-label"><h3 id="p-navigation-label" lang="en" dir="ltr">Navigation</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="n-Home"><a href="Main_Page.html">Home</a></li><li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li><li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="https://wiki.multitheftauto.com/wiki/JavaSDK" title="Load a random page [x]" accesskey="x">Random page</a></li></ul></div></div><div role="navigation" class="portlet generated-sidebar" id="p-reference" aria-labelledby="p-reference-label"><h3 id="p-reference-label" lang="en" dir="ltr">reference</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li><li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li><li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li><li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li><li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li><li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li><li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li><li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li><li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li></ul></div></div><div role="search" class="portlet" id="p-search"><h3 id="p-search-label" lang="en" dir="ltr"><label for="searchInput">Search</label></h3><div class="pBody" id="searchBody"><form action="http://wiki.localhost/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"/><input type="search" name="search" placeholder="Search Multi Theft Auto: Wiki" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160; <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/></form></div></div><div role="navigation" class="portlet" id="p-tb" aria-labelledby="p-tb-label"><h3 id="p-tb-label" lang="en" dir="ltr">Tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="t-whatlinkshere"><a href="Special_WhatLinksHere/OOP_in_Lua.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/OOP_in_Lua.html" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="http://wiki.localhost/index.php?title=OOP_in_Lua&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="http://wiki.localhost/index.php?title=OOP_in_Lua&amp;oldid=51954" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="http://wiki.localhost/index.php?title=OOP_in_Lua&amp;action=info" title="More information about this page">Page information</a></li></ul></div></div></div><!-- end of the left (by default at least) column --><div class="visualClear"></div><div id="footer" role="contentinfo" lang="en" dir="ltr"><div id="f-copyrightico" class="footer-icons"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="../resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a></div><div id="f-poweredbyico" class="footer-icons"><a href="http://www.mediawiki.org/"><img src="../resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a></div><ul id="f-list"><li id="lastmod"> This page was last edited on 17 August 2017, at 12:46.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li><li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li><li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li><li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li></ul></div></div><script src="../extensions/_MTAThemeExtensions/main11b9.js?303"></script><script src="../extensions/_MTAThemeExtensions/topmenu11b9.js?303"></script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.026","walltime":"0.027","ppvisitednodes":{"value":287,"limit":1000000},"ppgeneratednodes":{"value":762,"limit":1000000},"postexpandincludesize":{"value":970,"limit":2097152},"templateargumentsize":{"value":297,"limit":2097152},"expansiondepth":{"value":5,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":4794,"limit":5000000},"timingprofile":["100.00%    1.819      1 -total","100.00%    1.819      1 Template:Note"," 70.75%    1.287      1 Template:MessageBox"]},"cachereport":{"timestamp":"20191016135854","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":65});});</script></body></html>

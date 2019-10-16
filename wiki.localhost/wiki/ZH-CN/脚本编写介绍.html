@@ -1,55 +1,40 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+<html class="client-nojs" lang="en" dir="ltr">
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <meta charset="UTF-8"/>
 <title>ZH-CN/脚本编写介绍 - Multi Theft Auto: Wiki</title>
 <script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
-<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ZH-CN/脚本编写介绍","wgTitle":"ZH-CN/脚本编写介绍","wgCurRevisionId":50429,"wgRevisionId":50429,"wgArticleId":7320,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"zh-cn","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"zh","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgMonthNamesShort":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRelevantPageName":"ZH-CN/脚本编写介绍","wgRelevantArticleId":7320,"wgRequestId":"8b18cb22fd4011b09d68d7f3","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
-mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
-
-});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ZH-CN/脚本编写介绍","wgTitle":"ZH-CN/脚本编写介绍","wgCurRevisionId":50429,"wgRevisionId":50429,"wgArticleId":7320,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"zh-cn","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"zh","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgMonthNamesShort":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRelevantPageName":"ZH-CN/脚本编写介绍","wgRelevantArticleId":7320,"wgRequestId":"9a1365daf5ee0a4ca0e50548","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","mediawiki.skinning.content.externallinks":"ready","skins.monobook.styles":"ready"});mw.loader.implement("user.tokens@18hksfp",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
 <link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
-<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
 <script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
-<meta name="generator" content="MediaWiki 1.27.5"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/resources/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/resources/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.31.3"/>
 <link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
 <link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
 <link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
-<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="license" href="http://www.gnu.org/copyleft/fdl.html"/>
 <link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=MonoBook&amp;sync=1"></script><![endif]-->
 </head>
-<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-ZH-CN_脚本编写介绍 rootpage-ZH-CN_脚本编写介绍 skin-monobook action-view">
-<div id="globalWrapper">
-		<div id="column-content">
-			<div id="content" class="mw-body" role="main">
-				<a id="top"></a>
-				
-				<div class="mw-indicators">
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ZH-CN_脚本编写介绍 rootpage-ZH-CN_脚本编写介绍 skin-monobook action-view"><div id="globalWrapper"><div id="column-content"><div id="content" class="mw-body" role="main"><a id="top"></a><div class="mw-indicators mw-body-content">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="zh-CN">ZH-CN/脚本编写介绍</h1>
-				
-				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">From Multi Theft Auto: Wiki</div>
-					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
-
-					<!-- start content -->
-					<div id="mw-content-text" lang="zh-CN" dir="ltr" class="mw-content-ltr"><p>对于 MTA 服务器而言，“资源” (Resource) 是十分重要的一个概念。一个资源本身表现为一个包含了一系列文件的文件夹或压缩文件 (zip)，外包含一个用于指示服务器如何加载资源以及资源所包含文件说明的元数据文件 (Meta File)。可把资源的概念视作是运行在操作系统之上的程序 —— 它可以被启动或停止执行，且多个资源可以同时运行在服务器上。
+<h1 id="firstHeading" class="firstHeading" lang="zh-CN">ZH-CN/脚本编写介绍</h1><div id="bodyContent" class="mw-body-content"><div id="siteSub">From Multi Theft Auto: Wiki</div><div id="contentSub" lang="en" dir="ltr"></div><div id="jump-to-nav" class="mw-jump">Jump to:<a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div><!-- start content --><div id="mw-content-text" lang="zh-CN" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>对于 MTA 服务器而言，“资源” (Resource) 是十分重要的一个概念。一个资源本身表现为一个包含了一系列文件的文件夹或压缩文件 (zip)，外包含一个用于指示服务器如何加载资源以及资源所包含文件说明的元数据文件 (Meta File)。可把资源的概念视作是运行在操作系统之上的程序 —— 它可以被启动或停止执行，且多个资源可以同时运行在服务器上。
 </p><p>所谓脚本编程，本质上即是在编写资源。资源可以定义它自身的类型为游戏模式、地图等。MTA 自带一些可供您的游戏模式使用的可选辅助用资源；例如 maplimits，一个用于限制玩家行动范围的资源；或是 deathpickups，用于创建武器拾取物以供辅助死亡竞技 (Deathmatch) 游戏模式。
 </p>
 <table cellspacing="0" style="padding: 5px; width: 80%; margin: 2px auto 2px auto; border: 1px solid #81C687; background: #E2FFE5; border-left: 10px solid #81C687;">
-<tr>
-<td style="width: 32px; vertical-align:top; display: none;" rowspan="2"> [[{{{image}}}|link=]]
+<tbody><tr>
+<td style="width: 32px; vertical-align:top; display: none;" rowspan="2">[[{{{image}}}|link=]]
 </td>
-<td style=""> <b>Tip:</b> 您应该使用支持 Lua 格式代码的编辑器以编写脚本，以提高脚本编写的效率。我们建议使用 <a rel="nofollow" class="external text" href="http://notepad-plus.sourceforge.net/uk/site.htm">Notepad++</a> 或 <a rel="nofollow" class="external text" href="http://luaedit.sourceforge.net/">LuaEdit</a>。我们也提供测试版的 <a href="../MTASE.html" title="MTASE">MTA 脚本编辑器</a>（目前仍在开发中）。
+<td style=""><b>Tip:</b> 您应该使用支持 Lua 格式代码的编辑器以编写脚本，以提高脚本编写的效率。我们建议使用 <a rel="nofollow" class="external text" href="http://notepad-plus.sourceforge.net/uk/site.htm">Notepad++</a> 或 <a rel="nofollow" class="external text" href="http://luaedit.sourceforge.net/">LuaEdit</a>。我们也提供测试版的 <a href="../MTASE.html" title="MTASE">MTA 脚本编辑器</a>（目前仍在开发中）。
 </td></tr>
 <tr>
 <td rowspan="1" style="padding-left: 10px;">
-</td></tr></table>
-<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+</td></tr></tbody></table>
+<div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#.E5.88.9B.E5.BB.BA.E4.B8.80.E4.B8.AA.E8.84.9A.E6.9C.AC"><span class="tocnumber">1</span> <span class="toctext">创建一个脚本</span></a>
 <ul>
@@ -82,22 +67,21 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 </ul>
 </div>
 
-<h2><span class="mw-headline" id=".E5.88.9B.E5.BB.BA.E4.B8.80.E4.B8.AA.E8.84.9A.E6.9C.AC">创建一个脚本</span></h2>
+<h2><span id="创建一个脚本"></span><span class="mw-headline" id=".E5.88.9B.E5.BB.BA.E4.B8.80.E4.B8.AA.E8.84.9A.E6.9C.AC">创建一个脚本</span></h2>
 <p>第一步，我们将开始一步一步学习如何编写一个能让玩家到处行走的简单脚本。
 </p>
-<h3><span class="mw-headline" id=".E8.84.9A.E6.9C.AC.E9.83.BD.E5.9C.A8.E5.93.AA.E9.87.8C.E5.AD.98.E6.94.BE.E7.9D.80.EF.BC.9F">脚本都在哪里存放着？</span></h3>
+<h3><span id="脚本都在哪里存放着？"></span><span class="mw-headline" id=".E8.84.9A.E6.9C.AC.E9.83.BD.E5.9C.A8.E5.93.AA.E9.87.8C.E5.AD.98.E6.94.BE.E7.9D.80.EF.BC.9F">脚本都在哪里存放着？</span></h3>
 <p>首先让我们来看看脚本的文件结构。打开 MTA 服务器目录，并定位到以下路径：
 </p><p>	server/mods/deathmatch/resources/
 </p><p>在该目录下，可以看到一系列 MTA 自带的示例脚本压缩文件。每个压缩文件都是一个 “资源”，在服务器启动时它们会被自动解压并被加载到服务器上运行。若需创建一个新资源，只需在该目录下新建一个任意名称的文件夹。在本教程中我们以 "myserver" 资源作为演示，注意：脚本资源创建时建议使用英文命名的文件夹(英文开头可带阿拉伯数字)。
 </p><p>现在请定位到以下路径：
 </p><p>	server/mods/deathmatch/resources/myserver/
 </p>
-<h3><span class="mw-headline" id=".E5.AE.9A.E4.B9.89.E6.82.A8.E7.9A.84.E8.B5.84.E6.BA.90">定义您的资源</span></h3>
+<h3><span id="定义您的资源"></span><span class="mw-headline" id=".E5.AE.9A.E4.B9.89.E6.82.A8.E7.9A.84.E8.B5.84.E6.BA.90">定义您的资源</span></h3>
 <p>为了能够让服务器得知资源内所包含的数据，每个资源内都必须包含一个位于资源根目录下的 "meta.xml" 文件（本例即 "myserver" 文件夹为资源根目录）。因此我们需要新建该文件，并以记事本方式打开。
 </p><p>在 "meta.xml" 文件内输入以下的代码：
 </p>
-<pre class="prettyprint lang-xml">
-&lt;meta&gt;
+<pre class="prettyprint lang-xml">&lt;meta&gt;
      &lt;info author="YourName" type="gamemode" name="My Server" description="My first MTA server" /&gt;
      &lt;script src="script.lua" /&gt;
 &lt;/meta&gt;
@@ -105,11 +89,10 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <p>在 "&lt;info /&gt;" 标签中，有一个用于指定资源类型的 "type" 属性。以上代码中指定了该资源类型为 "gamemode"（游戏模式），其他可选的资源类型还有常规包含文件或 "map"（地图），后文将会详细解释。目前只需要知道游戏模式是所有服务器的必不可少的核心，任意服务器都必须要有一个游戏模式。
 </p><p>"&lt;script /&gt;" 标签指明了该资源内所包含的脚本文件，后文将会详细解释。
 </p>
-<h3><span class="mw-headline" id=".E5.88.9B.E5.BB.BA.E4.B8.80.E4.B8.AA.E7.AE.80.E5.8D.95.E7.9A.84.E8.84.9A.E6.9C.AC">创建一个简单的脚本</span></h3>
+<h3><span id="创建一个简单的脚本"></span><span class="mw-headline" id=".E5.88.9B.E5.BB.BA.E4.B8.80.E4.B8.AA.E7.AE.80.E5.8D.95.E7.9A.84.E8.84.9A.E6.9C.AC">创建一个简单的脚本</span></h3>
 <p>注意上例代码中的 "&lt;script /&gt;" 标签中并没有将 .lua 文件指定在其他目录路径下，因此现在需要创建一个与 meta.xml 文件同目录下的 .lua 脚本文件；随后，请把以下代码复制到新创建的 script.lua 文件中：
 </p>
-<pre class="prettyprint lang-lua">
-local spawnX, spawnY, spawnZ = 1959.55, -1714.46, 10
+<pre class="prettyprint lang-lua">local spawnX, spawnY, spawnZ = 1959.55, -1714.46, 10
 function joinHandler()
 	spawnPlayer(source, spawnX, spawnY, spawnZ)
 	fadeCamera(source, true)
@@ -122,16 +105,15 @@ addEventHandler("onPlayerJoin", getRootElement(), joinHandler)
 </p><p><b>source</b> 变量表示的是事件的触发者。由于以上代码会在玩家进入服务器时被触发，因此您需要使用该变量以确定是哪位玩家进入了服务器。因此上例代码只会影响到新进入了服务器的玩家，而非服务器内的所有玩家。
 </p><p>上例代码中，我们可以看到一个 <a href="../AddEventHandler.html" title="AddEventHandler">addEventHandler</a> 函数；从中可看见 3 个参数：'onPlayerJoin'，其表明何时代码会被触发；getRootElement()，其表明了可能的事件触发者（getRootElement() 表示的是游戏内的一切事物或玩家，因此该事件可能是由游戏内的任意事物或玩家所触发的）。以及 joinHandler，其表明哪个函数在该事件 ('onPlayerJoin') 触发后会被执行。其他的代码细节会在后文中详细介绍，现在就启动服务器然后测试一下代码效果吧！
 </p>
-<h3><span class="mw-headline" id=".E6.89.A7.E8.A1.8C.E8.84.9A.E6.9C.AC">执行脚本</span></h3>
+<h3><span id="执行脚本"></span><span class="mw-headline" id=".E6.89.A7.E8.A1.8C.E8.84.9A.E6.9C.AC">执行脚本</span></h3>
 <p>只需要执行 server/ 目录下的可执行文件即可启动服务器。启动服务器后，首先可以从服务器后台上看到一系列的服务器基本信息；注意 port number（端口数）信息，在进入服务器前需要使用到该信息。随后服务器会加载所有位于 mods/deathmatch/resources 目录下的资源，最后会看到提示 "ready to accept connections!"，即表明服务器启动成功。
 </p><p>在玩家进入服务器前，必须要首先加载游戏模式。在服务器后台输入指令 "start myserver" 并按下回车键发送指令。服务器便会立即启动您刚刚所创建的游戏模式，并列出该游戏模式内所有的脚本代码性错误及警告提示。现在可以启动 MTA 客户端，点击 "Quick Connect" 并输入您在服务器后台上所看到的服务器 IP 地址及端口数。如果没有错误，几秒过后玩家就会出生在 Los Santos。
-</p><p>接下来，我们将会在脚本中添加一条用于在玩家附近刷出交通工具的游戏指令。您可以跳过本章节并阅读更为高级的<a href="../Map_manager.html" title="Map manager" class="mw-redirect">地图管理器</a>教程；您也可以阅读<a href="http://wiki.localhost/index.php?title=%E5%9B%BE%E5%BD%A2%E6%93%8D%E4%BD%9C%E7%95%8C%E9%9D%A2_(GUI)_%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%E4%BB%8B%E7%BB%8D&amp;action=edit&amp;redlink=1" class="new" title="图形操作界面 (GUI) 脚本编写介绍 (page does not exist)">图形操作界面 (GUI) 脚本编写介绍</a>教程以学习如何在 MTA 下创建图形操作界面 (GUI) 及对其进行脚本编写。
+</p><p>接下来，我们将会在脚本中添加一条用于在玩家附近刷出交通工具的游戏指令。您可以跳过本章节并阅读更为高级的<a href="../Map_manager.html" class="mw-redirect" title="Map manager">地图管理器</a>教程；您也可以阅读<a href="http://wiki.localhost/index.php?title=%E5%9B%BE%E5%BD%A2%E6%93%8D%E4%BD%9C%E7%95%8C%E9%9D%A2_(GUI)_%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%E4%BB%8B%E7%BB%8D&amp;action=edit&amp;redlink=1" class="new" title="图形操作界面 (GUI) 脚本编写介绍 (page does not exist)">图形操作界面 (GUI) 脚本编写介绍</a>教程以学习如何在 MTA 下创建图形操作界面 (GUI) 及对其进行脚本编写。
 </p>
-<h2><span class="mw-headline" id=".E5.88.9B.E5.BB.BA.E4.B8.80.E4.B8.AA.E7.AE.80.E5.8D.95.E7.9A.84.E6.B8.B8.E6.88.8F.E6.8C.87.E4.BB.A4">创建一个简单的游戏指令</span></h2>
+<h2><span id="创建一个简单的游戏指令"></span><span class="mw-headline" id=".E5.88.9B.E5.BB.BA.E4.B8.80.E4.B8.AA.E7.AE.80.E5.8D.95.E7.9A.84.E6.B8.B8.E6.88.8F.E6.8C.87.E4.BB.A4">创建一个简单的游戏指令</span></h2>
 <p>打开先前我们所创建的 "script.lua" 文件。上文提到，我们需要创建一个可在玩家附近刷出交通工具的游戏指令。首先我们需要定义一个用于处理玩家输入指令的函数，以及一个用于创建玩家可从客户端控制台输入游戏指令的指令处理器。
 </p>
-<pre class="prettyprint lang-lua">
--- 定义一个由指令处理器所调用的函数，并提供三个参数：thePlayer, command, vehicleModel
+<pre class="prettyprint lang-lua">-- 定义一个由指令处理器所调用的函数，并提供三个参数：thePlayer, command, vehicleModel
 function createVehicleForPlayer(thePlayer, command, vehicleModel)
    -- 创建交通工具的代码
 end
@@ -141,44 +123,39 @@ addCommandHandler("createvehicle", createVehicleForPlayer)
 </pre>
 <p>"提示：您可以点击示例代码中的函数名以查看该 API 函数的文档。"
 </p>
-<h4><span class="mw-headline" id=".E6.9C.89.E5.85.B3.E6.8C.87.E4.BB.A4.E5.A4.84.E7.90.86.E5.99.A8">有关指令处理器</span></h4>
+<h4><span id="有关指令处理器"></span><span class="mw-headline" id=".E6.9C.89.E5.85.B3.E6.8C.87.E4.BB.A4.E5.A4.84.E7.90.86.E5.99.A8">有关指令处理器</span></h4>
 <p><a href="../AddCommandHandler.html" title="AddCommandHandler">addCommandHandler</a> 的第一个参数表明了玩家可以从客户端输入的游戏指令（同时也表明新建了这个游戏指令）；第二个参数是该游戏指令发送到服务端后所调用的函数，本例中该函数名为 "createVehicleForPlayer"。
 </p><p>如果您有一定的编程经验，您应当知道调用函数的方法是这样的：
 </p>
-<pre class="prettyprint lang-lua">
-functionName(参数1, 参数2, 参数3, ..)
+<pre class="prettyprint lang-lua">functionName(参数1, 参数2, 参数3, ..)
 </pre>
-<pre class="prettyprint lang-lua">
-functionName(thePlayer, commandName, argument3, ..)
+<pre class="prettyprint lang-lua">functionName(thePlayer, commandName, argument3, ..)
 </pre>
 <p>看看上例代码，我们发现参数1 为 thePlayer，参数2 为 commandName。thePlayer 表明哪位玩家发送了该游戏指令；而 commandName 表明游戏指令字符串。因此如果玩家发送了指令 "/greet"，commandName 便是 "greet"（不包含指令前面的斜杠 "/")。参数3 是玩家额外的输入，后文中将会提到。
 请记住前两个参数（thePlayer 及 commandName）是必不可少的参数，但是您可以随意命名这些参数以符合您的代码风格。
 </p><p>我们已经调用了 <a href="../AddCommandHandler.html" title="AddCommandHandler">addCommandHandler</a> 函数；而由于 <i>createVehicleForPlayer</i> 也同样是一个函数，它也可以以相同的方式被内部所调用。
 </p><p>例如：某玩家输入了游戏指令 "createvehicle 468" 以刷出 Sanchez，指令处理器随后会调用 createVehicleForPlayer 函数，然后我们看看这个 createVehicleForPlayer 函数是如何被调用的：
 </p>
-<pre class="prettyprint lang-lua">
-createVehicleForPlayer(thePlayer,"createvehicle","468") -- thePlayer 表示的是输入了 createvehicle 指令的玩家
+<pre class="prettyprint lang-lua">createVehicleForPlayer(thePlayer,"createvehicle","468") -- thePlayer 表示的是输入了 createvehicle 指令的玩家
 </pre>
 <p>可以看到，它提供了几个参数：输入了指令的玩家，指令字符串本身（不包括前面的斜杠 '/'）以及核心指令 createvehicle 以后的任意文本，本例中 "468" 为核心指令以后的文本，其为 Sanchez 交通工具的 ID。所有的指令处理器中，前两个参数都是一样且必须有的（参见 <a href="../AddEventHandler.html" title="AddEventHandler">addEventHandler</a> 文档）。因此，任意的指令处理器中，您都必须得要先定义这两个基本参数，再附加任意数量的附加参数。（附加参数有多少个，核心指令后的附加指令信息就有多少；本例中，createvehicle 有一个表示交通工具 ID 的附加指令信息，因此附加参数数量同为一个）
 </p><p>"注意：必须要在定义了指令处理函数<b>之后</b>再创建指令处理器，否则指令处理器届时将无法找到其处理函数。"
 </p>
-<h4><span class="mw-headline" id=".E7.BC.96.E5.86.99.E5.87.BD.E6.95.B0">编写函数</span></h4>
+<h4><span id="编写函数"></span><span class="mw-headline" id=".E7.BC.96.E5.86.99.E5.87.BD.E6.95.B0">编写函数</span></h4>
 <p>为了完成我们所创建的函数，我们得先想想我们要在该函数内完成的一些事：
 </p>
-<ul><li> 获取玩家位置以便知道在何处刷出交通工具（我们希望在玩家身边刷出）</li>
-<li> 计算最理想的交通工具刷出点（我们不希望玩家会卡在车辆内）</li>
-<li> 刷出交通工具</li>
-<li> 检查交通工具是否成功刷出，如果没有则输出错误信息</li></ul>
+<ul><li>获取玩家位置以便知道在何处刷出交通工具（我们希望在玩家身边刷出）</li>
+<li>计算最理想的交通工具刷出点（我们不希望玩家会卡在车辆内）</li>
+<li>刷出交通工具</li>
+<li>检查交通工具是否成功刷出，如果没有则输出错误信息</li></ul>
 <p>为了实现以上的需求，我们需要使用一些 API 函数。可以在<a href="http://wiki.localhost/index.php?title=Script_Functions&amp;action=edit&amp;redlink=1" class="new" title="Script Functions (page does not exist)">服务端函数列表</a>中找到我们所需的函数。首先我们需要一个用于取得玩家位置的函数。由于玩家属于 “元素” (Element)，我们找到 <b>针对元素的 API 函数</b>，并找到 <a href="../GetElementPosition.html" title="GetElementPosition">getElementPosition</a> 函数。单击该函数名便可阅读该函数的文档。文档内详细说明了函数的调用语法，返回值以及其示例代码。函数调用语法告诉我们在调用函数时应该提供什么参数。
 </p><p><a href="../GetElementPosition.html" title="GetElementPosition">getElementPosition</a> 的调用语法为：
 </p>
-<pre class="prettyprint lang-lua">
-float, float, float getElementPosition ( element theElement )
+<pre class="prettyprint lang-lua">float, float, float getElementPosition ( element theElement )
 </pre>
 <p>函数名前的三个 "float" 表示的是返回值类型。本例中表示该函数返回三个浮点数（x、y 及 z）。括号内，可以看到调用该函数时所需提供的参数。本例中只需要传递一个表示欲获取其位置的元素，在这里即玩家。
 </p>
-<pre class="prettyprint lang-lua">
-function createVehicleForPlayer(thePlayer, command, vehicleModel)
+<pre class="prettyprint lang-lua">function createVehicleForPlayer(thePlayer, command, vehicleModel)
 	-- 获取玩家位置并将信息放入 x、y 及 z 变量中
 	-- （local 的意思是定义一个局部变量，在其作用域以外的地方无法访问，本例中即函数作用域）
 	local x,y,z = getElementPosition(thePlayer)
@@ -186,17 +163,15 @@ end
 </pre>
 <p>下一步，我们希望确保交通工具不会直接刷在玩家所在的位置（这样会玩家卡在车辆内），因此我们把 "x" 变量的值增加了少许，让车辆在距离玩家更东的位置被刷出。
 </p>
-<pre class="prettyprint lang-lua">
-function createVehicleForPlayer(thePlayer, command, vehicleModel)
+<pre class="prettyprint lang-lua">function createVehicleForPlayer(thePlayer, command, vehicleModel)
 	local x,y,z = getElementPosition(thePlayer) -- 获取玩家位置
 	x = x + 5 -- x 坐标增加 5 个单位
 end
 </pre>
-<p>现在我们需要另一个用于刷出车辆的函数。再次打开 <a href="../Scripting_Functions.html" title="Scripting Functions" class="mw-redirect">服务端函数列表</a>，这次因为要找的是和交通工具有关的，所以定位到 <b>交通工具函数</b>，并阅读 <a href="../CreateVehicle.html" title="CreateVehicle">createVehicle</a> 的文档。根据该函数的调用语法，该函数只有一个返回类型（最常见的情况），表示的是创建了的交通工具元素。同样，我们可以看到在调用语法中有一些用方括号 [ ] 括起来的参数，这类参数说明它们是可选的，调用时可以不提供。
+<p>现在我们需要另一个用于刷出车辆的函数。再次打开 <a href="../Scripting_Functions.html" class="mw-redirect" title="Scripting Functions">服务端函数列表</a>，这次因为要找的是和交通工具有关的，所以定位到 <b>交通工具函数</b>，并阅读 <a href="../CreateVehicle.html" title="CreateVehicle">createVehicle</a> 的文档。根据该函数的调用语法，该函数只有一个返回类型（最常见的情况），表示的是创建了的交通工具元素。同样，我们可以看到在调用语法中有一些用方括号 [ ] 括起来的参数，这类参数说明它们是可选的，调用时可以不提供。
 </p><p>在我们所定义的函数中，一切需要传递给 <a href="../CreateVehicle.html" title="CreateVehicle">createVehicle</a> 函数的参数都准备好了：计算好的 "x, y, z" 变量以及通过玩家输入的游戏指令 "createvehicle 468" 所得到的交通工具 ID，可以通过 <i>vehicleModel</i> 参数得到该 ID。
 </p>
-<pre class="prettyprint lang-lua">
-function createVehicleForPlayer(thePlayer, command, vehicleModel)
+<pre class="prettyprint lang-lua">function createVehicleForPlayer(thePlayer, command, vehicleModel)
 	local x,y,z = getElementPosition(thePlayer) -- 获取玩家位置
 	x = x + 5 -- x 坐标增加 5 个单位
         -- 创建交通工具并将返回值存入到 ''createdVehicle'' 变量内
@@ -206,8 +181,7 @@ end
 <p>当然这些代码还有改善的余地，但至少我们还可以添加一个用于检测交通工具是否成功创建的代码。阅读 <a href="../CreateVehicle.html" title="CreateVehicle">createVehicle</a> 函数文档的 <b>返回值</b> 部分，该部分说明：若该函数返回 <i>false</i>，则说明交通工具创建失败。因此，我们需要检查 <i>createVehicle</i> 变量的值以检测交通工具是否创建成功。
 </p><p>以下是完整的脚本代码：
 </p>
-<pre class="prettyprint lang-lua">
-function createVehicleForPlayer(thePlayer, command, vehicleModel)
+<pre class="prettyprint lang-lua">function createVehicleForPlayer(thePlayer, command, vehicleModel)
 	local x,y,z = getElementPosition(thePlayer) -- 获取玩家位置
 	x = x + 5 -- x 坐标增加 5 个单位
 	local createdVehicle = createVehicle(tonumber(vehicleModel),x,y,z)
@@ -219,93 +193,85 @@ function createVehicleForPlayer(thePlayer, command, vehicleModel)
 end
 addCommandHandler("createvehicle", createVehicleForPlayer)
 </pre>
-<p>上例代码中，还介绍了另一个用于发送客户端信息的 <a href="../OutputChatBox.html" title="OutputChatBox">outputChatBox</a> 函数。现在，您应该有能力可以自行阅读 API 函数文档了。若需要进一步学习高级脚本编写，请阅读<a href="../Map_manager.html" title="Map manager" class="mw-redirect">地图管理器</a>教程。
+<p>上例代码中，还介绍了另一个用于发送客户端信息的 <a href="../OutputChatBox.html" title="OutputChatBox">outputChatBox</a> 函数。现在，您应该有能力可以自行阅读 API 函数文档了。若需要进一步学习高级脚本编写，请阅读<a href="../Map_manager.html" class="mw-redirect" title="Map manager">地图管理器</a>教程。
 </p>
-<h2><span class="mw-headline" id=".E5.BF.85.E7.9F.A5">必知</span></h2>
+<h2><span id="必知"></span><span class="mw-headline" id=".E5.BF.85.E7.9F.A5">必知</span></h2>
 <p>目前为止，您已经接触到及知悉了有关资源、指令处理器及如何在文档中寻找 API 函数，但要学的还有很多。本节将粗略告诉您有关这些学习内容，您可以自行阅读相关教程。
 </p>
-<h3><span class="mw-headline" id=".E5.AE.A2.E6.88.B7.E7.AB.AF.E5.8F.8A.E6.9C.8D.E5.8A.A1.E7.AB.AF.E8.84.9A.E6.9C.AC">客户端及服务端脚本</span></h3>
+<h3><span id="客户端及服务端脚本"></span><span class="mw-headline" id=".E5.AE.A2.E6.88.B7.E7.AB.AF.E5.8F.8A.E6.9C.8D.E5.8A.A1.E7.AB.AF.E8.84.9A.E6.9C.AC">客户端及服务端脚本</span></h3>
 <p>您可能曾经了解或是看到过所谓 “客户端及服务端脚本” (Server/Client Script) 的概念或名称了。事实上，您不仅能够编写典型的运行在服务器之上的，用于提供游戏指令处理等需求的脚本；还能够编写运行在 MTA 玩家客户端之上的脚本。之可以编写客户端脚本，原因是一些 MTA 所提供的特殊功能只能在客户端上执行（例如图形操作界面），或是在客户端上执行一些代码比在服务端上执行效率要高些。
 </p><p>大部分您所制作的资源（游戏模式、地图）可能都是服务端脚本，例如本教程前面所介绍的脚本。但如果您所编写的代码无法在服务端上执行，则您可能需要令其可在客户端上运行（即编写客户端脚本）。若要开始尝试编写一个客户端脚本，您需要创建一个脚本文件（例如，把它命名为 <i>client.lua</i>），并修改 meta.xml 如下：
 </p>
-<pre class="prettyprint lang-xml">
-&lt;script src="client.lua" type="client" /&gt;
+<pre class="prettyprint lang-xml">&lt;script src="client.lua" type="client" /&gt;
 </pre>
 <p><i>type</i> 属性默认值为 'server'（即默认服务端脚本），因此只有在需要指定其是客户端脚本时才显式指定 <i>type</i> 属性。一个脚本文件一旦其 <i>type</i> 属性的值设置为 <i>client</i>，则玩家连接到服务器时，该脚本文件会自动下载到玩家客户端。有关更多信息，请阅读<a href="../%e5%ae%a2%e6%88%b7%e7%ab%af%e8%84%9a%e6%9c%ac.html" title="客户端脚本">客户端脚本</a>教程。
 </p>
-<h3><span class="mw-headline" id=".E6.9B.B4.E5.A4.8D.E6.9D.82.E7.9A.84.E8.B5.84.E6.BA.90">更复杂的资源</span></h3>
+<h3><span id="更复杂的资源"></span><span class="mw-headline" id=".E6.9B.B4.E5.A4.8D.E6.9D.82.E7.9A.84.E8.B5.84.E6.BA.90">更复杂的资源</span></h3>
 <p>上一节简单介绍了如何添加一个客户端脚本，但其实您什么都可以做到。正如本教程开头提到过，资源可以是任何类型的游戏模块。这些资源本身做什么或提供什么功能，便决定了它们的类型是什么。首先我们来分析一下下面的这些资源：
 </p>
-<h4><span class="mw-headline" id=".E7.AC.AC.E4.B8.80.E4.B8.AA.E7.A4.BA.E4.BE.8B.E8.B5.84.E6.BA.90_.E2.80.94.E2.80.94_.E8.BE.85.E5.8A.A9.E7.B1.BB.E8.B5.84.E6.BA.90">第一个示例资源 —— 辅助类资源</span></h4>
-<pre class="prettyprint lang-xml">
-/admin_commands
+<h4><span id="第一个示例资源_——_辅助类资源"></span><span class="mw-headline" id=".E7.AC.AC.E4.B8.80.E4.B8.AA.E7.A4.BA.E4.BE.8B.E8.B5.84.E6.BA.90_.E2.80.94.E2.80.94_.E8.BE.85.E5.8A.A9.E7.B1.BB.E8.B5.84.E6.BA.90">第一个示例资源 —— 辅助类资源</span></h4>
+<pre class="prettyprint lang-xml">/admin_commands
 	/meta.xml
 	/commands.lua
 	/client.lua
 </pre>
-<pre class="prettyprint lang-xml">
-&lt;meta&gt;
+<pre class="prettyprint lang-xml">&lt;meta&gt;
 	&lt;info author="Someguy" description="admin commands" /&gt;
 	&lt;script src="commands.lua" /&gt;
 	&lt;script src="client.lua" type="client" /&gt;
 &lt;/meta&gt;
 </pre>
-<ul><li> <i>commands.lua</i> 提供一些管理员指令，例如封禁玩家、玩家禁言等</li>
-<li> <i>client.lua</i> 提供图形操作界面以简化玩家操作</li></ul>
+<ul><li><i>commands.lua</i> 提供一些管理员指令，例如封禁玩家、玩家禁言等</li>
+<li><i>client.lua</i> 提供图形操作界面以简化玩家操作</li></ul>
 <p>该示例资源可以随时被使用（也可以设置为随服务器而自动启动），原因是该资源对于整个游戏流程而言有一定的帮助（管理服务器）且不会影响到正常的游戏过程。
 </p>
-<h4><span class="mw-headline" id=".E7.AC.AC.E4.BA.8C.E4.B8.AA.E7.A4.BA.E4.BE.8B.E8.B5.84.E6.BA.90_.E2.80.94.E2.80.94_.E6.B8.B8.E6.88.8F.E6.A8.A1.E5.BC.8F">第二个示例资源 —— 游戏模式</span></h4>
-<pre class="prettyprint lang-xml">
-/counterstrike
+<h4><span id="第二个示例资源_——_游戏模式"></span><span class="mw-headline" id=".E7.AC.AC.E4.BA.8C.E4.B8.AA.E7.A4.BA.E4.BE.8B.E8.B5.84.E6.BA.90_.E2.80.94.E2.80.94_.E6.B8.B8.E6.88.8F.E6.A8.A1.E5.BC.8F">第二个示例资源 —— 游戏模式</span></h4>
+<pre class="prettyprint lang-xml">/counterstrike
 	/meta.xml
 	/counterstrike.lua
 	/buymenu.lua
 </pre>
-<pre class="prettyprint lang-xml">
-&lt;meta&gt;
+<pre class="prettyprint lang-xml">&lt;meta&gt;
 	&lt;info author="Someguy" description="Counterstrike remake" type="gamemode" /&gt;
 	&lt;script src="counterstrike.lua" /&gt;
 	&lt;script src="buymenu.lua" type="client" /&gt;
 &lt;/meta&gt;
 </pre>
-<ul><li> <i>counterstrike.lua</i> 包含有类似于以下功能的实现：
-<ul><li> 允许玩家选择其团队并刷出玩家</li>
-<li> 把武器、目标及游戏指示提供给玩家</li>
-<li> 规定游戏规则。例如：一盘游戏的时间、玩家死后会发生什么等</li>
-<li> 等等等等...</li></ul></li>
-<li> <i>buymenu.lua</i> 是一个客户端脚本，其用于创建武器购买菜单（使用到了图形操作界面，因此必须写为客户端脚本）</li></ul>
+<ul><li><i>counterstrike.lua</i> 包含有类似于以下功能的实现：
+<ul><li>允许玩家选择其团队并刷出玩家</li>
+<li>把武器、目标及游戏指示提供给玩家</li>
+<li>规定游戏规则。例如：一盘游戏的时间、玩家死后会发生什么等</li>
+<li>等等等等...</li></ul></li>
+<li><i>buymenu.lua</i> 是一个客户端脚本，其用于创建武器购买菜单（使用到了图形操作界面，因此必须写为客户端脚本）</li></ul>
 <p>该示例资源便是一个游戏模式，因为它不但影响到了游戏过程，还实际规定了<i>游戏规则</i>。该资源的 <i>type</i> 属性表明了该资源是运行在<a href="../%e5%9c%b0%e5%9b%be%e7%ae%a1%e7%90%86%e5%99%a8.html" title="地图管理器">地图管理器</a>上的，但 QA 团队编写的另一个资源可以用于帮助您管理游戏模式以及地图加载。强烈建议您在该辅助资源的基础上编写您的游戏模式。
 </p><p>这可能也说明了游戏模式在没有地图的情况下无法运行。游戏模式本身就应该包含有至少一个地图。下一个示例将会介绍地图。
 </p>
-<h4><span class="mw-headline" id=".E7.AC.AC.E4.B8.89.E4.B8.AA.E7.A4.BA.E4.BE.8B_.E2.80.94.E2.80.94_.E5.9C.B0.E5.9B.BE">第三个示例 —— 地图</span></h4>
-<pre class="prettyprint lang-xml">
-/cs-airport
+<h4><span id="第三个示例_——_地图"></span><span class="mw-headline" id=".E7.AC.AC.E4.B8.89.E4.B8.AA.E7.A4.BA.E4.BE.8B_.E2.80.94.E2.80.94_.E5.9C.B0.E5.9B.BE">第三个示例 —— 地图</span></h4>
+<pre class="prettyprint lang-xml">/cs-airport
 	/meta.xml
 	/airport.map
 	/airport.lua
 </pre>
-<pre class="prettyprint lang-xml">
-&lt;meta&gt;
+<pre class="prettyprint lang-xml">&lt;meta&gt;
 	&lt;info author="Someguy" description="Counterstrike airport map" type="map" gamemodes="counterstrike" /&gt;
 	&lt;map src="airport.map" /&gt;
 	&lt;script src="airport.lua" /&gt;
 &lt;/meta&gt;
 </pre>
-<ul><li> XML 格式的 <i>airport.map</i> 文件向游戏模式提供了有关该地图的信息，包括：
-<ul><li> 玩家的出生点、出生时配备的武器，以及玩家所属的团队</li>
-<li> 玩家的目标</li>
-<li> 天气、世界时间、时间限制</li>
-<li> 提供交通工具</li></ul></li>
-<li> <i>airport.lua</i> 可能包含了一些辅助地图自身的功能：
-<ul><li> 当特定的事情发生时打开特定的门或使某物爆炸</li>
-<li> 创建或移动一些自定义对象，或是控制通过 .map 文件所创建的对象</li>
-<li> 等等等等...</li></ul></li></ul>
+<ul><li>XML 格式的 <i>airport.map</i> 文件向游戏模式提供了有关该地图的信息，包括：
+<ul><li>玩家的出生点、出生时配备的武器，以及玩家所属的团队</li>
+<li>玩家的目标</li>
+<li>天气、世界时间、时间限制</li>
+<li>提供交通工具</li></ul></li>
+<li><i>airport.lua</i> 可能包含了一些辅助地图自身的功能：
+<ul><li>当特定的事情发生时打开特定的门或使某物爆炸</li>
+<li>创建或移动一些自定义对象，或是控制通过 .map 文件所创建的对象</li>
+<li>等等等等...</li></ul></li></ul>
 <p>正如您所见的，<i>type</i> 属性改为了 'map'，告诉<a href="../%e5%9c%b0%e5%9b%be%e7%ae%a1%e7%90%86%e5%99%a8.html" title="地图管理器">地图管理器</a>该资源为地图；而 <i>gamemodes</i> 属性指明了该地图只有在什么游戏模式下才能够运行，在本例中所指定的游戏模式即上面所创建的。
 地图资源内也可以包含脚本。当然，地图并不一定需要包含脚本，但是这可以在游戏模式所设计的游戏规则以外再允许地图创造者设计这些地图自己的游戏规则。
 </p><p><i>airport.map</i> 文件内容可能如下：
 </p>
-<pre class="prettyprint lang-xml">
-&lt;map mode="deathmatch" version="1.0"&gt;
+<pre class="prettyprint lang-xml">&lt;map mode="deathmatch" version="1.0"&gt;
 	&lt;terrorists&gt;
 		&lt;spawnpoint posX="2332.23" posY="-12232.33" posZ="4.42223" skins="23-40" /&gt;
 	&lt;/terrorists&gt;
@@ -321,174 +287,60 @@ addCommandHandler("createvehicle", createVehicleForPlayer)
 </pre>
 <p>当游戏模式及地图同时被加载，地图管理器会自动启动地图资源，随后游戏模式资源会开始读取地图信息；当切换到其他地图时，当前的地图资源会被停止，然后轮到下一张地图资源被加载。请阅读<a href="http://wiki.localhost/index.php?title=%E7%BC%96%E5%86%99%E6%B8%B8%E6%88%8F%E6%A8%A1%E5%BC%8F&amp;action=edit&amp;redlink=1" class="new" title="编写游戏模式 (page does not exist)">编写游戏模式</a>教程以学习更深入的地图资源管理模式。
 </p>
-<h3><span class="mw-headline" id=".E4.BA.8B.E4.BB.B6">事件</span></h3>
+<h3><span id="事件"></span><span class="mw-headline" id=".E4.BA.8B.E4.BB.B6">事件</span></h3>
 <p>MTA 会以触发事件的形式告知脚本发生了什么。例如，当任意玩家死亡时，<a href="../OnPlayerWasted.html" title="OnPlayerWasted">onPlayerWasted</a> 事件会被触发。为了能够及时地在任意玩家死亡时能够执行一些操作，您需要自定义一个用于处理该类型事件的事件处理器。
 </p><p>下列示例代码会在任意玩家死后，向所有玩家发送该玩家死亡的信息：
 </p>
-<pre class="prettyprint lang-lua">
-function playerDied(totalAmmo, killer, killerWeapon, bodypart)
+<pre class="prettyprint lang-lua">function playerDied(totalAmmo, killer, killerWeapon, bodypart)
 	outputChatBox(getPlayerName(source).." died!")
 end
 addEventHandler("onPlayerWasted",getRootElement(),playerDied)
 </pre>
 <p>事件文档列举了不同事件触发后将会传递到事件处理函数的不同参数。请留意 <i>source</i> 变量，虽然其并非是参数，但每个处理函数都隐式包含有该变量。在不同的事件中，该变量表示的概念不同；例如玩家事件的处理函数中，该变量表示触发了事件的玩家元素。
 </p>
-<h2><span class="mw-headline" id=".E7.84.B6.E5.90.8E.E5.91.A2.EF.BC.9F">然后呢？</span></h2>
+<h2><span id="然后呢？"></span><span class="mw-headline" id=".E7.84.B6.E5.90.8E.E5.91.A2.EF.BC.9F">然后呢？</span></h2>
 <p>现在，您应该已经大概了解了 MTA 脚本编写的一些基础知识以及如何阅读文档了。<a href="http://wiki.localhost/index.php?title=%E9%A6%96%E9%A1%B5&amp;action=edit&amp;redlink=1" class="new" title="首页 (page does not exist)">首页</a>提供有更多的信息、教程以及参考链接。您可以随时阅读这些文章以更深入地学习 MTA 脚本编写。
 </p>
 <table cellspacing="0" style="padding: 5px; width: 80%; margin: 2px auto 2px auto; border: 1px solid #BFBFFF; background: #E0E0FF; border-left: 10px solid #BFBFFF;">
-<tr>
-<td style="width: 32px; vertical-align:top; display: none;" rowspan="2"> [[{{{image}}}|link=]]
+<tbody><tr>
+<td style="width: 32px; vertical-align:top; display: none;" rowspan="2">[[{{{image}}}|link=]]
 </td>
-<td style=""> <b>Note:</b> 强烈建议您开始阅读<a href="http://wiki.localhost/index.php?title=%E8%B0%83%E8%AF%95%E8%84%9A%E6%9C%AC&amp;action=edit&amp;redlink=1" class="new" title="调试脚本 (page does not exist)">调试脚本</a>教程。编写脚本时，调试是十分有必要的；我们也建议您参考<a href="http://wiki.localhost/index.php?title=%E9%A2%84%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F%E5%88%97%E8%A1%A8&amp;action=edit&amp;redlink=1" class="new" title="预定义变量列表 (page does not exist)">预定义变量列表</a>中的信息以帮助您更高效率地编写 MTA 脚本。
+<td style=""><b>Note:</b> 强烈建议您开始阅读<a href="http://wiki.localhost/index.php?title=%E8%B0%83%E8%AF%95%E8%84%9A%E6%9C%AC&amp;action=edit&amp;redlink=1" class="new" title="调试脚本 (page does not exist)">调试脚本</a>教程。编写脚本时，调试是十分有必要的；我们也建议您参考<a href="http://wiki.localhost/index.php?title=%E9%A2%84%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F%E5%88%97%E8%A1%A8&amp;action=edit&amp;redlink=1" class="new" title="预定义变量列表 (page does not exist)">预定义变量列表</a>中的信息以帮助您更高效率地编写 MTA 脚本。
 </td></tr>
 <tr>
 <td rowspan="1" style="padding-left: 10px;">
-</td></tr></table>
+</td></tr></tbody></table>
 <p><b>相关参考:</b>
 </p>
-<ul><li> <a href="../Advanced_Topics.html" title="Advanced Topics">Advanced Topics</a></li></ul>
+<ul><li><a href="../Advanced_Topics.html" title="Advanced Topics">Advanced Topics</a></li></ul>
 
 <!-- 
 NewPP limit report
-Cached time: 20190629062508
+Cached time: 20191016135344
 Cache expiry: 86400
 Dynamic content: false
-CPU time usage: 0.014 seconds
-Real time usage: 0.016 seconds
+CPU time usage: 0.024 seconds
+Real time usage: 0.025 seconds
 Preprocessor visited node count: 327/1000000
 Preprocessor generated node count: 801/1000000
 Post‐expand include size: 3032/2097152 bytes
 Template argument size: 1687/2097152 bytes
 Highest expansion depth: 5/40
 Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 4656/5000000 bytes
 -->
-
-<!-- 
+<!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%    6.382      1 - -total
- 47.46%    3.029      1 - Template:Tip
- 43.06%    2.748      2 - Template:MessageBox
- 30.70%    1.959      1 - Template:Note
+100.00%    4.570      1 -total
+ 48.47%    2.215      2 Template:MessageBox
+ 40.22%    1.838      1 Template:Tip
+ 30.52%    1.395      1 Template:Note
 -->
-
-<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:7320-0!*!0!!en!*!* and timestamp 20190629062508 and revision id 50429
+</div>
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:7320-0!canonical and timestamp 20191016135343 and revision id 50429
  -->
 </div><div class="printfooter">
 Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=ZH-CN/%e8%84%9a%e6%9c%ac%e7%bc%96%e5%86%99%e4%bb%8b%e7%bb%8d&amp;oldid=50429">https://wiki.multitheftauto.com/index.php?title=ZH-CN/脚本编写介绍&amp;oldid=50429</a>"</div>
-					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<!-- end content -->
-										<div class="visualClear"></div>
-				</div>
-			</div>
-		</div>
-		<div id="column-one">
-			<h2>Navigation menu</h2>
-					<div id="p-cactions" class="portlet" role="navigation">
-			<h3>Views</h3>
-
-			<div class="pBody">
-				<ul>
-				<li id="ca-nstab-main" class="selected"><a href="%e8%84%9a%e6%9c%ac%e7%bc%96%e5%86%99%e4%bb%8b%e7%bb%8d.html" title="View the content page [c]" accesskey="c">Page</a></li>
-				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:ZH-CN/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%E4%BB%8B%E7%BB%8D&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
-				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=ZH-CN/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%E4%BB%8B%E7%BB%8D&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
-				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=ZH-CN/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%E4%BB%8B%E7%BB%8D&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
-				</ul>
-							</div>
-		</div>
-				<div class="portlet" id="p-personal" role="navigation">
-				<h3>Personal tools</h3>
-
-				<div class="pBody">
-					<ul>
-													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=ZH-CN%2F%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%E4%BB%8B%E7%BB%8D" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
-													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=ZH-CN%2F%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%E4%BB%8B%E7%BB%8D" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
-											</ul>
-				</div>
-			</div>
-			<div class="portlet" id="p-logo" role="banner">
-				<a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
-			</div>
-				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
-		<h3>Navigation</h3>
-		<div class='pBody'>
-							<ul>
-											<li id="n-Home"><a href="../Main_Page.html">Home</a></li>
-											<li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li>
-											<li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
-											<li id="n-randompage"><a href="https://wiki.multitheftauto.com/wiki/OnDgsDestroy" title="Load a random page [x]" accesskey="x">Random page</a></li>
-									</ul>
-					</div>
-		</div>
-		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
-		<h3>reference</h3>
-		<div class='pBody'>
-							<ul>
-											<li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li>
-											<li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li>
-											<li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li>
-											<li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li>
-											<li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li>
-											<li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li>
-											<li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li>
-											<li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li>
-											<li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li>
-									</ul>
-					</div>
-		</div>
-			<div id="p-search" class="portlet" role="search">
-			<h3><label for="searchInput">Search</label></h3>
-
-			<div id="searchBody" class="pBody">
-				<form action="http://wiki.localhost/index.php" id="searchform">
-					<input type='hidden' name="title" value="Special:Search"/>
-					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
-					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
-						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
-				</form>
-
-							</div>
-		</div>
-			<div class="portlet" id="p-tb" role="navigation">
-			<h3>Tools</h3>
-
-			<div class="pBody">
-				<ul>
-											<li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/ZH-CN/%e8%84%9a%e6%9c%ac%e7%bc%96%e5%86%99%e4%bb%8b%e7%bb%8d.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
-											<li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/ZH-CN/%e8%84%9a%e6%9c%ac%e7%bc%96%e5%86%99%e4%bb%8b%e7%bb%8d.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
-											<li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
-											<li id="t-print"><a href="http://wiki.localhost/index.php?title=ZH-CN/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%E4%BB%8B%E7%BB%8D&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
-											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=ZH-CN/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%E4%BB%8B%E7%BB%8D&amp;oldid=50429" title="Permanent link to this revision of the page">Permanent link</a></li>
-											<li id="t-info"><a href="http://wiki.localhost/index.php?title=ZH-CN/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%E4%BB%8B%E7%BB%8D&amp;action=info" title="More information about this page">Page information</a></li>
-									</ul>
-							</div>
-		</div>
-				<div id="p-lang" class="portlet" role="navigation">
-				<h3>In other languages</h3>
-
-				<div class="pBody">
-					<ul>
-													<li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=Scripting_Introduction" title="Scripting Introduction – English" lang="en" hreflang="en">English</a></li>
-											</ul>
-
-									</div>
-			</div>
-				</div><!-- end of the left (by default at least) column -->
-		<div class="visualClear"></div>
-					<div id="footer" role="contentinfo">
-						<div id="f-copyrightico">
-									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="../../resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
-							</div>
-					<div id="f-poweredbyico">
-									<a href="http://www.mediawiki.org/"><img src="../../resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
-							</div>
-					<ul id="f-list">
-									<li id="lastmod"> This page was last modified on 12 February 2017, at 05:27.</li>
-									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
-									<li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
-									<li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
-									<li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
-							</ul>
-		</div>
-		</div>
-		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
-<script src="../../extensions/_MTAThemeExtensions/main11b9.js?303"></script><script src="../../extensions/_MTAThemeExtensions/topmenu11b9.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":52});});</script></body></html>
+<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div><!-- end content --><div class="visualClear"></div></div></div></div><div id="column-one" lang="en" dir="ltr"><h2>Navigation menu</h2><div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label"><h3 id="p-cactions-label" lang="en" dir="ltr">Views</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="ca-nstab-main" class="selected"><a href="%e8%84%9a%e6%9c%ac%e7%bc%96%e5%86%99%e4%bb%8b%e7%bb%8d.html" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:ZH-CN/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%E4%BB%8B%E7%BB%8D&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=ZH-CN/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%E4%BB%8B%E7%BB%8D&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="http://wiki.localhost/index.php?title=ZH-CN/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%E4%BB%8B%E7%BB%8D&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></div></div><div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label"><h3 id="p-personal-label" lang="en" dir="ltr">Personal tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=ZH-CN%2F%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%E4%BB%8B%E7%BB%8D" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=ZH-CN%2F%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%E4%BB%8B%E7%BB%8D" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li></ul></div></div><div class="portlet" id="p-logo" role="banner"><a href="../Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a></div><div role="navigation" class="portlet generated-sidebar" id="p-navigation" aria-labelledby="p-navigation-label"><h3 id="p-navigation-label" lang="en" dir="ltr">Navigation</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="n-Home"><a href="../Main_Page.html">Home</a></li><li id="n-How-you-can-help"><a href="../How_you_can_help.html">How you can help</a></li><li id="n-recentchanges"><a href="../Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="https://wiki.multitheftauto.com/wiki/JavaSDK" title="Load a random page [x]" accesskey="x">Random page</a></li></ul></div></div><div role="navigation" class="portlet generated-sidebar" id="p-reference" aria-labelledby="p-reference-label"><h3 id="p-reference-label" lang="en" dir="ltr">reference</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="n-Client-Functions"><a href="../Client_Scripting_Functions.html">Client Functions</a></li><li id="n-Client-Events"><a href="../Client_Scripting_Events.html">Client Events</a></li><li id="n-Server-Functions"><a href="../Server_Scripting_Functions.html">Server Functions</a></li><li id="n-Server-Events"><a href="../Server_Scripting_Events.html">Server Events</a></li><li id="n-Shared-Functions"><a href="../Shared_Scripting_Functions.html">Shared Functions</a></li><li id="n-Useful-Functions"><a href="../Useful_Functions.html">Useful Functions</a></li><li id="n-MTA-Classes"><a href="../MTA_Classes.html">MTA Classes</a></li><li id="n-MTA-Elements"><a href="../Element.html">MTA Elements</a></li><li id="n-Element-Tree"><a href="../Element_tree.html">Element Tree</a></li></ul></div></div><div role="search" class="portlet" id="p-search"><h3 id="p-search-label" lang="en" dir="ltr"><label for="searchInput">Search</label></h3><div class="pBody" id="searchBody"><form action="http://wiki.localhost/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"/><input type="search" name="search" placeholder="Search Multi Theft Auto: Wiki" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160; <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/></form></div></div><div role="navigation" class="portlet" id="p-tb" aria-labelledby="p-tb-label"><h3 id="p-tb-label" lang="en" dir="ltr">Tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="t-whatlinkshere"><a href="../Special_WhatLinksHere/ZH-CN/%e8%84%9a%e6%9c%ac%e7%bc%96%e5%86%99%e4%bb%8b%e7%bb%8d.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="../Special_RecentChangesLinked/ZH-CN/%e8%84%9a%e6%9c%ac%e7%bc%96%e5%86%99%e4%bb%8b%e7%bb%8d.html" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="../Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="http://wiki.localhost/index.php?title=ZH-CN/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%E4%BB%8B%E7%BB%8D&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="http://wiki.localhost/index.php?title=ZH-CN/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%E4%BB%8B%E7%BB%8D&amp;oldid=50429" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="http://wiki.localhost/index.php?title=ZH-CN/%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%E4%BB%8B%E7%BB%8D&amp;action=info" title="More information about this page">Page information</a></li></ul></div></div><div role="navigation" class="portlet" id="p-lang" aria-labelledby="p-lang-label"><h3 id="p-lang-label" lang="en" dir="ltr">In other languages</h3><div class="pBody"><ul lang="en" dir="ltr"><li class="interlanguage-link interwiki-en"><a href="http://wiki.multitheftauto.com/index.php?title=Scripting_Introduction" title="Scripting Introduction – English" lang="en" hreflang="en" class="interlanguage-link-target">English</a></li></ul></div></div></div><!-- end of the left (by default at least) column --><div class="visualClear"></div><div id="footer" role="contentinfo" lang="en" dir="ltr"><div id="f-copyrightico" class="footer-icons"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="../../resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a></div><div id="f-poweredbyico" class="footer-icons"><a href="http://www.mediawiki.org/"><img src="../../resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a></div><ul id="f-list"><li id="lastmod"> This page was last edited on 12 February 2017, at 05:27.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li><li id="privacy"><a href="../Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li><li id="about"><a href="../Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li><li id="disclaimer"><a href="../Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li></ul></div></div><script src="../../extensions/_MTAThemeExtensions/main11b9.js?303"></script><script src="../../extensions/_MTAThemeExtensions/topmenu11b9.js?303"></script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.024","walltime":"0.025","ppvisitednodes":{"value":327,"limit":1000000},"ppgeneratednodes":{"value":801,"limit":1000000},"postexpandincludesize":{"value":3032,"limit":2097152},"templateargumentsize":{"value":1687,"limit":2097152},"expansiondepth":{"value":5,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":4656,"limit":5000000},"timingprofile":["100.00%    4.570      1 -total"," 48.47%    2.215      2 Template:MessageBox"," 40.22%    1.838      1 Template:Tip"," 30.52%    1.395      1 Template:Note"]},"cachereport":{"timestamp":"20191016135344","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":75});});</script></body></html>

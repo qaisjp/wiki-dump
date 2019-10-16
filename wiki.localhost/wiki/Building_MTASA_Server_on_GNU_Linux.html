@@ -1,52 +1,37 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+<html class="client-nojs" lang="en" dir="ltr">
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <meta charset="UTF-8"/>
 <title>Building MTASA Server on GNU Linux - Multi Theft Auto: Wiki</title>
 <script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
-<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Building_MTASA_Server_on_GNU_Linux","wgTitle":"Building MTASA Server on GNU Linux","wgCurRevisionId":58218,"wgRevisionId":58218,"wgArticleId":5232,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Needs Checking","Development"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Building_MTASA_Server_on_GNU_Linux","wgRelevantArticleId":5232,"wgRequestId":"dd1327f04d01dab5ab842eaf","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
-mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
-
-});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Building_MTASA_Server_on_GNU_Linux","wgTitle":"Building MTASA Server on GNU Linux","wgCurRevisionId":58218,"wgRevisionId":58218,"wgArticleId":5232,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Needs Checking","Development"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Building_MTASA_Server_on_GNU_Linux","wgRelevantArticleId":5232,"wgRequestId":"a358540a810c5b216cd9ef01","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","mediawiki.skinning.content.externallinks":"ready","skins.monobook.styles":"ready"});mw.loader.implement("user.tokens@18hksfp",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
 <link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
-<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
 <script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
-<meta name="generator" content="MediaWiki 1.27.5"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/resources/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/resources/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.31.3"/>
 <link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
 <link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
 <link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
-<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="license" href="http://www.gnu.org/copyleft/fdl.html"/>
 <link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=MonoBook&amp;sync=1"></script><![endif]-->
 </head>
-<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Building_MTASA_Server_on_GNU_Linux rootpage-Building_MTASA_Server_on_GNU_Linux skin-monobook action-view">
-<div id="globalWrapper">
-		<div id="column-content">
-			<div id="content" class="mw-body" role="main">
-				<a id="top"></a>
-				
-				<div class="mw-indicators">
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Building_MTASA_Server_on_GNU_Linux rootpage-Building_MTASA_Server_on_GNU_Linux skin-monobook action-view"><div id="globalWrapper"><div id="column-content"><div id="content" class="mw-body" role="main"><a id="top"></a><div class="mw-indicators mw-body-content">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">Building MTASA Server on GNU Linux</h1>
-				
-				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">From Multi Theft Auto: Wiki</div>
-					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
-
-					<!-- start content -->
-					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table cellspacing="0" style="padding: 5px; width: 80%; margin: 2px auto 2px auto; border: 1px dotted #0026FF; background: #CCCCFF; border-left: 10px solid #0026FF;">
-<tr>
-<td style="width: 32px; vertical-align:top;" rowspan="2"> <img alt="Dialog-information.png" src="../images/8/82/Dialog-information.png" width="32" height="32" />
+<h1 id="firstHeading" class="firstHeading" lang="en">Building MTASA Server on GNU Linux</h1><div id="bodyContent" class="mw-body-content"><div id="siteSub">From Multi Theft Auto: Wiki</div><div id="contentSub" lang="en" dir="ltr"></div><div id="jump-to-nav" class="mw-jump">Jump to:<a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div><!-- start content --><div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table cellspacing="0" style="padding: 5px; width: 80%; margin: 2px auto 2px auto; border: 1px dotted #0026FF; background: #CCCCFF; border-left: 10px solid #0026FF;">
+<tbody><tr>
+<td style="width: 32px; vertical-align:top;" rowspan="2"><img alt="Dialog-information.png" src="../images/8/82/Dialog-information.png" width="32" height="32" />
 </td>
 <td style="padding-left: 10px;"><b>This article needs checking.</b>
 </td></tr>
 <tr>
 <td rowspan="1" style="padding-left: 10px;"><hr style="background: #0026FF;" /><b>Reason(s):</b> Confirm steps work.
-</td></tr></table>
-<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+</td></tr></tbody></table>
+<div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Installing_and_Running_MTASA_server_on_Linux"><span class="tocnumber">1</span> <span class="toctext">Installing and Running MTASA server on Linux</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Preparing_your_system"><span class="tocnumber">2</span> <span class="toctext">Preparing your system</span></a>
@@ -66,30 +51,30 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 
 <h2><span class="mw-headline" id="Installing_and_Running_MTASA_server_on_Linux">Installing and Running MTASA server on Linux</span></h2>
 <table cellspacing="0" style="padding: 5px; width: 80%; margin: 2px auto 2px auto; border: 1px solid #BFBFFF; background: #E0E0FF; border-left: 10px solid #BFBFFF;">
-<tr>
-<td style="width: 32px; vertical-align:top; display: none;" rowspan="2"> [[{{{image}}}|link=]]
+<tbody><tr>
+<td style="width: 32px; vertical-align:top; display: none;" rowspan="2">[[{{{image}}}|link=]]
 </td>
-<td style=""> <b>Note:</b> This article is only for developers who changed the server code, if you are looking for the precompiled server (for normal server owners). Go to: <a rel="nofollow" class="external text" href="http://linux.mtasa.com/">linux.mtasa.com</a> and see <a href="Installing_and_Running_MTASA_Server_on_GNU_Linux.html" title="Installing and Running MTASA Server on GNU Linux">Installing and Running MTASA Server on GNU_Linux</a>
+<td style=""><b>Note:</b> This article is only for developers who changed the server code, if you are looking for the precompiled server (for normal server owners). Go to: <a rel="nofollow" class="external text" href="http://linux.mtasa.com/">linux.mtasa.com</a> and see <a href="Installing_and_Running_MTASA_Server_on_GNU_Linux.html" title="Installing and Running MTASA Server on GNU Linux">Installing and Running MTASA Server on GNU_Linux</a>
 </td></tr>
 <tr>
 <td rowspan="1" style="padding-left: 10px;">
-</td></tr></table>
+</td></tr></tbody></table>
 <h2><span class="mw-headline" id="Preparing_your_system">Preparing your system</span></h2>
 <p>In order to build the Multi Theft Auto dedicated server, you will have to set up your system with the correct libraries and tools. How these are installed depends on your distribution.
-</p><p>Our network module (net.dll or net.so) is distributed as a precompiled binary library. The file for GNU/Linux can be found inside the lastest Linux nightly from <a rel="nofollow" class="external text" href="http://nightly.mtasa.com/">here</a>. Use the net.so from 1.5 if you are compiling from the trunk, or the net.so from 1.5.6 if you are compiling the 1.5.6 branch. Be sure the read the top of <i>Server/version.h</i> as it contains directions on how to compile the different build types.
+</p><p>Our network module (net.dll or net.so) is distributed as a precompiled binary library. The file for GNU/Linux can be found inside the lastest Linux nightly from <a rel="nofollow" class="external text" href="http://nightly.mtasa.com/">here</a>. Use the net.so from 1.5 if you are compiling from the trunk, or the net.so from 1.5.7 if you are compiling the 1.5.7 branch. Be sure the read the top of <i>Server/version.h</i> as it contains directions on how to compile the different build types.
 </p>
 <h3><span class="mw-headline" id="Debian_Linux">Debian Linux</span></h3>
 <p>Includes derivative distributions such as Ubuntu.
 </p><p>You will need the necessary build tools, headers and libraries, which are distributed through the following Debian packages (e.g. Debian Lenny):
 </p>
-<ul><li> <b>build-essential:</b> contains the necessary tools, headers and libraries to build applications</li>
-<li> <b>automake:</b> contains the automake tools</li>
-<li> <b>libtool:</b> contains the libtool software required to build libraries</li>
-<li> <b>libreadline-gplv2-dev:</b> contains the readline library (version 5)</li>
-<li> <b>libncurses5-dev:</b> contains software for controlling writing to the console screen</li>
-<li> <b>libncursesw5-dev:</b> contains support for wide characters</li>
-<li> <b>default-libmysqlclient-dev:</b> contains the MySQL library</li>
-<li> <b>git:</b> contains the git client used to check out our code repository</li></ul>
+<ul><li><b>build-essential:</b> contains the necessary tools, headers and libraries to build applications</li>
+<li><b>automake:</b> contains the automake tools</li>
+<li><b>libtool:</b> contains the libtool software required to build libraries</li>
+<li><b>libreadline-gplv2-dev:</b> contains the readline library (version 5)</li>
+<li><b>libncurses5-dev:</b> contains software for controlling writing to the console screen</li>
+<li><b>libncursesw5-dev:</b> contains support for wide characters</li>
+<li><b>default-libmysqlclient-dev:</b> contains the MySQL library</li>
+<li><b>git:</b> contains the git client used to check out our code repository</li></ul>
 <p>To install these packages through apt, use the apt-get install &lt;package list&gt; command as in the following example (execute as root):
 </p>
 <pre>apt-get install build-essential automake libtool
@@ -101,7 +86,7 @@ apt-get install default-libmysqlclient-dev git
 <h3><span class="mw-headline" id="Gentoo_Linux">Gentoo Linux</span></h3>
 <p>You will need the necessary build tools, headers and libraries. Because Gentoo’s portage system is designed to compile any packages on your own system, the necessary build tools will have already been installed. This only leaves you to install the necessary libraries:
 </p>
-<ul><li> <b>git:</b> contains the git client used to check out our code repository</li></ul>
+<ul><li><b>git:</b> contains the git client used to check out our code repository</li></ul>
 <p>To compile and install these packages through emerge, use the emerge -v &lt;package list&gt; command. The -v option shows additional * * information and can be omitted. (If you want to use any USE flags, prepend emerge with USE="use flags here". You can also use the -pv option to verify that you’re using the correct flags.) Refer to the <a rel="nofollow" class="external text" href="http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=2&amp;chap=1">Gentoo Handbook</a> or manual for more information on emerge.
 </p><p>Example:
 </p>
@@ -111,9 +96,9 @@ USE=“net-misc/curl ssl” emerge -v curl
 <h3><span class="mw-headline" id="Fedora">Fedora</span></h3>
 <p>You will need these packages to be able to successfully compile a MTA server on Fedora: 
 </p>
-<ul><li> <b>glibc-devel:</b></li>
-<li> <b>readline-devel:</b> contains the readline library</li>
-<li> <b>git:</b> contains the git client to check out the source code</li></ul>
+<ul><li><b>glibc-devel:</b></li>
+<li><b>readline-devel:</b> contains the readline library</li>
+<li><b>git:</b> contains the git client to check out the source code</li></ul>
 <p>To install these packages through yum, use the yum install &lt;package list&gt; command as in the following example (execute as root):
 </p>
 <pre>yum install glibc-devel readline-devel git
@@ -140,145 +125,32 @@ cd mtasa-blue
 </p>
 <!-- 
 NewPP limit report
-Cached time: 20190629062109
+Cached time: 20191016134110
 Cache expiry: 86400
 Dynamic content: false
-CPU time usage: 0.012 seconds
-Real time usage: 0.013 seconds
+CPU time usage: 0.018 seconds
+Real time usage: 0.019 seconds
 Preprocessor visited node count: 202/1000000
 Preprocessor generated node count: 621/1000000
 Post‐expand include size: 2626/2097152 bytes
 Template argument size: 1130/2097152 bytes
 Highest expansion depth: 6/40
 Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 5/5000000 bytes
 -->
-
-<!-- 
+<!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%    6.239      1 - -total
- 42.57%    2.656      1 - Template:Needs_Checking
- 39.96%    2.493      2 - Template:MessageBox
- 25.51%    1.592      4 - Template:Current_Version
- 24.40%    1.522      1 - Template:Note
+100.00%    5.536      1 -total
+ 45.61%    2.525      2 Template:MessageBox
+ 36.36%    2.013      1 Template:Needs_Checking
+ 27.31%    1.512      4 Template:Current_Version
+ 27.15%    1.503      1 Template:Note
 -->
-
-<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:5232-0!*!0!!en!5!* and timestamp 20190629062109 and revision id 58218
+</div>
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:5232-0!canonical and timestamp 20191016134110 and revision id 58218
  -->
 </div><div class="printfooter">
 Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=Building_MTASA_Server_on_GNU_Linux&amp;oldid=58218">https://wiki.multitheftauto.com/index.php?title=Building_MTASA_Server_on_GNU_Linux&amp;oldid=58218</a>"</div>
-					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Categories</a>: <ul><li><a href="Category_Needs_Checking.html" title="Category:Needs Checking">Needs Checking</a></li><li><a href="Category_Development.html" title="Category:Development">Development</a></li></ul></div></div>					<!-- end content -->
-										<div class="visualClear"></div>
-				</div>
-			</div>
-		</div>
-		<div id="column-one">
-			<h2>Navigation menu</h2>
-					<div id="p-cactions" class="portlet" role="navigation">
-			<h3>Views</h3>
-
-			<div class="pBody">
-				<ul>
-				<li id="ca-nstab-main" class="selected"><a href="Building_MTASA_Server_on_GNU_Linux.html" title="View the content page [c]" accesskey="c">Page</a></li>
-				<li id="ca-talk"><a href="Talk_Building_MTASA_Server_on_GNU_Linux.html" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
-				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=Building_MTASA_Server_on_GNU_Linux&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
-				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=Building_MTASA_Server_on_GNU_Linux&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
-				</ul>
-							</div>
-		</div>
-				<div class="portlet" id="p-personal" role="navigation">
-				<h3>Personal tools</h3>
-
-				<div class="pBody">
-					<ul>
-													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=Building+MTASA+Server+on+GNU+Linux" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
-													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=Building+MTASA+Server+on+GNU+Linux" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
-											</ul>
-				</div>
-			</div>
-			<div class="portlet" id="p-logo" role="banner">
-				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
-			</div>
-				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
-		<h3>Navigation</h3>
-		<div class='pBody'>
-							<ul>
-											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
-											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
-											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
-											<li id="n-randompage"><a href="https://wiki.multitheftauto.com/wiki/OnClientSoundBeat" title="Load a random page [x]" accesskey="x">Random page</a></li>
-									</ul>
-					</div>
-		</div>
-		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
-		<h3>reference</h3>
-		<div class='pBody'>
-							<ul>
-											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
-											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
-											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
-											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
-											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
-											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
-											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
-											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
-											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
-									</ul>
-					</div>
-		</div>
-			<div id="p-search" class="portlet" role="search">
-			<h3><label for="searchInput">Search</label></h3>
-
-			<div id="searchBody" class="pBody">
-				<form action="http://wiki.localhost/index.php" id="searchform">
-					<input type='hidden' name="title" value="Special:Search"/>
-					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
-					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
-						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
-				</form>
-
-							</div>
-		</div>
-			<div class="portlet" id="p-tb" role="navigation">
-			<h3>Tools</h3>
-
-			<div class="pBody">
-				<ul>
-											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/Building_MTASA_Server_on_GNU_Linux.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
-											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/Building_MTASA_Server_on_GNU_Linux.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
-											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
-											<li id="t-print"><a href="http://wiki.localhost/index.php?title=Building_MTASA_Server_on_GNU_Linux&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
-											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=Building_MTASA_Server_on_GNU_Linux&amp;oldid=58218" title="Permanent link to this revision of the page">Permanent link</a></li>
-											<li id="t-info"><a href="http://wiki.localhost/index.php?title=Building_MTASA_Server_on_GNU_Linux&amp;action=info" title="More information about this page">Page information</a></li>
-									</ul>
-							</div>
-		</div>
-				<div id="p-lang" class="portlet" role="navigation">
-				<h3>In other languages</h3>
-
-				<div class="pBody">
-					<ul>
-													<li class="interlanguage-link interwiki-ru"><a href="http://wiki.multitheftauto.com/index.php?title=RU/Building_MTASA_Server_on_GNU_Linux" title="Building MTASA Server on GNU Linux – русский" lang="ru" hreflang="ru">Русский</a></li>
-											</ul>
-
-									</div>
-			</div>
-				</div><!-- end of the left (by default at least) column -->
-		<div class="visualClear"></div>
-					<div id="footer" role="contentinfo">
-						<div id="f-copyrightico">
-									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="../resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
-							</div>
-					<div id="f-poweredbyico">
-									<a href="http://www.mediawiki.org/"><img src="../resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
-							</div>
-					<ul id="f-list">
-									<li id="lastmod"> This page was last modified on 16 August 2018, at 12:46.</li>
-									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
-									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
-									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
-									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
-							</ul>
-		</div>
-		</div>
-		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
-<script src="../extensions/_MTAThemeExtensions/main11b9.js?303"></script><script src="../extensions/_MTAThemeExtensions/topmenu11b9.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":23});});</script></body></html>
+<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Categories</a>: <ul><li><a href="Category_Needs_Checking.html" title="Category:Needs Checking">Needs Checking</a></li><li><a href="Category_Development.html" title="Category:Development">Development</a></li></ul></div></div><!-- end content --><div class="visualClear"></div></div></div></div><div id="column-one" lang="en" dir="ltr"><h2>Navigation menu</h2><div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label"><h3 id="p-cactions-label" lang="en" dir="ltr">Views</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="ca-nstab-main" class="selected"><a href="Building_MTASA_Server_on_GNU_Linux.html" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk"><a href="Talk_Building_MTASA_Server_on_GNU_Linux.html" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li><li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=Building_MTASA_Server_on_GNU_Linux&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="http://wiki.localhost/index.php?title=Building_MTASA_Server_on_GNU_Linux&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></div></div><div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label"><h3 id="p-personal-label" lang="en" dir="ltr">Personal tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=Building+MTASA+Server+on+GNU+Linux" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=Building+MTASA+Server+on+GNU+Linux" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li></ul></div></div><div class="portlet" id="p-logo" role="banner"><a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a></div><div role="navigation" class="portlet generated-sidebar" id="p-navigation" aria-labelledby="p-navigation-label"><h3 id="p-navigation-label" lang="en" dir="ltr">Navigation</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="n-Home"><a href="Main_Page.html">Home</a></li><li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li><li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="https://wiki.multitheftauto.com/wiki/Local_Scheme_Handler" title="Load a random page [x]" accesskey="x">Random page</a></li></ul></div></div><div role="navigation" class="portlet generated-sidebar" id="p-reference" aria-labelledby="p-reference-label"><h3 id="p-reference-label" lang="en" dir="ltr">reference</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li><li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li><li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li><li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li><li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li><li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li><li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li><li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li><li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li></ul></div></div><div role="search" class="portlet" id="p-search"><h3 id="p-search-label" lang="en" dir="ltr"><label for="searchInput">Search</label></h3><div class="pBody" id="searchBody"><form action="http://wiki.localhost/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"/><input type="search" name="search" placeholder="Search Multi Theft Auto: Wiki" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160; <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/></form></div></div><div role="navigation" class="portlet" id="p-tb" aria-labelledby="p-tb-label"><h3 id="p-tb-label" lang="en" dir="ltr">Tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="t-whatlinkshere"><a href="Special_WhatLinksHere/Building_MTASA_Server_on_GNU_Linux.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/Building_MTASA_Server_on_GNU_Linux.html" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="http://wiki.localhost/index.php?title=Building_MTASA_Server_on_GNU_Linux&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="http://wiki.localhost/index.php?title=Building_MTASA_Server_on_GNU_Linux&amp;oldid=58218" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="http://wiki.localhost/index.php?title=Building_MTASA_Server_on_GNU_Linux&amp;action=info" title="More information about this page">Page information</a></li></ul></div></div><div role="navigation" class="portlet" id="p-lang" aria-labelledby="p-lang-label"><h3 id="p-lang-label" lang="en" dir="ltr">In other languages</h3><div class="pBody"><ul lang="en" dir="ltr"><li class="interlanguage-link interwiki-ru"><a href="http://wiki.multitheftauto.com/index.php?title=RU/Building_MTASA_Server_on_GNU_Linux" title="Building MTASA Server on GNU Linux – русский" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li></ul></div></div></div><!-- end of the left (by default at least) column --><div class="visualClear"></div><div id="footer" role="contentinfo" lang="en" dir="ltr"><div id="f-copyrightico" class="footer-icons"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="../resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a></div><div id="f-poweredbyico" class="footer-icons"><a href="http://www.mediawiki.org/"><img src="../resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a></div><ul id="f-list"><li id="lastmod"> This page was last edited on 16 August 2018, at 12:46.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li><li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li><li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li><li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li></ul></div></div><script src="../extensions/_MTAThemeExtensions/main11b9.js?303"></script><script src="../extensions/_MTAThemeExtensions/topmenu11b9.js?303"></script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.018","walltime":"0.019","ppvisitednodes":{"value":202,"limit":1000000},"ppgeneratednodes":{"value":621,"limit":1000000},"postexpandincludesize":{"value":2626,"limit":2097152},"templateargumentsize":{"value":1130,"limit":2097152},"expansiondepth":{"value":6,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":5,"limit":5000000},"timingprofile":["100.00%    5.536      1 -total"," 45.61%    2.525      2 Template:MessageBox"," 36.36%    2.013      1 Template:Needs_Checking"," 27.31%    1.512      4 Template:Current_Version"," 27.15%    1.503      1 Template:Note"]},"cachereport":{"timestamp":"20191016134111","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":58});});</script></body></html>

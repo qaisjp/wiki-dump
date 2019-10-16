@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Making a PM System - Multi Theft Auto: Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Making_a_PM_System","wgTitle":"Making a PM System","wgCurRevisionId":59161,"wgRevisionId":59161,"wgArticleId":7269,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Tutorials"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Making_a_PM_System","wgRelevantArticleId":7269,"wgRequestId":"98584687ea214b9e427f54e2","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"PM_System_Tutorial","wgWikiEditorEnabledModules":[],"wgInternalRedirectTargetUrl":"/wiki/Making_a_PM_System"});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","mediawiki.skinning.content.externallinks":"ready","skins.monobook.styles":"ready"});mw.loader.implement("user.tokens@18hksfp",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["mediawiki.action.view.redirect","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/resources/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/resources/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.31.3"/>
+<link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
+<link rel="license" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://wiki.multitheftauto.com/wiki/Making_a_PM_System"/>
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=MonoBook&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Making_a_PM_System rootpage-Making_a_PM_System skin-monobook action-view"><div id="globalWrapper"><div id="column-content"><div id="content" class="mw-body" role="main"><a id="top"></a><div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">Making a PM System</h1><div id="bodyContent" class="mw-body-content"><div id="siteSub">From Multi Theft Auto: Wiki</div><div id="contentSub" lang="en" dir="ltr"><span class="mw-redirectedfrom">(Redirected from <a href="http://wiki.localhost/index.php?title=PM_System_Tutorial&amp;redirect=no" class="mw-redirect" title="PM System Tutorial">PM System Tutorial</a>)</span></div><div id="jump-to-nav" class="mw-jump">Jump to:<a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div><!-- start content --><div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>This is a scripting tutorial teaching you how to create a private messaging system in your server. It was originally created on Thursday November 24th, 2011 at 6:32pm (UTC) by qaisjp for MTA:SA 1.1. The original code was tested on the day of original creation, but it was thoroughly revamped since then.
+</p>
+<h2><span class="mw-headline" id="Creating_the_basic_resource">Creating the basic resource</span></h2>
+<p>Creating your resource is one of the important parts of the tutorial. In Multi Theft Auto, resources are described as sets of scripts; there are many different types of resources but I won't go into detail of that because it is outside the scope of my tutorial. I will not teach the details about <b>meta.xml</b> files, but I will walk you through it. For more detailed information on resources and how to create one, follow the <a href="Resources.html" title="Resources">Resources</a> tutorial.
+</p><p>First, you'll need to go to your resources directory. For those running a server from the "HOST GAME" option at the Main Menu, the resources directory will be at <i>C:/Program Files/MTA San Andreas 1.1/server/mods/deathmatch/resources/</i>. This path will slightly vary depending on your install location, game version and system architecture - regardless of these three factors it should be pretty easy to find your resource directory. Once you've found it you should create a new directory <i>inside</i> the "resources" folder called "pm-system", this will be our resource. From now on you'll be working
+on the system inside this folder
+</p><p>Inside our working directory, "pm-system", create a <i>meta.xml</i> and a <i>server.lua</i> file. The <b>meta</b> file is an XML file which tells Multi Theft Auto which scripts to run and in which order; we only need it to run <i>server.lua</i>. 
+</p>
+<!-- BEGIN SECTION |1|server|meta.xml|--><div class="serverHeader" onclick="expandSection(1);" style="cursor:pointer;"><div style="float:right;font-size: 0.75em;" id="sectionExpander1">Click to collapse [-]</div>meta.xml</div><div style="display:;" class="serverContent" id="section1">
+<p>XML is another language, so I won't teach you much about it. But to learn more about the meta.xml file, visit <a href="Meta.html" title="Meta.xml">this page</a>. So type the following code into the file.
+</p>
+<pre class="prettyprint lang-xml">&lt;meta&gt;
+    &lt;info author="qaisjp" version="1.0" name="PM System" description="Introduces /pm into MTA" type="script" /&gt;
+    &lt;script src="server.lua" type="server" /&gt;
+&lt;/meta&gt;
+</pre>
+</div><!-- END SECTION |1|-->
+<p>And now thats the meta file finished, onto the real script!
+</p>
+<h2><span class="mw-headline" id="Creating_the_command_handler">Creating the command handler</span></h2>
+<p>Creating command handlers are the way to creating commands in MTA, you won't have to monitor chat input and manually separate text - it's all nicely put into one nice function. First we have to create a function, and then create a command which will bind itself to the function. To do this we use <a href="AddCommandHandler.html" title="AddCommandHandler">addCommandHandler</a>, so let's start off with this code:
+</p>
+<pre class="prettyprint lang-lua">-- Create the function
+function pmHandler()
+end
+
+-- Create the command
+addCommandHandler("pm", pmHandler)
+</pre>
+<p>What happens here is that on the second line we start creating a function, on the third line we stop creating the function. Then on the last line we call (execute, start, ask - whatever helps you understand) the <a href="AddCommandHandler.html" title="AddCommandHandler">addCommandHandler</a> function. The first argument is "pm", this tells the function that the command we're making will react to the input of "/pm" in the chatbox. The second argument is <i>pmHandler</i>, this wasn't wrapped in quotation marks. If you noticed on line 2 that we created a function called <i>pmHandler</i>, you can guess that this tells addCommandHandler to bind that function to the command. Testing this right now won't show anything, so I won't teach you how to test it out yet.
+</p>
+<h2><span class="mw-headline" id="Lets_have_some_arguments...">Lets have some arguments...</span></h2>
+<p>In between the brackets (it's actually called parentheses) on line 2 are the arguments that are passed to the function - just like how we passed arguments to addCommandHandler, arguments are caught here. There are two default arguments, and then all the arguments after that are an unknown number of strings. The first argument is the element of the player who typed the command, we'll ignore the second argument because we don't need it. The third argument onwards are the arguments that are passed to the command, so if you typed "/pm user I like MTASA" this is how it would read it as:
+</p>
+<pre class="prettyprint lang-lua">function pmHandler(player, cmd, target, word1, word2, word3)
+    -- outputChatBox is a function we call to output content to the chatbox.
+    outputChatBox(target .. word1 .. word2 .. word3)
+end
+addCommandHandler("pm", pmHandler)
+</pre>
+<p>So typing that would print out something like <b>userIlikeMTASA</b> to the chatbox for everyone. Obviously the first argument to the function and command will be the name of the person we want to send the <b>private</b> (not public!) message to. So we need to check if the player exists or not.
+</p>
+<h2><span class="mw-headline" id="Hitting_your_target">Hitting your target</span></h2>
+<p>We won't check if a player exists, that's too troublesome. Instead we'll resort to a simple function that we know will return <a href="Nil.html" title="Nil">nil</a> (nothing). When functions return something, it's like when you ask someone a question and they reply back with a definite answer when they think and answer your question or reply to your order. "That is false, sir", "That is true, sir!" and "Mission failed, sir!". We'll be using <a href="GetPlayerFromName.html" title="GetPlayerFromName">getPlayerFromName</a>. This function takes one argument, the name of the player we want and it returns to kinds of values: <a href="Nil.html" title="Nil">nil</a> (nothing) and a <a href="Player.html" class="mw-redirect" title="Player">Player</a> <a href="Element.html" title="Element">element</a>. It will return nil if it couldn't find a player with that exact name (ignoring capital letters) or it will return a player element if it could find a match. So let's add that to our code:
+</p>
+<pre class="prettyprint lang-lua">function pmHandler(player, cmd, target, word1, word2, word3)
+    local recipient = getPlayerFromName(target) -- recipient is another word for "receiver"
+
+</pre>
+<p>Slow down! Here we set a variable to what "getPlayerFromName" returned. It's like assigning a door a name, the door can contain a player or it can contain nothing - but you can always remember what door it is by the name it is assigned to (the name which is written on the door). This means that <i>recipient</i> will be the value of whatever getPlayerFromName returns.
+</p><p>We have to check if it returns nil or a player element, since nil is virtually nothing and all it should return is a player element, so we can send him the message. Time to carry on my code.
+</p>
+<pre class="prettyprint lang-lua">function pmHandler(player, cmd, target, word1, word2, word3)
+    local recipient = getPlayerFromName(target) -- recipient is another word for "receiver"
+    if recipient then -- if recipient exists then...
+        local recipientName = getPlayerName(recipient)
+</pre>
+<p>Here we are getting the name of the recipient... but you might be thinking "but if the player already knows it why are we double checking?". The reason we are getting the name of the player again is because getPlayerFromName is case insensitive, meaning it ignores the difference between "The_GTA" and "the_gta". We'll be telling the PM creator, the user, who he PM'ed later so we want the name to show up correctly and not with capital letters missing or in the wrong place.
+We need to tell the player that the player doesn't exist if it doesn't, just so he knows that /pm works and that it failed. Read on.
+</p>
+<pre class="prettyprint lang-lua">function pmHandler(player, cmd, target, word1, word2, word3)
+    local recipient = getPlayerFromName(target) -- recipient is another word for "receiver"
+    if recipient then -- if recipient exists then...
+        local recipientName = getPlayerName(recipient)
+    else -- but what if recipient doesn't exist? then...
+        -- This tells "recipient" that he's made a mistake, in red.
+        outputChatBox("Sorry, we don't know a person called " .. target, player, 255, 0, 0)
+    end -- there's no more possibilities, so close off this scope of questioning.
+end
+</pre>
+<p>If you want to try and test it out on yourself, save this (it should be in server.lua and you should've been editing in that file anyway) and (re)start the resource. Typing the name of someone who isn't on the server should make that error appear, but typing your name (or someone who is on the server) should appear to do nothing... for now.
+</p>
+<h2><span class="mw-headline" id="Outputting_Messages">Outputting Messages</span></h2>
+<p>Now we've sorted out error handling - making sure there is a person to PM to and telling the user he's made a mistake - we can start on the part that tells both users that he/she's sent/received a PM.
+We will use similar code to the error handling output code, we'll be using hex here too. I won't explain much about hex because it's fairly simple, but Google is your friend for all of eternity (or until the NSA decides to take over the world). 
+</p>
+<pre class="prettyprint lang-lua">function pmHandler(player, cmd, target, word1, word2, word3)
+    local recipient = getPlayerFromName(target)
+    if recipient then
+        local recipientName = getPlayerName(recipient)
+        local playerName = getPlayerName(player) -- also get the name of the player, to tell the recipient who sent him the pm
+
+        -- Tell the author he's sent a message
+        outputChatBox("[PM &gt; " .. recipientName .. "]: #FFFFFF " .. word1 .. " " .. word2 .. " " .. word3, player, 255, 255, 0, true)
+
+        -- Tell the recipient he's received a message
+        outputChatBox("[PM &lt; " .. playerName .. "]: #FFFFFF " .. word1 .. " " .. word2 .. " " .. word3, recipient, 255, 255, 0, true)
+    else
+        outputChatBox("Sorry, we don't know a person called" .. target, player, 255, 0, 0)
+    end
+end
+</pre>
+<p>Make sure you read the code, I've explained it in here. Go on, test your message!
+</p>
+<h2><span class="mw-headline" id="Second_class_citizen">Second class citizen</span></h2>
+<p>You may have noticed that the PM messages don't go beyond three words. If you're daring you might've tried to extend it to a couple of more words. Don't worry, there's an easy "fix" - and it doesn't involve copying the same variables over and over and over and over and over and over and over and ov.. (I am getting carried away here, aren't I?) .. er again. The wonderful "...", you should already know ".." concatenates (attaches/combines/merges/appends) two variables but "..." is something different. It's a special kind of variable and it cannot be set anywhere except in function arguments, it has to be the last argument and it can only be manipulated when wrapped in a table (in the latest Lua). Tables are rather simple and integral features of Lua but it can be challenging for newcomers. I won't explain this third-world-variable much because you may or may not understand tables correctly themselves.
+</p><p>First we'll remove <i>word1</i>, <i>word2</i> and <i>word3</i> and replace it with <i>...</i>
+</p>
+<pre class="prettyprint lang-lua">function pmHandler(player, cmd, target, ...)
+    local recipient = getPlayerFromName(target)
+    if recipient then
+        local recipientName = getPlayerName(recipient)
+        local playerName = getPlayerName(player)
+        outputChatBox("[PM &gt; " .. recipientName .. "]: #FFFFFF " .. , player, 255, 255, 0, true)
+        outputChatBox("[PM &lt; " .. playerName .. "]: #FFFFFF " .. , recipient, 255, 255, 0, true)
+    else
+        outputChatBox("Sorry, we don't know a person called" .. target, player, 255, 0, 0)
+    end
+end
+</pre>
+<p>Now we will wrap <i>...</i> in a table for it to be manipulated and accessed.
+</p>
+<pre class="prettyprint lang-lua">function pmHandler(player, cmd, target, ...)
+    local recipient = getPlayerFromName(target)
+    if recipient then
+        local message = {...}
+        local recipientName = getPlayerName(recipient)
+        local playerName = getPlayerName(player)
+        outputChatBox("[PM &gt; " .. recipientName .. "]: #FFFFFF " .. , player, 255, 255, 0, true)
+        outputChatBox("[PM &lt; " .. playerName .. "]: #FFFFFF " .. , recipient, 255, 255, 0, true)
+    else
+        outputChatBox("Sorry, we don't know a person called" .. target, player, 255, 0, 0)
+    end
+end
+</pre>
+<p>With this, we can access each following argument like message[index]. This means that if we did "/pm qaisjp I like MTA a lot..." <i>message</i> would be structured like this:
+</p>
+<ul><li>message[1] = <b>I</b></li>
+<li>message[2] = <b>like</b></li>
+<li>message[3] = <b>MTA</b></li>
+<li>message[4] = <b>a</b></li>
+<li>message[5] = <b>lot...</b></li></ul>
+<p>If we wanted to concatenate all these variables, right up to the last one, together seperating it by a space we would use the "table.concat" function. table.concat is a default lua function which concatenates all the items of a table in order with a separator. Here we use table.concat({...}, " "), so we concatenate all the arguments with the space being a separator. And of course, add those changes to the outputChatBox code.
+</p>
+<pre class="prettyprint lang-lua">function pmHandler(player, cmd, target, ...)
+    local recipient = getPlayerFromName(target)
+    if recipient then
+        local message = table.concat({...}, " ") 
+        local recipientName = getPlayerName(recipient)
+        local playerName = getPlayerName(player)
+        outputChatBox("[PM &gt; " .. recipientName .. "]: #FFFFFF " .. message, player, 255, 255, 0, true)
+        outputChatBox("[PM &lt; " .. playerName .. "]: #FFFFFF " .. message, recipient, 255, 255, 0, true)
+    else
+        outputChatBox("Sorry, we don't know a person called" .. target, player, 255, 0, 0)
+    end
+end
+</pre>
+<h2><span class="mw-headline" id="Conclusion">Conclusion</span></h2>
+<p>And that is it! You've learn a bit about tables, a bit about arguments, a bit about that third-world variable, and how to create a PM system. For those that would like to see the final code, collapse the code below. PM system is hardly the hardest thing you can create in MTA:SA, it's one of the easiest things. But it may be a milestone for you, so make sure you tell me how you did on this tutorial at <a rel="nofollow" class="external text" href="http://forum.mtasa.com/viewtopic.php?t=37395">the official topic for this tutorial</a>
+</p>
+<!-- BEGIN SECTION |2|server|server.lua|--><div class="serverHeader" onclick="expandSection(2);" style="cursor:pointer;"><div style="float:right;font-size: 0.75em;" id="sectionExpander2">Click to expand [+]</div>server.lua</div><div style="display:none;" class="serverContent" id="section2">
+<pre class="prettyprint lang-lua">function pmHandler(player, cmd, target, ...)
+    local recipient = getPlayerFromName(target)
+    if recipient then
+        local message = table.concat({...}, " ") 
+        local recipientName = getPlayerName(recipient)
+        local playerName = getPlayerName(player)
+        outputChatBox("[PM &gt; " .. recipientName .. "]: #FFFFFF " .. message, player, 255, 255, 0, true)
+        outputChatBox("[PM &lt; " .. playerName .. "]: #FFFFFF " .. message, recipient, 255, 255, 0, true)
+    else
+        outputChatBox("Sorry, we don't know a person called" .. recipientName, recipient, 255, 0, 0)
+    end
+end
+addCommandHandler("pm", pmHandler)
+</pre>
+</div><!-- END SECTION |2|-->
+
+<!-- 
+NewPP limit report
+Cached time: 20191016135854
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.010 seconds
+Real time usage: 0.011 seconds
+Preprocessor visited node count: 128/1000000
+Preprocessor generated node count: 300/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 5987/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:7269-0!canonical and timestamp 20191016135854 and revision id 59161
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=Making_a_PM_System&amp;oldid=59161">https://wiki.multitheftauto.com/index.php?title=Making_a_PM_System&amp;oldid=59161</a>"</div>
+<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_Tutorials.html" title="Category:Tutorials">Tutorials</a></li></ul></div></div><!-- end content --><div class="visualClear"></div></div></div></div><div id="column-one" lang="en" dir="ltr"><h2>Navigation menu</h2><div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label"><h3 id="p-cactions-label" lang="en" dir="ltr">Views</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="ca-nstab-main" class="selected"><a href="Making_a_PM_System.html" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:Making_a_PM_System&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=Making_a_PM_System&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="http://wiki.localhost/index.php?title=Making_a_PM_System&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></div></div><div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label"><h3 id="p-personal-label" lang="en" dir="ltr">Personal tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=Making+a+PM+System" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=Making+a+PM+System" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li></ul></div></div><div class="portlet" id="p-logo" role="banner"><a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a></div><div role="navigation" class="portlet generated-sidebar" id="p-navigation" aria-labelledby="p-navigation-label"><h3 id="p-navigation-label" lang="en" dir="ltr">Navigation</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="n-Home"><a href="Main_Page.html">Home</a></li><li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li><li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="https://wiki.multitheftauto.com/wiki/JavaSDK" title="Load a random page [x]" accesskey="x">Random page</a></li></ul></div></div><div role="navigation" class="portlet generated-sidebar" id="p-reference" aria-labelledby="p-reference-label"><h3 id="p-reference-label" lang="en" dir="ltr">reference</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li><li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li><li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li><li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li><li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li><li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li><li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li><li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li><li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li></ul></div></div><div role="search" class="portlet" id="p-search"><h3 id="p-search-label" lang="en" dir="ltr"><label for="searchInput">Search</label></h3><div class="pBody" id="searchBody"><form action="http://wiki.localhost/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"/><input type="search" name="search" placeholder="Search Multi Theft Auto: Wiki" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160; <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/></form></div></div><div role="navigation" class="portlet" id="p-tb" aria-labelledby="p-tb-label"><h3 id="p-tb-label" lang="en" dir="ltr">Tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="t-whatlinkshere"><a href="Special_WhatLinksHere/Making_a_PM_System.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/Making_a_PM_System.html" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="http://wiki.localhost/index.php?title=Making_a_PM_System&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="http://wiki.localhost/index.php?title=Making_a_PM_System&amp;oldid=59161" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="http://wiki.localhost/index.php?title=Making_a_PM_System&amp;action=info" title="More information about this page">Page information</a></li></ul></div></div></div><!-- end of the left (by default at least) column --><div class="visualClear"></div><div id="footer" role="contentinfo" lang="en" dir="ltr"><div id="f-copyrightico" class="footer-icons"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="../resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a></div><div id="f-poweredbyico" class="footer-icons"><a href="http://www.mediawiki.org/"><img src="../resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a></div><ul id="f-list"><li id="lastmod"> This page was last edited on 15 September 2018, at 21:20.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li><li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li><li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li><li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li></ul></div></div><script src="../extensions/_MTAThemeExtensions/main11b9.js?303"></script><script src="../extensions/_MTAThemeExtensions/topmenu11b9.js?303"></script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.010","walltime":"0.011","ppvisitednodes":{"value":128,"limit":1000000},"ppgeneratednodes":{"value":300,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":3,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":5987,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20191016135854","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":34});});</script></body></html>

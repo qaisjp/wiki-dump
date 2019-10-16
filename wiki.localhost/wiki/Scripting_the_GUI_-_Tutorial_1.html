@@ -1,48 +1,33 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+<html class="client-nojs" lang="en" dir="ltr">
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <meta charset="UTF-8"/>
 <title>Scripting the GUI - Tutorial 1 - Multi Theft Auto: Wiki</title>
 <script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
-<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Scripting_the_GUI_-_Tutorial_1","wgTitle":"Scripting the GUI - Tutorial 1","wgCurRevisionId":60911,"wgRevisionId":60911,"wgArticleId":5023,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["GUI Tutorials"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Scripting_the_GUI_-_Tutorial_1","wgRelevantArticleId":5023,"wgRequestId":"b42ee06b9d8f57c33c581c1e","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"preview":false,"publish":false}});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
-mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
-
-});mw.loader.load(["mediawiki.page.startup"]);});</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Scripting_the_GUI_-_Tutorial_1","wgTitle":"Scripting the GUI - Tutorial 1","wgCurRevisionId":60911,"wgRevisionId":60911,"wgArticleId":5023,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["GUI Tutorials"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Scripting_the_GUI_-_Tutorial_1","wgRelevantArticleId":5023,"wgRequestId":"9db8817d82200ca187537eb9","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","mediawiki.skinning.content.externallinks":"ready","skins.monobook.styles":"ready"});mw.loader.implement("user.tokens@18hksfp",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
 <link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
-<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/IE70Fixes.css?303" media="screen"/><![endif]-->
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=monobook"/>
 <script async="" src="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook"></script>
-<meta name="generator" content="MediaWiki 1.27.5"/>
+<!--[if IE 6]><link rel="stylesheet" href="/skins/MonoBook/resources/IE60Fixes.css?303" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins/MonoBook/resources/IE70Fixes.css?303" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://wiki.localhost/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.31.3"/>
 <link rel="shortcut icon" href="http://wiki.localhost/favicon.ico"/>
 <link rel="search" type="application/opensearchdescription+xml" href="http://wiki.localhost/opensearch_desc.php" title="Multi Theft Auto: Wiki (en)"/>
 <link rel="EditURI" type="application/rsd+xml" href="https://wiki.multitheftauto.com/api.php?action=rsd"/>
-<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="license" href="http://www.gnu.org/copyleft/fdl.html"/>
 <link rel="alternate" type="application/atom+xml" title="Multi Theft Auto: Wiki Atom feed" href="http://wiki.localhost/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=MonoBook&amp;sync=1"></script><![endif]-->
 </head>
-<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Scripting_the_GUI_-_Tutorial_1 rootpage-Scripting_the_GUI_-_Tutorial_1 skin-monobook action-view">
-<div id="globalWrapper">
-		<div id="column-content">
-			<div id="content" class="mw-body" role="main">
-				<a id="top"></a>
-				
-				<div class="mw-indicators">
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Scripting_the_GUI_-_Tutorial_1 rootpage-Scripting_the_GUI_-_Tutorial_1 skin-monobook action-view"><div id="globalWrapper"><div id="column-content"><div id="content" class="mw-body" role="main"><a id="top"></a><div class="mw-indicators mw-body-content">
 </div>
-				<h1 id="firstHeading" class="firstHeading" lang="en">Scripting the GUI - Tutorial 1</h1>
-				
-				<div id="bodyContent" class="mw-body-content">
-					<div id="siteSub">From Multi Theft Auto: Wiki</div>
-					<div id="contentSub"></div>
-										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
-
-					<!-- start content -->
-					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><b>Scripting the Gui - Tutorial 1 (Gridlists)</b>
+<h1 id="firstHeading" class="firstHeading" lang="en">Scripting the GUI - Tutorial 1</h1><div id="bodyContent" class="mw-body-content"><div id="siteSub">From Multi Theft Auto: Wiki</div><div id="contentSub" lang="en" dir="ltr"></div><div id="jump-to-nav" class="mw-jump">Jump to:<a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div><!-- start content --><div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><b>Scripting the Gui - Tutorial 1 (Gridlists)</b>
 </p><p>In this tutorial we will explore the use of gridlists in creating a vehicle selection screen, with optional clientside vehicle xml data reading.
-</p><p><b>Note that this tutorial assumes you are familiar with all the content covered in the <a href="Introduction_to_Scripting_GUI.html" title="Introduction to Scripting GUI" class="mw-redirect">Previous tutorial</a>.</b>
+</p><p><b>Note that this tutorial assumes you are familiar with all the content covered in the <a href="Introduction_to_Scripting_GUI.html" class="mw-redirect" title="Introduction to Scripting GUI">Previous tutorial</a>.</b>
 </p><p><br />
 </p>
-<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<div id="toc" class="toc"><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Setting_up_the_Vehicle_Selection"><span class="tocnumber">1</span> <span class="toctext">Setting up the Vehicle Selection</span></a>
 <ul>
@@ -68,13 +53,12 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 <h3><span class="mw-headline" id="Creating_the_GUI">Creating the GUI</span></h3>
 <p>To begin, open up a clientside lua file (if you have been following the <a href="Scripting_Introduction.html" title="Scripting Introduction">Scripting Introduction</a>, this is gui.lua) to work with.
 </p><p>In this file, we will start writing our function for creating the GUI.
-As covered in the <a href="Introduction_to_Scripting_GUI.html" title="Introduction to Scripting GUI" class="mw-redirect">Previous tutorial</a>, there are 2 value type options available when creating gui: <b>relative</b> and <b>absolute</b>.
+As covered in the <a href="Introduction_to_Scripting_GUI.html" class="mw-redirect" title="Introduction to Scripting GUI">Previous tutorial</a>, there are 2 value type options available when creating gui: <b>relative</b> and <b>absolute</b>.
 </p><p>For the purposes of this tutorial, we will be using <b>absolute</b> values.
 </p><p><br />
 This will create a simple GUI with a window, gridlist and button:
 </p>
-<pre class="prettyprint lang-lua">
-function createVehicleSelection()
+<pre class="prettyprint lang-lua">function createVehicleSelection()
 	-- get the screen width and height
 	local sWidth, sHeight = guiGetScreenSize()
 	
@@ -108,8 +92,7 @@ end
 <p>We now also need to call this function somewhere, otherwise the GUI will never be created.
 As in previous tutorials, to do this we can use <a href="OnClientResourceStart.html" title="OnClientResourceStart">onClientResourceStart</a>.
 </p>
-<pre class="prettyprint lang-lua">
--- when the resource is started, create the GUI and hide it
+<pre class="prettyprint lang-lua">-- when the resource is started, create the GUI and hide it
 addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()),
 	function()
 		createVehicleSelection()
@@ -122,8 +105,7 @@ addEventHandler("onClientResourceStart",getResourceRootElement(getThisResource()
 <p>Unlike in previous tutorials, we want players to be able to open this window whenever they chose, not when the resource starts. 
 So, we can add a <a href="AddCommandHandler.html" title="AddCommandHandler">Command</a> to do this.
 </p>
-<pre class="prettyprint lang-lua">
--- create the function that will show the window
+<pre class="prettyprint lang-lua">-- create the function that will show the window
 function showVehicleSelection()
 	-- if the window isnt visible, show it
 	if not guiGetVisible(windowVehicleSelection) then
@@ -143,8 +125,7 @@ Later in the tutorial, we will explore expanding this method to use .xml files f
 To begin, we must create a small table containing a selection of vehicles that we can spawn.
 </p><p>The table contains vehicles in the format ["description"] = vehicle_id&#160;:
 </p>
-<pre class="prettyprint lang-lua">
--- create the table and fill it with a selection of vehicle ids and names
+<pre class="prettyprint lang-lua">-- create the table and fill it with a selection of vehicle ids and names
 local vehicleSelectionTable = {
 	["Sparrow"] = 469,
 	["Stuntplane"] = 513,
@@ -163,8 +144,7 @@ local vehicleSelectionTable = {
 To do this we simply need to loop through all the values in the table, adding each one to the gridlist as we go.
 We will also set hidden data using <a href="GuiGridListSetItemData.html" title="GuiGridListSetItemData">guiGridListSetItemData</a> to store the vehicle id:
 </p>
-<pre class="prettyprint lang-lua">
-function populateGridlist()
+<pre class="prettyprint lang-lua">function populateGridlist()
 	-- loop through the table
 	for name,vehicle in pairs(vehicleSelectionTable) do
 		-- add a new row to the gridlist
@@ -186,8 +166,7 @@ We have attached the <a href="OnClientGUIClick.html" title="OnClientGUIClick">on
 In this function we do some basic error checking, such as making sure a vehicle has been selected in the list. 
 We can then use some maths to find a position infront of the player and send the server this information to spawn the vehicle (using <a href="TriggerServerEvent.html" title="TriggerServerEvent">triggerServerEvent</a>) 
 </p>
-<pre class="prettyprint lang-lua">
-function createVehicleHandler(button,state)
+<pre class="prettyprint lang-lua">function createVehicleHandler(button,state)
 	if button == "left" and state == "up" then
 		-- get the selected item in the gridlist
 		local row,col = guiGridListGetSelectedItem(gridlistVehicleSelection)
@@ -229,8 +208,7 @@ end
 </p><p>On the server side, we will first of all need to define the custom event that we triggered before from the client. This can be done using <a href="AddEvent.html" title="AddEvent">addEvent</a> and <a href="AddEventHandler.html" title="AddEventHandler">addEventHandler</a>.
 Finally we will need a small function for creating the vehicle:
 </p>
-<pre class="prettyprint lang-lua">
-function createMyVehicle(vehicleid,x,y,z)
+<pre class="prettyprint lang-lua">function createMyVehicle(vehicleid,x,y,z)
 	-- check all the arguments exist
 	if vehicleid and x and y and z then
 		createVehicle(vehicleid,x,y,z)
@@ -255,8 +233,7 @@ For this tutorial, we will use a clientside xml file to hold the information.
 </p><p><i>For the purpose of this example, we will include only a small fraction of the total vehicles, however the file can easily be expanded to include them all.</i>
 </p><p>If you are unsure of xml data structures, you can browse the <a href="Server_Scripting_Functions.html#XML_functions" title="Server Scripting Functions"> MTA xml functions</a> for help.
 </p>
-<pre class="prettyprint lang-lua">
-&lt;root&gt;
+<pre class="prettyprint lang-lua">&lt;root&gt;
 	&lt;group type="Bikes"&gt;
 		&lt;vehicle id="581" name="BF-400"/&gt;
 		&lt;vehicle id="463" name="Freeway"/&gt;
@@ -304,8 +281,7 @@ Similarly, the vehicle "name" tag is also just a textual description of the vehi
 <b>If you are following on from the first section of this tutorial, this new code will replace what is inside your existing 'populateGridlist' function.</b>
 First, we need to load the file:
 </p>
-<pre class="prettyprint lang-lua">
-function populateGridlist()
+<pre class="prettyprint lang-lua">function populateGridlist()
 	-- load the file and save the root node value it returns
 	local rootnode = xmlLoadFile("vehicles.xml")
 	
@@ -321,8 +297,7 @@ end
 We can now start collecting the data from the file and entering it into our gridlist.
 We can do this by looping through the xml data (in a similar manner to looping through the vehicle table earlier in this tutorial) and adding each entry into the list.
 </p>
-<pre class="prettyprint lang-lua">
-function populateGridlist()
+<pre class="prettyprint lang-lua">function populateGridlist()
 	local rootnode = xmlLoadFile("vehicles.xml")
 	
 	if rootnode then		
@@ -367,7 +342,7 @@ end
 </p><p>You should now have a fully working vehicle selection menu, reading all of its data from a clientside xml file.
 Next, we will examine how to generate the appearance of collapsing and expanding sections in a gridlist.
 </p>
-<h3><span class="mw-headline" id="Collapsing.2FExpanding_the_Gridlist">Collapsing/Expanding the Gridlist</span></h3>
+<h3><span id="Collapsing/Expanding_the_Gridlist"></span><span class="mw-headline" id="Collapsing.2FExpanding_the_Gridlist">Collapsing/Expanding the Gridlist</span></h3>
 <p>Allowing sections of the gridlist to be collapsed or expanded gives much more control over the visible content to the user.
 This frees up space on the screen and makes the whole menu much more comfortable to use.
 </p>
@@ -377,8 +352,7 @@ This frees up space on the screen and makes the whole menu much more comfortable
 </p><p>This works in much the same way the previous xml loading example does, only this time instead of saving the data into the gridlist, we save it into a table entry instead.
 We also set the custom data "header" on the gridlist slots to denote which gridlist entries are our "group" entries and which are vehicles.
 </p>
-<pre class="prettyprint lang-lua">
-function populateGridlist()
+<pre class="prettyprint lang-lua">function populateGridlist()
 	local rootnode = xmlLoadFile("vehicles.xml")
 	
 	-- create a blank global table to store our imported data
@@ -423,8 +397,7 @@ end
 <p>To enable the player to simply double click on a group name to expand/collapse it we need to use the <a href="OnClientGUIDoubleClick.html" title="OnClientGUIDoubleClick">onClientGUIDoubleClick</a> event.
 If we attach it to the gridlist, we can then catch any double clicks on the group names in it:
 </p>
-<pre class="prettyprint lang-lua">
--- attach the onClientGUIDoubleClick event to the gridlist and set it to call processDoubleClick
+<pre class="prettyprint lang-lua">-- attach the onClientGUIDoubleClick event to the gridlist and set it to call processDoubleClick
 addEventHandler("onClientGUIDoubleClick",gridlistVehicleSelection,processDoubleClick,false)
 </pre>
 <p>Add this line of code in your createVehicleSelection, after the gridlist has been created.
@@ -432,8 +405,7 @@ addEventHandler("onClientGUIDoubleClick",gridlistVehicleSelection,processDoubleC
 As the gridlist items are not separate GUI elements, we must capture all clicks from anywhere on the gridlist then process them to filter out the ones we do not want.
 This can be done by checking if an item is selected, then checking if the item is one of our "group" values (using our previously mentioned "header" data):
 </p>
-<pre class="prettyprint lang-lua">
-function processDoubleClick(button,state)
+<pre class="prettyprint lang-lua">function processDoubleClick(button,state)
 	if button == "left" and state == "up" then
 		local row,col = guiGridListGetSelectedItem(gridlistVehicleSelection)
 		
@@ -455,8 +427,7 @@ This can be done by simply setting new text values in the gridlist according to 
 </p><p><br />
 Note that much of the following code is reused from previous areas of this tutorial. While it is generally bad practice to clone sections of code in this way, for the purposes of this example it is far easier to understand.
 </p>
-<pre class="prettyprint lang-lua">
-function changeGridlistState(group)
+<pre class="prettyprint lang-lua">function changeGridlistState(group)
 	if group then
 		-- if the group is already expanded, we want to collapse it
 		if getElementData(gridlistVehicleSelection,"expanded") == group then
@@ -507,141 +478,28 @@ end
 </p>
 <!-- 
 NewPP limit report
-Cached time: 20190629062656
+Cached time: 20191016135856
 Cache expiry: 86400
 Dynamic content: false
-CPU time usage: 0.007 seconds
-Real time usage: 0.008 seconds
+CPU time usage: 0.023 seconds
+Real time usage: 0.024 seconds
 Preprocessor visited node count: 151/1000000
 Preprocessor generated node count: 328/1000000
 Post‐expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Highest expansion depth: 2/40
 Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 12222/5000000 bytes
 -->
-
-<!-- 
+<!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%    0.000      1 - -total
+100.00%    0.000      1 -total
 -->
-
-<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:5023-0!*!0!!en!*!* and timestamp 20190629062656 and revision id 60911
+</div>
+<!-- Saved in parser cache with key mta_wiki-wiki_dev_:pcache:idhash:5023-0!canonical and timestamp 20191016135856 and revision id 60911
  -->
 </div><div class="printfooter">
 Retrieved from "<a dir="ltr" href="https://wiki.multitheftauto.com/index.php?title=Scripting_the_GUI_-_Tutorial_1&amp;oldid=60911">https://wiki.multitheftauto.com/index.php?title=Scripting_the_GUI_-_Tutorial_1&amp;oldid=60911</a>"</div>
-					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_GUI_Tutorials.html" title="Category:GUI Tutorials">GUI Tutorials</a></li></ul></div></div>					<!-- end content -->
-										<div class="visualClear"></div>
-				</div>
-			</div>
-		</div>
-		<div id="column-one">
-			<h2>Navigation menu</h2>
-					<div id="p-cactions" class="portlet" role="navigation">
-			<h3>Views</h3>
-
-			<div class="pBody">
-				<ul>
-				<li id="ca-nstab-main" class="selected"><a href="Scripting_the_GUI_-_Tutorial_1.html" title="View the content page [c]" accesskey="c">Page</a></li>
-				<li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:Scripting_the_GUI_-_Tutorial_1&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
-				<li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=Scripting_the_GUI_-_Tutorial_1&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
-				<li id="ca-history"><a href="http://wiki.localhost/index.php?title=Scripting_the_GUI_-_Tutorial_1&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
-				</ul>
-							</div>
-		</div>
-				<div class="portlet" id="p-personal" role="navigation">
-				<h3>Personal tools</h3>
-
-				<div class="pBody">
-					<ul>
-													<li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=Scripting+the+GUI+-+Tutorial+1" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
-													<li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=Scripting+the+GUI+-+Tutorial+1" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
-											</ul>
-				</div>
-			</div>
-			<div class="portlet" id="p-logo" role="banner">
-				<a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a>
-			</div>
-				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
-		<h3>Navigation</h3>
-		<div class='pBody'>
-							<ul>
-											<li id="n-Home"><a href="Main_Page.html">Home</a></li>
-											<li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li>
-											<li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
-											<li id="n-randompage"><a href="https://wiki.multitheftauto.com/wiki/OnDgsDestroy" title="Load a random page [x]" accesskey="x">Random page</a></li>
-									</ul>
-					</div>
-		</div>
-		<div class="generated-sidebar portlet" id="p-reference" role="navigation">
-		<h3>reference</h3>
-		<div class='pBody'>
-							<ul>
-											<li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li>
-											<li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li>
-											<li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li>
-											<li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li>
-											<li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li>
-											<li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li>
-											<li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li>
-											<li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li>
-											<li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li>
-									</ul>
-					</div>
-		</div>
-			<div id="p-search" class="portlet" role="search">
-			<h3><label for="searchInput">Search</label></h3>
-
-			<div id="searchBody" class="pBody">
-				<form action="http://wiki.localhost/index.php" id="searchform">
-					<input type='hidden' name="title" value="Special:Search"/>
-					<input type="search" name="search" placeholder="Search" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/>
-					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160;
-						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/>
-				</form>
-
-							</div>
-		</div>
-			<div class="portlet" id="p-tb" role="navigation">
-			<h3>Tools</h3>
-
-			<div class="pBody">
-				<ul>
-											<li id="t-whatlinkshere"><a href="Special_WhatLinksHere/Scripting_the_GUI_-_Tutorial_1.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
-											<li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/Scripting_the_GUI_-_Tutorial_1.html" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
-											<li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
-											<li id="t-print"><a href="http://wiki.localhost/index.php?title=Scripting_the_GUI_-_Tutorial_1&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
-											<li id="t-permalink"><a href="http://wiki.localhost/index.php?title=Scripting_the_GUI_-_Tutorial_1&amp;oldid=60911" title="Permanent link to this revision of the page">Permanent link</a></li>
-											<li id="t-info"><a href="http://wiki.localhost/index.php?title=Scripting_the_GUI_-_Tutorial_1&amp;action=info" title="More information about this page">Page information</a></li>
-									</ul>
-							</div>
-		</div>
-				<div id="p-lang" class="portlet" role="navigation">
-				<h3>In other languages</h3>
-
-				<div class="pBody">
-					<ul>
-													<li class="interlanguage-link interwiki-hu"><a href="http://wiki.multitheftauto.com/index.php?title=HU/Scripting_the_GUI_-_Tutorial_1" title="Scripting the GUI - Tutorial 1 – magyar" lang="hu" hreflang="hu">Magyar</a></li>
-											</ul>
-
-									</div>
-			</div>
-				</div><!-- end of the left (by default at least) column -->
-		<div class="visualClear"></div>
-					<div id="footer" role="contentinfo">
-						<div id="f-copyrightico">
-									<a href="http://www.gnu.org/copyleft/fdl.html"><img src="../resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a>
-							</div>
-					<div id="f-poweredbyico">
-									<a href="http://www.mediawiki.org/"><img src="../resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>
-							</div>
-					<ul id="f-list">
-									<li id="lastmod"> This page was last modified on 25 November 2018, at 13:34.</li>
-									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
-									<li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li>
-									<li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li>
-									<li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li>
-							</ul>
-		</div>
-		</div>
-		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.GoogleCodePrettify"]);});</script>
-<script src="../extensions/_MTAThemeExtensions/main11b9.js?303"></script><script src="../extensions/_MTAThemeExtensions/topmenu11b9.js?303"></script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":47});});</script></body></html>
+<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_GUI_Tutorials.html" title="Category:GUI Tutorials">GUI Tutorials</a></li></ul></div></div><!-- end content --><div class="visualClear"></div></div></div></div><div id="column-one" lang="en" dir="ltr"><h2>Navigation menu</h2><div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label"><h3 id="p-cactions-label" lang="en" dir="ltr">Views</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="ca-nstab-main" class="selected"><a href="Scripting_the_GUI_-_Tutorial_1.html" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new"><a href="http://wiki.localhost/index.php?title=Talk:Scripting_the_GUI_-_Tutorial_1&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-viewsource"><a href="http://wiki.localhost/index.php?title=Scripting_the_GUI_-_Tutorial_1&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="http://wiki.localhost/index.php?title=Scripting_the_GUI_-_Tutorial_1&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></div></div><div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label"><h3 id="p-personal-label" lang="en" dir="ltr">Personal tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="pt-createaccount"><a href="http://wiki.localhost/index.php?title=Special:CreateAccount&amp;returnto=Scripting+the+GUI+-+Tutorial+1" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="http://wiki.localhost/index.php?title=Special:UserLogin&amp;returnto=Scripting+the+GUI+-+Tutorial+1" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li></ul></div></div><div class="portlet" id="p-logo" role="banner"><a href="Main_Page.html" class="mw-wiki-logo" title="Visit the main page"></a></div><div role="navigation" class="portlet generated-sidebar" id="p-navigation" aria-labelledby="p-navigation-label"><h3 id="p-navigation-label" lang="en" dir="ltr">Navigation</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="n-Home"><a href="Main_Page.html">Home</a></li><li id="n-How-you-can-help"><a href="How_you_can_help.html">How you can help</a></li><li id="n-recentchanges"><a href="Special_RecentChanges.html" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="https://wiki.multitheftauto.com/wiki/JavaSDK" title="Load a random page [x]" accesskey="x">Random page</a></li></ul></div></div><div role="navigation" class="portlet generated-sidebar" id="p-reference" aria-labelledby="p-reference-label"><h3 id="p-reference-label" lang="en" dir="ltr">reference</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="n-Client-Functions"><a href="Client_Scripting_Functions.html">Client Functions</a></li><li id="n-Client-Events"><a href="Client_Scripting_Events.html">Client Events</a></li><li id="n-Server-Functions"><a href="Server_Scripting_Functions.html">Server Functions</a></li><li id="n-Server-Events"><a href="Server_Scripting_Events.html">Server Events</a></li><li id="n-Shared-Functions"><a href="Shared_Scripting_Functions.html">Shared Functions</a></li><li id="n-Useful-Functions"><a href="Useful_Functions.html">Useful Functions</a></li><li id="n-MTA-Classes"><a href="MTA_Classes.html">MTA Classes</a></li><li id="n-MTA-Elements"><a href="Element.html">MTA Elements</a></li><li id="n-Element-Tree"><a href="Element_tree.html">Element Tree</a></li></ul></div></div><div role="search" class="portlet" id="p-search"><h3 id="p-search-label" lang="en" dir="ltr"><label for="searchInput">Search</label></h3><div class="pBody" id="searchBody"><form action="http://wiki.localhost/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"/><input type="search" name="search" placeholder="Search Multi Theft Auto: Wiki" title="Search Multi Theft Auto: Wiki [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>&#160; <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/></form></div></div><div role="navigation" class="portlet" id="p-tb" aria-labelledby="p-tb-label"><h3 id="p-tb-label" lang="en" dir="ltr">Tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="t-whatlinkshere"><a href="Special_WhatLinksHere/Scripting_the_GUI_-_Tutorial_1.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/Scripting_the_GUI_-_Tutorial_1.html" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="http://wiki.localhost/index.php?title=Scripting_the_GUI_-_Tutorial_1&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="http://wiki.localhost/index.php?title=Scripting_the_GUI_-_Tutorial_1&amp;oldid=60911" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="http://wiki.localhost/index.php?title=Scripting_the_GUI_-_Tutorial_1&amp;action=info" title="More information about this page">Page information</a></li></ul></div></div><div role="navigation" class="portlet" id="p-lang" aria-labelledby="p-lang-label"><h3 id="p-lang-label" lang="en" dir="ltr">In other languages</h3><div class="pBody"><ul lang="en" dir="ltr"><li class="interlanguage-link interwiki-hu"><a href="http://wiki.multitheftauto.com/index.php?title=HU/Scripting_the_GUI_-_Tutorial_1" title="Scripting the GUI - Tutorial 1 – magyar" lang="hu" hreflang="hu" class="interlanguage-link-target">Magyar</a></li></ul></div></div></div><!-- end of the left (by default at least) column --><div class="visualClear"></div><div id="footer" role="contentinfo" lang="en" dir="ltr"><div id="f-copyrightico" class="footer-icons"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="../resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"/></a></div><div id="f-poweredbyico" class="footer-icons"><a href="http://www.mediawiki.org/"><img src="../resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a></div><ul id="f-list"><li id="lastmod"> This page was last edited on 25 November 2018, at 13:34.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li><li id="privacy"><a href="Multi_Theft_Auto__Wiki_Privacy_policy.html" title="Multi Theft Auto: Wiki:Privacy policy">Privacy policy</a></li><li id="about"><a href="Multi_Theft_Auto__Wiki_About.html" title="Multi Theft Auto: Wiki:About">About Multi Theft Auto: Wiki</a></li><li id="disclaimer"><a href="Multi_Theft_Auto__Wiki_General_disclaimer.html" title="Multi Theft Auto: Wiki:General disclaimer">Disclaimers</a></li></ul></div></div><script src="../extensions/_MTAThemeExtensions/main11b9.js?303"></script><script src="../extensions/_MTAThemeExtensions/topmenu11b9.js?303"></script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.023","walltime":"0.024","ppvisitednodes":{"value":151,"limit":1000000},"ppgeneratednodes":{"value":328,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":12222,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20191016135856","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":114});});</script></body></html>

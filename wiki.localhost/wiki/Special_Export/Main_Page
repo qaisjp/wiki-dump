@@ -3,7 +3,7 @@
     <sitename>Multi Theft Auto: Wiki</sitename>
     <dbname>mta_wiki</dbname>
     <base>https://wiki.multitheftauto.com/wiki/Main_Page</base>
-    <generator>MediaWiki 1.27.5</generator>
+    <generator>MediaWiki 1.31.3</generator>
     <case>first-letter</case>
     <namespaces>
       <namespace key="-2" case="first-letter">Media</namespace>
@@ -32,18 +32,17 @@
     <ns>0</ns>
     <id>3484</id>
     <revision>
-      <id>62895</id>
-      <parentid>62893</parentid>
-      <timestamp>2019-05-29T20:30:50Z</timestamp>
+      <id>64116</id>
+      <parentid>63830</parentid>
+      <timestamp>2019-09-07T08:15:36Z</timestamp>
       <contributor>
         <username>Qaisjp</username>
         <id>1524</id>
       </contributor>
-      <minor/>
-      <comment>Fix 'IRC Channel' link</comment>
+      <comment>Replace G+ with Facebook link</comment>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text xml:space="preserve" bytes="8144">&lt;div style=&quot;display: flex; align-items: center; padding-left: 15px; padding-right: 15px;&quot;&gt;
+      <text xml:space="preserve" bytes="8137">&lt;div style=&quot;display: flex; align-items: center; padding-left: 15px; padding-right: 15px;&quot;&gt;
 [[File:Mtalogo.png||100px|link=https://wiki.multitheftauto.com/]]
 &lt;div style=&quot;margin-left: .5em&quot;&gt;
 '''Welcome to the [[Multi Theft Auto]] wiki.''' On this wiki you'll find a wealth of information on using Multi Theft Auto.
@@ -119,7 +118,7 @@ This section outlines all the Lua capabilites MTA or resources provide.
 * Discord: [https://mtasa.com/discord Official MTA Discord server] ([https://mtasa.com/discord/post Forum post])
 * IRC: [irc://irc.multitheftauto.com/mta irc.multitheftauto.com #mta]
 * [https://community.mtasa.com/ MTA Community] - Share and download resources.
-* [https://twitter.com/#!/MTAQA/ Twitter] - [https://www.youtube.com/user/MTAQA Youtube] - [https://plus.google.com/102014133442331779727/ Google+] - [https://www.moddb.com/mods/multi-theft-auto-san-andreas ModDB]
+* [https://twitter.com/#!/MTAQA/ Twitter] - [https://www.youtube.com/user/MTAQA YouTube] - [https://facebook.com/multitheftauto Facebook] - [https://www.moddb.com/mods/multi-theft-auto-san-andreas ModDB]
 &lt;/div&gt;
 &lt;/div&gt; &lt;!-- left column end --&gt;
 
@@ -138,8 +137,7 @@ This section outlines all the Lua capabilites MTA or resources provide.
 * [[Writing_Gamemodes|Writing Gamemodes]]
 * [[Useful_Functions|Useful functions]]
 Forum Links
-* [https://forum.mtasa.com/forum/71-scripting/ Scripting Forum]
-* [https://forum.mtasa.com/forum/123-tutorials/ Scripting Tutorials Sub-Forum]
+* [https://forum.mtasa.com/forum/71-scripting/ Scripting Sub-Forum], [https://forum.mtasa.com/forum/123-tutorials/ Scripting Tutorials Sub-Forum]
 * [https://forum.mtasa.com/topic/24702-mtasa-wiki-offline-copies-online-mirrors/ Offline Wiki Copies]
 &lt;div style=&quot;float:right; width: 32px;&quot;&gt;[[File:start-here.png|link=]]&lt;/div&gt;
 &lt;h3&gt;General Lua Help&lt;/h3&gt;
@@ -223,7 +221,7 @@ Pages designed to aid your understanding of Lua
 __NOTOC__
 __NOEDITSECTION__
 {{Languages list|en}}</text>
-      <sha1>cnqu8tqjwl1wmuijq0mgr8ifqk8tmlr</sha1>
+      <sha1>6c2r0o72pljh0lh681u15bgnqzkd5bb</sha1>
     </revision>
   </page>
 </mediawiki>
