@@ -1,3 +1,5 @@
+Mirror: https://qaisjp.github.io/wiki-dump/
+
 Download as [tar.gz](https://github.com/qaisjp/wiki-dump/archive/master.tar.gz)
 
 - Compressed size (tar.gz): at least 200M
