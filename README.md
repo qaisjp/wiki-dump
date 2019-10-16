@@ -1,6 +1,6 @@
 Mirror: https://qaisjp.github.io/wiki-dump/
 
-Download as [tar.gz](https://github.com/qaisjp/wiki-dump/archive/master.tar.gz)
+Download as [tar.gz](https://github.com/qaisjp/wiki-dump/archive/master.tar.gz) or [zip](https://github.com/qaisjp/wiki-dump/archive/master.zip)
 
 - Compressed size (tar.gz): at least 200M
 - Unpacked size: at least 800M
